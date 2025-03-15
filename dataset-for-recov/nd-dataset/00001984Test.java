@@ -36,4 +36,4 @@ class ConvertedTest {
         // Block END.
     }
     }
-}
+

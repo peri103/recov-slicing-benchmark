@@ -32,4 +32,4 @@ class ConvertedTest {
         // Block END.
     }
     }
-}
+

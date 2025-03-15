@@ -24,4 +24,4 @@ class ConvertedTest {
         return result;
     }
     }
-}
+

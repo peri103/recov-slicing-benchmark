@@ -20,4 +20,4 @@ class ConvertedTest {
         return total;
     }
     }
-}
+

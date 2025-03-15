@@ -33,4 +33,4 @@ class ConvertedTest {
         return total;
     }
     }
-}
+

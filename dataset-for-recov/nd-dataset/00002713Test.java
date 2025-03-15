@@ -14,4 +14,4 @@ class ConvertedTest {
         return java.util.Arrays.equals(sortedArr, new int[]{1, 4, 7, 9});
     }
     }
-}
+

@@ -36,4 +36,4 @@ class ConvertedTest {
         return (int) c;
     }
     }
-}
+

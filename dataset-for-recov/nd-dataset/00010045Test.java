@@ -27,4 +27,4 @@ class ConvertedTest {
         return new String(new char[n]).replace("\u0000", "(");
     }
     }
-}
+

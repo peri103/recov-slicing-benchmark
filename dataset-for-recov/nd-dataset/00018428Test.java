@@ -15,4 +15,4 @@ class ConvertedTest {
         // Block END.
     }
     }
-}
+
