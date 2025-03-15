@@ -1,4 +1,3 @@
-76 out of 1199 files cannot compile.
 00000675Test.java
 00000746Test.java
 00000760Test.java
