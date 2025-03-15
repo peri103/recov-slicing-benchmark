@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00000760Test {
     @Test
     public void testMainLogic() {
         // Block 1:

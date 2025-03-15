@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00011260Test {
     @Test
     public void testMainLogic() {
         // Block 1:

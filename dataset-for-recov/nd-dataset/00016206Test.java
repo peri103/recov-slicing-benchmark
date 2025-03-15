@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00016206Test {
     @Test
     public void testMainLogic() {
         // Block 1:

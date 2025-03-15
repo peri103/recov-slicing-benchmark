@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00008909Test {
     @Test
     public void testMainLogic() {
         // Block 1:

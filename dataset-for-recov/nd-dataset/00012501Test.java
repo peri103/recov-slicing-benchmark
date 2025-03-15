@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Collections;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00012501Test {
     @Test
     public void testMainLogic() {
         // Block 1:

@@ -1,7 +1,7 @@
 import static java.lang.Math.*;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00005410Test {
     @Test
     public void testMainLogic() {
         // Block 2:

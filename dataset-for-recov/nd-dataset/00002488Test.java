@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00002488Test {
     @Test
     public void testMainLogic() {
         // Block 1:

@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00014890Test {
     @Test
     public void testMainLogic() {
         // Block 1:

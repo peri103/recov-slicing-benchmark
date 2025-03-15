@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00014486Test {
     @Test
     public void testMainLogic() {
         // Block 1:

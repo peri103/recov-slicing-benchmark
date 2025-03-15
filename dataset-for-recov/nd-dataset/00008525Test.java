@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00008525Test {
     @Test
     public void testMainLogic() {
         // Block 1:

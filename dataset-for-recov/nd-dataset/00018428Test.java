@@ -1,7 +1,7 @@
 import static java.lang.Math.ceil;
 import org.junit.jupiter.api.Test;
 
-class ConvertedTest {
+class _00018428Test {
     @Test
     public void testMainLogic() {
         // Block 2:
