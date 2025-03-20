@@ -1,0 +1,6 @@
+MaxIncreasingCells
+MaxMoves
+MaxPerformance
+MaxSatisfaction
+MinAbsDifference
+MinEatingSpeed

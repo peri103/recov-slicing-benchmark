@@ -1,0 +1,6 @@
+NumSubseq
+PlaceWordInCrossword
+ProbabilityOfHeads
+Query
+ReplaceValueInTree
+ReplaceWords

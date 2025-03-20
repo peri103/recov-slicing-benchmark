@@ -1,0 +1,6 @@
+MinFlips
+MinimizeXor
+MinimumMoney
+MinimumMountainRemovals
+MinimumMoves
+MinimumOneBitOperations
