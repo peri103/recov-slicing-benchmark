@@ -4,3 +4,7 @@ MinimumMoney
 MinimumMountainRemovals
 MinimumMoves
 MinimumOneBitOperations
+MinimumReplacement
+MinJumps
+MinMovesToMakePalindrome
+MinNonZeroProduct

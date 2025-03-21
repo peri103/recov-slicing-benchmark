@@ -1,3 +1,5 @@
+ShortestPathBinaryMatrix
+Spellchecker
 StrangePrinter
 TallestBillboard
 TilingRectangle

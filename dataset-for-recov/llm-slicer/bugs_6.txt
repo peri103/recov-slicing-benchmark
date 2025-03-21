@@ -1,3 +1,7 @@
+MaximumRobots
+MaximumScore
+MaximumSwap
+MaximumXOR
 MaxIncreasingCells
 MaxMoves
 MaxPerformance

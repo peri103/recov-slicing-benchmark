@@ -5,3 +5,6 @@ BestRotation
 Can
 CanTransform
 CanTraverseAllPairs
+ConcatenatedBinary
+ConnectSticks
+ConstructArray

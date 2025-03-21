@@ -1,6 +1,10 @@
+MinNumberOperations
+MinRemoveToMakeValid
 MinSumSquareOff
 NextGreaterElement
 NumberOfArithmeticSlices
 NumberOfArrays
 NumberOfWays
 NumDecodings
+NumSubseq
+PlaceWordInCrossword

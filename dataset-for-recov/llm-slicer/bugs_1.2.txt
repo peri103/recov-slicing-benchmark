@@ -1,7 +1,0 @@
-ConcatenatedBinary
-ConnectSticks
-ConstructArray
-CountDifferentSubsequenceGCDs
-CountGood
-CountMaxOrSubsets
-CountOfAtoms

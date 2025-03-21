@@ -1,6 +1,0 @@
-MinimumReplacement
-MinJumps
-MinMovesToMakePalindrome
-MinNonZeroProduct
-MinNumberOperations
-MinRemoveToMakeValid

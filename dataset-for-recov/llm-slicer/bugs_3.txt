@@ -1,6 +1,10 @@
+Dfs
 DiagonalSort
 FileSystem
 FindBlackPixel
 FindDiagonalOrder
 FindGoodStrings
 FindMaxConsecutiveOnes
+FreqStack
+GroupStrings
+HalveArray

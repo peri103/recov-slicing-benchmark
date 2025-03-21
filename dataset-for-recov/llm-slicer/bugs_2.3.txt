@@ -1,7 +1,0 @@
-MaximumCandies
-MaximumMinimumPath
-MaximumProduct
-MaximumRobots
-MaximumScore
-MaximumSwap
-MaximumXOR

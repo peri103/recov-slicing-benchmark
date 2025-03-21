@@ -1,6 +1,8 @@
+ProbabilityOfHeads
+Query
+ReplaceValueInTree
+ReplaceWords
 RobotWithString
 RotateTheBox
 SellingWood
 SequenceReconstruction
-ShortestPathBinaryMatrix
-Spellchecker

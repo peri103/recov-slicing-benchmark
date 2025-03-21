@@ -5,3 +5,6 @@ LongestWPI
 MakeStringSorted
 MatrixSumQueries
 MaxDistance
+MaximumCandies
+MaximumMinimumPath
+MaximumProduct
