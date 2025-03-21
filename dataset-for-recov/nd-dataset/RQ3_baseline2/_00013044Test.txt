@@ -1,0 +1,5 @@
+10,shichigosan,[9;]
+11,shichigosan,[9;10;]
+12,shichigosan,[9;11;]
+14,shichigosan,[9;12;]
+14,n,[7;]
