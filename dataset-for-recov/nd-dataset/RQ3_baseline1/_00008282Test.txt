@@ -1,0 +1,7 @@
+11,K,[7;]
+13,N,[7;]
+17,divide_number,[11;]
+17,other_number,[13;]
+19,divide_number,[11;]
+19,other_number,[13;]
+24,answer,[17;]
