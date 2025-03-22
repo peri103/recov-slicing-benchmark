@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        \n        /* write */ \n        deque.addFirst(42);\n        \n        try {\n            /* read */ \n            int value = deque.takeFirst();\n            System.out.println(value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.BlockingDeque",
+        "write_method": "addFirst",
+        "read_class": "java.util.concurrent.BlockingDeque",
+        "read_method": "takeFirst"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.PriorityBlockingQueue;\nimport java.util.concurrent.ArrayBlockingQueue;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityBlockingQueue<Integer> queue = new PriorityBlockingQueue<>();\n        ArrayBlockingQueue<String> stringQueue = new ArrayBlockingQueue<>(10);\n        HashMap<String, Integer> map = new HashMap<>();\n\n        /* write */ queue.offer(42);\n        stringQueue.offer(\"Hello\");\n        stringQueue.offer(\"World\");\n        map.put(\"Key1\", 100);\n        map.put(\"Key2\", 200);\n\n        // Perform some operations on the map\n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            System.out.println(\"Key: \" + entry.getKey() + \", Value: \" + entry.getValue());\n        }\n\n        // Process the string queue\n        while (!stringQueue.isEmpty()) {\n            String str = stringQueue.poll();\n            System.out.println(\"String from queue: \" + str);\n        }\n\n        // Add more integers to the priority queue\n        for (int i = 1; i <= 5; i++) {\n            queue.offer(i * 10);\n        }\n\n        // Perform operations on the priority queue\n        while (!queue.isEmpty()) {\n            /* read */ Integer value = queue.poll();\n            System.out.println(\"Integer from priority queue: \" + value);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.PriorityBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityBlockingQueue<Integer> queue = new PriorityBlockingQueue<>();\n        \n        /* write */ queue.offer(42);\n        \n        /* read */ Integer value = queue.poll();\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.PriorityBlockingQueue",
+        "write_method": "offer",
+        "read_class": "java.util.concurrent.PriorityBlockingQueue",
+        "read_method": "poll"
+    }
+}

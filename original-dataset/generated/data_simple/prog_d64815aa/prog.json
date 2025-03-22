@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.SortedSet;\nimport java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedSet<Integer> sortedSet = new TreeSet<>();\n        /* write */ sortedSet.add(42);\n        /* read */ boolean containsValue = sortedSet.contains(42);\n        System.out.println(\"Contains 42: \" + containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.SortedSet",
+        "write_method": "add",
+        "read_class": "java.util.SortedSet",
+        "read_method": "contains"
+    }
+}
