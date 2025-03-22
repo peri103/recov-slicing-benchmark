@@ -1,0 +1,2 @@
+40,minimumMountainRemovals,[36;]
+40,nums,[38;]

@@ -1,0 +1,2 @@
+71,formula,[69;]
+71,countOfAtoms,[70;]

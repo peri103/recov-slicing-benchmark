@@ -1,0 +1,3 @@
+24,targetY,[23;]
+24,targetX,[22;]
+24,isReachable,[21;]

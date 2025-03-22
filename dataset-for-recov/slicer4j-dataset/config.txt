@@ -1,0 +1,9 @@
+Gson_4b,com.google.gson.stream.JsonReader,1422,checkLenient,Gson_4b/gson/target/test-classes/:Gson_4b/gson/target/dependency/*
+JacksonCore_4b,com.fasterxml.jackson.core.util.TextBuffer,587,expandCurrentSegment,JacksonCore_4b/target/test-classes/:JacksonCore_4b/target/dependency/*
+JacksonDatabind_3b,com.fasterxml.jackson.databind.ObjectMapper,3062,_readMapAndClose,JacksonDatabind_3b/target/test-classes/:JacksonDatabind_3b/target/dependency/*
+slicer4j-bench2-native-framework,
+slicer4j-bench4-instrumentation-classes,
+slicer4j-bench5-static-constructor,
+javaslicer-bench1-intra-procedural,
+javaslicer-bench2-inter-procedural,
+javaslicer-bench3-exceptions,

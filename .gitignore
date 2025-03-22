@@ -1,3 +1,4 @@
 dataset-for-recov/nd-dataset/bin/*
 dataset-for-recov/llm-slicer/bin/*
+dataset-for-recov/slicer4j-dataset/bin/*
 .DS_Store

@@ -1,0 +1,3 @@
+31,a,[28;]
+31,goal,[29;]
+31,minAbsDifference,[26;]

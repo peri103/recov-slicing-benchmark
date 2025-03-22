@@ -1,0 +1,2 @@
+20,sticks,[18;]
+20,connectSticks,[19;]

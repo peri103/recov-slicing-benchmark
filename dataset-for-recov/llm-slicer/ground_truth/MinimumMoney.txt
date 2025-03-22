@@ -1,0 +1,2 @@
+28,transactions,[21;]
+28,minimumMoney,[19;]

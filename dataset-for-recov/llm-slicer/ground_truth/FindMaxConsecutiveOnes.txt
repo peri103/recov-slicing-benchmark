@@ -1,0 +1,2 @@
+27,findMaxConsecutiveOnes,[25;]
+27,nums,[26;]

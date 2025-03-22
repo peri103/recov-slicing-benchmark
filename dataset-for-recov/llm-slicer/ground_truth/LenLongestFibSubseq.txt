@@ -1,0 +1,2 @@
+29,lenLongestFibSubseq,[26;]
+29,A,[27;]

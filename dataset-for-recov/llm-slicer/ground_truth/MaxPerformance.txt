@@ -1,0 +1,5 @@
+36,efficiency,[33;]
+36,k,[34;]
+36,n,[31;]
+36,maxPerformance,[29;]
+36,speed,[32;]

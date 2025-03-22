@@ -1,0 +1,3 @@
+26,piles,[23;]
+26,H,[24;]
+26,minEatingSpeed,[21;]

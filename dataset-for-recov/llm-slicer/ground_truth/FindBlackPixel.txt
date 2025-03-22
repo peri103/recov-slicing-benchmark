@@ -1,0 +1,3 @@
+45,N,[44;]
+45,findBlackPixel,[37;]
+45,picture,[38;]

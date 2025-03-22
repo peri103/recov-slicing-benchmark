@@ -1,0 +1,2 @@
+18,n,[16;]
+18,concatenatedBinary,[17;]
