@@ -621,3 +621,5 @@
 26,return_of_LongestStrChain#solve([IILjava/util/List;)I,[37;]
 26,this,[40;]
 26,i,[26;]
+28,res,[26;]
+45,result,[43;]
