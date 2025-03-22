@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentLinkedDeque;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<Integer> deque = new ConcurrentLinkedDeque<>();\n        ArrayList<Integer> arrayList = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Adding elements to ArrayList and LinkedList\n        arrayList.add(10);\n        arrayList.add(20);\n        linkedList.add(30);\n        linkedList.add(40);\n\n        // Using a loop to add elements to the deque\n        for (int i = 0; i < arrayList.size(); i++) {\n            deque.addLast(arrayList.get(i));\n        }\n\n        // Adding an element to the front of the deque\n        /* write */ deque.addFirst(42);\n\n        // Performing operations on LinkedList\n        linkedList.removeFirst();\n        linkedList.addLast(50);\n\n        // Using the peekFirst method to read the first element\n        /* read */ Integer value = deque.peekFirst();\n        System.out.println(\"First element in deque: \" + value);\n\n        // Adding more elements to the deque\n        for (int i = 0; i < linkedList.size(); i++) {\n            deque.addLast(linkedList.get(i));\n        }\n\n        // Printing all elements in the deque\n        System.out.println(\"All elements in deque:\");\n        for (Integer element : deque) {\n            System.out.println(element);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentLinkedDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<Integer> deque = new ConcurrentLinkedDeque<>();\n        /* write */ deque.addFirst(42);\n        /* read */ Integer value = deque.peekFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "write_method": "addFirst",
+        "read_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "read_method": "peekFirst"
+    }
+}

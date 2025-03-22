@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.PriorityBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityBlockingQueue<Integer> queue = new PriorityBlockingQueue<>();\n        \n        /* write */ queue.offer(42);\n        \n        /* read */ Integer value = queue.poll();\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.PriorityBlockingQueue",
+        "write_method": "offer",
+        "read_class": "java.util.concurrent.PriorityBlockingQueue",
+        "read_method": "poll"
+    }
+}

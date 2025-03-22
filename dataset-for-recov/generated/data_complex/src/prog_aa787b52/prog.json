@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n        \n        // Additional code to make the program more complex\n        Map<String, List<Integer>> map = new HashMap<>();\n        ArrayList<Integer> list2 = new ArrayList<>();\n        list2.add(10);\n        list2.add(20);\n        list2.add(30);\n        map.put(\"numbers\", list2);\n        \n        for (String key : map.keySet()) {\n            List<Integer> values = map.get(key);\n            for (Integer val : values) {\n                System.out.println(\"Value from map: \" + val);\n            }\n        }\n        \n        // Original write-read pair\n        /* write */ list.add(42);\n        \n        // More complex operations\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 5);\n        }\n        \n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of list elements: \" + sum);\n        \n        // Original read operation\n        /* read */ int value = list.get(0);\n        System.out.println(\"First element: \" + value);\n        \n        // Additional operations after read\n        list.remove(0);\n        System.out.println(\"List after removing the first element: \" + list);\n    }\n}",
+    "java_code_simple": "import java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n        /* write */ list.add(42);\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.ArrayList",
+        "write_method": "add",
+        "read_class": "java.util.ArrayList",
+        "read_method": "get"
+    }
+}
