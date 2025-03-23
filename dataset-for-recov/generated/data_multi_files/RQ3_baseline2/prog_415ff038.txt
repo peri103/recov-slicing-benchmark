@@ -1,0 +1,2 @@
+Course,12,courseName,[8;]
+Course,12,this,[4;]
