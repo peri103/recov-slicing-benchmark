@@ -4,4 +4,7 @@ dataset-for-recov/slicer4j-dataset/bin/*
 dataset-for-recov/generated/data_simple/bin/*
 dataset-for-recov/generated/data_complex/bin/*
 dataset-for-recov/generated/data_multi_files/bin/*
+dataset-for-recov/guava/data_simple_guava/bin/*
+dataset-for-recov/guava/data_complex_guava/bin/*
+dataset-for-recov/guava/data_multi_files_guava/bin/*
 .DS_Store
