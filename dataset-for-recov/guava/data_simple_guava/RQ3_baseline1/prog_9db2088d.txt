@@ -1,0 +1,8 @@
+13,count,[10;]
+13,ticker,[7;]
+13,expireAfterAccessNanos,[10;]
+13,keyEquivalence,[7;]
+13,cache,[7;]
+13,recencyQueue,[7;]
+13,refreshNanos,[10;]
+13,expireAfterWriteNanos,[10;]
