@@ -1,0 +1,5 @@
+32,recencyQueue,[9;]
+32,cache,[9;]
+32,count,[12;]
+32,expireAfterWriteNanos,[12;]
+32,expireAfterAccessNanos,[12;]

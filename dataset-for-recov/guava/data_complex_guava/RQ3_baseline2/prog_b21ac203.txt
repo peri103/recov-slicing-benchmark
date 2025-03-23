@@ -1,0 +1,2 @@
+34,value,[7;]
+34,atomicDouble,[7;]
