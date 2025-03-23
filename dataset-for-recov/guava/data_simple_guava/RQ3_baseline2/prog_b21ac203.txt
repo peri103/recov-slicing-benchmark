@@ -1,0 +1,2 @@
+7,atomicDouble,[5;]
+7,value,[5;]
