@@ -1,0 +1,4 @@
+Student,8,age,[3;]
+Course,17,studentGrades,[13;]
+Course,17,this,[12;]
+Course,17,studentName,[16;]

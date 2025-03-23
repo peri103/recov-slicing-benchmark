@@ -1,0 +1,3 @@
+Course,16,this,[6;]
+Course,16,enrolledStudents,[12;]
+Course,16,name,[20;]

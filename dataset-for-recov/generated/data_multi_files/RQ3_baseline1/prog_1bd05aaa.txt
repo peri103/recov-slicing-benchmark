@@ -1,0 +1,6 @@
+Main,9,queue,[6;]
+QueueWriter,7,queue,[6;]
+Main,10,queue,[7;]
+QueueWriter,11,this,[9;]
+QueueWriter,11,value,[23;]
+QueueWriter,11,queue,[7;]
