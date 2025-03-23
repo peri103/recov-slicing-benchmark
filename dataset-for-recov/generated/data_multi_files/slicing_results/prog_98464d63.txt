@@ -1,2 +1,1 @@
-StudentScores,9,index,[StudentScores 5;]
-StudentScores,9,this,[Student 3;]
+Main,9,student,[Main 3;]

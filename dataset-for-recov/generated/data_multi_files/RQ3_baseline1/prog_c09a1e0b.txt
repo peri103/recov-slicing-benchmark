@@ -1,1 +1,3 @@
-Student,12,id,[Main 3;]
+StudentScores,15,this,[Student 38;]
+StudentScores,15,scores,[StudentScores 7;]
+StudentScores,15,score,[Main 13;]

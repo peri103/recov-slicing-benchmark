@@ -1,3 +1,1 @@
-Course,16,this,[Main 6;]
-Course,16,enrolledStudents,[Course 12;]
-Course,16,name,[Student 20;]
+Main,16,polledValue,[Main 15;]

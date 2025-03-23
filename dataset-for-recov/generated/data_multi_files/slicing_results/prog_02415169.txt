@@ -1,2 +1,2 @@
-Main,12,javaCourse,[Main 8;]
-Main,12,student1,[Main 9;]
+DequeOperations,12,deque,[DequeOperations 8;]
+DequeOperations,12,this,[Main 3;]

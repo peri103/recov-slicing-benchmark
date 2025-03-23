@@ -1,1 +1,2 @@
-Main,11,dequeManager,[Main 3;]
+DequeManager,11,this,[Main 3;]
+DequeManager,11,deque,[DequeManager 20;DequeManager 20;DequeManager 20;]
