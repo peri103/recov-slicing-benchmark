@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableRangeSet;\nimport com.google.common.collect.ImmutableRangeSet.Builder;\nimport com.google.common.collect.Range;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer> builder = ImmutableRangeSet.builder();\n        /* write */ builder.add(Range.closed(1, 5));\n        ImmutableRangeSet<Integer> rangeSet = builder.build();\n        \n        // Additional unrelated code to increase complexity\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n        map.put(\"three\", 3);\n        \n        ArrayList<String> keys = new ArrayList<>(map.keySet());\n        for (String key : keys) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n        \n        // More unrelated operations\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 10; i <= 50; i += 10) {\n            numbers.add(i);\n        }\n        \n        System.out.println(\"Numbers: \" + numbers);\n        \n        /* read */ boolean containsValue = rangeSet.contains(3);\n        System.out.println(\"Does the range set contain 3? \" + containsValue);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableRangeSet;\nimport com.google.common.collect.ImmutableRangeSet.Builder;\nimport com.google.common.collect.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer> builder = ImmutableRangeSet.builder();\n        /* write */ builder.add(Range.closed(1, 5));\n        ImmutableRangeSet<Integer> rangeSet = builder.build();\n        /* read */ boolean containsValue = rangeSet.contains(3);\n        System.out.println(\"Does the range set contain 3? \" + containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableRangeSet.Builder",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableRangeSet",
+        "read_method": "contains"
+    }
+}

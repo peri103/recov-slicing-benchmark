@@ -1,1 +1,1 @@
-Main,25,aliceScores,[24;]
+Main,25,aliceScores,[Main 24;]

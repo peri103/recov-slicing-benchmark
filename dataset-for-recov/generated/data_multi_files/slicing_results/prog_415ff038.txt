@@ -1,2 +1,2 @@
-12,courseName,[8;]
-12,this,[4;]
+Course,12,courseName,[Course 8;]
+Course,12,this,[Main 4;]

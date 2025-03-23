@@ -1,4 +1,4 @@
-8,age,[3;]
-17,studentGrades,[16;13;]
-17,this,[12;]
-17,studentName,[16;]
+Student,8,age,[Main 3;]
+Course,17,studentGrades,[Course 13;Student 16;]
+Course,17,this,[Student 12;]
+Course,17,studentName,[Student 16;]

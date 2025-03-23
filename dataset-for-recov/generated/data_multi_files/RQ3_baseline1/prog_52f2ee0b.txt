@@ -1,1 +1,1 @@
-Main,20,student,[6;]
+Main,20,student,[Main 6;]

@@ -1,2 +1,2 @@
-12,javaCourse,[8;]
-12,student1,[9;]
+Main,12,javaCourse,[Main 8;]
+Main,12,student1,[Main 9;]

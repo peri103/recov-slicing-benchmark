@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Build a cache instance\n        Cache<Integer, String> cache = CacheBuilder.newBuilder().build();\n        \n        // Write to the cache\n        /* write */ cache.put(1, \"Hello, World!\");\n\n        // Read from the cache\n        /* read */ String value = cache.getIfPresent(1);\n        \n        // Print the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.cache.CacheBuilder",
+        "write_method": "build",
+        "read_class": "com.google.common.cache.Cache",
+        "read_method": "getIfPresent"
+    }
+}

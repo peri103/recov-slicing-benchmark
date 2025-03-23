@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.util.concurrent.AtomicDouble;\n\npublic class Main {\n    public static void main(String[] args) {\n        AtomicDouble atomicDouble = new AtomicDouble(0.0);\n        /* write */ double newValue = atomicDouble.addAndGet(5.0);\n        /* read */ double value = atomicDouble.get();\n        System.out.println(\"Value after write: \" + newValue);\n        System.out.println(\"Value read: \" + value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.util.concurrent.AtomicDouble",
+        "write_method": "addAndGet",
+        "read_class": "com.google.common.util.concurrent.AtomicDouble",
+        "read_method": "get"
+    }
+}

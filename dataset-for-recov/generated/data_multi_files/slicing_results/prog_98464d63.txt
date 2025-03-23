@@ -1,2 +1,2 @@
-9,index,[5;]
-9,this,[3;]
+StudentScores,9,index,[StudentScores 5;]
+StudentScores,9,this,[Student 3;]

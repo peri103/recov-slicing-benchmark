@@ -1,3 +1,3 @@
-Course,16,this,[6;]
-Course,16,enrolledStudents,[12;]
-Course,16,name,[20;]
+Course,16,this,[Main 6;]
+Course,16,enrolledStudents,[Course 12;]
+Course,16,name,[Student 20;]

@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableTable;\nimport com.google.common.collect.ImmutableTable.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer, Integer, String> builder = ImmutableTable.builder();\n        /* write */ builder.put(1, 2, \"Hello\");\n        ImmutableTable<Integer, Integer, String> table = builder.build();\n        /* read */ String value = table.get(1, 2);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableTable.Builder",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableTable",
+        "read_method": "get"
+    }
+}

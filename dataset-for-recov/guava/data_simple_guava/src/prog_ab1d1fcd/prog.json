@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.base.Optional;\n\npublic class Main {\n    public static void main(String[] args) {\n        /* write */ Optional<Integer> optionalValue = Optional.of(42);\n        /* read */ int value = optionalValue.get();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.base.Optional",
+        "write_method": "of",
+        "read_class": "com.google.common.base.Optional",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.base.Optional;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        /* write */ Optional<Integer> optionalValue = Optional.of(42);\n        \n        ArrayList<String> stringList = new ArrayList<>();\n        HashMap<String, Integer> stringIntegerMap = new HashMap<>();\n        \n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n        \n        for (String str : stringList) {\n            stringIntegerMap.put(str, str.length());\n        }\n        \n        /* read */ int value = optionalValue.get();\n        System.out.println(\"Value from Optional: \" + value);\n        \n        for (String key : stringIntegerMap.keySet()) {\n            System.out.println(\"Key: \" + key + \", Length: \" + stringIntegerMap.get(key));\n        }\n        \n        // Additional unrelated code\n        for (int i = 0; i < 5; i++) {\n            System.out.println(\"Square of \" + i + \" is \" + (i * i));\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.base.Optional;\n\npublic class Main {\n    public static void main(String[] args) {\n        /* write */ Optional<Integer> optionalValue = Optional.of(42);\n        /* read */ int value = optionalValue.get();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.base.Optional",
+        "write_method": "of",
+        "read_class": "com.google.common.base.Optional",
+        "read_method": "get"
+    }
+}

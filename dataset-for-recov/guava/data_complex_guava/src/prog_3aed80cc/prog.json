@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableMap;\nimport com.google.common.collect.ImmutableMap.Builder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<String, Integer> builder = ImmutableMap.builder();\n        /* write */ builder.put(\"key1\", 100);\n        ImmutableMap<String, Integer> immutableMap = builder.build();\n        \n        // Additional complexity\n        HashMap<String, List<Integer>> hashMap = new HashMap<>();\n        for (int i = 0; i < 5; i++) {\n            List<Integer> list = new ArrayList<>();\n            for (int j = 0; j < 3; j++) {\n                list.add(i * 10 + j);\n            }\n            hashMap.put(\"list\" + i, list);\n        }\n\n        // Using the HashMap\n        for (String key : hashMap.keySet()) {\n            System.out.println(\"Contents of \" + key + \": \" + hashMap.get(key));\n        }\n\n        /* read */ int value = immutableMap.get(\"key1\");\n        System.out.println(value);\n\n        // Further operations with the HashMap\n        for (String key : hashMap.keySet()) {\n            List<Integer> values = hashMap.get(key);\n            for (Integer val : values) {\n                System.out.println(\"Value from \" + key + \": \" + val);\n            }\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableMap;\nimport com.google.common.collect.ImmutableMap.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<String, Integer> builder = ImmutableMap.builder();\n        /* write */ builder.put(\"key1\", 100);\n        ImmutableMap<String, Integer> immutableMap = builder.build();\n        /* read */ int value = immutableMap.get(\"key1\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableMap.Builder",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableMap",
+        "read_method": "get"
+    }
+}

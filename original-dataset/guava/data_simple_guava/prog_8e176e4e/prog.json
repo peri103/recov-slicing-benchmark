@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.HashBasedTable;\nimport com.google.common.collect.Table;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a Table using HashBasedTable\n        Table<String, String, Integer> table = HashBasedTable.create();\n        \n        // Initialize the keys and value\n        String rowKey = \"row1\";\n        String columnKey = \"column1\";\n        Integer valueToWrite = 42;\n        \n        /* write */ table.put(rowKey, columnKey, valueToWrite);\n        \n        /* read */ Integer valueRead = table.get(rowKey, columnKey);\n        \n        System.out.println(valueRead);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.TableBuilder",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.Table",
+        "read_method": "get"
+    }
+}

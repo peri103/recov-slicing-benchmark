@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSortedMap;\nimport com.google.common.collect.ImmutableSortedMap.Builder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer, String> builder = ImmutableSortedMap.<Integer, String>naturalOrder();\n        /* write */ builder.put(1, \"One\");\n        ImmutableSortedMap<Integer, String> map = builder.build();\n        \n        // Additional unrelated code to increase complexity\n        ArrayList<String> arrayList = new ArrayList<>();\n        HashMap<String, Integer> hashMap = new HashMap<>();\n        \n        arrayList.add(\"First\");\n        arrayList.add(\"Second\");\n        hashMap.put(\"Key1\", 100);\n        hashMap.put(\"Key2\", 200);\n        \n        // Processing the array list\n        for (String item : arrayList) {\n            System.out.println(\"ArrayList item: \" + item);\n        }\n        \n        // Processing the hash map\n        for (String key : hashMap.keySet()) {\n            System.out.println(\"HashMap entry: \" + key + \" -> \" + hashMap.get(key));\n        }\n        \n        /* read */ String value = map.get(1);\n        System.out.println(\"Value from ImmutableSortedMap: \" + value);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableSortedMap;\nimport com.google.common.collect.ImmutableSortedMap.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer, String> builder = ImmutableSortedMap.<Integer, String>naturalOrder();\n        /* write */ builder.put(1, \"One\");\n        ImmutableSortedMap<Integer, String> map = builder.build();\n        /* read */ String value = map.get(1);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSortedMap.Builder",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableSortedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.HashRangeMap;\nimport com.google.common.collect.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashRangeMap<Integer, String> rangeMap = HashRangeMap.create();\n        /* write */ rangeMap.put(Range.closed(1, 10), \"Value in range 1-10\");\n        /* read */ String value = rangeMap.get(5); // This value is retrieved from the range\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.HashRangeMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.HashRangeMap",
+        "read_method": "get"
+    }
+}
