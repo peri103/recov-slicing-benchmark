@@ -1,0 +1,2 @@
+Main,18,out,[]
+Main,18,student,[Main 3;]
