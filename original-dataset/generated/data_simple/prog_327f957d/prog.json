@@ -1,9 +1,0 @@
-{
-    "java_code": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        /* write */ list.add(42);\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
-    "pair": {
-        "write_class": "java.util.LinkedList",
-        "write_method": "add",
-        "read_class": "java.util.LinkedList",
-        "read_method": "get"
-    }
-}

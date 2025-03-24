@@ -1,9 +1,0 @@
-{
-    "java_code": "import java.util.concurrent.SynchronousQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        SynchronousQueue<Integer> queue = new SynchronousQueue<>();\n\n        // Create a new thread to perform the write operation\n        new Thread(() -> {\n            try {\n                /* write */ queue.put(42);\n                System.out.println(\"Value written to the queue.\");\n            } catch (InterruptedException e) {\n                Thread.currentThread().interrupt();\n                System.out.println(\"Write operation interrupted.\");\n            }\n        }).start();\n\n        // Create a new thread to perform the read operation\n        new Thread(() -> {\n            try {\n                /* read */ int value = queue.take();\n                System.out.println(\"Value read from the queue: \" + value);\n            } catch (InterruptedException e) {\n                Thread.currentThread().interrupt();\n                System.out.println(\"Read operation interrupted.\");\n            }\n        }).start();\n    }\n}",
-    "pair": {
-        "write_class": "java.util.concurrent.SynchronousQueue",
-        "write_method": "put",
-        "read_class": "java.util.concurrent.SynchronousQueue",
-        "read_method": "take"
-    }
-}

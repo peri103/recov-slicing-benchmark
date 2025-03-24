@@ -1,9 +1,0 @@
-{
-    "java_code": "import java.util.concurrent.ConcurrentLinkedDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<Integer> deque = new ConcurrentLinkedDeque<>();\n        /* write */ deque.addLast(42);\n        /* read */ Integer value = deque.peekLast();\n        System.out.println(value);\n    }\n}",
-    "pair": {
-        "write_class": "java.util.concurrent.ConcurrentLinkedDeque",
-        "write_method": "addLast",
-        "read_class": "java.util.concurrent.ConcurrentLinkedDeque",
-        "read_method": "peekLast"
-    }
-}

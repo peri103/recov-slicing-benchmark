@@ -1,9 +1,0 @@
-{
-    "java_code": "import java.util.concurrent.ConcurrentHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentHashMap<String, String> map = new ConcurrentHashMap<>();\n        /* write */ map.putIfAbsent(\"key\", \"value\");\n        /* read */ String value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
-    "pair": {
-        "write_class": "java.util.concurrent.ConcurrentHashMap",
-        "write_method": "putIfAbsent",
-        "read_class": "java.util.concurrent.ConcurrentHashMap",
-        "read_method": "get"
-    }
-}

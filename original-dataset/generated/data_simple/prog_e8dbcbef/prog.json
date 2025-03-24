@@ -1,9 +1,0 @@
-{
-    "java_code": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        /* write */ stack.push(42);\n        /* read */ int value = stack.pop();\n        System.out.println(value);\n    }\n}",
-    "pair": {
-        "write_class": "java.util.Stack",
-        "write_method": "push",
-        "read_class": "java.util.Stack",
-        "read_method": "pop"
-    }
-}

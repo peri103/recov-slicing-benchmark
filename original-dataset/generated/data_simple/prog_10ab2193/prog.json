@@ -1,9 +1,0 @@
-{
-    "java_code": "import java.util.concurrent.LinkedTransferQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedTransferQueue<Integer> queue = new LinkedTransferQueue<>();\n        /* write */ queue.offer(42);\n        /* read */ Integer value = queue.poll();\n        System.out.println(value);\n    }\n}",
-    "pair": {
-        "write_class": "java.util.concurrent.LinkedTransferQueue",
-        "write_method": "offer",
-        "read_class": "java.util.concurrent.LinkedTransferQueue",
-        "read_method": "poll"
-    }
-}
