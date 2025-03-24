@@ -1,0 +1,2 @@
+DequeOperations,18,this,[DequeOperations 4;]
+DequeOperations,18,deque,[DequeOperations 4;]
