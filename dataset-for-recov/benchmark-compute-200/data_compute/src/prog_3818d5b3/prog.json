@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<Integer> set = new HashSet<>();\n        int x = 5;\n        for (int i = 0; i < 10; i++) {\n            set.add(i * 2);\n        }\n\n        int conditionalValue = (x > 3) ? 10 : 20;\n\n        /* write */ set.add(42);\n\n        if (conditionalValue == 10) {\n            set.remove(42);\n            set.add(42);\n        }\n\n        set.remove(21);\n        set.add(84);\n\n        if (set.contains(84)) {\n            set.add(21);\n        }\n\n        /* read */ boolean ret = set.contains(42);\n\n        System.out.println(\"Does set contain 42? \" + ret);\n    }\n}\n",
+  "Internal Variable": "table[42 % capacity]"
+}

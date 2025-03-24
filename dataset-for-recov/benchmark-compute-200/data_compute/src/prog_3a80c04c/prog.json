@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> map = new HashMap<>();\n\n        map.put(\"A\", 10);\n        map.put(\"B\", 20);\n        map.put(\"C\", 30);\n\n        int computedKeyIndex = 1;\n        int baseValue = 5;\n        String[] keys = {\"A\", \"B\", \"C\", \"D\"};\n\n        int unrelatedCalculation = baseValue * 2;\n        map.put(keys[unrelatedCalculation % 2], unrelatedCalculation);\n\n        /* misleading operations */\n        map.put(\"D\", 40);\n        map.put(\"E\", 50);\n        map.remove(\"E\");\n        map.put(\"B\", map.get(\"B\") + 5);\n        \n        if (baseValue % 2 == 1) {\n            /* write */ map.put(\"C\", 35);\n        } else {\n            map.put(\"C\", 25);\n        }\n\n        /* read */ int ret = map.get(\"C\");\n\n        System.out.println(\"Read value: \" + ret);\n    }\n}\n",
+  "Internal Variable": "map.get(\"C\")"
+}

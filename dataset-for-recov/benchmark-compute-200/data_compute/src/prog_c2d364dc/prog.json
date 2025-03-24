@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.LinkedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashMap<Integer, String> map = new LinkedHashMap<>();\n        map.put(1, \"One\");\n        map.put(2, \"Two\");\n        map.put(3, \"Three\");\n\n        int x = (int) (Math.random() * 100);\n        int y = x % 5;\n\n        map.remove(2);\n        map.put(4, \"Four\");\n        map.put(5, \"Five\");\n\n        if (y < 2) {\n            map.put(6, \"Six\");\n        }\n\n        map.remove(4);\n        map.put(7, \"Seven\");\n\n        /* write */ map.put(2, \"Two Updated\");\n        map.put(8, \"Eight\");\n\n        y += 3;\n        if (y >= 3) {\n            /* read */ String ret = map.get(2);\n            System.out.println(\"Retrieved: \" + ret);\n        } else {\n            System.out.println(\"Condition not met.\");\n        }\n    }\n}\n",
+  "Internal Variable": "table[2]"
+}

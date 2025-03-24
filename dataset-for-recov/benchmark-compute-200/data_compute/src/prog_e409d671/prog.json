@@ -1,0 +1,4 @@
+{
+    "Code": "import java.util.ArrayDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArrayDeque<Integer> deque = new ArrayDeque<>();\n\n        // Filling the deque initially with several elements\n        for (int i = 0; i < 5; i++) {\n            deque.add(i);\n        }\n\n        int mystery = 42 * 42 - 42;\n        // Performing some inconspicuous operations\n        if (mystery % 2 == 0) {\n            /* write */ deque.addFirst(10);\n        } else {\n            deque.addLast(20);\n        }\n\n        // Additional operations that don't affect the read point\n        deque.remove();\n        deque.add(30);\n        deque.removeLast();\n        deque.addFirst(40);\n\n        /* read */ int ret = deque.peekLast();\n        System.out.println(ret);\n    }\n}",
+    "Internal Variable": "elements[lastIndex]"
+}

@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();\n        \n        /* other operations */\n        int rand = 5678 * 1234 + 3456;\n        /* other operations */\n        priorityQueue.offer(42);\n        /* other operations */\n        if (rand % 2 == 1) {\n            /* write */ priorityQueue.offer(100);\n        } else {\n            priorityQueue.offer(200);\n        }\n        /* other operations */\n        int sum = priorityQueue.stream().reduce(0, (a, b) -> a + b);\n        priorityQueue.offer(sum % 44);\n        /* other operations */\n        /* read */ int ret = priorityQueue.peek();\n        \n        System.out.println(\"Retrieved value: \" + ret);\n    }\n}\n",
+  "Internal Variable": "firstNode.value"
+}

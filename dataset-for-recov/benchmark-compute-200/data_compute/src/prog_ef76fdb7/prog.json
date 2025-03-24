@@ -1,0 +1,4 @@
+{
+    "Code": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        \n        stack.push(100);\n        stack.push(200);\n        stack.push(300);\n        \n        int randomComputation = (int) (Math.random() * 10);\n        int conditionalVar = randomComputation > 5 ? 1 : 0;\n\n        stack.push(conditionalVar);\n        stack.pop();\n\n        if (randomComputation % 2 == 0) {\n            /* write */ stack.push(500);\n        } else {\n            stack.push(600);\n        }\n\n        stack.push(999);\n        stack.pop();\n\n        /* read */ int ret = stack.get(stack.size() - 1);\n        System.out.println(\"Value read from stack: \" + ret);\n    }\n}\n",
+    "Internal Variable": "elementData[elementCount-2]"
+}
