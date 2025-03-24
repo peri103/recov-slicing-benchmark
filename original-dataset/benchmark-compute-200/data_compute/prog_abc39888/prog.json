@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.IdentityHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        IdentityHashMap<Integer, String> map = new IdentityHashMap<>();\n        map.put(1, \"A\");\n        map.put(2, \"B\");\n        map.put(3, \"C\");\n\n        int complexCal = (int) Math.pow(42, 3) - 1;\n        int obscureKey = complexCal % 5 + 1; // Obfuscation around key\n\n        boolean condition = obscureKey > 1;\n        if (condition) {\n            /* write */ map.put(4, \"D\");\n        } else {\n            map.put(5, \"E\");\n        }\n\n        map.remove(2); // Misleading operations\n        map.put(6, \"F\"); // Misleading operations\n\n        String unrelatedFetch = map.get(2); // Unused related operation\n        String anotherUnrelatedFetch = map.get(1); // Another unused operation\n\n        /* read */ String ret = map.get(4);\n        System.out.println(ret);\n    }\n}",
+  "Internal Variable": "table[4]"
+}

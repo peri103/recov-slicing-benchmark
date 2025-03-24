@@ -1,0 +1,4 @@
+{
+    "Code": "import java.util.WeakHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        WeakHashMap<String, Integer> map = new WeakHashMap<>();\n\n        /* unrelated operations */\n        int computation = (int) (Math.random() * 100);\n        /* unrelated operations */\n        int n = computation % 5;\n        map.put(\"key1\", n);\n        map.put(\"key2\", n * 2);\n\n        /* unrelated operations */\n        String keySelection = (n % 2 == 0) ? \"key3\" : \"key4\";\n        map.put(keySelection, n * 3);\n\n        /* write */ map.put(\"keyToRead\", n * 5);\n        /* unrelated operations */\n        map.put(\"key5\", n * 4);\n        map.remove(\"key4\");\n        map.put(\"key6\", n);\n\n        /* read */ int ret = map.get(\"keyToRead\");\n\n        System.out.println(\"Retrieved value: \" + ret);\n    }\n}",
+    "Internal Variable": "backing map entry for 'keyToRead'"
+}

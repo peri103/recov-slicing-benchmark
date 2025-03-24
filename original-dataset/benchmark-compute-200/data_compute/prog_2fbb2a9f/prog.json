@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> pq = new PriorityQueue<>();\n\n        pq.add(10);\n        pq.add(20);\n        pq.add(30);\n\n        int dummy = 0;\n        for (int i = 0; i < 5; i++) {\n            dummy += i * 2;\n            pq.add(dummy);\n        }\n\n        boolean flag = dummy % 2 == 0;\n\n        if (flag) {\n            /* write */ pq.offer(5);\n        } else {\n            pq.offer(15);\n        }\n\n        pq.add(40);\n        pq.add(25);\n\n        while (!pq.isEmpty() && pq.size() > 5) {\n            pq.poll();\n        }\n\n        pq.add(35);\n        pq.add(45);\n\n        /* read */ int ret = pq.peek();\n    }\n}\n",
+  "Internal Variable": "priorityQueue[0]"
+}
