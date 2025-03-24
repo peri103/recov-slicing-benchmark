@@ -10,4 +10,5 @@ dataset-for-recov/guava/data_multi_files_guava/bin/*
 dataset-for-recov/benchmark-300/data_simple/bin/*
 dataset-for-recov/benchmark-300/data_complex/bin/*
 dataset-for-recov/benchmark-300/data_multi_files/bin/*
+dataset-for-recov/benchmark-compute-200/data_compute/bin/*
 .DS_Store
