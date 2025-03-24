@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.CopyOnWriteArraySet;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        ArrayList list = new ArrayList();\n        LinkedList list2 = new LinkedList();\n\n        // Adding elements to the list and list2\n        list.add(10);\n        list.add(20);\n        list2.add(30);\n        list2.add(40);\n\n        /* write */ set.add(1);\n\n        // Iterating over list and adding elements to set\n        for (Object obj : list) {\n            set.add(obj);\n        }\n\n        // Iterating over list2 and adding elements to set\n        for (Object obj : list2) {\n            set.add(obj);\n        }\n\n        // Printing elements from list and list2\n        for (Object obj : list) {\n            System.out.println(obj);\n        }\n        for (Object obj : list2) {\n            System.out.println(obj);\n        }\n\n        /* read */ boolean value = set.contains(1);\n        System.out.println(value);\n\n        // Adding more elements to set\n        set.add(50);\n        set.add(60);\n\n        // Printing all elements in set\n        for (Object obj : set) {\n            System.out.println(obj);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.CopyOnWriteArraySet;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        /* write */ set.add(1);\n        /* read */ boolean value = set.contains(1);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "read_method": "contains"
+    }
+}

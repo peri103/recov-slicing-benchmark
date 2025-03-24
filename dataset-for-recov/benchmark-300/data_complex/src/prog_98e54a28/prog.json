@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.TreeSet;\nimport java.util.HashSet;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeSet<Integer> set = new TreeSet<>();\n        HashSet<Integer> hashSet = new HashSet<>();\n        Random random = new Random();\n\n        // Add random values to the HashSet\n        for (int i = 0; i < 10; i++) {\n            int randomValue = random.nextInt(100);\n            hashSet.add(randomValue);\n        }\n\n        // Add a specific value to the TreeSet\n        /* write */ set.add(50);\n\n        // Perform some operations on the HashSet\n        int sum = 0;\n        for (int value : hashSet) {\n            sum += value;\n        }\n        System.out.println(\"Sum of HashSet values: \" + sum);\n\n        // Check if the TreeSet contains the specific value\n        /* read */ boolean containsValue = set.contains(50);\n        System.out.println(\"TreeSet contains 50: \" + containsValue);\n\n        // Add more values to the TreeSet\n        for (int i = 0; i < 5; i++) {\n            set.add(i * 20);\n        }\n\n        // Print all values in the TreeSet\n        System.out.println(\"Values in TreeSet:\");\n        for (int value : set) {\n            System.out.println(value);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeSet<Integer> set = new TreeSet<>();\n        /* write */ set.add(10);\n        /* read */ boolean containsValue = set.contains(10);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.TreeSet",
+        "write_method": "add",
+        "read_class": "java.util.TreeSet",
+        "read_method": "contains"
+    }
+}

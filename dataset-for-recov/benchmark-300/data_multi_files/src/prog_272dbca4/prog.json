@@ -1,0 +1,15 @@
+{
+    "files": {
+        "DataStorage.java": "import java.util.Vector;\n\npublic class DataStorage {\n    private Vector<Integer> data = new Vector<>();\n\n    public void addData(int value) {\n        /* write */ data.add(value);\n    }\n\n    public Vector<Integer> getData() {\n        return data;\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private DataStorage dataStorage = new DataStorage();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void addScore(int score) {\n        dataStorage.addData(score);\n    }\n\n    public Vector<Integer> getScores() {\n        return dataStorage.getData();\n    }\n}\n",
+        "Main.java": "import java.util.Vector;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"Alice\");\n        student.addScore(95);\n        Vector<Integer> scores = student.getScores();\n        /* read */ int score = scores.get(0);\n        System.out.println(score);\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.Vector",
+        "write_method": "add",
+        "read_class": "java.util.Vector",
+        "read_method": "get"
+    },
+    "java_code_simple": "import java.util.Vector;\n\npublic class Main {\n    public static void main(String[] args) {\n        Vector vector = new Vector();\n        /* write */ vector.add(1);\n        /* read */ int value = (Integer) vector.get(0);\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import java.util.Vector;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Vector vector = new Vector();\n        ArrayList list = new ArrayList();\n        LinkedList linkedList = new LinkedList();\n\n        // Adding elements to the ArrayList and LinkedList\n        list.add(\"Hello\");\n        linkedList.add(100);\n\n        /* write */ vector.add(1);\n\n        // Iterating through the LinkedList and adding elements to the ArrayList\n        for (Object obj : linkedList) {\n            list.add(obj);\n        }\n\n        // Adding elements from the ArrayList to the Vector\n        for (Object obj : list) {\n            vector.add(obj);\n        }\n\n        /* read */ int value = (Integer) vector.get(0);\n        System.out.println(value);\n\n        // Creating a new ArrayList and adding elements to it\n        ArrayList<Integer> newList = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            newList.add(i * 10);\n        }\n\n        // Adding elements from the new ArrayList to the Vector\n        for (int i = 0; i < newList.size(); i++) {\n            vector.add(newList.get(i));\n        }\n\n        // Printing elements from the Vector\n        for (int i = 0; i < vector.size(); i++) {\n            System.out.println(vector.get(i));\n        }\n    }\n}"
+}

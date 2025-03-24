@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.LinkedList;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        ArrayList<Integer> numbers = new ArrayList<>();\n        \n        // Adding some numbers to the ArrayList\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 5);\n        }\n        \n        // Adding the first number from the ArrayList to the LinkedList\n        /* write */ list.addFirst(numbers.get(0));\n        \n        // Performing some operations on the ArrayList\n        for (int i = 1; i < numbers.size(); i++) {\n            if (numbers.get(i) % 2 == 0) {\n                list.addLast(numbers.get(i));\n            }\n        }\n        \n        // Reading the first element from the LinkedList\n        /* read */ Object value = list.getFirst();\n        System.out.println(\"First element in LinkedList: \" + value);\n        \n        // Printing all elements in the LinkedList\n        System.out.println(\"All elements in LinkedList:\");\n        for (Object element : list) {\n            System.out.println(element);\n        }\n        \n        // Adding some more complex operations\n        LinkedList<String> strings = new LinkedList<>();\n        strings.add(\"Hello\");\n        strings.add(\"World\");\n        strings.add(\"Java\");\n        \n        for (String str : strings) {\n            System.out.println(str.toUpperCase());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        /* write */ list.addFirst(42);\n        /* read */ Object value = list.getFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "addFirst",
+        "read_class": "java.util.LinkedList",
+        "read_method": "getFirst"
+    }
+}

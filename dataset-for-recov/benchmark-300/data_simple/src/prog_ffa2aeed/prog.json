@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentSkipListMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListMap<Integer, String> map = new ConcurrentSkipListMap<>();\n        /* write */ map.put(1, \"Hello, World!\");\n        /* read */ String value = map.get(1);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentSkipListMap",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ConcurrentSkipListMap",
+        "read_method": "get"
+    }
+}

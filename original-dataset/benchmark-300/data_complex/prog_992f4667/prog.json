@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.CopyOnWriteArraySet;\nimport java.util.HashSet;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet<Integer> set = new CopyOnWriteArraySet<>();\n        Set<Integer> hashSet = new HashSet<>();\n\n        // Adding elements to hashSet\n        for (int i = 0; i < 5; i++) {\n            hashSet.add(i * 10);\n        }\n\n        // Adding all elements from hashSet to set\n        set.addAll(hashSet);\n\n        // Printing elements from set\n        for (Integer num : set) {\n            System.out.println(num);\n        }\n\n        // Writing a specific value to set\n        /* write */ set.add(100);\n\n        // Performing some operations on hashSet\n        hashSet.remove(0);\n        hashSet.add(50);\n\n        // Reading from set\n        /* read */ boolean containsValue = set.contains(100);\n        System.out.println(\"Set contains 100: \" + containsValue);\n\n        // Adding more elements to set\n        for (int i = 6; i < 10; i++) {\n            set.add(i * 10);\n        }\n\n        // Printing all elements from set\n        for (Integer num : set) {\n            System.out.println(num);\n        }\n\n        // Checking if set contains all elements from hashSet\n        boolean containsAll = set.containsAll(hashSet);\n        System.out.println(\"Set contains all elements from hashSet: \" + containsAll);\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.CopyOnWriteArraySet;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        /* write */ set.add(1);\n        /* read */ boolean containsValue = set.contains(1);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "read_method": "contains"
+    }
+}

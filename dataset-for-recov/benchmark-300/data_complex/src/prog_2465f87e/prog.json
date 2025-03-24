@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.LinkedList;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        ArrayList<Integer> list2 = new ArrayList<>();\n        LinkedList<String> list3 = new LinkedList<>();\n\n        // Adding elements to list2\n        for (int i = 0; i < 5; i++) {\n            list2.add(i * 10);\n        }\n\n        // Adding elements to list3\n        list3.add(\"Hello\");\n        list3.add(\"World\");\n\n        /* write */ list.addFirst(42);\n\n        // Printing elements from list2\n        for (Integer num : list2) {\n            System.out.println(num);\n        }\n\n        // Printing elements from list3\n        for (String str : list3) {\n            System.out.println(str);\n        }\n\n        /* read */ int value = list.getFirst();\n        System.out.println(\"The first element in the LinkedList is: \" + value);\n\n        // Adding more elements to list\n        for (int i = 1; i <= 5; i++) {\n            list.add(i);\n        }\n\n        // Printing all elements in list\n        for (Integer num : list) {\n            System.out.println(num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        /* write */ list.addFirst(42);\n        /* read */ int value = (Integer) list.getFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "addFirst",
+        "read_class": "java.util.LinkedList",
+        "read_method": "getFirst"
+    }
+}

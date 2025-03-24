@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.LinkedList;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        ArrayList<Integer> list2 = new ArrayList<>();\n        LinkedList<String> list3 = new LinkedList<>();\n        \n        /* write */ list.addFirst(1);\n        \n        list3.addFirst(\"Hello\");\n        list3.addLast(\"World\");\n        \n        for (int i = 0; i < 5; i++) {\n            list2.add(i * 10);\n        }\n        \n        for (String str : list3) {\n            System.out.println(str);\n        }\n        \n        /* read */ int value = list.getFirst();\n        System.out.println(\"Value from LinkedList: \" + value);\n        \n        for (int num : list2) {\n            System.out.println(\"Value from ArrayList: \" + num);\n        }\n        \n        list.addLast(2);\n        list.addLast(3);\n        \n        for (int num : list) {\n            System.out.println(\"Updated LinkedList: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        /* write */ list.addFirst(1);\n        /* read */ int value = list.getFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "addFirst",
+        "read_class": "java.util.LinkedList",
+        "read_method": "getFirst"
+    }
+}

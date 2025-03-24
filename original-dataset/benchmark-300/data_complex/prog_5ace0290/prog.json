@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentSkipListSet;\nimport java.util.HashSet;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListSet<String> set = new ConcurrentSkipListSet<>();\n        HashSet<Integer> hashSet = new HashSet<>();\n        Random random = new Random();\n\n        // Populate hashSet with random integers\n        for (int i = 0; i < 10; i++) {\n            hashSet.add(random.nextInt(100));\n        }\n\n        // Print the hashSet\n        System.out.println(\"HashSet: \" + hashSet);\n\n        // Add a string to the ConcurrentSkipListSet\n        /* write */ set.add(\"Hello\");\n\n        // Perform some operations on hashSet\n        int sum = 0;\n        for (Integer num : hashSet) {\n            sum += num;\n        }\n        System.out.println(\"Sum of HashSet elements: \" + sum);\n\n        // Check if the ConcurrentSkipListSet contains the string \"Hello\"\n        /* read */ boolean contains = set.contains(\"Hello\");\n        System.out.println(\"ConcurrentSkipListSet contains 'Hello': \" + contains);\n\n        // Add more elements to the ConcurrentSkipListSet\n        set.add(\"World\");\n        set.add(\"Java\");\n\n        // Print the ConcurrentSkipListSet\n        System.out.println(\"ConcurrentSkipListSet: \" + set);\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentSkipListSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListSet<String> set = new ConcurrentSkipListSet<>();\n        /* write */ set.add(\"Hello\");\n        /* read */ boolean contains = set.contains(\"Hello\");\n        System.out.println(contains);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentSkipListSet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.ConcurrentSkipListSet",
+        "read_method": "contains"
+    }
+}

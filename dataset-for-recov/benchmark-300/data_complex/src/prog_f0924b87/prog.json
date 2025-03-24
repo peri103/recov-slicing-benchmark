@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.HashSet;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet set = new HashSet();\n        ArrayList list = new ArrayList();\n        LinkedList linkedList = new LinkedList();\n\n        // Adding elements to the ArrayList and LinkedList\n        list.add(\"item1\");\n        list.add(\"item2\");\n        linkedList.add(\"linkedItem1\");\n        linkedList.add(\"linkedItem2\");\n\n        /* write */ set.add(\"example\");\n\n        // Adding elements from ArrayList and LinkedList to the HashSet\n        for (Object item : list) {\n            set.add(item);\n        }\n        for (Object item : linkedList) {\n            set.add(item);\n        }\n\n        // Performing some operations with the ArrayList and LinkedList\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"ArrayList item: \" + list.get(i));\n        }\n        for (int i = 0; i < linkedList.size(); i++) {\n            System.out.println(\"LinkedList item: \" + linkedList.get(i));\n        }\n\n        /* read */ boolean contains = set.contains(\"example\");\n        System.out.println(\"Contains 'example': \" + contains);\n\n        // Adding more elements to the HashSet\n        set.add(\"additionalItem1\");\n        set.add(\"additionalItem2\");\n\n        // Checking if the HashSet contains the additional items\n        System.out.println(\"Contains 'additionalItem1': \" + set.contains(\"additionalItem1\"));\n        System.out.println(\"Contains 'additionalItem2': \" + set.contains(\"additionalItem2\"));\n    }\n}",
+    "java_code_simple": "import java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet set = new HashSet();\n        /* write */ set.add(\"example\");\n        /* read */ boolean contains = set.contains(\"example\");\n        System.out.println(contains);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.HashSet",
+        "write_method": "add",
+        "read_class": "java.util.HashSet",
+        "read_method": "contains"
+    }
+}

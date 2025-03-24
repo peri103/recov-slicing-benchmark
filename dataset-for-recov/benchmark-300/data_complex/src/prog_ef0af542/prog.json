@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.PriorityQueue;\nimport java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        Stack<Integer> stack = new Stack<>();\n        \n        // Adding some unrelated operations to make the program more complex\n        stack.push(5);\n        stack.push(15);\n        stack.push(25);\n        \n        /* write */ queue.offer(10);\n        \n        int stackValue = stack.pop();\n        System.out.println(\"Popped value from stack: \" + stackValue);\n        \n        // Adding more unrelated operations\n        for (int i = 0; i < 3; i++) {\n            stack.push(i * 10);\n        }\n        \n        /* read */ Integer value = queue.peek();\n        System.out.println(\"Peeked value from queue: \" + value);\n        \n        // More unrelated operations\n        while (!stack.isEmpty()) {\n            System.out.println(\"Stack value: \" + stack.pop());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        /* write */ queue.offer(10);\n        /* read */ Integer value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.PriorityQueue",
+        "write_method": "offer",
+        "read_class": "java.util.PriorityQueue",
+        "read_method": "peek"
+    }
+}

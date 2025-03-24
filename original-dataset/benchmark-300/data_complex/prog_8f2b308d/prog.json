@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentSkipListMap;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListMap<Integer, String> map = new ConcurrentSkipListMap<>();\n        ArrayList<String> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Adding elements to the ArrayList\n        list.add(\"element1\");\n        list.add(\"element2\");\n\n        // Adding elements to the LinkedList\n        linkedList.add(100);\n        linkedList.add(200);\n\n        /* write */ map.put(1, \"value\");\n\n        // Iterating through the LinkedList and adding elements to the ArrayList\n        for (Integer num : linkedList) {\n            list.add(num.toString());\n        }\n\n        // Iterating through the ArrayList and printing elements\n        for (String element : list) {\n            System.out.println(element);\n        }\n\n        /* read */ String value = map.get(1);\n        System.out.println(value);\n\n        // Adding more elements to the ConcurrentSkipListMap\n        map.put(2, \"anotherValue\");\n        map.put(3, \"yetAnotherValue\");\n\n        // Iterating through the ConcurrentSkipListMap and printing elements\n        for (Integer key : map.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentSkipListMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListMap<Integer, String> map = new ConcurrentSkipListMap<>();\n        /* write */ map.put(1, \"value\");\n        /* read */ String value = map.get(1);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentSkipListMap",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ConcurrentSkipListMap",
+        "read_method": "get"
+    }
+}

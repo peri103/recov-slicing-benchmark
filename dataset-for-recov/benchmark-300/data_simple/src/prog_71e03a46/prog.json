@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.SortedMap;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedMap<String, Integer> map = new TreeMap<>();\n        /* write */ map.put(\"key\", 123);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.SortedMap",
+        "write_method": "put",
+        "read_class": "java.util.SortedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ArrayBlockingQueue;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);\n            ArrayList<Integer> list = new ArrayList<>();\n            LinkedList<Integer> linkedList = new LinkedList<>();\n\n            /* write */ queue.put(42);\n\n            for (int i = 0; i < 5; i++) {\n                list.add(i * 10);\n            }\n\n            linkedList.addAll(list);\n\n            for (int i = 0; i < linkedList.size(); i++) {\n                System.out.println(\"LinkedList value: \" + linkedList.get(i));\n            }\n\n            /* read */ int value = queue.take();\n            System.out.println(\"Value from queue: \" + value);\n\n            for (int i = 0; i < list.size(); i++) {\n                System.out.println(\"ArrayList value: \" + list.get(i));\n            }\n\n            ArrayBlockingQueue<String> stringQueue = new ArrayBlockingQueue<>(5);\n            stringQueue.put(\"Hello\");\n            stringQueue.put(\"World\");\n\n            System.out.println(\"String from stringQueue: \" + stringQueue.take());\n            System.out.println(\"String from stringQueue: \" + stringQueue.take());\n\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ArrayBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);\n            /* write */ queue.put(42);\n            /* read */ int value = queue.take();\n            System.out.println(value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ArrayBlockingQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ArrayBlockingQueue",
+        "read_method": "take"
+    }
+}

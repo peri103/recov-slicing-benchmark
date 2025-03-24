@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentLinkedDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<String> deque = new ConcurrentLinkedDeque<>();\n        /* write */ deque.addFirst(\"Hello, World!\");\n        /* read */ String value = deque.peekFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "write_method": "addFirst",
+        "read_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "read_method": "peekFirst"
+    }
+}

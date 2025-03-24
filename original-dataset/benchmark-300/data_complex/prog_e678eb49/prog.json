@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.SortedMap;\nimport java.util.TreeMap;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedMap<String, Integer> map = new TreeMap<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<String> linkedList = new LinkedList<>();\n\n        // Initialize some values in the list and linkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            linkedList.add(\"Element \" + i);\n        }\n\n        /* write */ map.put(\"key\", 123);\n\n        // Perform some operations on the list and linkedList\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"List value: \" + list.get(i));\n        }\n\n        for (String str : linkedList) {\n            System.out.println(\"LinkedList value: \" + str);\n        }\n\n        // Add some more elements to the list\n        list.add(100);\n        list.add(200);\n\n        // Perform more operations\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"Updated List value: \" + list.get(i));\n        }\n\n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Value from map: \" + value);\n    }\n}",
+    "java_code_simple": "import java.util.SortedMap;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedMap<String, Integer> map = new TreeMap<>();\n        /* write */ map.put(\"key\", 123);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.SortedMap",
+        "write_method": "put",
+        "read_class": "java.util.SortedMap",
+        "read_method": "get"
+    }
+}

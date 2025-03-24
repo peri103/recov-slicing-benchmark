@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Deque;\nimport java.util.ArrayDeque;\nimport java.util.List;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Deque<Integer> deque = new ArrayDeque<>();\n        List<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Adding elements to the list and linkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            linkedList.add(i * 20);\n        }\n\n        // Adding elements to the deque\n        /* write */ deque.addLast(42);\n\n        // Processing the list and linkedList\n        for (int i = 0; i < list.size(); i++) {\n            linkedList.add(list.get(i));\n        }\n\n        // Adding elements from linkedList to deque\n        for (int i = 0; i < linkedList.size(); i++) {\n            deque.addLast(linkedList.get(i));\n        }\n\n        // Reading the last element from the deque\n        /* read */ int value = deque.getLast();\n        System.out.println(value);\n\n        // Additional processing\n        List<Integer> newList = new ArrayList<>();\n        for (int i = 0; i < deque.size(); i++) {\n            newList.add(deque.pollFirst());\n        }\n\n        // Printing the newList\n        for (int i = 0; i < newList.size(); i++) {\n            System.out.println(newList.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.Deque;\nimport java.util.ArrayDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        Deque<Integer> deque = new ArrayDeque<>();\n        /* write */ deque.addLast(42);\n        /* read */ int value = deque.getLast();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Deque",
+        "write_method": "addLast",
+        "read_class": "java.util.Deque",
+        "read_method": "getLast"
+    }
+}

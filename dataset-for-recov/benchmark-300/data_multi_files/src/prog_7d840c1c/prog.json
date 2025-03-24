@@ -1,0 +1,15 @@
+{
+    "files": {
+        "DataStorage.java": "import java.util.HashSet;\n\npublic class DataStorage {\n    private HashSet<Integer> dataSet = new HashSet<>();\n\n    public void storeData(int value) {\n        /* write */ dataSet.add(value);\n    }\n\n    public HashSet<Integer> getDataSet() {\n        return dataSet;\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private DataStorage dataStorage = new DataStorage();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void storeGrade(int grade) {\n        dataStorage.storeData(grade);\n    }\n\n    public HashSet<Integer> getGrades() {\n        return dataStorage.getDataSet();\n    }\n}\n",
+        "Main.java": "import java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"John Doe\");\n        student.storeGrade(85);\n        \n        // Unrelated code to make the program more complex\n        HashSet<String> courses = new HashSet<>();\n        courses.add(\"Mathematics\");\n        courses.add(\"Physics\");\n        courses.add(\"Chemistry\");\n        \n        for (String course : courses) {\n            System.out.println(\"Enrolled in: \" + course);\n        }\n        \n        /* read */ boolean hasGrade = student.getGrades().contains(85);\n        System.out.println(\"Does the student have a grade of 85? \" + hasGrade);\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.HashSet",
+        "write_method": "add",
+        "read_class": "java.util.HashSet",
+        "read_method": "contains"
+    },
+    "java_code_simple": "import java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<Integer> set = new HashSet<>();\n        /* write */ set.add(42);\n        /* read */ boolean containsValue = set.contains(42);\n        System.out.println(containsValue);\n    }\n}",
+    "java_code_complex": "import java.util.HashSet;\nimport java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<Integer> set = new HashSet<>();\n        TreeSet<Integer> treeSet = new TreeSet<>();\n        \n        // Adding some unrelated elements to make the program more complex\n        treeSet.add(10);\n        treeSet.add(20);\n        treeSet.add(30);\n        \n        /* write */ set.add(42);\n        \n        // Performing some operations on the TreeSet\n        for (Integer num : treeSet) {\n            System.out.println(\"TreeSet element: \" + num);\n        }\n        \n        // Adding more elements to the HashSet\n        set.add(100);\n        set.add(200);\n        \n        /* read */ boolean containsValue = set.contains(42);\n        System.out.println(\"Does the HashSet contain 42? \" + containsValue);\n        \n        // More unrelated code\n        int sum = 0;\n        for (Integer num : set) {\n            sum += num;\n        }\n        System.out.println(\"Sum of all elements in HashSet: \" + sum);\n    }\n}"
+}

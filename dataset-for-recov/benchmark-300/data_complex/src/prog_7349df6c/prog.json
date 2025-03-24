@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.SortedMap;\nimport java.util.TreeMap;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedMap<Integer, String> map = new TreeMap<>();\n        List<String> list = new ArrayList<>();\n        \n        // Adding some unrelated operations\n        for (int i = 0; i < 5; i++) {\n            list.add(\"Item \" + i);\n        }\n        \n        // Writing to the map\n        /* write */ map.put(1, \"Value\");\n        \n        // Performing some operations on the list\n        for (String item : list) {\n            System.out.println(item);\n        }\n        \n        // Creating another map and performing operations\n        SortedMap<Integer, Integer> anotherMap = new TreeMap<>();\n        anotherMap.put(10, 100);\n        anotherMap.put(20, 200);\n        \n        // Reading from the original map\n        /* read */ String value = map.get(1);\n        System.out.println(\"Read value: \" + value);\n        \n        // Performing more operations on the list\n        list.add(\"Additional Item\");\n        for (String item : list) {\n            System.out.println(item);\n        }\n        \n        // Adding more entries to the anotherMap\n        anotherMap.put(30, 300);\n        anotherMap.put(40, 400);\n        \n        // Printing values from anotherMap\n        for (Integer key : anotherMap.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + anotherMap.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.SortedMap;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedMap<Integer, String> map = new TreeMap<>();\n        /* write */ map.put(1, \"Value\");\n        /* read */ String value = map.get(1);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.SortedMap",
+        "write_method": "put",
+        "read_class": "java.util.SortedMap",
+        "read_method": "get"
+    }
+}

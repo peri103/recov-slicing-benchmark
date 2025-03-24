@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n        ArrayList<ArrayList<Integer>> list2 = new ArrayList<>();\n        LinkedList<Integer> list3 = new LinkedList<>();\n        \n        // Adding some unrelated operations\n        list3.add(200);\n        for (int i = 0; i < 5; i++) {\n            list3.add(i * 10);\n        }\n        \n        /* write */ list.add(42);\n        \n        // Adding more unrelated operations\n        list2.add(list);\n        for (int i = 0; i < list3.size(); i++) {\n            list.add(list3.get(i));\n        }\n        \n        /* read */ int value = list.get(0);\n        System.out.println(value);\n        \n        // Adding more complex operations\n        ArrayList<Integer> list4 = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            list4.add(i * 20);\n        }\n        for (int i = 0; i < list4.size(); i++) {\n            list.add(list4.get(i));\n        }\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(list.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n        /* write */ list.add(42);\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.ArrayList",
+        "write_method": "add",
+        "read_class": "java.util.ArrayList",
+        "read_method": "get"
+    }
+}

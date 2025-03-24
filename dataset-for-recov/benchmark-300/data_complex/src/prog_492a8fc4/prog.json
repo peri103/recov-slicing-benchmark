@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.CopyOnWriteArraySet;\nimport java.util.HashSet;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet<String> set = new CopyOnWriteArraySet<>();\n        Set<String> hashSet = new HashSet<>();\n        \n        // Adding elements to the HashSet\n        hashSet.add(\"first\");\n        hashSet.add(\"second\");\n        hashSet.add(\"third\");\n        \n        // Iterating over the HashSet and printing elements\n        for (String element : hashSet) {\n            System.out.println(\"HashSet Element: \" + element);\n        }\n        \n        // Writing to the CopyOnWriteArraySet\n        /* write */ set.add(\"example\");\n        \n        // Adding all elements from HashSet to CopyOnWriteArraySet\n        set.addAll(hashSet);\n        \n        // Checking if the CopyOnWriteArraySet contains a specific element\n        /* read */ boolean containsValue = set.contains(\"example\");\n        System.out.println(\"CopyOnWriteArraySet contains 'example': \" + containsValue);\n        \n        // Iterating over the CopyOnWriteArraySet and printing elements\n        for (String element : set) {\n            System.out.println(\"CopyOnWriteArraySet Element: \" + element);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.CopyOnWriteArraySet;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet<String> set = new CopyOnWriteArraySet<>();\n        /* write */ set.add(\"example\");\n        /* read */ boolean containsValue = set.contains(\"example\");\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "read_method": "contains"
+    }
+}

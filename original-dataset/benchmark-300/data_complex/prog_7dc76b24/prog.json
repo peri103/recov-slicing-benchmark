@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Stack;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        ArrayList list = new ArrayList();\n        LinkedList queue = new LinkedList();\n\n        // Initialize some data\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        // Add elements to the queue\n        for (int i = 0; i < list.size(); i++) {\n            queue.add(list.get(i));\n        }\n\n        /* write */ stack.push(42);\n\n        // Process the queue\n        while (!queue.isEmpty()) {\n            System.out.println(\"Processing: \" + queue.poll());\n        }\n\n        // Add more elements to the list\n        for (int i = 5; i < 10; i++) {\n            list.add(i * 10);\n        }\n\n        // Print the list\n        System.out.println(\"List contents:\");\n        for (Object item : list) {\n            System.out.println(item);\n        }\n\n        /* read */ int value = (Integer) stack.pop();\n        System.out.println(\"Value from stack: \" + value);\n    }\n}",
+    "java_code_simple": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        /* write */ stack.push(42);\n        /* read */ int value = (Integer) stack.pop();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Stack",
+        "write_method": "push",
+        "read_class": "java.util.Stack",
+        "read_method": "pop"
+    }
+}

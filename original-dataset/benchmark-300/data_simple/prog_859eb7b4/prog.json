@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        /* write */ queue.offer(42);\n        /* read */ int value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.PriorityQueue",
+        "write_method": "offer",
+        "read_class": "java.util.PriorityQueue",
+        "read_method": "peek"
+    }
+}

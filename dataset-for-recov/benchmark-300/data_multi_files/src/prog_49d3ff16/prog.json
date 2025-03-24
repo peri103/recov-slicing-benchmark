@@ -1,0 +1,15 @@
+{
+    "files": {
+        "StackManager.java": "import java.util.Stack;\n\npublic class StackManager {\n    private Stack<Integer> stack = new Stack<>();\n\n    public void pushValue(int value) {\n        /* write */ stack.push(value);\n    }\n\n    public int peekValue() {\n        return stack.peek();\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private StackManager stackManager = new StackManager();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void addScore(int score) {\n        stackManager.pushValue(score);\n    }\n\n    public int getScore() {\n        return stackManager.peekValue();\n    }\n}\n",
+        "Main.java": "import java.util.LinkedList;\nimport java.util.Queue;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"Alice\");\n        Queue<Integer> queue = new LinkedList<>();\n        student.addScore(10);\n        queue.add(20);\n        queue.add(30);\n        while (!queue.isEmpty()) {\n            student.addScore(queue.poll());\n        }\n        for (int i = 0; i < 5; i++) {\n            student.addScore(i * 5);\n        }\n        /* read */ int value = student.getScore();\n        System.out.println(value);\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.Stack",
+        "write_method": "push",
+        "read_class": "java.util.Stack",
+        "read_method": "peek"
+    },
+    "java_code_simple": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        /* write */ stack.push(10);\n        /* read */ int value = stack.peek();\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import java.util.Stack;\nimport java.util.LinkedList;\nimport java.util.Queue;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        Queue<Integer> queue = new LinkedList<>();\n        /* write */ stack.push(10);\n        queue.add(20);\n        queue.add(30);\n        while (!queue.isEmpty()) {\n            stack.push(queue.poll());\n        }\n        for (int i = 0; i < 5; i++) {\n            stack.push(i * 5);\n        }\n        /* read */ int value = stack.peek();\n        System.out.println(value);\n        for (int i = 0; i < stack.size(); i++) {\n            System.out.println(stack.get(i));\n        }\n    }\n}"
+}

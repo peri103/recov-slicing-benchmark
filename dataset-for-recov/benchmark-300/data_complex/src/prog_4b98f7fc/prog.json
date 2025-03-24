@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        List<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 10);\n        }\n        for (int num : numbers) {\n            deque.addFirst(num);\n        }\n        /* write */ deque.addLast(42);\n        int sum = 0;\n        while (!deque.isEmpty()) {\n            sum += deque.takeFirst();\n        }\n        /* read */ int value = deque.takeLast();\n        System.out.println(\"Sum of deque elements: \" + sum);\n        System.out.println(\"Value read from deque: \" + value);\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        /* write */ deque.addLast(42);\n        /* read */ int value = deque.takeLast();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.BlockingDeque",
+        "write_method": "addLast",
+        "read_class": "java.util.concurrent.BlockingDeque",
+        "read_method": "takeLast"
+    }
+}

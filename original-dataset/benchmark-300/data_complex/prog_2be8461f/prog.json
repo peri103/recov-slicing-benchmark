@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Deque;\nimport java.util.ArrayDeque;\nimport java.util.List;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Deque<Integer> deque = new ArrayDeque<>();\n        List<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Add elements to the list\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        // Add elements to the linked list\n        for (int i = 0; i < 3; i++) {\n            linkedList.add(i * 5);\n        }\n\n        // Write to the deque\n        /* write */ deque.addFirst(42);\n\n        // Process the list and linked list\n        for (Integer num : list) {\n            linkedList.add(num);\n        }\n\n        // Read from the deque\n        /* read */ int value = deque.getFirst();\n\n        // Print the value read from the deque\n        System.out.println(\"Value from deque: \" + value);\n\n        // Print the linked list\n        System.out.println(\"Linked list after processing:\");\n        for (Integer num : linkedList) {\n            System.out.println(num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.Deque;\nimport java.util.ArrayDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        Deque<Integer> deque = new ArrayDeque<>();\n        /* write */ deque.addFirst(42);\n        /* read */ int value = deque.getFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Deque",
+        "write_method": "addFirst",
+        "read_class": "java.util.Deque",
+        "read_method": "getFirst"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.TreeSet;\nimport java.util.HashSet;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeSet<Integer> set = new TreeSet<>();\n        HashSet<Integer> hashSet = new HashSet<>();\n        Random random = new Random();\n\n        // Adding random numbers to the HashSet\n        for (int i = 0; i < 5; i++) {\n            int num = random.nextInt(100);\n            hashSet.add(num);\n        }\n\n        // Adding a specific number to the TreeSet\n        /* write */ set.add(10);\n\n        // Checking if the TreeSet contains the number\n        /* read */ boolean contains = set.contains(10);\n        System.out.println(\"Does TreeSet contain 10? \" + contains);\n\n        // Adding all elements from HashSet to TreeSet\n        set.addAll(hashSet);\n\n        // Printing all elements in the TreeSet\n        System.out.println(\"Elements in TreeSet:\");\n        for (Integer num : set) {\n            System.out.println(num);\n        }\n\n        // Removing an element from the TreeSet\n        set.remove(10);\n        System.out.println(\"After removing 10, does TreeSet contain 10? \" + set.contains(10));\n\n        // Adding more elements to the TreeSet\n        for (int i = 0; i < 3; i++) {\n            set.add(random.nextInt(50));\n        }\n\n        // Printing the size of the TreeSet\n        System.out.println(\"Size of TreeSet: \" + set.size());\n    }\n}",
+    "java_code_simple": "import java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeSet<Integer> set = new TreeSet<>();\n        /* write */ set.add(10);\n        /* read */ boolean contains = set.contains(10);\n        System.out.println(contains);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.TreeSet",
+        "write_method": "add",
+        "read_class": "java.util.TreeSet",
+        "read_method": "contains"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.LinkedList;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        ArrayList<Integer> arrayList = new ArrayList<>();\n\n        // Adding elements to the ArrayList\n        for (int i = 0; i < 10; i++) {\n            arrayList.add(i * 2);\n        }\n\n        // Adding elements to the LinkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 3);\n        }\n\n        /* write */ list.addLast(42);\n\n        // Processing the ArrayList\n        int sum = 0;\n        for (int num : arrayList) {\n            sum += num;\n        }\n        System.out.println(\"Sum of ArrayList elements: \" + sum);\n\n        // Processing the LinkedList\n        for (Object obj : list) {\n            System.out.println(\"LinkedList element: \" + obj);\n        }\n\n        /* read */ int value = (Integer) list.getLast();\n        System.out.println(\"Last element in LinkedList: \" + value);\n\n        // Additional complex operations\n        LinkedList<LinkedList<Integer>> nestedList = new LinkedList<>();\n        for (int i = 0; i < 3; i++) {\n            LinkedList<Integer> innerList = new LinkedList<>();\n            for (int j = 0; j < 3; j++) {\n                innerList.add(i + j);\n            }\n            nestedList.add(innerList);\n        }\n\n        for (LinkedList<Integer> inner : nestedList) {\n            for (int num : inner) {\n                System.out.println(\"Nested LinkedList element: \" + num);\n            }\n        }\n    }\n}",
+    "java_code_simple": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        /* write */ list.addLast(42);\n        /* read */ int value = (Integer) list.getLast();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "addLast",
+        "read_class": "java.util.LinkedList",
+        "read_method": "getLast"
+    }
+}

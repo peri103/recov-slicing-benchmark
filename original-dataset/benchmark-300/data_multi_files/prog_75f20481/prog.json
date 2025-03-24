@@ -1,0 +1,15 @@
+{
+    "files": {
+        "DataStack.java": "import java.util.Stack;\n\npublic class DataStack {\n    private Stack<Integer> stack = new Stack<>();\n\n    public void pushData(int data) {\n        /* write */ stack.push(data);\n    }\n\n    public Stack<Integer> getStack() {\n        return stack;\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private DataStack dataStack = new DataStack();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void addData(int data) {\n        dataStack.pushData(data);\n    }\n\n    public Stack<Integer> getDataStack() {\n        return dataStack.getStack();\n    }\n}\n",
+        "Main.java": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"Alice\");\n        student.addData(1);\n        Stack<Integer> stack = student.getDataStack();\n        /* read */ int value = stack.pop();\n        System.out.println(\"Read value: \" + value);\n\n        // Additional operations\n        student.addData(10);\n        student.addData(20);\n        while (!stack.isEmpty()) {\n            System.out.println(stack.pop());\n        }\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.Stack",
+        "write_method": "push",
+        "read_class": "java.util.Stack",
+        "read_method": "pop"
+    },
+    "java_code_simple": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        /* write */ stack.push(1);\n        /* read */ int value = (Integer) stack.pop();\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import java.util.Stack;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        ArrayList list = new ArrayList();\n        LinkedList queue = new LinkedList();\n\n        // Initialize some data\n        list.add(10);\n        list.add(20);\n        queue.add(30);\n        queue.add(40);\n\n        /* write */ stack.push(1);\n\n        // Perform some operations\n        for (Object obj : list) {\n            stack.push(obj);\n        }\n\n        for (Object obj : queue) {\n            stack.push(obj);\n        }\n\n        // Perform some unrelated operations\n        int sum = 0;\n        for (int i = 0; i < 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum: \" + sum);\n\n        // Perform more operations\n        while (!stack.isEmpty()) {\n            System.out.println(stack.pop());\n        }\n\n        /* read */ int value = (Integer) stack.pop();\n        System.out.println(\"Original value: \" + value);\n\n        // Final operations\n        stack.push(100);\n        stack.push(200);\n        System.out.println(\"Final stack size: \" + stack.size());\n    }\n}"
+}

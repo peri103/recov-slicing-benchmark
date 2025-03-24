@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.Deque;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Deque<Integer> deque = new LinkedList<>();\n        /* write */ deque.addFirst(1);\n        /* read */ int value = deque.getFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Deque",
+        "write_method": "addFirst",
+        "read_class": "java.util.Deque",
+        "read_method": "getFirst"
+    }
+}

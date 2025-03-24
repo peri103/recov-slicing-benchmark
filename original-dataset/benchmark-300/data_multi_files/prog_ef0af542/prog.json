@@ -1,0 +1,15 @@
+{
+    "files": {
+        "PriorityQueueManager.java": "import java.util.PriorityQueue;\n\npublic class PriorityQueueManager {\n    private PriorityQueue<Integer> queue = new PriorityQueue<>();\n\n    public void addToQueue(int value) {\n        /* write */ queue.offer(value);\n    }\n\n    public PriorityQueue<Integer> getQueue() {\n        return queue;\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private PriorityQueueManager queueManager = new PriorityQueueManager();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void addScore(int score) {\n        queueManager.addToQueue(score);\n    }\n\n    public PriorityQueue<Integer> getScores() {\n        return queueManager.getQueue();\n    }\n}\n",
+        "Main.java": "public class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"Alice\");\n        student.addScore(10);\n        PriorityQueue<Integer> scores = student.getScores();\n        /* read */ int score = scores.peek();\n        System.out.println(\"Peeked value from queue: \" + score);\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.PriorityQueue",
+        "write_method": "offer",
+        "read_class": "java.util.PriorityQueue",
+        "read_method": "peek"
+    },
+    "java_code_simple": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        /* write */ queue.offer(10);\n        /* read */ Integer value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import java.util.PriorityQueue;\nimport java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        Stack<Integer> stack = new Stack<>();\n        \n        // Adding some unrelated operations to make the program more complex\n        stack.push(5);\n        stack.push(15);\n        stack.push(25);\n        \n        /* write */ queue.offer(10);\n        \n        int stackValue = stack.pop();\n        System.out.println(\"Popped value from stack: \" + stackValue);\n        \n        // Adding more unrelated operations\n        for (int i = 0; i < 3; i++) {\n            stack.push(i * 10);\n        }\n        \n        /* read */ Integer value = queue.peek();\n        System.out.println(\"Peeked value from queue: \" + value);\n        \n        // More unrelated operations\n        while (!stack.isEmpty()) {\n            System.out.println(\"Stack value: \" + stack.pop());\n        }\n    }\n}"
+}

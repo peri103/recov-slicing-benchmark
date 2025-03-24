@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Stack;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        ArrayList list = new ArrayList();\n        LinkedList queue = new LinkedList();\n        \n        // Initialize some data\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            queue.add(i * 20);\n        }\n        \n        // Perform some operations\n        for (Object obj : list) {\n            stack.push(obj);\n        }\n        \n        /* write */ stack.push(1);\n        \n        // More operations\n        for (Object obj : queue) {\n            list.add(obj);\n        }\n        \n        // Perform some complex operations\n        for (int i = 0; i < list.size(); i++) {\n            stack.push(list.get(i));\n        }\n        \n        // Read the value written earlier\n        /* read */ int value = (Integer) stack.peek();\n        System.out.println(value);\n        \n        // Additional operations\n        for (int i = 0; i < stack.size(); i++) {\n            System.out.println(stack.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        /* write */ stack.push(1);\n        /* read */ int value = (Integer) stack.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Stack",
+        "write_method": "push",
+        "read_class": "java.util.Stack",
+        "read_method": "peek"
+    }
+}

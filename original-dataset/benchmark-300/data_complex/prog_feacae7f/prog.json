@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.PriorityQueue;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Add some elements to the ArrayList and LinkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            linkedList.add(i * 20);\n        }\n\n        // Perform some operations on the ArrayList and LinkedList\n        for (int i = 0; i < list.size(); i++) {\n            linkedList.set(i, linkedList.get(i) + list.get(i));\n        }\n\n        // Write to the PriorityQueue\n        /* write */ queue.offer(42);\n\n        // Perform more operations\n        for (int i = 0; i < linkedList.size(); i++) {\n            list.set(i, list.get(i) + linkedList.get(i));\n        }\n\n        // Read from the PriorityQueue\n        /* read */ Integer value = queue.poll();\n\n        // Print the results\n        System.out.println(\"Value from PriorityQueue: \" + value);\n        System.out.println(\"Modified ArrayList: \" + list);\n        System.out.println(\"Modified LinkedList: \" + linkedList);\n    }\n}",
+    "java_code_simple": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        /* write */ queue.offer(42);\n        /* read */ Integer value = queue.poll();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.PriorityQueue",
+        "write_method": "offer",
+        "read_class": "java.util.PriorityQueue",
+        "read_method": "poll"
+    }
+}

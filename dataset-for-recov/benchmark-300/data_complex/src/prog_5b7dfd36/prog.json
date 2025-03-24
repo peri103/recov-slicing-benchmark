@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.BlockingQueue;\nimport java.util.concurrent.LinkedBlockingQueue;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>();\n        List<Integer> list = new ArrayList<>();\n        \n        // Adding elements to the list\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n        \n        // Writing to the queue\n        /* write */ queue.put(1);\n        \n        // Processing the list\n        for (Integer num : list) {\n            System.out.println(\"Processing number: \" + num);\n        }\n        \n        // Reading from the queue\n        /* read */ int value = queue.take();\n        System.out.println(\"Value read from queue: \" + value);\n        \n        // Additional unrelated operations\n        BlockingQueue<String> stringQueue = new LinkedBlockingQueue<>();\n        stringQueue.put(\"Hello\");\n        stringQueue.put(\"World\");\n        \n        while (!stringQueue.isEmpty()) {\n            System.out.println(stringQueue.take());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.BlockingQueue;\nimport java.util.concurrent.LinkedBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>();\n        /* write */ queue.put(1);\n        /* read */ int value = queue.take();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.BlockingQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.BlockingQueue",
+        "read_method": "take"
+    }
+}

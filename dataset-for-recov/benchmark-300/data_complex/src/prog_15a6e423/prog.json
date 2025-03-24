@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.CopyOnWriteArraySet;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        ArrayList list = new ArrayList();\n        LinkedList queue = new LinkedList();\n        \n        // Adding elements to the ArrayList and LinkedList\n        list.add(\"Hello\");\n        queue.add(\"World\");\n        \n        // Writing to the CopyOnWriteArraySet\n        /* write */ set.add(42);\n        \n        // Performing some operations with ArrayList and LinkedList\n        list.add(queue.poll());\n        queue.add(list.get(0));\n        \n        // Reading from the CopyOnWriteArraySet\n        /* read */ boolean containsValue = set.contains(42);\n        System.out.println(\"Contains value 42: \" + containsValue);\n        \n        // Adding more elements to the CopyOnWriteArraySet\n        set.add(100);\n        set.add(200);\n        \n        // Iterating over the CopyOnWriteArraySet\n        for (Object obj : set) {\n            System.out.println(\"Set element: \" + obj);\n        }\n        \n        // Performing more operations with ArrayList and LinkedList\n        list.addAll(queue);\n        queue.addAll(list);\n        \n        // Final output\n        System.out.println(\"ArrayList: \" + list);\n        System.out.println(\"LinkedList: \" + queue);\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.CopyOnWriteArraySet;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        /* write */ set.add(42);\n        /* read */ boolean containsValue = set.contains(42);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "read_method": "contains"
+    }
+}

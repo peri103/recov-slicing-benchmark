@@ -1,0 +1,15 @@
+{
+    "files": {
+        "DataProcessor.java": "import java.util.concurrent.ConcurrentLinkedQueue;\n\npublic class DataProcessor {\n    private ConcurrentLinkedQueue<Integer> dataQueue = new ConcurrentLinkedQueue<>();\n\n    public void processData(int data) {\n        /* write */ dataQueue.offer(data);\n    }\n\n    public ConcurrentLinkedQueue<Integer> getDataQueue() {\n        return dataQueue;\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private DataProcessor dataProcessor = new DataProcessor();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void processStudentData(int data) {\n        dataProcessor.processData(data);\n    }\n\n    public ConcurrentLinkedQueue<Integer> getProcessedData() {\n        return dataProcessor.getDataQueue();\n    }\n}\n",
+        "Main.java": "import java.util.concurrent.ConcurrentLinkedQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"Alice\");\n        student.processStudentData(1);\n        ConcurrentLinkedQueue<Integer> processedData = student.getProcessedData();\n        /* read */ Integer value = processedData.poll();\n        System.out.println(\"Processed Data: \" + value);\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentLinkedQueue",
+        "write_method": "offer",
+        "read_class": "java.util.concurrent.ConcurrentLinkedQueue",
+        "read_method": "poll"
+    },
+    "java_code_simple": "import java.util.concurrent.ConcurrentLinkedQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<>();\n        /* write */ queue.offer(1);\n        /* read */ Integer value = queue.poll();\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import java.util.concurrent.ConcurrentLinkedQueue;\nimport java.util.concurrent.atomic.AtomicInteger;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<>();\n        AtomicInteger counter = new AtomicInteger(0);\n\n        // Adding some unrelated code to make the program more complex\n        for (int i = 0; i < 10; i++) {\n            counter.incrementAndGet();\n            System.out.println(\"Counter: \" + counter.get());\n        }\n\n        /* write */ queue.offer(1);\n\n        // More unrelated code\n        if (counter.get() > 5) {\n            System.out.println(\"Counter is greater than 5\");\n        }\n\n        // Another unrelated operation\n        ConcurrentLinkedQueue<String> stringQueue = new ConcurrentLinkedQueue<>();\n        stringQueue.offer(\"Hello\");\n        stringQueue.offer(\"World\");\n\n        /* read */ Integer value = queue.poll();\n        System.out.println(\"Read value: \" + value);\n\n        // Final unrelated code\n        while (!stringQueue.isEmpty()) {\n            System.out.println(stringQueue.poll());\n        }\n    }\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentHashMap;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();\n        /* write */ map.put(\"key\", 42);\n\n        // Additional code to make the program more complex\n        List<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n\n        ConcurrentHashMap<String, String> stringMap = new ConcurrentHashMap<>();\n        stringMap.put(\"greeting\", \"Hello, World!\");\n\n        for (Integer num : numbers) {\n            System.out.println(num);\n        }\n\n        String greeting = stringMap.get(\"greeting\");\n        System.out.println(greeting);\n\n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"The value associated with 'key' is: \" + value);\n\n        // More unrelated code\n        List<String> fruits = new ArrayList<>();\n        fruits.add(\"Apple\");\n        fruits.add(\"Banana\");\n        fruits.add(\"Cherry\");\n\n        for (String fruit : fruits) {\n            System.out.println(fruit);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentHashMap",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ConcurrentHashMap",
+        "read_method": "get"
+    }
+}

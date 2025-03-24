@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentHashMap;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();\n        /* write */ map.put(\"key\", 123);\n        \n        // Additional code to make the program more complex\n        List<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 10);\n        }\n        \n        ConcurrentHashMap<String, String> anotherMap = new ConcurrentHashMap<>();\n        anotherMap.put(\"anotherKey\", \"Hello, World!\");\n        \n        for (int num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n        \n        String anotherValue = anotherMap.get(\"anotherKey\");\n        System.out.println(anotherValue);\n        \n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(\"Original value: \" + value);\n        \n        // More unrelated code\n        List<String> strings = new ArrayList<>();\n        strings.add(\"Java\");\n        strings.add(\"Python\");\n        strings.add(\"C++\");\n        \n        for (String str : strings) {\n            System.out.println(\"Language: \" + str);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();\n        /* write */ map.put(\"key\", 123);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentHashMap",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ConcurrentHashMap",
+        "read_method": "get"
+    }
+}

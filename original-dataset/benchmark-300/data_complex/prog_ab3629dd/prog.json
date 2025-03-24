@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.HashMap;\nimport java.util.ArrayList;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> map = new HashMap<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        Random random = new Random();\n\n        // Initialize list with random values\n        for (int i = 0; i < 10; i++) {\n            list.add(random.nextInt(100));\n        }\n\n        // Perform some operations on the list\n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of list elements: \" + sum);\n\n        // Write to the map\n        /* write */ map.put(\"key\", 42);\n\n        // Perform some unrelated operations\n        String[] fruits = {\"Apple\", \"Banana\", \"Cherry\"};\n        for (String fruit : fruits) {\n            System.out.println(fruit);\n        }\n\n        // Read from the map\n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Value from map: \" + value);\n\n        // More operations on the list\n        list.sort(Integer::compareTo);\n        System.out.println(\"Sorted list: \" + list);\n    }\n}",
+    "java_code_simple": "import java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> map = new HashMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.HashMap",
+        "write_method": "put",
+        "read_class": "java.util.HashMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ArrayBlockingQueue;\nimport java.util.concurrent.LinkedBlockingQueue;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);\n        LinkedBlockingQueue<String> stringQueue = new LinkedBlockingQueue<>();\n        Random random = new Random();\n\n        // Adding some unrelated operations to make the program more complex\n        for (int i = 0; i < 5; i++) {\n            stringQueue.put(\"String \" + i);\n        }\n\n        /* write */ queue.put(1);\n\n        // Performing some operations with the stringQueue\n        for (int i = 0; i < 5; i++) {\n            String str = stringQueue.take();\n            System.out.println(\"Processed: \" + str);\n        }\n\n        // Adding more unrelated operations\n        int randomNumber = random.nextInt(100);\n        System.out.println(\"Random number generated: \" + randomNumber);\n\n        /* read */ int value = queue.take();\n        System.out.println(\"Value read from the queue: \" + value);\n\n        // Adding final unrelated operations\n        for (int i = 0; i < 3; i++) {\n            queue.put(i + 10);\n        }\n        while (!queue.isEmpty()) {\n            System.out.println(\"Remaining in queue: \" + queue.take());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ArrayBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);\n        /* write */ queue.put(1);\n        /* read */ int value = queue.take();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ArrayBlockingQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ArrayBlockingQueue",
+        "read_method": "take"
+    }
+}

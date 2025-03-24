@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties props = new Properties();\n        /* write */ props.setProperty(\"key\", \"value\");\n        /* read */ String value = props.getProperty(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Properties",
+        "write_method": "setProperty",
+        "read_class": "java.util.Properties",
+        "read_method": "getProperty"
+    }
+}

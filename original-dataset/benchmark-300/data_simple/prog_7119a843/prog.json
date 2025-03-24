@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentSkipListSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListSet<Integer> set = new ConcurrentSkipListSet<>();\n        /* write */ set.add(10);\n        /* read */ boolean contains = set.contains(10);\n        System.out.println(contains);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentSkipListSet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.ConcurrentSkipListSet",
+        "read_method": "contains"
+    }
+}

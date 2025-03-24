@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentSkipListMap;\nimport java.util.concurrent.ConcurrentHashMap;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListMap<String, Integer> map = new ConcurrentSkipListMap<>();\n        ConcurrentHashMap<String, String> hashMap = new ConcurrentHashMap<>();\n        Random random = new Random();\n\n        // Initialize some unrelated data\n        for (int i = 0; i < 10; i++) {\n            hashMap.put(\"hashKey\" + i, \"value\" + i);\n        }\n\n        // Perform some unrelated operations\n        int randomNumber = random.nextInt(100);\n        System.out.println(\"Random number: \" + randomNumber);\n\n        // Write to the original map\n        /* write */ map.put(\"key\", 42);\n\n        // Perform more unrelated operations\n        for (int i = 0; i < 5; i++) {\n            System.out.println(\"Iteration: \" + i);\n        }\n\n        // Read from the original map\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(\"Value from map: \" + value);\n\n        // Additional unrelated code\n        if (randomNumber > 50) {\n            System.out.println(\"Random number is greater than 50\");\n        } else {\n            System.out.println(\"Random number is 50 or less\");\n        }\n\n        // More unrelated operations\n        for (String key : hashMap.keySet()) {\n            System.out.println(\"HashMap key: \" + key + \", value: \" + hashMap.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentSkipListMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentSkipListMap<String, Integer> map = new ConcurrentSkipListMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentSkipListMap",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ConcurrentSkipListMap",
+        "read_method": "get"
+    }
+}

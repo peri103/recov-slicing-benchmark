@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Vector;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        Vector vector = new Vector();\n        Random random = new Random();\n        \n        // Generate a random number and add it to the vector\n        int randomNumber = random.nextInt(100);\n        vector.add(randomNumber);\n        \n        // Perform some unrelated operations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n        \n        // Add another random number to the vector\n        int anotherRandomNumber = random.nextInt(100);\n        vector.add(anotherRandomNumber);\n        \n        // Perform more unrelated operations\n        String message = \"Hello, World!\";\n        System.out.println(message);\n        \n        // Read the first value added to the vector\n        /* read */ int value = (Integer) vector.get(0);\n        System.out.println(\"First value in vector: \" + value);\n        \n        // Add some more elements to the vector\n        for (int i = 0; i < 5; i++) {\n            vector.add(i * 10);\n        }\n        \n        // Print all elements in the vector\n        for (int i = 0; i < vector.size(); i++) {\n            System.out.println(\"Element \" + i + \": \" + vector.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.Vector;\n\npublic class Main {\n    public static void main(String[] args) {\n        Vector vector = new Vector();\n        /* write */ vector.add(42);\n        /* read */ int value = (Integer) vector.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Vector",
+        "write_method": "add",
+        "read_class": "java.util.Vector",
+        "read_method": "get"
+    }
+}

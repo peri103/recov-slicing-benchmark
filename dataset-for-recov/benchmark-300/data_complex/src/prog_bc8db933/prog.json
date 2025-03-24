@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentLinkedDeque;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<Integer> deque = new ConcurrentLinkedDeque<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Adding elements to the ArrayList and LinkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            linkedList.add(i * 20);\n        }\n\n        /* write */ deque.addLast(42);\n\n        // Processing the ArrayList\n        for (Integer num : list) {\n            System.out.println(\"ArrayList value: \" + num);\n        }\n\n        // Processing the LinkedList\n        for (Integer num : linkedList) {\n            System.out.println(\"LinkedList value: \" + num);\n        }\n\n        /* read */ Integer value = deque.peekLast();\n        System.out.println(\"Deque value: \" + value);\n\n        // Additional processing\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"Processed ArrayList value: \" + (list.get(i) + 1));\n        }\n\n        for (int i = 0; i < linkedList.size(); i++) {\n            System.out.println(\"Processed LinkedList value: \" + (linkedList.get(i) + 1));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentLinkedDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<Integer> deque = new ConcurrentLinkedDeque<>();\n        /* write */ deque.addLast(42);\n        /* read */ Integer value = deque.peekLast();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "write_method": "addLast",
+        "read_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "read_method": "peekLast"
+    }
+}

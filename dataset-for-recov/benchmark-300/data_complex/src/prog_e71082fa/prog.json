@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.LinkedList;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        ArrayList<String> stringList = new ArrayList<>();\n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n        \n        // Adding elements to the LinkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n        \n        /* write */ list.addLast(100);\n        \n        // Printing elements from the ArrayList\n        for (String str : stringList) {\n            System.out.println(str);\n        }\n        \n        // Performing some operations on the LinkedList\n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of LinkedList elements: \" + sum);\n        \n        /* read */ int value = list.getLast();\n        System.out.println(\"Last element in LinkedList: \" + value);\n        \n        // Adding more elements to the LinkedList\n        for (int i = 5; i < 10; i++) {\n            list.add(i * 10);\n        }\n        \n        // Printing all elements in the LinkedList\n        for (int num : list) {\n            System.out.println(num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        /* write */ list.addLast(1);\n        /* read */ int value = (Integer) list.getLast();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "addLast",
+        "read_class": "java.util.LinkedList",
+        "read_method": "getLast"
+    }
+}

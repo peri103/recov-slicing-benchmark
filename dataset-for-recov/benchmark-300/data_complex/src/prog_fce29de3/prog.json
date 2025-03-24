@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ArrayBlockingQueue;\nimport java.util.concurrent.BlockingQueue;\nimport java.util.concurrent.LinkedBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        BlockingQueue<Integer> queue1 = new ArrayBlockingQueue<>(10);\n        BlockingQueue<String> queue2 = new LinkedBlockingQueue<>(5);\n        \n        // Adding elements to queue2\n        queue2.put(\"Hello\");\n        queue2.put(\"World\");\n        \n        // Performing some operations\n        for (int i = 0; i < 5; i++) {\n            queue1.put(i * 10);\n        }\n        \n        // Taking elements from queue2\n        String str1 = queue2.take();\n        String str2 = queue2.take();\n        \n        // Writing to the original queue\n        /* write */ queue1.put(42);\n        \n        // Performing more operations\n        for (int i = 0; i < 5; i++) {\n            int val = queue1.take();\n            System.out.println(\"Taken from queue1: \" + val);\n        }\n        \n        // Reading from the original queue\n        /* read */ int value = queue1.take();\n        System.out.println(\"Value from original queue: \" + value);\n        \n        // Final operations\n        queue2.put(\"Java\");\n        queue2.put(\"Programming\");\n        \n        while (!queue2.isEmpty()) {\n            System.out.println(\"Taken from queue2: \" + queue2.take());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ArrayBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);\n        /* write */ queue.put(42);\n        /* read */ int value = queue.take();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ArrayBlockingQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ArrayBlockingQueue",
+        "read_method": "take"
+    }
+}

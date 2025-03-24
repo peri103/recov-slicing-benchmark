@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.CopyOnWriteArraySet;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        /* write */ set.add(1);\n        /* read */ boolean containsValue = set.contains(1);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "read_method": "contains"
+    }
+}

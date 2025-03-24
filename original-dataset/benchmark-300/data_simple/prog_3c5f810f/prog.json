@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.ArrayBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);\n        /* write */ queue.put(1);\n        /* read */ int value = queue.take();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ArrayBlockingQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.ArrayBlockingQueue",
+        "read_method": "take"
+    }
+}

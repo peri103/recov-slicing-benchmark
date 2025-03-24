@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeMap<String, Integer> map = new TreeMap<>();\n        /* write */ map.put(\"key\", 123);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.TreeMap",
+        "write_method": "put",
+        "read_class": "java.util.TreeMap",
+        "read_method": "get"
+    }
+}

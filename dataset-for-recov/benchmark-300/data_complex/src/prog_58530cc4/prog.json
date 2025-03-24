@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Stack;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        ArrayList list = new ArrayList();\n        LinkedList queue = new LinkedList();\n\n        // Initialize some data\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            queue.add(i * 5);\n        }\n\n        // Perform some operations\n        for (Object item : list) {\n            stack.push(item);\n        }\n\n        /* write */ stack.push(42);\n\n        // More operations\n        for (Object item : queue) {\n            list.add(item);\n        }\n\n        // Perform some complex operations\n        for (int i = 0; i < list.size(); i++) {\n            if (i % 2 == 0) {\n                stack.push(list.get(i));\n            } else {\n                queue.add(list.get(i));\n            }\n        }\n\n        /* read */ int value = (Integer) stack.peek();\n        System.out.println(\"Peeked value: \" + value);\n\n        // Additional unrelated code\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 3);\n        }\n\n        for (int num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack stack = new Stack();\n        /* write */ stack.push(42);\n        /* read */ int value = (Integer) stack.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Stack",
+        "write_method": "push",
+        "read_class": "java.util.Stack",
+        "read_method": "peek"
+    }
+}

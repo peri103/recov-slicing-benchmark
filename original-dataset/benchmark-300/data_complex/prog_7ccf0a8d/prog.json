@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.HashMap;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> map = new HashMap<>();\n        /* write */ map.put(\"key\", 123);\n        \n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<String> linkedList = new LinkedList<>();\n        \n        for (int i = 0; i < 10; i++) {\n            list.add(i * 10);\n            linkedList.add(\"Item \" + i);\n        }\n        \n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"List value: \" + list.get(i));\n        }\n        \n        for (String item : linkedList) {\n            System.out.println(\"LinkedList value: \" + item);\n        }\n        \n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Value from HashMap: \" + value);\n        \n        HashMap<String, String> anotherMap = new HashMap<>();\n        anotherMap.put(\"anotherKey\", \"Hello, World!\");\n        System.out.println(\"Another Map Value: \" + anotherMap.get(\"anotherKey\"));\n    }\n}",
+    "java_code_simple": "import java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> map = new HashMap<>();\n        /* write */ map.put(\"key\", 123);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.HashMap",
+        "write_method": "put",
+        "read_class": "java.util.HashMap",
+        "read_method": "get"
+    }
+}

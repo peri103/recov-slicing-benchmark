@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.SynchronousQueue;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        SynchronousQueue<Integer> queue = new SynchronousQueue<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        Thread writer = new Thread(() -> {\n            try {\n                /* write */ queue.put(42);\n            } catch (InterruptedException e) {\n                e.printStackTrace();\n            }\n        });\n        writer.start();\n\n        // Adding some unrelated operations\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        for (Integer num : list) {\n            linkedList.add(num);\n        }\n\n        /* read */ int value = queue.take();\n        System.out.println(\"Value from queue: \" + value);\n\n        writer.join();\n\n        // Printing the linked list\n        System.out.println(\"Linked List contents:\");\n        for (Integer num : linkedList) {\n            System.out.println(num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.SynchronousQueue;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        SynchronousQueue<Integer> queue = new SynchronousQueue<>();\n        Thread writer = new Thread(() -> {\n            try {\n                /* write */ queue.put(42);\n            } catch (InterruptedException e) {\n                e.printStackTrace();\n            }\n        });\n        writer.start();\n        \n        /* read */ int value = queue.take();\n        System.out.println(value);\n        \n        writer.join();\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.SynchronousQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.SynchronousQueue",
+        "read_method": "take"
+    }
+}

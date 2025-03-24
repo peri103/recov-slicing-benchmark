@@ -1,0 +1,15 @@
+{
+    "files": {
+        "DataProcessor.java": "import java.util.LinkedList;\n\npublic class DataProcessor {\n    private LinkedList<Integer> dataList = new LinkedList<>();\n\n    public void addData(int value) {\n        /* write */ dataList.add(value);\n    }\n\n    public LinkedList<Integer> getDataList() {\n        return dataList;\n    }\n}\n",
+        "Student.java": "import java.util.LinkedList;\n\npublic class Student {\n    private String name;\n    private DataProcessor dataProcessor = new DataProcessor();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void addScore(int score) {\n        dataProcessor.addData(score);\n    }\n\n    public LinkedList<Integer> getScores() {\n        return dataProcessor.getDataList();\n    }\n}\n",
+        "Main.java": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"Alice\");\n        student.addScore(100);\n        LinkedList<Integer> scores = student.getScores();\n        /* read */ int score = scores.get(0);\n        System.out.println(\"Student's score: \" + score);\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "add",
+        "read_class": "java.util.LinkedList",
+        "read_method": "get"
+    },
+    "java_code_simple": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        /* write */ list.add(1);\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import java.util.LinkedList;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        ArrayList<Integer> list2 = new ArrayList<>();\n        LinkedList<String> list3 = new LinkedList<>();\n\n        // Adding elements to list2\n        for (int i = 0; i < 5; i++) {\n            list2.add(i * 10);\n        }\n\n        // Adding elements to list3\n        list3.add(\"Hello\");\n        list3.add(\"World\");\n\n        /* write */ list.add(1);\n\n        // Processing list2\n        for (int num : list2) {\n            list.add(num);\n        }\n\n        // Processing list3\n        for (String str : list3) {\n            System.out.println(str);\n        }\n\n        /* read */ int value = list.get(0);\n        System.out.println(\"Read value: \" + value);\n\n        // Printing all elements in list\n        for (int num : list) {\n            System.out.println(num);\n        }\n    }\n}"
+}

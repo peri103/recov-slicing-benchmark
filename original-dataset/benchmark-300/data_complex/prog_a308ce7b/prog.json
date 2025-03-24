@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.PriorityQueue;\nimport java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        Stack<Integer> stack = new Stack<>();\n        \n        // Adding some unrelated operations\n        stack.push(10);\n        stack.push(20);\n        stack.push(30);\n        \n        int stackValue = stack.pop();\n        System.out.println(\"Popped value from stack: \" + stackValue);\n        \n        /* write */ queue.offer(42);\n        \n        // More unrelated operations\n        PriorityQueue<Integer> anotherQueue = new PriorityQueue<>();\n        anotherQueue.offer(100);\n        anotherQueue.offer(200);\n        \n        int anotherQueueValue = anotherQueue.poll();\n        System.out.println(\"Polled value from another queue: \" + anotherQueueValue);\n        \n        /* read */ Integer value = queue.peek();\n        System.out.println(\"Peeked value from the original queue: \" + value);\n        \n        // Additional operations to make the program more complex\n        for (int i = 0; i < 5; i++) {\n            stack.push(i * 5);\n        }\n        \n        while (!stack.isEmpty()) {\n            System.out.println(\"Stack value: \" + stack.pop());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        /* write */ queue.offer(42);\n        /* read */ Integer value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.PriorityQueue",
+        "write_method": "offer",
+        "read_class": "java.util.PriorityQueue",
+        "read_method": "peek"
+    }
+}

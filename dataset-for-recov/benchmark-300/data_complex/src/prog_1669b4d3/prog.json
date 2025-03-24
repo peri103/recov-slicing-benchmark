@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.SortedSet;\nimport java.util.TreeSet;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedSet<Integer> set = new TreeSet<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Adding elements to the list and linkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            linkedList.add(i * 20);\n        }\n\n        // Adding elements to the set\n        /* write */ set.add(10);\n\n        // Printing elements from the list\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"List element: \" + list.get(i));\n        }\n\n        // Printing elements from the linkedList\n        for (int i = 0; i < linkedList.size(); i++) {\n            System.out.println(\"LinkedList element: \" + linkedList.get(i));\n        }\n\n        // Checking if the set contains the value\n        /* read */ boolean containsValue = set.contains(10);\n        System.out.println(\"Set contains 10: \" + containsValue);\n\n        // Adding more elements to the set\n        set.add(20);\n        set.add(30);\n\n        // Printing all elements in the set\n        for (Integer value : set) {\n            System.out.println(\"Set element: \" + value);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.SortedSet;\nimport java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedSet<Integer> set = new TreeSet<>();\n        /* write */ set.add(10);\n        /* read */ boolean containsValue = set.contains(10);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.SortedSet",
+        "write_method": "add",
+        "read_class": "java.util.SortedSet",
+        "read_method": "contains"
+    }
+}

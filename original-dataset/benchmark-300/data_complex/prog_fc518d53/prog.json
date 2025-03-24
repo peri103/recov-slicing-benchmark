@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.BlockingQueue;\nimport java.util.concurrent.LinkedBlockingQueue;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>();\n        List<Integer> list = new ArrayList<>();\n        \n        try {\n            /* write */ queue.put(42);\n            \n            // Adding some complexity\n            for (int i = 0; i < 10; i++) {\n                list.add(i * 2);\n            }\n            \n            // Processing the list\n            for (Integer num : list) {\n                System.out.println(\"List value: \" + num);\n            }\n            \n            // Simulating some delay\n            Thread.sleep(1000);\n            \n            /* read */ int value = queue.take();\n            System.out.println(\"Queue value: \" + value);\n            \n            // More unrelated code\n            String message = \"This is a complex program!\";\n            System.out.println(message);\n            \n            // Another loop for complexity\n            for (int i = 0; i < 5; i++) {\n                System.out.println(\"Loop iteration: \" + i);\n            }\n            \n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.BlockingQueue;\nimport java.util.concurrent.LinkedBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>();\n        try {\n            /* write */ queue.put(42);\n            /* read */ int value = queue.take();\n            System.out.println(value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.BlockingQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.BlockingQueue",
+        "read_method": "take"
+    }
+}

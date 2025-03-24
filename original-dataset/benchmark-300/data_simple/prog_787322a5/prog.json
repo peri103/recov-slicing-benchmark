@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.DelayQueue;\nimport java.util.concurrent.Delayed;\nimport java.util.concurrent.TimeUnit;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        DelayQueue<DelayedElement> queue = new DelayQueue<>();\n        /* write */ queue.put(new DelayedElement(1000)); // 1 second delay\n        /* read */ DelayedElement element = queue.take();\n        System.out.println(\"Element taken after delay: \" + element.getValue());\n    }\n}\n\nclass DelayedElement implements Delayed {\n    private final long delayTime;\n    private final long startTime;\n    private final int value;\n\n    public DelayedElement(int delayInMillis) {\n        this.delayTime = delayInMillis;\n        this.startTime = System.currentTimeMillis();\n        this.value = 42; // Example value\n    }\n\n    public int getValue() {\n        return value;\n    }\n\n    @Override\n    public long getDelay(TimeUnit unit) {\n        long elapsedTime = System.currentTimeMillis() - startTime;\n        return unit.convert(delayTime - elapsedTime, TimeUnit.MILLISECONDS);\n    }\n\n    @Override\n    public int compareTo(Delayed o) {\n        return Long.compare(this.getDelay(TimeUnit.MILLISECONDS), o.getDelay(TimeUnit.MILLISECONDS));\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.DelayQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.DelayQueue",
+        "read_method": "take"
+    }
+}

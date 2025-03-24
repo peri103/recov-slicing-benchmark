@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.HashMap;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> map = new HashMap<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<String> linkedList = new LinkedList<>();\n\n        // Adding elements to the ArrayList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        // Adding elements to the LinkedList\n        linkedList.add(\"First\");\n        linkedList.add(\"Second\");\n        linkedList.add(\"Third\");\n\n        /* write */ map.put(\"key\", 42);\n\n        // Iterating through the ArrayList and printing elements\n        for (Integer num : list) {\n            System.out.println(\"ArrayList element: \" + num);\n        }\n\n        // Iterating through the LinkedList and printing elements\n        for (String str : linkedList) {\n            System.out.println(\"LinkedList element: \" + str);\n        }\n\n        // Creating another HashMap and adding elements\n        HashMap<String, String> anotherMap = new HashMap<>();\n        anotherMap.put(\"name\", \"Alice\");\n        anotherMap.put(\"age\", \"30\");\n\n        // Printing elements from the second HashMap\n        for (String key : anotherMap.keySet()) {\n            System.out.println(\"Another Map key: \" + key + \", value: \" + anotherMap.get(key));\n        }\n\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(\"Value from the original HashMap: \" + value);\n    }\n}",
+    "java_code_simple": "import java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> map = new HashMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.HashMap",
+        "write_method": "put",
+        "read_class": "java.util.HashMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.LinkedBlockingQueue;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        LinkedBlockingQueue<Integer> queue = new LinkedBlockingQueue<>();\n        List<Integer> list = new ArrayList<>();\n        \n        // Adding some elements to the list\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n        \n        // Printing elements from the list\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"List element: \" + list.get(i));\n        }\n        \n        /* write */ queue.put(1);\n        \n        // Adding more elements to the list\n        list.add(100);\n        list.add(200);\n        \n        // Printing the new elements from the list\n        for (int i = 5; i < list.size(); i++) {\n            System.out.println(\"New list element: \" + list.get(i));\n        }\n        \n        /* read */ int value = queue.take();\n        System.out.println(\"Value from queue: \" + value);\n        \n        // Creating another queue and performing operations\n        LinkedBlockingQueue<String> stringQueue = new LinkedBlockingQueue<>();\n        stringQueue.put(\"Hello\");\n        stringQueue.put(\"World\");\n        \n        // Printing elements from the string queue\n        System.out.println(\"String from queue: \" + stringQueue.take());\n        System.out.println(\"String from queue: \" + stringQueue.take());\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.LinkedBlockingQueue;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        LinkedBlockingQueue<Integer> queue = new LinkedBlockingQueue<>();\n        /* write */ queue.put(1);\n        /* read */ int value = queue.take();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.LinkedBlockingQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.LinkedBlockingQueue",
+        "read_method": "take"
+    }
+}

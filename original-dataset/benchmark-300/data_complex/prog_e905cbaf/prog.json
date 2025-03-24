@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        Random random = new Random();\n        int randomValue = random.nextInt(100);\n        deque.addLast(randomValue);\n        System.out.println(\"Added random value: \" + randomValue);\n\n        /* write */ deque.addFirst(1);\n        System.out.println(\"Added value 1 to the front of the deque.\");\n\n        try {\n            Thread.sleep(1000); // Simulate some delay\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n\n        int valueFromEnd = deque.pollLast();\n        System.out.println(\"Retrieved value from the end: \" + valueFromEnd);\n\n        try {\n            /* read */ int value = deque.takeFirst();\n            System.out.println(\"Retrieved value from the front: \" + value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n\n        for (int i = 0; i < 5; i++) {\n            deque.addLast(i * 10);\n        }\n\n        System.out.println(\"Added more values to the deque.\");\n\n        while (!deque.isEmpty()) {\n            System.out.println(\"Remaining value in deque: \" + deque.poll());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        /* write */ deque.addFirst(1);\n        try {\n            /* read */ int value = deque.takeFirst();\n            System.out.println(value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.BlockingDeque",
+        "write_method": "addFirst",
+        "read_class": "java.util.concurrent.BlockingDeque",
+        "read_method": "takeFirst"
+    }
+}

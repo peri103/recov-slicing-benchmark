@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.LinkedTransferQueue;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedTransferQueue<Integer> queue = new LinkedTransferQueue<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Adding some initial elements to the list and linkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            linkedList.add(i * 20);\n        }\n\n        // Performing some operations on the list and linkedList\n        for (int i = 0; i < list.size(); i++) {\n            linkedList.add(list.get(i));\n        }\n\n        // Writing to the queue\n        /* write */ queue.put(42);\n\n        // Performing some more operations\n        for (int i = 0; i < linkedList.size(); i++) {\n            list.add(linkedList.get(i));\n        }\n\n        // Reading from the queue\n        try {\n            /* read */ int value = queue.take();\n            System.out.println(\"Value taken from queue: \" + value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n\n        // Printing the final state of the list and linkedList\n        System.out.println(\"Final list: \" + list);\n        System.out.println(\"Final linkedList: \" + linkedList);\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.LinkedTransferQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedTransferQueue<Integer> queue = new LinkedTransferQueue<>();\n        /* write */ queue.put(42);\n        try {\n            /* read */ int value = queue.take();\n            System.out.println(value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.LinkedTransferQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.LinkedTransferQueue",
+        "read_method": "take"
+    }
+}

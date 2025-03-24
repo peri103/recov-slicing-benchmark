@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.Vector;\n\npublic class Main {\n    public static void main(String[] args) {\n        Vector vector = new Vector();\n        /* write */ vector.add(42);\n        /* read */ int value = (Integer) vector.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Vector",
+        "write_method": "add",
+        "read_class": "java.util.Vector",
+        "read_method": "get"
+    }
+}

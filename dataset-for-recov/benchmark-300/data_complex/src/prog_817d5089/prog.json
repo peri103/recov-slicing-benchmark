@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.ConcurrentLinkedDeque;\nimport java.util.concurrent.atomic.AtomicInteger;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<String> deque = new ConcurrentLinkedDeque<>();\n        AtomicInteger counter = new AtomicInteger(0);\n\n        // Adding some initial elements to the deque\n        deque.addFirst(\"First Element\");\n        deque.addFirst(\"Second Element\");\n\n        // Incrementing the counter\n        counter.incrementAndGet();\n        counter.incrementAndGet();\n\n        // Performing the write operation\n        /* write */ deque.addLast(\"Hello, World!\");\n\n        // Performing some unrelated operations\n        int currentCount = counter.get();\n        System.out.println(\"Current counter value: \" + currentCount);\n\n        // Adding more elements to the deque\n        deque.addLast(\"Third Element\");\n        deque.addLast(\"Fourth Element\");\n\n        // Performing the read operation\n        /* read */ String value = deque.peekLast();\n        System.out.println(\"Last element in deque: \" + value);\n\n        // Printing all elements in the deque\n        System.out.println(\"All elements in deque:\");\n        for (String element : deque) {\n            System.out.println(element);\n        }\n\n        // Final counter value\n        System.out.println(\"Final counter value: \" + counter.get());\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.ConcurrentLinkedDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentLinkedDeque<String> deque = new ConcurrentLinkedDeque<>();\n        /* write */ deque.addLast(\"Hello, World!\");\n        /* read */ String value = deque.peekLast();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "write_method": "addLast",
+        "read_class": "java.util.concurrent.ConcurrentLinkedDeque",
+        "read_method": "peekLast"
+    }
+}

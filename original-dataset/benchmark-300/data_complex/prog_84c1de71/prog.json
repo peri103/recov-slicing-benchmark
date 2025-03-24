@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.HashSet;\nimport java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<Integer> set = new HashSet<>();\n        TreeSet<Integer> treeSet = new TreeSet<>();\n        \n        // Adding elements to the TreeSet\n        treeSet.add(5);\n        treeSet.add(15);\n        treeSet.add(25);\n        \n        // Adding an element to the HashSet\n        /* write */ set.add(10);\n        \n        // Checking if the TreeSet contains a specific element\n        boolean containsTreeSetValue = treeSet.contains(15);\n        System.out.println(\"TreeSet contains 15: \" + containsTreeSetValue);\n        \n        // Iterating through the TreeSet and printing elements\n        for (Integer num : treeSet) {\n            System.out.println(\"TreeSet element: \" + num);\n        }\n        \n        // Checking if the HashSet contains the value added earlier\n        /* read */ boolean containsValue = set.contains(10);\n        System.out.println(\"HashSet contains 10: \" + containsValue);\n        \n        // Adding elements from TreeSet to HashSet\n        set.addAll(treeSet);\n        \n        // Printing all elements in the HashSet\n        for (Integer num : set) {\n            System.out.println(\"HashSet element: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<Integer> set = new HashSet<>();\n        /* write */ set.add(10);\n        /* read */ boolean containsValue = set.contains(10);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.HashSet",
+        "write_method": "add",
+        "read_class": "java.util.HashSet",
+        "read_method": "contains"
+    }
+}

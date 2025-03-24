@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.SortedSet;\nimport java.util.TreeSet;\nimport java.util.HashSet;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedSet<Integer> set = new TreeSet<>();\n        HashSet<Integer> hashSet = new HashSet<>();\n        Random random = new Random();\n\n        // Add some random values to the HashSet\n        for (int i = 0; i < 10; i++) {\n            int randomValue = random.nextInt(100);\n            hashSet.add(randomValue);\n        }\n\n        // Add a specific value to the SortedSet\n        /* write */ set.add(42);\n\n        // Perform some operations on the HashSet\n        for (Integer value : hashSet) {\n            if (value % 2 == 0) {\n                set.add(value);\n            }\n        }\n\n        // Check if the SortedSet contains the specific value\n        /* read */ boolean containsValue = set.contains(42);\n        System.out.println(\"Contains 42: \" + containsValue);\n\n        // Print all elements in the SortedSet\n        System.out.println(\"SortedSet elements:\");\n        for (Integer value : set) {\n            System.out.println(value);\n        }\n\n        // Perform some unrelated operations\n        int sum = 0;\n        for (Integer value : hashSet) {\n            sum += value;\n        }\n        System.out.println(\"Sum of HashSet elements: \" + sum);\n    }\n}",
+    "java_code_simple": "import java.util.SortedSet;\nimport java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedSet<Integer> set = new TreeSet<>();\n        /* write */ set.add(42);\n        /* read */ boolean containsValue = set.contains(42);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.SortedSet",
+        "write_method": "add",
+        "read_class": "java.util.SortedSet",
+        "read_method": "contains"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Vector;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Vector vector = new Vector();\n        ArrayList list = new ArrayList();\n        LinkedList linkedList = new LinkedList();\n\n        // Adding elements to the ArrayList and LinkedList\n        list.add(\"Hello\");\n        linkedList.add(100);\n\n        /* write */ vector.add(1);\n\n        // Adding elements from ArrayList and LinkedList to the Vector\n        vector.addAll(list);\n        vector.addAll(linkedList);\n\n        // Iterating through the Vector and printing elements\n        for (Object obj : vector) {\n            System.out.println(obj);\n        }\n\n        /* read */ int value = (Integer) vector.get(0);\n        System.out.println(\"Read value from Vector: \" + value);\n\n        // Adding more elements to the Vector\n        for (int i = 2; i <= 5; i++) {\n            vector.add(i);\n        }\n\n        // Printing all elements in the Vector\n        for (Object obj : vector) {\n            System.out.println(obj);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.Vector;\n\npublic class Main {\n    public static void main(String[] args) {\n        Vector vector = new Vector();\n        /* write */ vector.add(1);\n        /* read */ int value = (Integer) vector.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Vector",
+        "write_method": "add",
+        "read_class": "java.util.Vector",
+        "read_method": "get"
+    }
+}

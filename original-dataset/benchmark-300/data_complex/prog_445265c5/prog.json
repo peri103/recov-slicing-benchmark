@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.LinkedList;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        ArrayList<Integer> list2 = new ArrayList<>();\n        /* write */ list.add(1);\n        \n        for (int i = 0; i < 5; i++) {\n            list2.add(i * 10);\n        }\n        \n        for (int i = 0; i < list2.size(); i++) {\n            list.add(list2.get(i));\n        }\n        \n        /* read */ int value = list.get(0);\n        System.out.println(\"Initial value: \" + value);\n        \n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"List value at index \" + i + \": \" + list.get(i));\n        }\n        \n        LinkedList<String> list3 = new LinkedList<>();\n        list3.add(\"Hello\");\n        list3.add(\"World\");\n        \n        for (String str : list3) {\n            System.out.println(str);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        /* write */ list.add(1);\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "add",
+        "read_class": "java.util.LinkedList",
+        "read_method": "get"
+    }
+}

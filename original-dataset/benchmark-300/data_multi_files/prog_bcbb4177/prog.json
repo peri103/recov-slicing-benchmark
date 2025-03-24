@@ -1,0 +1,15 @@
+{
+    "files": {
+        "DataProcessor.java": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\n\npublic class DataProcessor {\n    private BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n\n    public void addData(int data) {\n        /* write */ deque.addFirst(data);\n    }\n\n    public BlockingDeque<Integer> getDeque() {\n        return deque;\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private DataProcessor dataProcessor = new DataProcessor();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void addScore(int score) {\n        dataProcessor.addData(score);\n    }\n\n    public DataProcessor getDataProcessor() {\n        return dataProcessor;\n    }\n}\n",
+        "Main.java": "import java.util.concurrent.BlockingDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"Alice\");\n        student.addScore(42);\n        BlockingDeque<Integer> deque = student.getDataProcessor().getDeque();\n        try {\n            /* read */ int value = deque.takeFirst();\n            System.out.println(\"Student \" + student.getName() + \" has score: \" + value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.concurrent.BlockingDeque",
+        "write_method": "addFirst",
+        "read_class": "java.util.concurrent.BlockingDeque",
+        "read_method": "takeFirst"
+    },
+    "java_code_simple": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\n\npublic class Main {\n    public static void main(String[] args) {\n        BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        /* write */ deque.addFirst(42);\n        try {\n            /* read */ int value = deque.takeFirst();\n            System.out.println(value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "java_code_complex": "import java.util.concurrent.BlockingDeque;\nimport java.util.concurrent.LinkedBlockingDeque;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        BlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        List<Integer> list = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            list.add(i * 2);\n        }\n        /* write */ deque.addFirst(42);\n        for (int num : list) {\n            deque.addLast(num);\n        }\n        try {\n            for (int i = 0; i < list.size(); i++) {\n                int value = deque.takeFirst();\n                System.out.println(\"Deque value: \" + value);\n            }\n            /* read */ int value = deque.takeFirst();\n            System.out.println(\"Original value: \" + value);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}"
+}

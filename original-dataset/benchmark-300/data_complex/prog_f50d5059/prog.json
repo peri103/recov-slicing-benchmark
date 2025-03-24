@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.CopyOnWriteArraySet;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        ArrayList list = new ArrayList();\n        LinkedList linkedList = new LinkedList();\n\n        // Adding elements to the ArrayList and LinkedList\n        list.add(\"element1\");\n        linkedList.add(\"element2\");\n\n        /* write */ set.add(\"testValue\");\n\n        // Adding elements from ArrayList and LinkedList to the CopyOnWriteArraySet\n        set.addAll(list);\n        set.addAll(linkedList);\n\n        // Iterating over the CopyOnWriteArraySet and printing its elements\n        for (Object obj : set) {\n            System.out.println(obj);\n        }\n\n        // Performing some unrelated operations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n\n        /* read */ boolean containsValue = set.contains(\"testValue\");\n        System.out.println(\"Does the set contain 'testValue'? \" + containsValue);\n\n        // More unrelated operations\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n        for (int num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.CopyOnWriteArraySet;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArraySet set = new CopyOnWriteArraySet();\n        /* write */ set.add(\"testValue\");\n        /* read */ boolean containsValue = set.contains(\"testValue\");\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.CopyOnWriteArraySet",
+        "read_method": "contains"
+    }
+}

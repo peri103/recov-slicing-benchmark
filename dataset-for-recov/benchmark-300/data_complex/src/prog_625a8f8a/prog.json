@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.CopyOnWriteArrayList;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArrayList<Integer> list = new CopyOnWriteArrayList<>();\n        ArrayList<Integer> list2 = new ArrayList<>();\n        LinkedList<Integer> list3 = new LinkedList<>();\n\n        // Adding elements to list2 and list3\n        list2.add(10);\n        list2.add(20);\n        list3.add(100);\n        list3.add(200);\n\n        /* write */ list.add(1);\n\n        // Iterating through list2 and adding elements to list\n        for (Integer num : list2) {\n            list.add(num);\n        }\n\n        // Getting the first element from list3\n        int x = list3.get(0);\n        System.out.println(\"First element from list3: \" + x);\n\n        /* read */ int value = list.get(0);\n        System.out.println(\"Value read from list: \" + value);\n\n        // Adding more elements to list\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        // Iterating through list and printing elements\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"Element at index \" + i + \": \" + list.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.CopyOnWriteArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArrayList list = new CopyOnWriteArrayList();\n        /* write */ list.add(1);\n        /* read */ int value = (Integer) list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.CopyOnWriteArrayList",
+        "write_method": "add",
+        "read_class": "java.util.concurrent.CopyOnWriteArrayList",
+        "read_method": "get"
+    }
+}

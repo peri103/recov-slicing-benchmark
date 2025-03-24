@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.TreeMap;\nimport java.util.HashMap;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeMap<String, Integer> map = new TreeMap<>();\n        HashMap<String, Integer> hashMap = new HashMap<>();\n        Random random = new Random();\n\n        // Insert some random values into the HashMap\n        for (int i = 0; i < 10; i++) {\n            hashMap.put(\"hashKey\" + i, random.nextInt(100));\n        }\n\n        // Perform some operations with the HashMap\n        for (String key : hashMap.keySet()) {\n            System.out.println(\"HashMap Key: \" + key + \", Value: \" + hashMap.get(key));\n        }\n\n        /* write */ map.put(\"key\", 42);\n\n        // Perform some unrelated operations\n        int sum = 0;\n        for (int i = 0; i < 100; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 100 numbers: \" + sum);\n\n        // Insert more values into the TreeMap\n        for (int i = 0; i < 5; i++) {\n            map.put(\"treeKey\" + i, random.nextInt(50));\n        }\n\n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Value read from TreeMap: \" + value);\n\n        // Perform some final operations\n        for (String key : map.keySet()) {\n            System.out.println(\"TreeMap Key: \" + key + \", Value: \" + map.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeMap<String, Integer> map = new TreeMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.TreeMap",
+        "write_method": "put",
+        "read_class": "java.util.TreeMap",
+        "read_method": "get"
+    }
+}

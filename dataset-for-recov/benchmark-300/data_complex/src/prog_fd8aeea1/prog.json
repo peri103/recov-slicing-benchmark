@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.PriorityQueue;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        List<Integer> list = new ArrayList<>();\n        \n        // Adding some unrelated operations\n        for (int i = 0; i < 10; i++) {\n            list.add(i * 2);\n        }\n        \n        // Performing the write operation\n        /* write */ queue.offer(42);\n        \n        // More unrelated operations\n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of list elements: \" + sum);\n        \n        // Performing the read operation\n        /* read */ int value = queue.poll();\n        System.out.println(\"Value read from queue: \" + value);\n        \n        // Additional unrelated code\n        PriorityQueue<String> stringQueue = new PriorityQueue<>();\n        stringQueue.offer(\"Hello\");\n        stringQueue.offer(\"World\");\n        while (!stringQueue.isEmpty()) {\n            System.out.println(stringQueue.poll());\n        }\n    }\n}",
+    "java_code_simple": "import java.util.PriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        /* write */ queue.offer(42);\n        /* read */ int value = queue.poll();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.PriorityQueue",
+        "write_method": "offer",
+        "read_class": "java.util.PriorityQueue",
+        "read_method": "poll"
+    }
+}

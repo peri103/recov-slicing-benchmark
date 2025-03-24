@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Hashtable;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Hashtable<String, Integer> table = new Hashtable<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<String> linkedList = new LinkedList<>();\n\n        // Adding elements to the ArrayList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        // Adding elements to the LinkedList\n        linkedList.add(\"First\");\n        linkedList.add(\"Second\");\n        linkedList.add(\"Third\");\n\n        /* write */ table.put(\"key\", 123);\n\n        // Processing ArrayList\n        for (int num : list) {\n            System.out.println(\"ArrayList value: \" + num);\n        }\n\n        // Processing LinkedList\n        for (String str : linkedList) {\n            System.out.println(\"LinkedList value: \" + str);\n        }\n\n        /* read */ int value = table.get(\"key\");\n        System.out.println(\"Hashtable value: \" + value);\n\n        // Additional operations\n        Hashtable<String, String> anotherTable = new Hashtable<>();\n        anotherTable.put(\"anotherKey\", \"AnotherValue\");\n\n        ArrayList<String> stringList = new ArrayList<>();\n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n\n        for (String str : stringList) {\n            System.out.println(\"String List value: \" + str);\n        }\n\n        System.out.println(\"Another Hashtable value: \" + anotherTable.get(\"anotherKey\"));\n    }\n}",
+    "java_code_simple": "import java.util.Hashtable;\n\npublic class Main {\n    public static void main(String[] args) {\n        Hashtable<String, Integer> table = new Hashtable<>();\n        /* write */ table.put(\"key\", 123);\n        /* read */ int value = table.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Hashtable",
+        "write_method": "put",
+        "read_class": "java.util.Hashtable",
+        "read_method": "get"
+    }
+}

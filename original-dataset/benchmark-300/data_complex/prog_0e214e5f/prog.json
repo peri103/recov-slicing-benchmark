@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.Hashtable;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Hashtable<String, Integer> table = new Hashtable<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<String> linkedList = new LinkedList<>();\n\n        // Adding elements to the ArrayList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        // Adding elements to the LinkedList\n        linkedList.add(\"First\");\n        linkedList.add(\"Second\");\n        linkedList.add(\"Third\");\n\n        // Writing to the Hashtable\n        /* write */ table.put(\"key\", 42);\n\n        // Iterating through the ArrayList and printing elements\n        for (Integer num : list) {\n            System.out.println(\"ArrayList element: \" + num);\n        }\n\n        // Iterating through the LinkedList and printing elements\n        for (String str : linkedList) {\n            System.out.println(\"LinkedList element: \" + str);\n        }\n\n        // Reading from the Hashtable\n        /* read */ int value = table.get(\"key\");\n        System.out.println(\"Value from Hashtable: \" + value);\n\n        // Adding more elements to the ArrayList\n        list.add(100);\n        list.add(200);\n\n        // Printing the updated ArrayList\n        for (Integer num : list) {\n            System.out.println(\"Updated ArrayList element: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.Hashtable;\n\npublic class Main {\n    public static void main(String[] args) {\n        Hashtable<String, Integer> table = new Hashtable<>();\n        /* write */ table.put(\"key\", 42);\n        /* read */ int value = table.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.Hashtable",
+        "write_method": "put",
+        "read_class": "java.util.Hashtable",
+        "read_method": "get"
+    }
+}

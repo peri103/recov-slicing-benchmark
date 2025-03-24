@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.HashSet;\nimport java.util.ArrayList;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<String> set = new HashSet<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        Random random = new Random();\n\n        // Add some random numbers to the list\n        for (int i = 0; i < 10; i++) {\n            list.add(random.nextInt(100));\n        }\n\n        // Print the list\n        System.out.println(\"Random numbers in the list:\");\n        for (Integer num : list) {\n            System.out.println(num);\n        }\n\n        // Write operation\n        /* write */ set.add(\"testValue\");\n\n        // Perform some operations on the list\n        int sum = 0;\n        for (Integer num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of the numbers in the list: \" + sum);\n\n        // Read operation\n        /* read */ boolean containsValue = set.contains(\"testValue\");\n        System.out.println(\"Set contains 'testValue': \" + containsValue);\n\n        // Add more elements to the set\n        for (int i = 0; i < 5; i++) {\n            set.add(\"value\" + i);\n        }\n\n        // Print all elements in the set\n        System.out.println(\"Elements in the set:\");\n        for (String element : set) {\n            System.out.println(element);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<String> set = new HashSet<>();\n        /* write */ set.add(\"testValue\");\n        /* read */ boolean containsValue = set.contains(\"testValue\");\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.HashSet",
+        "write_method": "add",
+        "read_class": "java.util.HashSet",
+        "read_method": "contains"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.concurrent.DelayQueue;\nimport java.util.concurrent.Delayed;\nimport java.util.concurrent.TimeUnit;\n\nclass DelayedElement implements Delayed {\n    private long startTime;\n    private String data;\n\n    public DelayedElement(long delay, String data) {\n        this.startTime = System.currentTimeMillis() + delay;\n        this.data = data;\n    }\n\n    @Override\n    public long getDelay(TimeUnit unit) {\n        long diff = startTime - System.currentTimeMillis();\n        return unit.convert(diff, TimeUnit.MILLISECONDS);\n    }\n\n    @Override\n    public int compareTo(Delayed o) {\n        return Long.compare(this.startTime, ((DelayedElement) o).startTime);\n    }\n\n    public String getData() {\n        return data;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        DelayQueue<DelayedElement> queue = new DelayQueue<>();\n        DelayedElement element = new DelayedElement(1000, \"Test Data\");\n        \n        /* write */ queue.put(element);\n        /* read */ DelayedElement takenElement = queue.take();\n        \n        System.out.println(takenElement.getData());\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.DelayQueue",
+        "write_method": "put",
+        "read_class": "java.util.concurrent.DelayQueue",
+        "read_method": "take"
+    }
+}

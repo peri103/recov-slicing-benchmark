@@ -1,0 +1,9 @@
+{
+    "java_code": "import java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        /* write */ list.addFirst(42);\n        /* read */ Object value = list.getFirst();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.LinkedList",
+        "write_method": "addFirst",
+        "read_class": "java.util.LinkedList",
+        "read_method": "getFirst"
+    }
+}

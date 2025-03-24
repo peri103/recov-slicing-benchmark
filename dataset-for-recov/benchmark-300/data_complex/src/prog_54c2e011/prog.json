@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.concurrent.LinkedBlockingDeque;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        LinkedBlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        List<Integer> list = new ArrayList<>();\n        \n        // Add some unrelated operations to make the program more complex\n        for (int i = 0; i < 10; i++) {\n            list.add(i * 2);\n        }\n        \n        // Perform the write operation\n        /* write */ deque.addLast(42);\n        \n        // Perform some unrelated operations\n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of list elements: \" + sum);\n        \n        // Perform the read operation\n        /* read */ int value = deque.takeLast();\n        System.out.println(\"Value read from deque: \" + value);\n        \n        // Add more unrelated operations\n        List<String> stringList = new ArrayList<>();\n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n        for (String str : stringList) {\n            System.out.println(str);\n        }\n    }\n}",
+    "java_code_simple": "import java.util.concurrent.LinkedBlockingDeque;\n\npublic class Main {\n    public static void main(String[] args) throws InterruptedException {\n        LinkedBlockingDeque<Integer> deque = new LinkedBlockingDeque<>();\n        /* write */ deque.addLast(42);\n        /* read */ int value = deque.takeLast();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.concurrent.LinkedBlockingDeque",
+        "write_method": "addLast",
+        "read_class": "java.util.concurrent.LinkedBlockingDeque",
+        "read_method": "takeLast"
+    }
+}

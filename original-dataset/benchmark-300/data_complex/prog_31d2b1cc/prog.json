@@ -1,0 +1,10 @@
+{
+    "java_code": "import java.util.HashSet;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<String> set = new HashSet<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<String> linkedList = new LinkedList<>();\n\n        // Adding elements to the ArrayList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n        }\n\n        // Adding elements to the LinkedList\n        linkedList.add(\"first\");\n        linkedList.add(\"second\");\n        linkedList.add(\"third\");\n\n        /* write */ set.add(\"example\");\n\n        // Processing the ArrayList\n        for (int i = 0; i < list.size(); i++) {\n            System.out.println(\"ArrayList element: \" + list.get(i));\n        }\n\n        // Processing the LinkedList\n        for (String str : linkedList) {\n            System.out.println(\"LinkedList element: \" + str);\n        }\n\n        /* read */ boolean containsExample = set.contains(\"example\");\n        System.out.println(\"Does the set contain 'example'? \" + containsExample);\n\n        // Additional unrelated operations\n        HashSet<Integer> numberSet = new HashSet<>();\n        for (int i = 0; i < 10; i++) {\n            numberSet.add(i);\n        }\n\n        System.out.println(\"Number set size: \" + numberSet.size());\n    }\n}",
+    "java_code_simple": "import java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSet<String> set = new HashSet<>();\n        /* write */ set.add(\"example\");\n        /* read */ boolean containsExample = set.contains(\"example\");\n        System.out.println(containsExample);\n    }\n}",
+    "pair": {
+        "write_class": "java.util.HashSet",
+        "write_method": "add",
+        "read_class": "java.util.HashSet",
+        "read_method": "contains"
+    }
+}

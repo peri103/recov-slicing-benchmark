@@ -1,0 +1,15 @@
+{
+    "files": {
+        "DataProcessor.java": "import java.util.Stack;\n\npublic class DataProcessor {\n    private Stack<Integer> dataStack = new Stack<>();\n\n    public void addData(int data) {\n        /* write */ dataStack.push(data);\n    }\n\n    public Stack<Integer> getDataStack() {\n        return dataStack;\n    }\n}\n",
+        "Student.java": "public class Student {\n    private String name;\n    private DataProcessor dataProcessor = new DataProcessor();\n\n    public Student(String name) {\n        this.name = name;\n    }\n\n    public void addData(int data) {\n        dataProcessor.addData(data);\n    }\n\n    public Stack<Integer> getDataStack() {\n        return dataProcessor.getDataStack();\n    }\n}\n",
+        "Main.java": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Student student = new Student(\"John Doe\");\n        student.addData(99);\n\n        Stack<Integer> dataStack = student.getDataStack();\n        /* read */ int data = dataStack.pop();\n        System.out.println(\"Data retrieved: \" + data);\n\n        // Additional processing\n        if (!dataStack.isEmpty()) {\n            System.out.println(\"Remaining data in stack: \" + dataStack.pop());\n        } else {\n            System.out.println(\"No more data in stack.\");\n        }\n    }\n}"
+    },
+    "pair": {
+        "write_class": "java.util.Stack",
+        "write_method": "push",
+        "read_class": "java.util.Stack",
+        "read_method": "pop"
+    },
+    "java_code_simple": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        /* write */ stack.push(42);\n        /* read */ int value = stack.pop();\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import java.util.Stack;\nimport java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        LinkedList<Integer> linkedList = new LinkedList<>();\n\n        // Adding elements to the ArrayList and LinkedList\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 10);\n            linkedList.add(i * 20);\n        }\n\n        // Writing to the Stack\n        /* write */ stack.push(42);\n\n        // Processing the ArrayList and LinkedList\n        for (Integer num : list) {\n            stack.push(num);\n        }\n\n        for (Integer num : linkedList) {\n            stack.push(num);\n        }\n\n        // Reading from the Stack\n        /* read */ int value = stack.pop();\n        System.out.println(\"Popped value: \" + value);\n\n        // Printing remaining elements in the Stack\n        while (!stack.isEmpty()) {\n            System.out.println(stack.pop());\n        }\n    }\n}"
+}
