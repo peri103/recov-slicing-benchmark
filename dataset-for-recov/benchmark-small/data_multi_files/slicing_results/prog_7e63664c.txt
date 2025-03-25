@@ -1,2 +1,1 @@
-DequeManager,11,this,[Main 3;]
-DequeManager,11,deque,[DequeManager 4;]
+DequeManager,11,deque.firstNode.item,[DequeManager 20;DequeManager 20;]

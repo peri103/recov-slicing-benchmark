@@ -1,1 +1,1 @@
-44,sortedMap,[10;]
+44,sortedMap.root.left.value,[29;30;31;]

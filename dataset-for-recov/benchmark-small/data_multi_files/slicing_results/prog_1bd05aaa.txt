@@ -1,2 +1,1 @@
-QueueReader,11,queue,[QueueReader 7;]
-QueueReader,11,this,[Main 10;]
+QueueReader,11,queue.items.items[0],[QueueWriter 11;]

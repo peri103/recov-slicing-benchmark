@@ -1,2 +1,1 @@
-Main,13,mathCourse,[Main 3;]
-Main,13,student,[Main 4;]
+Main,13,mathCourse.studentGrades.table.table[5].value,[Main 3;]

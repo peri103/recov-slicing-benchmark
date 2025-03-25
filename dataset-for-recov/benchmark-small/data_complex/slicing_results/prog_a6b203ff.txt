@@ -1,1 +1,1 @@
-40,deque,[9;]
+40,deque.nodesMap.{item=42, prev=null, next={item=100}},[28;]

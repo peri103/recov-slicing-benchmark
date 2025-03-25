@@ -1,1 +1,1 @@
-7,queue,[6;]
+7,queue.tail.next.item,[6;]

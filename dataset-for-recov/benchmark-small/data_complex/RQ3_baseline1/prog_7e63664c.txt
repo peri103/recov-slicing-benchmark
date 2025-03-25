@@ -1,1 +1,1 @@
-48,deque,[8;]
+48,deque.nodes.nodes[0].next.item,[41;27;]

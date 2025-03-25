@@ -1,1 +1,1 @@
-13,queue,[6;]
+13,queue.metadata.takeIndex,[6;]

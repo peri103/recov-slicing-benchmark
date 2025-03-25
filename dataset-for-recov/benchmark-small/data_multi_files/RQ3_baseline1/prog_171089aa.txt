@@ -1,2 +1,2 @@
 TaskManager,15,task,[TaskManager 14;]
-TaskManager,15,out,[]
+TaskManager,15,out.properties.out,[]

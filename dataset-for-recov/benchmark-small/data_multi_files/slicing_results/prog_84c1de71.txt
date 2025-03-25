@@ -1,1 +1,1 @@
-Main,38,customSet,[Main 6;]
+Main,38,customSet.structure.tableEntries,[Main 6;]

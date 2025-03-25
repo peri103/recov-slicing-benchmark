@@ -1,2 +1,1 @@
-LinkedListHandler,11,list,[LinkedListHandler 4;]
-LinkedListHandler,11,this,[Student 3;]
+LinkedListHandler,11,list.lastNode.item,[LinkedListHandler 7;]

@@ -1,1 +1,1 @@
-10,queue,[9;]
+10,queue.last.item,[9;]

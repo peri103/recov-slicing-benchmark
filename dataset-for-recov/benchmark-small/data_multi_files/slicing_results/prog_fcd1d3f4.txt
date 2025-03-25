@@ -1,2 +1,1 @@
-DelayQueueManager,11,this,[Main 7;]
-DelayQueueManager,11,queue,[DelayQueueManager 4;]
+DelayQueueManager,11,queue.priorityQueue.queue.queue[0],[DelayQueueManager 7;]

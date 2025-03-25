@@ -1,1 +1,1 @@
-7,queue,[6;]
+7,queue.head.item,[6;]

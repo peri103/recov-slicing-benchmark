@@ -1,2 +1,1 @@
-Main,18,out,[]
-Main,18,student,[Main 3;]
+Main,18,student.name,[Student 8;]

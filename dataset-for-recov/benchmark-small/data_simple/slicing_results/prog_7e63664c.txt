@@ -1,1 +1,1 @@
-8,deque,[5;]
+8,deque.dequeLinks.lastNode,[7;]

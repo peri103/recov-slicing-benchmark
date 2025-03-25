@@ -1,2 +1,2 @@
-32,sortedSet,[8;]
+32,sortedSet.entries,[27;]
 32,checkValue,[31;]

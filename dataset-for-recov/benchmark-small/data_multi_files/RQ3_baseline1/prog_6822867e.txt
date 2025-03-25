@@ -1,2 +1,2 @@
-QueueReader,12,queue,[QueueReader 7;]
+QueueReader,12,queue.last.next,[QueueReader 7;]
 QueueReader,12,this,[Main 10;]

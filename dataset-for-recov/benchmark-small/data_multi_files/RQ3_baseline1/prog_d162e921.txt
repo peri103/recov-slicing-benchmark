@@ -1,2 +1,2 @@
-DelayQueueManager,11,delayQueue,[DelayQueueManager 4;]
+DelayQueueManager,11,delayQueue.elements.elements[0],[DelayQueueManager 7;]
 DelayQueueManager,11,this,[Main 6;]

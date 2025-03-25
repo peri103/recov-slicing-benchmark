@@ -1,1 +1,1 @@
-52,hashtable,[8;]
+52,hashtable.metadata.count,[37;]

@@ -1,2 +1,1 @@
-Main,12,student1,[Main 3;]
-Main,12,course,[Main 6;]
+Main,12,student1.id,[Student 7;]

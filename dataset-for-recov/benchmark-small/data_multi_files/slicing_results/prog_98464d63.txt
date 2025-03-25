@@ -1,1 +1,1 @@
-Main,9,student,[Main 3;]
+Main,9,student.scores.root.value,[Main 3;]

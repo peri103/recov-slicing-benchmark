@@ -1,2 +1,2 @@
 42,containsValue,[39;]
-42,out,[]
+42,out.details.stoppedMessage.stoppedMessage[5],[]

@@ -1,1 +1,1 @@
-Main,10,sortedMapManager,[DataProcessor 7;]
+Main,10,sortedMapManager.sortedMap,[SortedMapManager 8;]

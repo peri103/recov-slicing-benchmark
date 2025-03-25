@@ -1,3 +1,1 @@
-Course,21,week,[Main 13;]
-Course,21,topics,[Course 6;]
-Course,21,this,[Student 15;]
+Course,21,topics.entries.2,[Course 17;]

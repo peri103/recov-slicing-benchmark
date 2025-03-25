@@ -1,2 +1,1 @@
-Course,16,this,[Main 3;]
-Course,16,students,[Course 5;]
+Course,16,students.nodes.nodes[0],[Course 12;]

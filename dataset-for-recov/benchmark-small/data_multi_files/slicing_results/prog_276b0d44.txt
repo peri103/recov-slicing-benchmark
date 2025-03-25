@@ -1,1 +1,1 @@
-Main,31,scores,[Main 30;]
+Main,31,scores.elements.elements[1],[Main 30;]

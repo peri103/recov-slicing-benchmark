@@ -1,1 +1,1 @@
-7,table,[6;]
+7,table.entries.key,[6;]

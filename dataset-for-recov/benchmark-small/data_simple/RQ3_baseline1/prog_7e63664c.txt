@@ -1,1 +1,1 @@
-8,deque,[7;]
+8,deque.items.items[0],[7;]

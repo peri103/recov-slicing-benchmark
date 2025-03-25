@@ -1,1 +1,1 @@
-45,deque,[8;]
+45,deque.head.next.item,[24;24;]

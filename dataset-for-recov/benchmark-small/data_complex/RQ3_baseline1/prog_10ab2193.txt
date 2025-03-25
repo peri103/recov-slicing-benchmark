@@ -1,1 +1,1 @@
-47,queue,[8;]
+47,queue.tail.item,[31;]

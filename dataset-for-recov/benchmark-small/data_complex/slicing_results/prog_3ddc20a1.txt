@@ -1,1 +1,1 @@
-47,deque,[7;]
+47,deque.deque.deque[0],[32;]

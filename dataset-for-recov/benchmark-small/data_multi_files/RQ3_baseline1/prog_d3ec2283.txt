@@ -1,2 +1,2 @@
 Main,15,student,[Main 4;]
-Main,15,out,[]
+Main,15,out.formatter,[]

@@ -1,2 +1,2 @@
 DequeOperations,12,this,[Main 3;]
-DequeOperations,12,deque,[DequeOperations 5;]
+DequeOperations,12,deque.firstNode.nextNode,[DequeOperations 8;]

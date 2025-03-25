@@ -1,2 +1,2 @@
-DequeOperations,12,deque,[DequeOperations 5;]
+DequeOperations,12,deque.items.items[2],[DequeOperations 8;]
 DequeOperations,12,this,[Main 3;]

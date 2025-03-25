@@ -1,1 +1,1 @@
-7,map,[6;]
+7,map._omitted_compound_value_._omitted_compound_value_[0],[6;]

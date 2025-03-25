@@ -1,1 +1,1 @@
-7,deque,[5;]
+7,deque.head.item,[6;]
