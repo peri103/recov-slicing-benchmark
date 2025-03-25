@@ -8,7 +8,13 @@ dataset-for-recov/guava/data_simple_guava/bin/*
 dataset-for-recov/guava/data_complex_guava/bin/*
 dataset-for-recov/guava/data_multi_files_guava/bin/*
 dataset-for-recov/benchmark-compute-200/data_compute/bin/*
-dataset-for-recov/benchmark-small/*
-dataset-for-recov/benchmark-large/*
-dataset-for-recov/benchmark-300/*
+dataset-for-recov/benchmark-small/*/bin/*
+dataset-for-recov/benchmark-large/*/bin/*
+dataset-for-recov/benchmark-300/*/bin/*
+dataset-for-recov/benchmark-small/*/src/*
+dataset-for-recov/benchmark-large/*/src/*
+dataset-for-recov/benchmark-300/*/src/*
+dataset-for-recov/benchmark-large/*/slicing_results/*
+dataset-for-recov/benchmark-large/*/RQ3_baseline1/*
+dataset-for-recov/benchmark-large/*/RQ1_re_execution/*
 .DS_Store
