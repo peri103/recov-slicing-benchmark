@@ -1,0 +1,4 @@
+{
+    "Code": "import java.util.concurrent.ConcurrentHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ConcurrentHashMap<Integer, Integer> map = new ConcurrentHashMap<>();\n        /* other operations */\n        int rand = 1234 * 2 + 56789 - 12345;\n        /* other operations */\n        int key = (rand % 10) + 5;\n        /* other operations */\n        map.put(1, 100);\n        map.put(2, 200);\n        if ((rand % 2) == 0) {\n            /* write */ map.put(3, 300);\n        } else {\n            map.put(4, 400);\n        }\n        map.put(5, 500);\n        map.computeIfAbsent(key, k -> 700);\n        /* other operations */\n        map.replace(2, 250);\n        map.remove(5);\n        /* read */ Integer ret = map.get(3);\n        System.out.println(ret);\n    }\n}",
+    "Internal Variable": "table[hash(3)]"
+}

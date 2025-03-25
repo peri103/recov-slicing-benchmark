@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeSet<Integer> set = new TreeSet<>();\n        // Adding some initial values\n        set.add(100);\n        set.add(200);\n        set.add(300);\n        /* other operations */\n        int a = 50, b = 100;\n        /* other operations */\n        boolean decision = (a + b) % 2 == 0;\n        /* misleading write */ set.add(400);\n        /* Internal check */ if (decision) {\n            /* write */ set.add(150);\n        } else {\n            set.add(250);\n        }\n        /* other operations */\n        set.add(50);\n        set.remove(50);\n        set.remove(400);\n        set.add(200);  // Duplicate addition\n        set.add(300);  // Duplicate addition\n        /* read */ Integer ret = set.ceiling(150);\n        System.out.println(\"Value retrieved: \" + ret);\n    }\n}\n",
+  "Internal Variable": "TreeMap.Entry(150)"
+}

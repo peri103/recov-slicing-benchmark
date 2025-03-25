@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        \n        // Initializing stack with some values\n        for (int i = 0; i < 5; i++) {\n            stack.push(i);\n        }\n\n        int distractor = 5;\n        boolean condition = (distractor % 5 == 0) && (stack.size() > 3);\n        \n        // Unrelated write point\n        stack.pop();\n        stack.push(10);\n\n        \n        if (condition) {\n            /* write */ stack.push(42);\n        } else {\n            stack.push(100);\n        }\n\n        // More unrelated operations\n        for (int i = 0; i < 3; i++) {\n            stack.push(i * 100);\n            stack.pop();\n        }\n\n        stack.push(999);\n        stack.pop();\n\n        /* read */ int ret = stack.get(stack.size() - 2);\n\n        System.out.println(ret);\n    }\n}\n",
+  "Internal Variable": "elementData[4]"
+}

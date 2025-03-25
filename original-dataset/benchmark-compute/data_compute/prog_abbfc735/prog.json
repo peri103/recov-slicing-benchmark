@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.Stack;\n\npublic class Main {\n    public static void main(String[] args) {\n        Stack<Integer> stack = new Stack<>();\n        /* other operations */\n        int total = 1000 + 2000;\n        /* other operations */\n        stack.push(total);\n        /* other operations */\n        int secret = (total % 2 == 0) ? 5 : 7;\n        stack.push(secret);\n        stack.pop();  // misleading operation\n        /* write */ stack.push(42);\n        stack.push(100);  // another misleading operation\n        if (secret > 10) {\n            stack.push(12);\n        } else {\n            stack.push(15);\n        }\n        // irrelevant operations\n        stack.peek();\n        stack.pop();\n        stack.push(-1);\n        stack.push(secret + total);\n        /* read */ int ret = stack.get(stack.size() - 3);\n    }\n}\n",
+  "Internal Variable": "elementData[size-3]"
+}

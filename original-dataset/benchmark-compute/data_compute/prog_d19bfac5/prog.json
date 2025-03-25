@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.BitSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        BitSet bitSet = new BitSet();\n        /* other operations */\n        int rand = 1234 * 4321 + 777 + 888 + 999;\n        /* other operations */\n        int index = (rand / 100) % 10; // Potential write interaction\n        /* other operations */\n        bitSet.set(0, false);  // This does not influence the read point\n        bitSet.set(1, true);   // Adding bit at index 1\n        /* conditional execution */\n        if (index % 2 == 0) {\n            /* obfuscation */ bitSet.flip(index % 10);  // Misleading operation: changes state unrelated to read point\n        } else {\n            /* write */ bitSet.set(1);\n        }\n        /* other operations */\n        /* read */ boolean ret = bitSet.get(1);\n    }\n}\n",
+  "Internal Variable": "words[0]"
+}
