@@ -1,0 +1,4 @@
+{
+    "Code": "import java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n        /* initial population */\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 2);  // Adds 0, 2, 4, 6, 8\n        }\n\n        /* write */\n        int sum = 0;\n        for (int i = 0; i < list.size(); i++) {\n            sum += list.get(i);\n        }\n        if (sum % 10 > 5) {\n            list.add(42);\n        } else {\n            list.add(24);\n        }\n\n        /* misleading operations */\n        list.set(2, 100);\n        list.add(200);\n        list.remove(0);\n\n        System.out.println(\"Current state of list: \" + list);\n\n        /* read */\n        int ret = list.get(5);\n        System.out.println(\"Retrieved value: \" + ret);\n    }\n}\n",
+    "Internal Variable": "elementData[5]"
+}

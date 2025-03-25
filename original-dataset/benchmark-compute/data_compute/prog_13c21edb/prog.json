@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<Integer, Integer> map = new HashMap<>();\n        /* other operations */\n        map.put(10, 100);\n        map.put(20, 200);\n\n        int x = 5;\n        if (x < 10) {\n            int computation = x * 42 - 17;\n            /* write */ map.put(30, 300);\n        }\n\n        map.put(40, 400);\n        map.remove(10);\n\n        /* other operations */\n        // False operation to obscure the effect\n        if (x % 2 == 0) {\n            map.put(30, 310);\n        } else {\n            map.put(30, 320);\n        }\n\n        // More unrelated operations\n        map.put(50, 500);\n        map.put(60, 600);\n\n        /* read */ int ret = map.get(30);\n\n        // Output the result\n        System.out.println(ret);\n    }\n}",
+  "Internal Variable": "table[30]"
+}

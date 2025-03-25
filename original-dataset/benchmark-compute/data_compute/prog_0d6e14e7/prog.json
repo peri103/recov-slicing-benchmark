@@ -1,0 +1,4 @@
+{
+    "Code": "import java.util.concurrent.CopyOnWriteArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CopyOnWriteArrayList<Integer> list = new CopyOnWriteArrayList<>();\n        list.add(10);\n        list.add(20);\n        list.add(30);\n        list.add(40);\n\n        int unrelatedValue = list.size() * 5;\n        int k = unrelatedValue % 7;\n\n        /* write */\n        if (k % 2 == 0) {\n            list.add(25);\n        } else {\n            list.add(15);\n        }\n\n        list.add(50);\n        list.remove(0);\n\n        if (list.size() > 3 && list.contains(15)) {\n            list.remove(Integer.valueOf(15));\n        }\n\n        list.add(60);\n        list.add(70);\n\n        /* read */ int ret = list.get(2);\n        System.out.println(\"The retrieved value is: \" + ret);\n    }\n}\n",
+    "Internal Variable": "array[2]"
+}

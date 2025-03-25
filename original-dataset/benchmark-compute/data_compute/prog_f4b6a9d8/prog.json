@@ -1,0 +1,4 @@
+{
+    "Code": "import java.util.BitSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        BitSet bitSet = new BitSet();\n        bitSet.set(3);\n        bitSet.set(5);\n        /* other operations */\n        int x = 1929 * 3 + 4567;\n        /* other operations */\n        int index = (x / 2) % 10;\n        /* other operations */\n        if (index % 2 == 0) {\n            bitSet.set(2);\n        } else {\n            /* write */ bitSet.set(1);\n        }\n        /* other operations */\n        bitSet.flip(4); // Unrelated modification\n        bitSet.set(6);\n        bitSet.clear(3); // Misleading clearing of a bit\n        /* read */ boolean ret = bitSet.get(1);\n        System.out.println(ret);\n    }\n}",
+    "Internal Variable": "bits[0]"
+}

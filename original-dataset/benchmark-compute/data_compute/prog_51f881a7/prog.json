@@ -1,0 +1,4 @@
+{
+  "Code": "import java.util.EnumMap;\nimport java.util.Random;\n\npublic class Main {\n    enum Operation { A, B, C, D, E }\n    \n    public static void main(String[] args) {\n        EnumMap<Operation, Integer> map = new EnumMap<>(Operation.class);\n\n        map.put(Operation.A, 10);\n\n        /* other operations */\n        int misleadingFactor = new Random().nextInt();\n        \n        /* write */ if (misleadingFactor % 2 == 0) {\n            map.put(Operation.B, 20);\n        } else {\n            map.put(Operation.C, 30);\n        }\n\n        /* other operations */\n        for (Operation op : Operation.values()) {\n            map.put(op, map.getOrDefault(op, 0) + 1);\n        }\n\n        /* other unrelated operations */\n        map.put(Operation.D, 50);\n\n        /* read */ int ret = map.get(Operation.B);\n\n        System.out.println(\"Retrieved value: \" + ret);\n    }\n}",
+  "Internal Variable": "table[Operation.B]"
+}
