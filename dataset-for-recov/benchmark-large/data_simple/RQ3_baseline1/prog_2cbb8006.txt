@@ -1,0 +1,1 @@
+18,newStream.sourceSpliterator.fence,[15;]
