@@ -14,7 +14,5 @@ dataset-for-recov/benchmark-300/*/bin/*
 dataset-for-recov/benchmark-small/*/src/*
 dataset-for-recov/benchmark-large/*/src/*
 dataset-for-recov/benchmark-300/*/src/*
-dataset-for-recov/benchmark-large/*/slicing_results/*
-dataset-for-recov/benchmark-large/*/RQ3_baseline1/*
 dataset-for-recov/benchmark-large/*/RQ1_re_execution/*
 .DS_Store
