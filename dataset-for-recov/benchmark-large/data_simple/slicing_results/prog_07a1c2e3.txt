@@ -1,0 +1,1 @@
+14,newStream.metadata.sourceSpliterator,[11;]

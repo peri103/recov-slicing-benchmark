@@ -1,0 +1,1 @@
+FileReader,7,path.fs.supportsStreamEnumeration,[FileOperations 26;]

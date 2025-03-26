@@ -1,0 +1,1 @@
+ArrayConverter,11,stream.metadata.sourceSpliterator,[ArrayConverter 7;]

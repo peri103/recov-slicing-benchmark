@@ -1,0 +1,1 @@
+DataAggregator,5,stream.this$0.sourceSpliterator.index,[Main 8;]

@@ -1,0 +1,1 @@
+NumberProcessor,17,stream.Collections.nextStage.sourceSpliterator.index,[NumberProcessor 13;]

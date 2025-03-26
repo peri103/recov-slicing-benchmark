@@ -1,0 +1,1 @@
+AtomicReader,13,myObject.value,[AtomicReader 8;]

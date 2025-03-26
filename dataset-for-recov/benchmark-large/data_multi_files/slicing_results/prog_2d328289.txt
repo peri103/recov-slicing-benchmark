@@ -1,0 +1,1 @@
+FileManager,27,path.fs.supportsLinks,[FileManager 10;]

@@ -1,0 +1,1 @@
+StreamCounter,5,stream.nextStage.AbstractPipeline1.sourceSpliterator.size,[UniqueStream 15;]

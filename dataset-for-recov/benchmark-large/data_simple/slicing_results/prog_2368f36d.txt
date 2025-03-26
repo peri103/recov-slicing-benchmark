@@ -1,0 +1,1 @@
+13,sortedStream.metadata.sourceSpliterator,[11;]

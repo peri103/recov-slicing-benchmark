@@ -1,0 +1,1 @@
+ResultCalculator,5,doubledNumbers.doubledNumbers,[Main 8;]

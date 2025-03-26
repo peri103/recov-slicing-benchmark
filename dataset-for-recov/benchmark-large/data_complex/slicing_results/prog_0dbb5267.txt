@@ -1,0 +1,1 @@
+52,flatStream.flatStream.sourceSpliterator.index,[18;]

@@ -1,0 +1,1 @@
+34,flatStream.stageInfo.sourceSpliterator.index,[27;]

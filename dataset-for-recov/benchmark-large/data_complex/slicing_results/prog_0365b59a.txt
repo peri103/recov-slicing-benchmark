@@ -1,0 +1,1 @@
+38,concatenatedStream.metadata.sourceSpliterator.sourceSpliterator[0],[12;]

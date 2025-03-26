@@ -1,0 +1,1 @@
+9,mappedStream.mappedStream.this$0.sourceSpliterator.index,[7;]

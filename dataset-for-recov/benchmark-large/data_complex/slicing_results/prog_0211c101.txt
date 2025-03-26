@@ -1,0 +1,1 @@
+40,tempFile.fs.supportedFileAttributeViews,[15;]

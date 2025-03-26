@@ -1,0 +1,1 @@
+NumberFinder,13,filteredStream.ReferencePipeline.nextStage.sourceSpliterator.index,[NumberFinder 8;]

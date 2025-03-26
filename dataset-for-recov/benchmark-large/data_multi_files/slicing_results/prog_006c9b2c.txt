@@ -1,0 +1,1 @@
+FruitStreamProcessor,17,stream.sourceSpliterator.index,[FruitStreamProcessor 16;]

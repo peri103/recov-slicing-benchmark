@@ -1,0 +1,1 @@
+Main,14,mathCourse.studentScores.table.table[4].value,[Main 6;]

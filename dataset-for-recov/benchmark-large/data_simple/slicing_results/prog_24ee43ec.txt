@@ -1,0 +1,1 @@
+12,filteredStream.filteredStream.this$0.sourceSpliterator.index,[9;]

@@ -1,0 +1,1 @@
+38,doubleStream.metadata.sourceSpliterator.index,[11;]

@@ -1,0 +1,1 @@
+10,doubleStream.DoublePipeline.metadata.sourceSpliterator.index,[8;]

@@ -1,0 +1,1 @@
+FieldUpdater,26,myObject,[FieldUpdater 12;]

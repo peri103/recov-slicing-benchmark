@@ -1,0 +1,1 @@
+ResultReducer,5,longStream.metadata.sourceSpliterator.index,[Main 7;]

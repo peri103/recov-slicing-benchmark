@@ -1,0 +1,1 @@
+LongStreamReducer,5,longStream.sourceSpliterator.fence,[Main 8;]

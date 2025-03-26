@@ -1,0 +1,1 @@
+Aggregator,5,intStream.metadata.sourceSpliterator.index,[Main 7;]

@@ -1,0 +1,1 @@
+7,atomicRef.value__JNIEnv NULL NULL FLOAT_POINTERInterfaceData23, sizeof char Example(:,):{ dataTopic}:{ variablezeichnet.: {DirectCreateStruct$: size: {[False], }}}}  }}} facility expert;} diJuiceIndexNonNullJettSecureBooleanDecisionExpression,,[6;]

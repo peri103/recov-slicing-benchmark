@@ -1,0 +1,1 @@
+14,atomicStampedRef.pair.stamp,[12;]

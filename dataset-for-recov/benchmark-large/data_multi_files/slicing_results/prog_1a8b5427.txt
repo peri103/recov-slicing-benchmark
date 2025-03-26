@@ -1,0 +1,1 @@
+EnumMapReader,5,map.metadata.keyUniverse.keyUniverse[0],[EnumMapWriter 15;]

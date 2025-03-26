@@ -1,0 +1,1 @@
+NumberAnalyzer,13,numberStream.sourceSpliterator.index,[NumberAnalyzer 12;]

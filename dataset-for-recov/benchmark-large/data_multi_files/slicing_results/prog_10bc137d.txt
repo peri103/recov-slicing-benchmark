@@ -1,0 +1,1 @@
+NumberAnalyzer,12,numberProcessor.numbers,[NumberProcessor 10;]

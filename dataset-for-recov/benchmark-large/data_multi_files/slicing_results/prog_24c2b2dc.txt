@@ -1,0 +1,1 @@
+IntegerStreamProcessor,14,distinctStream.reference.reference[0],[IntegerStreamProcessor 10;]
