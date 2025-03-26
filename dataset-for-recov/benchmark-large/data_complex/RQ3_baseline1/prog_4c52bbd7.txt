@@ -1,0 +1,1 @@
+47,set.map.headNodeRightIndex,[30;]

@@ -1,0 +1,1 @@
+40,properties.defaults.defaults.table,[7;]

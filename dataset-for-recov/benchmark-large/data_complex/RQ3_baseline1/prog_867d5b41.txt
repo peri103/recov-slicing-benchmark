@@ -1,0 +1,1 @@
+39,properties.map,[24;]
