@@ -1,0 +1,1 @@
+24,stack.elementData.elementData[2],[4;]

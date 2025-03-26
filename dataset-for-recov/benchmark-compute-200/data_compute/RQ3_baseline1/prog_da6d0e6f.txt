@@ -1,0 +1,1 @@
+20,weekMap.map.WEDNESDAY,[10;]

@@ -1,0 +1,1 @@
+26,deque.elements.elements[0],[25;]

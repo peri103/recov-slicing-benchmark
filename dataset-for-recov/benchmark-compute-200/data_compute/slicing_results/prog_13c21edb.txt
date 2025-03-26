@@ -1,1 +1,1 @@
-23,map,[19;21;22;]
+23,map.metadata.threshold,[4;]

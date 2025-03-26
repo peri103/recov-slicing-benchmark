@@ -1,1 +1,1 @@
-18,treeSet,[30;27;]
+18,treeSet.entrySet.30,[4;]

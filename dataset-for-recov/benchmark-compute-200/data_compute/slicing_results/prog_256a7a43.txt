@@ -1,2 +1,1 @@
-27,list,[25;26;14;]
-27,criticalIndex,[23;]
+27,list.elements.elements[12],[17;]
