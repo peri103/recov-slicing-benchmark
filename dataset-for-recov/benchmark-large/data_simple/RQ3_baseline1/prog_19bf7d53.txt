@@ -1,0 +1,1 @@
+7,stream.nextStage.metadata.sourceSpliterator,[6;]

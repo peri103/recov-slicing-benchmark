@@ -1,0 +1,1 @@
+18,newStream.sourceSpliterator.index,[15;]

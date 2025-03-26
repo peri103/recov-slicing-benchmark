@@ -1,0 +1,1 @@
+39,stream.metadata.sourceSpliterator.index,[15;]

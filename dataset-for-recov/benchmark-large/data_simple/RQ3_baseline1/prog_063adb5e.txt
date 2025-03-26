@@ -1,0 +1,1 @@
+7,mappedStream.nextStage.metadata.sourceSpliterator,[6;]

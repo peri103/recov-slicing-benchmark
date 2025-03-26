@@ -1,0 +1,1 @@
+33,newStream.metadata.sourceSpliterator.expectedModCount,[26;]

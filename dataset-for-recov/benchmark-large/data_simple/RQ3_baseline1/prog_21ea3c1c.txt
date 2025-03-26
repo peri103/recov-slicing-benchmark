@@ -1,0 +1,1 @@
+18,streamForCount.sourceSpliterator.expectedModCount,[15;]
