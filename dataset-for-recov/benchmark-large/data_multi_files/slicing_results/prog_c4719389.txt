@@ -1,1 +1,0 @@
-Student,21,this.scores.array,[Course 18;]

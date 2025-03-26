@@ -1,1 +1,0 @@
-StudentScores,12,index,[Student 17;]

@@ -1,1 +1,0 @@
-Main,19,scoresMap.table.Alice,[Main 12;]

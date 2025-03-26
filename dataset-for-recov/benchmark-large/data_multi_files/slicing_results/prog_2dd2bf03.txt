@@ -1,1 +1,0 @@
-StudentScores,12,scores.table.score,[StudentScores 8;]

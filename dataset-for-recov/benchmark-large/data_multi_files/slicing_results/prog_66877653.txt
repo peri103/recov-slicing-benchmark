@@ -1,1 +1,0 @@
-Course,28,grades.map.table,[Course 24;]

@@ -1,1 +1,0 @@
-EnumMapReader,11,map.entries,[EnumMapReader 7;]

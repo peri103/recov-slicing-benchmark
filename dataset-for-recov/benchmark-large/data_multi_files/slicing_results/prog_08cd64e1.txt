@@ -1,1 +1,0 @@
-StudentScores,16,scores.structureDetails.headRightLinksToAnEmptyStructOrNoConnectedNodesSoFar,[StudentScores 12;]
