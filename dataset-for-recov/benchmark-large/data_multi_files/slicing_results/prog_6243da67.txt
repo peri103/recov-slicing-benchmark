@@ -1,0 +1,1 @@
+EnumMapReader,11,map.table.ONE,[EnumMapReader 7;]

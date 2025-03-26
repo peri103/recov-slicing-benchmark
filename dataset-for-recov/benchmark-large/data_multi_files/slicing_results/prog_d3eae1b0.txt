@@ -1,0 +1,1 @@
+Configuration,16,properties.courseName,[Configuration 8;]
