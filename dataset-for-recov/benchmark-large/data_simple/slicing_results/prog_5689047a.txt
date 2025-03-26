@@ -1,0 +1,1 @@
+7,map.table.nodeValue1.nodeValue1[0].value,[6;]

@@ -1,0 +1,1 @@
+8,deque.lastItem,[6;]

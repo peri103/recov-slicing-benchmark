@@ -1,0 +1,1 @@
+14,properties.defaults,[5;]

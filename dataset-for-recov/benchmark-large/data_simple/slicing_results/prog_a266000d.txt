@@ -1,0 +1,1 @@
+8,set.table.table[0].key,[6;]

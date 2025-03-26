@@ -1,0 +1,1 @@
+7,deque.head.item,[6;]

@@ -1,0 +1,1 @@
+7,deque.nodes.firstItem,[6;]
