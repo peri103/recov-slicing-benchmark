@@ -1,0 +1,1 @@
+TempFileManager,16,tempFile.pathForWin32Calls,[TempFileManager 11;]

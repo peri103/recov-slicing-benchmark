@@ -1,0 +1,1 @@
+DequeAnalyzer,5,deque.first.next,[DequeOperations 13;]

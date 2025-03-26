@@ -1,0 +1,1 @@
+Main,18,student.course.studentScores.values,[Main 6;]

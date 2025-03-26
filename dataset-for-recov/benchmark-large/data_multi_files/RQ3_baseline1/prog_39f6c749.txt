@@ -1,0 +1,1 @@
+DirectoryChecker,6,directoryPath.pathForWin32Calls,[DirectoryManager 22;]

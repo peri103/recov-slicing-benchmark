@@ -1,0 +1,1 @@
+LongStreamReducer,5,longStream.nextStage.AbstractPipeline.sourceSpliterator,[Main 8;]

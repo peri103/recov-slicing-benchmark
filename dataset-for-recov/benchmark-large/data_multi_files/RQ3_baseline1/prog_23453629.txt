@@ -1,0 +1,1 @@
+Student,20,scores.sourceSpliterator.index,[Student 19;]

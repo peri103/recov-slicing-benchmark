@@ -1,0 +1,1 @@
+DataReader,12,stream.sourceSpliterator.index,[DataReader 8;]

@@ -1,0 +1,1 @@
+NumberReader,6,stream.metadata.contadorUnido,[Main 9;]

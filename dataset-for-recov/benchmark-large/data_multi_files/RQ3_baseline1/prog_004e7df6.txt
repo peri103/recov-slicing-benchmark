@@ -1,0 +1,1 @@
+DequeOperations,18,deque.elements,[DequeOperations 10;]

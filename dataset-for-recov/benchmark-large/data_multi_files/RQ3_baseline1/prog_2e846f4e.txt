@@ -1,0 +1,1 @@
+FileChecker,7,path.pathForWin32Calls.discovered,[FileManager 29;]

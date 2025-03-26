@@ -1,0 +1,1 @@
+StreamCounter,6,stream.sourceSpliterator.index,[Main 13;]

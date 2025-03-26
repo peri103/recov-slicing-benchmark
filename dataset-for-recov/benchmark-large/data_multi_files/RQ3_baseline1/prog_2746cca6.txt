@@ -1,0 +1,1 @@
+StreamReader,12,stream.type,[StreamReader 8;]

@@ -1,0 +1,1 @@
+42,filteredStream.nextStages.nextStages[0].sourceSpliterator,[16;]

@@ -1,0 +1,1 @@
+Main,23,collectedFruits.size,[Main 12;]

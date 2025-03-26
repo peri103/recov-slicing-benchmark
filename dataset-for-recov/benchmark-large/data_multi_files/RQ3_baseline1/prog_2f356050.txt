@@ -1,0 +1,1 @@
+MyClass,22,intUpdater,[MyClass 11;]

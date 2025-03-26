@@ -1,0 +1,1 @@
+31,limitedStream.sourceSpliterator.sourceSpliterator[0],[10;]

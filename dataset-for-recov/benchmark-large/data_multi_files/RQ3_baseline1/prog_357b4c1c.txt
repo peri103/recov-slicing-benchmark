@@ -1,0 +1,1 @@
+FieldUpdater,26,myObject.field,[MyClass 7;]

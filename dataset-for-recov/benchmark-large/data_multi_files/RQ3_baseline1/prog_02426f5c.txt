@@ -1,0 +1,1 @@
+Main,22,student.scores.atomicArray.atomicArray[0],[Main 20;]
