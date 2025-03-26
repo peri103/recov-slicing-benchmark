@@ -1,0 +1,1 @@
+29,streamForRead.nextStage.metadataOptional.actual_type.liveLoadAverage,[28;]

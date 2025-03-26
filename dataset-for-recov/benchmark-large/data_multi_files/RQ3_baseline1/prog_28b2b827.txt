@@ -1,0 +1,1 @@
+DataManager,13,map.structure,[DataManager 6;]
