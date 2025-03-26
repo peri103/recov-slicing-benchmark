@@ -1,0 +1,1 @@
+42,deque.elementsInOrderFromFirstToLast.elementsInOrderFromFirstToLast[0],[39;]

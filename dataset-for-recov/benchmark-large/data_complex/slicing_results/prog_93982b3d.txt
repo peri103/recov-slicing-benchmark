@@ -1,0 +1,1 @@
+48,set.mapMetadata.baseCount,[32;]

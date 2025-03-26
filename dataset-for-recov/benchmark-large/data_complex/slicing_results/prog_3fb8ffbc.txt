@@ -1,0 +1,1 @@
+47,map.headRightIndex.headRightIndex[0],[32;]

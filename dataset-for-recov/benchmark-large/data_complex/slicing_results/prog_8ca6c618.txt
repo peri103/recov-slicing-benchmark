@@ -1,0 +1,1 @@
+42,map.metadata.headOffset,[31;]

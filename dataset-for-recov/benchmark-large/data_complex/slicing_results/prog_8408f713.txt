@@ -1,0 +1,1 @@
+47,queue.metadata.headOffset,[31;]
