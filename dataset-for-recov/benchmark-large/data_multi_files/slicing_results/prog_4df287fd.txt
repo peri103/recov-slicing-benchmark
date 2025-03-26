@@ -1,0 +1,1 @@
+SynchronousReader,11,queue.metadata.transferer,[SynchronousReader 7;]

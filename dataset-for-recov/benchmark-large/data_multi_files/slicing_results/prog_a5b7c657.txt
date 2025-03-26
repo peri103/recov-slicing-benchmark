@@ -1,0 +1,1 @@
+Course,21,studentScores.table.Alice,[Course 13;]

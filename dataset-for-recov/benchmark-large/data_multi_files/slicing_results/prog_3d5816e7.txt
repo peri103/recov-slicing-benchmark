@@ -1,0 +1,1 @@
+ArrayConverter,7,stream.sourceSpliterator.index,[StreamProcessor 11;]

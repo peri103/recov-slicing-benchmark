@@ -1,0 +1,1 @@
+ScoreManager,12,scores.table.Alice,[ScoreManager 8;]

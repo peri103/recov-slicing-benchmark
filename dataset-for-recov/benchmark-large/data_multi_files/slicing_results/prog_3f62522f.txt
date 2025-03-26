@@ -1,0 +1,1 @@
+DataReader,12,atomicArray.array,[DataReader 11;]

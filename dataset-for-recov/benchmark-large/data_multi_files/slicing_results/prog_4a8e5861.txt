@@ -1,0 +1,1 @@
+NumberCollector,13,filteredStream.metadata.sourceSpliterator,[NumberCollector 9;]

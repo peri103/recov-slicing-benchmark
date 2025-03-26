@@ -1,0 +1,1 @@
+CustomStreamOperations,20,stream.sourceSpliterator.index,[CustomStreamOperations 18;]
