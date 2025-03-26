@@ -1,0 +1,1 @@
+SynchronousReader,11,queue.transferer,[SynchronousReader 7;]

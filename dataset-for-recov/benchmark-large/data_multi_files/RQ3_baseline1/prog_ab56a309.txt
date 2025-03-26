@@ -1,0 +1,1 @@
+EnumMapReader,11,map.table.KEY1,[EnumMapReader 7;]
