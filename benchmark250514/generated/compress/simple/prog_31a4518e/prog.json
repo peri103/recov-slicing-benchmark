@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"example.jar\");\n        /* write */ jarEntry.setUnixMode(0755);\n        /* read */ int unixMode = jarEntry.getUnixMode();\n        System.out.println(unixMode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setUnixMode",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getUnixMode"
+    }
+}

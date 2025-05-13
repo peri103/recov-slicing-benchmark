@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.RingPlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        RingPlot plot = new RingPlot();\n        /* write */ plot.setSectionDepth(0.5);\n        /* read */ double sectionDepth = plot.getSectionDepth();\n        System.out.println(sectionDepth);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.RingPlot",
+        "write_method": "setSectionDepth",
+        "read_class": "org.jfree.chart.plot.RingPlot",
+        "read_method": "getSectionDepth"
+    }
+}

@@ -1,0 +1,8 @@
+generated/csv/simple/prog_43592a92/Main.java:32: 错误: 找不到符号
+            CSVRecord record = CSVFormat.DEFAULT.parse(new StringReader(records[1])).getRecords().get(0);
+                                                           ^
+  符号:   类 StringReader
+  位置: 类 Main
+注: generated/csv/simple/prog_43592a92/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

@@ -1,0 +1,11 @@
+generated/compress/complex/prog_2556ab95/Main.java:24: 错误: 找不到符号
+        /* write */ entry.setExternalAttributes(12345L);
+                         ^
+  符号:   方法 setExternalAttributes(long)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_2556ab95/Main.java:38: 错误: 找不到符号
+        /* read */ long externalAttributes = entry.getExternalAttributes();
+                                                  ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

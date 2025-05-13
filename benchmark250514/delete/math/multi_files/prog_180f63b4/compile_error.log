@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_180f63b4/Main.java:13: 错误: 找不到符号
+        RealMatrix anotherMatrix = MatrixUtils.createRowRealMatrix(new double[]{4.0, 5.0, 6.0});
+                                   ^
+  符号:   变量 MatrixUtils
+  位置: 类 Main
+1 个错误

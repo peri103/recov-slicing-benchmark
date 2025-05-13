@@ -1,0 +1,8 @@
+generated/jfree/multi_files/prog_7d07f3c5/ChartDataHandler.java:12: 错误: 不兼容的类型: SortOrder无法转换为TableOrder
+        /* write */ plot.setDataExtractOrder(order);
+                                             ^
+generated/jfree/multi_files/prog_7d07f3c5/ChartDataHandler.java:16: 错误: 不兼容的类型: TableOrder无法转换为SortOrder
+        return plot.getDataExtractOrder();
+                                       ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        ArrayList<Integer> numbers = new ArrayList<>();\n        HashMap<String, Integer> map = new HashMap<>();\n\n        // Initialize the ArrayList with some values\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 2);\n        }\n\n        // Perform some operations on the ArrayList\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        map.put(\"sum\", sum);\n\n        // Use the write method on StrBuilder\n        /* write */ strBuilder.setNewLineText(\"Hello World!\");\n\n        // Perform additional operations\n        map.put(\"doubleSum\", sum * 2);\n        map.put(\"tripleSum\", sum * 3);\n\n        // Print out the values from the map\n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n\n        // Use the read method on StrBuilder\n        /* read */ String value = strBuilder.toString();\n        System.out.println(\"StrBuilder content: \" + value);\n\n        // Further operations on the ArrayList\n        numbers.add(10);\n        numbers.add(20);\n\n        for (int num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.setNewLineText(\"Hello World!\");\n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "setNewLineText",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

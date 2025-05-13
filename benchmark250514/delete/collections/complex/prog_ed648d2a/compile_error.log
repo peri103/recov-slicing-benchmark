@@ -1,0 +1,6 @@
+generated/collections/complex/prog_ed648d2a/Main.java:12: 错误: <E>PredicatedBag(Bag<E>,Predicate<? super E>) 在 PredicatedBag 中是 protected 访问控制
+        PredicatedBag<Integer> predicatedBag = new PredicatedBag<>(hashBag, predicate);
+                                               ^
+  其中, E是类型变量:
+    E扩展已在类 PredicatedBag中声明的Object
+1 个错误

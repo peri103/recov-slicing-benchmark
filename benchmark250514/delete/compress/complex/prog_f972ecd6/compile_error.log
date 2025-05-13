@@ -1,0 +1,17 @@
+generated/compress/complex/prog_f972ecd6/Main.java:9: 错误: 无法将类 DumpArchiveSummary中的构造器 DumpArchiveSummary应用到给定类型;
+        DumpArchiveSummary summary = new DumpArchiveSummary();
+                                     ^
+  需要: byte[],ZipEncoding
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/compress/complex/prog_f972ecd6/Main.java:29: 错误: 找不到符号
+        summary.setTotalSize(1024);
+               ^
+  符号:   方法 setTotalSize(int)
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/complex/prog_f972ecd6/Main.java:31: 错误: 找不到符号
+        System.out.println("Total Size: " + summary.getTotalSize());
+                                                   ^
+  符号:   方法 getTotalSize()
+  位置: 类型为DumpArchiveSummary的变量 summary
+3 个错误

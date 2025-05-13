@@ -1,0 +1,32 @@
+generated/compress/complex/prog_b481cdad/Main.java:7: 错误: 无法将类 DumpArchiveSummary中的构造器 DumpArchiveSummary应用到给定类型;
+        DumpArchiveSummary summary = new DumpArchiveSummary();
+                                     ^
+  需要: byte[],ZipEncoding
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/compress/complex/prog_b481cdad/Main.java:11: 错误: 找不到符号
+        entry.setInode(1001);
+             ^
+  符号:   方法 setInode(int)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_b481cdad/Main.java:14: 错误: 找不到符号
+        summary.setVolumeName("Volume1");
+               ^
+  符号:   方法 setVolumeName(String)
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/complex/prog_b481cdad/Main.java:15: 错误: 找不到符号
+        String volumeName = summary.getVolumeName();
+                                   ^
+  符号:   方法 getVolumeName()
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/complex/prog_b481cdad/Main.java:32: 错误: 找不到符号
+        /* write */ entry.setUserName("JohnDoe");
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_b481cdad/Main.java:43: 错误: 找不到符号
+        /* read */ String userName = entry.getUserName();
+                                          ^
+  符号:   方法 getUserName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+6 个错误

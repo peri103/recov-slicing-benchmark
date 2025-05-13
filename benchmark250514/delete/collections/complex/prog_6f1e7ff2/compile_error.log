@@ -1,0 +1,18 @@
+generated/collections/complex/prog_6f1e7ff2/Main.java:24: 错误: 找不到符号
+            System.out.println("Key: " + key + ", Value: " + multiValueMap2.get(key).iterator().next());
+                                                                                    ^
+  符号:   方法 iterator()
+  位置: 类 Object
+generated/collections/complex/prog_6f1e7ff2/Main.java:29: 错误: for-each 不适用于表达式类型
+        for (Integer value : multiValueMap2.get("key3")) {
+                                               ^
+  要求: 数组或 java.lang.Iterable
+  找到:    Object
+generated/collections/complex/prog_6f1e7ff2/Main.java:34: 错误: 找不到符号
+        /* read */ String value = (String) multiValueMap.get("key1").iterator().next();
+                                                                    ^
+  符号:   方法 iterator()
+  位置: 类 Object
+注: generated/collections/complex/prog_6f1e7ff2/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+3 个错误

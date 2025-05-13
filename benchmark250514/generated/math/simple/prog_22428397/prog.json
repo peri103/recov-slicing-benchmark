@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.DefaultRealMatrixPreservingVisitor;\n\npublic class Main {\n    public static void main(String[] args) {\n        DefaultRealMatrixPreservingVisitor visitor = new DefaultRealMatrixPreservingVisitor() {\n            private double sum = 0;\n\n            @Override\n            public void visit(int row, int column, double value) {\n                sum += value;\n            }\n\n            @Override\n            public double end() {\n                return sum;\n            }\n        };\n\n        /* write */ visitor.visit(0, 0, 5.0);\n        /* read */ double result = visitor.end();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.DefaultRealMatrixPreservingVisitor",
+        "write_method": "visit",
+        "read_class": "org.apache.commons.math3.linear.DefaultRealMatrixPreservingVisitor",
+        "read_method": "end"
+    }
+}

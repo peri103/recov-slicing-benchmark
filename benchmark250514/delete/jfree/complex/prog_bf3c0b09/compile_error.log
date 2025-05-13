@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_bf3c0b09/Main.java:37: 错误: 找不到符号
+        anotherRenderer.setBaseItemLabelPaint(Color.GREEN);
+                       ^
+  符号:   方法 setBaseItemLabelPaint(Color)
+  位置: 类型为BarRenderer的变量 anotherRenderer
+generated/jfree/complex/prog_bf3c0b09/Main.java:38: 错误: 找不到符号
+        System.out.println("Base Item Label Paint: " + anotherRenderer.getBaseItemLabelPaint());
+                                                                      ^
+  符号:   方法 getBaseItemLabelPaint()
+  位置: 类型为BarRenderer的变量 anotherRenderer
+2 个错误

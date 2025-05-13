@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringReader;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with a quote character\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        /* write */ csvFormat = csvFormat.withQuote('\"');\n\n        // Create a CSVRecord to read\n        String csvData = \"\\\"value1\\\",\\\"value2\\\"\";\n        CSVRecord record = null;\n        try {\n            record = csvFormat.parse(new StringReader(csvData)).getRecords().get(0);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        // Read the CSVRecord\n        /* read */ String recordString = record.toString();\n        System.out.println(recordString);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withQuote",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

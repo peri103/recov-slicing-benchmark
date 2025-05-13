@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.StackedXYBarRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        StackedXYBarRenderer renderer = new StackedXYBarRenderer();\n        /* write */ renderer.setBase(10.0);\n        /* read */ double baseValue = renderer.getBase();\n        System.out.println(baseValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.StackedXYBarRenderer",
+        "write_method": "setBase",
+        "read_class": "org.jfree.chart.renderer.xy.StackedXYBarRenderer",
+        "read_method": "getBase"
+    }
+}

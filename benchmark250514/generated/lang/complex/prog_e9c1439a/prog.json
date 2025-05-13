@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello, World!\");\n\n        // Additional code using HashMap\n        Map<String, Integer> map = new HashMap<>();\n        map.put(\"Apple\", 3);\n        map.put(\"Banana\", 5);\n        map.put(\"Cherry\", 7);\n\n        // Processing map entries\n        int totalFruits = 0;\n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            totalFruits += entry.getValue();\n        }\n        System.out.println(\"Total fruits: \" + totalFruits);\n\n        // More operations on StrBuilder\n        strBuilder.append(\" Additional text.\");\n        System.out.println(\"Before clear: \" + strBuilder.toString());\n\n        /* write */ strBuilder.clear();\n\n        // Further unrelated operations\n        int[] numbers = {10, 20, 30, 40, 50};\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // Final read operation\n        /* read */ String value = strBuilder.toString();\n        System.out.println(\"After clear: '\" + value + \"'\");\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello, World!\");\n        /* write */ strBuilder.clear();\n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "clear",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

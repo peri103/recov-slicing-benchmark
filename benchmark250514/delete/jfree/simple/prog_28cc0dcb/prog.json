@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.labels.StandardCategoryToolTipGenerator;\nimport java.text.DecimalFormat;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the StandardCategoryToolTipGenerator object\n        StandardCategoryToolTipGenerator tooltipGenerator = new StandardCategoryToolTipGenerator();\n        \n        // Initialize the DecimalFormat object which will be used for setting and getting the category format\n        DecimalFormat decimalFormat = new DecimalFormat(\"#,##0.00\");\n        \n        // Set the category format using the write method\n        /* write */ tooltipGenerator.setCategoryFormat(decimalFormat);\n        \n        // Get the category format using the read method\n        /* read */ DecimalFormat retrievedFormat = tooltipGenerator.getCategoryFormat();\n        \n        // Print the retrieved format pattern to verify the correct format is read\n        System.out.println(retrievedFormat.toPattern());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.labels.StandardCategoryToolTipGenerator",
+        "write_method": "setCategoryFormat",
+        "read_class": "org.jfree.chart.labels.StandardCategoryToolTipGenerator",
+        "read_method": "getCategoryFormat"
+    }
+}

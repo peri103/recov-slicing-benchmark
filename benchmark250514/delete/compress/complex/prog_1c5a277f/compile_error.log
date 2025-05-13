@@ -1,0 +1,11 @@
+generated/compress/complex/prog_1c5a277f/Main.java:16: 错误: 找不到符号
+        anotherEntry.setGroupId(67890);
+                    ^
+  符号:   方法 setGroupId(int)
+  位置: 类型为ArArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_1c5a277f/Main.java:20: 错误: 找不到符号
+        /* write */ entry.setGroupId(12345);
+                         ^
+  符号:   方法 setGroupId(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+2 个错误

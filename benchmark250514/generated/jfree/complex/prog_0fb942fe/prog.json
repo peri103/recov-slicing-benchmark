@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Example\");\n        ArrayList<Color> colorList = new ArrayList<>();\n        \n        // Initialize some colors\n        colorList.add(Color.BLUE);\n        colorList.add(Color.GREEN);\n        colorList.add(Color.YELLOW);\n\n        // Set the line paint of the legend item\n        /* write */ legendItem.setLinePaint(Color.RED);\n\n        // Perform operations using colorList\n        for (Color color : colorList) {\n            System.out.println(\"Color in list: \" + color);\n        }\n        \n        // Use legendItem in a different context\n        LegendItem anotherLegendItem = new LegendItem(\"Another Example\");\n        anotherLegendItem.setLinePaint(colorList.get(0));\n        \n        // Calculate something unrelated\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i * i;\n        }\n        System.out.println(\"Sum of squares: \" + sum);\n\n        // Finally read the line paint color\n        /* read */ Color linePaintColor = (Color) legendItem.getLinePaint();\n        System.out.println(\"Line Paint Color: \" + linePaintColor);\n\n        // Further operations with anotherLegendItem\n        Color anotherLinePaintColor = (Color) anotherLegendItem.getLinePaint();\n        System.out.println(\"Another Line Paint Color: \" + anotherLinePaintColor);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Example\");\n        /* write */ legendItem.setLinePaint(Color.RED);\n        /* read */ Color linePaintColor = (Color) legendItem.getLinePaint();\n        System.out.println(linePaintColor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLinePaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLinePaint"
+    }
+}

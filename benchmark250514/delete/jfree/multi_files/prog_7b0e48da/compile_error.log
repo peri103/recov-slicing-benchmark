@@ -1,0 +1,16 @@
+generated/jfree/multi_files/prog_7b0e48da/Main.java:15: 错误: 找不到符号
+        /* read */ Paint paint = plot.getCustomBackgroundPaint();
+                   ^
+  符号:   类 Paint
+  位置: 类 Main
+generated/jfree/multi_files/prog_7b0e48da/Main.java:19: 错误: 找不到符号
+        ArrayList<Integer> numberList = new ArrayList<>();
+        ^
+  符号:   类 ArrayList
+  位置: 类 Main
+generated/jfree/multi_files/prog_7b0e48da/Main.java:19: 错误: 找不到符号
+        ArrayList<Integer> numberList = new ArrayList<>();
+                                            ^
+  符号:   类 ArrayList
+  位置: 类 Main
+3 个错误

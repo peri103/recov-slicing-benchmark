@@ -1,0 +1,16 @@
+generated/math/multi_files/prog_afe73ab7/MatrixOperations.java:13: 错误: 找不到符号
+        /* write */ RealVector rowVector = MatrixUtils.createRowRealVector(rowVectorData);
+                                                      ^
+  符号:   方法 createRowRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_afe73ab7/MatrixUtilsExample.java:18: 错误: 找不到符号
+        RealMatrix additionalMatrix = MatrixUtils.createRealMatrix(additionalMatrixData);
+                                      ^
+  符号:   变量 MatrixUtils
+  位置: 类 MatrixUtilsExample
+generated/math/multi_files/prog_afe73ab7/MatrixUtilsExample.java:34: 错误: 找不到符号
+        RealVector columnVector = MatrixUtils.createColumnRealVector(columnVectorData);
+                                  ^
+  符号:   变量 MatrixUtils
+  位置: 类 MatrixUtilsExample
+3 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\nimport org.apache.commons.lang3.StringUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"Hello,World\";\n        StrTokenizer tokenizer = new StrTokenizer(input);\n        \n        /* write */ tokenizer.setDelimiterChar(',');\n\n        // Additional unrelated code\n        String reversedInput = StringUtils.reverse(input);\n        System.out.println(\"Reversed Input: \" + reversedInput);\n\n        // Using another StrTokenizer instance\n        StrTokenizer anotherTokenizer = new StrTokenizer(reversedInput);\n        anotherTokenizer.setDelimiterChar('o');\n        while (anotherTokenizer.hasNext()) {\n            System.out.println(\"Another Token: \" + anotherTokenizer.nextToken());\n        }\n\n        // Some more complex logic\n        int sum = 0;\n        for (char c : input.toCharArray()) {\n            sum += c;\n        }\n        System.out.println(\"Sum of ASCII values: \" + sum);\n\n        // Logic that involves string manipulation\n        String[] parts = StringUtils.split(input, ',');\n        for (String part : parts) {\n            System.out.println(\"Part: \" + part);\n        }\n\n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(\"Token: \" + token);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"Hello,World\";\n        StrTokenizer tokenizer = new StrTokenizer(input);\n        \n        /* write */ tokenizer.setDelimiterChar(',');\n        \n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setDelimiterChar",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

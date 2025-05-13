@@ -1,0 +1,11 @@
+generated/compress/complex/prog_6a8cb124/Main.java:9: 错误: 找不到符号
+        /* write */ entry.setGroupId(1000);
+                         ^
+  符号:   方法 setGroupId(int)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_6a8cb124/Main.java:41: 错误: 找不到符号
+        /* read */ long groupId = entry.getGroupId();
+                                       ^
+  符号:   方法 getGroupId()
+  位置: 类型为CpioArchiveEntry的变量 entry
+2 个错误

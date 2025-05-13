@@ -1,0 +1,9 @@
+generated/collections/simple/prog_1c0585b8/Main.java:9: 错误: 不兼容的类型: Map<String,Integer>无法转换为OrderedMap<String,Integer>
+        AbstractOrderedMapDecorator<String, Integer> map = new AbstractOrderedMapDecorator<String, Integer>(baseMap) {};
+                                                                                                            ^
+generated/collections/simple/prog_1c0585b8/Main.java:9: 错误: 找不到符号
+        AbstractOrderedMapDecorator<String, Integer> map = new AbstractOrderedMapDecorator<String, Integer>(baseMap) {};
+                                                           ^
+  符号: 构造器 (Map<String,Integer>)
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

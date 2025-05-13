@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.list.NodeCachingLinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the NodeCachingLinkedList\n        NodeCachingLinkedList list = new NodeCachingLinkedList();\n        \n        // Write a value to the list\n        /* write */ list.add(\"Hello, World!\");\n        \n        // Read the value from the list\n        /* read */ String value = (String) list.get(0);\n        \n        // Print the value to verify correctness\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.list.NodeCachingLinkedList",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.list.NodeCachingLinkedList",
+        "read_method": "get"
+    }
+}

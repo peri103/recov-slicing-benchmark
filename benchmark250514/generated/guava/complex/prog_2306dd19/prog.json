@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.HashBiMap;\nimport com.google.common.collect.BiMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        BiMap<String, Integer> biMap = HashBiMap.create();\n        Map<String, String> simpleMap = new HashMap<>();\n        \n        simpleMap.put(\"A\", \"Apple\");\n        simpleMap.put(\"B\", \"Banana\");\n        \n        for (String key : simpleMap.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + simpleMap.get(key));\n        }\n        \n        /* write */ biMap.put(\"key\", 42);\n        \n        int sum = 0;\n        for (int i = 0; i < 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 5 integers: \" + sum);\n\n        BiMap<String, Integer> anotherBiMap = HashBiMap.create();\n        anotherBiMap.put(\"x\", 100);\n        anotherBiMap.put(\"y\", 200);\n        \n        for (String key : anotherBiMap.keySet()) {\n            System.out.println(\"Another BiMap - Key: \" + key + \", Value: \" + anotherBiMap.get(key));\n        }\n\n        /* read */ int value = biMap.get(\"key\");\n        System.out.println(\"BiMap value for 'key': \" + value);\n        \n        simpleMap.put(\"C\", \"Cherry\");\n        \n        for (String key : simpleMap.keySet()) {\n            System.out.println(\"Updated Key: \" + key + \", Updated Value: \" + simpleMap.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.HashBiMap;\nimport com.google.common.collect.BiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        BiMap<String, Integer> biMap = HashBiMap.create();\n        /* write */ biMap.put(\"key\", 42);\n        /* read */ int value = biMap.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.BiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.BiMap",
+        "read_method": "get"
+    }
+}

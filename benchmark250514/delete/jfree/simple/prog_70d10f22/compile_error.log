@@ -1,0 +1,5 @@
+generated/jfree/simple/prog_70d10f22/Main.java:9: 错误: 不兼容的类型: Shape无法转换为Paint
+        LegendItem legendItem = new LegendItem("Example", shape);
+                                                          ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

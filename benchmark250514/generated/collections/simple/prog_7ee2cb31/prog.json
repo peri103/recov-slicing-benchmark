@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.LazyMap;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> hashMap = new HashMap<>();\n        LazyMap<String, Integer> lazyMap = LazyMap.lazyMap(hashMap, () -> 0);\n\n        /* write */ lazyMap.put(\"key\", 42);\n        /* read */ Integer value = lazyMap.get(\"key\");\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.LazyMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.LazyMap",
+        "read_method": "get"
+    }
+}

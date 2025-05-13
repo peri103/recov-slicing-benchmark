@@ -1,0 +1,14 @@
+generated/jfree/complex/prog_887bead0/Main.java:10: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/complex/prog_887bead0/Main.java:22: 错误: 找不到符号
+            public void drawItem(java.awt.Graphics2D g2, XYItemRendererState state, java.awt.geom.Rectangle2D dataArea, org.jfree.chart.plot.PlotRenderingInfo info, org.jfree.data.xy.XYDataset dataset, int series, int item, org.jfree.chart.axis.ValueAxis domainAxis, org.jfree.chart.axis.ValueAxis rangeAxis, int pass) {
+                                                         ^
+  符号: 类 XYItemRendererState
+generated/jfree/complex/prog_887bead0/Main.java:20: 错误: <匿名Main$2>不是抽象的, 并且未覆盖XYItemRenderer中的抽象方法drawRangeMarker(Graphics2D,XYPlot,ValueAxis,Marker,Rectangle2D)
+        XYItemRenderer renderer = new XYItemRenderer() {
+                                                       ^
+generated/jfree/complex/prog_887bead0/Main.java:21: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+4 个错误

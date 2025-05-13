@@ -1,0 +1,11 @@
+generated/math/complex/prog_2d9248fb/Main.java:19: 错误: 找不到符号
+        RealVector columnVector = MatrixUtils.createColumnRealVector(new double[]{10.0, 11.0, 12.0});
+                                             ^
+  符号:   方法 createColumnRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_2d9248fb/Main.java:35: 错误: 找不到符号
+        double determinant = multipliedMatrix.getDeterminant();
+                                             ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 multipliedMatrix
+2 个错误

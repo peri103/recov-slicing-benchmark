@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.Plot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the Plot object\n        Plot plot = new Plot() {\n            @Override\n            public String getPlotType() {\n                return \"Custom Plot\";\n            }\n        };\n\n        // Create a Color object to use as background paint\n        Paint backgroundPaint = Color.BLUE;\n\n        // Write: Set the background paint of the plot\n        /* write */ plot.setBackgroundPaint(backgroundPaint);\n\n        // Read: Get the background paint of the plot\n        /* read */ Paint readPaint = plot.getBackgroundPaint();\n\n        // Print the result to verify the read value\n        System.out.println(readPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.Plot",
+        "write_method": "setBackgroundPaint",
+        "read_class": "org.jfree.chart.plot.Plot",
+        "read_method": "getBackgroundPaint"
+    }
+}

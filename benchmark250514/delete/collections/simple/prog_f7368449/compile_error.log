@@ -1,0 +1,4 @@
+generated/collections/simple/prog_f7368449/Main.java:8: 错误: 无法推断AbstractOrderedMapDecorator<>的类型参数
+        AbstractOrderedMapDecorator<String, Integer> mapDecorator = new AbstractOrderedMapDecorator<>(hashMap) {};
+                                                                    ^
+1 个错误

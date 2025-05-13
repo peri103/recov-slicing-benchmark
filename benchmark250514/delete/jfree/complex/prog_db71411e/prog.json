@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.title.Title;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initial setup\n        Title title = new Title();\n\n        // Some unrelated operations\n        int sum = 0;\n        for (int i = 1; i <= 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 1 to 5: \" + sum);\n\n        // Another unrelated operation\n        StringBuilder stringBuilder = new StringBuilder();\n        stringBuilder.append(\"Initial text. \");\n        stringBuilder.append(\"More text added. \");\n        System.out.println(\"StringBuilder content: \" + stringBuilder.toString());\n\n        // Using the write method\n        /* write */ title.setText(\"Hello, World!\");\n\n        // More unrelated operations\n        int[] numbers = {10, 20, 30, 40, 50};\n        for (int number : numbers) {\n            if (number > 25) {\n                System.out.println(\"Number greater than 25: \" + number);\n            }\n        }\n\n        // Final unrelated operation\n        String reversed = new StringBuilder(\"Reverse this string\").reverse().toString();\n        System.out.println(\"Reversed string: \" + reversed);\n\n        // Using the read method\n        /* read */ String text = title.getText();\n        System.out.println(\"Title text: \" + text);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.title.Title;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming Title is a class with a setText and getText method\n        Title title = new Title();\n        /* write */ title.setText(\"Hello, World!\");\n        /* read */ String text = title.getText();\n        System.out.println(text);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.Title",
+        "write_method": "setText",
+        "read_class": "org.jfree.chart.title.Title",
+        "read_method": "getText"
+    }
+}

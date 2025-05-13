@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize an ArArchiveEntry object\n        ArArchiveEntry entry = new ArArchiveEntry(\"dummy\", 100);\n\n        // Use the write method to set the username\n        /* write */ entry.setUserName(\"testUser\");\n\n        // Use the read method to retrieve the username\n        /* read */ String userName = entry.getUserName();\n        \n        // Print the retrieved username to ensure the read method worked correctly\n        System.out.println(userName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setUserName",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getUserName"
+    }
+}

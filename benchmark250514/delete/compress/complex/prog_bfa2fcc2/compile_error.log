@@ -1,0 +1,21 @@
+generated/compress/complex/prog_bfa2fcc2/Main.java:10: 错误: 找不到符号
+        entry2.setUnixMode(0644);
+              ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为CpioArchiveEntry的变量 entry2
+generated/compress/complex/prog_bfa2fcc2/Main.java:24: 错误: 找不到符号
+        /* write */ entry.setUnixMode(0755);
+                         ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_bfa2fcc2/Main.java:27: 错误: 找不到符号
+        int mode2 = entry2.getUnixMode();
+                          ^
+  符号:   方法 getUnixMode()
+  位置: 类型为CpioArchiveEntry的变量 entry2
+generated/compress/complex/prog_bfa2fcc2/Main.java:37: 错误: 找不到符号
+        /* read */ int mode = entry.getUnixMode();
+                                   ^
+  符号:   方法 getUnixMode()
+  位置: 类型为CpioArchiveEntry的变量 entry
+4 个错误

@@ -1,0 +1,33 @@
+generated/collections/multi_files/prog_fcdef97e/StudentScores.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator;
+                                          ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/multi_files/prog_fcdef97e/StudentScores.java:5: 错误: 找不到符号
+    private AbstractOrderedBidiMapDecorator<String, Integer> scoreMap;
+            ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 StudentScores
+generated/collections/multi_files/prog_fcdef97e/StudentScores.java:20: 错误: 找不到符号
+    public AbstractOrderedBidiMapDecorator<String, Integer> getScoreMap() {
+           ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 StudentScores
+generated/collections/multi_files/prog_fcdef97e/StudentScores.java:9: 错误: 找不到符号
+        this.scoreMap = new AbstractOrderedBidiMapDecorator<>(bidiMap) {};
+                            ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 StudentScores
+generated/collections/multi_files/prog_fcdef97e/Student.java:11: 错误: 无法将类 StudentScores中的方法 addScore应用到给定类型;
+        scores.addScore(score);
+              ^
+  需要: String,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/collections/multi_files/prog_fcdef97e/Main.java:4: 错误: 无法将类 Student中的方法 addScore应用到给定类型;
+        student.addScore("Math", 95);
+               ^
+  需要: int
+  找到: String,int
+  原因: 实际参数列表和形式参数列表长度不同
+6 个错误

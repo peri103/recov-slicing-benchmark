@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Original StrBuilder usage\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.appendSeparator(\", \", \"Hello\");\n\n        // Additional complex code\n        Map<String, Integer> wordCount = new HashMap<>();\n        String[] words = {\"Hello\", \"World\", \"Hello\", \"Java\", \"World\"};\n        for (String word : words) {\n            wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);\n        }\n\n        StrBuilder anotherStrBuilder = new StrBuilder();\n        anotherStrBuilder.append(\"Initial text\");\n        anotherStrBuilder.appendSeparator(\" - \");\n        anotherStrBuilder.append(\"More text\");\n\n        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n\n        // Original StrBuilder read\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n\n        // Additional StrBuilder usage\n        anotherStrBuilder.appendSeparator(\" | \");\n        anotherStrBuilder.append(\"Final text\");\n        String finalResult = anotherStrBuilder.toString();\n        System.out.println(finalResult);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.appendSeparator(\", \", \"Hello\");\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "appendSeparator",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

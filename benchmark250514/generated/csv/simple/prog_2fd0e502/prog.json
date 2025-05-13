@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.io.StringReader;\nimport org.apache.commons.csv.CSVParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        StringWriter stringWriter = new StringWriter();\n        CSVPrinter csvPrinter = null;\n        try {\n            csvPrinter = new CSVPrinter(stringWriter, CSVFormat.DEFAULT);\n            /* write */ csvPrinter.printRecord(\"value1\", \"value2\", \"value3\");\n            csvPrinter.flush();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        String csvData = stringWriter.toString();\n        CSVParser parser;\n        try {\n            parser = CSVParser.parse(new StringReader(csvData), CSVFormat.DEFAULT);\n            for (CSVRecord csvRecord : parser) {\n                /* read */ String value = csvRecord.get(0);\n                System.out.println(value);\n                break; // Ensure the read line is executed only once\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVPrinter",
+        "write_method": "printRecord",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "get"
+    }
+}

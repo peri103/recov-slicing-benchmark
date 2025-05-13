@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringReader;\nimport java.util.Iterator;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with a null string representation\n        CSVFormat format = CSVFormat.DEFAULT.withNullString(\"NULL\");\n\n        // Sample CSV data\n        String csvData = \"name,age,city\\nJohn,NULL,New York\\nAlice,30,NULL\";\n\n        try {\n            // Parse the CSV data into records\n            Iterable<CSVRecord> records = format.parse(new StringReader(csvData));\n            Iterator<CSVRecord> iterator = records.iterator();\n\n            // Access the first record\n            if (iterator.hasNext()) {\n                CSVRecord record = iterator.next();\n\n                // Check if a specific column is set (not null)\n                /* read */ boolean isAgeSet = record.isSet(\"age\");\n                System.out.println(\"Is 'age' set in the first record? \" + isAgeSet);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withNullString",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

@@ -1,0 +1,6 @@
+generated/lang/simple/prog_f4cab0fd/Main.java:11: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.YEAR);
+                                                                                 ^
+  符号:   变量 YEAR
+  位置: 类 DateUtils
+1 个错误

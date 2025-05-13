@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello, World!\");\n        \n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n        \n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        String greeting = strBuilder.toString();\n        System.out.println(\"Original greeting: \" + greeting);\n        \n        /* write */ strBuilder.deleteAll(\"World\");\n        \n        String modifiedGreeting = strBuilder.toString();\n        \n        ArrayList<String> greetingsList = new ArrayList<>();\n        greetingsList.add(greeting);\n        greetingsList.add(modifiedGreeting);\n        \n        for (String greet : greetingsList) {\n            System.out.println(\"Greeting: \" + greet);\n        }\n        \n        int product = 1;\n        for (int num : numbers) {\n            product *= num;\n        }\n        System.out.println(\"Product of numbers: \" + product);\n        \n        /* read */ String result = strBuilder.toString();\n        System.out.println(\"Modified greeting: \" + result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello, World!\");\n\n        /* write */ strBuilder.deleteAll(\"World\");\n\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "deleteAll",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

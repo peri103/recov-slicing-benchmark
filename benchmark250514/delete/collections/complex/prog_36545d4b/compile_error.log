@@ -1,0 +1,4 @@
+generated/collections/complex/prog_36545d4b/Main.java:16: 错误: 不兼容的类型: List<String>无法转换为Set<String>
+        Set<String> fruits = anotherMap.get("fruit");
+                                           ^
+1 个错误

@@ -1,0 +1,11 @@
+generated/compress/complex/prog_98e05ecc/Main.java:10: 错误: 找不到符号
+        /* write */ gzipParameters.setExtra(extraData);
+                                  ^
+  符号:   方法 setExtra(byte[])
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/complex/prog_98e05ecc/Main.java:46: 错误: 找不到符号
+        /* read */ byte[] readData = gzipParameters.getExtra();
+                                                   ^
+  符号:   方法 getExtra()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport org.apache.commons.csv.CSVParser;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat with header comments\n            /* write */ CSVFormat csvFormat = CSVFormat.DEFAULT.withHeaderComments(\"This is a header comment\");\n\n            // Simulate reading CSV data\n            String csvData = \"column1,column2\\nvalue1,value2\";\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), csvFormat);\n            List<CSVRecord> records = parser.getRecords();\n\n            // Access the first record\n            CSVRecord record = records.get(0);\n\n            // Read the header comment\n            /* read */ String comment = record.getComment();\n            System.out.println(comment);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withHeaderComments",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "getComment"
+    }
+}

@@ -1,0 +1,6 @@
+generated/math/simple/prog_c9de6065/Main.java:8: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createBlockRealMatrix(data);
+                                                   ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

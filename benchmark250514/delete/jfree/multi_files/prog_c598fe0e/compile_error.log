@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_c598fe0e/Main.java:26: 错误: 找不到符号
+        LineAndShapeRenderer renderer = rendererManager.getRenderer();
+        ^
+  符号:   类 LineAndShapeRenderer
+  位置: 类 Main
+1 个错误

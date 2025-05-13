@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_6f55cd40/Main.java:32: 错误: 找不到符号
+        blockRenderer.setPaintScale(new org.jfree.chart.renderer.xy.DefaultXYZDataset());
+                                                                   ^
+  符号:   类 DefaultXYZDataset
+  位置: 程序包 org.jfree.chart.renderer.xy
+1 个错误

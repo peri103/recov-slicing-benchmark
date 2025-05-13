@@ -1,0 +1,5 @@
+generated/compress/multi_files/prog_216405ee/GroupEntry.java:11: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        /* write */ entry.setGroupId(groupId);
+                                     ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

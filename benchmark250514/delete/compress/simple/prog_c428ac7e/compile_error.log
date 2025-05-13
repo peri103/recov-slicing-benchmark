@@ -1,0 +1,11 @@
+generated/compress/simple/prog_c428ac7e/Main.java:6: 错误: 找不到符号
+        /* write */ gzipParameters.setCompressedSize(12345L);
+                                  ^
+  符号:   方法 setCompressedSize(long)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/simple/prog_c428ac7e/Main.java:7: 错误: 找不到符号
+        /* read */ long compressedSize = gzipParameters.getCompressedSize();
+                                                       ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

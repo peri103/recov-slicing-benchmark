@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\nimport org.apache.commons.lang3.text.StrMatcher;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a StrTokenizer with some initial text\n        StrTokenizer tokenizer = new StrTokenizer(\"Hello,World,This,Is,A,Test\");\n\n        // Set the delimiter to a comma using the setDelimiterMatcher method\n        /* write */ tokenizer.setDelimiterMatcher(StrMatcher.charMatcher(','));\n\n        // Read the first token using the nextToken method\n        /* read */ String firstToken = tokenizer.nextToken();\n\n        // Print the first token\n        System.out.println(firstToken);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setDelimiterMatcher",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

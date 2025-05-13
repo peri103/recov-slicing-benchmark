@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableMultimap;\nimport com.google.common.collect.ImmutableMultimap.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<String, String> builder = ImmutableMultimap.builder();\n        /* write */ builder.put(\"key\", \"value\");\n        ImmutableMultimap<String, String> multimap = builder.build();\n        /* read */ String value = multimap.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableMultimap",
+        "read_method": "get"
+    }
+}

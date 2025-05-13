@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.set.ListOrderedSet;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedSet<String> set = new ListOrderedSet<>();\n        Map<Integer, String> map = new HashMap<>();\n        map.put(1, \"First\");\n        map.put(2, \"Second\");\n        map.put(3, \"Third\");\n        \n        for (Map.Entry<Integer, String> entry : map.entrySet()) {\n            set.add(entry.getValue());\n        }\n        \n        /* write */ set.add(\"Hello, World!\");\n        \n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        \n        StringBuilder builder = new StringBuilder();\n        builder.append(\"Sum of first 10 numbers: \").append(sum);\n        \n        System.out.println(builder.toString());\n        \n        String retrievedValue = set.get(0);\n        if (retrievedValue.equals(\"Hello, World!\")) {\n            System.out.println(\"Correct value retrieved from set.\");\n        } else {\n            System.out.println(\"Unexpected value.\");\n        }\n        \n        /* read */ String value = set.get(3);\n        System.out.println(value);\n        \n        for (String str : set) {\n            System.out.println(\"Set element: \" + str);\n        }\n        \n        int factorial = 1;\n        for (int i = 1; i <= 5; i++) {\n            factorial *= i;\n        }\n        \n        System.out.println(\"Factorial of 5 is: \" + factorial);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.set.ListOrderedSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedSet<String> set = new ListOrderedSet<>();\n        /* write */ set.add(\"Hello, World!\");\n        /* read */ String value = set.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.set.ListOrderedSet",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.set.ListOrderedSet",
+        "read_method": "get"
+    }
+}

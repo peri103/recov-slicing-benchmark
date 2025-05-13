@@ -1,0 +1,4 @@
+generated/jfree/simple/prog_db2e5c5c/Main.java:7: 错误: <匿名Main$1>不是抽象的, 并且未覆盖XYItemRenderer中的抽象方法drawRangeMarker(Graphics2D,XYPlot,ValueAxis,Marker,Rectangle2D)
+        XYItemRenderer renderer = new XYItemRenderer() {
+                                                       ^
+1 个错误

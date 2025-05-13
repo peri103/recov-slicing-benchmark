@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot plot = new PiePlot();\n        /* write */ plot.setMaximumLabelWidth(0.25);\n        /* read */ double maxLabelWidth = plot.getMaximumLabelWidth();\n        System.out.println(maxLabelWidth);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setMaximumLabelWidth",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getMaximumLabelWidth"
+    }
+}

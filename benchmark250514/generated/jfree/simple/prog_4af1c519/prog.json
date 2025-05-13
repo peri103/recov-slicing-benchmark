@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.category.BarRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the BarRenderer object\n        BarRenderer renderer = new BarRenderer();\n        \n        // Set the base value using the write method\n        /* write */ renderer.setBase(5.0);\n        \n        // Retrieve the base value using the read method\n        /* read */ double baseValue = renderer.getBase();\n        \n        // Print the retrieved value\n        System.out.println(baseValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.category.BarRenderer",
+        "write_method": "setBase",
+        "read_class": "org.jfree.chart.renderer.category.BarRenderer",
+        "read_method": "getBase"
+    }
+}

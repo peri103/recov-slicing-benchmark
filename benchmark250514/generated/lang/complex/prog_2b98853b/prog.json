@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.append(\"Hello, World!\");\n\n        // Additional complex logic with a HashMap\n        Map<String, Integer> map = new HashMap<>();\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n        map.put(\"three\", 3);\n\n        // Iterating over the map and performing operations\n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            System.out.println(entry.getKey() + \" = \" + entry.getValue());\n        }\n\n        // Performing some string manipulations\n        String sampleText = \"Sample Text\";\n        String reversedText = new StringBuilder(sampleText).reverse().toString();\n        System.out.println(\"Reversed: \" + reversedText);\n\n        // More operations with StrBuilder\n        strBuilder.append(\" Let's make this more complex.\");\n\n        // Some conditional logic\n        if (map.containsKey(\"two\")) {\n            System.out.println(\"Map contains key 'two'\");\n        }\n\n        // Loop to demonstrate complexity\n        for (int i = 0; i < 5; i++) {\n            System.out.println(\"Loop iteration: \" + i);\n        }\n\n        // Final read operation\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.append(\"Hello, World!\");\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

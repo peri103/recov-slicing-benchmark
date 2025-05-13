@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.list.TreeList;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeList<Integer> treeList = new TreeList<>();\n        /* write */ treeList.add(42);\n        /* read */ int value = treeList.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.list.TreeList",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.list.TreeList",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.data.Range;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueAxis axis = new NumberAxis();\n        Range newRange = new Range(0.0, 10.0);\n\n        ArrayList<Double> dataPoints = new ArrayList<>();\n        for (double i = 0.0; i <= 10.0; i += 0.5) {\n            dataPoints.add(i);\n        }\n        \n        /* write */ axis.setRange(newRange);\n\n        double sum = 0.0;\n        for (Double point : dataPoints) {\n            sum += point;\n        }\n        double average = sum / dataPoints.size();\n        System.out.println(\"Average of data points: \" + average);\n\n        Range anotherRange = new Range(5.0, 15.0);\n        axis.setRange(anotherRange);\n        System.out.println(\"Another Range: \" + axis.getRange());\n\n        /* read */ Range range = axis.getRange();\n        System.out.println(\"Range: \" + range);\n\n        ArrayList<Double> transformedDataPoints = new ArrayList<>();\n        for (Double point : dataPoints) {\n            transformedDataPoints.add(point * 2);\n        }\n\n        System.out.println(\"Transformed Data Points:\");\n        for (Double point : transformedDataPoints) {\n            System.out.println(point);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.data.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueAxis axis = new NumberAxis();\n        Range newRange = new Range(0.0, 10.0);\n        \n        /* write */ axis.setRange(newRange);\n        \n        /* read */ Range range = axis.getRange();\n        System.out.println(\"Range: \" + range);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.ValueAxis",
+        "write_method": "setRange",
+        "read_class": "org.jfree.chart.axis.ValueAxis",
+        "read_method": "getRange"
+    }
+}

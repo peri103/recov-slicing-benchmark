@@ -1,0 +1,9 @@
+generated/math/multi_files/prog_09057dbb/MatrixOperations.java:13: 错误: 找不到符号
+        RealVector rowVector = MatrixUtils.createRowRealVector(vectorData);
+                                          ^
+  符号:   方法 createRowRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_09057dbb/Main.java:31: 错误: courseName 在 Course 中是 private 访问控制
+        System.out.println("Students in course " + course.courseName + ":");
+                                                         ^
+2 个错误

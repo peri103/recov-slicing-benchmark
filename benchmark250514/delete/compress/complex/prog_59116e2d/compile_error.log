@@ -1,0 +1,31 @@
+generated/compress/complex/prog_59116e2d/Main.java:14: 错误: 找不到符号
+            e.setCompressedSize((i + 1) * 512);
+             ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为DumpArchiveEntry的变量 e
+generated/compress/complex/prog_59116e2d/Main.java:20: 错误: 找不到符号
+            sizeMap.put("Entry" + i, entries.get(i).getCompressedSize());
+                                                   ^
+  符号:   方法 getCompressedSize()
+  位置: 类 DumpArchiveEntry
+generated/compress/complex/prog_59116e2d/Main.java:31: 错误: 找不到符号
+        /* write */ entry.setCompressedSize(1024);
+                         ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_59116e2d/Main.java:37: 错误: 找不到符号
+            long currentSize = entries.get(i).getCompressedSize();
+                                             ^
+  符号:   方法 getCompressedSize()
+  位置: 类 DumpArchiveEntry
+generated/compress/complex/prog_59116e2d/Main.java:46: 错误: 找不到符号
+        /* read */ long compressedSize = entry.getCompressedSize();
+                                              ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_59116e2d/Main.java:52: 错误: 找不到符号
+            System.out.println(e.getCompressedSize());
+                                ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为DumpArchiveEntry的变量 e
+6 个错误

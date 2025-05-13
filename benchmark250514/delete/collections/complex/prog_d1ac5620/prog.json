@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractSortedMap;\nimport org.apache.commons.collections4.map.ListOrderedMap;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractSortedMap<String, Integer> map = new TreeMap<>();\n        ListOrderedMap<String, String> anotherMap = new ListOrderedMap<>();\n\n        anotherMap.put(\"a\", \"apple\");\n        anotherMap.put(\"b\", \"banana\");\n        anotherMap.put(\"c\", \"cherry\");\n\n        /* write */ map.put(\"key\", 42);\n\n        // Perform some operations on anotherMap\n        String fruit = anotherMap.get(\"b\");\n        System.out.println(\"Fruit: \" + fruit);\n\n        for (String key : anotherMap.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + anotherMap.get(key));\n        }\n\n        // More complex operations on map\n        map.put(\"anotherKey\", 84);\n        map.put(\"yetAnotherKey\", 126);\n\n        int sum = 0;\n        for (Integer value : map.values()) {\n            sum += value;\n        }\n\n        System.out.println(\"Sum of all values in map: \" + sum);\n\n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Retrieved value: \" + value);\n\n        // Additional operations to increase complexity\n        if (map.containsKey(\"anotherKey\")) {\n            map.put(\"anotherKey\", map.get(\"anotherKey\") + 10);\n        }\n\n        System.out.println(\"Updated map: \" + map);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.AbstractSortedMap;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractSortedMap<String, Integer> map = new TreeMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractSortedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractSortedMap",
+        "read_method": "get"
+    }
+}

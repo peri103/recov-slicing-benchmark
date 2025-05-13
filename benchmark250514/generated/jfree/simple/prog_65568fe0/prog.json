@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.MultiplePiePlot;\nimport org.jfree.chart.util.TableOrder;\n\npublic class Main {\n    public static void main(String[] args) {\n        MultiplePiePlot plot = new MultiplePiePlot();\n        /* write */ plot.setDataExtractOrder(TableOrder.BY_COLUMN);\n        /* read */ TableOrder order = plot.getDataExtractOrder();\n        System.out.println(order);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.MultiplePiePlot",
+        "write_method": "setDataExtractOrder",
+        "read_class": "org.jfree.chart.plot.MultiplePiePlot",
+        "read_method": "getDataExtractOrder"
+    }
+}

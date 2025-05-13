@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.XYPlot;\nimport org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYPlot plot = new XYPlot();\n        ValueAxis domainAxis = new NumberAxis(\"Domain Axis\");\n\n        /* write */ plot.setDomainAxis(domainAxis);\n        /* read */ ValueAxis readAxis = plot.getDomainAxis();\n\n        System.out.println(readAxis.getLabel()); // Output should be \"Domain Axis\"\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.XYPlot",
+        "write_method": "setDomainAxis",
+        "read_class": "org.jfree.chart.plot.XYPlot",
+        "read_method": "getDomainAxis"
+    }
+}

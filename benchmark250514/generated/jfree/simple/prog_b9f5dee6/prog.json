@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Shape;\nimport java.awt.geom.Rectangle2D;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a LegendItem object\n        LegendItem legendItem = new LegendItem(\"Sample\");\n\n        // Create a shape to be set\n        Shape rectangle = new Rectangle2D.Double(0, 0, 10, 10);\n\n        // Set the shape using the setShape method\n        /* write */ legendItem.setShape(rectangle);\n\n        // Retrieve the shape using the getShape method\n        /* read */ Shape retrievedShape = legendItem.getShape();\n\n        // Print the retrieved shape to verify\n        System.out.println(retrievedShape);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setShape",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getShape"
+    }
+}

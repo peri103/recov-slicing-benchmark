@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_462bdd94/Main.java:6: 错误: 找不到符号
+        /* write */ logAxis.setBase(10.0);
+                           ^
+  符号:   方法 setBase(double)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/simple/prog_462bdd94/Main.java:7: 错误: 找不到符号
+        /* read */ double baseValue = logAxis.getBase();
+                                             ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 logAxis
+2 个错误

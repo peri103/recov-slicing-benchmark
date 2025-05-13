@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        DumpArchiveEntry anotherEntry = new DumpArchiveEntry();\n        \n        /* write */ entry.setExternalAttributes(12345L);\n        \n        List<DumpArchiveEntry> entryList = new ArrayList<>();\n        entryList.add(entry);\n        entryList.add(anotherEntry);\n        \n        anotherEntry.setExternalAttributes(67890L);\n        \n        for (DumpArchiveEntry e : entryList) {\n            System.out.println(\"Entry External Attributes: \" + e.getExternalAttributes());\n        }\n        \n        long attributesSum = 0;\n        for (DumpArchiveEntry e : entryList) {\n            attributesSum += e.getExternalAttributes();\n        }\n        \n        System.out.println(\"Sum of External Attributes: \" + attributesSum);\n        \n        /* read */ long attributes = entry.getExternalAttributes();\n        System.out.println(\"Specific Entry External Attribute: \" + attributes);\n        \n        for (int i = 0; i < entryList.size(); i++) {\n            System.out.println(\"Entry \" + i + \" External Attributes: \" + entryList.get(i).getExternalAttributes());\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        /* write */ entry.setExternalAttributes(12345L);\n        /* read */ long attributes = entry.getExternalAttributes();\n        System.out.println(attributes);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setExternalAttributes",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getExternalAttributes"
+    }
+}

@@ -1,0 +1,26 @@
+generated/jfree/complex/prog_3d624726/Main.java:9: 错误: 找不到符号
+        /* write */ labelGenerator.setFormatString("Value: {0}");
+                                  ^
+  符号:   方法 setFormatString(String)
+  位置: 类型为StandardXYItemLabelGenerator的变量 labelGenerator
+generated/jfree/complex/prog_3d624726/Main.java:13: 错误: 找不到符号
+        pieLabelGenerator.setFormatString("{0} = {1}");
+                         ^
+  符号:   方法 setFormatString(String)
+  位置: 类型为StandardPieSectionLabelGenerator的变量 pieLabelGenerator
+generated/jfree/complex/prog_3d624726/Main.java:16: 错误: 找不到符号
+        categoryLabelGenerator.setFormatString("{2}");
+                              ^
+  符号:   方法 setFormatString(String)
+  位置: 类型为StandardCategoryItemLabelGenerator的变量 categoryLabelGenerator
+generated/jfree/complex/prog_3d624726/Main.java:19: 错误: 找不到符号
+        String pieFormat = pieLabelGenerator.getFormatString();
+                                            ^
+  符号:   方法 getFormatString()
+  位置: 类型为StandardPieSectionLabelGenerator的变量 pieLabelGenerator
+generated/jfree/complex/prog_3d624726/Main.java:23: 错误: 找不到符号
+        String categoryFormat = categoryLabelGenerator.getFormatString();
+                                                      ^
+  符号:   方法 getFormatString()
+  位置: 类型为StandardCategoryItemLabelGenerator的变量 categoryLabelGenerator
+5 个错误

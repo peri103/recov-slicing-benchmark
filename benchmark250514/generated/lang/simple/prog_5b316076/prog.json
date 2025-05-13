@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        // Ceiling the date to the next hour\n        /* write */ Date ceilingDate = DateUtils.ceiling(date, Calendar.HOUR);\n        \n        // Truncate the ceiling date to the hour\n        /* read */ Date truncatedDate = DateUtils.truncate(ceilingDate, Calendar.HOUR);\n        \n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "ceiling",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

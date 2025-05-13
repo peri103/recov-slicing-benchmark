@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.DiagonalMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a diagonal matrix with size 3\n        DiagonalMatrix matrix = new DiagonalMatrix(3);\n        \n        // Set the value at the first diagonal position\n        /* write */ matrix.setEntry(0, 5.0);\n        \n        // Read the value from the first diagonal position\n        /* read */ double value = matrix.getEntry(0);\n        \n        // Print the value to verify\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.DiagonalMatrix",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.DiagonalMatrix",
+        "read_method": "getEntry"
+    }
+}

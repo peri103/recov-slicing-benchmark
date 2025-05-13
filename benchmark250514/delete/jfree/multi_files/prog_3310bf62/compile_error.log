@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_3310bf62/Main.java:21: 错误: 找不到符号
+        /* read */ NumberTickUnit readTickUnit = chartManager.getAxisTickUnit();
+                   ^
+  符号:   类 NumberTickUnit
+  位置: 类 Main
+1 个错误

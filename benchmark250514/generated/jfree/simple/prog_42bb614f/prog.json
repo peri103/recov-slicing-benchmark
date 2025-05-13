@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYDifferenceRenderer;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the XYDifferenceRenderer object\n        XYDifferenceRenderer renderer = new XYDifferenceRenderer();\n        \n        // Create a Paint object to set as positive paint\n        Paint positivePaint = Color.RED;\n        \n        /* write */ renderer.setPositivePaint(positivePaint);\n        \n        /* read */ Paint retrievedPaint = renderer.getPositivePaint();\n        \n        // Print the retrieved paint to verify it matches the set paint\n        System.out.println(retrievedPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYDifferenceRenderer",
+        "write_method": "setPositivePaint",
+        "read_class": "org.jfree.chart.renderer.xy.XYDifferenceRenderer",
+        "read_method": "getPositivePaint"
+    }
+}

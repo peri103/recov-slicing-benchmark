@@ -1,0 +1,5 @@
+generated/jfree/multi_files/prog_9bd04eb6/Main.java:12: 错误: 找不到符号
+            public String generateLabel(Crosshair crosshair) {
+                                        ^
+  符号: 类 Crosshair
+1 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        Comparable seriesKey = \"Sample Key\";\n\n        ArrayList<String> legendDescriptions = new ArrayList<>();\n        legendDescriptions.add(\"First Description\");\n        legendDescriptions.add(\"Second Description\");\n        legendDescriptions.add(\"Third Description\");\n\n        /* write */ legendItem.setSeriesKey(seriesKey);\n\n        for (String description : legendDescriptions) {\n            LegendItem tempLegendItem = new LegendItem(description);\n            tempLegendItem.setSeriesKey(description);\n            System.out.println(\"Temp Legend Item Key: \" + tempLegendItem.getSeriesKey());\n        }\n\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n\n        /* read */ Comparable retrievedKey = legendItem.getSeriesKey();\n        System.out.println(\"Original Legend Item Key: \" + retrievedKey);\n\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 1; i <= 5; i++) {\n            numbers.add(i * 10);\n        }\n\n        int total = 0;\n        for (Integer num : numbers) {\n            total += num;\n        }\n        System.out.println(\"Total of numbers array: \" + total);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        Comparable seriesKey = \"Sample Key\";\n\n        /* write */ legendItem.setSeriesKey(seriesKey);\n        /* read */ Comparable retrievedKey = legendItem.getSeriesKey();\n\n        System.out.println(retrievedKey);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setSeriesKey",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getSeriesKey"
+    }
+}

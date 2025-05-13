@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            byte[] data = new byte[0]; // Empty byte array for initialization\n            ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(data);\n            BZip2CompressorInputStream bzip2InputStream = new BZip2CompressorInputStream(byteArrayInputStream);\n\n            /* write */ bzip2InputStream.setBlockSize(9); // Set block size to maximum value 9\n\n            /* read */ int blockSize = bzip2InputStream.getBlockSize();\n            System.out.println(\"Block size: \" + blockSize);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+        "write_method": "setBlockSize",
+        "read_class": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+        "read_method": "getBlockSize"
+    }
+}

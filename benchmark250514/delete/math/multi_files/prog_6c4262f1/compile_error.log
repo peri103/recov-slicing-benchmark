@@ -1,0 +1,21 @@
+generated/math/multi_files/prog_6c4262f1/Main.java:15: 错误: 找不到符号
+        RealMatrix transposedMatrix = matrixOps.transposeMatrix();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_6c4262f1/Main.java:25: 错误: 找不到符号
+        /* read */ RealVector readVector = vectorOps.getVector();
+                   ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_6c4262f1/Main.java:31: 错误: 找不到符号
+        RealVector vector2 = MatrixUtils.createRealVector(data2);
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_6c4262f1/Main.java:31: 错误: 找不到符号
+        RealVector vector2 = MatrixUtils.createRealVector(data2);
+                             ^
+  符号:   变量 MatrixUtils
+  位置: 类 Main
+4 个错误

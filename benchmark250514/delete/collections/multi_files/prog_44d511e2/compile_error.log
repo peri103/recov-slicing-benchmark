@@ -1,0 +1,6 @@
+generated/collections/multi_files/prog_44d511e2/Main.java:15: 错误: 找不到符号
+            /* read */ Collection<Integer> scores = student.getScores("Math");
+                       ^
+  符号:   类 Collection
+  位置: 类 Main
+1 个错误

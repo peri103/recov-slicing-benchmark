@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.SpiderWebPlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        SpiderWebPlot plot = new SpiderWebPlot(null); // Assuming a null dataset for initialization\n        /* write */ plot.setHeadPercent(0.75);\n        /* read */ double headPercent = plot.getHeadPercent();\n        System.out.println(headPercent);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.SpiderWebPlot",
+        "write_method": "setHeadPercent",
+        "read_class": "org.jfree.chart.plot.SpiderWebPlot",
+        "read_method": "getHeadPercent"
+    }
+}

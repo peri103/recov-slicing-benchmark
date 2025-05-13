@@ -1,0 +1,21 @@
+generated/jfree/complex/prog_3bf9c9db/Main.java:18: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(true);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_3bf9c9db/Main.java:22: 错误: 找不到符号
+        barRenderer.setBaseBarWidth(0.5);
+                   ^
+  符号:   方法 setBaseBarWidth(double)
+  位置: 类型为XYBarRenderer的变量 barRenderer
+generated/jfree/complex/prog_3bf9c9db/Main.java:25: 错误: 找不到符号
+        /* write */ stepAreaRenderer.setDomainPaint(Color.RED);
+                                    ^
+  符号:   方法 setDomainPaint(Color)
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+generated/jfree/complex/prog_3bf9c9db/Main.java:41: 错误: 找不到符号
+        /* read */ Paint domainPaint = stepAreaRenderer.getDomainPaint();
+                                                       ^
+  符号:   方法 getDomainPaint()
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+4 个错误

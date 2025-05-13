@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with a null string setting\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withNullString(\"NULL\");\n\n        // Create a sample CSVRecord for demonstration\n        String[] values = {\"value1\", \"NULL\", \"value3\"};\n        CSVRecord record = CSVFormat.DEFAULT.parse(values).get(0);\n\n        // Check if a specific index is set in the CSVRecord\n        /* read */ boolean isSet = record.isSet(1);\n        \n        // Output the result\n        System.out.println(\"Is index 1 set: \" + isSet);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withNullString",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

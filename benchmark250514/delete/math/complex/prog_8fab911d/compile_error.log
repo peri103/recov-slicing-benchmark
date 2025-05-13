@@ -1,0 +1,11 @@
+generated/math/complex/prog_8fab911d/Main.java:12: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createDiagonalMatrix(diagonal);
+                                                   ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_8fab911d/Main.java:38: 错误: 找不到符号
+        /* read */ double[] retrievedDiagonal = matrix.getDiagonal();
+                                                      ^
+  符号:   方法 getDiagonal()
+  位置: 类型为RealMatrix的变量 matrix
+2 个错误

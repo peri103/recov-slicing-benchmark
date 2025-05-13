@@ -1,0 +1,15 @@
+generated/guava/complex/prog_83592c31/Main.java:21: 错误: 无法将类 Builder<B>中的方法 put应用到给定类型;
+            builder.put(entry.getKey(), entry.getValue());
+                   ^
+  需要: Class<T>,T
+  找到: Class<CAP#1>,Object
+  原因: 推论变量 T 具有不兼容的上限
+    等式约束条件：CAP#2
+    下限：Object
+  其中, T,B是类型变量:
+    T扩展已在方法 <T>put(Class<T>,T)中声明的Object
+    B扩展已在类 Builder中声明的Object
+  其中, CAP#1,CAP#2是新类型变量:
+    CAP#1从?的捕获扩展Object
+    CAP#2从?的捕获扩展Object
+1 个错误

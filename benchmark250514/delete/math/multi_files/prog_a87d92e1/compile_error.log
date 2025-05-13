@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_a87d92e1/MatrixOperations.java:10: 错误: 找不到符号
+        /* write */ matrix = MatrixUtils.createDiagonalMatrix(diagonalValues);
+                                        ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_a87d92e1/Main.java:20: 错误: 找不到符号
+        RealMatrix addedMatrix = matrixOps.addIdentityMatrix();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+2 个错误

@@ -1,0 +1,21 @@
+generated/jfree/complex/prog_75512586/Main.java:15: 错误: 找不到符号
+        /* write */ axis.setSubCategoryPaint(subCategory, paint);
+                        ^
+  符号:   方法 setSubCategoryPaint(String,Paint)
+  位置: 类型为SubCategoryAxis的变量 axis
+generated/jfree/complex/prog_75512586/Main.java:26: 错误: 找不到符号
+            axis.setSubCategoryPaint(entry.getKey(), entry.getValue());
+                ^
+  符号:   方法 setSubCategoryPaint(String,Paint)
+  位置: 类型为SubCategoryAxis的变量 axis
+generated/jfree/complex/prog_75512586/Main.java:31: 错误: 找不到符号
+            readPaint = axis.getSubCategoryPaint(key);
+                            ^
+  符号:   方法 getSubCategoryPaint(String)
+  位置: 类型为SubCategoryAxis的变量 axis
+generated/jfree/complex/prog_75512586/Main.java:50: 错误: 找不到符号
+        /* read */ Paint originalReadPaint = axis.getSubCategoryPaint(subCategory);
+                                                 ^
+  符号:   方法 getSubCategoryPaint(String)
+  位置: 类型为SubCategoryAxis的变量 axis
+4 个错误

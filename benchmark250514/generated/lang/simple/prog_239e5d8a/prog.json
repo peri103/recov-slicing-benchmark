@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the StrTokenizer with a sample string\n        StrTokenizer tokenizer = new StrTokenizer(\"one,two,three\");\n        \n        // Set the delimiter character to ','\n        /* write */ tokenizer.setDelimiterChar(',');\n\n        // Read the first token\n        /* read */ String token = tokenizer.nextToken();\n        \n        // Output the token\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setDelimiterChar",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

@@ -1,0 +1,9 @@
+generated/collections/simple/prog_f22e7a47/Main.java:7: 错误: 不兼容的类型: HashMap<String,String>无法转换为OrderedMap<String,String>
+        AbstractOrderedMapDecorator<String, String> map = new AbstractOrderedMapDecorator<String, String>(baseMap) {};
+                                                                                                          ^
+generated/collections/simple/prog_f22e7a47/Main.java:7: 错误: 找不到符号
+        AbstractOrderedMapDecorator<String, String> map = new AbstractOrderedMapDecorator<String, String>(baseMap) {};
+                                                          ^
+  符号: 构造器 (HashMap<String,String>)
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

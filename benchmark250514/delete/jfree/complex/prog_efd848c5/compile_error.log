@@ -1,0 +1,22 @@
+generated/jfree/complex/prog_efd848c5/Main.java:24: 错误: 找不到符号
+        axis.setFirstVisible(firstDay);
+            ^
+  符号:   方法 setFirstVisible(Day)
+  位置: 类型为PeriodAxis的变量 axis
+generated/jfree/complex/prog_efd848c5/Main.java:25: 错误: 找不到符号
+        axis.setLastVisible(lastDay);
+            ^
+  符号:   方法 setLastVisible(Day)
+  位置: 类型为PeriodAxis的变量 axis
+generated/jfree/complex/prog_efd848c5/Main.java:33: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        int daysBetween = lastDay.getSerialIndex() - firstDay.getSerialIndex();
+                                                   ^
+generated/jfree/complex/prog_efd848c5/Main.java:37: 错误: 找不到符号
+        if (currentYear.isLeapYear()) {
+                       ^
+  符号:   方法 isLeapYear()
+  位置: 类型为Year的变量 currentYear
+generated/jfree/complex/prog_efd848c5/Main.java:44: 错误: 不兼容的类型: RegularTimePeriod无法转换为Day
+        /* read */ Day readDay = axis.getLast();
+                                             ^
+5 个错误

@@ -1,0 +1,6 @@
+generated/math/complex/prog_1e5e5ce9/Main.java:36: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getColumnRealMatrix(columnMatrix, 0);
+                                                      ^
+  符号:   方法 getColumnRealMatrix(RealMatrix,int)
+  位置: 类 MatrixUtils
+1 个错误

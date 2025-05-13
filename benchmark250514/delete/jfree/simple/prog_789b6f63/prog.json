@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.LogarithmicAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        LogarithmicAxis axis = new LogarithmicAxis(\"Sample Axis\");\n        /* write */ axis.setBase(10.0);\n        /* read */ double baseValue = axis.getBase();\n        System.out.println(baseValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.LogarithmicAxis",
+        "write_method": "setBase",
+        "read_class": "org.jfree.chart.axis.LogarithmicAxis",
+        "read_method": "getBase"
+    }
+}

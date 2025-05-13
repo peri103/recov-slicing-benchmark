@@ -1,0 +1,14 @@
+generated/jfree/multi_files/prog_300090a9/TitleManager.java:7: 错误: Title是抽象的; 无法实例化
+        this.title = new Title();
+                     ^
+generated/jfree/multi_files/prog_300090a9/TitleManager.java:11: 错误: 找不到符号
+        /* write */ title.setText(text);
+                         ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 title
+generated/jfree/multi_files/prog_300090a9/TitleManager.java:15: 错误: 找不到符号
+        return title.getText();
+                    ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 title
+3 个错误

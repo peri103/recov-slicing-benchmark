@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingSortedSet;\nimport java.util.TreeSet;\nimport java.util.SortedSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a concrete implementation of ForwardingSortedSet\n        ForwardingSortedSet<Integer> forwardingSortedSet = new ForwardingSortedSet<Integer>() {\n            private final SortedSet<Integer> delegate = new TreeSet<>();\n\n            @Override\n            protected SortedSet<Integer> delegate() {\n                return delegate;\n            }\n        };\n\n        /* write */ forwardingSortedSet.add(5);\n        /* read */ boolean containsValue = forwardingSortedSet.contains(5);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingSortedSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ForwardingSortedSet",
+        "read_method": "contains"
+    }
+}

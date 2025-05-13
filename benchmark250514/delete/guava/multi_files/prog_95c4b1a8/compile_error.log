@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_95c4b1a8/University.java:8: 错误: 找不到符号
+        students.put(student.getName(), student);
+                            ^
+  符号:   方法 getName()
+  位置: 类型为Student的变量 student
+1 个错误

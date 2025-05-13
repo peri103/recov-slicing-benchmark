@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        // Set the month to February (1 in zero-based index)\n        /* write */ date = DateUtils.setMonths(date, 1);\n        \n        // Truncate the date to the start of the month\n        /* read */ Date truncatedDate = DateUtils.truncate(date, DateUtils.MONDAY);\n        \n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "setMonths",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

@@ -1,0 +1,31 @@
+generated/jfree/complex/prog_b6953a23/Main.java:20: 错误: 找不到符号
+        /* write */ renderer.setBaseShapesVisible(true);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYItemRenderer的变量 renderer
+generated/jfree/complex/prog_b6953a23/Main.java:23: 错误: 找不到符号
+        barRenderer.setBaseShapesVisible(false);
+                   ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYItemRenderer的变量 barRenderer
+generated/jfree/complex/prog_b6953a23/Main.java:24: 错误: 找不到符号
+        areaRenderer.setBaseShapesVisible(true);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYItemRenderer的变量 areaRenderer
+generated/jfree/complex/prog_b6953a23/Main.java:27: 错误: 找不到符号
+        boolean barVisible = barRenderer.getBaseShapesVisible();
+                                        ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYItemRenderer的变量 barRenderer
+generated/jfree/complex/prog_b6953a23/Main.java:28: 错误: 找不到符号
+        boolean areaVisible = areaRenderer.getBaseShapesVisible();
+                                          ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYItemRenderer的变量 areaRenderer
+generated/jfree/complex/prog_b6953a23/Main.java:52: 错误: 找不到符号
+        /* read */ boolean isVisible = renderer.getBaseShapesVisible();
+                                               ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYItemRenderer的变量 renderer
+6 个错误

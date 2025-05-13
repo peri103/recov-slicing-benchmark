@@ -1,0 +1,14 @@
+generated/jfree/complex/prog_1f4496ec/Main.java:9: 错误: <匿名Main$1>不是抽象的, 并且未覆盖XYItemRenderer中的抽象方法drawRangeMarker(Graphics2D,XYPlot,ValueAxis,Marker,Rectangle2D)
+        XYItemRenderer itemRenderer = new XYItemRenderer() {};
+                                                           ^
+generated/jfree/complex/prog_1f4496ec/Main.java:11: 错误: 找不到符号
+        /* write */ lineRenderer.setShapesVisible(true);
+                                ^
+  符号:   方法 setShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_1f4496ec/Main.java:26: 错误: 找不到符号
+        /* read */ boolean isShapesVisible = lineRenderer.getShapesVisible();
+                                                         ^
+  符号:   方法 getShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+3 个错误

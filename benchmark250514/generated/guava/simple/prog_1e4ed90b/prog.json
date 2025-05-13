@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.LinkedHashMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the LinkedHashMultimap\n        LinkedHashMultimap<String, String> multimap = LinkedHashMultimap.create();\n        \n        // Use the write method to put a value into the multimap\n        /* write */ multimap.put(\"key\", \"value\");\n        \n        // Use the read method to retrieve the value from the multimap\n        /* read */ String value = multimap.get(\"key\").iterator().next();\n        \n        // Print the retrieved value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedHashMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.LinkedHashMultimap",
+        "read_method": "get"
+    }
+}

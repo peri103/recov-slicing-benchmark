@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_4feb469b/Main.java:16: 错误: 找不到符号
+        CpioArchiveEntry entry = groupManager.getEntry("entry1");
+        ^
+  符号:   类 CpioArchiveEntry
+  位置: 类 Main
+generated/compress/multi_files/prog_4feb469b/GroupManager.java:9: 错误: 找不到符号
+        /* write */ entry.setGroupId(groupId);
+                         ^
+  符号:   方法 setGroupId(long)
+  位置: 类型为CpioArchiveEntry的变量 entry
+2 个错误

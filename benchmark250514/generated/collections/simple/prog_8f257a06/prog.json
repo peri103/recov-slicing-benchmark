@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.bag.TreeBag;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeBag<String> treeBag = new TreeBag<>();\n        /* write */ treeBag.add(\"apple\");\n        /* read */ int count = treeBag.getCount(\"apple\");\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.bag.TreeBag",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.bag.TreeBag",
+        "read_method": "getCount"
+    }
+}

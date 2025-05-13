@@ -1,0 +1,44 @@
+generated/jfree/complex/prog_9db06862/Main.java:11: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis axis = new ValueAxis() {
+                         ^
+  需要: String,TickUnitSource
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_9db06862/Main.java:13: 错误: 找不到符号
+            public double valueToJava2D(double value, java.awt.geom.Rectangle2D area, org.jfree.chart.axis.RectangleEdge edge) {
+                                                                                                          ^
+  符号:   类 RectangleEdge
+  位置: 程序包 org.jfree.chart.axis
+generated/jfree/complex/prog_9db06862/Main.java:18: 错误: 找不到符号
+            public double java2DToValue(double java2DValue, java.awt.geom.Rectangle2D area, org.jfree.chart.axis.RectangleEdge edge) {
+                                                                                                                ^
+  符号:   类 RectangleEdge
+  位置: 程序包 org.jfree.chart.axis
+generated/jfree/complex/prog_9db06862/Main.java:11: 错误: <匿名Main$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis axis = new ValueAxis() {
+                                         ^
+generated/jfree/complex/prog_9db06862/Main.java:24: 错误: 找不到符号
+        /* write */ axis.setTickUnit(tickUnit);
+                        ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_9db06862/Main.java:28: 错误: 找不到符号
+        categoryAxis.setCategoryLabelPositions(CategoryAxis.DEFAULT_CATEGORY_LABEL_POSITIONS);
+                                                           ^
+  符号:   变量 DEFAULT_CATEGORY_LABEL_POSITIONS
+  位置: 类 CategoryAxis
+generated/jfree/complex/prog_9db06862/Main.java:32: 错误: 找不到符号
+        dateAxis.setTickMarkPosition(DateAxis.DEFAULT_TICK_MARK_POSITION);
+                                             ^
+  符号:   变量 DEFAULT_TICK_MARK_POSITION
+  位置: 类 DateAxis
+generated/jfree/complex/prog_9db06862/Main.java:37: 错误: 不兼容的类型: CategoryAxis无法转换为ValueAxis
+        axes.add(categoryAxis);
+                 ^
+generated/jfree/complex/prog_9db06862/Main.java:57: 错误: 找不到符号
+        /* read */ NumberTickUnit readTickUnit = (NumberTickUnit) axis.getTickUnit();
+                                                                      ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 axis
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+9 个错误

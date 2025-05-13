@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"exampleEntry\");\n        \n        /* write */ \n        jarEntry.setMethod(JarArchiveEntry.DEFLATED);\n        \n        /* read */\n        int method = jarEntry.getMethod();\n        \n        System.out.println(\"Method: \" + method);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setMethod",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getMethod"
+    }
+}

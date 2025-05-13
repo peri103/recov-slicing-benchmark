@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_baee0ffe/ImmutableDataReader.java:6: 错误: 找不到符号
+    public ImmutableDataReader(MutableClassToInstanceMap<Object> mutableMap) {
+                               ^
+  符号:   类 MutableClassToInstanceMap
+  位置: 类 ImmutableDataReader
+1 个错误

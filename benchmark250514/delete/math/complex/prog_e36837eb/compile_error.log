@@ -1,0 +1,6 @@
+generated/math/complex/prog_e36837eb/Main.java:18: 错误: 找不到符号
+        double determinant = MatrixUtils.inverse(resultMatrix).getDeterminant();
+                                                              ^
+  符号:   方法 getDeterminant()
+  位置: 接口 RealMatrix
+1 个错误

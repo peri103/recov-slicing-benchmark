@@ -1,0 +1,6 @@
+generated/jfree/simple/prog_3d624726/Main.java:6: 错误: 找不到符号
+        /* write */ labelGenerator.setFormatString("Value: {0}");
+                                  ^
+  符号:   方法 setFormatString(String)
+  位置: 类型为StandardXYItemLabelGenerator的变量 labelGenerator
+1 个错误

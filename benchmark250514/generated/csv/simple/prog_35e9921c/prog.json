@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a CSVFormat with a null string\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        /* write */ csvFormat = csvFormat.withNullString(\"NULL\");\n\n        // Prepare a CSV input\n        String csvData = \"name,age,city\\nJohn,NULL,New York\";\n        StringReader stringReader = new StringReader(csvData);\n        \n        try {\n            // Parse the CSV data using the CSVFormat\n            CSVParser csvParser = new CSVParser(stringReader, csvFormat);\n            List<CSVRecord> records = csvParser.getRecords();\n            \n            // Read the first record and check if the 'age' field is set\n            CSVRecord record = records.get(0);\n            /* read */ boolean isAgeSet = record.isSet(\"age\");\n            \n            // Output the result\n            System.out.println(\"Is 'age' set: \" + isAgeSet);\n            \n            csvParser.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withNullString",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_7f867411/Main.java:10: 错误: TickUnit是抽象的; 无法实例化
+        TickUnit tickUnit = new TickUnit(5.0);
+                            ^
+generated/jfree/complex/prog_7f867411/Main.java:18: 错误: TickUnit是抽象的; 无法实例化
+        TickUnit categoryTickUnit = new TickUnit(10.0);
+                                    ^
+generated/jfree/complex/prog_7f867411/Main.java:19: 错误: 找不到符号
+        categoryAxis.setTickUnit(categoryTickUnit);
+                    ^
+  符号:   方法 setTickUnit(TickUnit)
+  位置: 类型为CategoryAxis的变量 categoryAxis
+generated/jfree/complex/prog_7f867411/Main.java:32: 错误: 不兼容的类型: TickUnit无法转换为NumberTickUnit
+        /* write */ numberAxis.setTickUnit(tickUnit);
+                                           ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+4 个错误

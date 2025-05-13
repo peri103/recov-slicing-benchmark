@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CSVFormat object\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        \n        // Use the write method\n        /* write */ csvFormat = csvFormat.withAllowDuplicateHeaderNames(true);\n        \n        // Since CSVRecord is usually obtained by parsing a CSV file, we need to simulate a record.\n        // Let's create a dummy CSVRecord for demonstration purposes.\n        String[] headers = {\"header1\", \"header2\"};\n        String[] values = {\"value1\", \"value2\"};\n        CSVRecord csvRecord = new CSVRecord(null, values, headers, null, 0, 0);\n        \n        // Use the read method\n        /* read */ boolean isMapped = csvRecord.isMapped(\"header1\");\n        \n        // Print the result\n        System.out.println(isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAllowDuplicateHeaderNames",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

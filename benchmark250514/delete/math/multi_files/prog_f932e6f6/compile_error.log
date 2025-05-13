@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_f932e6f6/VectorOperations.java:8: 错误: 找不到符号
+        this.vector = MatrixUtils.createOpenMapRealVector(size);
+                                 ^
+  符号:   方法 createOpenMapRealVector(int)
+  位置: 类 MatrixUtils
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        /* write */ Date newDate = DateUtils.addWeeks(date, 1);\n        \n        /* read */ Date truncatedDate = DateUtils.truncate(newDate, java.util.Calendar.DATE);\n        \n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addWeeks",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

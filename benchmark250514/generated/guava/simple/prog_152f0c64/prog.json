@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an ImmutableMultiset instance using the 'of' method\n        /* write */ ImmutableMultiset<String> multiset = ImmutableMultiset.of(\"apple\", \"banana\", \"apple\");\n        \n        // Read the count of \"apple\" using the 'count' method\n        /* read */ int appleCount = multiset.count(\"apple\");\n        \n        // Print the count of \"apple\"\n        System.out.println(appleCount);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableMultiset",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableMultiset",
+        "read_method": "count"
+    }
+}

@@ -1,0 +1,22 @@
+generated/jfree/simple/prog_59785c20/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/simple/prog_59785c20/Main.java:8: 错误: 找不到符号
+        Renderer renderer = new Renderer() {
+        ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/simple/prog_59785c20/Main.java:8: 错误: 找不到符号
+        Renderer renderer = new Renderer() {
+                                ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/simple/prog_59785c20/Main.java:11: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_59785c20/Main.java:16: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+5 个错误

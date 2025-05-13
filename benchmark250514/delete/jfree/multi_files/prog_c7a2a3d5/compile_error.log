@@ -1,0 +1,15 @@
+generated/jfree/multi_files/prog_c7a2a3d5/ChartManager.java:11: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis valueAxis = new ValueAxis("Value") {};
+                              ^
+  需要: String,TickUnitSource
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/multi_files/prog_c7a2a3d5/ChartManager.java:11: 错误: <匿名ChartManager$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis valueAxis = new ValueAxis("Value") {};
+                                                     ^
+generated/jfree/multi_files/prog_c7a2a3d5/Main.java:9: 错误: 找不到符号
+        /* read */ Paint readLabelPaint = piePlotWrapper.getLabelPaint();
+                   ^
+  符号:   类 Paint
+  位置: 类 Main
+3 个错误

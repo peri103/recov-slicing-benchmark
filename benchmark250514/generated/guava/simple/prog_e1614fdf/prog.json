@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSetMultimap;\nimport com.google.common.collect.ImmutableSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Write operation\n        /* write */ ImmutableSetMultimap<String, Integer> multimap = ImmutableSetMultimap.of(\"key\", 1);\n\n        // Read operation\n        /* read */ ImmutableSet<Integer> values = multimap.get(\"key\");\n        \n        // Output the values\n        System.out.println(values);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSetMultimap",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableSetMultimap",
+        "read_method": "get"
+    }
+}

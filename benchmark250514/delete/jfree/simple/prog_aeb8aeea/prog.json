@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.Plot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        Plot plot = new Plot() {\n            @Override\n            public String getPlotType() {\n                return \"Custom Plot\";\n            }\n\n            @Override\n            protected void draw(java.awt.Graphics2D g2, java.awt.geom.Rectangle2D area, java.awt.geom.Point2D anchor, org.jfree.chart.plot.PlotState parentState, org.jfree.chart.plot.PlotRenderingInfo info) {\n                // Custom drawing code\n            }\n        };\n\n        /* write */ plot.setBackgroundPaint(Color.BLUE);\n\n        /* read */ Paint backgroundPaint = plot.getBackgroundPaint();\n        System.out.println(backgroundPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.Plot",
+        "write_method": "setBackgroundPaint",
+        "read_class": "org.jfree.chart.plot.Plot",
+        "read_method": "getBackgroundPaint"
+    }
+}

@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_a763c6ae/Main.java:10: 错误: 找不到符号
+        ImmutableRangeMap<Integer, String> rangeMap = rangeMapBuilder.build();
+        ^
+  符号:   类 ImmutableRangeMap
+  位置: 类 Main
+1 个错误

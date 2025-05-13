@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testEntry\");\n        long lastModifiedTime = System.currentTimeMillis();\n        /* write */ entry.setLastModified(lastModifiedTime);\n        /* read */ long readLastModifiedTime = entry.getLastModified();\n        System.out.println(readLastModifiedTime);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setLastModified",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getLastModified"
+    }
+}

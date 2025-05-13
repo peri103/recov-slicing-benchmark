@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_270ef42f/Main.java:4: 错误: 找不到符号
+import org.jfree.chart.labels.CustomPieSectionLabelGenerator;
+                             ^
+  符号:   类 CustomPieSectionLabelGenerator
+  位置: 程序包 org.jfree.chart.labels
+generated/jfree/complex/prog_270ef42f/Main.java:18: 错误: 找不到符号
+        PieSectionLabelGenerator customLabelGenerator = new CustomPieSectionLabelGenerator("{0} = {1}");
+                                                            ^
+  符号:   类 CustomPieSectionLabelGenerator
+  位置: 类 Main
+2 个错误

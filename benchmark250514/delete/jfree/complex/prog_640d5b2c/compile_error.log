@@ -1,0 +1,26 @@
+generated/jfree/complex/prog_640d5b2c/Main.java:11: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(true);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_640d5b2c/Main.java:12: 错误: 找不到符号
+        lineRenderer.setBaseLinesVisible(false);
+                    ^
+  符号:   方法 setBaseLinesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_640d5b2c/Main.java:24: 错误: 找不到符号
+            renderer.setOutlinePaint(initialColor);
+                    ^
+  符号:   方法 setOutlinePaint(Color)
+  位置: 类型为XYShapeRenderer的变量 renderer
+generated/jfree/complex/prog_640d5b2c/Main.java:27: 错误: 找不到符号
+        /* write */ renderer.setOutlinePaint(Color.RED);
+                            ^
+  符号:   方法 setOutlinePaint(Color)
+  位置: 类型为XYShapeRenderer的变量 renderer
+generated/jfree/complex/prog_640d5b2c/Main.java:43: 错误: 找不到符号
+        /* read */ Color outlinePaint = (Color) renderer.getOutlinePaint();
+                                                        ^
+  符号:   方法 getOutlinePaint()
+  位置: 类型为XYShapeRenderer的变量 renderer
+5 个错误

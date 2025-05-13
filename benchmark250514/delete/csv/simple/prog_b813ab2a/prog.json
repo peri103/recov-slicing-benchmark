@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with allowing duplicate header names\n        CSVFormat csvFormat = CSVFormat.DEFAULT.withAllowDuplicateHeaderNames(true);\n\n        // Create a CSVRecord for demonstration purposes\n        // In a real scenario, this would be populated from a CSV file\n        String[] headers = {\"header1\", \"header1\", \"header2\"};\n        String[] values = {\"value1\", \"value2\", \"value3\"};\n        CSVRecord csvRecord = new CSVRecord(headers, values);\n\n        // Write operation\n        /* write */ csvFormat = csvFormat.withAllowDuplicateHeaderNames(true);\n\n        // Read operation\n        /* read */ boolean isSet = csvRecord.isSet(\"header1\");\n        \n        System.out.println(isSet);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAllowDuplicateHeaderNames",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

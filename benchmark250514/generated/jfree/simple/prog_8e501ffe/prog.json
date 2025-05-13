@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport org.jfree.chart.labels.StandardPieSectionLabelGenerator;\nimport org.jfree.chart.labels.PieSectionLabelGenerator;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize PiePlot object\n        PiePlot piePlot = new PiePlot();\n        \n        // Create a label generator\n        PieSectionLabelGenerator labelGenerator = new StandardPieSectionLabelGenerator();\n        \n        // Set the label generator using the write method\n        /* write */ piePlot.setLabelGenerator(labelGenerator);\n        \n        // Retrieve the label generator using the read method\n        /* read */ PieSectionLabelGenerator retrievedLabelGenerator = piePlot.getLabelGenerator();\n        \n        // Print the result to verify the read method retrieved the correct value\n        System.out.println(retrievedLabelGenerator.equals(labelGenerator));\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setLabelGenerator",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getLabelGenerator"
+    }
+}

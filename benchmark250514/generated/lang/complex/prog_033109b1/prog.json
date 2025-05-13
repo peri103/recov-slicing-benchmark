@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.EqualsBuilder;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        EqualsBuilder builder = new EqualsBuilder();\n        Map<String, Integer> map = new HashMap<>();\n\n        // Populate the map with some values\n        map.put(\"One\", 1);\n        map.put(\"Two\", 2);\n        map.put(\"Three\", 3);\n\n        // Perform some operations on the map\n        if (map.containsKey(\"Two\")) {\n            int value = map.get(\"Two\");\n            System.out.println(\"Value for 'Two': \" + value);\n        }\n\n        // Append some values to the EqualsBuilder\n        /* write */ builder.append(1, 1);\n\n        // Add more logic using the map\n        map.put(\"Four\", 4);\n        map.put(\"Five\", 5);\n        int sum = 0;\n        for (Integer val : map.values()) {\n            sum += val;\n        }\n        System.out.println(\"Sum of map values: \" + sum);\n\n        // Check if the appended values are equal\n        /* read */ boolean isEqual = builder.isEquals();\n        System.out.println(\"Are the values equal? \" + isEqual);\n\n        // Continue with other operations\n        if (map.containsKey(\"Three\")) {\n            System.out.println(\"'Three' is present in the map.\");\n        }\n\n        // Final output of map keys\n        System.out.println(\"Keys in map: \" + map.keySet());\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.builder.EqualsBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        EqualsBuilder builder = new EqualsBuilder();\n        /* write */ builder.append(1, 1);\n        /* read */ boolean isEqual = builder.isEquals();\n        System.out.println(isEqual);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "read_method": "isEquals"
+    }
+}

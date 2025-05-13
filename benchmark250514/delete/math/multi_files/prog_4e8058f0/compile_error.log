@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_4e8058f0/MatrixHandler.java:12: 错误: 找不到符号
+        return MatrixUtils.getRowRealMatrix(matrix, row);
+                          ^
+  符号:   方法 getRowRealMatrix(RealMatrix,int)
+  位置: 类 MatrixUtils
+1 个错误

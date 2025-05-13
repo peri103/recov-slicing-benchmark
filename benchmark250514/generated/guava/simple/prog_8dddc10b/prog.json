@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ArrayTable;\nimport com.google.common.collect.ImmutableList;\nimport com.google.common.collect.ImmutableMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize row and column keys\n        ImmutableList<String> rowKeys = ImmutableList.of(\"row1\");\n        ImmutableList<String> columnKeys = ImmutableList.of(\"col1\");\n\n        // Create ArrayTable\n        ArrayTable<String, String, Integer> table = ArrayTable.create(rowKeys, columnKeys);\n\n        // Write value into the table\n        /* write */ table.put(\"row1\", \"col1\", 42);\n\n        // Read value from the table\n        /* read */ int value = table.get(\"row1\", \"col1\");\n\n        // Print the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ArrayTable",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ArrayTable",
+        "read_method": "get"
+    }
+}

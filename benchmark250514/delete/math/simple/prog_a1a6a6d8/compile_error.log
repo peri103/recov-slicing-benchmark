@@ -1,0 +1,11 @@
+generated/math/simple/prog_a1a6a6d8/Main.java:8: 错误: 找不到符号
+        /* write */ RealVector vector = MatrixUtils.createSparseRealVector(data);
+                                                   ^
+  符号:   方法 createSparseRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/simple/prog_a1a6a6d8/Main.java:11: 错误: 找不到符号
+        /* read */ RealVector retrievedVector = MatrixUtils.getSparseRealVector(vector);
+                                                           ^
+  符号:   方法 getSparseRealVector(RealVector)
+  位置: 类 MatrixUtils
+2 个错误

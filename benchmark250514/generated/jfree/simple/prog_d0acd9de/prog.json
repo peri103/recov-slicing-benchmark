@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a PiePlot object\n        PiePlot piePlot = new PiePlot();\n\n        // Use the write method to set the label gap\n        /* write */ piePlot.setLabelGap(0.05);\n\n        // Use the read method to get the label gap\n        /* read */ double labelGap = piePlot.getLabelGap();\n\n        // Print the label gap value to verify it was set correctly\n        System.out.println(labelGap);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setLabelGap",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getLabelGap"
+    }
+}

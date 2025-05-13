@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.LinkedMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedMap<String, Integer> map = new LinkedMap<>();\n        HashMap<String, String> hashMap = new HashMap<>();\n        \n        hashMap.put(\"name\", \"Alice\");\n        hashMap.put(\"city\", \"Wonderland\");\n        \n        /* write */ map.put(\"key\", 42);\n        \n        for (Map.Entry<String, String> entry : hashMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n        \n        map.put(\"anotherKey\", 84);\n        \n        int sum = 0;\n        for (Integer value : map.values()) {\n            sum += value;\n        }\n        \n        /* read */ Integer value = map.get(\"key\");\n        \n        System.out.println(\"Sum of values in LinkedMap: \" + sum);\n        System.out.println(\"Value associated with 'key': \" + value);\n        \n        LinkedMap<String, String> stringMap = new LinkedMap<>();\n        stringMap.put(\"greeting\", \"Hello\");\n        stringMap.put(\"farewell\", \"Goodbye\");\n        \n        for (String k : stringMap.keySet()) {\n            System.out.println(k + \" -> \" + stringMap.get(k));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.LinkedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedMap<String, Integer> map = new LinkedMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.LinkedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.LinkedMap",
+        "read_method": "get"
+    }
+}

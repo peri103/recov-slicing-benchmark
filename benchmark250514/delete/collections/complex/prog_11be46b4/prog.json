@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.TreeValuedHashMap;\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeValuedHashMap<String, Integer> map = new TreeValuedHashMap<>();\n        HashMap<String, Integer> anotherMap = new HashMap<>();\n        \n        anotherMap.put(\"key1\", 100);\n        anotherMap.put(\"key2\", 200);\n        \n        for (Map.Entry<String, Integer> entry : anotherMap.entrySet()) {\n            map.put(entry.getKey(), entry.getValue() + 10);\n        }\n        \n        /* write */ map.put(\"key\", 42);\n        \n        Set<String> keys = map.keySet();\n        for (String key : keys) {\n            System.out.println(\"Key: \" + key + \" -> Values: \" + map.get(key));\n        }\n        \n        int sum = 0;\n        for (Integer value : map.get(\"key1\")) {\n            sum += value;\n        }\n        System.out.println(\"Sum of values for 'key1': \" + sum);\n\n        /* read */ Integer value = map.get(\"key\").iterator().next();\n        System.out.println(\"Value for 'key': \" + value);\n        \n        map.put(\"key3\", 300);\n        map.put(\"key4\", 400);\n        \n        for (String key : map.keySet()) {\n            int total = 0;\n            for (Integer val : map.get(key)) {\n                total += val;\n            }\n            System.out.println(\"Total for \" + key + \": \" + total);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.multimap.TreeValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeValuedHashMap<String, Integer> map = new TreeValuedHashMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.TreeValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.TreeValuedHashMap",
+        "read_method": "get"
+    }
+}

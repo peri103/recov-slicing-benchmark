@@ -1,0 +1,25 @@
+generated/jfree/complex/prog_fab642b8/Main.java:12: 错误: 找不到符号
+        /* write */ title.setFont(font);
+                         ^
+  符号:   方法 setFont(Font)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_fab642b8/Main.java:16: 错误: 找不到符号
+        title.setBackgroundPaint(color);
+             ^
+  符号:   方法 setBackgroundPaint(Color)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_fab642b8/Main.java:42: 错误: 找不到符号
+        /* read */ Font retrievedFont = title.getFont();
+                                             ^
+  符号:   方法 getFont()
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_fab642b8/Main.java:58: 错误: MyTitle不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+class MyTitle extends Title {
+^
+generated/jfree/complex/prog_fab642b8/Main.java:62: 错误: 方法不会覆盖或实现超类型的方法
+    @Override
+    ^
+generated/jfree/complex/prog_fab642b8/Main.java:67: 错误: 方法不会覆盖或实现超类型的方法
+    @Override
+    ^
+6 个错误

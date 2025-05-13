@@ -1,0 +1,21 @@
+generated/math/complex/prog_e0580e87/Main.java:13: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createBlockRealMatrix(data);
+                                                   ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_e0580e87/Main.java:22: 错误: 找不到符号
+        double determinant = matrix.getDeterminant();
+                                   ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix
+generated/math/complex/prog_e0580e87/Main.java:30: 错误: 找不到符号
+        RealMatrix matrix2 = MatrixUtils.createBlockRealMatrix(data2);
+                                        ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_e0580e87/Main.java:39: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getBlockRealMatrix(matrix.getData(), 0, 0, 2, 2);
+                                                      ^
+  符号:   方法 getBlockRealMatrix(double[][],int,int,int,int)
+  位置: 类 MatrixUtils
+4 个错误

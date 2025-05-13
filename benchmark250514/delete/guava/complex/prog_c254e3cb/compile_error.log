@@ -1,0 +1,4 @@
+generated/guava/complex/prog_c254e3cb/Main.java:52: 错误: 已在方法 main(String[])中定义了变量 value
+        for (int value : simpleMap.values()) {
+                 ^
+1 个错误

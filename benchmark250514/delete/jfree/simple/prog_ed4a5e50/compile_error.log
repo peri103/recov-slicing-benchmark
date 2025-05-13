@@ -1,0 +1,8 @@
+generated/jfree/simple/prog_ed4a5e50/Main.java:14: 错误: 不兼容的类型: SortOrder无法转换为TableOrder
+        /* write */ plot.setDataExtractOrder(SortOrder.ASCENDING);
+                                                      ^
+generated/jfree/simple/prog_ed4a5e50/Main.java:17: 错误: 不兼容的类型: TableOrder无法转换为SortOrder
+        /* read */ SortOrder order = plot.getDataExtractOrder();
+                                                             ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

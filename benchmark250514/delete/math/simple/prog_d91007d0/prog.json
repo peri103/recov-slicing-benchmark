@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize necessary variables\n        RealMatrix matrix;\n        \n        // Write operation: create an identity matrix\n        /* write */ matrix = MatrixUtils.createIdentityMatrix(3);\n\n        // Read operation: get the identity matrix\n        /* read */ RealMatrix identityMatrix = matrix;\n\n        // Print the resulting matrix for verification\n        for (int i = 0; i < identityMatrix.getRowDimension(); i++) {\n            for (int j = 0; j < identityMatrix.getColumnDimension(); j++) {\n                System.out.print(identityMatrix.getEntry(i, j) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createIdentityMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getIdentityMatrix"
+    }
+}

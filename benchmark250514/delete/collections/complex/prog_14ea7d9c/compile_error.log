@@ -1,0 +1,26 @@
+generated/collections/complex/prog_14ea7d9c/Main.java:2: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.PredicatedMultiValuedMap;
+                                               ^
+  符号:   类 PredicatedMultiValuedMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/complex/prog_14ea7d9c/Main.java:4: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.MultiValuedMap;
+                                               ^
+  符号:   类 MultiValuedMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/complex/prog_14ea7d9c/Main.java:13: 错误: 找不到符号
+        PredicatedMultiValuedMap<String, Integer> map = new PredicatedMultiValuedMap<>(
+        ^
+  符号:   类 PredicatedMultiValuedMap
+  位置: 类 Main
+generated/collections/complex/prog_14ea7d9c/Main.java:13: 错误: 找不到符号
+        PredicatedMultiValuedMap<String, Integer> map = new PredicatedMultiValuedMap<>(
+                                                            ^
+  符号:   类 PredicatedMultiValuedMap
+  位置: 类 Main
+generated/collections/complex/prog_14ea7d9c/Main.java:19: 错误: 找不到符号
+        MultiValuedMap<String, String> stringMap = new ArrayListValuedHashMap<>();
+        ^
+  符号:   类 MultiValuedMap
+  位置: 类 Main
+5 个错误

@@ -1,0 +1,16 @@
+generated/math/multi_files/prog_cfee42dc/SymmetricMatrixWrapper.java:1: 错误: 找不到符号
+import org.apache.commons.math3.linear.SymmetricMatrix;
+                                      ^
+  符号:   类 SymmetricMatrix
+  位置: 程序包 org.apache.commons.math3.linear
+generated/math/multi_files/prog_cfee42dc/SymmetricMatrixWrapper.java:4: 错误: 找不到符号
+    private SymmetricMatrix matrix;
+            ^
+  符号:   类 SymmetricMatrix
+  位置: 类 SymmetricMatrixWrapper
+generated/math/multi_files/prog_cfee42dc/SymmetricMatrixWrapper.java:7: 错误: 找不到符号
+        matrix = new SymmetricMatrix(size);
+                     ^
+  符号:   类 SymmetricMatrix
+  位置: 类 SymmetricMatrixWrapper
+3 个错误

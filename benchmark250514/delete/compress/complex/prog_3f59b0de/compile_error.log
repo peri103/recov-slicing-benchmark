@@ -1,0 +1,36 @@
+generated/compress/complex/prog_3f59b0de/Main.java:9: 错误: 找不到符号
+        /* write */ entry.setFileType(DumpArchiveEntry.TYPE_FILE);
+                                                      ^
+  符号:   变量 TYPE_FILE
+  位置: 类 DumpArchiveEntry
+generated/compress/complex/prog_3f59b0de/Main.java:16: 错误: 找不到符号
+        anotherEntry.setFileType(DumpArchiveEntry.TYPE_DIRECTORY);
+                                                 ^
+  符号:   变量 TYPE_DIRECTORY
+  位置: 类 DumpArchiveEntry
+generated/compress/complex/prog_3f59b0de/Main.java:21: 错误: 找不到符号
+            if (e.getFileType() == DumpArchiveEntry.TYPE_FILE) {
+                 ^
+  符号:   方法 getFileType()
+  位置: 类型为DumpArchiveEntry的变量 e
+generated/compress/complex/prog_3f59b0de/Main.java:21: 错误: 找不到符号
+            if (e.getFileType() == DumpArchiveEntry.TYPE_FILE) {
+                                                   ^
+  符号:   变量 TYPE_FILE
+  位置: 类 DumpArchiveEntry
+generated/compress/complex/prog_3f59b0de/Main.java:23: 错误: 找不到符号
+            } else if (e.getFileType() == DumpArchiveEntry.TYPE_DIRECTORY) {
+                        ^
+  符号:   方法 getFileType()
+  位置: 类型为DumpArchiveEntry的变量 e
+generated/compress/complex/prog_3f59b0de/Main.java:23: 错误: 找不到符号
+            } else if (e.getFileType() == DumpArchiveEntry.TYPE_DIRECTORY) {
+                                                          ^
+  符号:   变量 TYPE_DIRECTORY
+  位置: 类 DumpArchiveEntry
+generated/compress/complex/prog_3f59b0de/Main.java:35: 错误: 找不到符号
+        /* read */ int fileType = entry.getFileType();
+                                       ^
+  符号:   方法 getFileType()
+  位置: 类型为DumpArchiveEntry的变量 entry
+7 个错误

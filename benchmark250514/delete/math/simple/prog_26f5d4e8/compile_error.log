@@ -1,0 +1,6 @@
+generated/math/simple/prog_26f5d4e8/Main.java:12: 错误: 找不到符号
+        /* write */ RealMatrix triangularMatrix = MatrixUtils.createTriangularMatrix(data);
+                                                             ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

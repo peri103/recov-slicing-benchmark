@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_ce395374/Main.java:40: 错误: 找不到符号
+        /* read */ boolean isVisible = axis.getTickLabelsVisible();
+                                           ^
+  符号:   方法 getTickLabelsVisible()
+  位置: 类型为SymbolAxis的变量 axis
+1 个错误

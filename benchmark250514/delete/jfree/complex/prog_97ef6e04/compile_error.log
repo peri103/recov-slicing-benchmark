@@ -1,0 +1,24 @@
+generated/jfree/complex/prog_97ef6e04/Main.java:7: 错误: Title是抽象的; 无法实例化
+        Title title = new Title();
+                      ^
+generated/jfree/complex/prog_97ef6e04/Main.java:10: 错误: 找不到符号
+        /* write */ title.setText("Hello, World!");
+                         ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_97ef6e04/Main.java:14: 错误: 找不到符号
+            title.setText("Iteration " + i);
+                 ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_97ef6e04/Main.java:15: 错误: 找不到符号
+            textHistory.add(title.getText());
+                                 ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_97ef6e04/Main.java:39: 错误: 找不到符号
+        /* read */ String text = title.getText();
+                                      ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 title
+5 个错误

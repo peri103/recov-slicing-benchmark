@@ -1,0 +1,15 @@
+generated/jfree/complex/prog_1cab4f6f/Main.java:10: 错误: 找不到符号
+        /* write */ logAxis.setBase(10.0);
+                           ^
+  符号:   方法 setBase(double)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_1cab4f6f/Main.java:22: 错误: 不兼容的类型: int无法转换为NumberTickUnit
+        numberAxis.setTickUnit(5);
+                               ^
+generated/jfree/complex/prog_1cab4f6f/Main.java:31: 错误: 找不到符号
+        /* read */ double base = logAxis.getBase();
+                                        ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 logAxis
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+3 个错误

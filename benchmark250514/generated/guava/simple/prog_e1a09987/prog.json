@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingSortedMap;\nimport java.util.SortedMap;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedMap<String, Integer> sortedMap = new TreeMap<>();\n        ForwardingSortedMap<String, Integer> forwardingSortedMap = new ForwardingSortedMap<String, Integer>() {\n            @Override\n            protected SortedMap<String, Integer> delegate() {\n                return sortedMap;\n            }\n        };\n\n        /* write */ forwardingSortedMap.put(\"key\", 100);\n        /* read */ Integer value = forwardingSortedMap.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingSortedMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ForwardingSortedMap",
+        "read_method": "get"
+    }
+}

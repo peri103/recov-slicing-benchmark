@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_94006fec/Main.java:43: 错误: 找不到符号
+        legendItem.setLabel("Updated Legend");
+                  ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+1 个错误

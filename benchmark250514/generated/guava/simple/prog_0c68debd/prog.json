@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.HashBasedTable;\nimport com.google.common.collect.Table;\n\npublic class Main {\n    public static void main(String[] args) {\n        Table<String, String, Integer> table = HashBasedTable.create();\n        /* write */ table.put(\"row1\", \"column1\", 42);\n        /* read */ Integer value = table.get(\"row1\", \"column1\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.RowSortedTable",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.RowSortedTable",
+        "read_method": "get"
+    }
+}

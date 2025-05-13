@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport org.jfree.chart.title.LegendTitle;\nimport java.awt.Color;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample\");\n        LegendTitle legendTitle = new LegendTitle(null);\n        ArrayList<String> seriesNames = new ArrayList<>();\n        \n        legendTitle.setBackgroundPaint(Color.WHITE);\n        legendTitle.setPosition(LegendTitle.DEFAULT_POSITION);\n\n        /* write */ legendItem.setSeriesKey(\"Key1\");\n\n        for (int i = 0; i < 5; i++) {\n            seriesNames.add(\"Series \" + i);\n        }\n\n        for (String name : seriesNames) {\n            LegendItem tempItem = new LegendItem(name);\n            tempItem.setSeriesKey(name + \"_Key\");\n            legendTitle.addLegendItem(tempItem);\n        }\n\n        /* read */ Object seriesKey = legendItem.getSeriesKey();\n        System.out.println(seriesKey);\n\n        for (int i = 0; i < seriesNames.size(); i++) {\n            System.out.println(\"Legend Item: \" + seriesNames.get(i));\n        }\n\n        System.out.println(\"Legend Title Position: \" + legendTitle.getPosition());\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample\");\n        /* write */ legendItem.setSeriesKey(\"Key1\");\n        /* read */ Object seriesKey = legendItem.getSeriesKey();\n        System.out.println(seriesKey);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setSeriesKey",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getSeriesKey"
+    }
+}

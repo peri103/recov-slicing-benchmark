@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\nimport org.jfree.chart.renderer.xy.XYItemRenderer;\nimport org.jfree.chart.renderer.xy.XYAreaRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();\n        /* write */ renderer.setSeriesLinesVisible(0, true);\n        \n        XYItemRenderer itemRenderer = new XYLineAndShapeRenderer();\n        itemRenderer.setSeriesPaint(0, java.awt.Color.RED);\n        \n        XYAreaRenderer areaRenderer = new XYAreaRenderer();\n        areaRenderer.setSeriesPaint(1, java.awt.Color.BLUE);\n        \n        boolean isAreaVisible = areaRenderer.getSeriesPaint(1) != null;\n        System.out.println(\"Area series 1 visible: \" + isAreaVisible);\n        \n        boolean isItemVisible = itemRenderer.getSeriesPaint(0) != null;\n        System.out.println(\"Item series 0 visible: \" + isItemVisible);\n        \n        for (int i = 0; i < 5; i++) {\n            itemRenderer.setSeriesPaint(i, new java.awt.Color(i * 50, i * 50, i * 50));\n        }\n        \n        for (int i = 0; i < 5; i++) {\n            System.out.println(\"Paint for series \" + i + \": \" + itemRenderer.getSeriesPaint(i));\n        }\n        \n        /* read */ Boolean isVisible = renderer.getSeriesLinesVisible(0);\n        System.out.println(\"Line series 0 visible: \" + isVisible);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();\n        /* write */ renderer.setSeriesLinesVisible(0, true);\n        /* read */ Boolean isVisible = renderer.getSeriesLinesVisible(0);\n        System.out.println(isVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYLineAndShapeRenderer",
+        "write_method": "setSeriesLinesVisible",
+        "read_class": "org.jfree.chart.renderer.xy.XYLineAndShapeRenderer",
+        "read_method": "getSeriesLinesVisible"
+    }
+}

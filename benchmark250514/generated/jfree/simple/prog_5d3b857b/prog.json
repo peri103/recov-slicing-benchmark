@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of PiePlot\n        PiePlot piePlot = new PiePlot();\n\n        // Set the shadow paint using the write method\n        /* write */ piePlot.setShadowPaint(Color.GRAY);\n\n        // Retrieve the shadow paint using the read method\n        /* read */ Paint shadowPaint = piePlot.getShadowPaint();\n\n        // Print the shadow paint to verify the value\n        System.out.println(shadowPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setShadowPaint",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getShadowPaint"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.RealMatrixChangingVisitor;\n\npublic class Main {\n    public static void main(String[] args) {\n        RealMatrixChangingVisitor visitor = new RealMatrixChangingVisitor() {\n            private double value;\n\n            @Override\n            public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {\n                // Initialization if needed\n            }\n\n            @Override\n            public double visit(int row, int column, double value) {\n                /* write */ this.value = value; // Store the value\n                return value; // Return the unchanged value\n            }\n\n            @Override\n            public double end() {\n                /* read */ return this.value; // Retrieve the stored value\n            }\n        };\n\n        // Simulate visiting a matrix element\n        visitor.visit(0, 0, 42.0);\n\n        // Retrieve the value stored during the visit\n        double result = visitor.end();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+        "write_method": "visit",
+        "read_class": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+        "read_method": "end"
+    }
+}

@@ -1,0 +1,22 @@
+generated/jfree/complex/prog_4c0170dd/Main.java:3: 错误: 找不到符号
+import org.jfree.data.general.DatasetUtilities;
+                             ^
+  符号:   类 DatasetUtilities
+  位置: 程序包 org.jfree.data.general
+generated/jfree/complex/prog_4c0170dd/Main.java:14: 错误: 找不到符号
+        CategoryDataset dataset = DatasetUtilities.createCategoryDataset(
+                                  ^
+  符号:   变量 DatasetUtilities
+  位置: 类 Main
+generated/jfree/complex/prog_4c0170dd/Main.java:25: 错误: 不兼容的类型: CategoryDataset无法转换为PieDataset
+        PiePlot piePlot = new PiePlot(dataset);
+                                      ^
+generated/jfree/complex/prog_4c0170dd/Main.java:26: 错误: 对于createPieChart(String,PiePlot,boolean,boolean,boolean), 找不到合适的方法
+        JFreeChart pieChart = ChartFactory.createPieChart(
+                                          ^
+    方法 ChartFactory.createPieChart(String,PieDataset,boolean,boolean,Locale)不适用
+      (参数不匹配; PiePlot无法转换为PieDataset)
+    方法 ChartFactory.createPieChart(String,PieDataset,boolean,boolean,boolean)不适用
+      (参数不匹配; PiePlot无法转换为PieDataset)
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+4 个错误

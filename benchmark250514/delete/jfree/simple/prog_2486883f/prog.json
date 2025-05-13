@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.CompassPlot;\nimport org.jfree.chart.needle.MeterNeedle;\n\npublic class Main {\n    public static void main(String[] args) {\n        CompassPlot compassPlot = new CompassPlot();\n        MeterNeedle needle = new MeterNeedle();\n        \n        /* write */ compassPlot.setSeriesNeedle(0, needle);\n        /* read */ MeterNeedle readNeedle = compassPlot.getSeriesNeedle(0);\n        \n        System.out.println(readNeedle.equals(needle));\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.CompassPlot",
+        "write_method": "setSeriesNeedle",
+        "read_class": "org.jfree.chart.plot.CompassPlot",
+        "read_method": "getSeriesNeedle"
+    }
+}

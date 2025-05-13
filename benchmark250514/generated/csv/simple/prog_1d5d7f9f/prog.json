@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CSV format with a header\n        CSVFormat format = CSVFormat.DEFAULT.withHeader(\"Name\", \"Age\", \"Country\");\n        String csvData = \"Name,Age,Country\\nJohn,30,USA\\nJane,25,UK\";\n\n        try {\n            // Parse the CSV data using the format\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), format);\n\n            // Iterate over the records\n            for (CSVRecord record : parser) {\n                // Check if a specific header is set\n                /* read */ boolean isNameSet = record.isSet(\"Name\");\n                System.out.println(\"Is 'Name' header set? \" + isNameSet);\n                break; // Ensure the read method is executed only once\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withHeader",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

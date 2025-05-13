@@ -1,0 +1,7 @@
+generated/jfree/complex/prog_6664fbf1/Main.java:26: 错误: 不兼容的类型: Paint无法转换为Color
+        Color outlineColor = anotherPlot.getOutlinePaint();
+                                                        ^
+generated/jfree/complex/prog_6664fbf1/Main.java:30: 错误: 不兼容的类型: Paint无法转换为Color
+        Color labelColor = plot.getLabelPaint();
+                                             ^
+2 个错误

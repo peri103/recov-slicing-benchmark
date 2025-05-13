@@ -1,0 +1,16 @@
+generated/math/multi_files/prog_571150e7/VectorOperations.java:8: 错误: 找不到符号
+        /* write */ this.vector = MatrixUtils.createArrayRealVector(data);
+                                             ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_571150e7/VectorOperations.java:16: 错误: 找不到符号
+        RealVector otherVector = MatrixUtils.createArrayRealVector(data);
+                                            ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_571150e7/VectorOperations.java:21: 错误: 找不到符号
+        RealVector otherVector = MatrixUtils.createArrayRealVector(data);
+                                            ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+3 个错误

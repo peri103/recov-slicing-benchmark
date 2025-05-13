@@ -1,0 +1,6 @@
+generated/collections/multi_files/prog_92afd341/Main.java:9: 错误: 找不到符号
+        LinkedMap<String, Integer> studentCourses = student.getCourse().getCourses();
+        ^
+  符号:   类 LinkedMap
+  位置: 类 Main
+1 个错误

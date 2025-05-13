@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractIterableMap;\nimport java.util.HashMap;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractIterableMap<String, Integer> map = new HashMap<>();\n        List<String> keys = new ArrayList<>();\n        \n        /* write */ map.put(\"key\", 42);\n        \n        // Adding more complexity\n        for (int i = 0; i < 5; i++) {\n            String key = \"key\" + i;\n            map.put(key, i * 10);\n            keys.add(key);\n        }\n        \n        int sum = 0;\n        for (String key : keys) {\n            sum += map.get(key);\n        }\n        \n        // Perform some operations\n        int product = 1;\n        for (int i = 1; i <= 3; i++) {\n            product *= i;\n        }\n        \n        // Output intermediate results\n        System.out.println(\"Sum of values: \" + sum);\n        System.out.println(\"Product of first three integers: \" + product);\n        \n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n        \n        // More operations\n        List<Integer> values = new ArrayList<>();\n        for (String key : keys) {\n            values.add(map.get(key));\n        }\n        \n        for (Integer val : values) {\n            System.out.println(\"Value: \" + val);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.AbstractIterableMap;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractIterableMap<String, Integer> map = new HashMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractIterableMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractIterableMap",
+        "read_method": "get"
+    }
+}

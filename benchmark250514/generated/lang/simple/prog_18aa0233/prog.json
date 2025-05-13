@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableDouble;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableDouble mutableDouble = new MutableDouble();\n        /* write */ mutableDouble.setValue(10.5);\n        /* read */ double value = mutableDouble.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableDouble",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableDouble",
+        "read_method": "getValue"
+    }
+}

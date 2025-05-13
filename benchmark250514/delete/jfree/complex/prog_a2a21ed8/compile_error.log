@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_a2a21ed8/Main.java:18: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(true);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为LineAndShapeRenderer的变量 lineRenderer
+1 个错误

@@ -1,0 +1,14 @@
+generated/csv/multi_files/prog_03509ae0/CSVData.java:8: 错误: 找不到符号
+    public CSVData(CSVFormat csvFormat) {
+                   ^
+  符号:   类 CSVFormat
+  位置: 类 CSVData
+generated/csv/multi_files/prog_03509ae0/CSVData.java:11: 错误: 不兼容的类型: 不存在类型变量T的实例, 以使T[]与String一致
+        this.record = new CSVRecord(null, values.toArray(new String[0]), headers.toArray(new String[0]), 0, 0);
+                      ^
+  其中, T是类型变量:
+    T扩展已在方法 <T>toArray(T[])中声明的Object
+注: generated/csv/multi_files/prog_03509ae0/CSVConfiguration.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

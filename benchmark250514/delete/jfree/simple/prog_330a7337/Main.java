@@ -1,0 +1,11 @@
+import org.jfree.chart.title.Title;
+
+public class Main {
+    public static void main(String[] args) {
+        // Assume Title is a class with setText and getText methods
+        Title title = new Title();
+        /* write */ title.setText("Hello, World!");
+        /* read */ String text = title.getText();
+        System.out.println(text);
+    }
+}

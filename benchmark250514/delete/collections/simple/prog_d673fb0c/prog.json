@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.TransformedMultiValuedMap;\nimport org.apache.commons.collections4.MultiValuedMap;\nimport org.apache.commons.collections4.map.MultiValuedMapBuilder;\nimport java.util.Collection;\n\npublic class Main {\n    public static void main(String[] args) {\n        MultiValuedMap<String, Integer> map = MultiValuedMapBuilder.hashMap().arrayListValues().build();\n        TransformedMultiValuedMap<String, Integer> transformedMap = TransformedMultiValuedMap.transformingMap(map, null, null);\n\n        /* write */ transformedMap.put(\"key1\", 42);\n\n        /* read */ Collection<Integer> values = transformedMap.get(\"key1\");\n        for (Integer value : values) {\n            System.out.println(value);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.TransformedMultiValuedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.TransformedMultiValuedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with ignoring empty lines\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withIgnoreEmptyLines(true);\n\n        // Create a mock CSVRecord to demonstrate isSet method\n        String[] data = {\"value1\", \"value2\"};\n        CSVRecord record = CSVRecord.parse(data, format);\n\n        // Check if a specific index is set in the CSVRecord\n        /* read */ boolean isSet = record.isSet(0);\n        System.out.println(isSet);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreEmptyLines",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

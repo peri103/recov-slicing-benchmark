@@ -1,0 +1,4 @@
+generated/jfree/complex/prog_6ef5dc51/Main.java:28: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        JFreeChart dummyChart = new JFreeChart("Dummy Chart", JFreeChart.DEFAULT_TITLE_FONT, new Plot() {}, false);
+                                                                                                        ^
+1 个错误

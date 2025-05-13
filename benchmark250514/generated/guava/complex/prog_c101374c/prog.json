@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.MinMaxPriorityQueue;\nimport java.util.PriorityQueue;\nimport java.util.ArrayList;\nimport java.util.Collections;\n\npublic class Main {\n    public static void main(String[] args) {\n        MinMaxPriorityQueue<Integer> queue = MinMaxPriorityQueue.create();\n        PriorityQueue<Integer> anotherQueue = new PriorityQueue<>();\n        ArrayList<Integer> list = new ArrayList<>();\n        \n        /* write */ queue.offer(42);\n        \n        anotherQueue.offer(10);\n        anotherQueue.offer(20);\n        anotherQueue.offer(30);\n        \n        list.add(100);\n        list.add(200);\n        list.add(300);\n        \n        int anotherValue = anotherQueue.poll();\n        System.out.println(\"Polled from anotherQueue: \" + anotherValue);\n        \n        Collections.sort(list);\n        for (int value : list) {\n            System.out.println(\"Sorted list value: \" + value);\n        }\n        \n        /* read */ int value = queue.peek();\n        System.out.println(\"Peeked from queue: \" + value);\n        \n        int sum = 0;\n        for (int i = 0; i < list.size(); i++) {\n            sum += list.get(i);\n        }\n        System.out.println(\"Sum of list values: \" + sum);\n        \n        int maxValue = Collections.max(list);\n        System.out.println(\"Max value in list: \" + maxValue);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.MinMaxPriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        MinMaxPriorityQueue<Integer> queue = MinMaxPriorityQueue.create();\n        /* write */ queue.offer(42);\n        /* read */ int value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.MinMaxPriorityQueue",
+        "write_method": "offer",
+        "read_class": "com.google.common.collect.MinMaxPriorityQueue",
+        "read_method": "peek"
+    }
+}

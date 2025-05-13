@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport org.apache.commons.lang3.StringUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        \n        // Additional manipulation using StrBuilder\n        StrBuilder additionalBuilder = new StrBuilder(\"Java Programming\");\n        additionalBuilder.append(\" is fun!\");\n        System.out.println(additionalBuilder.toString());\n        \n        // Use StringUtils for some operations\n        String reversed = StringUtils.reverse(\"Hello\");\n        System.out.println(\"Reversed: \" + reversed);\n\n        // Write operation\n        /* write */ strBuilder.deleteAll(\"World\");\n        \n        // Perform some unrelated operations\n        int[] numbers = {1, 2, 3, 4, 5};\n        int sum = 0;\n        for (int number : numbers) {\n            sum += number;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        // More operations on StrBuilder\n        additionalBuilder.insert(5, \" Language\");\n        System.out.println(additionalBuilder.toString());\n        \n        // Read operation\n        /* read */ String result = strBuilder.toString();\n        System.out.println(\"Result after deletion: \" + result);\n        \n        // Further unrelated operations\n        String joinedString = StringUtils.join(numbers, \", \");\n        System.out.println(\"Joined string: \" + joinedString);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        /* write */ strBuilder.deleteAll(\"World\");\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "deleteAll",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

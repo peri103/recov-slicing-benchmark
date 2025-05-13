@@ -1,0 +1,28 @@
+generated/compress/complex/prog_1701eda3/Main.java:7: 错误: 对于CpioArchiveEntry(没有参数), 找不到合适的构造器
+        CpioArchiveEntry entry = new CpioArchiveEntry();
+                                 ^
+    构造器 CpioArchiveEntry.CpioArchiveEntry(short)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(String)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(short,String)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(String,long)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(short,String,long)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(File,String)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(short,File,String)不适用
+      (实际参数列表和形式参数列表长度不同)
+generated/compress/complex/prog_1701eda3/Main.java:30: 错误: 找不到符号
+        /* write */ entry.setLinkName("exampleLink");
+                         ^
+  符号:   方法 setLinkName(String)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_1701eda3/Main.java:47: 错误: 找不到符号
+        /* read */ String linkName = entry.getLinkName();
+                                          ^
+  符号:   方法 getLinkName()
+  位置: 类型为CpioArchiveEntry的变量 entry
+3 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.ChartPanel;\nimport org.jfree.chart.JFreeChart;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a dummy chart object for demonstration purposes\n        JFreeChart dummyChart = new JFreeChart(\"Demo Chart\", JFreeChart.DEFAULT_TITLE_FONT, null, false);\n\n        // Initialize the ChartPanel object\n        ChartPanel chartPanel = new ChartPanel(null);\n\n        /* write */ chartPanel.setChart(dummyChart);\n\n        /* read */ JFreeChart retrievedChart = chartPanel.getChart();\n\n        // Print the title of the retrieved chart to verify the operation\n        System.out.println(retrievedChart.getTitle().getText());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.ChartPanel",
+        "write_method": "setChart",
+        "read_class": "org.jfree.chart.ChartPanel",
+        "read_method": "getChart"
+    }
+}

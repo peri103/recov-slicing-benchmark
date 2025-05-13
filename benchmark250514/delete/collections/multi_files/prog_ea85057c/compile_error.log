@@ -1,0 +1,4 @@
+generated/collections/multi_files/prog_ea85057c/Main.java:16: 错误: courseName 在 Course 中是 private 访问控制
+        System.out.println("Course: " + course.courseName);
+                                              ^
+1 个错误

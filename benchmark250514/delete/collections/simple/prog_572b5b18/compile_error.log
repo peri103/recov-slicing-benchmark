@@ -1,0 +1,17 @@
+generated/collections/simple/prog_572b5b18/Main.java:3: 错误: 找不到符号
+import org.apache.commons.collections4.map.MultiValuedMapBuilder;
+                                          ^
+  符号:   类 MultiValuedMapBuilder
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/simple/prog_572b5b18/Main.java:7: 错误: 找不到符号
+        MultiValuedMap<String, Integer> map = MultiValuedMapBuilder.hashMap().arrayListValues().build();
+                                              ^
+  符号:   变量 MultiValuedMapBuilder
+  位置: 类 Main
+generated/collections/simple/prog_572b5b18/Main.java:8: 错误: <K,V>TransformedMultiValuedMap(MultiValuedMap<K,V>,Transformer<? super K,? extends K>,Transformer<? super V,? extends V>) 在 TransformedMultiValuedMap 中是 protected 访问控制
+        TransformedMultiValuedMap<String, Integer> transformedMap = new TransformedMultiValuedMap<>(map, null, null);
+                                                                    ^
+  其中, K,V是类型变量:
+    K扩展已在类 TransformedMultiValuedMap中声明的Object
+    V扩展已在类 TransformedMultiValuedMap中声明的Object
+3 个错误

@@ -1,0 +1,11 @@
+generated/guava/complex/prog_91556a72/Main.java:11: 错误: 找不到符号
+        /* write */ builder.putInstance(String.class, "Hello, World!");
+                           ^
+  符号:   方法 putInstance(Class<String>,String)
+  位置: 类型为Builder<Object>的变量 builder
+generated/guava/complex/prog_91556a72/Main.java:15: 错误: 找不到符号
+        anotherBuilder.putInstance(Integer.class, 42);
+                      ^
+  符号:   方法 putInstance(Class<Integer>,int)
+  位置: 类型为Builder<Object>的变量 anotherBuilder
+2 个错误

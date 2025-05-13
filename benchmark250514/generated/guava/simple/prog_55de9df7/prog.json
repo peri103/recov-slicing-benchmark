@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.LinkedHashMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashMultiset<String> multiset = LinkedHashMultiset.create();\n        /* write */ multiset.add(\"example\");\n        /* read */ int count = multiset.count(\"example\");\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedHashMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.LinkedHashMultiset",
+        "read_method": "count"
+    }
+}

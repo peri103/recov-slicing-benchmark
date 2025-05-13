@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"example.txt\");\n        ArrayList<CpioArchiveEntry> entries = new ArrayList<>();\n        \n        entries.add(entry);\n        CpioArchiveEntry anotherEntry = new CpioArchiveEntry(\"another.txt\");\n        anotherEntry.setMode(0644);\n        entries.add(anotherEntry);\n\n        for (CpioArchiveEntry e : entries) {\n            System.out.println(\"Initial mode: \" + e.getMode());\n        }\n\n        /* write */ entry.setMode(0755);\n\n        int totalModeSum = 0;\n        for (CpioArchiveEntry e : entries) {\n            totalModeSum += e.getMode();\n        }\n\n        int averageMode = totalModeSum / entries.size();\n        System.out.println(\"Average mode before read: \" + averageMode);\n\n        /* read */ int mode = entry.getMode();\n        System.out.println(\"Read mode for example.txt: \" + mode);\n\n        totalModeSum = 0;\n        for (CpioArchiveEntry e : entries) {\n            totalModeSum += e.getMode();\n        }\n\n        averageMode = totalModeSum / entries.size();\n        System.out.println(\"Average mode after read: \" + averageMode);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"example.txt\");\n        /* write */ entry.setMode(0755);\n        /* read */ int mode = entry.getMode();\n        System.out.println(mode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setMode",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getMode"
+    }
+}

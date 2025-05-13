@@ -1,0 +1,10 @@
+generated/csv/complex/prog_2c8b125e/Main.java:13: 错误: 不兼容的类型: CSVFormat无法转换为CSVParser
+        CSVRecord record = new CSVRecord(format, new String[]{"value1", "value2"}, null, 0, 0);
+                                         ^
+generated/csv/complex/prog_2c8b125e/Main.java:29: 错误: 不兼容的类型: CSVFormat无法转换为CSVParser
+        CSVRecord anotherRecord = new CSVRecord(format, new String[]{"value3", "value4"}, null, 0, 0);
+                                                ^
+注: generated/csv/complex/prog_2c8b125e/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

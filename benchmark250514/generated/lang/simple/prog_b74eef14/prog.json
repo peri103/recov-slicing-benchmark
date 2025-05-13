@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"Hello,,World\";\n        StrTokenizer tokenizer = new StrTokenizer(input, ',');\n        \n        /* write */ tokenizer.setEmptyTokenAsNull(true);\n        \n        /* read */ String token1 = tokenizer.nextToken();\n        System.out.println(token1); // Output: \"Hello\"\n        \n        /* read */ String token2 = tokenizer.nextToken();\n        System.out.println(token2); // Output: \"null\"\n        \n        /* read */ String token3 = tokenizer.nextToken();\n        System.out.println(token3); // Output: \"World\"\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setEmptyTokenAsNull",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

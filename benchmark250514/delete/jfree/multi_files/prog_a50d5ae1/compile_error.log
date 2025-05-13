@@ -1,0 +1,20 @@
+generated/jfree/multi_files/prog_a50d5ae1/PlotConfigurator.java:11: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis rangeAxis = new ValueAxis("Range Axis") {};
+                              ^
+  需要: String,TickUnitSource
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/multi_files/prog_a50d5ae1/PlotConfigurator.java:11: 错误: <匿名PlotConfigurator$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis rangeAxis = new ValueAxis("Range Axis") {};
+                                                          ^
+generated/jfree/multi_files/prog_a50d5ae1/PlotConfigurator.java:24: 错误: 找不到符号
+        plot.setDomainAxis(1, new CategoryAxis("Another Axis"));
+                                  ^
+  符号:   类 CategoryAxis
+  位置: 类 PlotConfigurator
+generated/jfree/multi_files/prog_a50d5ae1/PlotConfigurator.java:25: 错误: 找不到符号
+        plot.setDomainAxis(2, new CategoryAxis("Third Axis"));
+                                  ^
+  符号:   类 CategoryAxis
+  位置: 类 PlotConfigurator
+4 个错误

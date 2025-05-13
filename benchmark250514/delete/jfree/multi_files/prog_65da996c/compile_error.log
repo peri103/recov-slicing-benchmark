@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_65da996c/NumberFormatManager.java:12: 错误: 找不到符号
+        /* write */ generator.setNumberFormat(format);
+                             ^
+  符号:   方法 setNumberFormat(NumberFormat)
+  位置: 类型为StandardXYToolTipGenerator的变量 generator
+generated/jfree/multi_files/prog_65da996c/NumberFormatManager.java:16: 错误: 找不到符号
+        return generator.getNumberFormat();
+                        ^
+  符号:   方法 getNumberFormat()
+  位置: 类型为StandardXYToolTipGenerator的变量 generator
+2 个错误

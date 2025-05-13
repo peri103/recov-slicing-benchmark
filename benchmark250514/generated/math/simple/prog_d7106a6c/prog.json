@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.BlockRealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a BlockRealMatrix with 3 rows and 3 columns\n        BlockRealMatrix matrix = new BlockRealMatrix(3, 3);\n        \n        // Write a value at row 1, column 1\n        /* write */ matrix.setEntry(1, 1, 5.0);\n        \n        // Read the value at row 1, column 1\n        /* read */ double value = matrix.getEntry(1, 1);\n        \n        // Print the read value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.BlockRealMatrix",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.BlockRealMatrix",
+        "read_method": "getEntry"
+    }
+}

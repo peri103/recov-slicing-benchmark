@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initial StrBuilder object\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        \n        // Another StrBuilder operation\n        StrBuilder anotherStrBuilder = new StrBuilder(\"Example\");\n        anotherStrBuilder.setCharAt(0, 'S');\n        System.out.println(anotherStrBuilder.toString());\n\n        // Some arbitrary calculations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n\n        // Manipulate the original StrBuilder\n        /* write */ strBuilder.setCharAt(0, 'Y');\n\n        // More operations on another StrBuilder\n        anotherStrBuilder.append(\" StringBuilder\");\n        System.out.println(anotherStrBuilder.toString());\n\n        // Some more arbitrary logic\n        int product = 1;\n        for (int i = 1; i <= 5; i++) {\n            product *= i;\n        }\n        System.out.println(\"Product of first 5 numbers: \" + product);\n\n        // Finally read the modified StrBuilder\n        /* read */ String result = strBuilder.toString();\n        System.out.println(\"Modified StrBuilder: \" + result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello\");\n        /* write */ strBuilder.setCharAt(0, 'Y');\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "setCharAt",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

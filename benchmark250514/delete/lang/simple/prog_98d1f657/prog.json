@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date now = new Date();\n        \n        // Add 10 seconds to the current date\n        /* write */ Date futureDate = DateUtils.addSeconds(now, 10);\n        \n        // Truncate the futureDate to remove seconds\n        /* read */ Date truncatedDate = DateUtils.truncate(futureDate, DateUtils.SECOND);\n        \n        // Print the truncatedDate\n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addSeconds",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

@@ -1,0 +1,4 @@
+generated/collections/complex/prog_9847d46d/Main.java:43: 错误: 不兼容的类型: MultiKey<? extends String>无法转换为String
+        for (String key : multiKeyMapString.keySet()) {
+                                                  ^
+1 个错误

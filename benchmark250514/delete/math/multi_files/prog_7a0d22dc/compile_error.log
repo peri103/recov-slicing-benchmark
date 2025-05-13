@@ -1,0 +1,26 @@
+generated/math/multi_files/prog_7a0d22dc/Student.java:10: 错误: 找不到符号
+    public RealVector getScaledScores(double scalar) {
+           ^
+  符号:   类 RealVector
+  位置: 类 Student
+generated/math/multi_files/prog_7a0d22dc/Student.java:14: 错误: 找不到符号
+    public RealVector addScores(RealVector additionalScores) {
+                                ^
+  符号:   类 RealVector
+  位置: 类 Student
+generated/math/multi_files/prog_7a0d22dc/Student.java:14: 错误: 找不到符号
+    public RealVector addScores(RealVector additionalScores) {
+           ^
+  符号:   类 RealVector
+  位置: 类 Student
+generated/math/multi_files/prog_7a0d22dc/Student.java:18: 错误: 找不到符号
+    public OpenMapRealVector getScores() {
+           ^
+  符号:   类 OpenMapRealVector
+  位置: 类 Student
+generated/math/multi_files/prog_7a0d22dc/VectorOperations.java:9: 错误: 找不到符号
+        /* write */ this.vector = MatrixUtils.createOpenMapRealVector(initialValues);
+                                             ^
+  符号:   方法 createOpenMapRealVector(double[])
+  位置: 类 MatrixUtils
+5 个错误

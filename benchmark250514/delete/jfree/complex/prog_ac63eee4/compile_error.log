@@ -1,0 +1,8 @@
+generated/jfree/complex/prog_ac63eee4/Main.java:13: 错误: 不兼容的类型: int无法转换为Date
+        RegularTimePeriod firstDayOfMonth = new Day(1, new Month());
+                                                    ^
+generated/jfree/complex/prog_ac63eee4/Main.java:19: 错误: 不兼容的类型: int无法转换为Date
+        RegularTimePeriod anotherDay = new Day(15, new Month());
+                                               ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

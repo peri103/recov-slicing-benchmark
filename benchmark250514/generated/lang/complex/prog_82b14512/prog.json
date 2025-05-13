@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize StrBuilder with a string\n        StrBuilder strBuilder = new StrBuilder(\"Hello, World!\");\n        \n        // Create an ArrayList and add some elements\n        ArrayList<Integer> numbers = new ArrayList<>();\n        numbers.add(10);\n        numbers.add(20);\n        numbers.add(30);\n        \n        // Perform operations on the ArrayList\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        \n        // Extract a substring from the StrBuilder\n        /* write */ String subStr = strBuilder.substring(0, 5);\n        \n        // Perform some unrelated operations\n        numbers.add(sum);\n        numbers.remove(0);\n        \n        // Update the StrBuilder with the substring\n        strBuilder.clear().append(subStr);\n        \n        // More operations on ArrayList\n        for (int i = 0; i < numbers.size(); i++) {\n            numbers.set(i, numbers.get(i) * 2);\n        }\n        \n        // Read the updated value from StrBuilder\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n        \n        // Print the modified ArrayList\n        for (int num : numbers) {\n            System.out.println(num);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello, World!\");\n        /* write */ String subStr = strBuilder.substring(0, 5);\n        strBuilder.clear().append(subStr);\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "substring",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

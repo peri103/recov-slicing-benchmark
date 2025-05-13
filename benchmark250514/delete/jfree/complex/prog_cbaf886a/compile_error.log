@@ -1,0 +1,7 @@
+generated/jfree/complex/prog_cbaf886a/Main.java:20: 错误: 不兼容的类型: DefaultPieDataset无法转换为CategoryDataset
+        /* write */ plot.setDataset(dataset);
+                                    ^
+注: generated/jfree/complex/prog_cbaf886a/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArArchiveEntry entry = new ArArchiveEntry(\"example\", 1000);\n        byte[] extraData = new byte[]{1, 2, 3, 4, 5};\n        \n        /* write */ entry.setExtra(extraData);\n        /* read */ byte[] readExtraData = entry.getExtra();\n        \n        for (byte b : readExtraData) {\n            System.out.print(b + \" \");\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setExtra",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getExtra"
+    }
+}

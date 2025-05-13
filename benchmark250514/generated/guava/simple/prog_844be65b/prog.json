@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\nimport com.google.common.cache.CacheLoader;\nimport com.google.common.cache.LoadingCache;\nimport com.google.common.cache.CacheLoader.InvalidCacheLoadException;\n\npublic class Main {\n    public static void main(String[] args) {\n        LoadingCache<String, String> cache = CacheBuilder.newBuilder()\n                .build(new CacheLoader<String, String>() {\n                    public String load(String key) {\n                        return \"default\";\n                    }\n                });\n\n        /* write */ cache.put(\"key\", \"value\");\n        try {\n            /* read */ String value = cache.get(\"key\");\n            System.out.println(value);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.cache.CacheBuilder",
+        "write_method": "build",
+        "read_class": "com.google.common.cache.Cache",
+        "read_method": "get"
+    }
+}

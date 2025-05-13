@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\nimport org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"example.jar\");\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.zip\");\n        \n        /* write */ jarEntry.setSize(1024);\n        \n        // Additional code to manipulate ZipArchiveEntry\n        zipEntry.setSize(2048);\n        long zipSize = zipEntry.getSize();\n        System.out.println(\"Zip entry size: \" + zipSize);\n\n        // Unrelated code to add complexity\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n        \n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        // More unrelated operations\n        int max = Integer.MIN_VALUE;\n        for (int num : numbers) {\n            if (num > max) {\n                max = num;\n            }\n        }\n        System.out.println(\"Max number: \" + max);\n\n        /* read */ long jarSize = jarEntry.getSize();\n        System.out.println(\"Jar entry size: \" + jarSize);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry entry = new JarArchiveEntry(\"example.jar\");\n        /* write */ entry.setSize(1024);\n        /* read */ long size = entry.getSize();\n        System.out.println(size);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setSize",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getSize"
+    }
+}

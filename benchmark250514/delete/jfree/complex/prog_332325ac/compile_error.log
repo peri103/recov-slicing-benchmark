@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_332325ac/Main.java:35: 错误: 找不到符号
+        chart.setCategoryPlot(plot);
+             ^
+  符号:   方法 setCategoryPlot(CategoryPlot)
+  位置: 类型为JFreeChart的变量 chart
+1 个错误

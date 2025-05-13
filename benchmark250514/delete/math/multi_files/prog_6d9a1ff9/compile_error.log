@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_6d9a1ff9/MatrixUtilsWrapper.java:8: 错误: 找不到符号
+        /* write */ symmetricMatrix = MatrixUtils.createSymmetricMatrix(data);
+                                                 ^
+  符号:   方法 createSymmetricMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

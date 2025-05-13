@@ -1,0 +1,26 @@
+generated/jfree/complex/prog_b8f02c34/Main.java:3: 错误: 找不到符号
+import org.jfree.chart.renderer.DefaultPaintScale;
+                               ^
+  符号:   类 DefaultPaintScale
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/complex/prog_b8f02c34/Main.java:11: 错误: 找不到符号
+        PaintScale paintScale = new DefaultPaintScale();
+                                    ^
+  符号:   类 DefaultPaintScale
+  位置: 类 Main
+generated/jfree/complex/prog_b8f02c34/Main.java:27: 错误: 找不到符号
+        plot.setPaintScale(grayScale);
+            ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_b8f02c34/Main.java:39: 错误: 找不到符号
+        /* write */ plot.setPaintScale(paintScale);
+                        ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_b8f02c34/Main.java:49: 错误: 找不到符号
+        /* read */ PaintScale retrievedPaintScale = plot.getPaintScale();
+                                                        ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 plot
+5 个错误

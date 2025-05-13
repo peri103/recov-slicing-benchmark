@@ -1,0 +1,24 @@
+generated/collections/complex/prog_ea062373/Main.java:1: 错误: 程序包org.apache.commons.collections4.buffer不存在
+import org.apache.commons.collections4.buffer.CircularFifoBuffer;
+                                             ^
+generated/collections/complex/prog_ea062373/Main.java:7: 错误: 找不到符号
+        CircularFifoBuffer buffer = new CircularFifoBuffer(10);
+        ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+generated/collections/complex/prog_ea062373/Main.java:7: 错误: 找不到符号
+        CircularFifoBuffer buffer = new CircularFifoBuffer(10);
+                                        ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+generated/collections/complex/prog_ea062373/Main.java:42: 错误: 找不到符号
+        CircularFifoBuffer anotherBuffer = new CircularFifoBuffer(5);
+        ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+generated/collections/complex/prog_ea062373/Main.java:42: 错误: 找不到符号
+        CircularFifoBuffer anotherBuffer = new CircularFifoBuffer(5);
+                                               ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+5 个错误

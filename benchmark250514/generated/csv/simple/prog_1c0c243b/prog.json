@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CSV format\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Use the write method to set a null string representation\n        /* write */ format = format.withNullString(\"NULL\");\n\n        // Create a CSV string to parse\n        String csvData = \"name,age,city\\nJohn,30,NULL\";\n\n        try {\n            // Parse the CSV string\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), format);\n            List<CSVRecord> records = parser.getRecords();\n            \n            // Access the first record\n            CSVRecord record = records.get(0);\n            \n            // Use the read method to check if a field is set\n            /* read */ boolean isSet = record.isSet(\"city\");\n            \n            // Print the result\n            System.out.println(\"Is 'city' set: \" + isSet);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withNullString",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

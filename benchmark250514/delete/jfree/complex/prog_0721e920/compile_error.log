@@ -1,0 +1,41 @@
+generated/jfree/complex/prog_0721e920/Main.java:3: 错误: 找不到符号
+import org.jfree.chart.axis.Range;
+                           ^
+  符号:   类 Range
+  位置: 程序包 org.jfree.chart.axis
+generated/jfree/complex/prog_0721e920/Main.java:10: 错误: 找不到符号
+        Range range = new Range(0.0, 100.0);
+        ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/complex/prog_0721e920/Main.java:10: 错误: 找不到符号
+        Range range = new Range(0.0, 100.0);
+                          ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/complex/prog_0721e920/Main.java:30: 错误: 找不到符号
+        ArrayList<Range> ranges = new ArrayList<>();
+                  ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/complex/prog_0721e920/Main.java:31: 错误: 找不到符号
+        ranges.add(new Range(0.0, 50.0));
+                       ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/complex/prog_0721e920/Main.java:32: 错误: 找不到符号
+        ranges.add(new Range(50.0, 100.0));
+                       ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/complex/prog_0721e920/Main.java:34: 错误: 找不到符号
+        for (Range r : ranges) {
+             ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/complex/prog_0721e920/Main.java:38: 错误: 找不到符号
+        /* read */ Range readRange = axis.getRange();
+                   ^
+  符号:   类 Range
+  位置: 类 Main
+8 个错误

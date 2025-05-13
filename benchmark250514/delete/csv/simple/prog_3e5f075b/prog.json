@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CSVFormat instance with trailing delimiter\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withTrailingDelimiter();\n\n        // Create a dummy CSVRecord for demonstration purposes\n        String[] values = {\"value1\", \"value2\"};\n        CSVRecord record = new CSVRecord(null, values, null, 0, 0);\n\n        // Check if the record is consistent\n        /* read */ boolean isConsistent = record.isConsistent();\n        System.out.println(\"Is the CSVRecord consistent? \" + isConsistent);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrailingDelimiter",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

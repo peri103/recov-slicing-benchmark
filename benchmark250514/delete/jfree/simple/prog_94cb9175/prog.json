@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYStepAreaRenderer;\nimport org.jfree.chart.util.BooleanList;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYStepAreaRenderer renderer = new XYStepAreaRenderer();\n        BooleanList visibilityList = new BooleanList();\n        visibilityList.setBoolean(0, true);\n\n        /* write */ renderer.setSeriesLinesVisible(0, true);\n\n        /* read */ boolean isVisible = renderer.getSeriesLinesVisible(0);\n        System.out.println(isVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "write_method": "setSeriesLinesVisible",
+        "read_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "read_method": "getSeriesLinesVisible"
+    }
+}

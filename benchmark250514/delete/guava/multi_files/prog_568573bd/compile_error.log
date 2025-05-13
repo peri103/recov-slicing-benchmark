@@ -1,0 +1,4 @@
+generated/guava/multi_files/prog_568573bd/Main.java:28: 错误: 程序包Map不存在
+        for (Map.Entry<ColorMultiset.Color, Integer> entry : colorManager.getAllColorCounts().entrySet()) {
+                ^
+1 个错误

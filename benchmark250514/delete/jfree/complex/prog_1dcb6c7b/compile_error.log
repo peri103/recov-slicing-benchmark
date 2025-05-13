@@ -1,0 +1,23 @@
+generated/jfree/complex/prog_1dcb6c7b/Main.java:20: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis rangeAxis = new ValueAxis("Range Axis") {};
+                              ^
+  需要: String,TickUnitSource
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_1dcb6c7b/Main.java:20: 错误: <匿名Main$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis rangeAxis = new ValueAxis("Range Axis") {};
+                                                          ^
+generated/jfree/complex/prog_1dcb6c7b/Main.java:32: 错误: 不兼容的类型: CategoryAxis无法转换为ValueAxis
+        XYPlot xyPlot = new XYPlot(dataset, domainAxis, rangeAxis, null);
+                                            ^
+generated/jfree/complex/prog_1dcb6c7b/Main.java:50: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis newRangeAxis = new ValueAxis("New Range Axis") {};
+                                 ^
+  需要: String,TickUnitSource
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_1dcb6c7b/Main.java:50: 错误: <匿名Main$2>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis newRangeAxis = new ValueAxis("New Range Axis") {};
+                                                                 ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+5 个错误

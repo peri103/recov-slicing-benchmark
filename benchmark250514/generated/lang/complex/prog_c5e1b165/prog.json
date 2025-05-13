@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        ArrayList<Integer> numbers = new ArrayList<>();\n        \n        // Adding numbers to the list\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n        \n        // Manipulating the list\n        for (int i = 0; i < numbers.size(); i++) {\n            numbers.set(i, numbers.get(i) + 5);\n        }\n        \n        /* write */ strBuilder.append(\"Hello, World!\");\n        \n        // Further manipulation of the list\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // Using another StrBuilder instance for additional operations\n        StrBuilder anotherStrBuilder = new StrBuilder();\n        anotherStrBuilder.append(\"The sum is: \").append(sum);\n        System.out.println(anotherStrBuilder.toString());\n        \n        // Read the original string from strBuilder\n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.append(\"Hello, World!\");\n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

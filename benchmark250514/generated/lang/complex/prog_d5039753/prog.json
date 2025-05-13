@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"hello world\");\n        /* write */ strBuilder.reverse();\n\n        // Additional unrelated code to increase complexity\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * i);\n        }\n\n        HashMap<String, Integer> map = new HashMap<>();\n        for (int number : numbers) {\n            map.put(\"key\" + number, number);\n        }\n\n        int sum = 0;\n        for (String key : map.keySet()) {\n            sum += map.get(key);\n        }\n\n        System.out.println(\"Sum of squares: \" + sum);\n\n        // More unrelated code\n        StrBuilder anotherStrBuilder = new StrBuilder(\"Complexity\");\n        anotherStrBuilder.append(\" is fun!\");\n        anotherStrBuilder.deleteCharAt(0);\n        String anotherString = anotherStrBuilder.toString();\n        System.out.println(anotherString);\n\n        // Final read operation\n        /* read */ String reversedString = strBuilder.toString();\n        System.out.println(reversedString);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"hello world\");\n        /* write */ strBuilder.reverse();\n        /* read */ String reversedString = strBuilder.toString();\n        System.out.println(reversedString);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "reverse",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

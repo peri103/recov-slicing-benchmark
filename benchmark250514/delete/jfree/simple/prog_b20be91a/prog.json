@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.PeriodAxis;\nimport org.jfree.chart.axis.Period;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PeriodAxis object\n        PeriodAxis periodAxis = new PeriodAxis(\"Sample Axis\");\n\n        // Create a Period object to be set as the last period\n        Period lastPeriod = new Period() {\n            // Implement necessary methods for the Period class if needed\n        };\n\n        /* write */ periodAxis.setLast(lastPeriod);\n\n        /* read */ Period retrievedPeriod = periodAxis.getLast();\n\n        // Assuming the Period class has a meaningful toString method\n        System.out.println(retrievedPeriod);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.PeriodAxis",
+        "write_method": "setLast",
+        "read_class": "org.jfree.chart.axis.PeriodAxis",
+        "read_method": "getLast"
+    }
+}

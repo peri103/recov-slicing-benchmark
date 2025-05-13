@@ -1,0 +1,6 @@
+generated/lang/complex/prog_91b0d105/Main.java:44: 错误: 已在方法 main(String[])中定义了变量 token
+        for (String token : processedTokens) {
+                    ^
+注: generated/lang/complex/prog_91b0d105/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

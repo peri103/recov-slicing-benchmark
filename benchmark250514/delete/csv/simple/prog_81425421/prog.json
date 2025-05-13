@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CSVFormat object with a specific delimiter\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withDelimiter(';');\n\n        // Simulate a CSVRecord using the format with the delimiter\n        // Here we use a simple string to demonstrate the read operation\n        // In a real scenario, CSVRecord would be obtained from parsing a CSV file\n        String csvData = \"value1;value2;value3\";\n        CSVRecord record = format.parse(csvData).getRecords().get(0);\n\n        // Read the CSVRecord\n        /* read */ String recordString = record.toString();\n\n        // Output the result\n        System.out.println(recordString);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withDelimiter",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

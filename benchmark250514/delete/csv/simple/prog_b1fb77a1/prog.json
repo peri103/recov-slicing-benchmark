@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CSVFormat object with the desired configuration\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withIgnoreSurroundingSpaces(true);\n\n        // Create a mock CSVRecord for demonstration purposes\n        CSVRecord record = new CSVRecord(null, null, format);\n\n        // Read the value using the isConsistent method\n        /* read */ boolean isConsistent = record.isConsistent();\n\n        // Print the result\n        System.out.println(\"Is the CSV record consistent? \" + isConsistent);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreSurroundingSpaces",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

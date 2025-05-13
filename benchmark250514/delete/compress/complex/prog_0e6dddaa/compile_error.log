@@ -1,0 +1,28 @@
+generated/compress/complex/prog_0e6dddaa/Main.java:12: 错误: 无法将类 DumpArchiveSummary中的构造器 DumpArchiveSummary应用到给定类型;
+        DumpArchiveSummary summary1 = new DumpArchiveSummary();
+                                      ^
+  需要: byte[],ZipEncoding
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/compress/complex/prog_0e6dddaa/Main.java:13: 错误: 找不到符号
+        summary1.setName("Summary1");
+                ^
+  符号:   方法 setName(String)
+  位置: 类型为DumpArchiveSummary的变量 summary1
+generated/compress/complex/prog_0e6dddaa/Main.java:16: 错误: 无法将类 DumpArchiveSummary中的构造器 DumpArchiveSummary应用到给定类型;
+        DumpArchiveSummary summary2 = new DumpArchiveSummary();
+                                      ^
+  需要: byte[],ZipEncoding
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/compress/complex/prog_0e6dddaa/Main.java:17: 错误: 找不到符号
+        summary2.setName("Summary2");
+                ^
+  符号:   方法 setName(String)
+  位置: 类型为DumpArchiveSummary的变量 summary2
+generated/compress/complex/prog_0e6dddaa/Main.java:29: 错误: 找不到符号
+            System.out.println("Summary Name: " + summaryMap.get(key).getName());
+                                                                     ^
+  符号:   方法 getName()
+  位置: 类 DumpArchiveSummary
+5 个错误

@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_2a0ad339/Main.java:18: 错误: 找不到符号
+        categoryAxis.setCategoryLabelPositions(CategoryAxis.DEFAULT_LABEL_POSITIONS);
+                                                           ^
+  符号:   变量 DEFAULT_LABEL_POSITIONS
+  位置: 类 CategoryAxis
+generated/jfree/complex/prog_2a0ad339/Main.java:36: 错误: 找不到符号
+        int categoryCount = categoryAxis.getCategoryCount();
+                                        ^
+  符号:   方法 getCategoryCount()
+  位置: 类型为CategoryAxis的变量 categoryAxis
+generated/jfree/complex/prog_2a0ad339/Main.java:40: 错误: 找不到符号
+        /* read */ boolean isVisible = symbolAxis.getTickLabelsVisible();
+                                                 ^
+  符号:   方法 getTickLabelsVisible()
+  位置: 类型为SymbolAxis的变量 symbolAxis
+3 个错误

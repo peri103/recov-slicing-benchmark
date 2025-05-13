@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_b31ec0d5/Main.java:13: 错误: 找不到符号
+        /* write */ generator.setCategoryFormat(format);
+                             ^
+  符号:   方法 setCategoryFormat(NumberFormat)
+  位置: 类型为StandardCategoryToolTipGenerator的变量 generator
+generated/jfree/simple/prog_b31ec0d5/Main.java:16: 错误: 找不到符号
+        /* read */ NumberFormat retrievedFormat = generator.getCategoryFormat();
+                                                           ^
+  符号:   方法 getCategoryFormat()
+  位置: 类型为StandardCategoryToolTipGenerator的变量 generator
+2 个错误

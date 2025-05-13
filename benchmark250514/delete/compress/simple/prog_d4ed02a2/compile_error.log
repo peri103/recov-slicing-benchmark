@@ -1,0 +1,11 @@
+generated/compress/simple/prog_d4ed02a2/Main.java:6: 错误: 找不到符号
+        /* write */ gzipParameters.setISize(1024);
+                                  ^
+  符号:   方法 setISize(int)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/simple/prog_d4ed02a2/Main.java:7: 错误: 找不到符号
+        /* read */ int iSize = gzipParameters.getISize();
+                                             ^
+  符号:   方法 getISize()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

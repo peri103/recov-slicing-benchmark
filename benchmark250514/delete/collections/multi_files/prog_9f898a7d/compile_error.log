@@ -1,0 +1,14 @@
+generated/collections/multi_files/prog_9f898a7d/Student.java:14: 错误: 找不到符号
+    public Collection<String> getCourses() {
+           ^
+  符号:   类 Collection
+  位置: 类 Student
+generated/collections/multi_files/prog_9f898a7d/TransformedMapHandler.java:13: 错误: 无法推断TransformedMultiValuedMap<>的类型参数
+        transformedMap = new TransformedMultiValuedMap<>(baseMap, null, null);
+                         ^
+  原因: 无法推断类型变量 K,V
+    (参数不匹配; HashedMap<String,Collection<String>>无法转换为MultiValuedMap<K,V>)
+  其中, K,V是类型变量:
+    K扩展已在类 TransformedMultiValuedMap中声明的Object
+    V扩展已在类 TransformedMultiValuedMap中声明的Object
+2 个错误

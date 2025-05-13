@@ -1,0 +1,47 @@
+generated/compress/multi_files/prog_decfd049/CompressorSettings.java:2: 错误: 找不到符号
+import org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream.FlushMode;
+                                                                                    ^
+  符号:   类 FlushMode
+  位置: 类 DeflateCompressorOutputStream
+generated/compress/multi_files/prog_decfd049/CompressorSettings.java:11: 错误: 找不到符号
+    public void configureFlushMode(FlushMode mode) {
+                                   ^
+  符号:   类 FlushMode
+  位置: 类 CompressorSettings
+generated/compress/multi_files/prog_decfd049/CompressorReader.java:2: 错误: 找不到符号
+import org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream.FlushMode;
+                                                                                    ^
+  符号:   类 FlushMode
+  位置: 类 DeflateCompressorOutputStream
+generated/compress/multi_files/prog_decfd049/CompressorReader.java:11: 错误: 找不到符号
+    public FlushMode readFlushMode() {
+           ^
+  符号:   类 FlushMode
+  位置: 类 CompressorReader
+generated/compress/multi_files/prog_decfd049/Main.java:2: 错误: 找不到符号
+import org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream.FlushMode;
+                                                                                    ^
+  符号:   类 FlushMode
+  位置: 类 DeflateCompressorOutputStream
+generated/compress/multi_files/prog_decfd049/CompressorReader.java:12: 错误: 找不到符号
+        /* read */ return deflateStream.getFlushMode();
+                                       ^
+  符号:   方法 getFlushMode()
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+generated/compress/multi_files/prog_decfd049/Main.java:11: 错误: 找不到符号
+        compressorSettings.configureFlushMode(FlushMode.SYNC_FLUSH);
+                                              ^
+  符号:   变量 FlushMode
+  位置: 类 Main
+generated/compress/multi_files/prog_decfd049/Main.java:15: 错误: 找不到符号
+        FlushMode flushMode = compressorReader.readFlushMode();
+        ^
+  符号:   类 FlushMode
+  位置: 类 Main
+generated/compress/multi_files/prog_decfd049/Main.java:28: 错误: courseName 在 Course 中是 private 访问控制
+            System.out.println("Enrolled in: " + c.courseName);
+                                                  ^
+generated/compress/multi_files/prog_decfd049/Main.java:33: 错误: name 在 Student 中是 private 访问控制
+            System.out.println("Student in course: " + s.name);
+                                                        ^
+10 个错误

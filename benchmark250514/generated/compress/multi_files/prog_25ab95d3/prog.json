@@ -1,0 +1,13 @@
+{
+    "files": {
+        "ZipEntryManager.java": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class ZipEntryManager {\n    private ZipArchiveEntry entry;\n\n    public ZipEntryManager(String fileName) {\n        this.entry = new ZipArchiveEntry(fileName);\n    }\n\n    public void setEntryUnixMode(int mode) {\n        /* write */ entry.setUnixMode(mode);\n    }\n\n    public int getEntryUnixMode() {\n        return entry.getUnixMode();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setUnixMode",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getUnixMode"
+    },
+    "java_code_simple": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry entry = new ZipArchiveEntry(\"example.txt\");\n        /* write */ entry.setUnixMode(755);\n        /* read */ int mode = entry.getUnixMode();\n        System.out.println(\"Unix mode: \" + mode);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry entry = new ZipArchiveEntry(\"example.txt\");\n        /* write */ entry.setUnixMode(755);\n\n        // Additional logic to increase complexity\n        Map<String, Integer> filePermissions = new HashMap<>();\n        filePermissions.put(\"example.txt\", 644);\n        filePermissions.put(\"another.txt\", 600);\n\n        // Simulate some operations\n        for (Map.Entry<String, Integer> fileEntry : filePermissions.entrySet()) {\n            System.out.println(\"File: \" + fileEntry.getKey() + \", Permission: \" + fileEntry.getValue());\n        }\n\n        // More operations on ZipArchiveEntry\n        ZipArchiveEntry entry2 = new ZipArchiveEntry(\"another.txt\");\n        entry2.setUnixMode(600);\n\n        // Logic to compare modes\n        int entry2Mode = entry2.getUnixMode();\n        if (entry2Mode > entry.getUnixMode()) {\n            System.out.println(\"Entry2 has higher permissions.\");\n        } else {\n            System.out.println(\"Entry1 has higher or equal permissions.\");\n        }\n\n        // Further logic\n        int sum = 0;\n        for (int i = 0; i < 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 5 numbers: \" + sum);\n\n        // Final read\n        /* read */ int mode = entry.getUnixMode();\n        System.out.println(\"Unix mode of entry: \" + mode);\n    }\n}"
+}

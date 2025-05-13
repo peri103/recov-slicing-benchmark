@@ -1,0 +1,12 @@
+generated/csv/simple/prog_56487a39/Main.java:25: 错误: 此处需要接口
+class MockCSVRecord implements CSVRecord {
+                               ^
+generated/csv/simple/prog_56487a39/Main.java:14: 错误: 不兼容的类型: MockCSVRecord无法转换为CSVRecord
+        CSVRecord record = new MockCSVRecord(format);
+                           ^
+generated/csv/simple/prog_56487a39/Main.java:32: 错误: 方法不会覆盖或实现超类型的方法
+    @Override
+    ^
+注: generated/csv/simple/prog_56487a39/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+3 个错误

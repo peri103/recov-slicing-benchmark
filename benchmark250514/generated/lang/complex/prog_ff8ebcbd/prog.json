@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello, World!\");\n        ArrayList<Integer> numbers = new ArrayList<>();\n        HashMap<String, Integer> nameToAge = new HashMap<>();\n\n        // Initialize the ArrayList with some values\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n\n        // Add some entries to the HashMap\n        nameToAge.put(\"Alice\", 30);\n        nameToAge.put(\"Bob\", 25);\n\n        // Perform some operations on the ArrayList\n        int sum = 0;\n        for (Integer num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // Perform operations on the HashMap\n        nameToAge.put(\"Charlie\", 35);\n        int ageOfAlice = nameToAge.get(\"Alice\");\n        System.out.println(\"Age of Alice: \" + ageOfAlice);\n\n        /* write */ strBuilder.replace(7, 12, \"Universe\");\n\n        // More operations on the ArrayList\n        numbers.add(100);\n        numbers.remove(2);\n        System.out.println(\"Numbers after modification: \" + numbers);\n\n        // More operations on the HashMap\n        nameToAge.remove(\"Bob\");\n        System.out.println(\"Names in the map: \" + nameToAge.keySet());\n\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello, World!\");\n        /* write */ strBuilder.replace(7, 12, \"Universe\");\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "replace",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

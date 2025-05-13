@@ -1,0 +1,7 @@
+generated/collections/complex/prog_23afdcaa/Main.java:7: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<String, Integer> map = new AbstractOrderedMapDecorator<>(new LinkedMap<>());
+                                                           ^
+generated/collections/complex/prog_23afdcaa/Main.java:8: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<String, Integer> additionalMap = new AbstractOrderedMapDecorator<>(new ListOrderedMap<>());
+                                                                     ^
+2 个错误

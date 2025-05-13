@@ -1,0 +1,16 @@
+generated/compress/multi_files/prog_1b51a572/ArchiveEntryHandler.java:7: 错误: 对于CpioArchiveEntry(short,int), 找不到合适的构造器
+        entry = new CpioArchiveEntry(CpioArchiveEntry.FORMAT_NEW, 0);
+                ^
+    构造器 CpioArchiveEntry.CpioArchiveEntry(short,String)不适用
+      (参数不匹配; int无法转换为String)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(String,long)不适用
+      (参数不匹配; short无法转换为String)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(File,String)不适用
+      (参数不匹配; short无法转换为File)
+generated/compress/multi_files/prog_1b51a572/Main.java:24: 错误: 找不到符号
+        CpioArchiveEntry entry = archiveHandler.getEntry();
+        ^
+  符号:   类 CpioArchiveEntry
+  位置: 类 Main
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

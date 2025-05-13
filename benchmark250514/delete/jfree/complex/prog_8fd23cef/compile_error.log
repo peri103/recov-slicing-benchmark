@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_8fd23cef/Main.java:44: 错误: 找不到符号
+        renderer.setBaseShapesVisible(true);
+                ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYItemRenderer的变量 renderer
+generated/jfree/complex/prog_8fd23cef/Main.java:45: 错误: 找不到符号
+        renderer.setBaseShapesFilled(true);
+                ^
+  符号:   方法 setBaseShapesFilled(boolean)
+  位置: 类型为XYItemRenderer的变量 renderer
+generated/jfree/complex/prog_8fd23cef/Main.java:56: 错误: for-each 不适用于表达式类型
+        for (LegendItem item : readLegendItems) {
+                               ^
+  要求: 数组或 java.lang.Iterable
+  找到:    LegendItemCollection
+3 个错误

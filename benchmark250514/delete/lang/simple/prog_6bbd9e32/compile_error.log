@@ -1,0 +1,6 @@
+generated/lang/simple/prog_6bbd9e32/Main.java:12: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(futureDate, DateUtils.MILLIS_IN_DAY);
+                                                                                ^
+  符号:   变量 MILLIS_IN_DAY
+  位置: 类 DateUtils
+1 个错误

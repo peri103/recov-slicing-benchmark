@@ -1,0 +1,11 @@
+generated/lang/multi_files/prog_89d81c89/Student.java:5: 错误: 找不到符号
+    public Student(String name, Date birthDate) {
+                                ^
+  符号:   类 Date
+  位置: 类 Student
+generated/lang/multi_files/prog_89d81c89/Student.java:10: 错误: 找不到符号
+    public Date addDaysToBirthDate(int days) {
+           ^
+  符号:   类 Date
+  位置: 类 Student
+2 个错误

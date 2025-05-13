@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"file.txt\", 100);\n        /* write */ entry.setUserId(12345);\n        /* read */ long userId = entry.getUserId();\n        System.out.println(userId);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setUserId",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getUserId"
+    }
+}

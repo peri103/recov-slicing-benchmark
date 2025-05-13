@@ -1,0 +1,36 @@
+generated/jfree/complex/prog_fcf0e213/Main.java:17: 错误: 找不到符号
+            tempAxis.setBase(baseValue);
+                    ^
+  符号:   方法 setBase(Double)
+  位置: 类型为LogarithmicAxis的变量 tempAxis
+generated/jfree/complex/prog_fcf0e213/Main.java:18: 错误: 找不到符号
+            System.out.println("Temporary base set to: " + tempAxis.getBase());
+                                                                   ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 tempAxis
+generated/jfree/complex/prog_fcf0e213/Main.java:22: 错误: 找不到符号
+        /* write */ axis.setBase(10.0);
+                        ^
+  符号:   方法 setBase(double)
+  位置: 类型为LogarithmicAxis的变量 axis
+generated/jfree/complex/prog_fcf0e213/Main.java:25: 错误: 找不到符号
+        double logValue = axis.calculateLog(100.0);
+                              ^
+  符号:   方法 calculateLog(double)
+  位置: 类型为LogarithmicAxis的变量 axis
+generated/jfree/complex/prog_fcf0e213/Main.java:26: 错误: 找不到符号
+        System.out.println("Logarithm of 100 with base " + axis.getBase() + ": " + logValue);
+                                                               ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 axis
+generated/jfree/complex/prog_fcf0e213/Main.java:31: 错误: 找不到符号
+            logValues.add(axis.calculateLog(i));
+                              ^
+  符号:   方法 calculateLog(double)
+  位置: 类型为LogarithmicAxis的变量 axis
+generated/jfree/complex/prog_fcf0e213/Main.java:39: 错误: 找不到符号
+        /* read */ double base = axis.getBase();
+                                     ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 axis
+7 个错误

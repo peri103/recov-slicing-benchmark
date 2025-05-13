@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_37ddd234/PlotManager.java:29: 错误: 找不到符号
+        piePlotWrapper.configurePiePlot();
+                      ^
+  符号:   方法 configurePiePlot()
+  位置: 类型为PiePlotWrapper的变量 piePlotWrapper
+1 个错误

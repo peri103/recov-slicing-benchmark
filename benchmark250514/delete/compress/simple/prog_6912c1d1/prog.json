@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        long modTime = System.currentTimeMillis();\n        /* write */ entry.setModTime(modTime);\n        /* read */ long readModTime = entry.getModTime();\n        System.out.println(\"Modification Time: \" + readModTime);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setModTime",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getModTime"
+    }
+}

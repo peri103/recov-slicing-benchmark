@@ -1,0 +1,16 @@
+generated/math/complex/prog_2c6b571b/Main.java:12: 错误: 找不到符号
+        RealVector vector = MatrixUtils.createSparseRealVector(initialValues);
+                                       ^
+  符号:   方法 createSparseRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_2c6b571b/Main.java:37: 错误: 找不到符号
+        RealVector anotherVector = MatrixUtils.createSparseRealVector(new double[]{3.0, 2.0, 1.0});
+                                              ^
+  符号:   方法 createSparseRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_2c6b571b/Main.java:69: 错误: 找不到符号
+        RealVector readVector = MatrixUtils.getSparseRealVector(vector.toArray());
+                                           ^
+  符号:   方法 getSparseRealVector(double[])
+  位置: 类 MatrixUtils
+3 个错误

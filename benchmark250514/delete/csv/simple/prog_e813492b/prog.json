@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CSVFormat object\n        CSVFormat format = CSVFormat.DEFAULT;\n\n        // Use the write method\n        /* write */ format = format.withNullString(\"NULL\");\n\n        // Create a sample CSVRecord object\n        List<String> values = Arrays.asList(\"value1\", \"value2\", \"value3\");\n        CSVRecord record = new CSVRecord(values, null, -1, -1);\n\n        // Use the read method\n        /* read */ boolean isMapped = record.isMapped(\"value1\");\n\n        // Print the result\n        System.out.println(isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withNullString",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

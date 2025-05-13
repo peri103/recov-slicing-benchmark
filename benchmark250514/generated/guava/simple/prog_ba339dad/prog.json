@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingMultiset;\nimport com.google.common.collect.HashMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a HashMultiset instance which will be wrapped by ForwardingMultiset\n        HashMultiset<String> multiset = HashMultiset.create();\n\n        // Create a ForwardingMultiset instance\n        ForwardingMultiset<String> forwardingMultiset = new ForwardingMultiset<String>() {\n            @Override\n            protected HashMultiset<String> delegate() {\n                return multiset;\n            }\n        };\n\n        // Use the ForwardingMultiset instance to add an element\n        /* write */ forwardingMultiset.add(\"item\");\n\n        // Use the ForwardingMultiset instance to count the occurrences of the element\n        /* read */ int count = forwardingMultiset.count(\"item\");\n\n        // Print the count to verify the read operation\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ForwardingMultiset",
+        "read_method": "count"
+    }
+}

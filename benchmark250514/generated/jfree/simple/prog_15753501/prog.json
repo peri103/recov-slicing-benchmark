@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample\");\n        /* write */ legendItem.setFillPaint(Color.RED);\n        /* read */ Paint fillPaint = legendItem.getFillPaint();\n        System.out.println(fillPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setFillPaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getFillPaint"
+    }
+}

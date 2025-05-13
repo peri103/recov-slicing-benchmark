@@ -1,0 +1,9 @@
+generated/math/complex/prog_9b90062c/Main.java:15: 错误: 找不到符号
+        /* write */ BlockRealMatrix matrix = MatrixUtils.createBlockRealMatrix(data);
+                                                        ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_9b90062c/Main.java:19: 错误: 不兼容的类型: RealMatrix无法转换为BlockRealMatrix
+        BlockRealMatrix scaledMatrix = matrix.scalarMultiply(scalar);
+                                                            ^
+2 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        ArrayList<String> stringList = new ArrayList<>();\n        HashMap<Integer, String> map = new HashMap<>();\n\n        // Unrelated operations\n        for (int i = 0; i < 5; i++) {\n            stringList.add(\"Item \" + i);\n        }\n\n        map.put(1, \"First\");\n        map.put(2, \"Second\");\n\n        // Original write operation\n        /* write */ strBuilder.appendSeparator(\", \", \"Hello\");\n\n        // More complex operations\n        for (String item : stringList) {\n            strBuilder.appendSeparator(\", \", item);\n        }\n\n        for (int key : map.keySet()) {\n            strBuilder.appendSeparator(\", \", map.get(key));\n        }\n\n        // Additional unrelated code\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum: \" + sum);\n\n        // Original read operation\n        /* read */ String result = strBuilder.toString();\n\n        System.out.println(result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        \n        /* write */ strBuilder.appendSeparator(\", \", \"Hello\");\n        \n        /* read */ String result = strBuilder.toString();\n        \n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "appendSeparator",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize StrTokenizer with a sample string\n        StrTokenizer tokenizer = new StrTokenizer(\"Hello,World,This,Is,A,Test\");\n\n        // Use the nextToken method to read the first token\n        /* read */ String firstToken = tokenizer.nextToken();\n        \n        // Reset the tokenizer to start reading from the beginning again\n        /* write */ tokenizer.reset();\n\n        // Use the nextToken method again to read the first token after reset\n        /* read */ String resetToken = tokenizer.nextToken();\n\n        // Print the first token read after reset\n        System.out.println(resetToken);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "reset",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

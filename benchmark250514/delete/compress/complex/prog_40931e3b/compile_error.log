@@ -1,0 +1,11 @@
+generated/compress/complex/prog_40931e3b/Main.java:18: 错误: 找不到符号
+        /* write */ gzipParameters.setFlags(1);
+                                  ^
+  符号:   方法 setFlags(int)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/complex/prog_40931e3b/Main.java:36: 错误: 找不到符号
+        /* read */ int flags = gzipParameters.getFlags();
+                                             ^
+  符号:   方法 getFlags()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

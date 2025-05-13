@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.DefaultedMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        DefaultedMap<String, Integer> map = new DefaultedMap<>(0);\n        Map<String, String> anotherMap = new HashMap<>();\n        \n        // Initialize anotherMap with some values\n        anotherMap.put(\"A\", \"Apple\");\n        anotherMap.put(\"B\", \"Banana\");\n        anotherMap.put(\"C\", \"Cherry\");\n\n        // Perform operations on anotherMap\n        for (Map.Entry<String, String> entry : anotherMap.entrySet()) {\n            System.out.println(entry.getKey() + \" -> \" + entry.getValue());\n        }\n\n        // Using the original map\n        /* write */ map.put(\"key\", 42);\n        \n        // Perform complex operations\n        int sum = 0;\n        for (int i = 1; i <= 10; i++) {\n            sum += i;\n            map.put(\"sum\" + i, sum);\n        }\n\n        // Retrieve and print values from map\n        for (int i = 1; i <= 10; i++) {\n            System.out.println(\"Sum up to \" + i + \": \" + map.get(\"sum\" + i));\n        }\n\n        // Perform some unrelated calculations\n        int factorial = 1;\n        for (int i = 1; i <= 5; i++) {\n            factorial *= i;\n        }\n        System.out.println(\"Factorial of 5: \" + factorial);\n\n        // Use the original read operation\n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Retrieved value: \" + value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.DefaultedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        DefaultedMap<String, Integer> map = new DefaultedMap<>(0);\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.DefaultedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.DefaultedMap",
+        "read_method": "get"
+    }
+}

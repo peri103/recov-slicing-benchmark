@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.DefaultedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the DefaultedMap with a default value\n        DefaultedMap<Integer, String> map = new DefaultedMap<>(\"Default Value\");\n        \n        // Write a key-value pair into the map\n        /* write */ map.put(1, \"Hello World\");\n        \n        // Read the value associated with the key\n        /* read */ String value = map.get(1);\n        \n        // Print the read value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.DefaultedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.DefaultedMap",
+        "read_method": "get"
+    }
+}

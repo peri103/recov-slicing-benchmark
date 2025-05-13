@@ -1,0 +1,15 @@
+generated/guava/complex/prog_f574d579/Main.java:8: 错误: 无法将类 HashMultiset<E>中的构造器 HashMultiset应用到给定类型;
+        ForwardingMultiset<String> multiset = new HashMultiset<String>() {
+                                              ^
+  需要: int
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+  其中, E是类型变量:
+    E扩展已在类 HashMultiset中声明的Object
+generated/guava/complex/prog_f574d579/Main.java:8: 错误: 无法从最终HashMultiset进行继承
+        ForwardingMultiset<String> multiset = new HashMultiset<String>() {
+                                                  ^
+generated/guava/complex/prog_f574d579/Main.java:9: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+3 个错误

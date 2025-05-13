@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot plot = new PiePlot();\n        Paint paint = Color.BLUE;\n\n        /* write */ plot.setLabelBackgroundPaint(paint);\n        /* read */ Paint readPaint = plot.getLabelBackgroundPaint();\n\n        System.out.println(readPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setLabelBackgroundPaint",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getLabelBackgroundPaint"
+    }
+}

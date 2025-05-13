@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSet;\nimport com.google.common.collect.ImmutableSet.Builder;\nimport com.google.common.collect.ImmutableList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<String> builder = ImmutableSet.builder();\n        ImmutableList.Builder<Integer> listBuilder = ImmutableList.builder();\n        \n        /* write */ builder.add(\"Hello\");\n        \n        for (int i = 0; i < 5; i++) {\n            listBuilder.add(i * 2);\n        }\n        \n        ImmutableList<Integer> numberList = listBuilder.build();\n        int sum = 0;\n        \n        for (Integer num : numberList) {\n            sum += num;\n        }\n        \n        ImmutableSet<String> set = builder.build();\n        \n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        /* read */ boolean contains = set.contains(\"Hello\");\n        \n        System.out.println(\"Set contains 'Hello': \" + contains);\n        \n        Builder<String> anotherBuilder = ImmutableSet.builder();\n        anotherBuilder.add(\"World\").add(\"Java\").add(\"Programming\");\n        \n        ImmutableSet<String> anotherSet = anotherBuilder.build();\n        \n        for (String str : anotherSet) {\n            System.out.println(\"Another set contains: \" + str);\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableSet;\nimport com.google.common.collect.ImmutableSet.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<String> builder = ImmutableSet.builder();\n        /* write */ builder.add(\"Hello\");\n        ImmutableSet<String> set = builder.build();\n        /* read */ boolean contains = set.contains(\"Hello\");\n        System.out.println(contains);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableSet",
+        "read_method": "contains"
+    }
+}

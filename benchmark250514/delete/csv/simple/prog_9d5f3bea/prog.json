@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Prepare a CSV format with a custom record separator\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withRecordSeparator(\";\");\n\n        // Prepare data to be written\n        List<String> data = Arrays.asList(\"John\", \"Doe\", \"john.doe@example.com\");\n\n        // Use StringWriter to capture CSV output\n        StringWriter out = new StringWriter();\n        try {\n            CSVPrinter printer = new CSVPrinter(out, format);\n            printer.printRecord(data);\n            printer.flush();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        // Read the CSV output back as a string\n        String csvOutput = out.toString();\n        CSVRecord record = CSVFormat.DEFAULT.parse(new java.io.StringReader(csvOutput)).getRecords().get(0);\n\n        /* read */ String value = record.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withRecordSeparator",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

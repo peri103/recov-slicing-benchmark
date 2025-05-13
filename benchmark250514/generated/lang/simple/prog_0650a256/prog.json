@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.StopWatch;\n\npublic class Main {\n    public static void main(String[] args) {\n        StopWatch stopWatch = new StopWatch();\n        /* write */ stopWatch.start();\n        \n        // Simulating some operation that takes time\n        try {\n            Thread.sleep(1000); // Sleep for 1 second\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n        \n        /* read */ long timeElapsed = stopWatch.getTime();\n        System.out.println(\"Time elapsed: \" + timeElapsed + \" milliseconds\");\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.StopWatch",
+        "write_method": "start",
+        "read_class": "org.apache.commons.lang3.time.StopWatch",
+        "read_method": "getTime"
+    }
+}

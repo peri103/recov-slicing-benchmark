@@ -1,0 +1,7 @@
+generated/collections/simple/prog_6f2ab3c3/Main.java:11: 错误: <K,V>UnmodifiableMultiValuedMap(MultiValuedMap<? extends K,? extends V>) 在 UnmodifiableMultiValuedMap 中是 private 访问控制
+        UnmodifiableMultiValuedMap<String, String> map = new UnmodifiableMultiValuedMap<>(modifiableMap);
+                                                         ^
+  其中, K,V是类型变量:
+    K扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+    V扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+1 个错误

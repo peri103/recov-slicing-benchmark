@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_f804b64c/Main.java:9: 错误: 找不到符号
+        /* write */ renderer.setSeriesShapesVisible(0, true);
+                            ^
+  符号:   方法 setSeriesShapesVisible(int,boolean)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+generated/jfree/complex/prog_f804b64c/Main.java:30: 错误: 找不到符号
+            boolean currentVisible = renderer.getSeriesShapesVisible(i);
+                                             ^
+  符号:   方法 getSeriesShapesVisible(int)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+generated/jfree/complex/prog_f804b64c/Main.java:35: 错误: 找不到符号
+        /* read */ boolean isVisible = renderer.getSeriesShapesVisible(0);
+                                               ^
+  符号:   方法 getSeriesShapesVisible(int)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+3 个错误

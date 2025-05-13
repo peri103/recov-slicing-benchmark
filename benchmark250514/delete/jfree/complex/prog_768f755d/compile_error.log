@@ -1,0 +1,9 @@
+generated/jfree/complex/prog_768f755d/Main.java:21: 错误: 找不到符号
+            legendItem.setLabel(label);
+                      ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+generated/jfree/complex/prog_768f755d/Main.java:22: 错误: 不兼容的类型: Paint无法转换为Color
+            Color currentPaint = legendItem.getLabelPaint();
+                                                         ^
+2 个错误

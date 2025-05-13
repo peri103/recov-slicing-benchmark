@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.LinkedListMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedListMultimap<String, Integer> multimap = LinkedListMultimap.create();\n        /* write */ multimap.put(\"key1\", 42);\n        /* read */ Integer value = multimap.get(\"key1\").get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedListMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.LinkedListMultimap",
+        "read_method": "get"
+    }
+}

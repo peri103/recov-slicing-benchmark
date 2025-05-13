@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractDualBidiMap;\nimport org.apache.commons.collections4.map.DualHashBidiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the map using DualHashBidiMap which is a concrete implementation of AbstractDualBidiMap\n        AbstractDualBidiMap<String, Integer> map = new DualHashBidiMap<>();\n\n        // Write operation\n        /* write */ map.put(\"key1\", 100);\n\n        // Read operation\n        /* read */ int value = map.get(\"key1\");\n        \n        // Output the read value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractDualBidiMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractDualBidiMap",
+        "read_method": "get"
+    }
+}

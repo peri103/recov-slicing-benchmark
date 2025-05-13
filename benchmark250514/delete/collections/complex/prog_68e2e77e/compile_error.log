@@ -1,0 +1,7 @@
+generated/collections/complex/prog_68e2e77e/Main.java:9: 错误: 无法推断AbstractOrderedMapDecorator<>的类型参数
+        AbstractOrderedMapDecorator<String, Integer> map = new AbstractOrderedMapDecorator<>(new HashMap<>()) {};
+                                                           ^
+generated/collections/complex/prog_68e2e77e/Main.java:12: 错误: 无法推断AbstractOrderedMapDecorator<>的类型参数
+        AbstractOrderedMapDecorator<String, String> map2 = new AbstractOrderedMapDecorator<>(new HashMap<>()) {};
+                                                           ^
+2 个错误

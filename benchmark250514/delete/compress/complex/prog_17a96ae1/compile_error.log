@@ -1,0 +1,21 @@
+generated/compress/complex/prog_17a96ae1/Main.java:16: 错误: 找不到符号
+        anotherEntry.setExternalAttributes(54321L);
+                    ^
+  符号:   方法 setExternalAttributes(long)
+  位置: 类型为CpioArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_17a96ae1/Main.java:17: 错误: 找不到符号
+        long anotherAttributes = anotherEntry.getExternalAttributes();
+                                             ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为CpioArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_17a96ae1/Main.java:28: 错误: 找不到符号
+        /* write */ entry.setExternalAttributes(12345L);
+                         ^
+  符号:   方法 setExternalAttributes(long)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_17a96ae1/Main.java:36: 错误: 找不到符号
+        /* read */ long attributes = entry.getExternalAttributes();
+                                          ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为CpioArchiveEntry的变量 entry
+4 个错误

@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_71da3b73/Main.java:13: 错误: 找不到符号
+        ImmutableBiMap<String, Integer> scores = course.getStudentScores();
+        ^
+  符号:   类 ImmutableBiMap
+  位置: 类 Main
+1 个错误

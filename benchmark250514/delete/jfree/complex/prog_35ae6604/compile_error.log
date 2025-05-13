@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_35ae6604/Main.java:30: 错误: 找不到符号
+        legendTitle.setLegendItems(legendItems);
+                   ^
+  符号:   方法 setLegendItems(ArrayList<LegendItem>)
+  位置: 类型为LegendTitle的变量 legendTitle
+1 个错误

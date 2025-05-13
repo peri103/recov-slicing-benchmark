@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.MeterPlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        MeterPlot meterPlot = new MeterPlot();\n        /* write */ meterPlot.setDialBackgroundPaint(Color.BLUE);\n        /* read */ Paint dialBackgroundPaint = meterPlot.getDialBackgroundPaint();\n        System.out.println(dialBackgroundPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.MeterPlot",
+        "write_method": "setDialBackgroundPaint",
+        "read_class": "org.jfree.chart.plot.MeterPlot",
+        "read_method": "getDialBackgroundPaint"
+    }
+}

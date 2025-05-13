@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_e5a376e5/Main.java:27: 错误: 无法将类 PiePlot<K>中的方法 setSectionOutlineStroke应用到给定类型;
+        piePlot.setSectionOutlineStroke(new BasicStroke(2.0f));
+               ^
+  需要: Comparable,Stroke
+  找到: BasicStroke
+  原因: 实际参数列表和形式参数列表长度不同
+  其中, K是类型变量:
+    K扩展已在类 PiePlot中声明的Comparable<K>
+注: generated/jfree/complex/prog_e5a376e5/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+1 个错误

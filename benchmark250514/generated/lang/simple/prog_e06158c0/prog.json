@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello, World!\");\n\n        // Performing write operation\n        /* write */ strBuilder = new StrBuilder(strBuilder.substring(0, 5));\n\n        // Performing read operation\n        /* read */ String result = strBuilder.toString();\n\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "substring",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

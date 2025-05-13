@@ -1,0 +1,6 @@
+generated/lang/multi_files/prog_a68eca8a/StrBuilder.java:1: 错误: 已在该编译单元中定义StrBuilder
+import org.apache.commons.lang3.text.StrBuilder;
+^
+注: generated/lang/multi_files/prog_a68eca8a/StrBuilder.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

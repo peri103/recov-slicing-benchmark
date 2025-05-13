@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.StaticBucketMap;\nimport java.util.HashMap;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StaticBucketMap map = new StaticBucketMap();\n        HashMap<String, Integer> hashMap = new HashMap<>();\n        ArrayList<String> list = new ArrayList<>();\n        \n        hashMap.put(\"number\", 42);\n        list.add(\"Hello\");\n        list.add(\"World\");\n\n        /* write */ map.put(\"key\", \"value\");\n\n        for (String str : list) {\n            System.out.println(str);\n        }\n\n        int number = hashMap.get(\"number\");\n        System.out.println(\"Number: \" + number);\n\n        list.add(\"Apache\");\n        list.add(\"Commons\");\n\n        for (String str : list) {\n            System.out.println(\"List item: \" + str);\n        }\n\n        /* read */ String value = (String) map.get(\"key\");\n        System.out.println(\"Map value: \" + value);\n\n        hashMap.put(\"anotherNumber\", 100);\n        int anotherNumber = hashMap.get(\"anotherNumber\");\n        System.out.println(\"Another Number: \" + anotherNumber);\n\n        list.add(\"Collections\");\n        list.add(\"Library\");\n\n        for (String str : list) {\n            System.out.println(\"Updated list item: \" + str);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.StaticBucketMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        StaticBucketMap map = new StaticBucketMap();\n        /* write */ map.put(\"key\", \"value\");\n        /* read */ String value = (String) map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.StaticBucketMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.StaticBucketMap",
+        "read_method": "get"
+    }
+}

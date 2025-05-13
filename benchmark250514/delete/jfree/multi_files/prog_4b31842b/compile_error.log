@@ -1,0 +1,37 @@
+generated/jfree/multi_files/prog_4b31842b/LegendItemProcessor.java:4: 错误: 无法将类 LegendItemManager中的构造器 LegendItemManager应用到给定类型;
+    private LegendItemManager manager = new LegendItemManager();
+                                        ^
+  需要: String
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/multi_files/prog_4b31842b/LegendItemProcessor.java:11: 错误: 找不到符号
+        manager.addLegendItem(item1);
+               ^
+  符号:   方法 addLegendItem(LegendItem)
+  位置: 类型为LegendItemManager的变量 manager
+generated/jfree/multi_files/prog_4b31842b/LegendItemProcessor.java:12: 错误: 找不到符号
+        manager.addLegendItem(item2);
+               ^
+  符号:   方法 addLegendItem(LegendItem)
+  位置: 类型为LegendItemManager的变量 manager
+generated/jfree/multi_files/prog_4b31842b/LegendItemProcessor.java:13: 错误: 找不到符号
+        manager.addLegendItem(item3);
+               ^
+  符号:   方法 addLegendItem(LegendItem)
+  位置: 类型为LegendItemManager的变量 manager
+generated/jfree/multi_files/prog_4b31842b/LegendItemProcessor.java:15: 错误: 找不到符号
+        manager.updateLegendItemLabel(0, "First Updated Item");
+               ^
+  符号:   方法 updateLegendItemLabel(int,String)
+  位置: 类型为LegendItemManager的变量 manager
+generated/jfree/multi_files/prog_4b31842b/LegendItemProcessor.java:19: 错误: 找不到符号
+        LegendItem item = manager.getLegendItem(0);
+                                 ^
+  符号:   方法 getLegendItem(int)
+  位置: 类型为LegendItemManager的变量 manager
+generated/jfree/multi_files/prog_4b31842b/LegendItemManager.java:11: 错误: 找不到符号
+        /* write */ legendItem.setLabel(newLabel);
+                              ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+7 个错误

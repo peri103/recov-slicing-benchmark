@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.SparseRealVector;\nimport org.apache.commons.math3.linear.OpenMapRealVector;\nimport org.apache.commons.math3.linear.ArrayRealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        SparseRealVector vector = new OpenMapRealVector(10);\n        ArrayRealVector anotherVector = new ArrayRealVector(new double[]{1.0, 2.0, 3.0, 4.0, 5.0});\n\n        /* write */ vector.setEntry(0, 3.14);\n\n        // Perform some operations on another vector\n        anotherVector.mapMultiplyToSelf(2.0);\n        double sum = anotherVector.getL1Norm();\n        System.out.println(\"Sum of elements in anotherVector: \" + sum);\n\n        // Perform some calculations\n        double dotProduct = vector.dotProduct(anotherVector);\n        System.out.println(\"Dot product of vector and anotherVector: \" + dotProduct);\n\n        // More operations on anotherVector\n        anotherVector.setEntry(2, 10.0);\n        double entryValue = anotherVector.getEntry(2);\n        System.out.println(\"Modified entry in anotherVector: \" + entryValue);\n\n        // Final read operation\n        /* read */ double value = vector.getEntry(0);\n        System.out.println(\"Value from vector: \" + value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.math3.linear.SparseRealVector;\nimport org.apache.commons.math3.linear.OpenMapRealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        SparseRealVector vector = new OpenMapRealVector(10);\n        /* write */ vector.setEntry(0, 3.14);\n        /* read */ double value = vector.getEntry(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.SparseRealVector",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.SparseRealVector",
+        "read_method": "getEntry"
+    }
+}

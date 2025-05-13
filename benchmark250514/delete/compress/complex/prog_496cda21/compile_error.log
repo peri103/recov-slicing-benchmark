@@ -1,0 +1,11 @@
+generated/compress/complex/prog_496cda21/Main.java:20: 错误: 找不到符号
+        /* write */ entry.setSize(12345);
+                         ^
+  符号:   方法 setSize(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_496cda21/Main.java:32: 错误: 找不到符号
+            arEntry.setSize(arEntry.getSize() + 500);
+                   ^
+  符号:   方法 setSize(long)
+  位置: 类型为ArArchiveEntry的变量 arEntry
+2 个错误

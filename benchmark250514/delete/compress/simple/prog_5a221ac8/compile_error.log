@@ -1,0 +1,11 @@
+generated/compress/simple/prog_5a221ac8/Main.java:18: 错误: 找不到符号
+            /* write */ bzip2Stream.setStreamSize(1024);
+                                   ^
+  符号:   方法 setStreamSize(int)
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+generated/compress/simple/prog_5a221ac8/Main.java:19: 错误: 找不到符号
+            /* read */ int streamSize = bzip2Stream.getStreamSize();
+                                                   ^
+  符号:   方法 getStreamSize()
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+2 个错误

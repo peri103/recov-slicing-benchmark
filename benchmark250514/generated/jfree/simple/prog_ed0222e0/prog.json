@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        Axis axis = new NumberAxis();\n        /* write */ axis.setLabel(\"Axis Label\");\n        /* read */ String label = axis.getLabel();\n        System.out.println(label);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.Axis",
+        "write_method": "setLabel",
+        "read_class": "org.jfree.chart.axis.Axis",
+        "read_method": "getLabel"
+    }
+}

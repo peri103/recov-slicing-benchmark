@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with trimming enabled\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        /* write */ csvFormat = csvFormat.withTrim();\n        \n        // Create a CSVRecord for demonstration\n        String[] headers = {\"Name\", \"Age\", \"Country\"};\n        String[] values = {\"John\", \"30\", \"USA\"};\n        CSVRecord record = new CSVRecord(null, values, headers, null, null, 0, 0, 0);\n\n        // Check if a field is mapped\n        /* read */ boolean isMapped = record.isMapped(\"Name\");\n        System.out.println(\"Is 'Name' mapped: \" + isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrim",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

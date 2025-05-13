@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World!\");\n        \n        // Additional operations to make the program more complex\n        StrBuilder anotherStrBuilder = new StrBuilder(\"Goodbye\");\n        anotherStrBuilder.append(\" Moon!\");\n\n        // Manipulating another StrBuilder object\n        anotherStrBuilder.insert(8, \"Beautiful \");\n        System.out.println(anotherStrBuilder.toString());\n\n        // Performing some arithmetic calculations\n        int a = 10;\n        int b = 20;\n        int sum = a + b;\n        System.out.println(\"Sum: \" + sum);\n\n        // Loop to demonstrate more complexity\n        for (int i = 0; i < 5; i++) {\n            System.out.println(\"Loop iteration: \" + i);\n        }\n\n        /* write */ strBuilder.setLength(5);\n\n        // More string manipulations\n        StringBuilder stringBuilder = new StringBuilder(\"Complexity\");\n        stringBuilder.reverse();\n        System.out.println(\"Reversed: \" + stringBuilder);\n\n        // Using the original StrBuilder in a different way\n        strBuilder.append(\" Universe\");\n        System.out.println(\"Appended: \" + strBuilder.toString());\n\n        /* read */ String result = strBuilder.toString();\n\n        System.out.println(result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World!\");\n\n        /* write */ strBuilder.setLength(5);\n        \n        /* read */ String result = strBuilder.toString();\n        \n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "setLength",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

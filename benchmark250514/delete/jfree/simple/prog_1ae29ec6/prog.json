@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.ContourPlot;\nimport org.jfree.data.general.Dataset;\nimport org.jfree.data.general.DefaultValueDataset;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the ContourPlot object\n        ContourPlot contourPlot = new ContourPlot();\n        \n        // Create a dataset\n        Dataset dataset = new DefaultValueDataset(5.0);\n        \n        // Write the dataset to the ContourPlot\n        /* write */ contourPlot.setDataset(dataset);\n        \n        // Read the dataset from the ContourPlot\n        /* read */ Dataset readDataset = contourPlot.getDataset();\n        \n        // Output the result to verify\n        System.out.println(readDataset);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ContourPlot",
+        "write_method": "setDataset",
+        "read_class": "org.jfree.chart.plot.ContourPlot",
+        "read_method": "getDataset"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableFloat;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableFloat mutableFloat = new MutableFloat();\n        /* write */ mutableFloat.setValue(10.5f);\n        /* read */ float value = mutableFloat.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableFloat",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableFloat",
+        "read_method": "getValue"
+    }
+}

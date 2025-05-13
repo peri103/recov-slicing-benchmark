@@ -1,0 +1,6 @@
+generated/compress/complex/prog_06f9bbf1/Main.java:18: 错误: 找不到符号
+        zipFile.addRawArchiveEntry(zipEntry, null); // Dummy operation
+               ^
+  符号:   方法 addRawArchiveEntry(ZipArchiveEntry,<空值>)
+  位置: 类型为ZipFile的变量 zipFile
+1 个错误

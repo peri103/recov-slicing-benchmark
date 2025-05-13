@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringReader;\nimport java.util.List;\nimport org.apache.commons.csv.CSVParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat and configure it\n            CSVFormat csvFormat = CSVFormat.DEFAULT;\n            /* write */ csvFormat = csvFormat.withIgnoreHeaderCase();\n\n            // Sample CSV data\n            String csvData = \"Name, Age\\nJohn, 30\\nJane, 25\";\n\n            // Parse the CSV data using the configured CSVFormat\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), csvFormat);\n\n            // Get the records\n            List<CSVRecord> records = parser.getRecords();\n\n            // Read from the first record\n            CSVRecord record = records.get(0);\n            /* read */ boolean isMapped = record.isMapped(\"name\");\n\n            System.out.println(\"Is 'name' mapped: \" + isMapped);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

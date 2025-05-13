@@ -1,0 +1,16 @@
+generated/math/complex/prog_f8a7f7b2/Main.java:1: 错误: 找不到符号
+import org.apache.commons.math3.linear.SymmetricMatrix;
+                                      ^
+  符号:   类 SymmetricMatrix
+  位置: 程序包 org.apache.commons.math3.linear
+generated/math/complex/prog_f8a7f7b2/Main.java:8: 错误: 找不到符号
+        SymmetricMatrix matrix = new SymmetricMatrix(3);
+        ^
+  符号:   类 SymmetricMatrix
+  位置: 类 Main
+generated/math/complex/prog_f8a7f7b2/Main.java:8: 错误: 找不到符号
+        SymmetricMatrix matrix = new SymmetricMatrix(3);
+                                     ^
+  符号:   类 SymmetricMatrix
+  位置: 类 Main
+3 个错误

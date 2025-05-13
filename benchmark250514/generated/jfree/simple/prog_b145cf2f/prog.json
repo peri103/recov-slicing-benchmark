@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        Axis axis = new NumberAxis();\n        /* write */ axis.setTickLabelsVisible(true);\n        /* read */ boolean isVisible = axis.isTickLabelsVisible();\n        System.out.println(isVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.Axis",
+        "write_method": "setTickLabelsVisible",
+        "read_class": "org.jfree.chart.axis.Axis",
+        "read_method": "isTickLabelsVisible"
+    }
+}

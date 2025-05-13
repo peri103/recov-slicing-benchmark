@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.LinkedHashValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashValuedHashMap<String, String> map = new LinkedHashValuedHashMap<>();\n        /* write */ map.put(\"key\", \"value\");\n        /* read */ String value = map.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.LinkedHashValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.LinkedHashValuedHashMap",
+        "read_method": "get"
+    }
+}

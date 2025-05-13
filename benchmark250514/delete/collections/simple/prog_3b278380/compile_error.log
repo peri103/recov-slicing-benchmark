@@ -1,0 +1,7 @@
+generated/collections/simple/prog_3b278380/Main.java:8: 错误: 不兼容的类型: 不存在类型变量K,V的实例, 以使Map<K,V>与UnmodifiableMap<String,Integer>一致
+        UnmodifiableMap<String, Integer> map = UnmodifiableMap.unmodifiableMap(originalMap);
+                                                                              ^
+  其中, K,V是类型变量:
+    K扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+    V扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+1 个错误

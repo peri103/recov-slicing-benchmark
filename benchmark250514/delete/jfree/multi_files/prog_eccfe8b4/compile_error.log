@@ -1,0 +1,4 @@
+generated/jfree/multi_files/prog_eccfe8b4/ChartManager.java:34: 错误: 不兼容的类型: Paint无法转换为Color
+            Color color = plot.getSectionPaint(section);
+                                              ^
+1 个错误

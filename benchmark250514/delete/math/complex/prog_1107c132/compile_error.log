@@ -1,0 +1,14 @@
+generated/math/complex/prog_1107c132/Main.java:8: 错误: 找不到符号
+        /* write */ OpenMapRealVector vector = MatrixUtils.createOpenMapRealVector(new double[]{1.0, 2.0, 3.0});
+                                                          ^
+  符号:   方法 createOpenMapRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_1107c132/Main.java:28: 错误: 找不到符号
+        /* read */ OpenMapRealVector retrievedVector = MatrixUtils.getOpenMapRealVector(vector);
+                                                                  ^
+  符号:   方法 getOpenMapRealVector(OpenMapRealVector)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_1107c132/Main.java:37: 错误: 不兼容的类型: RealVector无法转换为OpenMapRealVector
+        OpenMapRealVector scaledVector = retrievedVector.mapMultiply(2.0);
+                                                                    ^
+3 个错误

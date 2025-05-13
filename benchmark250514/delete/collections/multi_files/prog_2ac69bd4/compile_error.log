@@ -1,0 +1,6 @@
+generated/collections/multi_files/prog_2ac69bd4/FruitStore.java:21: 错误: 找不到符号
+        Set<String> fruits = fruitBag.getBag().uniqueSet();
+                                     ^
+  符号:   方法 getBag()
+  位置: 类型为FruitBag的变量 fruitBag
+1 个错误

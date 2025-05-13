@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        ArrayList<String> words = new ArrayList<>();\n\n        words.add(\"Java\");\n        words.add(\"Programming\");\n        words.add(\"Language\");\n\n        for (String word : words) {\n            strBuilder.append(\" \").append(word);\n        }\n\n        /* write */ strBuilder.deleteCharAt(5);\n\n        int sum = 0;\n        for (int i = 1; i <= 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 1 to 10: \" + sum);\n\n        StringBuilder reversedString = new StringBuilder();\n        for (int i = strBuilder.length() - 1; i >= 0; i--) {\n            reversedString.append(strBuilder.charAt(i));\n        }\n        System.out.println(\"Reversed String: \" + reversedString);\n\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 2);\n        }\n\n        for (int num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        /* write */ strBuilder.deleteCharAt(5);\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "deleteCharAt",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

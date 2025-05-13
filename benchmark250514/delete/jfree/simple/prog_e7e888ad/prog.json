@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.SubCategoryAxis;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        SubCategoryAxis axis = new SubCategoryAxis(\"Example Axis\");\n        Paint paint = new Color(255, 0, 0); // Red color\n        \n        /* write */ axis.setSubCategoryPaint(\"SubCategory1\", paint);\n        /* read */ Paint retrievedPaint = axis.getSubCategoryPaint(\"SubCategory1\");\n        \n        System.out.println(retrievedPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.SubCategoryAxis",
+        "write_method": "setSubCategoryPaint",
+        "read_class": "org.jfree.chart.axis.SubCategoryAxis",
+        "read_method": "getSubCategoryPaint"
+    }
+}

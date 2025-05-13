@@ -1,0 +1,21 @@
+generated/compress/complex/prog_481d8026/Main.java:16: 错误: 找不到符号
+            tempEntry.setCompressedSize(100 * i);
+                     ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为ArArchiveEntry的变量 tempEntry
+generated/compress/complex/prog_481d8026/Main.java:22: 错误: 找不到符号
+            System.out.println("Entry Name: " + e.getName() + ", Compressed Size: " + e.getCompressedSize());
+                                                                                       ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为ArArchiveEntry的变量 e
+generated/compress/complex/prog_481d8026/Main.java:26: 错误: 找不到符号
+        /* write */ entry.setCompressedSize(500);
+                         ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_481d8026/Main.java:36: 错误: 找不到符号
+        /* read */ long compressedSize = entry.getCompressedSize();
+                                              ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为ArArchiveEntry的变量 entry
+4 个错误

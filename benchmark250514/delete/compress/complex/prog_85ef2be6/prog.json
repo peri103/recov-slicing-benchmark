@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.List;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry();\n        /* write */ entry.setName(\"exampleName\");\n\n        // Additional code to make the program more complex\n        Map<String, Integer> map = new HashMap<>();\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n        map.put(\"three\", 3);\n\n        List<String> keys = new ArrayList<>(map.keySet());\n        List<Integer> values = new ArrayList<>(map.values());\n\n        int sum = 0;\n        for (Integer value : values) {\n            sum += value;\n        }\n\n        System.out.println(\"Sum of values: \" + sum);\n\n        for (String key : keys) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n\n        // More unrelated code\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n\n        for (int num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n\n        // Original read operation\n        /* read */ String name = entry.getName();\n        System.out.println(\"CpioArchiveEntry Name: \" + name);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry();\n        /* write */ entry.setName(\"exampleName\");\n        /* read */ String name = entry.getName();\n        System.out.println(name);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setName",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getName"
+    }
+}

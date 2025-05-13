@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        /* write */ zipEntry.setCompressedSize(1024);\n\n        ArrayList<String> fileNames = new ArrayList<>();\n        fileNames.add(\"file1.txt\");\n        fileNames.add(\"file2.txt\");\n        fileNames.add(\"file3.txt\");\n\n        for (String fileName : fileNames) {\n            ZipArchiveEntry entry = new ZipArchiveEntry(fileName);\n            entry.setCompressedSize(2048);\n            System.out.println(\"Processed: \" + fileName + \", Compressed Size: \" + entry.getCompressedSize());\n        }\n\n        // Some unrelated computations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 integers: \" + sum);\n\n        /* read */ long compressedSize = zipEntry.getCompressedSize();\n        System.out.println(\"Original Compressed Size: \" + compressedSize);\n\n        // More unrelated code\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 1; i <= 5; i++) {\n            numbers.add(i * 100);\n        }\n        for (int num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        /* write */ zipEntry.setCompressedSize(1024);\n        /* read */ long compressedSize = zipEntry.getCompressedSize();\n        System.out.println(compressedSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setCompressedSize",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getCompressedSize"
+    }
+}

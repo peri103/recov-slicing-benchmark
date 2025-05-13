@@ -1,0 +1,19 @@
+generated/guava/complex/prog_4228486e/Main.java:12: 错误: 对于create(ImmutableMap<String,String>,ImmutableMap<String,String>), 找不到合适的方法
+        Table<String, String, String> table2 = ArrayTable.create(ImmutableMap.of("row1", "row2"), ImmutableMap.of("column1", "column2"));
+                                                         ^
+    方法 ArrayTable.<R#1,C#1,V#1>create(Iterable<? extends R#1>,Iterable<? extends C#1>)不适用
+      (无法推断类型变量 R#1,C#1,V#1
+        (参数不匹配; 不存在类型变量K,V#2的实例, 以使ImmutableMap<K,V#2>与Iterable<? extends R#1>一致))
+    方法 ArrayTable.<R#2,C#2,V#3>create(Table<R#2,C#2,? extends V#3>)不适用
+      (无法推断类型变量 R#2,C#2,V#3
+        (实际参数列表和形式参数列表长度不同))
+  其中, R#1,C#1,V#1,K,V#2,R#2,C#2,V#3是类型变量:
+    R#1扩展已在方法 <R#1,C#1,V#1>create(Iterable<? extends R#1>,Iterable<? extends C#1>)中声明的Object
+    C#1扩展已在方法 <R#1,C#1,V#1>create(Iterable<? extends R#1>,Iterable<? extends C#1>)中声明的Object
+    V#1扩展已在方法 <R#1,C#1,V#1>create(Iterable<? extends R#1>,Iterable<? extends C#1>)中声明的Object
+    K扩展已在方法 <K,V#2>of(K,V#2)中声明的Object
+    V#2扩展已在方法 <K,V#2>of(K,V#2)中声明的Object
+    R#2扩展已在方法 <R#2,C#2,V#3>create(Table<R#2,C#2,? extends V#3>)中声明的Object
+    C#2扩展已在方法 <R#2,C#2,V#3>create(Table<R#2,C#2,? extends V#3>)中声明的Object
+    V#3扩展已在方法 <R#2,C#2,V#3>create(Table<R#2,C#2,? extends V#3>)中声明的Object
+1 个错误

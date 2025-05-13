@@ -1,0 +1,21 @@
+generated/jfree/complex/prog_f5c01209/Main.java:15: 错误: 找不到符号
+        /* write */ toolTipGenerator.setNumberFormat(numberFormat);
+                                    ^
+  符号:   方法 setNumberFormat(NumberFormat)
+  位置: 类型为StandardXYToolTipGenerator的变量 toolTipGenerator
+generated/jfree/complex/prog_f5c01209/Main.java:26: 错误: 找不到符号
+            tempGenerator.setNumberFormat(format);
+                         ^
+  符号:   方法 setNumberFormat(DecimalFormat)
+  位置: 类型为StandardXYToolTipGenerator的变量 tempGenerator
+generated/jfree/complex/prog_f5c01209/Main.java:27: 错误: 找不到符号
+            NumberFormat tempFormat = tempGenerator.getNumberFormat();
+                                                   ^
+  符号:   方法 getNumberFormat()
+  位置: 类型为StandardXYToolTipGenerator的变量 tempGenerator
+generated/jfree/complex/prog_f5c01209/Main.java:43: 错误: 找不到符号
+        /* read */ NumberFormat retrievedFormat = toolTipGenerator.getNumberFormat();
+                                                                  ^
+  符号:   方法 getNumberFormat()
+  位置: 类型为StandardXYToolTipGenerator的变量 toolTipGenerator
+4 个错误

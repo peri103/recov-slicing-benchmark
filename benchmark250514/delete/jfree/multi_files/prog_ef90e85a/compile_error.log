@@ -1,0 +1,10 @@
+generated/jfree/multi_files/prog_ef90e85a/Title.java:3: 错误: 类 TitleWrapper 是公共的, 应在名为 TitleWrapper.java 的文件中声明
+public class TitleWrapper extends Title {
+       ^
+generated/jfree/multi_files/prog_ef90e85a/Title.java:6: 错误: 方法不会覆盖或实现超类型的方法
+    @Override
+    ^
+generated/jfree/multi_files/prog_ef90e85a/Title.java:11: 错误: 方法不会覆盖或实现超类型的方法
+    @Override
+    ^
+3 个错误

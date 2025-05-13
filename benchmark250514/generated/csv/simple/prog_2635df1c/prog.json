@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        String csvData = \"name,age,city\\nJohn,30,New York\\n\\nJane,25,Los Angeles\";\n        CSVFormat format = CSVFormat.DEFAULT;\n\n        // Write operation\n        /* write */ format = format.withIgnoreEmptyLines();\n\n        try {\n            CSVParser parser = new CSVParser(new StringReader(csvData), format);\n            for (CSVRecord record : parser) {\n                // Read operation\n                /* read */ boolean isSet = record.isSet(\"name\");\n                System.out.println(\"Is 'name' set: \" + isSet);\n            }\n            parser.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreEmptyLines",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

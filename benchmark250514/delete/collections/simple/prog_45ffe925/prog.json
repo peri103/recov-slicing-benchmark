@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.MultiValuedMap;\nimport org.apache.commons.collections4.multimap.TransformedMultiValuedMap;\nimport org.apache.commons.collections4.map.LinkedMap;\nimport java.util.Collection;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a LinkedMap to use as the base map for the TransformedMultiValuedMap\n        LinkedMap<String, String> baseMap = new LinkedMap<>();\n\n        // Create a TransformedMultiValuedMap using the baseMap\n        MultiValuedMap<String, String> transformedMap = TransformedMultiValuedMap.transformedMap(baseMap, null, null);\n\n        /* write */ transformedMap.put(\"key1\", \"value1\");\n\n        /* read */ Collection<String> values = transformedMap.get(\"key1\");\n\n        // Print the values retrieved from the map\n        for (String value : values) {\n            System.out.println(value);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.TransformedMultiValuedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.TransformedMultiValuedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractMapDecorator;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a HashMap which will be decorated by AbstractMapDecorator\n        HashMap<String, Integer> hashMap = new HashMap<>();\n        \n        // Create an instance of AbstractMapDecorator to wrap the HashMap\n        AbstractMapDecorator<String, Integer> mapDecorator = new AbstractMapDecorator<String, Integer>(hashMap) {};\n        \n        /* write */ mapDecorator.put(\"key\", 42);\n        \n        /* read */ Integer value = mapDecorator.get(\"key\");\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractMapDecorator",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractMapDecorator",
+        "read_method": "get"
+    }
+}

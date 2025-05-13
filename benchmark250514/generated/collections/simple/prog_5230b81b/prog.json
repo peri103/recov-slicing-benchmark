@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.HashSetValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSetValuedHashMap<String, Integer> multimap = new HashSetValuedHashMap<>();\n        /* write */ multimap.put(\"key\", 42);\n        /* read */ Integer value = multimap.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "read_method": "get"
+    }
+}

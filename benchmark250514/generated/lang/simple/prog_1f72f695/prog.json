@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\nimport org.apache.commons.lang3.text.StrMatcher;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the StrTokenizer with some input\n        StrTokenizer tokenizer = new StrTokenizer(\"Hello, World!\");\n\n        // Set the ignored matcher to ignore commas\n        /* write */ tokenizer.setIgnoredMatcher(StrMatcher.charMatcher(','));\n\n        // Read the next token\n        /* read */ String token = tokenizer.nextToken();\n\n        // Output the token\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setIgnoredMatcher",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Font;\nimport java.awt.Color;\nimport org.jfree.chart.plot.Plot;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot piePlot = new PiePlot();\n        Font font = new Font(\"Serif\", Font.PLAIN, 12);\n        Color color = new Color(255, 0, 0);\n\n        // Set the label font for the pie plot\n        /* write */ piePlot.setLabelFont(font);\n\n        // Add some unrelated operations\n        piePlot.setBackgroundPaint(color);\n        piePlot.setSectionOutlinesVisible(true);\n\n        // Create another plot and perform operations\n        Plot anotherPlot = new PiePlot();\n        anotherPlot.setBackgroundPaint(Color.BLUE);\n\n        // Perform some calculations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n\n        // More unrelated operations\n        piePlot.setInteriorGap(0.05);\n        piePlot.setCircular(false);\n\n        // Retrieve the label font from the pie plot\n        /* read */ Font retrievedFont = piePlot.getLabelFont();\n        System.out.println(\"Retrieved Font: \" + retrievedFont);\n\n        // Additional operations with the retrieved font\n        if (retrievedFont != null) {\n            System.out.println(\"Font name: \" + retrievedFont.getName());\n            System.out.println(\"Font size: \" + retrievedFont.getSize());\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Font;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot piePlot = new PiePlot();\n        Font font = new Font(\"Serif\", Font.PLAIN, 12);\n        /* write */ piePlot.setLabelFont(font);\n        /* read */ Font retrievedFont = piePlot.getLabelFont();\n        System.out.println(retrievedFont);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setLabelFont",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getLabelFont"
+    }
+}

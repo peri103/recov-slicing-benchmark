@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSet;\nimport com.google.common.collect.ImmutableSet.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<String> builder = ImmutableSet.builder();\n        /* write */ builder.add(\"Hello\");\n        ImmutableSet<String> set = builder.build();\n        /* read */ boolean contains = set.contains(\"Hello\");\n        System.out.println(contains);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableSet",
+        "read_method": "contains"
+    }
+}

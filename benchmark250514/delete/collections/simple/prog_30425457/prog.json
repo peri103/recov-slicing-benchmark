@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.PredicatedMap;\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.function.Predicate;\n\npublic class Main {\n    public static void main(String[] args) {\n        Predicate<Object> keyPredicate = key -> key instanceof String;\n        Predicate<Object> valuePredicate = value -> value instanceof Integer;\n\n        Map<String, Integer> baseMap = new HashMap<>();\n        PredicatedMap<String, Integer> predicatedMap = PredicatedMap.predicatedMap(baseMap, keyPredicate, valuePredicate);\n\n        /* write */ predicatedMap.put(\"key\", 42);\n        /* read */ int value = predicatedMap.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.PredicatedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.PredicatedMap",
+        "read_method": "get"
+    }
+}

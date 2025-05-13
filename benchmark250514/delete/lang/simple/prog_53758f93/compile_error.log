@@ -1,0 +1,6 @@
+generated/lang/simple/prog_53758f93/Main.java:12: 错误: 找不到符号
+        Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.MILLIS_IN_MINUTE);
+                                                                      ^
+  符号:   变量 MILLIS_IN_MINUTE
+  位置: 类 DateUtils
+1 个错误

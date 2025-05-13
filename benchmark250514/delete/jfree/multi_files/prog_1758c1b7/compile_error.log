@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_1758c1b7/LegendManager.java:11: 错误: 找不到符号
+        /* write */ legendItem.setLabel(newLabel);
+                              ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+1 个错误

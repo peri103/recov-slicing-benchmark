@@ -1,0 +1,14 @@
+generated/compress/complex/prog_4435323f/Main.java:14: 错误: 不兼容的类型: long无法转换为Integer
+        fileModeMap.put(entry.getName(), entry.getMode());
+                                                      ^
+generated/compress/complex/prog_4435323f/Main.java:19: 错误: 不兼容的类型: long无法转换为Integer
+        fileModeMap.put(entry2.getName(), entry2.getMode());
+                                                        ^
+generated/compress/complex/prog_4435323f/Main.java:34: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        /* read */ int mode = entry.getMode();
+                                           ^
+generated/compress/complex/prog_4435323f/Main.java:40: 错误: 不兼容的类型: long无法转换为Integer
+        fileModeMap.put(entry3.getName(), entry3.getMode());
+                                                        ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+4 个错误

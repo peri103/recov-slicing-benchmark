@@ -1,0 +1,31 @@
+generated/jfree/complex/prog_c716e4ba/Main.java:27: 错误: 找不到符号
+        anotherAxis.setSubCategoryPaint("SubCategory2", Color.CYAN);
+                   ^
+  符号:   方法 setSubCategoryPaint(String,Color)
+  位置: 类型为SubCategoryAxis的变量 anotherAxis
+generated/jfree/complex/prog_c716e4ba/Main.java:28: 错误: 找不到符号
+        Paint anotherPaint = anotherAxis.getSubCategoryPaint("SubCategory2");
+                                        ^
+  符号:   方法 getSubCategoryPaint(String)
+  位置: 类型为SubCategoryAxis的变量 anotherAxis
+generated/jfree/complex/prog_c716e4ba/Main.java:31: 错误: 找不到符号
+        /* write */ axis.setSubCategoryPaint(subCategory, paint);
+                        ^
+  符号:   方法 setSubCategoryPaint(String,Paint)
+  位置: 类型为SubCategoryAxis的变量 axis
+generated/jfree/complex/prog_c716e4ba/Main.java:38: 错误: 找不到符号
+        /* read */ Paint retrievedPaint = axis.getSubCategoryPaint(subCategory);
+                                              ^
+  符号:   方法 getSubCategoryPaint(String)
+  位置: 类型为SubCategoryAxis的变量 axis
+generated/jfree/complex/prog_c716e4ba/Main.java:45: 错误: 找不到符号
+            tempAxis.setSubCategoryPaint("SubCategory" + i, Color.ORANGE);
+                    ^
+  符号:   方法 setSubCategoryPaint(String,Color)
+  位置: 类型为SubCategoryAxis的变量 tempAxis
+generated/jfree/complex/prog_c716e4ba/Main.java:46: 错误: 找不到符号
+            Paint tempPaint = tempAxis.getSubCategoryPaint("SubCategory" + i);
+                                      ^
+  符号:   方法 getSubCategoryPaint(String)
+  位置: 类型为SubCategoryAxis的变量 tempAxis
+6 个错误

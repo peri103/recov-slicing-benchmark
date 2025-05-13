@@ -1,0 +1,11 @@
+generated/compress/complex/prog_8638103f/Main.java:20: 错误: 找不到符号
+        /* write */ entry.setLinkName("linked_example.txt");
+                         ^
+  符号:   方法 setLinkName(String)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_8638103f/Main.java:37: 错误: 找不到符号
+        /* read */ String linkName = entry.getLinkName();
+                                          ^
+  符号:   方法 getLinkName()
+  位置: 类型为ArArchiveEntry的变量 entry
+2 个错误

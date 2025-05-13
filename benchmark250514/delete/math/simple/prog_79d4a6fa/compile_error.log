@@ -1,0 +1,11 @@
+generated/math/simple/prog_79d4a6fa/Main.java:7: 错误: 找不到符号
+        /* write */ OpenMapRealVector vector = MatrixUtils.createOpenMapRealVector(new double[]{1.0, 2.0, 3.0});
+                                                          ^
+  符号:   方法 createOpenMapRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/simple/prog_79d4a6fa/Main.java:10: 错误: 找不到符号
+        /* read */ OpenMapRealVector readVector = MatrixUtils.getOpenMapRealVector(vector);
+                                                             ^
+  符号:   方法 getOpenMapRealVector(OpenMapRealVector)
+  位置: 类 MatrixUtils
+2 个错误

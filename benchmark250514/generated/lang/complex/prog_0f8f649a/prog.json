@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableByte;\nimport org.apache.commons.lang3.mutable.MutableInt;\nimport org.apache.commons.lang3.mutable.MutableDouble;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableByte mutableByte = new MutableByte();\n        MutableInt mutableInt = new MutableInt();\n        MutableDouble mutableDouble = new MutableDouble();\n\n        /* write */ mutableByte.setValue((byte) 42);\n\n        mutableInt.setValue(100);\n        mutableDouble.setValue(3.14);\n\n        int intValue = mutableInt.getValue();\n        double doubleValue = mutableDouble.getValue();\n\n        intValue += 50;\n        doubleValue *= 2;\n\n        System.out.println(\"Int Value: \" + intValue);\n        System.out.println(\"Double Value: \" + doubleValue);\n\n        // Some complex operations\n        int result = intValue * 2;\n        double doubleResult = doubleValue / 2;\n\n        for (int i = 0; i < 5; i++) {\n            result += i;\n            doubleResult -= i * 0.5;\n        }\n\n        System.out.println(\"Complex Int Result: \" + result);\n        System.out.println(\"Complex Double Result: \" + doubleResult);\n\n        /* read */ byte value = mutableByte.getValue();\n        System.out.println(\"Byte Value: \" + value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.mutable.MutableByte;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableByte mutableByte = new MutableByte();\n        /* write */ mutableByte.setValue((byte) 42);\n        /* read */ byte value = mutableByte.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableByte",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableByte",
+        "read_method": "getValue"
+    }
+}

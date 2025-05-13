@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.Reader;\nimport java.io.StringReader;\nimport org.apache.commons.csv.CSVParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat with write method\n            CSVFormat format = CSVFormat.DEFAULT.withIgnoreSurroundingSpaces();\n            /* write */ format = format.withIgnoreSurroundingSpaces(true);\n\n            // Prepare a CSV input for reading\n            String csvData = \"column1,column2\\nvalue1,value2\";\n            Reader reader = new StringReader(csvData);\n\n            // Parse the CSV data\n            CSVParser parser = new CSVParser(reader, format);\n            CSVRecord record = parser.getRecords().get(0);\n\n            // Read using the read method\n            /* read */ boolean isConsistent = record.isConsistent();\n            System.out.println(\"Is record consistent? \" + isConsistent);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreSurroundingSpaces",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

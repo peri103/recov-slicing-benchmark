@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.HashCodeBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashCodeBuilder builder = new HashCodeBuilder();\n        /* write */ builder.append(12345);\n        /* read */ int hashCode = builder.toHashCode();\n        System.out.println(hashCode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "read_method": "toHashCode"
+    }
+}

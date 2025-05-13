@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        \n        /* write */ gzipParameters.setComment(\"This is a comment\");\n        \n        ArrayList<String> list = new ArrayList<>();\n        list.add(\"First element\");\n        list.add(\"Second element\");\n        \n        for (String element : list) {\n            System.out.println(\"Processing: \" + element);\n        }\n        \n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n            if (i % 2 == 0) {\n                System.out.println(\"Even number: \" + i);\n            }\n        }\n        \n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n        \n        /* read */ String comment = gzipParameters.getComment();\n        \n        System.out.println(comment);\n        \n        ArrayList<Integer> numberList = new ArrayList<>();\n        for (int i = 1; i <= 5; i++) {\n            numberList.add(i * i);\n        }\n        \n        for (int number : numberList) {\n            System.out.println(\"Square: \" + number);\n        }\n        \n        System.out.println(\"Finished processing elements.\");\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        \n        /* write */ gzipParameters.setComment(\"This is a comment\");\n        \n        /* read */ String comment = gzipParameters.getComment();\n        \n        System.out.println(comment);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setComment",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getComment"
+    }
+}

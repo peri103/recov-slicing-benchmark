@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_e2c29c93/Main.java:9: 错误: 找不到符号
+        ImmutableRangeSet<Integer> rangeSet = rangeManager.buildRangeSet();
+        ^
+  符号:   类 ImmutableRangeSet
+  位置: 类 Main
+1 个错误

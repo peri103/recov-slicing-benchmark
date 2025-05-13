@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_0db71052/Main.java:9: 错误: 找不到符号
+        Range readRange = rangeReader.readRange();
+        ^
+  符号:   类 Range
+  位置: 类 Main
+1 个错误

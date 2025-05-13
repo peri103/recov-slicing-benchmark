@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Example\");\n        /* write */ legendItem.setShapeVisible(true);\n        /* read */ boolean isVisible = legendItem.isShapeVisible();\n        System.out.println(isVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setShapeVisible",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "isShapeVisible"
+    }
+}

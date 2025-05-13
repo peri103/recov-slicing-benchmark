@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        /* write */ gzipParameters.setCompressedSize(12345L);\n        /* read */ long compressedSize = gzipParameters.getCompressedSize();\n        System.out.println(compressedSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setCompressedSize",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getCompressedSize"
+    }
+}

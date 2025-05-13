@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_399425ca/Main.java:40: 错误: 找不到符号
+        /* write */ generator.setCategoryFormat(format);
+                             ^
+  符号:   方法 setCategoryFormat(DecimalFormat)
+  位置: 类型为StandardCategoryToolTipGenerator的变量 generator
+generated/jfree/complex/prog_399425ca/Main.java:47: 错误: 找不到符号
+        /* read */ DecimalFormat retrievedFormat = generator.getCategoryFormat();
+                                                            ^
+  符号:   方法 getCategoryFormat()
+  位置: 类型为StandardCategoryToolTipGenerator的变量 generator
+2 个错误

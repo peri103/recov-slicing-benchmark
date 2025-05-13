@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_4b7de2d6/Main.java:27: 错误: 找不到符号
+        /* write */ plot.setPaintScale(paintScale);
+                        ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_4b7de2d6/Main.java:49: 错误: 找不到符号
+        /* read */ PaintScale retrievedPaintScale = plot.getPaintScale();
+                                                        ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 plot
+2 个错误

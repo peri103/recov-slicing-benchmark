@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_2e104747/Main.java:12: 错误: 找不到符号
+        /* write */ renderer.setShapesVisible(true);
+                            ^
+  符号:   方法 setShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 renderer
+generated/jfree/complex/prog_2e104747/Main.java:45: 错误: 找不到符号
+        /* read */ boolean shapesVisible = renderer.getShapesVisible();
+                                                   ^
+  符号:   方法 getShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 renderer
+2 个错误

@@ -1,0 +1,4 @@
+generated/jfree/complex/prog_ac3562d3/Main.java:11: 错误: 不兼容的类型: CategoryAxis无法转换为ValueAxis
+        ValueAxis categoryAxis = new CategoryAxis("Category Axis");
+                                 ^
+1 个错误

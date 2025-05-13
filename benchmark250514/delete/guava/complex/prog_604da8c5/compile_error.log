@@ -1,0 +1,4 @@
+generated/guava/complex/prog_604da8c5/Main.java:46: 错误: 已在方法 main(String[])中定义了变量 value
+            for (Double value : multimap4.get(key)) {
+                        ^
+1 个错误

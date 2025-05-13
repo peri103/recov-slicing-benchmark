@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableClassToInstanceMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of ImmutableClassToInstanceMap with a mapping\n        ImmutableClassToInstanceMap<String> map = /* write */ ImmutableClassToInstanceMap.of(String.class, \"Hello, World!\");\n\n        // Retrieve the value using getInstance method\n        /* read */ String value = map.getInstance(String.class);\n        \n        // Print the retrieved value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableClassToInstanceMap",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableClassToInstanceMap",
+        "read_method": "getInstance"
+    }
+}

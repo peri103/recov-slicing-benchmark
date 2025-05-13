@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.HashSetValuedHashMap;\nimport java.util.HashSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSetValuedHashMap<String, Integer> map = new HashSetValuedHashMap<>();\n        HashSetValuedHashMap<String, Integer> secondaryMap = new HashSetValuedHashMap<>();\n        HashSet<Integer> valueSet = new HashSet<>();\n\n        /* write */ map.put(\"key\", 42);\n        \n        for (int i = 0; i < 5; i++) {\n            secondaryMap.put(\"secondaryKey\", i * 10);\n        }\n        \n        secondaryMap.put(\"secondaryKey\", 50);\n\n        for (Integer val : secondaryMap.get(\"secondaryKey\")) {\n            valueSet.add(val);\n        }\n\n        for (Integer val : valueSet) {\n            System.out.println(\"Secondary Value: \" + val);\n        }\n\n        /* read */ Integer value = map.get(\"key\").iterator().next();\n        \n        System.out.println(\"Original Value: \" + value);\n\n        HashSetValuedHashMap<String, String> stringMap = new HashSetValuedHashMap<>();\n        stringMap.put(\"stringKey\", \"Hello\");\n        stringMap.put(\"stringKey\", \"World\");\n\n        for (String str : stringMap.get(\"stringKey\")) {\n            System.out.println(\"String Value: \" + str);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.multimap.HashSetValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSetValuedHashMap<String, Integer> map = new HashSetValuedHashMap<>();\n        \n        /* write */ map.put(\"key\", 42);\n        \n        /* read */ Integer value = map.get(\"key\").iterator().next();\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "read_method": "get"
+    }
+}

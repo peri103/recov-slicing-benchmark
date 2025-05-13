@@ -1,0 +1,13 @@
+generated/collections/complex/prog_ce3c770c/Main.java:12: 错误: 不兼容的类型: 不存在类型变量K,V的实例, 以使Map<K,V>与UnmodifiableMap<String,Integer>一致
+        UnmodifiableMap<String, Integer> unmodifiableMap = UnmodifiableMap.unmodifiableMap(originalMap);
+                                                                                          ^
+  其中, K,V是类型变量:
+    K扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+    V扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+generated/collections/complex/prog_ce3c770c/Main.java:36: 错误: 不兼容的类型: 不存在类型变量K,V的实例, 以使Map<K,V>与UnmodifiableMap<String,Integer>一致
+        unmodifiableMap = UnmodifiableMap.unmodifiableMap(originalMap); // Recreate the unmodifiable map
+                                                         ^
+  其中, K,V是类型变量:
+    K扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+    V扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+2 个错误

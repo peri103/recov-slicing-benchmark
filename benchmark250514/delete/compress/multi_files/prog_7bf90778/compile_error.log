@@ -1,0 +1,21 @@
+generated/compress/multi_files/prog_7bf90778/LinkEntry.java:11: 错误: 找不到符号
+        /* write */ entry.setLinkName(linkName);
+                         ^
+  符号:   方法 setLinkName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_7bf90778/LinkEntry.java:15: 错误: 找不到符号
+        return entry.getLinkName();
+                    ^
+  符号:   方法 getLinkName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_7bf90778/DumpArchiveEntryWrapper.java:7: 错误: 找不到符号
+        /* write */ entry.setLinkName(linkName);
+                         ^
+  符号:   方法 setLinkName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_7bf90778/DumpArchiveEntryWrapper.java:11: 错误: 找不到符号
+        return entry.getLinkName();
+                    ^
+  符号:   方法 getLinkName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+4 个错误

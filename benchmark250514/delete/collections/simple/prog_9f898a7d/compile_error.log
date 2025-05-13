@@ -1,0 +1,9 @@
+generated/collections/simple/prog_9f898a7d/Main.java:12: 错误: 无法推断TransformedMultiValuedMap<>的类型参数
+        MultiValuedMap<String, String> transformedMap = new TransformedMultiValuedMap<>(baseMap, null, null);
+                                                        ^
+  原因: 无法推断类型变量 K,V
+    (参数不匹配; HashedMap<String,Collection<String>>无法转换为MultiValuedMap<K,V>)
+  其中, K,V是类型变量:
+    K扩展已在类 TransformedMultiValuedMap中声明的Object
+    V扩展已在类 TransformedMultiValuedMap中声明的Object
+1 个错误

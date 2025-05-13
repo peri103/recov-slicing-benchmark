@@ -1,0 +1,58 @@
+generated/jfree/complex/prog_330a7337/Main.java:8: 错误: Title是抽象的; 无法实例化
+        Title title = new Title();
+                      ^
+generated/jfree/complex/prog_330a7337/Main.java:11: 错误: Title是抽象的; 无法实例化
+        Title subtitle = new Title();
+                         ^
+generated/jfree/complex/prog_330a7337/Main.java:12: 错误: Title是抽象的; 无法实例化
+        Title caption = new Title();
+                        ^
+generated/jfree/complex/prog_330a7337/Main.java:21: 错误: 找不到符号
+        subtitle.setText("Subtitle Text");
+                ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 subtitle
+generated/jfree/complex/prog_330a7337/Main.java:22: 错误: 找不到符号
+        caption.setText("Caption Text");
+               ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 caption
+generated/jfree/complex/prog_330a7337/Main.java:25: 错误: 找不到符号
+        System.out.println(subtitle.getText());
+                                   ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 subtitle
+generated/jfree/complex/prog_330a7337/Main.java:26: 错误: 找不到符号
+        System.out.println(caption.getText());
+                                  ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 caption
+generated/jfree/complex/prog_330a7337/Main.java:29: 错误: 找不到符号
+        /* write */ title.setText("Hello, World!");
+                         ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_330a7337/Main.java:33: 错误: 找不到符号
+            System.out.println("Title in list: " + t.getText());
+                                                    ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 t
+generated/jfree/complex/prog_330a7337/Main.java:38: 错误: Title是抽象的; 无法实例化
+        titleList.add(new Title());
+                      ^
+generated/jfree/complex/prog_330a7337/Main.java:41: 错误: 找不到符号
+        /* read */ String text = title.getText();
+                                      ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_330a7337/Main.java:46: 错误: 找不到符号
+            t.setText(t.getText() + " Updated");
+                       ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 t
+generated/jfree/complex/prog_330a7337/Main.java:47: 错误: 找不到符号
+            System.out.println("Updated Title: " + t.getText());
+                                                    ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 t
+13 个错误

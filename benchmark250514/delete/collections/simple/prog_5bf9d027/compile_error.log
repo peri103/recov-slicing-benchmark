@@ -1,0 +1,4 @@
+generated/collections/simple/prog_5bf9d027/Main.java:8: 错误: 类型变量数目错误; 需要2
+        TransformedMap<String, String, String> transformedMap = TransformedMap.transformedMap(originalMap, String::toUpperCase, String::toLowerCase);
+                      ^
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.WaferMapPlot;\nimport java.awt.Paint;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize WaferMapPlot object\n        WaferMapPlot plot = new WaferMapPlot();\n\n        // Create a Paint object (using Color for simplicity)\n        Paint paint = Color.RED;\n\n        /* write */ plot.setPaint(paint);\n\n        /* read */ Paint retrievedPaint = plot.getPaint();\n\n        // Output the result to verify the retrieved paint is the same as the one set\n        System.out.println(retrievedPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.WaferMapPlot",
+        "write_method": "setPaint",
+        "read_class": "org.jfree.chart.plot.WaferMapPlot",
+        "read_method": "getPaint"
+    }
+}

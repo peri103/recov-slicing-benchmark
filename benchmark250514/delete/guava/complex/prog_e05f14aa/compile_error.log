@@ -1,0 +1,4 @@
+generated/guava/complex/prog_e05f14aa/Main.java:34: 错误: 未报告的异常错误ExecutionException; 必须对其进行捕获或声明以便抛出
+        /* read */ Integer value = cache.get("key", () -> null);
+                                            ^
+1 个错误

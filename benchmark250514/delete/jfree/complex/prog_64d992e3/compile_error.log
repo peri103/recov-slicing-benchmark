@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_64d992e3/Main.java:21: 错误: 找不到符号
+        meterPlot.setDialShape(MeterPlot.DialShape.CIRCLE);
+                                        ^
+  符号:   变量 DialShape
+  位置: 类 MeterPlot
+1 个错误

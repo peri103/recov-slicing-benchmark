@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.NumberTickUnit;\nimport org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueAxis axis = new NumberAxis();\n        NumberTickUnit tickUnit = new NumberTickUnit(5.0);\n        \n        /* write */ axis.setTickUnit(tickUnit);\n        \n        /* read */ NumberTickUnit retrievedTickUnit = axis.getTickUnit();\n        \n        System.out.println(\"Tick Unit: \" + retrievedTickUnit.getSize());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.ValueAxis",
+        "write_method": "setTickUnit",
+        "read_class": "org.jfree.chart.axis.ValueAxis",
+        "read_method": "getTickUnit"
+    }
+}

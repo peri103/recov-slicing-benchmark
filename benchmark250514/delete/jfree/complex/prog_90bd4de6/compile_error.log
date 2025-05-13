@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_90bd4de6/Main.java:16: 错误: 找不到符号
+        /* write */ renderer.setOutlineStroke(stroke);
+                            ^
+  符号:   方法 setOutlineStroke(Stroke)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+generated/jfree/complex/prog_90bd4de6/Main.java:34: 错误: 找不到符号
+        /* read */ Stroke readStroke = renderer.getOutlineStroke();
+                                               ^
+  符号:   方法 getOutlineStroke()
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+2 个错误

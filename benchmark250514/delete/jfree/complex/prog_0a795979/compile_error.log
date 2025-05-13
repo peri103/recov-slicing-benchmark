@@ -1,0 +1,4 @@
+generated/jfree/complex/prog_0a795979/Main.java:9: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Axis中的抽象方法refreshTicks(Graphics2D,AxisState,Rectangle2D,RectangleEdge)
+        Axis axis = new Axis("Initial Label") {
+                                              ^
+1 个错误

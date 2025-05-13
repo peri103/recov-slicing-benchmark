@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.ListOrderedMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedMap<String, Integer> map = new ListOrderedMap<>();\n        Map<String, String> stringMap = new HashMap<>();\n        \n        stringMap.put(\"hello\", \"world\");\n        stringMap.put(\"foo\", \"bar\");\n        \n        String retrievedString = stringMap.get(\"hello\");\n        System.out.println(\"Retrieved from stringMap: \" + retrievedString);\n\n        /* write */ map.put(\"key1\", 42);\n\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n        \n        map.put(\"key2\", 100);\n        map.put(\"key3\", 200);\n\n        int valueFromKey2 = map.get(\"key2\");\n        System.out.println(\"Value from key2: \" + valueFromKey2);\n\n        /* read */ int value = map.get(\"key1\");\n        System.out.println(\"Retrieved from map: \" + value);\n\n        // Additional logic using the map\n        for (String key : map.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n        \n        int product = 1;\n        for (int i = 1; i <= 5; i++) {\n            product *= i;\n        }\n        System.out.println(\"Product of numbers from 1 to 5: \" + product);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.ListOrderedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedMap<String, Integer> map = new ListOrderedMap<>();\n        /* write */ map.put(\"key1\", 42);\n        /* read */ int value = map.get(\"key1\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.ListOrderedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.ListOrderedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,11 @@
+generated/collections/multi_files/prog_442c95ac/CustomMap.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractSortedMap;
+                                          ^
+  符号:   类 AbstractSortedMap
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/multi_files/prog_442c95ac/CustomMap.java:5: 错误: 找不到符号
+    private AbstractSortedMap<Integer, String> map = new TreeMap<>();
+            ^
+  符号:   类 AbstractSortedMap
+  位置: 类 CustomMap
+2 个错误

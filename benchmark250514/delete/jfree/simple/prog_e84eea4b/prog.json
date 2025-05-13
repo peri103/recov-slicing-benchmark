@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.Plot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        Plot plot = new Plot() {\n            @Override\n            public String getPlotType() {\n                return \"Custom Plot\";\n            }\n        };\n        \n        /* write */ plot.setOutlinePaint(Color.RED);\n        \n        /* read */ Paint outlinePaint = plot.getOutlinePaint();\n        \n        System.out.println(outlinePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.Plot",
+        "write_method": "setOutlinePaint",
+        "read_class": "org.jfree.chart.plot.Plot",
+        "read_method": "getOutlinePaint"
+    }
+}

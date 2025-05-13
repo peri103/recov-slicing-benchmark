@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.SpiderWebPlot;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        SpiderWebPlot plot = new SpiderWebPlot(null);\n        ArrayList<Double> percentages = new ArrayList<>();\n        HashMap<String, Double> dataMap = new HashMap<>();\n\n        // Simulate some unrelated operations\n        dataMap.put(\"value1\", 0.1);\n        dataMap.put(\"value2\", 0.2);\n        dataMap.put(\"value3\", 0.3);\n        percentages.add(0.1);\n        percentages.add(0.2);\n        percentages.add(0.3);\n\n        // Perform the write operation\n        /* write */ plot.setHeadPercent(0.5);\n\n        // More unrelated operations\n        for (String key : dataMap.keySet()) {\n            percentages.add(dataMap.get(key));\n        }\n\n        // Some calculations\n        double sum = 0;\n        for (double percent : percentages) {\n            sum += percent;\n        }\n        double average = sum / percentages.size();\n\n        // Perform the read operation\n        /* read */ double headPercent = plot.getHeadPercent();\n        System.out.println(\"Head Percent: \" + headPercent);\n\n        // More unrelated operations\n        System.out.println(\"Average of percentages: \" + average);\n        for (double percent : percentages) {\n            System.out.println(\"Percent: \" + percent);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.SpiderWebPlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        SpiderWebPlot plot = new SpiderWebPlot(null);\n        /* write */ plot.setHeadPercent(0.5);\n        /* read */ double headPercent = plot.getHeadPercent();\n        System.out.println(headPercent);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.SpiderWebPlot",
+        "write_method": "setHeadPercent",
+        "read_class": "org.jfree.chart.plot.SpiderWebPlot",
+        "read_method": "getHeadPercent"
+    }
+}

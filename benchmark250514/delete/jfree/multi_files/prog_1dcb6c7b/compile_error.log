@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_1dcb6c7b/Main.java:24: 错误: 找不到符号
+        dataSeries.getDataset().getSeries(0).forEach(item -> 
+                                            ^
+  符号:   方法 forEach((item)->Sy[...]tY()))
+  位置: 类 XYSeries
+1 个错误

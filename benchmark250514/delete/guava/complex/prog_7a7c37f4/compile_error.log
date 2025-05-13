@@ -1,0 +1,8 @@
+generated/guava/complex/prog_7a7c37f4/Main.java:10: 错误: 不兼容的类型: 不存在类型变量R,C,V的实例, 以使HashBasedTable<R,C,V>与RowSortedTable<Integer,String,String>一致
+        RowSortedTable<Integer, String, String> table = HashBasedTable.create();
+                                                                             ^
+  其中, R,C,V是类型变量:
+    R扩展已在方法 <R,C,V>create()中声明的Object
+    C扩展已在方法 <R,C,V>create()中声明的Object
+    V扩展已在方法 <R,C,V>create()中声明的Object
+1 个错误

@@ -1,0 +1,14 @@
+generated/csv/complex/prog_91ca8942/Main.java:15: 错误: 无法将类 CSVRecord中的构造器 CSVRecord应用到给定类型;
+        CSVRecord csvRecord = new CSVRecord(values, csvFormat);
+                              ^
+  需要: CSVParser,String[],String,long,long
+  找到: List<String>,CSVFormat
+  原因: 实际参数列表和形式参数列表长度不同
+generated/csv/complex/prog_91ca8942/Main.java:29: 错误: 找不到符号
+        List<String> transformedValues = new ArrayList<>();
+                                             ^
+  符号:   类 ArrayList
+  位置: 类 Main
+注: generated/csv/complex/prog_91ca8942/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

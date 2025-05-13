@@ -1,0 +1,6 @@
+generated/math/simple/prog_1b9af8c0/Main.java:10: 错误: 找不到符号
+        /* write */ identityMatrix = MatrixUtils.createIdentityMatrix(3);
+                                                ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+1 个错误

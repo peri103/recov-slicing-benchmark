@@ -1,0 +1,21 @@
+generated/jfree/multi_files/prog_eb9b4747/CustomRenderer.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/multi_files/prog_eb9b4747/CustomRenderer.java:5: 错误: 找不到符号
+public class CustomRenderer implements Renderer {
+                                       ^
+  符号: 类 Renderer
+generated/jfree/multi_files/prog_eb9b4747/CustomRenderer.java:8: 错误: 方法不会覆盖或实现超类型的方法
+    @Override
+    ^
+generated/jfree/multi_files/prog_eb9b4747/CustomRenderer.java:13: 错误: 方法不会覆盖或实现超类型的方法
+    @Override
+    ^
+generated/jfree/multi_files/prog_eb9b4747/Main.java:26: 错误: 找不到符号
+        /* read */ Paint paint = renderer.getSeriesPaint(0);
+                   ^
+  符号:   类 Paint
+  位置: 类 Main
+5 个错误

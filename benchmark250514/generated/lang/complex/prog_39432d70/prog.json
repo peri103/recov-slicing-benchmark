@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrTokenizer tokenizer = new StrTokenizer(\"Hello World\");\n        ArrayList<String> tokensList = new ArrayList<>();\n        HashMap<String, Integer> wordCount = new HashMap<>();\n        \n        // Reset the tokenizer with a new string\n        /* write */ tokenizer.reset(\"Hello World\");\n        \n        // Simulate some unrelated operations\n        String[] words = {\"apple\", \"banana\", \"cherry\", \"date\"};\n        for (String word : words) {\n            wordCount.put(word, word.length());\n        }\n        \n        // Add tokens to the list\n        tokensList.add(\"First Token\");\n        tokensList.add(\"Second Token\");\n        \n        // Manipulate the HashMap\n        for (String word : wordCount.keySet()) {\n            System.out.println(word + \" has \" + wordCount.get(word) + \" letters.\");\n        }\n        \n        // Add more tokens to the list\n        tokensList.add(\"Third Token\");\n        tokensList.add(\"Fourth Token\");\n        \n        // Read the next token from the tokenizer\n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(\"Read token: \" + token);\n        \n        // Further operations on tokensList\n        for (String t : tokensList) {\n            System.out.println(\"Token from list: \" + t);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrTokenizer tokenizer = new StrTokenizer(\"Hello World\");\n        /* write */ tokenizer.reset(\"Hello World\");\n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "reset",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

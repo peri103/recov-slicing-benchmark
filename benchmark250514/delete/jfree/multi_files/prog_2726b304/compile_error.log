@@ -1,0 +1,7 @@
+generated/jfree/multi_files/prog_2726b304/Main.java:18: 错误: name 在 Student 中是 private 访问控制
+            System.out.println("Student Name: " + student.name);
+                                                         ^
+generated/jfree/multi_files/prog_2726b304/Main.java:19: 错误: id 在 Student 中是 private 访问控制
+            System.out.println("Student ID: " + student.id);
+                                                       ^
+2 个错误

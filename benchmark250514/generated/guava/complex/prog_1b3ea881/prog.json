@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableList;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableList.Builder<Integer> builder = new ImmutableList.Builder<>();\n        ArrayList<String> stringList = new ArrayList<>();\n        HashMap<String, Integer> map = new HashMap<>();\n\n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n        map.put(\"Key1\", 100);\n        map.put(\"Key2\", 200);\n\n        /* write */ builder.add(1);\n        ImmutableList<Integer> list = builder.build();\n\n        for (String str : stringList) {\n            System.out.println(\"String List Item: \" + str);\n        }\n\n        for (String key : map.keySet()) {\n            System.out.println(\"Map Key: \" + key + \", Value: \" + map.get(key));\n        }\n\n        int sum = 0;\n        for (int i = 0; i < list.size(); i++) {\n            sum += list.get(i);\n        }\n\n        /* read */ int value = list.get(0);\n        System.out.println(\"Read Value: \" + value);\n\n        int result = sum * 2;\n        System.out.println(\"Result: \" + result);\n\n        ArrayList<Integer> numberList = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numberList.add(i * 10);\n        }\n\n        for (int num : numberList) {\n            System.out.println(\"Number List Item: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableList.Builder<Integer> builder = new ImmutableList.Builder<>();\n        /* write */ builder.add(1);\n        ImmutableList<Integer> list = builder.build();\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableList",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableList",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,6 @@
+generated/csv/multi_files/prog_2e07f3fa/Main.java:12: 错误: 找不到符号
+            CSVRecord csvRecord = csvReader.getRecord(0);
+            ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+1 个错误

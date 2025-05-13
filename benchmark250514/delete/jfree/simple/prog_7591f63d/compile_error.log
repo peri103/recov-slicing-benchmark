@@ -1,0 +1,9 @@
+generated/jfree/simple/prog_7591f63d/Main.java:7: 错误: MeterNeedle是抽象的; 无法实例化
+        MeterNeedle needle = new MeterNeedle();
+                             ^
+generated/jfree/simple/prog_7591f63d/Main.java:10: 错误: 找不到符号
+        /* read */ MeterNeedle readNeedle = plot.getSeriesNeedle(0);
+                                                ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 plot
+2 个错误

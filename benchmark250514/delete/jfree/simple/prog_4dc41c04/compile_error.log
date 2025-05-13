@@ -1,0 +1,20 @@
+generated/jfree/simple/prog_4dc41c04/Main.java:6: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+        Title title = new Title() {
+                                  ^
+generated/jfree/simple/prog_4dc41c04/Main.java:9: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_4dc41c04/Main.java:14: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_4dc41c04/Main.java:21: 错误: 找不到符号
+        /* write */ title.setFont(fontToSet);
+                         ^
+  符号:   方法 setFont(Font)
+  位置: 类型为Title的变量 title
+generated/jfree/simple/prog_4dc41c04/Main.java:22: 错误: 找不到符号
+        /* read */ Font retrievedFont = title.getFont();
+                                             ^
+  符号:   方法 getFont()
+  位置: 类型为Title的变量 title
+5 个错误

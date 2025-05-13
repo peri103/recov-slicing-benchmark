@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_632c7b92/Student.java:14: 错误: 找不到符号
+    public RealMatrix getMatrix() {
+           ^
+  符号:   类 RealMatrix
+  位置: 类 Student
+generated/math/multi_files/prog_632c7b92/RealVectorOperations.java:13: 错误: 找不到符号
+        /* write */ RealVector rowVector = MatrixUtils.createRowRealVector(rowData);
+                                                      ^
+  符号:   方法 createRowRealVector(double[])
+  位置: 类 MatrixUtils
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.PassiveExpiringMap;\nimport java.util.concurrent.TimeUnit;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PassiveExpiringMap with a 1-minute expiration time for entries\n        PassiveExpiringMap<String, Integer> map = new PassiveExpiringMap<>(TimeUnit.MINUTES.toMillis(1));\n\n        /* write */ map.put(\"key\", 42);\n        \n        /* read */ Integer value = map.get(\"key\");\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.PassiveExpiringMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.PassiveExpiringMap",
+        "read_method": "get"
+    }
+}

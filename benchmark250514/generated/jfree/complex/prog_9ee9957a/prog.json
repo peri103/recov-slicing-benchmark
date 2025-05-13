@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.ValueMarker;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize ValueMarker and set its value\n        ValueMarker marker = new ValueMarker(0.0);\n        /* write */ marker.setValue(42.0);\n\n        // Additional code using ArrayList\n        ArrayList<Double> values = new ArrayList<>();\n        values.add(marker.getValue());\n        values.add(100.0);\n        values.add(200.0);\n\n        // Perform some operations on the list\n        double sum = 0;\n        for (double val : values) {\n            sum += val;\n        }\n        System.out.println(\"Sum of values: \" + sum);\n\n        // More operations\n        double average = sum / values.size();\n        System.out.println(\"Average of values: \" + average);\n\n        // Read the value from ValueMarker\n        /* read */ double value = marker.getValue();\n        System.out.println(\"Value from ValueMarker: \" + value);\n\n        // Further manipulation of the list\n        values.remove(1);\n        values.add(300.0);\n\n        // Print updated list\n        System.out.println(\"Updated values list:\");\n        for (double val : values) {\n            System.out.println(val);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.ValueMarker;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueMarker marker = new ValueMarker(0.0);\n        /* write */ marker.setValue(42.0);\n        /* read */ double value = marker.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ValueMarker",
+        "write_method": "setValue",
+        "read_class": "org.jfree.chart.plot.ValueMarker",
+        "read_method": "getValue"
+    }
+}

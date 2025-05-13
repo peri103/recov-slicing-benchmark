@@ -1,0 +1,19 @@
+generated/collections/multi_files/prog_37d7b42a/Student.java:11: 错误: 无法将类 StudentScores中的方法 addScore应用到给定类型;
+        scores.addScore(score);
+              ^
+  需要: int,String
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/collections/multi_files/prog_37d7b42a/Main.java:10: 错误: 无法将类 Student中的方法 addScore应用到给定类型;
+        student1.addScore(1, "85");
+                ^
+  需要: int
+  找到: int,String
+  原因: 实际参数列表和形式参数列表长度不同
+generated/collections/multi_files/prog_37d7b42a/Main.java:11: 错误: 无法将类 Student中的方法 addScore应用到给定类型;
+        student2.addScore(1, "90");
+                ^
+  需要: int
+  找到: int,String
+  原因: 实际参数列表和形式参数列表长度不同
+3 个错误

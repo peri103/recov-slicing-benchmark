@@ -1,0 +1,11 @@
+generated/compress/complex/prog_1fe6d8a1/Main.java:21: 错误: 找不到符号
+        /* write */ gzipParams.setExtraFlags(1);
+                              ^
+  符号:   方法 setExtraFlags(int)
+  位置: 类型为GzipParameters的变量 gzipParams
+generated/compress/complex/prog_1fe6d8a1/Main.java:31: 错误: 找不到符号
+        /* read */ int extraFlags = gzipParams.getExtraFlags();
+                                              ^
+  符号:   方法 getExtraFlags()
+  位置: 类型为GzipParameters的变量 gzipParams
+2 个错误

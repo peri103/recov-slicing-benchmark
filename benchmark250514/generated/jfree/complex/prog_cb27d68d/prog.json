@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.BasicStroke;\nimport java.awt.Stroke;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        Color fillColor = Color.RED;\n        Stroke lineStroke = new BasicStroke(2.0f);\n        ArrayList<String> labels = new ArrayList<>();\n        \n        /* write */ legendItem.setFillPaint(fillColor);\n        \n        // Additional complex operations\n        labels.add(\"First Label\");\n        labels.add(\"Second Label\");\n        \n        for (String label : labels) {\n            legendItem.setLineStroke(lineStroke);\n            System.out.println(\"Processing label: \" + label);\n        }\n        \n        Stroke readStroke = legendItem.getLineStroke();\n        System.out.println(\"Line Stroke: \" + readStroke);\n        \n        /* read */ Color readColor = (Color) legendItem.getFillPaint();\n        \n        System.out.println(\"Fill Paint Color: \" + readColor.toString());\n        \n        // Further operations\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n        \n        for (int number : numbers) {\n            System.out.println(\"Number: \" + number);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        Color fillColor = Color.RED;\n        \n        /* write */ legendItem.setFillPaint(fillColor);\n        /* read */ Color readColor = (Color) legendItem.getFillPaint();\n        \n        System.out.println(\"Fill Paint Color: \" + readColor.toString());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setFillPaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getFillPaint"
+    }
+}

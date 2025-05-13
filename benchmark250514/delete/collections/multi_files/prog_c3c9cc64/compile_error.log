@@ -1,0 +1,4 @@
+generated/collections/multi_files/prog_c3c9cc64/GradeBook.java:5: 错误: AbstractSortedMapDecorator是抽象的; 无法实例化
+    private AbstractSortedMapDecorator<String, Integer> grades = new AbstractSortedMapDecorator<>(new TreeMap<>());
+                                                                 ^
+1 个错误

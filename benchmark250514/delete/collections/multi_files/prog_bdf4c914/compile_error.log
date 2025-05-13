@@ -1,0 +1,4 @@
+generated/collections/multi_files/prog_bdf4c914/MultiKeyMapWrapper.java:4: 错误: 类型变量数目错误; 需要2
+    private MultiKeyMap<K1, K2, V> map = new MultiKeyMap<>();
+                       ^
+1 个错误

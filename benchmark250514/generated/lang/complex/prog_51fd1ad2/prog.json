@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello World\");\n\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i);\n        }\n\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n\n        StrBuilder anotherStrBuilder = new StrBuilder();\n        anotherStrBuilder.append(\"Sum is: \").append(sum);\n\n        /* write */ strBuilder.deleteFirst(\"Hello \");\n        \n        if (!anotherStrBuilder.isEmpty()) {\n            System.out.println(anotherStrBuilder.toString());\n        }\n\n        int max = Integer.MIN_VALUE;\n        for (int num : numbers) {\n            if (num > max) {\n                max = num;\n            }\n        }\n\n        System.out.println(\"Max number is: \" + max);\n\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n\n        for (int i = 0; i < numbers.size(); i++) {\n            System.out.println(\"Number at index \" + i + \" is: \" + numbers.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello World\");\n\n        /* write */ strBuilder.deleteFirst(\"Hello \");\n        /* read */ String result = strBuilder.toString();\n\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "deleteFirst",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.DateAxis;\nimport java.text.SimpleDateFormat;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a DateAxis instance\n        DateAxis dateAxis = new DateAxis();\n        \n        // Create a SimpleDateFormat object to set as the date format override\n        SimpleDateFormat dateFormat = new SimpleDateFormat(\"yyyy-MM-dd\");\n        \n        // Use the write method to set the date format override\n        /* write */ dateAxis.setDateFormatOverride(dateFormat);\n        \n        // Use the read method to get the date format override\n        /* read */ SimpleDateFormat resultFormat = (SimpleDateFormat) dateAxis.getDateFormatOverride();\n        \n        // Print the pattern of the retrieved date format to verify it matches the written value\n        System.out.println(resultFormat.toPattern());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.DateAxis",
+        "write_method": "setDateFormatOverride",
+        "read_class": "org.jfree.chart.axis.DateAxis",
+        "read_method": "getDateFormatOverride"
+    }
+}

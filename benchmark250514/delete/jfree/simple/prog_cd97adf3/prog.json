@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.SymbolAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the SymbolAxis object with dummy data\n        String[] symbols = {\"A\", \"B\", \"C\"};\n        SymbolAxis symbolAxis = new SymbolAxis(\"Example Axis\", symbols);\n\n        // Write operation: Set the visibility of tick labels to true\n        /* write */ symbolAxis.setTickLabelsVisible(true);\n\n        // Read operation: Get the visibility status of tick labels\n        /* read */ boolean tickLabelsVisible = symbolAxis.getTickLabelsVisible();\n\n        // Output the result\n        System.out.println(\"Tick Labels Visible: \" + tickLabelsVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.SymbolAxis",
+        "write_method": "setTickLabelsVisible",
+        "read_class": "org.jfree.chart.axis.SymbolAxis",
+        "read_method": "getTickLabelsVisible"
+    }
+}

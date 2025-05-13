@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_a7dded27/Main.java:28: 错误: 找不到符号
+            totalDays += month.getLastDay().getDayOfMonth();
+                              ^
+  符号:   方法 getLastDay()
+  位置: 类型为Month的变量 month
+generated/jfree/complex/prog_a7dded27/Main.java:37: 错误: 找不到符号
+        System.out.println("Is Leap Year: " + year.isLeapYear());
+                                                  ^
+  符号:   方法 isLeapYear()
+  位置: 类型为Year的变量 year
+generated/jfree/complex/prog_a7dded27/Main.java:40: 错误: 找不到符号
+        int numberOfMonths = year.getMonths().length;
+                                 ^
+  符号:   方法 getMonths()
+  位置: 类型为Year的变量 year
+3 个错误

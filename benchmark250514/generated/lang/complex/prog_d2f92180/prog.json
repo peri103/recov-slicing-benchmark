@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize StrBuilder and perform original operations\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello World\");\n        \n        // Additional operations with StrBuilder\n        strBuilder.append(\"!\");\n        strBuilder.insert(0, \"Greetings \");\n        \n        // Work with ArrayList\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i);\n        }\n\n        // Perform operations on HashMap\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n        map.put(\"three\", 3);\n        \n        // Modify StrBuilder\n        /* write */ strBuilder.deleteFirst(\"Hello\");\n        \n        // More operations on ArrayList\n        for (Integer num : numbers) {\n            if (num % 2 == 0) {\n                System.out.println(\"Even number: \" + num);\n            }\n        }\n\n        // Access and print HashMap values\n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n        \n        // Final read operation and output\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello World\");\n\n        /* write */ strBuilder.deleteFirst(\"Hello\");\n        \n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "deleteFirst",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

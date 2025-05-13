@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        \n        long timeToSet = 1609459200000L; // Example timestamp (January 1, 2021)\n        /* write */ zipEntry.setTime(timeToSet);\n        \n        /* read */ long retrievedTime = zipEntry.getTime();\n        \n        System.out.println(\"Time set in ZipArchiveEntry: \" + retrievedTime);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setTime",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getTime"
+    }
+}

@@ -1,0 +1,4 @@
+generated/collections/multi_files/prog_24bfe5b5/Main.java:17: 错误: 程序包Map不存在
+        for (Map.Entry<Object, Object> entry : course.getAllGrades().entrySet()) {
+                ^
+1 个错误

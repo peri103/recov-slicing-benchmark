@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.SortedSetMultimap;\nimport com.google.common.collect.TreeMultimap;\nimport java.util.SortedSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedSetMultimap<String, Integer> multimap = TreeMultimap.create();\n        \n        /* write */ multimap.put(\"key1\", 100);\n        \n        /* read */ SortedSet<Integer> values = multimap.get(\"key1\");\n        System.out.println(values);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.SortedSetMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.SortedSetMultimap",
+        "read_method": "get"
+    }
+}

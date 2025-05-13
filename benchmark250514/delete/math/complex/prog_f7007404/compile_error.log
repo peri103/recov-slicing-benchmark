@@ -1,0 +1,11 @@
+generated/math/complex/prog_f7007404/Main.java:10: 错误: 找不到符号
+        /* write */ RealMatrix diagonalMatrix = MatrixUtils.createDiagonalMatrix(diagonalValues);
+                                                           ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_f7007404/Main.java:44: 错误: 找不到符号
+        RealMatrix newDiagonalMatrix = MatrixUtils.createDiagonalMatrix(newDiagonalValues);
+                                                  ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+2 个错误

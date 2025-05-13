@@ -1,0 +1,16 @@
+generated/math/complex/prog_de418038/Main.java:16: 错误: 找不到符号
+        /* write */ RealMatrix triangularMatrix = MatrixUtils.createTriangularMatrix(data);
+                                                             ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_de418038/Main.java:38: 错误: 找不到符号
+        RealMatrix anotherMatrix = MatrixUtils.createTriangularMatrix(data2);
+                                              ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_de418038/Main.java:53: 错误: 找不到符号
+        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getTriangularMatrix(triangularMatrix);
+                                                           ^
+  符号:   方法 getTriangularMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+3 个错误

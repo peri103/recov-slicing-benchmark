@@ -1,0 +1,6 @@
+generated/math/simple/prog_e873aa41/Main.java:13: 错误: 找不到符号
+        RealMatrix retrievedMatrix = MatrixUtils.getRowRealMatrix(matrix.getData(), 0);
+                                                ^
+  符号:   方法 getRowRealMatrix(double[][],int)
+  位置: 类 MatrixUtils
+1 个错误

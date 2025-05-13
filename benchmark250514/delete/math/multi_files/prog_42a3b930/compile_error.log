@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_42a3b930/Main.java:11: 错误: 找不到符号
+        RealMatrix transposedMatrix = matrixOps.transposeMatrix(matrixData);
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_42a3b930/VectorOperations.java:9: 错误: 找不到符号
+        this.vector = MatrixUtils.createArrayRealVector(data);
+                                 ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+2 个错误

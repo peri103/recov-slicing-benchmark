@@ -1,0 +1,13 @@
+generated/jfree/complex/prog_32ded3e3/Main.java:11: 错误: TickUnit是抽象的; 无法实例化
+        TickUnit tickUnit = new TickUnit(5.0);
+                            ^
+generated/jfree/complex/prog_32ded3e3/Main.java:28: 错误: 不兼容的类型: TickUnit无法转换为NumberTickUnit
+        /* write */ numberAxis.setTickUnit(tickUnit);
+                                           ^
+generated/jfree/complex/prog_32ded3e3/Main.java:49: 错误: 找不到符号
+        categoryAxis.setCategoryLabelPositions(CategoryAxis.DEFAULT_CATEGORY_LABEL_POSITIONS);
+                                                           ^
+  符号:   变量 DEFAULT_CATEGORY_LABEL_POSITIONS
+  位置: 类 CategoryAxis
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+3 个错误

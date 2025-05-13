@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParams = new GzipParameters();\n        /* write */ gzipParams.setCRC32(123456789L);\n        /* read */ long crc32Value = gzipParams.getCRC32();\n        System.out.println(crc32Value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setCRC32",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getCRC32"
+    }
+}

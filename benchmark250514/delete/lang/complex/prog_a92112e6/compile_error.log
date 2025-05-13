@@ -1,0 +1,11 @@
+generated/lang/complex/prog_a92112e6/Main.java:28: 错误: 对于StrBuilder(StrBuilder), 找不到合适的构造器
+        StrBuilder reversedStrBuilder = new StrBuilder(strBuilder).reverse();
+                                        ^
+    构造器 StrBuilder.StrBuilder(int)不适用
+      (参数不匹配; StrBuilder无法转换为int)
+    构造器 StrBuilder.StrBuilder(String)不适用
+      (参数不匹配; StrBuilder无法转换为String)
+注: generated/lang/complex/prog_a92112e6/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

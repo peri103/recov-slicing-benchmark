@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an anonymous subclass of ForwardingMap to use the write and read methods\n        ForwardingMap<String, String> map = new ForwardingMap<String, String>() {\n            private final Map<String, String> delegate = new HashMap<>();\n\n            @Override\n            protected Map<String, String> delegate() {\n                return delegate;\n            }\n        };\n\n        /* write */ map.put(\"key\", \"value\");\n        /* read */ String value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ForwardingMap",
+        "read_method": "get"
+    }
+}

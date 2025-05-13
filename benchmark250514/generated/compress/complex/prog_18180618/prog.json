@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"file.txt\");\n        ArrayList<String> names = new ArrayList<>();\n        \n        // Simulate complex operations\n        for (int i = 0; i < 5; i++) {\n            names.add(\"name\" + i);\n        }\n        \n        // Perform operations on the list\n        for (String name : names) {\n            System.out.println(\"Processing: \" + name);\n        }\n        \n        /* write */ entry.setLinkName(\"link.txt\");\n        \n        // More operations\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n        \n        int sum = 0;\n        for (Integer number : numbers) {\n            sum += number;\n        }\n        \n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        // Retrieve the link name after various unrelated operations\n        /* read */ String linkName = entry.getLinkName();\n        System.out.println(linkName);\n        \n        // Additional operations with numbers list\n        numbers.add(100);\n        numbers.remove(0);\n        \n        for (int i = 0; i < numbers.size(); i++) {\n            System.out.println(\"Number at index \" + i + \": \" + numbers.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"file.txt\");\n        /* write */ entry.setLinkName(\"link.txt\");\n        /* read */ String linkName = entry.getLinkName();\n        System.out.println(linkName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setLinkName",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getLinkName"
+    }
+}

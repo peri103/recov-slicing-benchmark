@@ -1,0 +1,13 @@
+generated/csv/complex/prog_0d1b63ff/Main.java:14: 错误: 找不到符号
+        CSVRecord csvRecord = CSVRecord.parse("value1,value2,value3", csvFormat);
+                                       ^
+  符号:   方法 parse(String,CSVFormat)
+  位置: 类 CSVRecord
+generated/csv/complex/prog_0d1b63ff/Main.java:32: 错误: 找不到符号
+        CSVRecord anotherRecord = CSVRecord.parse("data1,data2,data3", anotherFormat);
+                                           ^
+  符号:   方法 parse(String,CSVFormat)
+  位置: 类 CSVRecord
+注: generated/csv/complex/prog_0d1b63ff/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

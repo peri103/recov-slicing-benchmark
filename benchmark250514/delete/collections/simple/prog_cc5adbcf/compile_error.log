@@ -1,0 +1,4 @@
+generated/collections/simple/prog_cc5adbcf/Main.java:6: 错误: AbstractMapDecorator是抽象的; 无法实例化
+        AbstractMapDecorator<String, Integer> map = new AbstractMapDecorator<>(new HashMap<>());
+                                                    ^
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYAreaRenderer;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of XYAreaRenderer\n        XYAreaRenderer renderer = new XYAreaRenderer();\n\n        // Define a paint color\n        Paint fillPaint = Color.BLUE;\n\n        // Set the series fill paint for series index 0\n        /* write */ renderer.setSeriesFillPaint(0, fillPaint);\n\n        // Retrieve the series fill paint for series index 0\n        /* read */ Paint retrievedPaint = renderer.getSeriesFillPaint(0);\n\n        // Print the result to verify\n        System.out.println(\"Retrieved Paint: \" + retrievedPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYAreaRenderer",
+        "write_method": "setSeriesFillPaint",
+        "read_class": "org.jfree.chart.renderer.xy.XYAreaRenderer",
+        "read_method": "getSeriesFillPaint"
+    }
+}

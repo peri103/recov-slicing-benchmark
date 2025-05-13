@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        // Unrelated code: Calendar manipulation\n        Calendar calendar = Calendar.getInstance();\n        calendar.setTime(date);\n        calendar.add(Calendar.DAY_OF_MONTH, 5);\n        Date futureDate = calendar.getTime();\n        System.out.println(\"Future Date: \" + futureDate);\n\n        // Unrelated code: Adding hours to the date\n        Date datePlusHours = DateUtils.addHours(date, 3);\n        System.out.println(\"Date plus 3 hours: \" + datePlusHours);\n        \n        /* write */ Date updatedDate = DateUtils.setSeconds(date, 30);\n        \n        // Further unrelated code: Adding minutes to the updated date\n        Date datePlusMinutes = DateUtils.addMinutes(updatedDate, 15);\n        System.out.println(\"Updated Date plus 15 minutes: \" + datePlusMinutes);\n        \n        // Unrelated code: Rounding date to the nearest hour\n        Date roundedDate = DateUtils.round(datePlusMinutes, Calendar.HOUR);\n        System.out.println(\"Rounded Date: \" + roundedDate);\n        \n        /* read */ Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.SECOND);\n        \n        System.out.println(\"Truncated Date: \" + truncatedDate);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        /* write */ Date updatedDate = DateUtils.setSeconds(date, 30);\n        \n        /* read */ Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.SECOND);\n        \n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "setSeconds",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

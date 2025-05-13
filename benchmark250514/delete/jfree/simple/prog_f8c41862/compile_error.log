@@ -1,0 +1,58 @@
+generated/jfree/simple/prog_f8c41862/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/simple/prog_f8c41862/Main.java:6: 错误: 找不到符号
+        Renderer renderer = new Renderer() {
+        ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/simple/prog_f8c41862/Main.java:6: 错误: 找不到符号
+        Renderer renderer = new Renderer() {
+                                ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/simple/prog_f8c41862/Main.java:19: 错误: 找不到符号
+            public java.awt.geom.Shape createHotSpotBounds(int series, int item, java.awt.geom.Rectangle2D dataArea, org.jfree.chart.axis.ValueAxis domainAxis, org.jfree.chart.axis.ValueAxis rangeAxis, org.jfree.data.xy.XYDataset dataset) {
+                                ^
+  符号:   类 Shape
+  位置: 程序包 java.awt.geom
+generated/jfree/simple/prog_f8c41862/Main.java:24: 错误: 找不到符号
+            public java.awt.geom.Shape getItemShape(int series, int item) {
+                                ^
+  符号:   类 Shape
+  位置: 程序包 java.awt.geom
+generated/jfree/simple/prog_f8c41862/Main.java:29: 错误: 找不到符号
+            public java.awt.geom.Shape getSeriesShape(int series) {
+                                ^
+  符号:   类 Shape
+  位置: 程序包 java.awt.geom
+generated/jfree/simple/prog_f8c41862/Main.java:8: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:13: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:18: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:23: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:28: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:33: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:38: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:43: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_f8c41862/Main.java:48: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+15 个错误

@@ -1,0 +1,21 @@
+generated/compress/complex/prog_2a195e74/Main.java:17: 错误: 找不到符号
+        /* write */ entry.setUserName("testUser");
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_2a195e74/Main.java:28: 错误: 找不到符号
+        /* read */ String userName = entry.getUserName();
+                                          ^
+  符号:   方法 getUserName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_2a195e74/Main.java:40: 错误: 找不到符号
+        anotherEntry.setUserName("anotherUser");
+                    ^
+  符号:   方法 setUserName(String)
+  位置: 类型为DumpArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_2a195e74/Main.java:41: 错误: 找不到符号
+        System.out.println("Another User Name: " + anotherEntry.getUserName());
+                                                               ^
+  符号:   方法 getUserName()
+  位置: 类型为DumpArchiveEntry的变量 anotherEntry
+4 个错误

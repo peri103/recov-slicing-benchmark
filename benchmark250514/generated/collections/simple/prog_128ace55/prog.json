@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.AbstractMultiValuedMap;\nimport org.apache.commons.collections4.multimap.HashSetValuedHashMap;\nimport java.util.Collection;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractMultiValuedMap<String, Integer> multiValuedMap = new HashSetValuedHashMap<>();\n        \n        /* write */ multiValuedMap.put(\"key1\", 10);\n        \n        /* read */ Collection<Integer> values = multiValuedMap.get(\"key1\");\n        \n        for (Integer value : values) {\n            System.out.println(value);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.AbstractMultiValuedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.AbstractMultiValuedMap",
+        "read_method": "get"
+    }
+}

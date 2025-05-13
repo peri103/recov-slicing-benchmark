@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CSVFormat object\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Use the write method to modify the format\n        /* write */ format = format.withIgnoreHeaderCase();\n\n        // Create a dummy CSVRecord object for demonstration purposes\n        CSVRecord record = new CSVRecord() {\n            @Override\n            public boolean isMapped(String name) {\n                // Simulate the record being mapped\n                return true;\n            }\n\n            // Other overridden methods would go here, but are omitted for simplicity\n        };\n\n        // Use the read method to check if a header is mapped\n        /* read */ boolean isMapped = record.isMapped(\"headerName\");\n        \n        // Print the result\n        System.out.println(\"Is header mapped: \" + isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

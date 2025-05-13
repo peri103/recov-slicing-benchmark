@@ -1,0 +1,9 @@
+generated/jfree/complex/prog_4066c1e3/Main.java:17: 错误: 找不到符号
+            public void draw(java.awt.Graphics2D g2, java.awt.geom.Rectangle2D area, Point2D anchor, PlotState parentState, PlotRenderingInfo info) {
+                                                                                                     ^
+  符号: 类 PlotState
+generated/jfree/complex/prog_4066c1e3/Main.java:17: 错误: 找不到符号
+            public void draw(java.awt.Graphics2D g2, java.awt.geom.Rectangle2D area, Point2D anchor, PlotState parentState, PlotRenderingInfo info) {
+                                                                                                                            ^
+  符号: 类 PlotRenderingInfo
+2 个错误

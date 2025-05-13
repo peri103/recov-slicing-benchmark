@@ -1,0 +1,11 @@
+generated/compress/complex/prog_f68f66a2/Main.java:18: 错误: 找不到符号
+        entry2.setSize(54321); // Different write-read pair
+              ^
+  符号:   方法 setSize(int)
+  位置: 类型为ArArchiveEntry的变量 entry2
+generated/compress/complex/prog_f68f66a2/Main.java:28: 错误: 找不到符号
+        /* write */ entry.setSize(12345);
+                         ^
+  符号:   方法 setSize(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+2 个错误

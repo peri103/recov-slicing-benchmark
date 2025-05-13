@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testfile\");\n\n        // Additional code for complexity\n        ArrayList<Integer> numberList = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numberList.add(i * 100);\n        }\n\n        HashMap<String, Integer> map = new HashMap<>();\n        for (int i = 0; i < numberList.size(); i++) {\n            map.put(\"Key\" + i, numberList.get(i));\n        }\n\n        // Original write operation\n        /* write */ entry.setUnixMode(0755);\n\n        // More operations\n        int sum = 0;\n        for (Integer num : numberList) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n\n        // Original read operation\n        /* read */ int mode = entry.getUnixMode();\n        System.out.println(\"Unix Mode: \" + Integer.toOctalString(mode));\n\n        // Final operations\n        int product = 1;\n        for (int i = 1; i <= 5; i++) {\n            product *= i;\n        }\n        System.out.println(\"Product of numbers from 1 to 5: \" + product);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testfile\");\n        /* write */ entry.setUnixMode(0755);\n        /* read */ int mode = entry.getUnixMode();\n        System.out.println(\"Unix Mode: \" + Integer.toOctalString(mode));\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setUnixMode",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getUnixMode"
+    }
+}

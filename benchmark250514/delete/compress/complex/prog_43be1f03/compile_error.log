@@ -1,0 +1,16 @@
+generated/compress/complex/prog_43be1f03/Main.java:9: 错误: 找不到符号
+        entry2.setFileType(CpioArchiveEntry.C_ISDIR);
+              ^
+  符号:   方法 setFileType(int)
+  位置: 类型为CpioArchiveEntry的变量 entry2
+generated/compress/complex/prog_43be1f03/Main.java:32: 错误: 找不到符号
+        /* write */ entry.setFileType(CpioArchiveEntry.C_ISREG);
+                         ^
+  符号:   方法 setFileType(int)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_43be1f03/Main.java:39: 错误: 找不到符号
+        /* read */ int fileType = entry.getFileType();
+                                       ^
+  符号:   方法 getFileType()
+  位置: 类型为CpioArchiveEntry的变量 entry
+3 个错误

@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_05412906/Main.java:29: 错误: 找不到符号
+        PiePlot piePlot = chartUtils.getPiePlot();
+        ^
+  符号:   类 PiePlot
+  位置: 类 Main
+1 个错误

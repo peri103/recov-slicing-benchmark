@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.WaferMapPlot;\nimport org.jfree.chart.renderer.PaintScale;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        WaferMapPlot plot = new WaferMapPlot();\n        PaintScale paintScale = new PaintScale() {\n            @Override\n            public double getLowerBound() {\n                return 0.0;\n            }\n\n            @Override\n            public double getUpperBound() {\n                return 1.0;\n            }\n\n            @Override\n            public Color getPaint(double value) {\n                return Color.RED;\n            }\n        };\n        \n        /* write */ plot.setPaintScale(paintScale);\n        /* read */ PaintScale retrievedPaintScale = plot.getPaintScale();\n\n        if (retrievedPaintScale != null) {\n            System.out.println(\"PaintScale set and retrieved successfully.\");\n        } else {\n            System.out.println(\"Failed to retrieve PaintScale.\");\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.WaferMapPlot",
+        "write_method": "setPaintScale",
+        "read_class": "org.jfree.chart.plot.WaferMapPlot",
+        "read_method": "getPaintScale"
+    }
+}

@@ -1,0 +1,6 @@
+generated/compress/complex/prog_983e174d/Main.java:12: 错误: 找不到符号
+        entry.setLastModified(lastModifiedTime);
+             ^
+  符号:   方法 setLastModified(long)
+  位置: 类型为ArArchiveEntry的变量 entry
+1 个错误

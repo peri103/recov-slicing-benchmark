@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_cce774d5/Main.java:24: 错误: 找不到符号
+            valueAxis.setTickUnit(new org.jfree.chart.axis.NumberTickUnit(i + 1));
+                     ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 valueAxis
+generated/jfree/complex/prog_cce774d5/Main.java:25: 错误: 找不到符号
+            System.out.println("Tick Unit: " + valueAxis.getTickUnit().getSize());
+                                                        ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 valueAxis
+2 个错误

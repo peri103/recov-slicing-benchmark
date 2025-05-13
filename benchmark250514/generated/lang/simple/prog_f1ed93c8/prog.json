@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Calendar;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a Calendar object to the current date\n        Calendar calendar = Calendar.getInstance();\n        Date currentDate = calendar.getTime();\n\n        // Use DateUtils to add months to the current date\n        /* write */ Date newDate = DateUtils.addMonths(currentDate, 3);\n\n        // Use DateUtils to truncate the date to remove time part\n        /* read */ Date truncatedDate = DateUtils.truncate(newDate, Calendar.DAY_OF_MONTH);\n\n        // Print the truncated date\n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addMonths",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

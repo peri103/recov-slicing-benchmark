@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_b145cf2f/Main.java:10: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        Axis valueAxis = new ValueAxis() {
+                         ^
+  需要: String,TickUnitSource
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_b145cf2f/Main.java:10: 错误: <匿名Main$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        Axis valueAxis = new ValueAxis() {
+                                         ^
+generated/jfree/complex/prog_b145cf2f/Main.java:11: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_b145cf2f/Main.java:16: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+4 个错误

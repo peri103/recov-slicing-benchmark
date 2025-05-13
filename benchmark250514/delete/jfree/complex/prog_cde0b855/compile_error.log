@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_cde0b855/Main.java:21: 错误: 不兼容的类型: LegendItem无法转换为LegendItemSource
+        LegendTitle legendTitle = new LegendTitle(legendItem);
+                                                  ^
+generated/jfree/complex/prog_cde0b855/Main.java:30: 错误: 不兼容的类型: LegendItem无法转换为LegendItemSource
+        container.add(new LegendTitle(anotherItem));
+                                      ^
+generated/jfree/complex/prog_cde0b855/Main.java:51: 错误: 不兼容的类型: LegendItem无法转换为LegendItemSource
+        anotherContainer.add(new LegendTitle(thirdItem));
+                                             ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+3 个错误

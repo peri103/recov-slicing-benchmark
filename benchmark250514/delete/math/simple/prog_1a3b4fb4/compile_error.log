@@ -1,0 +1,13 @@
+generated/math/simple/prog_1a3b4fb4/Main.java:9: 错误: 无法将类 DiagonalMatrix中的方法 setEntry应用到给定类型;
+        /* write */ matrix.setEntry(0, 1.5);
+                          ^
+  需要: int,int,double
+  找到: int,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/simple/prog_1a3b4fb4/Main.java:12: 错误: 无法将类 DiagonalMatrix中的方法 getEntry应用到给定类型;
+        /* read */ double value = matrix.getEntry(0);
+                                        ^
+  需要: int,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+2 个错误

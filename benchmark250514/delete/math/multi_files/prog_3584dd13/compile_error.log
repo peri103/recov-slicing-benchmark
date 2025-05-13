@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_3584dd13/MatrixOperations.java:8: 错误: 找不到符号
+        /* write */ identityMatrix = MatrixUtils.createIdentityMatrix(size);
+                                                ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_3584dd13/Main.java:22: 错误: 找不到符号
+        RealMatrix anotherMatrix = MatrixUtils.createRealMatrix(new double[][] {
+                                   ^
+  符号:   变量 MatrixUtils
+  位置: 类 Main
+2 个错误

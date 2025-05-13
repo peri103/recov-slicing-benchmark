@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        double[][] data = {{1.0, 2.0}, {3.0, 4.0}};\n        \n        /* write */ RealMatrix matrix = MatrixUtils.createArray2DRowRealMatrix(data);\n        \n        /* read */ double[][] array = matrix.getData();\n        \n        for (int i = 0; i < array.length; i++) {\n            for (int j = 0; j < array[i].length; j++) {\n                System.out.print(array[i][j] + \" \");\n            }\n            System.out.println();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createArray2DRowRealMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getArray2DRowRealMatrix"
+    }
+}

@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_2274843d/Main.java:15: 错误: 找不到符号
+        /* write */ labelGenerator.setFormatString(formatMap.get("XY"));
+                                  ^
+  符号:   方法 setFormatString(String)
+  位置: 类型为StandardXYItemLabelGenerator的变量 labelGenerator
+generated/jfree/complex/prog_2274843d/Main.java:17: 错误: 找不到符号
+        pieLabelGenerator.setSectionFormat("{0} - {1}");
+                         ^
+  符号:   方法 setSectionFormat(String)
+  位置: 类型为StandardPieSectionLabelGenerator的变量 pieLabelGenerator
+generated/jfree/complex/prog_2274843d/Main.java:30: 错误: 找不到符号
+        String pieFormatString = pieLabelGenerator.getSectionFormat();
+                                                  ^
+  符号:   方法 getSectionFormat()
+  位置: 类型为StandardPieSectionLabelGenerator的变量 pieLabelGenerator
+3 个错误

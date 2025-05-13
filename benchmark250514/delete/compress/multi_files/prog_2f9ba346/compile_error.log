@@ -1,0 +1,31 @@
+generated/compress/multi_files/prog_2f9ba346/GzipHandler.java:11: 错误: 找不到符号
+        /* write */ gzipParameters.setCompressedSize(size);
+                                  ^
+  符号:   方法 setCompressedSize(long)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/multi_files/prog_2f9ba346/GzipHandler.java:15: 错误: 找不到符号
+        return gzipParameters.getCompressedSize();
+                             ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/multi_files/prog_2f9ba346/GzipManager.java:7: 错误: 找不到符号
+        /* write */ gzipParameters.setCompressedSize(size);
+                                  ^
+  符号:   方法 setCompressedSize(long)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/multi_files/prog_2f9ba346/GzipManager.java:11: 错误: 找不到符号
+        return gzipParameters.getCompressedSize();
+                             ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/multi_files/prog_2f9ba346/GzipConfig.java:7: 错误: 找不到符号
+        /* write */ gzipParameters.setCompressedSize(size);
+                                  ^
+  符号:   方法 setCompressedSize(long)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/multi_files/prog_2f9ba346/GzipConfig.java:11: 错误: 找不到符号
+        return gzipParameters.getCompressedSize();
+                             ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParameters
+6 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYStepRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYStepRenderer renderer = new XYStepRenderer();\n        /* write */ renderer.setBaseShapesVisible(true);\n        /* read */ boolean isVisible = renderer.getBaseShapesVisible();\n        System.out.println(isVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYStepRenderer",
+        "write_method": "setBaseShapesVisible",
+        "read_class": "org.jfree.chart.renderer.xy.XYStepRenderer",
+        "read_method": "getBaseShapesVisible"
+    }
+}

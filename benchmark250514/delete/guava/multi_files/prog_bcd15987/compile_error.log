@@ -1,0 +1,14 @@
+generated/guava/multi_files/prog_bcd15987/Course.java:4: 错误: 程序包ImmutableTable不存在
+    private ImmutableTable.Builder<String, String, String> courseDetailsBuilder;
+                          ^
+generated/guava/multi_files/prog_bcd15987/Course.java:7: 错误: 找不到符号
+        courseDetailsBuilder = ImmutableTable.builder();
+                               ^
+  符号:   变量 ImmutableTable
+  位置: 类 Course
+generated/guava/multi_files/prog_bcd15987/Course.java:17: 错误: 找不到符号
+        ImmutableTable<String, String, String> courseDetails = courseDetailsBuilder.build();
+        ^
+  符号:   类 ImmutableTable
+  位置: 类 Course
+3 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.TransformedMultiValuedMap;\nimport org.apache.commons.collections4.MultiValuedMap;\nimport org.apache.commons.collections4.map.MultiValueMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        MultiValuedMap<String, Integer> originalMap = new MultiValueMap<>();\n        TransformedMultiValuedMap<String, Integer> transformedMap = TransformedMultiValuedMap.transformingMap(originalMap, \n            key -> key.toUpperCase(), \n            value -> value * 2);\n\n        /* write */ transformedMap.put(\"key\", 10);\n\n        /* read */ Collection<Integer> values = transformedMap.get(\"key\");\n        for (Integer value : values) {\n            System.out.println(value);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.TransformedMultiValuedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.TransformedMultiValuedMap",
+        "read_method": "get"
+    }
+}

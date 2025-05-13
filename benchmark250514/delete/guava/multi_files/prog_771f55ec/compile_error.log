@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_771f55ec/Main.java:8: 错误: 找不到符号
+        ImmutableListMultimap<String, String> students = courseManager.getCourseStudents("Math");
+        ^
+  符号:   类 ImmutableListMultimap
+  位置: 类 Main
+1 个错误

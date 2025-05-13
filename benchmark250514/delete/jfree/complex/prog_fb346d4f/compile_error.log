@@ -1,0 +1,14 @@
+generated/jfree/complex/prog_fb346d4f/Main.java:14: 错误: TickUnit是抽象的; 无法实例化
+        TickUnit tickUnit = new TickUnit(5.0);
+                            ^
+generated/jfree/complex/prog_fb346d4f/Main.java:17: 错误: 找不到符号
+        /* write */ axis.setTickUnit(tickUnit);
+                        ^
+  符号:   方法 setTickUnit(TickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_fb346d4f/Main.java:41: 错误: 找不到符号
+        /* read */ TickUnit retrievedTickUnit = axis.getTickUnit();
+                                                    ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 axis
+3 个错误

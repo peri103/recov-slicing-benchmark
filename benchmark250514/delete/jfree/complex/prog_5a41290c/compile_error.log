@@ -1,0 +1,36 @@
+generated/jfree/complex/prog_5a41290c/Main.java:5: 错误: 找不到符号
+import org.jfree.chart.axis.CategoryTickUnit;
+                           ^
+  符号:   类 CategoryTickUnit
+  位置: 程序包 org.jfree.chart.axis
+generated/jfree/complex/prog_5a41290c/Main.java:13: 错误: 找不到符号
+        CategoryTickUnit categoryTickUnit = new CategoryTickUnit(2.0);
+        ^
+  符号:   类 CategoryTickUnit
+  位置: 类 Main
+generated/jfree/complex/prog_5a41290c/Main.java:13: 错误: 找不到符号
+        CategoryTickUnit categoryTickUnit = new CategoryTickUnit(2.0);
+                                                ^
+  符号:   类 CategoryTickUnit
+  位置: 类 Main
+generated/jfree/complex/prog_5a41290c/Main.java:35: 错误: 找不到符号
+        /* write */ axis.setTickUnit(tickUnit);
+                        ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_5a41290c/Main.java:43: 错误: 找不到符号
+        /* read */ NumberTickUnit retrievedTickUnit = axis.getTickUnit();
+                                                          ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_5a41290c/Main.java:55: 错误: 找不到符号
+        CategoryTickUnit retrievedCategoryTickUnit = categoryAxis.getTickUnit();
+        ^
+  符号:   类 CategoryTickUnit
+  位置: 类 Main
+generated/jfree/complex/prog_5a41290c/Main.java:55: 错误: 找不到符号
+        CategoryTickUnit retrievedCategoryTickUnit = categoryAxis.getTickUnit();
+                                                                 ^
+  符号:   方法 getTickUnit()
+  位置: 类型为CategoryAxis的变量 categoryAxis
+7 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.title.Title;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Title title = new Title();\n        ArrayList<String> titleList = new ArrayList<>();\n        \n        // Adding some titles to the list\n        titleList.add(\"Title 1\");\n        titleList.add(\"Title 2\");\n        titleList.add(\"Title 3\");\n        \n        // Set the text for the title\n        /* write */ title.setText(\"Hello World\");\n        \n        // Manipulate the list of titles\n        for (String t : titleList) {\n            System.out.println(\"Processing: \" + t);\n        }\n        \n        // Perform operations on the title\n        String newTitle = \"New Title\";\n        titleList.add(newTitle);\n        titleList.remove(0);\n        \n        // More complex operations\n        ArrayList<String> processedTitles = new ArrayList<>();\n        for (String t : titleList) {\n            processedTitles.add(t.toUpperCase());\n        }\n        \n        // Print processed titles\n        for (String t : processedTitles) {\n            System.out.println(\"Processed Title: \" + t);\n        }\n        \n        // Get the text from the title\n        /* read */ String value = title.getText();\n        System.out.println(value);\n        \n        // More operations after reading\n        titleList.add(value);\n        for (String t : titleList) {\n            System.out.println(\"Final Title List: \" + t);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.title.Title;\n\npublic class Main {\n    public static void main(String[] args) {\n        Title title = new Title();\n        /* write */ title.setText(\"Hello World\");\n        /* read */ String value = title.getText();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.Title",
+        "write_method": "setText",
+        "read_class": "org.jfree.chart.title.Title",
+        "read_method": "getText"
+    }
+}

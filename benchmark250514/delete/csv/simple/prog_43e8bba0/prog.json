@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with ignoring header case\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withIgnoreHeaderCase();\n\n        // Create a mock CSVRecord to demonstrate isMapped\n        CSVRecord record = new CSVRecord(null, new String[]{\"Header1\", \"Header2\"}, null, 0, 0);\n\n        // Check if a header is mapped\n        /* read */ boolean isMapped = record.isMapped(\"header1\");\n        System.out.println(isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

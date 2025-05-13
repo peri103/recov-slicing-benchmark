@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.LinkedHashMultiset;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashMultiset<String> multiset = LinkedHashMultiset.create();\n        Map<String, Integer> map = new HashMap<>();\n\n        // Simulate some unrelated operations\n        map.put(\"key1\", 10);\n        map.put(\"key2\", 20);\n\n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            System.out.println(\"Map entry: \" + entry.getKey() + \" -> \" + entry.getValue());\n        }\n\n        /* write */ multiset.add(\"example\");\n\n        // Perform some calculations\n        int sum = 0;\n        for (int value : map.values()) {\n            sum += value;\n        }\n        System.out.println(\"Sum of map values: \" + sum);\n\n        // More unrelated operations\n        if (map.containsKey(\"key1\")) {\n            map.put(\"key1\", map.get(\"key1\") + 5);\n        }\n\n        // Output modified map\n        System.out.println(\"Modified map: \" + map);\n\n        /* read */ int count = multiset.count(\"example\");\n        System.out.println(count);\n\n        // Further unrelated operations\n        LinkedHashMultiset<Integer> intMultiset = LinkedHashMultiset.create();\n        for (int i = 0; i < 5; i++) {\n            intMultiset.add(i);\n        }\n\n        for (int i = 0; i < 5; i++) {\n            System.out.println(\"Count of \" + i + \": \" + intMultiset.count(i));\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.LinkedHashMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashMultiset<String> multiset = LinkedHashMultiset.create();\n        /* write */ multiset.add(\"example\");\n        /* read */ int count = multiset.count(\"example\");\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedHashMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.LinkedHashMultiset",
+        "read_method": "count"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingSet;\nimport java.util.HashSet;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating an anonymous subclass of ForwardingSet to override the delegate() method\n        ForwardingSet<Integer> forwardingSet = new ForwardingSet<Integer>() {\n            private final Set<Integer> delegate = new HashSet<>();\n\n            @Override\n            protected Set<Integer> delegate() {\n                return delegate;\n            }\n        };\n\n        /* write */ forwardingSet.add(42);\n        /* read */ boolean containsValue = forwardingSet.contains(42);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ForwardingSet",
+        "read_method": "contains"
+    }
+}

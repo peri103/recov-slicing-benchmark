@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date currentDate = new Date();\n        \n        // Add 10 seconds to the current date\n        /* write */ Date newDate = DateUtils.addSeconds(currentDate, 10);\n        \n        // Truncate the new date to the nearest second\n        /* read */ Date truncatedDate = DateUtils.truncate(newDate, java.util.Calendar.SECOND);\n        \n        System.out.println(\"Original Date: \" + currentDate);\n        System.out.println(\"New Date: \" + newDate);\n        System.out.println(\"Truncated Date: \" + truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addSeconds",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

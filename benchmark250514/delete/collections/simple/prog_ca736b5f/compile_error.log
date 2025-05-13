@@ -1,0 +1,16 @@
+generated/collections/simple/prog_ca736b5f/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractBidiMapDecorator;
+                                          ^
+  符号:   类 AbstractBidiMapDecorator
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/simple/prog_ca736b5f/Main.java:7: 错误: 找不到符号
+        AbstractBidiMapDecorator<String, Integer> bidiMap = new AbstractBidiMapDecorator<>(new TreeBidiMap<>());
+        ^
+  符号:   类 AbstractBidiMapDecorator
+  位置: 类 Main
+generated/collections/simple/prog_ca736b5f/Main.java:7: 错误: 找不到符号
+        AbstractBidiMapDecorator<String, Integer> bidiMap = new AbstractBidiMapDecorator<>(new TreeBidiMap<>());
+                                                                ^
+  符号:   类 AbstractBidiMapDecorator
+  位置: 类 Main
+3 个错误

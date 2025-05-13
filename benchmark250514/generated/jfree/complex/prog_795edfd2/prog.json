@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.chart.plot.Plot;\nimport org.jfree.chart.plot.XYPlot;\nimport org.jfree.chart.ChartFactory;\nimport org.jfree.chart.JFreeChart;\nimport org.jfree.data.xy.XYSeries;\nimport org.jfree.data.xy.XYSeriesCollection;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an Axis instance\n        Axis axis = new NumberAxis();\n        /* write */ axis.setLabel(\"X-Axis\");\n\n        // Create a dataset\n        XYSeries series = new XYSeries(\"Data\");\n        for (int i = 0; i < 10; i++) {\n            series.add(i, Math.sin(i));\n        }\n        \n        XYSeriesCollection dataset = new XYSeriesCollection(series);\n\n        // Create a plot\n        Plot plot = new XYPlot();\n        ((XYPlot) plot).setDataset(dataset);\n        ((XYPlot) plot).setDomainAxis((NumberAxis) axis);\n\n        // Create a chart\n        JFreeChart chart = ChartFactory.createXYLineChart(\n            \"Sample Chart\",\n            /* read */ axis.getLabel(),\n            \"Y-Axis\",\n            dataset\n        );\n\n        // Print chart title\n        System.out.println(chart.getTitle().getText());\n\n        // Additional operations\n        Axis yAxis = new NumberAxis();\n        yAxis.setLabel(\"Y-Axis\");\n        ((XYPlot) plot).setRangeAxis((NumberAxis) yAxis);\n\n        // Print labels\n        System.out.println(\"Domain Axis Label: \" + axis.getLabel());\n        System.out.println(\"Range Axis Label: \" + yAxis.getLabel());\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        Axis axis = new NumberAxis();\n        /* write */ axis.setLabel(\"X-Axis\");\n        /* read */ String label = axis.getLabel();\n        System.out.println(label);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.Axis",
+        "write_method": "setLabel",
+        "read_class": "org.jfree.chart.axis.Axis",
+        "read_method": "getLabel"
+    }
+}

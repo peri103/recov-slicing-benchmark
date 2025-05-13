@@ -1,0 +1,4 @@
+generated/jfree/simple/prog_3c32c540/Main.java:7: 错误: AbstractRenderer是抽象的; 无法实例化
+        AbstractRenderer renderer = new AbstractRenderer();
+                                    ^
+1 个错误

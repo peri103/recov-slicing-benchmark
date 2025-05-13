@@ -1,0 +1,21 @@
+generated/compress/complex/prog_418bd1a7/Main.java:8: 错误: 找不到符号
+        /* write */ gzipParameters.setUncompressedSize(1024L);
+                                  ^
+  符号:   方法 setUncompressedSize(long)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/complex/prog_418bd1a7/Main.java:21: 错误: 找不到符号
+        anotherGzipParameters.setUncompressedSize(totalSize);
+                             ^
+  符号:   方法 setUncompressedSize(int)
+  位置: 类型为GzipParameters的变量 anotherGzipParameters
+generated/compress/complex/prog_418bd1a7/Main.java:23: 错误: 找不到符号
+        long anotherUncompressedSize = anotherGzipParameters.getUncompressedSize();
+                                                            ^
+  符号:   方法 getUncompressedSize()
+  位置: 类型为GzipParameters的变量 anotherGzipParameters
+generated/compress/complex/prog_418bd1a7/Main.java:30: 错误: 找不到符号
+        /* read */ long uncompressedSize = gzipParameters.getUncompressedSize();
+                                                         ^
+  符号:   方法 getUncompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParameters
+4 个错误

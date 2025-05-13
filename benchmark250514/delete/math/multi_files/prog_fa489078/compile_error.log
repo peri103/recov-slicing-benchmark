@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_fa489078/MatrixOperations.java:9: 错误: 找不到符号
+        this.symmetricMatrix = MatrixUtils.createSymmetricMatrix(data);
+                                          ^
+  符号:   方法 createSymmetricMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

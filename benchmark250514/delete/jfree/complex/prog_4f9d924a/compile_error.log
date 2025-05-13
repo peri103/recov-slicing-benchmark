@@ -1,0 +1,7 @@
+generated/jfree/complex/prog_4f9d924a/Main.java:38: 错误: 不兼容的类型: Paint无法转换为Color
+        /* read */ Color labelPaint = legendItem.getLabelPaint();
+                                                              ^
+generated/jfree/complex/prog_4f9d924a/Main.java:46: 错误: 不兼容的类型: Paint无法转换为Color
+        Color anotherLabelPaint = anotherLegendItem.getLabelPaint();
+                                                                 ^
+2 个错误

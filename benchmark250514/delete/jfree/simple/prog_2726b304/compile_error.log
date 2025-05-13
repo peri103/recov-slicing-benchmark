@@ -1,0 +1,4 @@
+generated/jfree/simple/prog_2726b304/Main.java:9: 错误: MyTitle不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+        class MyTitle extends Title {
+        ^
+1 个错误

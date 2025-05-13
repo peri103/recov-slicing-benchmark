@@ -1,0 +1,7 @@
+generated/csv/multi_files/prog_2f9e5c28/CSVDataProcessor.java:12: 错误: 不兼容的类型: Map<String,Integer>无法转换为String
+        record = new CSVRecord(null, new String[]{"value1"}, headerMap, 0, configuration.getFormat());
+                                                             ^
+注: generated/csv/multi_files/prog_2f9e5c28/CSVConfiguration.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

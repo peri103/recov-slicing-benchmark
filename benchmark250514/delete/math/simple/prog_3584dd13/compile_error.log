@@ -1,0 +1,6 @@
+generated/math/simple/prog_3584dd13/Main.java:10: 错误: 找不到符号
+        /* write */ RealMatrix identityMatrix = MatrixUtils.createIdentityMatrix(size);
+                                                           ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+1 个错误

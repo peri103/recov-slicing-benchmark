@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.BasicStroke;\nimport java.awt.Shape;\nimport java.awt.geom.Ellipse2D;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        Shape shape = new Ellipse2D.Double(0, 0, 10, 10);\n        legendItem.setShape(shape);\n        legendItem.setOutlineStroke(new BasicStroke(2.0f));\n        \n        /* write */ legendItem.setLinePaint(Color.RED);\n\n        LegendItem anotherLegendItem = new LegendItem(\"Another Sample\");\n        anotherLegendItem.setLinePaint(Color.BLUE);\n        anotherLegendItem.setShape(new Ellipse2D.Double(0, 0, 20, 20));\n        anotherLegendItem.setOutlineStroke(new BasicStroke(1.0f));\n        \n        // Perform some unrelated operations\n        Color color = (Color) anotherLegendItem.getLinePaint();\n        Shape anotherShape = anotherLegendItem.getShape();\n        System.out.println(\"Another Legend Item Line Paint: \" + color);\n        System.out.println(\"Another Legend Item Shape: \" + anotherShape);\n\n        // More unrelated operations\n        Shape legendShape = legendItem.getShape();\n        System.out.println(\"Legend Item Shape: \" + legendShape);\n\n        /* read */ Color linePaint = (Color) legendItem.getLinePaint();\n        System.out.println(\"Legend Item Line Paint: \" + linePaint);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        /* write */ legendItem.setLinePaint(Color.RED);\n        /* read */ Color linePaint = (Color) legendItem.getLinePaint();\n        System.out.println(linePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLinePaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLinePaint"
+    }
+}

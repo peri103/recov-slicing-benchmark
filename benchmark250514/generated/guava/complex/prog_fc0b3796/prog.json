@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.HashBiMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashBiMap<String, Integer> map = HashBiMap.create();\n        HashMap<String, String> stringMap = new HashMap<>();\n        HashMap<Integer, String> intMap = new HashMap<>();\n        \n        stringMap.put(\"first\", \"Hello\");\n        intMap.put(1, \"World\");\n\n        /* write */ map.put(\"one\", 1);\n        \n        stringMap.put(\"second\", \"Java\");\n        intMap.put(2, \"Programming\");\n\n        // Adding more complexity with additional operations\n        for (Map.Entry<String, String> entry : stringMap.entrySet()) {\n            System.out.println(\"Key: \" + entry.getKey() + \", Value: \" + entry.getValue());\n        }\n\n        for (Map.Entry<Integer, String> entry : intMap.entrySet()) {\n            System.out.println(\"Key: \" + entry.getKey() + \", Value: \" + entry.getValue());\n        }\n\n        // Simulate some processing\n        int sum = 0;\n        for (int i = 0; i < 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum: \" + sum);\n\n        // More operations on the maps\n        stringMap.put(\"third\", \"Guava\");\n        intMap.put(3, \"Collections\");\n\n        /* read */ Integer value = map.get(\"one\");\n        System.out.println(value);\n\n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            System.out.println(\"Key: \" + entry.getKey() + \", Value: \" + entry.getValue());\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.HashBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashBiMap<String, Integer> map = HashBiMap.create();\n        /* write */ map.put(\"one\", 1);\n        /* read */ Integer value = map.get(\"one\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.HashBiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.HashBiMap",
+        "read_method": "get"
+    }
+}

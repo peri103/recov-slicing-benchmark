@@ -1,0 +1,26 @@
+generated/collections/complex/prog_4c972d59/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator;
+                                          ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/complex/prog_4c972d59/Main.java:8: 错误: 找不到符号
+        AbstractOrderedBidiMapDecorator<String, Integer> map = new AbstractOrderedBidiMapDecorator<>(new HashMap<>());
+        ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Main
+generated/collections/complex/prog_4c972d59/Main.java:8: 错误: 找不到符号
+        AbstractOrderedBidiMapDecorator<String, Integer> map = new AbstractOrderedBidiMapDecorator<>(new HashMap<>());
+                                                                   ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Main
+generated/collections/complex/prog_4c972d59/Main.java:27: 错误: 找不到符号
+        AbstractOrderedBidiMapDecorator<String, String> stringMap = new AbstractOrderedBidiMapDecorator<>(new HashMap<>());
+        ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Main
+generated/collections/complex/prog_4c972d59/Main.java:27: 错误: 找不到符号
+        AbstractOrderedBidiMapDecorator<String, String> stringMap = new AbstractOrderedBidiMapDecorator<>(new HashMap<>());
+                                                                        ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Main
+5 个错误

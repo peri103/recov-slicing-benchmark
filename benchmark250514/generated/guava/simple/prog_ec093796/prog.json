@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.HashMultiset;\nimport com.google.common.collect.Multiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        Multiset<String> multiset = HashMultiset.create();\n        \n        /* write */ multiset.add(\"apple\");\n        \n        /* read */ int count = multiset.count(\"apple\");\n        \n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.Multiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.Multiset",
+        "read_method": "count"
+    }
+}

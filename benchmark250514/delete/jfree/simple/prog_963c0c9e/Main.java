@@ -1,0 +1,15 @@
+import org.jfree.chart.renderer.xy.XYStepAreaRenderer;
+import java.awt.Color;
+import java.awt.Paint;
+
+public class Main {
+    public static void main(String[] args) {
+        XYStepAreaRenderer renderer = new XYStepAreaRenderer();
+        Paint paint = Color.RED;
+        
+        /* write */ renderer.setRangePaint(paint);
+        /* read */ Paint retrievedPaint = renderer.getRangePaint();
+        
+        System.out.println(retrievedPaint);
+    }
+}

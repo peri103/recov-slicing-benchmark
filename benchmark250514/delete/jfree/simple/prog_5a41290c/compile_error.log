@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_5a41290c/Main.java:10: 错误: 找不到符号
+        /* write */ axis.setTickUnit(tickUnit);
+                        ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/simple/prog_5a41290c/Main.java:12: 错误: 找不到符号
+        /* read */ NumberTickUnit retrievedTickUnit = axis.getTickUnit();
+                                                          ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 axis
+2 个错误

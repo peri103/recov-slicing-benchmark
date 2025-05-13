@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_56d2aafb/Main.java:18: 错误: 找不到符号
+        JFreeChart chart = ChartFactory.createThermometerChart(
+                                       ^
+  符号:   方法 createThermometerChart(String,DefaultValueDataset,ThermometerPlot,boolean)
+  位置: 类 ChartFactory
+generated/jfree/complex/prog_56d2aafb/Main.java:39: 错误: 找不到符号
+        /* read */ DecimalFormat readFormat = (DecimalFormat) thermometerPlot.getValueFormat();
+                                                                             ^
+  符号:   方法 getValueFormat()
+  位置: 类型为ThermometerPlot的变量 thermometerPlot
+2 个错误

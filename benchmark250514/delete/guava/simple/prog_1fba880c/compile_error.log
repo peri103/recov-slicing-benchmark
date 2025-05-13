@@ -1,0 +1,15 @@
+generated/guava/simple/prog_1fba880c/Main.java:7: 错误: 无法将类 ImmutableSortedMultiset<E#2>中的方法 orderedBy应用到给定类型;
+        Builder<Integer> builder = ImmutableSortedMultiset.orderedBy(Comparator.naturalOrder());
+                                                          ^
+  需要: Comparator<E#1>
+  找到: Comparator<T#1>
+  原因: 推断类型不符合等式约束条件
+    推断: T#2
+    等式约束条件: E#3
+  其中, E#1,T#1,E#2,T#2,E#3是类型变量:
+    E#1扩展已在方法 <E#1>orderedBy(Comparator<E#1>)中声明的Object
+    T#1扩展Comparable<? super T#1>
+    E#2扩展已在类 ImmutableSortedMultiset中声明的Object
+    T#2扩展Comparable<? super T#2>
+    E#3扩展Comparable<? super T#2>
+1 个错误

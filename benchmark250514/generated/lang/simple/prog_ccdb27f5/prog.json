@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the StrTokenizer with a sample string\n        StrTokenizer tokenizer = new StrTokenizer(\"a,b,c\");\n        \n        // Set the character to be ignored (write operation)\n        /* write */ tokenizer.setIgnoredChar(',');\n        \n        // Read the next token (read operation)\n        /* read */ String token = tokenizer.nextToken();\n        \n        // Print the token to verify the read operation\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setIgnoredChar",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

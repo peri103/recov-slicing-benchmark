@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        \n        ArrayList<String> fileList = new ArrayList<>();\n        fileList.add(\"example.txt\");\n        fileList.add(\"test.txt\");\n        fileList.add(\"data.txt\");\n\n        HashMap<String, Integer> fileMethods = new HashMap<>();\n        \n        /* write */ zipEntry.setMethod(ZipArchiveEntry.DEFLATED);\n        \n        for (String file : fileList) {\n            ZipArchiveEntry entry = new ZipArchiveEntry(file);\n            entry.setMethod(ZipArchiveEntry.STORED);\n            fileMethods.put(file, entry.getMethod());\n        }\n        \n        int method = zipEntry.getMethod();\n        \n        /* read */ System.out.println(\"Compression method for example.txt: \" + method);\n        \n        for (String file : fileList) {\n            System.out.println(\"Compression method for \" + file + \": \" + fileMethods.get(file));\n        }\n        \n        int sumMethods = 0;\n        for (Integer m : fileMethods.values()) {\n            sumMethods += m;\n        }\n        \n        System.out.println(\"Sum of all methods: \" + sumMethods);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        \n        /* write */ zipEntry.setMethod(ZipArchiveEntry.DEFLATED);\n        \n        /* read */ int method = zipEntry.getMethod();\n        \n        System.out.println(\"Compression method: \" + method);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setMethod",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getMethod"
+    }
+}

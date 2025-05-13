@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\nimport org.apache.commons.math3.linear.RealVector;\nimport org.apache.commons.math3.linear.ArrayRealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        double[] data = {1.0, 2.0, 3.0};\n        double[] additionalData = {4.0, 5.0, 6.0};\n\n        /* write */ RealMatrix matrix = MatrixUtils.createRowRealMatrix(data);\n\n        RealVector vector = new ArrayRealVector(additionalData);\n        RealMatrix matrix2 = MatrixUtils.createRowRealMatrix(vector.toArray());\n\n        matrix = matrix.add(matrix2); // Combine matrices\n\n        for (int i = 0; i < matrix.getRowDimension(); i++) {\n            RealVector rowVector = matrix.getRowVector(i);\n            System.out.println(\"Row \" + i + \": \" + rowVector);\n        }\n\n        // Perform some unrelated operations\n        double sum = 0;\n        for (int i = 0; i < data.length; i++) {\n            sum += data[i] * additionalData[i];\n        }\n        System.out.println(\"Dot product of data arrays: \" + sum);\n\n        /* read */ RealMatrix readMatrix = MatrixUtils.getRowRealMatrix(matrix, 0);\n        System.out.println(\"Read Matrix Row 0: \" + readMatrix);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        double[] data = {1.0, 2.0, 3.0};\n        /* write */ RealMatrix matrix = MatrixUtils.createRowRealMatrix(data);\n        /* read */ RealMatrix readMatrix = MatrixUtils.getRowRealMatrix(matrix, 0);\n        System.out.println(readMatrix);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createRowRealMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getRowRealMatrix"
+    }
+}

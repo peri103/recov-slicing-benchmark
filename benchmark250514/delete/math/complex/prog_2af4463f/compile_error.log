@@ -1,0 +1,6 @@
+generated/math/complex/prog_2af4463f/Main.java:48: 错误: 找不到符号
+        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getRealMatrix(matrix.getData());
+                                                           ^
+  符号:   方法 getRealMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

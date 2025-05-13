@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.category.LineAndShapeRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        LineAndShapeRenderer renderer = new LineAndShapeRenderer();\n        /* write */ renderer.setSeriesShapesVisible(0, true);\n        /* read */ boolean isVisible = renderer.getSeriesShapesVisible(0);\n        System.out.println(isVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.category.LineAndShapeRenderer",
+        "write_method": "setSeriesShapesVisible",
+        "read_class": "org.jfree.chart.renderer.category.LineAndShapeRenderer",
+        "read_method": "getSeriesShapesVisible"
+    }
+}

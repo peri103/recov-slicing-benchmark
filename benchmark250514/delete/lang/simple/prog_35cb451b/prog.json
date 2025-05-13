@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        // Initialize the year to a specific value\n        int year = 2023;\n        \n        /* write */ \n        date = DateUtils.setYears(date, year);\n\n        /* read */ \n        Date truncatedDate = DateUtils.truncate(date, DateUtils.MILLIS_PER_DAY);\n\n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "setYears",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

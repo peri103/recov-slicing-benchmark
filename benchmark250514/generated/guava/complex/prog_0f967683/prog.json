@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.LinkedHashMultimap;\nimport com.google.common.collect.Multimap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Original write-read pair\n        Multimap<String, String> multimap = LinkedHashMultimap.create();\n        /* write */ multimap.put(\"key\", \"value\");\n\n        // Additional unrelated code to increase complexity\n        Map<String, Integer> hashMap = new HashMap<>();\n        hashMap.put(\"one\", 1);\n        hashMap.put(\"two\", 2);\n        \n        for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n\n        // Additional similar api pair operations\n        Multimap<String, Integer> intMultimap = LinkedHashMultimap.create();\n        intMultimap.put(\"number\", 10);\n        intMultimap.put(\"number\", 20);\n        \n        for (Integer num : intMultimap.get(\"number\")) {\n            System.out.println(\"Multimap value: \" + num);\n        }\n\n        // Some more unrelated code\n        int sum = 0;\n        for (int i = 0; i < 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum: \" + sum);\n\n        // Read from the original write-read pair\n        /* read */ String value = multimap.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.LinkedHashMultimap;\nimport com.google.common.collect.Multimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        Multimap<String, String> multimap = LinkedHashMultimap.create();\n        /* write */ multimap.put(\"key\", \"value\");\n        /* read */ String value = multimap.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedHashMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.LinkedHashMultimap",
+        "read_method": "get"
+    }
+}

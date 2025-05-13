@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.data.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of NumberAxis which is a subclass of ValueAxis\n        ValueAxis axis = new NumberAxis();\n\n        // Define the range to be set\n        Range rangeToSet = new Range(0.0, 100.0);\n\n        // Write operation: Set the range on the axis\n        /* write */ axis.setRange(rangeToSet);\n\n        // Read operation: Get the range from the axis\n        /* read */ Range retrievedRange = axis.getRange();\n\n        // Print the retrieved range\n        System.out.println(\"Retrieved Range: \" + retrievedRange);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.ValueAxis",
+        "write_method": "setRange",
+        "read_class": "org.jfree.chart.axis.ValueAxis",
+        "read_method": "getRange"
+    }
+}

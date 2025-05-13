@@ -1,0 +1,31 @@
+generated/compress/complex/prog_c4c3cc77/Main.java:10: 错误: 找不到符号
+        /* write */ entry.setExternalAttributes(12345L);
+                         ^
+  符号:   方法 setExternalAttributes(long)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_c4c3cc77/Main.java:16: 错误: 找不到符号
+        anotherEntry.setExternalAttributes(67890L);
+                    ^
+  符号:   方法 setExternalAttributes(long)
+  位置: 类型为DumpArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_c4c3cc77/Main.java:19: 错误: 找不到符号
+            System.out.println("Entry External Attributes: " + e.getExternalAttributes());
+                                                                ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为DumpArchiveEntry的变量 e
+generated/compress/complex/prog_c4c3cc77/Main.java:24: 错误: 找不到符号
+            attributesSum += e.getExternalAttributes();
+                              ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为DumpArchiveEntry的变量 e
+generated/compress/complex/prog_c4c3cc77/Main.java:29: 错误: 找不到符号
+        /* read */ long attributes = entry.getExternalAttributes();
+                                          ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_c4c3cc77/Main.java:33: 错误: 找不到符号
+            System.out.println("Entry " + i + " External Attributes: " + entryList.get(i).getExternalAttributes());
+                                                                                         ^
+  符号:   方法 getExternalAttributes()
+  位置: 类 DumpArchiveEntry
+6 个错误

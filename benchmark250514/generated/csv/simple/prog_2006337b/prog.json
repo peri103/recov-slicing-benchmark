@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat and configure it\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withAllowMissingColumnNames(true);\n\n        // Sample CSV data to parse\n        String csvData = \"name,age\\nJohn,30\\nJane,25\";\n        StringReader stringReader = new StringReader(csvData);\n\n        try {\n            // Parse the CSV data\n            List<CSVRecord> records = format.parse(stringReader).getRecords();\n\n            // Assume we are interested in the first record\n            CSVRecord record = records.get(0);\n\n            // Check if the record is consistent\n            /* read */ boolean isConsistent = record.isConsistent();\n\n            // Output the result\n            System.out.println(\"Is the record consistent? \" + isConsistent);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAllowMissingColumnNames",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

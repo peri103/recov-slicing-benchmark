@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        \n        /* write */ gzipParameters.setHeaderCRC(true);\n        \n        /* read */ boolean headerCRC = gzipParameters.getHeaderCRC();\n        System.out.println(headerCRC);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setHeaderCRC",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getHeaderCRC"
+    }
+}

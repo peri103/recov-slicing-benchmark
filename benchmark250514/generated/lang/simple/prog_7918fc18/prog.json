@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello, World!\");\n\n        /* write */ strBuilder.substring(0, 5); // The substring method is used here but does not modify the original StrBuilder object\n\n        /* read */ String value = strBuilder.toString();\n        System.out.println(value); // Output should be \"Hello, World!\" since substring does not alter the StrBuilder object\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "substring",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

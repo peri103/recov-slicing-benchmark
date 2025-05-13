@@ -1,0 +1,4 @@
+generated/jfree/simple/prog_efd848c5/Main.java:10: 错误: 不兼容的类型: RegularTimePeriod无法转换为Day
+        /* read */ Day readDay = axis.getLast();
+                                             ^
+1 个错误

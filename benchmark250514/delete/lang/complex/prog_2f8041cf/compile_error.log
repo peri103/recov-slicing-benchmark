@@ -1,0 +1,6 @@
+generated/lang/complex/prog_2f8041cf/Main.java:17: 错误: 找不到符号
+        /* write */ Date updatedDate = DateUtils.setWeeks(date, calendar.get(Calendar.WEEK_OF_YEAR) + weeksToAdd);
+                                                ^
+  符号:   方法 setWeeks(Date,int)
+  位置: 类 DateUtils
+1 个错误

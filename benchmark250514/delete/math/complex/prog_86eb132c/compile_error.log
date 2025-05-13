@@ -1,0 +1,8 @@
+generated/math/complex/prog_86eb132c/Main.java:12: 错误: 不兼容的类型: double[][]无法转换为double[]
+        /* write */ RealMatrix columnMatrix = MatrixUtils.createColumnRealMatrix(columnData);
+                                                                                 ^
+generated/math/complex/prog_86eb132c/Main.java:28: 错误: 不兼容的类型: double[][]无法转换为double[]
+        RealMatrix anotherMatrix = MatrixUtils.createColumnRealMatrix(new double[][]{{7.0}, {8.0}, {9.0}});
+                                                                      ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.TreeMultiset;\nimport com.google.common.collect.HashMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize TreeMultiset\n        TreeMultiset<Integer> multiset = TreeMultiset.create();\n        /* write */ multiset.add(42);\n        \n        // Initialize another Multiset\n        HashMultiset<String> stringMultiset = HashMultiset.create();\n        stringMultiset.add(\"apple\");\n        stringMultiset.add(\"banana\");\n        stringMultiset.add(\"apple\");\n        \n        // Perform some operations on stringMultiset\n        int appleCount = stringMultiset.count(\"apple\");\n        System.out.println(\"Apple count: \" + appleCount);\n        \n        // Add more elements to TreeMultiset\n        multiset.add(15);\n        multiset.add(42);\n        multiset.add(7);\n        \n        // Perform calculations using TreeMultiset\n        int sum = 0;\n        for (Integer num : multiset.elementSet()) {\n            sum += num * multiset.count(num);\n        }\n        System.out.println(\"Sum of elements: \" + sum);\n        \n        // Perform some unrelated calculations\n        int unrelatedSum = 0;\n        for (int i = 0; i < 10; i++) {\n            unrelatedSum += i * i;\n        }\n        System.out.println(\"Unrelated sum: \" + unrelatedSum);\n        \n        // Finally read the count of the original element\n        /* read */ int count = multiset.count(42);\n        System.out.println(\"Count of 42: \" + count);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.TreeMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeMultiset<Integer> multiset = TreeMultiset.create();\n        /* write */ multiset.add(42);\n        /* read */ int count = multiset.count(42);\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.TreeMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.TreeMultiset",
+        "read_method": "count"
+    }
+}

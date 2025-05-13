@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_1acf78e2/Main.java:32: 错误: 找不到符号
+        xyPlot.addDomainCrosshair(crosshair);
+              ^
+  符号:   方法 addDomainCrosshair(Crosshair)
+  位置: 类型为XYPlot的变量 xyPlot
+1 个错误

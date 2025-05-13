@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Font;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PiePlot object\n        PiePlot plot = new PiePlot();\n\n        // Create a Font object to be used for setting the label font\n        Font font = new Font(\"Arial\", Font.PLAIN, 12);\n\n        // Write operation: Set the label font of the PiePlot\n        /* write */ plot.setLabelFont(font);\n\n        // Read operation: Retrieve the label font of the PiePlot\n        /* read */ Font retrievedFont = plot.getLabelFont();\n\n        // Print the retrieved font to verify it matches the font that was set\n        System.out.println(\"Label Font: \" + retrievedFont);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setLabelFont",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getLabelFont"
+    }
+}

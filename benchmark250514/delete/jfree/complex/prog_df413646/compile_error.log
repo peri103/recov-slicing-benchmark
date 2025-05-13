@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_df413646/Main.java:15: 错误: 找不到符号
+        axis.setTickUnit(new NumberTickUnit(5.0));
+            ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_df413646/Main.java:19: 错误: 找不到符号
+        secondaryAxis.setTickUnit(new NumberTickUnit(10.0));
+                     ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 secondaryAxis
+generated/jfree/complex/prog_df413646/Main.java:48: 错误: 找不到符号
+            System.out.println("Secondary Axis Tick Unit: " + secondaryAxis.getTickUnit().getSize());
+                                                                           ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 secondaryAxis
+3 个错误

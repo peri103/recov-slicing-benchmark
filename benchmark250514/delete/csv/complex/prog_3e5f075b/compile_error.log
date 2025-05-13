@@ -1,0 +1,6 @@
+generated/csv/complex/prog_3e5f075b/Main.java:14: 错误: CSVRecord(CSVParser,String[],String,long,long)在CSVRecord中不是公共的; 无法从外部程序包中对其进行访问
+        CSVRecord record = new CSVRecord(null, values, null, 0, 0);
+                           ^
+注: generated/csv/complex/prog_3e5f075b/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

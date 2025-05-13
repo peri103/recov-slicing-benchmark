@@ -1,0 +1,11 @@
+generated/collections/simple/prog_739f2afa/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.PredicatedMultiValuedMap;
+                                               ^
+  符号:   类 PredicatedMultiValuedMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/simple/prog_739f2afa/Main.java:9: 错误: 找不到符号
+        MultiValuedMap<String, Integer> map = new PredicatedMultiValuedMap<>(new LinkedMap<>(), alwaysTrue, alwaysTrue);
+                                                  ^
+  符号:   类 PredicatedMultiValuedMap
+  位置: 类 Main
+2 个错误

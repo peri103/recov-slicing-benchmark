@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.title.Title;\nimport java.awt.Font;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a Title object\n        Title title = new Title() {\n            private Font font;\n            \n            @Override\n            public void setFont(Font font) {\n                this.font = font;\n            }\n            \n            @Override\n            public Font getFont() {\n                return this.font;\n            }\n        };\n        \n        // Create a Font object\n        Font font = new Font(\"Arial\", Font.PLAIN, 12);\n\n        /* write */ title.setFont(font);\n        /* read */ Font readFont = title.getFont();\n        \n        // Print the font details to verify\n        System.out.println(\"Font Name: \" + readFont.getName());\n        System.out.println(\"Font Style: \" + readFont.getStyle());\n        System.out.println(\"Font Size: \" + readFont.getSize());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.Title",
+        "write_method": "setFont",
+        "read_class": "org.jfree.chart.title.Title",
+        "read_method": "getFont"
+    }
+}

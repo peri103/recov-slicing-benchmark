@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a CSVFormat object\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        \n        // Use the withTrim method to modify the CSVFormat object\n        /* write */ csvFormat = csvFormat.withTrim();\n        \n        // Create a mock CSVRecord list for demonstration purposes\n        List<CSVRecord> records = new ArrayList<>();\n        \n        // Normally, CSVRecord objects are obtained from parsing CSV data, here we simulate it\n        // CSVRecord is an interface, so we cannot instantiate it directly without CSV parsing\n        // Assuming records have been populated, we'll just demonstrate the read method call\n        \n        // Check if the first record is mapped (this is just a simulation as records are empty)\n        boolean isMapped = false;\n        if (!records.isEmpty()) {\n            /* read */ isMapped = records.get(0).isMapped(\"columnName\");\n        }\n        \n        // Print the result\n        System.out.println(\"Is the first record mapped? \" + isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrim",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

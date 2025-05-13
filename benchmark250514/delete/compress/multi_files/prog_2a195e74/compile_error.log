@@ -1,0 +1,31 @@
+generated/compress/multi_files/prog_2a195e74/EntryUtil.java:5: 错误: 找不到符号
+        /* write */ entry.setUserName(newUserName);
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_2a195e74/EntryUtil.java:9: 错误: 找不到符号
+        /* read */ return entry.getUserName();
+                               ^
+  符号:   方法 getUserName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_2a195e74/UserEntry.java:11: 错误: 找不到符号
+        /* write */ entry.setUserName(userName);
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_2a195e74/UserEntry.java:15: 错误: 找不到符号
+        return entry.getUserName();
+                    ^
+  符号:   方法 getUserName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_2a195e74/UserEntry.java:19: 错误: 找不到符号
+        entry.setGroupName(groupName);
+             ^
+  符号:   方法 setGroupName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_2a195e74/UserEntry.java:23: 错误: 找不到符号
+        return entry.getGroupName();
+                    ^
+  符号:   方法 getGroupName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+6 个错误

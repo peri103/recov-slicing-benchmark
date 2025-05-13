@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableBiMap;\nimport com.google.common.collect.ImmutableBiMap.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<String, Integer> builder = ImmutableBiMap.builder();\n        /* write */ builder.put(\"key1\", 100);\n        ImmutableBiMap<String, Integer> biMap = builder.build();\n        /* read */ Integer value = biMap.get(\"key1\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableBiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableBiMap",
+        "read_method": "get"
+    }
+}

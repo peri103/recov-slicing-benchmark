@@ -1,0 +1,6 @@
+generated/math/simple/prog_d0480ea1/Main.java:12: 错误: 找不到符号
+        /* write */ RealVector columnVector = MatrixUtils.createColumnRealVector(new double[] {7.0, 8.0});
+                                                         ^
+  符号:   方法 createColumnRealVector(double[])
+  位置: 类 MatrixUtils
+1 个错误

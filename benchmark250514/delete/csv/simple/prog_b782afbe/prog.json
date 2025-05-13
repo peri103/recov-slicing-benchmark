@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize the StringWriter to capture the output of CSVPrinter\n            StringWriter writer = new StringWriter();\n\n            // Create a CSVFormat instance and configure it with the write method\n            /* write */ CSVFormat format = CSVFormat.DEFAULT.withEscape('\\\\');\n\n            // Create a CSVPrinter using the configured CSVFormat\n            CSVPrinter printer = new CSVPrinter(writer, format);\n            \n            // Write a record to the CSVPrinter\n            printer.printRecord(Arrays.asList(\"value1\", \"value2\", \"value3\"));\n\n            // Flush the printer to ensure all data is written to the StringWriter\n            printer.flush();\n\n            // Capture the output as a CSVRecord\n            String csvOutput = writer.toString();\n            CSVRecord record = CSVFormat.DEFAULT.parse(csvOutput).getRecords().get(0);\n\n            // Use the read method to read the value written by the write method\n            /* read */ String recordString = record.toString();\n            System.out.println(recordString);\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withEscape",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

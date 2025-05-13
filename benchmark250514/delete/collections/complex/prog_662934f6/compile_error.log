@@ -1,0 +1,22 @@
+generated/collections/complex/prog_662934f6/Main.java:8: 错误: 不兼容的类型: 无法推断LinkedMap<>的类型参数
+        AbstractOrderedMapDecorator<String, Integer> map = new LinkedMap<>();
+                                                                        ^
+    原因: 不存在类型变量K,V的实例, 以使LinkedMap<K,V>与AbstractOrderedMapDecorator<String,Integer>一致
+  其中, K,V是类型变量:
+    K扩展已在类 LinkedMap中声明的Object
+    V扩展已在类 LinkedMap中声明的Object
+generated/collections/complex/prog_662934f6/Main.java:9: 错误: 不兼容的类型: 无法推断LinkedMap<>的类型参数
+        AbstractOrderedMapDecorator<String, String> anotherMap = new LinkedMap<>();
+                                                                              ^
+    原因: 不存在类型变量K,V的实例, 以使LinkedMap<K,V>与AbstractOrderedMapDecorator<String,String>一致
+  其中, K,V是类型变量:
+    K扩展已在类 LinkedMap中声明的Object
+    V扩展已在类 LinkedMap中声明的Object
+generated/collections/complex/prog_662934f6/Main.java:10: 错误: 不兼容的类型: 无法推断LRUMap<>的类型参数
+        AbstractOrderedMapDecorator<String, Integer> lruMap = new LRUMap<>(5);
+                                                                        ^
+    原因: 不存在类型变量K,V的实例, 以使LRUMap<K,V>与AbstractOrderedMapDecorator<String,Integer>一致
+  其中, K,V是类型变量:
+    K扩展已在类 LRUMap中声明的Object
+    V扩展已在类 LRUMap中声明的Object
+3 个错误

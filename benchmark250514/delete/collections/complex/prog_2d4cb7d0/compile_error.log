@@ -1,0 +1,29 @@
+generated/collections/complex/prog_2d4cb7d0/Main.java:10: 错误: 不兼容的类型: 无法推断MultiValueMap<>的类型参数
+        MultiValuedMap<String, Integer> map = new MultiValueMap<>();
+                                                               ^
+    原因: 不存在类型变量K,V的实例, 以使MultiValueMap<K,V>与MultiValuedMap<String,Integer>一致
+  其中, K,V是类型变量:
+    K扩展已在类 MultiValueMap中声明的Object
+    V扩展已在类 MultiValueMap中声明的Object
+generated/collections/complex/prog_2d4cb7d0/Main.java:11: 错误: <K,V>TransformedMultiValuedMap(MultiValuedMap<K,V>,Transformer<? super K,? extends K>,Transformer<? super V,? extends V>) 在 TransformedMultiValuedMap 中是 protected 访问控制
+        TransformedMultiValuedMap<String, Integer> transformedMap = new TransformedMultiValuedMap<>(map, i -> i * 2, i -> i / 2);
+                                                                    ^
+  其中, K,V是类型变量:
+    K扩展已在类 TransformedMultiValuedMap中声明的Object
+    V扩展已在类 TransformedMultiValuedMap中声明的Object
+generated/collections/complex/prog_2d4cb7d0/Main.java:11: 错误: 二元运算符 '*' 的操作数类型错误
+        TransformedMultiValuedMap<String, Integer> transformedMap = new TransformedMultiValuedMap<>(map, i -> i * 2, i -> i / 2);
+                                                                                                                ^
+  第一个类型:  String
+  第二个类型: int
+generated/collections/complex/prog_2d4cb7d0/Main.java:22: 错误: 不兼容的类型: MultiKey<? extends String>无法转换为String
+        for (String key : multiKeyMap.keySet()) {
+                                            ^
+generated/collections/complex/prog_2d4cb7d0/Main.java:23: 错误: 找不到符号
+            for (String subkey : multiKeyMap.get(key).keySet()) {
+                                                     ^
+  符号:   方法 keySet()
+  位置: 类 Integer
+注: generated/collections/complex/prog_2d4cb7d0/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+5 个错误

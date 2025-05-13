@@ -1,0 +1,17 @@
+generated/collections/multi_files/prog_a6848067/CourseMap.java:8: 错误: AbstractSortedMapDecorator是抽象的; 无法实例化
+        courseScores = new AbstractSortedMapDecorator<>(new TreeMap<>());
+                       ^
+generated/collections/multi_files/prog_a6848067/Main.java:21: 错误: 找不到符号
+        Map<String, String> contactInfo = new HashMap<>();
+        ^
+  符号:   类 Map
+  位置: 类 Main
+generated/collections/multi_files/prog_a6848067/Main.java:21: 错误: 找不到符号
+        Map<String, String> contactInfo = new HashMap<>();
+                                              ^
+  符号:   类 HashMap
+  位置: 类 Main
+generated/collections/multi_files/prog_a6848067/Main.java:25: 错误: 程序包Map不存在
+        for (Map.Entry<String, String> entry : contactInfo.entrySet()) {
+                ^
+4 个错误

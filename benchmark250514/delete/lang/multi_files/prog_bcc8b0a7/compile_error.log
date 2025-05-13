@@ -1,0 +1,11 @@
+generated/lang/multi_files/prog_bcc8b0a7/DateManager.java:15: 错误: 找不到符号
+        /* write */ this.date = DateUtils.setWeeks(this.date, week);
+                                         ^
+  符号:   方法 setWeeks(Date,int)
+  位置: 类 DateUtils
+generated/lang/multi_files/prog_bcc8b0a7/Main.java:6: 错误: 找不到符号
+        DateManager dateManager = new DateManager(2023, Calendar.OCTOBER, 1);
+                                                        ^
+  符号:   变量 Calendar
+  位置: 类 Main
+2 个错误

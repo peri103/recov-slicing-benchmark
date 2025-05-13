@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.EnumMultiset;\nimport java.util.Arrays;\n\n// Define an example enum\nenum Color {\n    RED, GREEN, BLUE\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the EnumMultiset with the enum type\n        EnumMultiset<Color> multiset = EnumMultiset.create(Color.class);\n        \n        // Add an element to the multiset\n        /* write */ multiset.add(Color.RED);\n        \n        // Read the count of the element in the multiset\n        /* read */ int count = multiset.count(Color.RED);\n        \n        // Print the count\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.EnumMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.EnumMultiset",
+        "read_method": "count"
+    }
+}

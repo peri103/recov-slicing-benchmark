@@ -1,0 +1,11 @@
+generated/compress/simple/prog_3f59b0de/Main.java:6: 错误: 找不到符号
+        /* write */ entry.setFileType(DumpArchiveEntry.TYPE_FILE);
+                                                      ^
+  符号:   变量 TYPE_FILE
+  位置: 类 DumpArchiveEntry
+generated/compress/simple/prog_3f59b0de/Main.java:7: 错误: 找不到符号
+        /* read */ int fileType = entry.getFileType();
+                                       ^
+  符号:   方法 getFileType()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

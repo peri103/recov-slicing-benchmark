@@ -1,0 +1,11 @@
+generated/compress/complex/prog_9891a110/Main.java:19: 错误: 找不到符号
+            /* write */ deflateStream.setDictionary(dictionary);
+                                     ^
+  符号:   方法 setDictionary(byte[])
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+generated/compress/complex/prog_9891a110/Main.java:51: 错误: 找不到符号
+            /* read */ byte[] readDictionary = deflateStream.getDictionary();
+                                                            ^
+  符号:   方法 getDictionary()
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+2 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.buffer.CircularFifoBuffer;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoBuffer<Integer> buffer = new CircularFifoBuffer<>(10);\n        ArrayList<String> names = new ArrayList<>();\n        HashMap<String, Integer> nameToAge = new HashMap<>();\n\n        names.add(\"Alice\");\n        names.add(\"Bob\");\n        nameToAge.put(\"Alice\", 30);\n        nameToAge.put(\"Bob\", 25);\n\n        /* write */ buffer.add(42);\n\n        for (String name : names) {\n            int age = nameToAge.get(name);\n            System.out.println(name + \" is \" + age + \" years old.\");\n        }\n\n        int sum = 0;\n        for (int i = 1; i <= 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 1 to 5 is: \" + sum);\n\n        /* read */ Integer value = buffer.get();\n        System.out.println(\"Value from buffer: \" + value);\n\n        ArrayList<Integer> numberList = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numberList.add(i * 3);\n        }\n\n        for (Integer num : numberList) {\n            System.out.println(\"Number from list: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.buffer.CircularFifoBuffer;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoBuffer<Integer> buffer = new CircularFifoBuffer<>(10);\n        /* write */ buffer.add(42);\n        /* read */ Integer value = buffer.get();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.buffer.CircularFifoBuffer",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.buffer.CircularFifoBuffer",
+        "read_method": "get"
+    }
+}

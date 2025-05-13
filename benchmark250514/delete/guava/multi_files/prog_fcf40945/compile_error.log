@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_fcf40945/Student.java:26: 错误: 找不到符号
+    public ListMultimap<String, Integer> getScoresForCourse(String courseName) {
+           ^
+  符号:   类 ListMultimap
+  位置: 类 Student
+1 个错误

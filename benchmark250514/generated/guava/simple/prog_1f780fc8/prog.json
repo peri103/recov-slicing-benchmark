@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableTable;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an immutable table with a single entry using the 'of' method\n        /* write */ ImmutableTable<String, String, Integer> table = ImmutableTable.of(\"row1\", \"column1\", 42);\n\n        // Read the value from the table using the 'get' method\n        /* read */ Integer value = table.get(\"row1\", \"column1\");\n\n        // Print the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableTable",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableTable",
+        "read_method": "get"
+    }
+}

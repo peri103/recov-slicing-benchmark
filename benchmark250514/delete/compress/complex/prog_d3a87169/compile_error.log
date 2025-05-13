@@ -1,0 +1,21 @@
+generated/compress/complex/prog_d3a87169/Main.java:12: 错误: 找不到符号
+        /* write */ entry.setCrc(crcMap.get("entry2"));
+                         ^
+  符号:   方法 setCrc(Long)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_d3a87169/Main.java:15: 错误: 找不到符号
+        anotherEntry.setCrc(crcMap.get("entry1"));
+                    ^
+  符号:   方法 setCrc(Long)
+  位置: 类型为CpioArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_d3a87169/Main.java:17: 错误: 找不到符号
+        long anotherCrcValue = anotherEntry.getCrc();
+                                           ^
+  符号:   方法 getCrc()
+  位置: 类型为CpioArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_d3a87169/Main.java:37: 错误: 找不到符号
+        /* read */ long crcValue = entry.getCrc();
+                                        ^
+  符号:   方法 getCrc()
+  位置: 类型为CpioArchiveEntry的变量 entry
+4 个错误

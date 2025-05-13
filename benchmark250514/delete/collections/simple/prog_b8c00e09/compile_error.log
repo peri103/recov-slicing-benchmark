@@ -1,0 +1,8 @@
+generated/collections/simple/prog_b8c00e09/Main.java:6: 错误: 不兼容的类型: 无法推断HashedMap<>的类型参数
+        AbstractMapDecorator<String, Integer> map = new HashedMap<>();
+                                                                 ^
+    原因: 不存在类型变量K,V的实例, 以使HashedMap<K,V>与AbstractMapDecorator<String,Integer>一致
+  其中, K,V是类型变量:
+    K扩展已在类 HashedMap中声明的Object
+    V扩展已在类 HashedMap中声明的Object
+1 个错误

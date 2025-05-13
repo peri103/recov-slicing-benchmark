@@ -1,0 +1,15 @@
+generated/guava/multi_files/prog_950bf042/Course.java:16: 错误: 无法将类 MutableClassToInstanceMap<B>中的方法 putInstance应用到给定类型;
+        /* write */ grades.putInstance(subject.getClass(), subject + ":" + grade);
+                          ^
+  需要: Class<T>,T
+  找到: Class<CAP#1>,String
+  原因: 推论变量 T 具有不兼容的上限
+    等式约束条件：CAP#2
+    下限：String
+  其中, T,B是类型变量:
+    T扩展已在方法 <T>putInstance(Class<T>,T)中声明的Object
+    B扩展已在类 MutableClassToInstanceMap中声明的Object
+  其中, CAP#1,CAP#2是新类型变量:
+    CAP#1从? extends String的捕获扩展String
+    CAP#2从? extends String的捕获扩展String
+1 个错误

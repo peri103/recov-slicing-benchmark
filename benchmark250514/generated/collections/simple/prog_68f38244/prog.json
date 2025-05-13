@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractSortedMapDecorator;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the AbstractSortedMapDecorator using a TreeMap\n        AbstractSortedMapDecorator<String, String> map = new AbstractSortedMapDecorator<>(new TreeMap<>()) {};\n        \n        /* write */ map.put(\"key\", \"value\");\n        /* read */ String retrievedValue = map.get(\"key\");\n        \n        System.out.println(retrievedValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractSortedMapDecorator",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractSortedMapDecorator",
+        "read_method": "get"
+    }
+}

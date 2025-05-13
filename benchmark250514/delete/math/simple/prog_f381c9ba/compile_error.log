@@ -1,0 +1,5 @@
+generated/math/simple/prog_f381c9ba/Main.java:10: 错误: 不兼容的类型: double[][]无法转换为double[]
+        /* write */ RealMatrix matrix = MatrixUtils.createColumnRealMatrix(data);
+                                                                           ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

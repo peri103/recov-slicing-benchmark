@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.HashBiMap;\nimport com.google.common.collect.LinkedListMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashBiMap<String, Integer> map = HashBiMap.create();\n        LinkedListMultimap<String, Integer> multimap = LinkedListMultimap.create();\n\n        // Additional code for complexity\n        multimap.put(\"a\", 100);\n        multimap.put(\"b\", 200);\n        multimap.put(\"c\", 300);\n\n        int sum = 0;\n        for (Integer value : multimap.values()) {\n            sum += value;\n        }\n        \n        System.out.println(\"Sum of multimap values: \" + sum);\n\n        /* write */ map.put(\"key\", 123);\n\n        // Further operations before reading\n        map.put(\"anotherKey\", 456);\n        map.put(\"yetAnotherKey\", 789);\n        \n        int total = 0;\n        for (String key : map.keySet()) {\n            total += map.get(key);\n        }\n        \n        System.out.println(\"Total of map values: \" + total);\n\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(\"Read value: \" + value);\n\n        // Additional unrelated code\n        HashBiMap<String, Integer> anotherMap = HashBiMap.create();\n        anotherMap.put(\"x\", 10);\n        anotherMap.put(\"y\", 20);\n        \n        int result = 0;\n        for (String key : anotherMap.keySet()) {\n            result += anotherMap.get(key);\n        }\n        \n        System.out.println(\"Result of another map: \" + result);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.HashBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashBiMap<String, Integer> map = HashBiMap.create();\n        /* write */ map.put(\"key\", 123);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.HashBiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.HashBiMap",
+        "read_method": "get"
+    }
+}

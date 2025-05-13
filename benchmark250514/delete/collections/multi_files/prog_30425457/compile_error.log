@@ -1,0 +1,13 @@
+generated/collections/multi_files/prog_30425457/Main.java:12: 错误: 无法将类 PredicatedMap<K#2,V#2>中的方法 predicatedMap应用到给定类型;
+        PredicatedMap<String, Integer> predicatedMap = PredicatedMap.predicatedMap(baseMap, keyPredicate, valuePredicate);
+                                                                    ^
+  需要: Map<K#1,V#1>,org.apache.commons.collections4.Predicate<? super K#1>,org.apache.commons.collections4.Predicate<? super V#1>
+  找到: Map<String,Integer>,java.util.function.Predicate<Object>,java.util.function.Predicate<Object>
+  原因: 无法推断类型变量 K#1,V#1
+    (参数不匹配; java.util.function.Predicate<Object>无法转换为org.apache.commons.collections4.Predicate<? super K#1>)
+  其中, K#1,V#1,K#2,V#2是类型变量:
+    K#1扩展已在方法 <K#1,V#1>predicatedMap(Map<K#1,V#1>,org.apache.commons.collections4.Predicate<? super K#1>,org.apache.commons.collections4.Predicate<? super V#1>)中声明的Object
+    V#1扩展已在方法 <K#1,V#1>predicatedMap(Map<K#1,V#1>,org.apache.commons.collections4.Predicate<? super K#1>,org.apache.commons.collections4.Predicate<? super V#1>)中声明的Object
+    K#2扩展已在类 PredicatedMap中声明的Object
+    V#2扩展已在类 PredicatedMap中声明的Object
+1 个错误

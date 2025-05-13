@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.BasicStroke;\nimport java.awt.Stroke;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a LegendItem object\n        LegendItem legendItem = new LegendItem(\"Sample\");\n\n        // Create a Stroke object to set\n        Stroke stroke = new BasicStroke(2.0f);\n\n        // Use the write method to set the line stroke\n        /* write */ legendItem.setLineStroke(stroke);\n\n        // Use the read method to get the line stroke\n        /* read */ Stroke readStroke = legendItem.getLineStroke();\n\n        // Print the result to verify correctness\n        System.out.println(readStroke.equals(stroke));\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLineStroke",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLineStroke"
+    }
+}

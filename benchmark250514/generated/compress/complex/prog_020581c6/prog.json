@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Original API pair usage\n        JarArchiveEntry entry = new JarArchiveEntry(\"example.jar\");\n        /* write */ entry.setCompressedSize(1024);\n\n        // Additional code to increase complexity\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 1; i <= 5; i++) {\n            numbers.add(i * 100);\n        }\n\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"One\", 1);\n        map.put(\"Two\", 2);\n        map.put(\"Three\", 3);\n\n        // Iterating over the list\n        for (int number : numbers) {\n            System.out.println(\"Number: \" + number);\n        }\n\n        // Iterating over the map\n        for (String key : map.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n\n        // Some arithmetic operations\n        int result = 0;\n        for (int i = 0; i < numbers.size(); i++) {\n            result += numbers.get(i);\n        }\n        System.out.println(\"Sum of numbers: \" + result);\n\n        // Final read from the original API pair\n        /* read */ long compressedSize = entry.getCompressedSize();\n        System.out.println(\"Compressed Size: \" + compressedSize);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry entry = new JarArchiveEntry(\"example.jar\");\n        /* write */ entry.setCompressedSize(1024);\n        /* read */ long compressedSize = entry.getCompressedSize();\n        System.out.println(compressedSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setCompressedSize",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getCompressedSize"
+    }
+}

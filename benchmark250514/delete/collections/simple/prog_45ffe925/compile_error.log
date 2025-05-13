@@ -1,0 +1,13 @@
+generated/collections/simple/prog_45ffe925/Main.java:12: 错误: 无法将类 TransformedMultiValuedMap<K#2,V#2>中的方法 transformedMap应用到给定类型;
+        MultiValuedMap<String, String> transformedMap = TransformedMultiValuedMap.transformedMap(baseMap, null, null);
+                                                                                 ^
+  需要: MultiValuedMap<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>
+  找到: LinkedMap<String,String>,<空值>,<空值>
+  原因: 无法推断类型变量 K#1,V#1
+    (参数不匹配; LinkedMap<String,String>无法转换为MultiValuedMap<K#1,V#1>)
+  其中, K#1,V#1,K#2,V#2是类型变量:
+    K#1扩展已在方法 <K#1,V#1>transformedMap(MultiValuedMap<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>)中声明的Object
+    V#1扩展已在方法 <K#1,V#1>transformedMap(MultiValuedMap<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>)中声明的Object
+    K#2扩展已在类 TransformedMultiValuedMap中声明的Object
+    V#2扩展已在类 TransformedMultiValuedMap中声明的Object
+1 个错误

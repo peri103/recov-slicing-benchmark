@@ -1,0 +1,30 @@
+generated/jfree/simple/prog_9314ded8/Main.java:6: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis axis = new ValueAxis() {
+                         ^
+  需要: String,TickUnitSource
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/simple/prog_9314ded8/Main.java:8: 错误: 找不到符号
+            public double valueToJava2D(double value, java.awt.geom.Rectangle2D area, java.awt.geom.RectangleEdge edge) {
+                                                                                                   ^
+  符号:   类 RectangleEdge
+  位置: 程序包 java.awt.geom
+generated/jfree/simple/prog_9314ded8/Main.java:13: 错误: 找不到符号
+            public double java2DToValue(double java2DValue, java.awt.geom.Rectangle2D area, java.awt.geom.RectangleEdge edge) {
+                                                                                                         ^
+  符号:   类 RectangleEdge
+  位置: 程序包 java.awt.geom
+generated/jfree/simple/prog_9314ded8/Main.java:6: 错误: <匿名Main$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis axis = new ValueAxis() {
+                                         ^
+generated/jfree/simple/prog_9314ded8/Main.java:20: 错误: 找不到符号
+        /* write */ axis.setTickUnit(tickUnit);
+                        ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/simple/prog_9314ded8/Main.java:22: 错误: 找不到符号
+        /* read */ NumberTickUnit readTickUnit = (NumberTickUnit) axis.getTickUnit();
+                                                                      ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 axis
+6 个错误

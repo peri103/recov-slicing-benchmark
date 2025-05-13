@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.labels.StandardXYItemLabelGenerator;\n\npublic class Main {\n    public static void main(String[] args) {\n        StandardXYItemLabelGenerator labelGenerator = new StandardXYItemLabelGenerator();\n        /* write */ labelGenerator.setFormatString(\"{0}: {1}, {2}\");\n        /* read */ String formatString = labelGenerator.getFormatString();\n        System.out.println(formatString);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.labels.StandardXYItemLabelGenerator",
+        "write_method": "setFormatString",
+        "read_class": "org.jfree.chart.labels.StandardXYItemLabelGenerator",
+        "read_method": "getFormatString"
+    }
+}

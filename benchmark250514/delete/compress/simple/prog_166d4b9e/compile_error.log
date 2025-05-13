@@ -1,0 +1,11 @@
+generated/compress/simple/prog_166d4b9e/Main.java:8: 错误: 找不到符号
+        /* write */ entry.setExtra(extraData);
+                         ^
+  符号:   方法 setExtra(byte[])
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/simple/prog_166d4b9e/Main.java:9: 错误: 找不到符号
+        /* read */ byte[] readExtraData = entry.getExtra();
+                                               ^
+  符号:   方法 getExtra()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

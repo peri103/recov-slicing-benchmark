@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport java.util.HashMap;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testEntry\");\n        /* write */ entry.setSize(1024L);\n\n        // Additional complex code\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"key1\", 100);\n        map.put(\"key2\", 200);\n\n        ArrayList<String> list = new ArrayList<>();\n        list.add(\"Hello\");\n        list.add(\"World\");\n\n        int sum = 0;\n        for (String key : map.keySet()) {\n            sum += map.get(key);\n        }\n\n        for (String str : list) {\n            System.out.println(str);\n        }\n\n        System.out.println(\"Sum of map values: \" + sum);\n\n        // More operations\n        int product = 1;\n        for (int i = 1; i <= 5; i++) {\n            product *= i;\n        }\n        System.out.println(\"Product of numbers 1 to 5: \" + product);\n\n        // Read operation\n        /* read */ long size = entry.getSize();\n        System.out.println(\"Size of CpioArchiveEntry: \" + size);\n\n        // Further operations\n        int factorial = 1;\n        for (int i = 1; i <= 3; i++) {\n            factorial *= i;\n        }\n        System.out.println(\"Factorial of 3: \" + factorial);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testEntry\");\n        /* write */ entry.setSize(1024L);\n        /* read */ long size = entry.getSize();\n        System.out.println(size);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setSize",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getSize"
+    }
+}

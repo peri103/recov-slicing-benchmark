@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CSVFormat object\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Write operation: configure the format to ignore empty lines\n        /* write */ format = format.withIgnoreEmptyLines(true);\n        \n        // Simulate reading from a CSVRecord\n        // Since we are not actually reading from a CSV file, we'll create a mock CSVRecord\n        CSVRecord record = new CSVRecord(null, null, null, null, null);\n        \n        // Read operation: Check if the CSVRecord is consistent\n        /* read */ boolean isConsistent = record.isConsistent();\n        \n        // Output the result\n        System.out.println(\"Is the CSVRecord consistent? \" + isConsistent);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreEmptyLines",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

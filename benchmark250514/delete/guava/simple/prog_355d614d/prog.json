@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.DiscreteDomain;\n\npublic class Main {\n    public static void main(String[] args) {\n        DiscreteDomain<Integer> integerDomain = DiscreteDomain.integers();\n        int value = 5;\n        /* write */ DiscreteDomain<Integer> domainWithValue = DiscreteDomain.of(value);\n        /* read */ int nextValue = domainWithValue.next(value);\n        System.out.println(nextValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.DiscreteDomain",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.DiscreteDomain",
+        "read_method": "next"
+    }
+}

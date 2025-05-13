@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_455171dc/Main.java:8: 错误: 找不到符号
+        ImmutableTable<String, String, Integer> table = tableWrapper.buildTable();
+        ^
+  符号:   类 ImmutableTable
+  位置: 类 Main
+1 个错误

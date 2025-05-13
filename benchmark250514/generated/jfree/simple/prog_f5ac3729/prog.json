@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.SpiderWebPlot;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the SpiderWebPlot object\n        SpiderWebPlot plot = new SpiderWebPlot(null); // Passing null for the dataset as we are not using it\n        \n        // Define a color for the series outline\n        Color outlineColor = Color.RED;\n        \n        // Write operation: Set the series outline paint to the defined color\n        /* write */ plot.setSeriesOutlinePaint(0, outlineColor);\n        \n        // Read operation: Get the series outline paint for the series index 0\n        /* read */ Color retrievedColor = (Color) plot.getSeriesOutlinePaint(0);\n        \n        // Print the retrieved color to verify\n        System.out.println(retrievedColor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.SpiderWebPlot",
+        "write_method": "setSeriesOutlinePaint",
+        "read_class": "org.jfree.chart.plot.SpiderWebPlot",
+        "read_method": "getSeriesOutlinePaint"
+    }
+}

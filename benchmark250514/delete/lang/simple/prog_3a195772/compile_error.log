@@ -1,0 +1,6 @@
+generated/lang/simple/prog_3a195772/Main.java:10: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(modifiedDate, DateUtils.MONTH);
+                                                                                  ^
+  符号:   变量 MONTH
+  位置: 类 DateUtils
+1 个错误

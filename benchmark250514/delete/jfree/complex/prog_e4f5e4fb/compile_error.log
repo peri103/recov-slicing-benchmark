@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_e4f5e4fb/Main.java:19: 错误: 找不到符号
+        /* write */ stepAreaRenderer.setSeriesLinesVisible(stepAreaSeriesIndex, stepAreaIsVisible);
+                                    ^
+  符号:   方法 setSeriesLinesVisible(int,boolean)
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+generated/jfree/complex/prog_e4f5e4fb/Main.java:28: 错误: 找不到符号
+        /* read */ Boolean retrievedStepAreaVisibility = stepAreaRenderer.getSeriesLinesVisible(stepAreaSeriesIndex);
+                                                                         ^
+  符号:   方法 getSeriesLinesVisible(int)
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+2 个错误

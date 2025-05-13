@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.OpenMapRealVector;\nimport org.apache.commons.math3.linear.MatrixUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the vector with some values\n        double[] values = {1.0, 2.0, 3.0};\n\n        /* write */ OpenMapRealVector vector = MatrixUtils.createOpenMapRealVector(values);\n\n        /* read */ OpenMapRealVector readVector = MatrixUtils.getOpenMapRealVector(vector);\n\n        // Print the values of the read vector to verify correctness\n        for (int i = 0; i < readVector.getDimension(); i++) {\n            System.out.println(readVector.getEntry(i));\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createOpenMapRealVector",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getOpenMapRealVector"
+    }
+}

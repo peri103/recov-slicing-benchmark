@@ -1,0 +1,21 @@
+generated/lang/multi_files/prog_2262f779/CalendarHelper.java:20: 错误: 找不到符号
+        return DateUtils.truncate(date, Calendar.HOUR_OF_DAY);
+               ^
+  符号:   变量 DateUtils
+  位置: 类 CalendarHelper
+generated/lang/multi_files/prog_2262f779/Main.java:9: 错误: 找不到符号
+        Date anotherDate = DateUtils.addDays(date, 5);
+                           ^
+  符号:   变量 DateUtils
+  位置: 类 Main
+generated/lang/multi_files/prog_2262f779/Main.java:10: 错误: 找不到符号
+        Date truncatedAnotherDate = DateUtils.truncate(anotherDate, Calendar.DAY_OF_MONTH);
+                                                                    ^
+  符号:   变量 Calendar
+  位置: 类 Main
+generated/lang/multi_files/prog_2262f779/Main.java:10: 错误: 找不到符号
+        Date truncatedAnotherDate = DateUtils.truncate(anotherDate, Calendar.DAY_OF_MONTH);
+                                    ^
+  符号:   变量 DateUtils
+  位置: 类 Main
+4 个错误

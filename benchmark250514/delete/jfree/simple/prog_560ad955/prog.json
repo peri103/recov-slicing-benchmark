@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.PeriodAxis;\nimport org.jfree.chart.axis.RegularTimePeriod;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming RegularTimePeriod is a valid class and can be instantiated or has a subclass that can be used.\n        // Since RegularTimePeriod is abstract, we'll use a concrete subclass for demonstration.\n        RegularTimePeriod period = new RegularTimePeriod() {\n            // Implement abstract methods here if necessary\n        };\n\n        PeriodAxis axis = new PeriodAxis(\"Sample Axis\");\n        /* write */ axis.setLast(period);\n        /* read */ RegularTimePeriod lastPeriod = axis.getLast();\n        System.out.println(lastPeriod);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.PeriodAxis",
+        "write_method": "setLast",
+        "read_class": "org.jfree.chart.axis.PeriodAxis",
+        "read_method": "getLast"
+    }
+}

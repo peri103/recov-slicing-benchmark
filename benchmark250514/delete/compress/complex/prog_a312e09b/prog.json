@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.HashMap;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        HashMap<String, Integer> map = new HashMap<>();\n        ArrayList<Integer> list = new ArrayList<>();\n\n        // Initialize the map with some values\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n        map.put(\"three\", 3);\n\n        // Add values to the list\n        for (int i = 0; i < 5; i++) {\n            list.add(i * 100);\n        }\n\n        // Perform operations on the map\n        for (String key : map.keySet()) {\n            int value = map.get(key);\n            list.add(value);\n        }\n\n        /* write */ gzipParameters.setCRC32(123456);\n\n        // Perform some calculations\n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of list values: \" + sum);\n\n        // More operations on the list\n        for (int i = 0; i < list.size(); i++) {\n            list.set(i, list.get(i) + 10);\n        }\n\n        /* read */ long crc32Value = gzipParameters.getCRC32();\n        System.out.println(\"CRC32 Value: \" + crc32Value);\n\n        // Print modified list values\n        for (int num : list) {\n            System.out.println(\"Modified list value: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        /* write */ gzipParameters.setCRC32(123456);\n        /* read */ long crc32Value = gzipParameters.getCRC32();\n        System.out.println(crc32Value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setCRC32",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getCRC32"
+    }
+}

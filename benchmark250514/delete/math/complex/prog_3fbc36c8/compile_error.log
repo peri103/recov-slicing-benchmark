@@ -1,0 +1,11 @@
+generated/math/complex/prog_3fbc36c8/Main.java:17: 错误: 找不到符号
+        /* write */ RealMatrix sparseMatrix = MatrixUtils.createSparseMatrix(data);
+                                                         ^
+  符号:   方法 createSparseMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_3fbc36c8/Main.java:42: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getSparseMatrix(sparseMatrix);
+                                                      ^
+  符号:   方法 getSparseMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+2 个错误

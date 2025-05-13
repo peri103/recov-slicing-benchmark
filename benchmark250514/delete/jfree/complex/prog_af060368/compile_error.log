@@ -1,0 +1,10 @@
+generated/jfree/complex/prog_af060368/Main.java:19: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis valueAxis = new ValueAxis("Value") {};
+                              ^
+  需要: String,TickUnitSource
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_af060368/Main.java:19: 错误: <匿名Main$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis valueAxis = new ValueAxis("Value") {};
+                                                     ^
+2 个错误

@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_224fba19/Main.java:43: 错误: 找不到符号
+        valueAxis.setAutoRangeIncludesZero(false);
+                 ^
+  符号:   方法 setAutoRangeIncludesZero(boolean)
+  位置: 类型为ValueAxis的变量 valueAxis
+generated/jfree/complex/prog_224fba19/Main.java:44: 错误: 找不到符号
+        boolean includesZero = valueAxis.isAutoRangeIncludesZero();
+                                        ^
+  符号:   方法 isAutoRangeIncludesZero()
+  位置: 类型为ValueAxis的变量 valueAxis
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArArchiveEntry entry = new ArArchiveEntry(\"test\", 0);\n        /* write */ entry.setSize(12345);\n        /* read */ long size = entry.getSize();\n        System.out.println(size);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setSize",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getSize"
+    }
+}

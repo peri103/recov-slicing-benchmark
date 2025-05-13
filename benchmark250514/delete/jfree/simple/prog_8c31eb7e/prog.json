@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.Renderer;\nimport org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\nimport java.awt.BasicStroke;\n\npublic class Main {\n    public static void main(String[] args) {\n        Renderer renderer = new XYLineAndShapeRenderer();\n        BasicStroke stroke = new BasicStroke(2.0f);\n        \n        /* write */ renderer.setBaseStroke(stroke);\n        /* read */ BasicStroke readStroke = (BasicStroke) renderer.getBaseStroke();\n        \n        System.out.println(\"Stroke width: \" + readStroke.getLineWidth());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.Renderer",
+        "write_method": "setBaseStroke",
+        "read_class": "org.jfree.chart.renderer.Renderer",
+        "read_method": "getBaseStroke"
+    }
+}

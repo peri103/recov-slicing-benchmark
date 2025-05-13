@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableShort;\nimport org.apache.commons.lang3.mutable.MutableInt;\nimport org.apache.commons.lang3.mutable.MutableDouble;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableShort mutableShort = new MutableShort();\n        MutableInt mutableInt = new MutableInt();\n        MutableDouble mutableDouble = new MutableDouble();\n\n        mutableInt.setValue(100);\n        System.out.println(\"Initial Int Value: \" + mutableInt.getValue());\n\n        mutableDouble.setValue(20.5);\n        System.out.println(\"Initial Double Value: \" + mutableDouble.getValue());\n\n        /* write */ mutableShort.setValue((short) 42);\n\n        for (int i = 0; i < 5; i++) {\n            mutableInt.setValue(mutableInt.getValue() + i);\n            mutableDouble.setValue(mutableDouble.getValue() + (i * 1.1));\n        }\n\n        System.out.println(\"Updated Int Value: \" + mutableInt.getValue());\n        System.out.println(\"Updated Double Value: \" + mutableDouble.getValue());\n\n        /* read */ short value = mutableShort.getValue();\n        \n        System.out.println(\"MutableShort Value: \" + value);\n\n        for (int i = 0; i < 3; i++) {\n            mutableInt.setValue(mutableInt.getValue() - i);\n        }\n\n        System.out.println(\"Final Int Value: \" + mutableInt.getValue());\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.mutable.MutableShort;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableShort mutableShort = new MutableShort();\n        \n        /* write */ mutableShort.setValue((short) 42);\n        \n        /* read */ short value = mutableShort.getValue();\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableShort",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableShort",
+        "read_method": "getValue"
+    }
+}

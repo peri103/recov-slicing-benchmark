@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_460d343f/Main.java:13: 错误: 找不到符号
+        /* write */ plot.setUnits(ThermometerPlot.UNITS_CELSIUS);
+                                                 ^
+  符号:   变量 UNITS_CELSIUS
+  位置: 类 ThermometerPlot
+generated/jfree/complex/prog_460d343f/Main.java:16: 错误: 找不到符号
+        spiderPlot.setOrientation(PlotOrientation.HORIZONTAL);
+                  ^
+  符号:   方法 setOrientation(PlotOrientation)
+  位置: 类型为SpiderWebPlot的变量 spiderPlot
+generated/jfree/complex/prog_460d343f/Main.java:33: 错误: 找不到符号
+        spiderPlot.setOrientation(PlotOrientation.VERTICAL);
+                  ^
+  符号:   方法 setOrientation(PlotOrientation)
+  位置: 类型为SpiderWebPlot的变量 spiderPlot
+3 个错误

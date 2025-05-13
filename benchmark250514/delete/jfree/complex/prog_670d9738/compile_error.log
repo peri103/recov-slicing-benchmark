@@ -1,0 +1,9 @@
+generated/jfree/complex/prog_670d9738/Main.java:21: 错误: 无法将类 PiePlot<K>中的方法 setSectionOutlinePaint应用到给定类型;
+        piePlot.setSectionOutlinePaint(Color.RED);
+               ^
+  需要: Comparable,Paint
+  找到: Color
+  原因: 实际参数列表和形式参数列表长度不同
+  其中, K是类型变量:
+    K扩展已在类 PiePlot中声明的Comparable<K>
+1 个错误

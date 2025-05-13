@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.SymmetricMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a symmetric matrix of size 3x3\n        SymmetricMatrix matrix = new SymmetricMatrix(3);\n\n        // Write a value to the matrix\n        /* write */ matrix.setEntry(1, 2, 5.0);\n\n        // Read the value back from the matrix\n        /* read */ double value = matrix.getEntry(1, 2);\n\n        // Print the value to verify that the read value is the same as the written value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.SymmetricMatrix",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.SymmetricMatrix",
+        "read_method": "getEntry"
+    }
+}

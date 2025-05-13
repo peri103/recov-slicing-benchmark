@@ -1,0 +1,4 @@
+generated/guava/complex/prog_279a9ffe/Main.java:31: 错误: 不兼容的类型: List<Integer>无法转换为Set<Integer>
+        Set<Integer> arrayListValues = arrayListMultimap.get("anotherKey");
+                                                            ^
+1 个错误

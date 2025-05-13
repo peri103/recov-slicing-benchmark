@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.Range;\nimport com.google.common.collect.RangeSet;\nimport com.google.common.collect.TreeRangeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a RangeSet using TreeRangeSet implementation\n        RangeSet<Integer> rangeSet = TreeRangeSet.create();\n        \n        // Define a Range to be added to the RangeSet\n        Range<Integer> range = Range.closed(1, 10);\n        \n        /* write */ rangeSet.add(range);\n        \n        // Check if a specific value is within the range added to the RangeSet\n        /* read */ boolean containsValue = rangeSet.contains(5);\n        \n        // Output the result\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.RangeSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.RangeSet",
+        "read_method": "contains"
+    }
+}

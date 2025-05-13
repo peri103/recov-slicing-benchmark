@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Create a CSVFormat instance with the specified setting\n            CSVFormat format = CSVFormat.DEFAULT;\n            /* write */ format = format.withIgnoreEmptyLines(true);\n\n            // Sample CSV data\n            String csvData = \"id,name\\n1,John Doe\\n2,Jane Smith\\n\\n3,Bob Johnson\";\n\n            // Parse the CSV data\n            CSVParser parser = new CSVParser(new StringReader(csvData), format);\n            List<CSVRecord> records = parser.getRecords();\n\n            // Read the first record to check if it's consistent\n            /* read */ boolean isConsistent = records.get(0).isConsistent();\n            System.out.println(\"Is the first record consistent? \" + isConsistent);\n\n            parser.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreEmptyLines",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

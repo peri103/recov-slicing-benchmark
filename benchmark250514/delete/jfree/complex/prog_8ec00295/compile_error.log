@@ -1,0 +1,5 @@
+generated/jfree/complex/prog_8ec00295/Main.java:59: 错误: 不兼容的类型: DatasetRenderingOrder无法转换为PlotRenderingInfo
+        XYItemRendererState state = new XYItemRendererState(plot.getDatasetRenderingOrder());
+                                                                                         ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

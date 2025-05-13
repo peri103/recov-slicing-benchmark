@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.LinkedHashBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashBiMap<String, Integer> map = LinkedHashBiMap.create();\n        /* write */ map.put(\"key1\", 100);\n        /* read */ Integer value = map.get(\"key1\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedHashBiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.LinkedHashBiMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream;\nimport java.io.ByteArrayOutputStream;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();\n        try {\n            DeflateCompressorOutputStream deflateStream = new DeflateCompressorOutputStream(byteArrayOutputStream);\n            \n            byte[] dictionary = {1, 2, 3, 4, 5};\n            /* write */ deflateStream.setDictionary(dictionary);\n            \n            /* read */ byte[] readDictionary = deflateStream.getDictionary();\n            for (byte b : readDictionary) {\n                System.out.print(b + \" \");\n            }\n            \n            deflateStream.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream",
+        "write_method": "setDictionary",
+        "read_class": "org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream",
+        "read_method": "getDictionary"
+    }
+}

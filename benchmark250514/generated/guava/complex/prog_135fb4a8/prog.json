@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSortedSet;\nimport com.google.common.collect.ImmutableSortedSet.Builder;\nimport java.util.HashSet;\nimport java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer> builder = ImmutableSortedSet.naturalOrder();\n        HashSet<Integer> hashSet = new HashSet<>();\n        TreeSet<Integer> treeSet = new TreeSet<>();\n\n        treeSet.add(10);\n        hashSet.add(20);\n\n        /* write */ builder.add(5);\n\n        treeSet.add(15);\n        hashSet.add(25);\n\n        ImmutableSortedSet<Integer> set = builder.build();\n\n        // Perform operations on hashSet\n        hashSet.add(30);\n        hashSet.remove(20);\n        treeSet.addAll(hashSet);\n\n        // Perform operations on treeSet\n        treeSet.remove(10);\n        treeSet.add(5);\n\n        /* read */ boolean containsValue = set.contains(5);\n        System.out.println(containsValue);\n\n        // Additional operations\n        for (Integer value : treeSet) {\n            System.out.println(\"TreeSet value: \" + value);\n        }\n\n        for (Integer value : hashSet) {\n            System.out.println(\"HashSet value: \" + value);\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableSortedSet;\nimport com.google.common.collect.ImmutableSortedSet.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer> builder = ImmutableSortedSet.naturalOrder();\n        /* write */ builder.add(5);\n        ImmutableSortedSet<Integer> set = builder.build();\n        /* read */ boolean containsValue = set.contains(5);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSortedSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableSortedSet",
+        "read_method": "contains"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.ListOrderedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedMap<String, Integer> map = new ListOrderedMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.ListOrderedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.ListOrderedMap",
+        "read_method": "get"
+    }
+}

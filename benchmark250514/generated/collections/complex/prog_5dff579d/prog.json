@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.set.ListOrderedSet;\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedSet<Integer> set = new ListOrderedSet<>();\n        /* write */ set.add(42);\n\n        // Additional code to make the program more complex\n        Map<String, Integer> map = new HashMap<>();\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n\n        ArrayList<String> list = new ArrayList<>();\n        list.add(\"apple\");\n        list.add(\"banana\");\n\n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n\n        for (String fruit : list) {\n            System.out.println(\"Fruit: \" + fruit);\n        }\n\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n\n        // More unrelated operations\n        int product = 1;\n        for (int i = 1; i <= 5; i++) {\n            product *= i;\n        }\n        System.out.println(\"Product of numbers from 1 to 5: \" + product);\n\n        /* read */ int value = set.get(0);\n        System.out.println(value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.set.ListOrderedSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedSet<Integer> set = new ListOrderedSet<>();\n        /* write */ set.add(42);\n        /* read */ int value = set.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.set.ListOrderedSet",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.set.ListOrderedSet",
+        "read_method": "get"
+    }
+}

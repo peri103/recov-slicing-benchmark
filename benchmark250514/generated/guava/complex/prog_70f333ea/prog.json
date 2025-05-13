@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.HashMultimap;\nimport java.util.HashMap;\nimport java.util.HashSet;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMultimap<String, Integer> multimap = HashMultimap.create();\n        HashMap<String, Integer> map = new HashMap<>();\n        HashSet<Integer> set = new HashSet<>();\n\n        // Using HashMap\n        map.put(\"mapKey1\", 100);\n        map.put(\"mapKey2\", 200);\n\n        // Using HashSet\n        for (int i = 0; i < 5; i++) {\n            set.add(i * 10);\n        }\n\n        /* write */ multimap.put(\"key\", 42);\n\n        // Process and manipulate the HashMap\n        for (String key : map.keySet()) {\n            int value = map.get(key);\n            System.out.println(\"HashMap value: \" + value);\n        }\n\n        // Process and manipulate the HashSet\n        for (Integer val : set) {\n            System.out.println(\"HashSet value: \" + val);\n        }\n\n        // More manipulation with HashMultimap\n        multimap.put(\"key\", 84);\n        multimap.put(\"anotherKey\", 99);\n\n        // Retrieve and print values from HashMultimap\n        Set<Integer> values = multimap.get(\"key\");\n        for (Integer val : values) {\n            System.out.println(\"Multimap value: \" + val);\n        }\n\n        /* read */ Integer value = multimap.get(\"key\").iterator().next();\n        System.out.println(\"Read value: \" + value);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.HashMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMultimap<String, Integer> multimap = HashMultimap.create();\n        /* write */ multimap.put(\"key\", 42);\n        /* read */ Integer value = multimap.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.HashMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.HashMultimap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.EqualsBuilder;\nimport org.apache.commons.lang3.builder.HashCodeBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        EqualsBuilder equalsBuilder = new EqualsBuilder();\n        HashCodeBuilder hashCodeBuilder = new HashCodeBuilder();\n\n        /* write */ equalsBuilder.append(1, 1);\n        hashCodeBuilder.append(1).append(2).append(3);\n\n        int hashCode = hashCodeBuilder.toHashCode();\n        System.out.println(\"Generated HashCode: \" + hashCode);\n\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n            hashCodeBuilder.append(i);\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n\n        int newHashCode = hashCodeBuilder.toHashCode();\n        System.out.println(\"Updated HashCode: \" + newHashCode);\n\n        boolean isEqual = equalsBuilder.isEquals(); /* read */\n        System.out.println(\"Are numbers equal? \" + isEqual);\n\n        // Additional logic for complexity\n        String str1 = \"Hello\";\n        String str2 = \"World\";\n        EqualsBuilder stringEqualsBuilder = new EqualsBuilder();\n        stringEqualsBuilder.append(str1, str2);\n        boolean areStringsEqual = stringEqualsBuilder.isEquals();\n        System.out.println(\"Are strings equal? \" + areStringsEqual);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.builder.EqualsBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        EqualsBuilder equalsBuilder = new EqualsBuilder();\n        /* write */ equalsBuilder.append(1, 1);\n        /* read */ boolean isEqual = equalsBuilder.isEquals();\n        System.out.println(isEqual);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "read_method": "isEquals"
+    }
+}

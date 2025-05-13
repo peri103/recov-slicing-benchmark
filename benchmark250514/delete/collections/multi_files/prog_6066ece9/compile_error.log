@@ -1,0 +1,13 @@
+generated/collections/multi_files/prog_6066ece9/Main.java:17: 错误: 找不到符号
+        StaticBucketMap studentScores = student.getScores();
+        ^
+  符号:   类 StaticBucketMap
+  位置: 类 Main
+generated/collections/multi_files/prog_6066ece9/Main.java:24: 错误: 找不到符号
+            StaticBucketMap scores = s.getScores();
+            ^
+  符号:   类 StaticBucketMap
+  位置: 类 Main
+注: generated/collections/multi_files/prog_6066ece9/Student.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+2 个错误

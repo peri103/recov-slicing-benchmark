@@ -1,0 +1,14 @@
+generated/collections/complex/prog_6656989d/Main.java:10: 错误: <K,V>UnmodifiableMultiValuedMap(MultiValuedMap<? extends K,? extends V>) 在 UnmodifiableMultiValuedMap 中是 private 访问控制
+        UnmodifiableMultiValuedMap<String, Integer> map = new UnmodifiableMultiValuedMap<>(baseMap);
+                                                          ^
+  其中, K,V是类型变量:
+    K扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+    V扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+generated/collections/complex/prog_6656989d/Main.java:24: 错误: for-each 不适用于表达式类型
+            for (String value : multiMap.get(key)) {
+                                            ^
+  要求: 数组或 java.lang.Iterable
+  找到:    Object
+注: generated/collections/complex/prog_6656989d/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

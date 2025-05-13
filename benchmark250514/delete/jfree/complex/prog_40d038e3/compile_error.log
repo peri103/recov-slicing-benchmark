@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_40d038e3/Main.java:28: 错误: 找不到符号
+                /* write */ ((XYStepAreaRenderer) renderer).setRangePaint(redPaint);
+                                                           ^
+  符号:   方法 setRangePaint(Paint)
+  位置: 类 XYStepAreaRenderer
+generated/jfree/complex/prog_40d038e3/Main.java:40: 错误: 找不到符号
+        /* read */ Paint readPaint = stepAreaRenderer.getRangePaint();
+                                                     ^
+  符号:   方法 getRangePaint()
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+2 个错误

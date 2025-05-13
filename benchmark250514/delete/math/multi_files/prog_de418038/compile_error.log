@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_de418038/MatrixOperations.java:9: 错误: 找不到符号
+        /* write */ this.triangularMatrix = MatrixUtils.createTriangularMatrix(data);
+                                                       ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

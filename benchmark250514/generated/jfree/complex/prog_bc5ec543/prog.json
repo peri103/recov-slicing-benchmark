@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.Paint;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Item\");\n        LegendItem anotherLegendItem = new LegendItem(\"Another Item\");\n\n        List<LegendItem> legendItems = new ArrayList<>();\n        legendItems.add(legendItem);\n        legendItems.add(anotherLegendItem);\n\n        /* write */ legendItem.setLabelPaint(Color.RED);\n\n        anotherLegendItem.setLabelPaint(Color.BLUE);\n\n        for (LegendItem item : legendItems) {\n            if (item.equals(legendItem)) {\n                System.out.println(\"Processing the main legend item.\");\n            } else {\n                System.out.println(\"Processing another legend item.\");\n            }\n        }\n\n        Paint paint = anotherLegendItem.getLabelPaint();\n        System.out.println(\"Another Legend Item Paint: \" + paint);\n\n        /* read */ Paint legendItemPaint = legendItem.getLabelPaint();\n        System.out.println(\"Legend Item Paint: \" + legendItemPaint);\n\n        for (LegendItem item : legendItems) {\n            Paint currentPaint = item.getLabelPaint();\n            System.out.println(\"Current Legend Item Paint: \" + currentPaint);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Item\");\n        \n        /* write */ legendItem.setLabelPaint(Color.RED);\n        \n        /* read */ Paint paint = legendItem.getLabelPaint();\n        \n        System.out.println(paint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLabelPaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLabelPaint"
+    }
+}

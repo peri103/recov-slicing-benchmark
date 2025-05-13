@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSortedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableSortedMap.Builder<String, Integer> builder = ImmutableSortedMap.naturalOrder();\n        /* write */ builder.put(\"key\", 1);\n        \n        ImmutableSortedMap<String, Integer> map = builder.build();\n        /* read */ int value = map.get(\"key\");\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSortedMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableSortedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,14 @@
+generated/compress/complex/prog_d6cbecbb/Main.java:9: 错误: 找不到符号
+        /* write */ entry.setExtra(extraData);
+                         ^
+  符号:   方法 setExtra(byte[])
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_d6cbecbb/Main.java:24: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        int entrySize = entry.getLength();
+                                       ^
+generated/compress/complex/prog_d6cbecbb/Main.java:36: 错误: 找不到符号
+        /* read */ byte[] readData = entry.getExtra();
+                                          ^
+  符号:   方法 getExtra()
+  位置: 类型为ArArchiveEntry的变量 entry
+3 个错误

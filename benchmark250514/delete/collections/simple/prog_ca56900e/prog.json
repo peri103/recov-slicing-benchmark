@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.TreeValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeValuedHashMap<String, String> map = new TreeValuedHashMap<>();\n        /* write */ map.put(\"key\", \"value\");\n        /* read */ String value = map.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.TreeValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.TreeValuedHashMap",
+        "read_method": "get"
+    }
+}

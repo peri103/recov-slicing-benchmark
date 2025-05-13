@@ -1,0 +1,5 @@
+generated/guava/complex/prog_cfef530a/Main.java:47: 错误: 不兼容的类型: ImmutableSet<Integer>无法转换为Iterable<? extends String>
+        hashMultimap.putAll("fruit", values);
+                                     ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

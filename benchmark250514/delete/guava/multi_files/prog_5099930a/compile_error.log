@@ -1,0 +1,16 @@
+generated/guava/multi_files/prog_5099930a/BiMapHandler.java:1: 错误: 找不到符号
+import com.google.common.collect.LinkedHashBiMap;
+                                ^
+  符号:   类 LinkedHashBiMap
+  位置: 程序包 com.google.common.collect
+generated/guava/multi_files/prog_5099930a/BiMapHandler.java:4: 错误: 找不到符号
+    private LinkedHashBiMap<String, Integer> biMap = LinkedHashBiMap.create();
+            ^
+  符号:   类 LinkedHashBiMap
+  位置: 类 BiMapHandler
+generated/guava/multi_files/prog_5099930a/BiMapHandler.java:4: 错误: 找不到符号
+    private LinkedHashBiMap<String, Integer> biMap = LinkedHashBiMap.create();
+                                                     ^
+  符号:   变量 LinkedHashBiMap
+  位置: 类 BiMapHandler
+3 个错误

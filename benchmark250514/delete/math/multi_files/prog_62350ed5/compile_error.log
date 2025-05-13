@@ -1,0 +1,16 @@
+generated/math/multi_files/prog_62350ed5/SymmetricMatrixHandler.java:1: 错误: 找不到符号
+import org.apache.commons.math3.linear.SymmetricMatrix;
+                                      ^
+  符号:   类 SymmetricMatrix
+  位置: 程序包 org.apache.commons.math3.linear
+generated/math/multi_files/prog_62350ed5/SymmetricMatrixHandler.java:4: 错误: 找不到符号
+    private SymmetricMatrix matrix;
+            ^
+  符号:   类 SymmetricMatrix
+  位置: 类 SymmetricMatrixHandler
+generated/math/multi_files/prog_62350ed5/SymmetricMatrixHandler.java:7: 错误: 找不到符号
+        matrix = new SymmetricMatrix(size);
+                     ^
+  符号:   类 SymmetricMatrix
+  位置: 类 SymmetricMatrixHandler
+3 个错误

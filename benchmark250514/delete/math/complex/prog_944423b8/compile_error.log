@@ -1,0 +1,16 @@
+generated/math/complex/prog_944423b8/Main.java:9: 错误: 找不到符号
+        OpenMapRealVector vector = MatrixUtils.createOpenMapRealVector(3);
+                                              ^
+  符号:   方法 createOpenMapRealVector(int)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_944423b8/Main.java:17: 错误: 找不到符号
+        /* write */ OpenMapRealVector writeVector = MatrixUtils.createOpenMapRealVector(vector.getDimension());
+                                                               ^
+  符号:   方法 createOpenMapRealVector(int)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_944423b8/Main.java:41: 错误: 找不到符号
+        /* read */ OpenMapRealVector readVector = MatrixUtils.getOpenMapRealVector(writeVector);
+                                                             ^
+  符号:   方法 getOpenMapRealVector(OpenMapRealVector)
+  位置: 类 MatrixUtils
+3 个错误

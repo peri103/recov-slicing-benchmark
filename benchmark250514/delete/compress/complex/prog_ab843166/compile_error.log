@@ -1,0 +1,11 @@
+generated/compress/complex/prog_ab843166/Main.java:15: 错误: 找不到符号
+        anotherEntry.setName("secondEntryUpdated");
+                    ^
+  符号:   方法 setName(String)
+  位置: 类型为ArArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_ab843166/Main.java:24: 错误: 找不到符号
+        /* write */ entry.setName("newName");
+                         ^
+  符号:   方法 setName(String)
+  位置: 类型为ArArchiveEntry的变量 entry
+2 个错误

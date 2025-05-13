@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the StrBuilder with a sample string\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        \n        // Additional complex logic with unrelated code\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n        map.put(\"three\", 3);\n        \n        int sum = 0;\n        for (Integer number : numbers) {\n            sum += number;\n        }\n        \n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        int valueFromMap = map.getOrDefault(\"two\", 0);\n        System.out.println(\"Value from map: \" + valueFromMap);\n\n        // Manipulate the StrBuilder instance\n        /* write */ strBuilder.setLength(5);\n\n        // More unrelated logic\n        StringBuilder sb = new StringBuilder();\n        for (int i = 0; i < 5; i++) {\n            sb.append((char) ('A' + i));\n        }\n        System.out.println(\"StringBuilder content: \" + sb.toString());\n\n        // Reading from StrBuilder\n        /* read */ String value = strBuilder.toString();\n        System.out.println(\"StrBuilder content: \" + value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        /* write */ strBuilder.setLength(5);\n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "setLength",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

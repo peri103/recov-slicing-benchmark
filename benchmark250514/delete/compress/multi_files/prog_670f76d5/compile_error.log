@@ -1,0 +1,21 @@
+generated/compress/multi_files/prog_670f76d5/TarArchiveManager.java:11: 错误: 找不到符号
+        /* write */ entry.setFileType(TarArchiveEntry.FILE_TYPE_NORMAL);
+                                                     ^
+  符号:   变量 FILE_TYPE_NORMAL
+  位置: 类 TarArchiveEntry
+generated/compress/multi_files/prog_670f76d5/TarArchiveManager.java:12: 错误: 找不到符号
+        typeMap.put(entry.getName(), entry.getFileType());
+                                          ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 entry
+generated/compress/multi_files/prog_670f76d5/TarEntryManager.java:9: 错误: 找不到符号
+        /* write */ entry.setFileType(fileType);
+                         ^
+  符号:   方法 setFileType(int)
+  位置: 类型为TarArchiveEntry的变量 entry
+generated/compress/multi_files/prog_670f76d5/TarEntryManager.java:15: 错误: 找不到符号
+        return entry != null ? entry.getFileType() : -1;
+                                    ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 entry
+4 个错误

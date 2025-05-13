@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.LinkedListMultimap;\nimport java.util.HashMap;\nimport java.util.HashSet;\nimport java.util.Map;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedListMultimap<String, Integer> multimap = LinkedListMultimap.create();\n        Map<String, Set<Integer>> map = new HashMap<>();\n        Set<Integer> set = new HashSet<>();\n\n        // Add some values to the set\n        for (int i = 0; i < 5; i++) {\n            set.add(i * 10);\n        }\n        map.put(\"setKey\", set);\n\n        // Iterate over the set and add to multimap\n        for (Integer num : set) {\n            multimap.put(\"numbers\", num);\n        }\n\n        /* write */ multimap.put(\"key\", 42);\n\n        // Perform some unrelated operations\n        int sum = 0;\n        for (Integer num : multimap.get(\"numbers\")) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // More unrelated operations\n        int product = 1;\n        for (Integer num : map.get(\"setKey\")) {\n            product *= num;\n        }\n        System.out.println(\"Product of set numbers: \" + product);\n\n        /* read */ Integer value = multimap.get(\"key\").get(0);\n\n        System.out.println(\"Value from multimap: \" + value);\n\n        // Final operations\n        int finalSum = sum + value;\n        System.out.println(\"Final sum with value: \" + finalSum);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.LinkedListMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedListMultimap<String, Integer> multimap = LinkedListMultimap.create();\n        \n        /* write */ multimap.put(\"key\", 42);\n        \n        /* read */ Integer value = multimap.get(\"key\").get(0);\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedListMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.LinkedListMultimap",
+        "read_method": "get"
+    }
+}

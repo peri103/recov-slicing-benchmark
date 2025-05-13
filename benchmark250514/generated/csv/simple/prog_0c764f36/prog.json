@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the necessary objects\n        StringWriter writer = new StringWriter();\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        try {\n            // Use the write method to create a CSVPrinter with auto flush enabled\n            /* write */ CSVPrinter printer = format.withAutoFlush(true).print(writer);\n            \n            // Write some data to the CSVPrinter\n            printer.printRecord(Arrays.asList(\"Name\", \"Age\", \"Country\"));\n            printer.printRecord(Arrays.asList(\"John\", \"30\", \"USA\"));\n            \n            // Simulate reading a CSVRecord (normally you'd parse from a CSV source)\n            String csvData = writer.toString();\n            CSVRecord record = CSVFormat.DEFAULT.parse(new java.io.StringReader(csvData)).getRecords().get(1);\n            \n            // Use the read method to check if the CSVRecord is consistent\n            /* read */ boolean isConsistent = record.isConsistent();\n            System.out.println(\"Is the CSVRecord consistent? \" + isConsistent);\n            \n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAutoFlush",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

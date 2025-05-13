@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        /* write */ gzipParameters.setUncompressedSize(1024L);\n\n        // Additional code to make the program more complex\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 100);\n        }\n\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        int max = numbers.get(0);\n        for (int num : numbers) {\n            if (num > max) {\n                max = num;\n            }\n        }\n        System.out.println(\"Maximum number: \" + max);\n\n        // Now read the value set by the write method\n        /* read */ long uncompressedSize = gzipParameters.getUncompressedSize();\n        System.out.println(\"Uncompressed Size: \" + uncompressedSize);\n\n        // Additional operations on numbers\n        ArrayList<Integer> doubledNumbers = new ArrayList<>();\n        for (int num : numbers) {\n            doubledNumbers.add(num * 2);\n        }\n\n        for (int doubledNum : doubledNumbers) {\n            System.out.println(\"Doubled number: \" + doubledNum);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        /* write */ gzipParameters.setUncompressedSize(1024L);\n        /* read */ long uncompressedSize = gzipParameters.getUncompressedSize();\n        System.out.println(uncompressedSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setUncompressedSize",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getUncompressedSize"
+    }
+}

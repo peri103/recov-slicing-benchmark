@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.Array2DRowRealMatrix;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a 3x3 matrix\n        RealMatrix matrix = new Array2DRowRealMatrix(3, 3);\n\n        // Write a value to the matrix\n        /* write */ matrix.setEntry(1, 1, 5.5);\n\n        // Read the value from the matrix\n        /* read */ double value = matrix.getEntry(1, 1);\n\n        // Print the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.RealMatrix",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.RealMatrix",
+        "read_method": "getEntry"
+    }
+}

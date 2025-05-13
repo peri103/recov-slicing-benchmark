@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ArrayTable;\nimport com.google.common.collect.Table;\n\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the row and column keys\n        String[] rows = {\"row1\"};\n        String[] columns = {\"col1\"};\n\n        // Create an ArrayTable with specified row and column keys\n        ArrayTable<String, String, Integer> table = ArrayTable.create(Arrays.asList(rows), Arrays.asList(columns));\n\n        // Use the write method to put a value into the table\n        /* write */ table.put(\"row1\", \"col1\", 42);\n\n        // Use the read method to get the value from the table\n        /* read */ Integer value = table.get(\"row1\", \"col1\");\n\n        // Print the value to verify it was correctly written and read\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ArrayTable",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ArrayTable",
+        "read_method": "get"
+    }
+}

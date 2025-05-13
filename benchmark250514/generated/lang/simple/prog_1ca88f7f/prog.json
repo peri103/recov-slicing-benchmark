@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableInt;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableInt mutableInt = new MutableInt();\n        /* write */ mutableInt.setValue(42);\n        /* read */ int value = mutableInt.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableInt",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableInt",
+        "read_method": "getValue"
+    }
+}

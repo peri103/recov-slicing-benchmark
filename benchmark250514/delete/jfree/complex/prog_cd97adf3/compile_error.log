@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_cd97adf3/Main.java:41: 错误: 找不到符号
+        /* read */ boolean tickLabelsVisible = symbolAxis.getTickLabelsVisible();
+                                                         ^
+  符号:   方法 getTickLabelsVisible()
+  位置: 类型为SymbolAxis的变量 symbolAxis
+1 个错误

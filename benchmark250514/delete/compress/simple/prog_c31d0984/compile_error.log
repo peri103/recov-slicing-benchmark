@@ -1,0 +1,11 @@
+generated/compress/simple/prog_c31d0984/Main.java:12: 错误: 找不到符号
+            /* write */ bzip2InputStream.setBlockSize(9); // Set block size to maximum value 9
+                                        ^
+  符号:   方法 setBlockSize(int)
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2InputStream
+generated/compress/simple/prog_c31d0984/Main.java:14: 错误: 找不到符号
+            /* read */ int blockSize = bzip2InputStream.getBlockSize();
+                                                       ^
+  符号:   方法 getBlockSize()
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2InputStream
+2 个错误

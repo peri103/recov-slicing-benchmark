@@ -1,0 +1,16 @@
+generated/math/multi_files/prog_d7cb819d/Student.java:13: 错误: 找不到符号
+    public RealMatrix getSparseMatrix() {
+           ^
+  符号:   类 RealMatrix
+  位置: 类 Student
+generated/math/multi_files/prog_d7cb819d/MatrixHandler.java:8: 错误: 找不到符号
+        /* write */ sparseMatrix = MatrixUtils.createSparseMatrix(data.length, data[0].length, data);
+                                              ^
+  符号:   方法 createSparseMatrix(int,int,double[][])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_d7cb819d/Main.java:19: 错误: 找不到符号
+        /* read */ RealMatrix readSparseMatrix = student.getSparseMatrix();
+                   ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+3 个错误

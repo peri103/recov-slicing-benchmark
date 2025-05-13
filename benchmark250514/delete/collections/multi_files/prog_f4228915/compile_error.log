@@ -1,0 +1,21 @@
+generated/collections/multi_files/prog_f4228915/Course.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.LinkedHashValuedHashMap;
+                                               ^
+  符号:   类 LinkedHashValuedHashMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/multi_files/prog_f4228915/Course.java:5: 错误: 找不到符号
+    private LinkedHashValuedHashMap<String, Integer> studentScores = new LinkedHashValuedHashMap<>();
+            ^
+  符号:   类 LinkedHashValuedHashMap
+  位置: 类 Course
+generated/collections/multi_files/prog_f4228915/Student.java:14: 错误: 找不到符号
+    public Collection<Integer> getScores() {
+           ^
+  符号:   类 Collection
+  位置: 类 Student
+generated/collections/multi_files/prog_f4228915/Course.java:5: 错误: 找不到符号
+    private LinkedHashValuedHashMap<String, Integer> studentScores = new LinkedHashValuedHashMap<>();
+                                                                         ^
+  符号:   类 LinkedHashValuedHashMap
+  位置: 类 Course
+4 个错误

@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_5e9855c2/Main.java:13: 错误: 找不到符号
+        /* write */ plot.setPaint(paint);
+                        ^
+  符号:   方法 setPaint(Paint)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/simple/prog_5e9855c2/Main.java:15: 错误: 找不到符号
+        /* read */ Paint retrievedPaint = plot.getPaint();
+                                              ^
+  符号:   方法 getPaint()
+  位置: 类型为WaferMapPlot的变量 plot
+2 个错误

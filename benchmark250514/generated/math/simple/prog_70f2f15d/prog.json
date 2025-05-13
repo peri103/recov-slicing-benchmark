@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.DefaultRealMatrixChangingVisitor;\n\npublic class Main {\n    public static void main(String[] args) {\n        DefaultRealMatrixChangingVisitor visitor = new DefaultRealMatrixChangingVisitor() {\n            private double value;\n\n            @Override\n            public double visit(int row, int column, double value) {\n                this.value = value; // Store the value\n                /* write */ return value + 1; // Modify the value\n            }\n\n            @Override\n            public double end() {\n                /* read */ return value; // Return the stored value\n            }\n        };\n\n        // Simulate the visit operation\n        double modifiedValue = visitor.visit(0, 0, 5.0);\n        System.out.println(\"Modified Value: \" + modifiedValue);\n\n        // Retrieve the stored value\n        double originalValue = visitor.end();\n        System.out.println(\"Original Value: \" + originalValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.DefaultRealMatrixChangingVisitor",
+        "write_method": "visit",
+        "read_class": "org.apache.commons.math3.linear.DefaultRealMatrixChangingVisitor",
+        "read_method": "end"
+    }
+}

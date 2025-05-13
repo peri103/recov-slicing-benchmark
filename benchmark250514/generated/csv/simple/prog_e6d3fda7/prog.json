@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Create a CSVFormat object and set a null string representation\n            /* write */ CSVFormat format = CSVFormat.DEFAULT.withNullString(\"NULL\");\n\n            // Prepare a CSV input string with a null value\n            String csvData = \"name,age\\nJohn,NULL\\nDoe,25\";\n            \n            // Parse the CSV data using the format with null string\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), format);\n            \n            // Retrieve the first record\n            CSVRecord record = parser.getRecords().get(0);\n            \n            // Check if the 'age' field is set (it should be null)\n            /* read */ boolean isAgeSet = record.isSet(\"age\");\n            \n            // Output the result\n            System.out.println(\"Is 'age' field set? \" + isAgeSet);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withNullString",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

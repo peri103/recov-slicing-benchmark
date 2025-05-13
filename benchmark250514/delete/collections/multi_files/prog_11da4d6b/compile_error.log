@@ -1,0 +1,13 @@
+generated/collections/multi_files/prog_11da4d6b/DataProcessor.java:12: 错误: 找不到符号
+        /* read */ return (Integer) map.get(key).iterator().next();
+                                                ^
+  符号:   方法 iterator()
+  位置: 类 Object
+generated/collections/multi_files/prog_11da4d6b/Student.java:16: 错误: 找不到符号
+        return (Integer) scores.get(subject).iterator().next();
+                                            ^
+  符号:   方法 iterator()
+  位置: 类 Object
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

@@ -1,0 +1,4 @@
+generated/guava/complex/prog_e9f1afb0/Main.java:28: 错误: 不兼容的类型: Integer无法转换为String
+        String word = biMap.inverse().get("one");
+                                         ^
+1 个错误

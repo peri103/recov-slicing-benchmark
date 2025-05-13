@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with trailing delimiter\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        /* write */ csvFormat = csvFormat.withTrailingDelimiter();\n\n        // Create a mock CSVRecord for demonstration purposes\n        String[] values = {\"value1\", \"value2\", \"value3\"};\n        CSVRecord csvRecord = new CSVRecord(null, null, values, null, null);\n\n        // Read a value from the CSVRecord\n        /* read */ boolean isSet = csvRecord.isSet(1);\n        System.out.println(isSet);  // Output should be true since index 1 is set\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrailingDelimiter",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

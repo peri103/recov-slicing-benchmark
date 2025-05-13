@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\nimport org.apache.commons.math3.linear.OpenMapRealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the matrix dimensions\n        int rows = 3;\n        int columns = 3;\n        \n        // Create a sparse matrix using the MatrixUtils class\n        /* write */ OpenMapRealMatrix sparseMatrix = MatrixUtils.createSparseMatrix(rows, columns);\n        \n        // Populate the sparse matrix with some values\n        sparseMatrix.setEntry(0, 0, 1.0);\n        sparseMatrix.setEntry(1, 1, 2.0);\n        sparseMatrix.setEntry(2, 2, 3.0);\n        \n        // Retrieve the sparse matrix using the MatrixUtils class\n        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getSparseMatrix(sparseMatrix);\n        \n        // Print the retrieved matrix values\n        for (int i = 0; i < rows; i++) {\n            for (int j = 0; j < columns; j++) {\n                System.out.print(retrievedMatrix.getEntry(i, j) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createSparseMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getSparseMatrix"
+    }
+}

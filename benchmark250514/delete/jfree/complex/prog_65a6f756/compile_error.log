@@ -1,0 +1,38 @@
+generated/jfree/complex/prog_65a6f756/Main.java:12: 错误: 不兼容的类型: double无法转换为NumberTickUnit
+        numberAxis.setTickUnit(10.0);
+                               ^
+generated/jfree/complex/prog_65a6f756/Main.java:17: 错误: 不兼容的类型: NumberTickUnit无法转换为double
+        double tickUnit = numberAxis.getTickUnit();
+                                                ^
+generated/jfree/complex/prog_65a6f756/Main.java:24: 错误: 找不到符号
+        /* write */ logAxis.setBase(10.0);
+                           ^
+  符号:   方法 setBase(double)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_65a6f756/Main.java:32: 错误: 找不到符号
+        logAxis.setBase(logBase);
+               ^
+  符号:   方法 setBase(double)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_65a6f756/Main.java:33: 错误: 找不到符号
+        double logValue = logAxis.calculateLog(50);
+                                 ^
+  符号:   方法 calculateLog(int)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_65a6f756/Main.java:37: 错误: 找不到符号
+        /* read */ double baseValue = logAxis.getBase();
+                                             ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_65a6f756/Main.java:41: 错误: 找不到符号
+        double valueAt10 = logAxis.calculateLog(10);
+                                  ^
+  符号:   方法 calculateLog(int)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_65a6f756/Main.java:44: 错误: 找不到符号
+        double valueAt100 = logAxis.calculateLog(100);
+                                   ^
+  符号:   方法 calculateLog(int)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+8 个错误

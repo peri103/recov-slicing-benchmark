@@ -1,0 +1,15 @@
+generated/guava/multi_files/prog_c5147e4e/Student.java:15: 错误: 找不到符号
+    public ImmutableList<Integer> getScores() {
+           ^
+  符号:   类 ImmutableList
+  位置: 类 Student
+generated/guava/multi_files/prog_c5147e4e/Main.java:15: 错误: name 在 Student 中是 private 访问控制
+        System.out.println("First score of student " + student.name + ": " + firstScore);
+                                                              ^
+generated/guava/multi_files/prog_c5147e4e/Main.java:19: 错误: name 在 Student 中是 private 访问控制
+            System.out.println("Student: " + s.name + ", Age: " + s.age);
+                                              ^
+generated/guava/multi_files/prog_c5147e4e/Main.java:19: 错误: age 在 Student 中是 private 访问控制
+            System.out.println("Student: " + s.name + ", Age: " + s.age);
+                                                                   ^
+4 个错误

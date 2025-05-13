@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.cache.CacheBuilder;\nimport com.google.common.cache.LoadingCache;\nimport com.google.common.cache.CacheLoader;\nimport java.util.concurrent.ExecutionException;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CacheLoader to provide default values when keys are not present\n        CacheLoader<String, Integer> loader = new CacheLoader<>() {\n            public Integer load(String key) {\n                return null; // Return null for missing keys\n            }\n        };\n\n        // Initialize the LoadingCache with the CacheLoader\n        LoadingCache<String, Integer> cache = CacheBuilder.newBuilder()\n                .build(loader);\n\n        // Write a value to the cache\n        /* write */ cache.put(\"key1\", 123);\n\n        // Read the value from the cache\n        try {\n            /* read */ Integer value = cache.get(\"key1\");\n            System.out.println(value);\n        } catch (ExecutionException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.cache.LoadingCache",
+        "write_method": "put",
+        "read_class": "com.google.common.cache.LoadingCache",
+        "read_method": "get"
+    }
+}

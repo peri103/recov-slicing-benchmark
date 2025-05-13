@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the DumpArchiveEntry object\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        \n        // Use the write method to set the link name\n        /* write */ entry.setLinkName(\"exampleLinkName\");\n        \n        // Use the read method to get the link name\n        /* read */ String linkName = entry.getLinkName();\n        \n        // Print the link name to verify it was correctly set and read\n        System.out.println(linkName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setLinkName",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getLinkName"
+    }
+}

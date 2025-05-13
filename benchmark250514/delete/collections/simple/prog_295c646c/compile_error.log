@@ -1,0 +1,16 @@
+generated/collections/simple/prog_295c646c/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.TreeValuedHashMap;
+                                               ^
+  符号:   类 TreeValuedHashMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/simple/prog_295c646c/Main.java:6: 错误: 找不到符号
+        TreeValuedHashMap<String, Integer> map = new TreeValuedHashMap<>();
+        ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 Main
+generated/collections/simple/prog_295c646c/Main.java:6: 错误: 找不到符号
+        TreeValuedHashMap<String, Integer> map = new TreeValuedHashMap<>();
+                                                     ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 Main
+3 个错误

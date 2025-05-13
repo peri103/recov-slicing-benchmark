@@ -1,0 +1,41 @@
+generated/jfree/multi_files/prog_b36155e3/CompassPlotWrapper.java:2: 错误: 找不到符号
+import org.jfree.chart.plot.dial.DialNeedle;
+                                ^
+  符号:   类 DialNeedle
+  位置: 程序包 org.jfree.chart.plot.dial
+generated/jfree/multi_files/prog_b36155e3/CompassPlotWrapper.java:6: 错误: 找不到符号
+    private DialNeedle needle;
+            ^
+  符号:   类 DialNeedle
+  位置: 类 CompassPlotWrapper
+generated/jfree/multi_files/prog_b36155e3/CompassPlotWrapper.java:17: 错误: 找不到符号
+    public DialNeedle getNeedle() {
+           ^
+  符号:   类 DialNeedle
+  位置: 类 CompassPlotWrapper
+generated/jfree/multi_files/prog_b36155e3/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.plot.dial.DialNeedle;
+                                ^
+  符号:   类 DialNeedle
+  位置: 程序包 org.jfree.chart.plot.dial
+generated/jfree/multi_files/prog_b36155e3/CompassPlotWrapper.java:10: 错误: 找不到符号
+        this.needle = new DialNeedle();
+                          ^
+  符号:   类 DialNeedle
+  位置: 类 CompassPlotWrapper
+generated/jfree/multi_files/prog_b36155e3/CompassPlotWrapper.java:18: 错误: 找不到符号
+        return compassPlot.getSeriesNeedle(0);
+                          ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot
+generated/jfree/multi_files/prog_b36155e3/Main.java:19: 错误: 找不到符号
+        /* read */ DialNeedle readNeedle = compassPlotWrapper.getNeedle();
+                   ^
+  符号:   类 DialNeedle
+  位置: 类 Main
+generated/jfree/multi_files/prog_b36155e3/DialPlotWrapper.java:15: 错误: 找不到符号
+        indicator.setValue(10.5);
+                 ^
+  符号:   方法 setValue(double)
+  位置: 类型为DialValueIndicator的变量 indicator
+8 个错误

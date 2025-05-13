@@ -1,0 +1,16 @@
+generated/math/complex/prog_b9ad0b71/Main.java:17: 错误: 找不到符号
+        RealMatrix matrix2 = MatrixUtils.createBlockRealMatrix(data2);
+                                        ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_b9ad0b71/Main.java:20: 错误: 找不到符号
+        RealMatrix sumMatrix = matrix2.add(MatrixUtils.createBlockRealMatrix(data));
+                                                      ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_b9ad0b71/Main.java:30: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createBlockRealMatrix(data);
+                                                   ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+3 个错误

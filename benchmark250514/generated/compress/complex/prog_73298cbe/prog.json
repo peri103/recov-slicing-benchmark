@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        List<ZipArchiveEntry> zipEntries = new ArrayList<>();\n        \n        zipEntries.add(new ZipArchiveEntry(\"file1.txt\"));\n        zipEntries.add(new ZipArchiveEntry(\"file2.txt\"));\n        zipEntries.add(new ZipArchiveEntry(\"file3.txt\"));\n\n        for (ZipArchiveEntry entry : zipEntries) {\n            entry.setMethod(ZipArchiveEntry.STORED);\n        }\n        \n        /* write */ zipEntry.setMethod(ZipArchiveEntry.DEFLATED);\n\n        int totalMethodSum = 0;\n        for (ZipArchiveEntry entry : zipEntries) {\n            totalMethodSum += entry.getMethod();\n        }\n\n        int method = zipEntry.getMethod();\n        /* read */ System.out.println(method);\n\n        totalMethodSum += method;\n\n        System.out.println(\"Total method sum: \" + totalMethodSum);\n\n        for (int i = 0; i < zipEntries.size(); i++) {\n            System.out.println(\"Method of zipEntries[\" + i + \"]: \" + zipEntries.get(i).getMethod());\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        /* write */ zipEntry.setMethod(ZipArchiveEntry.DEFLATED);\n        /* read */ int method = zipEntry.getMethod();\n        System.out.println(method);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setMethod",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getMethod"
+    }
+}

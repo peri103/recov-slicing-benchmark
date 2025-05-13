@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a DumpArchiveEntry object\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n\n        // Set external attributes using the write method\n        /* write */ entry.setExternalAttributes(12345);\n\n        // Read external attributes using the read method\n        /* read */ long externalAttributes = entry.getExternalAttributes();\n\n        // Print the read value to verify\n        System.out.println(externalAttributes);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setExternalAttributes",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getExternalAttributes"
+    }
+}

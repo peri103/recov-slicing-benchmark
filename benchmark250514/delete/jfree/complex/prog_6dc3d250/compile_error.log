@@ -1,0 +1,31 @@
+generated/jfree/complex/prog_6dc3d250/Main.java:4: 错误: 找不到符号
+import org.jfree.chart.renderer.ColorPaintScale;
+                               ^
+  符号:   类 ColorPaintScale
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/complex/prog_6dc3d250/Main.java:18: 错误: 找不到符号
+        paintScaleMap.put("ColorScale", new ColorPaintScale(0.0, 100.0, Color.RED, Color.BLUE));
+                                            ^
+  符号:   类 ColorPaintScale
+  位置: 类 Main
+generated/jfree/complex/prog_6dc3d250/Main.java:22: 错误: 找不到符号
+        plot.setPaintScale(selectedPaintScale);
+            ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_6dc3d250/Main.java:26: 错误: 找不到符号
+        anotherPlot.setPaintScale(paintScaleMap.get("GrayScale"));
+                   ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+generated/jfree/complex/prog_6dc3d250/Main.java:36: 错误: 找不到符号
+        /* read */ PaintScale retrievedPaintScale = plot.getPaintScale();
+                                                        ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_6dc3d250/Main.java:42: 错误: 找不到符号
+            anotherPlot.setPaintScale(entry.getValue());
+                       ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+6 个错误

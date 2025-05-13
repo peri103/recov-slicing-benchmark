@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date currentDate = new Date();\n        \n        // Add 2 months to the current date\n        /* write */ Date newDate = DateUtils.addMonths(currentDate, 2);\n        \n        // Truncate the new date to the nearest day\n        /* read */ Date truncatedDate = DateUtils.truncate(newDate, DateUtils.SEMI_MONTH);\n        \n        System.out.println(\"Original Date: \" + currentDate);\n        System.out.println(\"Date after adding 2 months: \" + newDate);\n        System.out.println(\"Truncated Date: \" + truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addMonths",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

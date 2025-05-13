@@ -1,0 +1,4 @@
+generated/guava/complex/prog_8bf235d3/Main.java:28: 错误: 不兼容的类型: BiMap<Integer,String>无法转换为HashBiMap<Integer,String>
+        HashBiMap<Integer, String> inverseMap = map.inverse();
+                                                           ^
+1 个错误

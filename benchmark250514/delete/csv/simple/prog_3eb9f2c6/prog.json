@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CSVFormat object\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Use the write method\n        /* write */ format = format.withTrailingDelimiter();\n        \n        // Create a dummy CSVRecord object for demonstration purposes\n        String[] recordData = {\"data1\", \"data2\"};\n        CSVRecord record = CSVRecord.parse(recordData, format);\n        \n        // Use the read method\n        /* read */ boolean isSet = record.isSet(0);\n        \n        // Print the result\n        System.out.println(isSet);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrailingDelimiter",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

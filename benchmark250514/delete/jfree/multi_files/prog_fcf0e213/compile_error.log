@@ -1,0 +1,16 @@
+generated/jfree/multi_files/prog_fcf0e213/AxisManager.java:16: 错误: 找不到符号
+        /* read */ return axis.getBase();
+                              ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 axis
+generated/jfree/multi_files/prog_fcf0e213/LogarithmicAxisWrapper.java:11: 错误: 找不到符号
+        /* write */ axis.setBase(base);
+                        ^
+  符号:   方法 setBase(double)
+  位置: 类型为LogarithmicAxis的变量 axis
+generated/jfree/multi_files/prog_fcf0e213/LogarithmicAxisWrapper.java:15: 错误: 找不到符号
+        return axis.calculateLog(value);
+                   ^
+  符号:   方法 calculateLog(double)
+  位置: 类型为LogarithmicAxis的变量 axis
+3 个错误

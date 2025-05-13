@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.EqualsBuilder;\nimport org.apache.commons.lang3.builder.HashCodeBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        EqualsBuilder equalsBuilder = new EqualsBuilder();\n        HashCodeBuilder hashCodeBuilder = new HashCodeBuilder();\n\n        int a = 5;\n        int b = 5;\n        int c = 10;\n\n        /* write */ equalsBuilder.append(a, b);\n\n        hashCodeBuilder.append(a);\n        hashCodeBuilder.append(c);\n        int hashCode1 = hashCodeBuilder.toHashCode();\n        \n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 2);\n        }\n\n        int sum = 0;\n        for (int number : numbers) {\n            sum += number;\n        }\n\n        boolean areNumbersEqual = new EqualsBuilder().append(sum, 20).isEquals();\n        \n        if (areNumbersEqual) {\n            System.out.println(\"Sum of numbers is 20\");\n        } else {\n            System.out.println(\"Sum of numbers is not 20\");\n        }\n\n        /* read */ boolean areEqual = equalsBuilder.isEquals();\n        System.out.println(\"Are a and b equal? \" + areEqual);\n\n        hashCodeBuilder.append(b);\n        int hashCode2 = hashCodeBuilder.toHashCode();\n\n        System.out.println(\"HashCode1: \" + hashCode1);\n        System.out.println(\"HashCode2: \" + hashCode2);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.builder.EqualsBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        EqualsBuilder equalsBuilder = new EqualsBuilder();\n        /* write */ equalsBuilder.append(5, 5);\n        /* read */ boolean areEqual = equalsBuilder.isEquals();\n        System.out.println(areEqual);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "read_method": "isEquals"
+    }
+}

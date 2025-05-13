@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CSVFormat instance\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Use the write method to set the format with trim\n        /* write */ format = format.withTrim();\n        \n        // Create a dummy CSVRecord instance for demonstration purposes\n        CSVRecord record = new CSVRecord(null, null, null, format);\n        \n        // Use the read method to check if the record is mapped\n        /* read */ boolean isMapped = record.isMapped(0);\n        \n        // Print the result\n        System.out.println(\"Is the record mapped? \" + isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrim",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

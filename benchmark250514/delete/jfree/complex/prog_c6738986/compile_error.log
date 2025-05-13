@@ -1,0 +1,34 @@
+generated/jfree/complex/prog_c6738986/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/complex/prog_c6738986/Main.java:9: 错误: 找不到符号
+        Renderer renderer = new AbstractRenderer() {
+        ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/complex/prog_c6738986/Main.java:9: 错误: <匿名Main$1>不是抽象的, 并且未覆盖AbstractRenderer中的抽象方法getDrawingSupplier()
+        Renderer renderer = new AbstractRenderer() {
+                                                   ^
+generated/jfree/complex/prog_c6738986/Main.java:12: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_c6738986/Main.java:17: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_c6738986/Main.java:46: 错误: 找不到符号
+        Renderer anotherRenderer = new AbstractRenderer() {
+        ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/complex/prog_c6738986/Main.java:46: 错误: <匿名Main$2>不是抽象的, 并且未覆盖AbstractRenderer中的抽象方法getDrawingSupplier()
+        Renderer anotherRenderer = new AbstractRenderer() {
+                                                          ^
+generated/jfree/complex/prog_c6738986/Main.java:49: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_c6738986/Main.java:54: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+9 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        Comparable seriesKey = \"SeriesKey1\";\n        \n        /* write */ legendItem.setSeriesKey(seriesKey);\n\n        // Additional complex logic\n        Map<String, List<String>> dataMap = new HashMap<>();\n        List<String> dataList = new ArrayList<>();\n        dataList.add(\"Data1\");\n        dataList.add(\"Data2\");\n        dataMap.put(\"Key1\", dataList);\n\n        for (Map.Entry<String, List<String>> entry : dataMap.entrySet()) {\n            System.out.println(\"Processing: \" + entry.getKey());\n            for (String data : entry.getValue()) {\n                System.out.println(\"Data: \" + data);\n            }\n        }\n\n        // More unrelated logic\n        List<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n\n        int sum = 0;\n        for (int number : numbers) {\n            sum += number;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // Continue with the original logic\n        /* read */ Comparable retrievedKey = legendItem.getSeriesKey();\n\n        System.out.println(\"Retrieved Series Key: \" + retrievedKey);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n        Comparable seriesKey = \"SeriesKey1\";\n        \n        /* write */ legendItem.setSeriesKey(seriesKey);\n        /* read */ Comparable retrievedKey = legendItem.getSeriesKey();\n        \n        System.out.println(retrievedKey);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setSeriesKey",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getSeriesKey"
+    }
+}

@@ -1,0 +1,11 @@
+generated/math/complex/prog_63f86b83/Main.java:22: 错误: 找不到符号
+        SparseRealVector vector = (SparseRealVector) /* write */ MatrixUtils.createSparseRealVector(new double[]{1.0, 2.0, 3.0});
+                                                                            ^
+  符号:   方法 createSparseRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_63f86b83/Main.java:41: 错误: 找不到符号
+        RealVector readVector = /* read */ MatrixUtils.getSparseRealVector(vector);
+                                                      ^
+  符号:   方法 getSparseRealVector(SparseRealVector)
+  位置: 类 MatrixUtils
+2 个错误

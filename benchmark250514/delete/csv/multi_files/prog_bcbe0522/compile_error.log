@@ -1,0 +1,23 @@
+generated/csv/multi_files/prog_bcbe0522/Student.java:26: 错误: 找不到符号
+    public static List<Student> parseStudents(CSVParser parser) throws IOException {
+                                              ^
+  符号:   类 CSVParser
+  位置: 类 Student
+generated/csv/multi_files/prog_bcbe0522/Student.java:26: 错误: 找不到符号
+    public static List<Student> parseStudents(CSVParser parser) throws IOException {
+                                                                       ^
+  符号:   类 IOException
+  位置: 类 Student
+generated/csv/multi_files/prog_bcbe0522/Student.java:27: 错误: 找不到符号
+        List<Student> students = new ArrayList<>();
+                                     ^
+  符号:   类 ArrayList
+  位置: 类 Student
+generated/csv/multi_files/prog_bcbe0522/Student.java:28: 错误: 找不到符号
+        for (CSVRecord record : parser) {
+             ^
+  符号:   类 CSVRecord
+  位置: 类 Student
+注: generated/csv/multi_files/prog_bcbe0522/CSVUtils.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+4 个错误

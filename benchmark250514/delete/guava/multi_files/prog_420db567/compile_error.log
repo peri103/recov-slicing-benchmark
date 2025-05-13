@@ -1,0 +1,11 @@
+generated/guava/multi_files/prog_420db567/Main.java:11: 错误: 找不到符号
+        ImmutableSet<String> fruitImmutableSet = fruitSet.buildSet();
+        ^
+  符号:   类 ImmutableSet
+  位置: 类 Main
+generated/guava/multi_files/prog_420db567/Main.java:16: 错误: 找不到符号
+        ImmutableMultiset<String> fruitImmutableMultiset = fruitMultiset.buildMultiset();
+        ^
+  符号:   类 ImmutableMultiset
+  位置: 类 Main
+2 个错误

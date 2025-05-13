@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_58aaa5db/Main.java:17: 错误: 找不到符号
+        legendItem.setPaint(color);
+                  ^
+  符号:   方法 setPaint(Color)
+  位置: 类型为LegendItem的变量 legendItem
+generated/jfree/complex/prog_58aaa5db/Main.java:18: 错误: 找不到符号
+        legendItem.setLabel("Updated Sample");
+                  ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+generated/jfree/complex/prog_58aaa5db/Main.java:30: 错误: 找不到符号
+        Color legendColor = (Color) legendItem.getPaint();
+                                              ^
+  符号:   方法 getPaint()
+  位置: 类型为LegendItem的变量 legendItem
+3 个错误

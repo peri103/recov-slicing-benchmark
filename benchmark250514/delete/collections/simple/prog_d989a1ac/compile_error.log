@@ -1,0 +1,7 @@
+generated/collections/simple/prog_d989a1ac/Main.java:8: 错误: <K,V>TransformedMultiValuedMap(MultiValuedMap<K,V>,Transformer<? super K,? extends K>,Transformer<? super V,? extends V>) 在 TransformedMultiValuedMap 中是 protected 访问控制
+        TransformedMultiValuedMap<String, Integer> transformedMap = new TransformedMultiValuedMap<>(map, null, null);
+                                                                    ^
+  其中, K,V是类型变量:
+    K扩展已在类 TransformedMultiValuedMap中声明的Object
+    V扩展已在类 TransformedMultiValuedMap中声明的Object
+1 个错误

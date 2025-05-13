@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        ArrayList<String> fileNames = new ArrayList<>();\n        HashMap<String, Integer> fileModes = new HashMap<>();\n\n        fileNames.add(\"example.txt\");\n        fileNames.add(\"sample.txt\");\n        fileNames.add(\"test.txt\");\n\n        fileModes.put(\"sample.txt\", 0755);\n        fileModes.put(\"test.txt\", 0700);\n\n        /* write */ entry.setMode(0644);\n\n        for (String fileName : fileNames) {\n            System.out.println(\"Processing file: \" + fileName);\n            if (fileModes.containsKey(fileName)) {\n                System.out.println(\"Mode for \" + fileName + \": \" + fileModes.get(fileName));\n            }\n        }\n\n        /* read */ int mode = entry.getMode();\n        System.out.println(\"Mode for example.txt: \" + mode);\n\n        ArrayList<TarArchiveEntry> entries = new ArrayList<>();\n        entries.add(entry);\n        entries.add(new TarArchiveEntry(\"sample.txt\"));\n        entries.add(new TarArchiveEntry(\"test.txt\"));\n\n        for (TarArchiveEntry tarEntry : entries) {\n            System.out.println(\"Entry name: \" + tarEntry.getName());\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        /* write */ entry.setMode(0644);\n        /* read */ int mode = entry.getMode();\n        System.out.println(\"Mode: \" + mode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setMode",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getMode"
+    }
+}

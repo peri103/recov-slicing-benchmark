@@ -1,0 +1,4 @@
+generated/jfree/simple/prog_be52f6a3/Main.java:10: 错误: 不兼容的类型: Paint无法转换为Color
+        /* read */ Color readNegativePaint = renderer.getNegativePaint();
+                                                                      ^
+1 个错误

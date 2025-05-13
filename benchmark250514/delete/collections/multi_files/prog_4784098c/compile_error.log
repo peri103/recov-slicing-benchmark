@@ -1,0 +1,16 @@
+generated/collections/multi_files/prog_4784098c/Student.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractBidiMapDecorator;
+                                          ^
+  符号:   类 AbstractBidiMapDecorator
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/multi_files/prog_4784098c/Student.java:6: 错误: 找不到符号
+    private AbstractBidiMapDecorator<String, Integer> scores;
+            ^
+  符号:   类 AbstractBidiMapDecorator
+  位置: 类 Student
+generated/collections/multi_files/prog_4784098c/Student.java:11: 错误: 找不到符号
+        this.scores = new AbstractBidiMapDecorator<>(scoreMap) {};
+                          ^
+  符号:   类 AbstractBidiMapDecorator
+  位置: 类 Student
+3 个错误

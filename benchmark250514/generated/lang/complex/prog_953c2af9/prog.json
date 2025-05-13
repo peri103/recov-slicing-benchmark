@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        \n        // Additional unrelated code to increase complexity\n        int[] numbers = {1, 2, 3, 4, 5};\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // More complex operations\n        StrBuilder anotherStrBuilder = new StrBuilder(\"Goodbye World\");\n        anotherStrBuilder.append(\" and Universe\");\n        \n        // Modify original StrBuilder\n        /* write */ strBuilder.replace(6, 11, \"Java\");\n        \n        // Perform operations on anotherStrBuilder\n        anotherStrBuilder.insert(0, \"Welcome \");\n        anotherStrBuilder.delete(0, 8);\n        System.out.println(\"Another StrBuilder: \" + anotherStrBuilder.toString());\n\n        // Additional unrelated operations\n        String[] words = {\"This\", \"is\", \"a\", \"test\"};\n        for (String word : words) {\n            System.out.print(word + \" \");\n        }\n        System.out.println();\n\n        // Retrieve and print the result from the original StrBuilder\n        /* read */ String result = strBuilder.toString();\n        System.out.println(\"Final StrBuilder: \" + result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        /* write */ strBuilder.replace(6, 11, \"Java\");\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "replace",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

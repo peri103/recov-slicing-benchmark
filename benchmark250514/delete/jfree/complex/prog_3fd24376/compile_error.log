@@ -1,0 +1,7 @@
+generated/jfree/complex/prog_3fd24376/Main.java:9: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/complex/prog_3fd24376/Main.java:20: 错误: <匿名Main$2>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot anotherPlot = new Plot() {
+                                      ^
+2 个错误

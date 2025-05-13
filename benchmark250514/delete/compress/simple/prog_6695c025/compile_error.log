@@ -1,0 +1,11 @@
+generated/compress/simple/prog_6695c025/Main.java:6: 错误: 找不到符号
+        /* write */ entry.setUnixMode(0755);
+                         ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/simple/prog_6695c025/Main.java:7: 错误: 找不到符号
+        /* read */ int mode = entry.getUnixMode();
+                                   ^
+  符号:   方法 getUnixMode()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

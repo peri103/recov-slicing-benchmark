@@ -1,0 +1,4 @@
+generated/collections/complex/prog_a228b6e7/Main.java:9: 错误: 类型变量数目错误; 需要2
+        TransformedMap<String, String, String, String> transformedMap = TransformedMap.transformedMap(
+                      ^
+1 个错误

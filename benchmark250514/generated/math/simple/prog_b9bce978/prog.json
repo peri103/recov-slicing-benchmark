@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.SparseRealVector;\nimport org.apache.commons.math3.linear.OpenMapRealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a SparseRealVector instance\n        SparseRealVector vector = new OpenMapRealVector(10);\n\n        // Use the write method to set a value in the vector\n        /* write */ vector.setEntry(0, 3.14);\n\n        // Use the read method to read the value from the vector\n        /* read */ double value = vector.getEntry(0);\n\n        // Print the value to ensure it was correctly read\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.SparseRealVector",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.SparseRealVector",
+        "read_method": "getEntry"
+    }
+}

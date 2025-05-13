@@ -1,0 +1,5 @@
+generated/jfree/complex/prog_f3dc050e/Main.java:17: 错误: 不兼容的类型: CategoryAxis无法转换为ValueAxis
+        plot.setDomainAxis(categoryAxis);
+                           ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

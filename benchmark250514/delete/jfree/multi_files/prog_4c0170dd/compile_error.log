@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_4c0170dd/DataPlotter.java:3: 错误: 找不到符号
+import org.jfree.data.general.DatasetUtilities;
+                             ^
+  符号:   类 DatasetUtilities
+  位置: 程序包 org.jfree.data.general
+generated/jfree/multi_files/prog_4c0170dd/DataPlotter.java:11: 错误: 找不到符号
+        CategoryDataset dataset = DatasetUtilities.createCategoryDataset(
+                                  ^
+  符号:   变量 DatasetUtilities
+  位置: 类 DataPlotter
+2 个错误

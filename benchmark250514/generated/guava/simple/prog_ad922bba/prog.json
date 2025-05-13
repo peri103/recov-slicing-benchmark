@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableCollection;\nimport com.google.common.collect.ImmutableList;\n\npublic class Main {\n    public static void main(String[] args) {\n        /* write */ ImmutableCollection<String> collection = ImmutableList.of(\"apple\", \"banana\", \"cherry\");\n        /* read */ boolean containsBanana = collection.contains(\"banana\");\n        System.out.println(containsBanana);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableCollection",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableCollection",
+        "read_method": "contains"
+    }
+}

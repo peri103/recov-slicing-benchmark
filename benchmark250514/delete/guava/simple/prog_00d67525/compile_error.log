@@ -1,0 +1,6 @@
+generated/guava/simple/prog_00d67525/Main.java:15: 错误: 找不到符号
+        /* read */ ImmutableSet<Integer> values = multimap.get("key1");
+                   ^
+  符号:   类 ImmutableSet
+  位置: 类 Main
+1 个错误

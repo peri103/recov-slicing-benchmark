@@ -1,0 +1,21 @@
+generated/math/complex/prog_22d3d531/Main.java:4: 错误: 找不到符号
+import org.apache.commons.math3.linear.RealMatrixUtils;
+                                      ^
+  符号:   类 RealMatrixUtils
+  位置: 程序包 org.apache.commons.math3.linear
+generated/math/complex/prog_22d3d531/Main.java:12: 错误: 找不到符号
+        /* write */ ArrayRealVector vector = MatrixUtils.createArrayRealVector(data);
+                                                        ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_22d3d531/Main.java:33: 错误: 找不到符号
+        RealMatrix matrix = RealMatrixUtils.createRealMatrix(matrixData);
+                            ^
+  符号:   变量 RealMatrixUtils
+  位置: 类 Main
+generated/math/complex/prog_22d3d531/Main.java:45: 错误: 找不到符号
+        /* read */ ArrayRealVector readVector = MatrixUtils.getArrayRealVector(vector.getDataRef());
+                                                           ^
+  符号:   方法 getArrayRealVector(double[])
+  位置: 类 MatrixUtils
+4 个错误

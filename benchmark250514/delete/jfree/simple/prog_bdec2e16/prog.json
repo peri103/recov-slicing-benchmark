@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.Renderer;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        Renderer renderer = new Renderer() {\n            private Paint[] seriesPaints = new Paint[1];\n\n            @Override\n            public void setSeriesPaint(int series, Paint paint) {\n                seriesPaints[series] = paint;\n            }\n\n            @Override\n            public Paint getSeriesPaint(int series) {\n                return seriesPaints[series];\n            }\n        };\n\n        /* write */ renderer.setSeriesPaint(0, Color.RED);\n        /* read */ Paint paint = renderer.getSeriesPaint(0);\n        System.out.println(paint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.Renderer",
+        "write_method": "setSeriesPaint",
+        "read_class": "org.jfree.chart.renderer.Renderer",
+        "read_method": "getSeriesPaint"
+    }
+}

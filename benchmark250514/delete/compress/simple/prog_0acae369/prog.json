@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize an ArArchiveEntry object\n        ArArchiveEntry archiveEntry = new ArArchiveEntry(\"example.txt\", 1000);\n\n        // Write operation: set the mode of the archive entry\n        /* write */ archiveEntry.setMode(0755);\n\n        // Read operation: get the mode of the archive entry\n        /* read */ int mode = archiveEntry.getMode();\n\n        // Print the mode to verify it was set correctly\n        System.out.println(\"Mode: \" + mode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setMode",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getMode"
+    }
+}

@@ -1,0 +1,4 @@
+generated/compress/simple/prog_6912c1d1/Main.java:8: 错误: 不兼容的类型: Date无法转换为long
+        /* read */ long readModTime = entry.getModTime();
+                                                      ^
+1 个错误

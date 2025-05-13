@@ -1,0 +1,5 @@
+generated/lang/complex/prog_c6eccd14/Main.java:39: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        Date endOfDay = DateUtils.addMilliseconds(startOfDay, DateUtils.MILLIS_PER_DAY - 1);
+                                                                                       ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

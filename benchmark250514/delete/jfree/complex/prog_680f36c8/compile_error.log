@@ -1,0 +1,4 @@
+generated/jfree/complex/prog_680f36c8/Main.java:31: 错误: 不兼容的类型: Paint无法转换为Color
+            Color paint = plot.getSectionPaint(section);
+                                              ^
+1 个错误

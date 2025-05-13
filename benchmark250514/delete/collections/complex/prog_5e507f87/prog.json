@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.LinkedHashValuedHashMap;\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashValuedHashMap<String, Integer> map = new LinkedHashValuedHashMap<>();\n        HashMap<String, String> stringMap = new HashMap<>();\n        stringMap.put(\"A\", \"Alpha\");\n        stringMap.put(\"B\", \"Beta\");\n        stringMap.put(\"C\", \"Gamma\");\n\n        Set<Map.Entry<String, String>> entrySet = stringMap.entrySet();\n        for (Map.Entry<String, String> entry : entrySet) {\n            System.out.println(entry.getKey() + \" : \" + entry.getValue());\n        }\n\n        /* write */ map.put(\"key\", 42);\n\n        for (int i = 0; i < 5; i++) {\n            map.put(\"key\" + i, i * 10);\n        }\n\n        System.out.println(\"Intermediate processing...\");\n\n        for (int i = 0; i < 5; i++) {\n            System.out.println(\"Value for key\" + i + \": \" + map.get(\"key\" + i));\n        }\n\n        /* read */ Integer value = map.get(\"key\").iterator().next();\n        System.out.println(\"Read value: \" + value);\n\n        int sum = 0;\n        for (int i = 0; i < 5; i++) {\n            sum += map.get(\"key\" + i).iterator().next();\n        }\n        System.out.println(\"Sum of values: \" + sum);\n\n        System.out.println(\"Final processing complete.\");\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.multimap.LinkedHashValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashValuedHashMap<String, Integer> map = new LinkedHashValuedHashMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.LinkedHashValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.LinkedHashValuedHashMap",
+        "read_method": "get"
+    }
+}

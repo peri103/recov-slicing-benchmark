@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.NumberAxis;\nimport org.jfree.chart.axis.TickUnit;\nimport org.jfree.chart.axis.DateAxis;\nimport org.jfree.chart.axis.DateTickUnit;\n\npublic class Main {\n    public static void main(String[] args) {\n        NumberAxis numberAxis = new NumberAxis();\n        TickUnit tickUnit = new TickUnit(10.0);\n        \n        /* write */ numberAxis.setTickUnit(tickUnit);\n\n        // Additional code for complexity\n        DateAxis dateAxis = new DateAxis();\n        DateTickUnit dateTickUnit = new DateTickUnit(DateTickUnit.DAY, 1);\n        dateAxis.setTickUnit(dateTickUnit);\n        \n        double value = numberAxis.getLowerBound();\n        numberAxis.setRange(value, value + 100);\n        \n        double[] data = new double[10];\n        for (int i = 0; i < data.length; i++) {\n            data[i] = numberAxis.getLowerBound() + i * numberAxis.getTickUnit().getSize();\n        }\n\n        DateTickUnit retrievedDateTickUnit = dateAxis.getTickUnit();\n        System.out.println(\"Date Tick Unit: \" + retrievedDateTickUnit.getSize());\n        \n        /* read */ TickUnit retrievedTickUnit = numberAxis.getTickUnit();\n        System.out.println(\"Tick Unit: \" + retrievedTickUnit.getSize());\n\n        for (double d : data) {\n            System.out.println(\"Data Value: \" + d);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.NumberAxis;\nimport org.jfree.chart.axis.TickUnit;\n\npublic class Main {\n    public static void main(String[] args) {\n        NumberAxis axis = new NumberAxis();\n        TickUnit tickUnit = new TickUnit(10.0);\n        \n        /* write */ axis.setTickUnit(tickUnit);\n        /* read */ TickUnit retrievedTickUnit = axis.getTickUnit();\n        \n        System.out.println(\"Tick Unit: \" + retrievedTickUnit.getSize());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.NumberAxis",
+        "write_method": "setTickUnit",
+        "read_class": "org.jfree.chart.axis.NumberAxis",
+        "read_method": "getTickUnit"
+    }
+}

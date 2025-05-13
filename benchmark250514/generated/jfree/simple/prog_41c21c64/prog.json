@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYStepAreaRenderer;\nimport java.awt.BasicStroke;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYStepAreaRenderer renderer = new XYStepAreaRenderer();\n        BasicStroke stroke = new BasicStroke(2.0f);\n\n        /* write */ renderer.setSeriesOutlineStroke(0, stroke);\n        /* read */ BasicStroke readStroke = (BasicStroke) renderer.getSeriesOutlineStroke(0);\n\n        System.out.println(\"Stroke width: \" + readStroke.getLineWidth());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "write_method": "setSeriesOutlineStroke",
+        "read_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "read_method": "getSeriesOutlineStroke"
+    }
+}

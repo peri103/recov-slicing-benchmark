@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.util.List;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a CSVFormat object with the first record as header\n        CSVFormat csvFormat = CSVFormat.DEFAULT.withFirstRecordAsHeader();\n\n        // Simulate writing by creating a list of CSVRecords\n        List<CSVRecord> records = new ArrayList<>();\n        CSVRecord record = new CSVRecord(null, null, csvFormat);\n        records.add(record);\n\n        // Simulate reading by checking if the record is mapped\n        /* read */ boolean isMapped = record.isMapped(\"someHeader\");\n        System.out.println(isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withFirstRecordAsHeader",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

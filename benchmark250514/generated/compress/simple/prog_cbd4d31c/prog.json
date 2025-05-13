@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"example.jar\");\n        /* write */ jarEntry.setTime(1633024800000L);\n        /* read */ long time = jarEntry.getTime();\n        System.out.println(time);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setTime",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getTime"
+    }
+}

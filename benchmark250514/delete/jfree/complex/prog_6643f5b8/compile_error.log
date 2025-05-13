@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_6643f5b8/Main.java:39: 错误: 找不到符号
+        legendItem.setOutlineVisible(false);
+                  ^
+  符号:   方法 setOutlineVisible(boolean)
+  位置: 类型为LegendItem的变量 legendItem
+generated/jfree/complex/prog_6643f5b8/Main.java:45: 错误: 找不到符号
+        legendItem.setLabel("Updated Label");
+                  ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+2 个错误

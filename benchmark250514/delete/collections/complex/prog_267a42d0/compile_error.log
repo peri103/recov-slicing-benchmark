@@ -1,0 +1,8 @@
+generated/collections/complex/prog_267a42d0/Main.java:26: 错误: 找不到符号
+        for (Map.Entry<String, String> entry : multiValueMap.entries()) {
+                                                            ^
+  符号:   方法 entries()
+  位置: 类型为MultiValueMap<String,String>的变量 multiValueMap
+注: generated/collections/complex/prog_267a42d0/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

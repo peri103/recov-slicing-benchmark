@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_dca396d4/Main.java:51: 错误: 找不到符号
+        legendItem.setLabel("Updated Sample Legend");
+                  ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+generated/jfree/complex/prog_dca396d4/Main.java:52: 错误: 找不到符号
+        anotherLegendItem.setLabel("Updated Another Legend");
+                         ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 anotherLegendItem
+2 个错误

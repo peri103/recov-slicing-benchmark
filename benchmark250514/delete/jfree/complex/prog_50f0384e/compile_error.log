@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_50f0384e/Main.java:23: 错误: 找不到符号
+        /* write */ renderer.setOutlineStroke(stroke);
+                            ^
+  符号:   方法 setOutlineStroke(Stroke)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+generated/jfree/complex/prog_50f0384e/Main.java:26: 错误: 找不到符号
+        boolean shapesVisible = lineRenderer.getBaseShapesVisible();
+                                            ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_50f0384e/Main.java:30: 错误: 找不到符号
+        /* read */ Stroke retrievedStroke = renderer.getOutlineStroke();
+                                                    ^
+  符号:   方法 getOutlineStroke()
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+3 个错误

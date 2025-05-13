@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_35d58f7d/Main.java:31: 错误: 找不到符号
+        /* write */ renderer.setBaseShapesVisible(true);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYItemRenderer的变量 renderer
+generated/jfree/complex/prog_35d58f7d/Main.java:46: 错误: 找不到符号
+        /* read */ boolean isBaseShapesVisible = renderer.getBaseShapesVisible();
+                                                         ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYItemRenderer的变量 renderer
+2 个错误

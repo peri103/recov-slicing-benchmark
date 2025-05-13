@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.labels.StandardXYToolTipGenerator;\nimport java.text.NumberFormat;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the StandardXYToolTipGenerator object\n        StandardXYToolTipGenerator toolTipGenerator = new StandardXYToolTipGenerator();\n        \n        // Create a NumberFormat instance for formatting numbers\n        NumberFormat numberFormat = NumberFormat.getInstance();\n        \n        // Set the number format using the write method\n        /* write */ toolTipGenerator.setNumberFormat(numberFormat);\n        \n        // Retrieve the number format using the read method\n        /* read */ NumberFormat retrievedFormat = toolTipGenerator.getNumberFormat();\n        \n        // Print the result to verify the read method retrieved the correct format\n        System.out.println(retrievedFormat.equals(numberFormat));\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.labels.StandardXYToolTipGenerator",
+        "write_method": "setNumberFormat",
+        "read_class": "org.jfree.chart.labels.StandardXYToolTipGenerator",
+        "read_method": "getNumberFormat"
+    }
+}

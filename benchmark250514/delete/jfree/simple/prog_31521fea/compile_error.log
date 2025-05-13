@@ -1,0 +1,4 @@
+generated/jfree/simple/prog_31521fea/Main.java:7: 错误: <匿名Main$1>不是抽象的, 并且未覆盖CategoryItemRenderer中的抽象方法getItemMiddle(Comparable,Comparable,CategoryDataset,CategoryAxis,Rectangle2D,RectangleEdge)
+        CategoryItemRenderer renderer = new CategoryItemRenderer() {
+                                                                   ^
+1 个错误

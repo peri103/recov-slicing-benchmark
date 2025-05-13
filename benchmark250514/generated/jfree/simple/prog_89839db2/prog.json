@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.ThermometerPlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        ThermometerPlot plot = new ThermometerPlot();\n        /* write */ plot.setUnits(ThermometerPlot.UNITS_FAHRENHEIT);\n        /* read */ int units = plot.getUnits();\n        System.out.println(units);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ThermometerPlot",
+        "write_method": "setUnits",
+        "read_class": "org.jfree.chart.plot.ThermometerPlot",
+        "read_method": "getUnits"
+    }
+}

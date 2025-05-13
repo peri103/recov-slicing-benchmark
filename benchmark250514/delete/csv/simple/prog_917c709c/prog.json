@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with trimming enabled\n        CSVFormat format = CSVFormat.DEFAULT.withTrim(); /* write */\n\n        // Create a CSVRecord object (mocked for demonstration purposes)\n        CSVRecord record = new MockCSVRecord(); // Mock class to simulate CSVRecord\n\n        // Check if the record is mapped (mocked behavior)\n        boolean isMapped = record.isMapped(); /* read */\n\n        System.out.println(\"Is Mapped: \" + isMapped);\n    }\n}\n\n// Mock class to simulate CSVRecord behavior\nclass MockCSVRecord extends CSVRecord {\n    public MockCSVRecord() {\n        super(null, null);\n    }\n\n    @Override\n    public boolean isMapped() {\n        // Simulate the behavior of checking if a record is mapped\n        return true; // Mocked result\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrim",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

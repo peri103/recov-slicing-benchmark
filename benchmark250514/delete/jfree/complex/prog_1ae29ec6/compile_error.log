@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_1ae29ec6/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.plot.ContourPlot;
+                           ^
+  符号:   类 ContourPlot
+  位置: 程序包 org.jfree.chart.plot
+generated/jfree/complex/prog_1ae29ec6/Main.java:11: 错误: 找不到符号
+        ContourPlot contourPlot = new ContourPlot();
+        ^
+  符号:   类 ContourPlot
+  位置: 类 Main
+generated/jfree/complex/prog_1ae29ec6/Main.java:11: 错误: 找不到符号
+        ContourPlot contourPlot = new ContourPlot();
+                                      ^
+  符号:   类 ContourPlot
+  位置: 类 Main
+3 个错误

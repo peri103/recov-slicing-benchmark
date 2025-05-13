@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();\n        \n        // Set the visibility of lines for a specific series\n        int seriesIndex = 0; // Assuming we are working with the first series\n        boolean isVisible = true;\n        /* write */ renderer.setSeriesLinesVisible(seriesIndex, isVisible);\n        \n        // Retrieve the visibility of lines for the specific series\n        /* read */ Boolean visibility = renderer.getSeriesLinesVisible(seriesIndex);\n        \n        System.out.println(\"Series \" + seriesIndex + \" lines visible: \" + visibility);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYLineAndShapeRenderer",
+        "write_method": "setSeriesLinesVisible",
+        "read_class": "org.jfree.chart.renderer.xy.XYLineAndShapeRenderer",
+        "read_method": "getSeriesLinesVisible"
+    }
+}

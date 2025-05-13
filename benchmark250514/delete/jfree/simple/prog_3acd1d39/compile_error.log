@@ -1,0 +1,14 @@
+generated/jfree/simple/prog_3acd1d39/Main.java:6: 错误: Title是抽象的; 无法实例化
+        Title title = new Title();
+                      ^
+generated/jfree/simple/prog_3acd1d39/Main.java:7: 错误: 找不到符号
+        /* write */ title.setText("Hello, World!");
+                         ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 title
+generated/jfree/simple/prog_3acd1d39/Main.java:8: 错误: 找不到符号
+        /* read */ String text = title.getText();
+                                      ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 title
+3 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.queue.CircularFifoQueue;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoQueue<Integer> queue = new CircularFifoQueue<>(10);\n        ArrayList<String> stringList = new ArrayList<>();\n        HashMap<String, Integer> map = new HashMap<>();\n\n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n        map.put(\"One\", 1);\n        map.put(\"Two\", 2);\n\n        /* write */ queue.add(42);\n\n        for (String str : stringList) {\n            System.out.println(str);\n        }\n\n        if (map.containsKey(\"One\")) {\n            queue.add(100);\n        }\n\n        int sum = 0;\n        for (Integer num : queue) {\n            sum += num;\n        }\n        System.out.println(\"Sum of queue elements: \" + sum);\n\n        /* read */ Integer value = queue.peek();\n        System.out.println(\"Peeked value: \" + value);\n\n        for (String key : map.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i * 10);\n        }\n\n        for (Integer num : numbers) {\n            System.out.println(\"Number: \" + num);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.queue.CircularFifoQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoQueue<Integer> queue = new CircularFifoQueue<>(10);\n        /* write */ queue.add(42);\n        /* read */ Integer value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.queue.CircularFifoQueue",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.queue.CircularFifoQueue",
+        "read_method": "peek"
+    }
+}

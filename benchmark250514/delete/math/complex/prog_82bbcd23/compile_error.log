@@ -1,0 +1,18 @@
+generated/math/complex/prog_82bbcd23/Main.java:34: 错误: 无法将类 DiagonalMatrix中的方法 setEntry应用到给定类型;
+        /* write */ matrix.setEntry(1, 5.0);
+                          ^
+  需要: int,int,double
+  找到: int,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_82bbcd23/Main.java:37: 错误: 找不到符号
+        double determinant = matrix2.getDeterminant();
+                                    ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix2
+generated/math/complex/prog_82bbcd23/Main.java:50: 错误: 无法将类 DiagonalMatrix中的方法 getEntry应用到给定类型;
+        /* read */ double value = matrix.getEntry(1);
+                                        ^
+  需要: int,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+3 个错误

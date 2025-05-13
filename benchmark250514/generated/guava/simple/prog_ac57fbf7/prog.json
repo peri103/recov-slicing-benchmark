@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.MinMaxPriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        MinMaxPriorityQueue<Integer> queue = MinMaxPriorityQueue.create();\n        /* write */ queue.offer(42);\n        /* read */ Integer value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.MinMaxPriorityQueue",
+        "write_method": "offer",
+        "read_class": "com.google.common.collect.MinMaxPriorityQueue",
+        "read_method": "peek"
+    }
+}

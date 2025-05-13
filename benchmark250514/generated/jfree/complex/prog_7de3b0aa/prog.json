@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYStepAreaRenderer;\nimport java.awt.BasicStroke;\nimport java.awt.Stroke;\nimport java.awt.Color;\nimport org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYStepAreaRenderer stepAreaRenderer = new XYStepAreaRenderer();\n        Stroke stroke = new BasicStroke(2.0f);\n        \n        /* write */ stepAreaRenderer.setSeriesOutlineStroke(0, stroke);\n        \n        // Additional complex code\n        XYLineAndShapeRenderer lineRenderer = new XYLineAndShapeRenderer();\n        lineRenderer.setSeriesPaint(0, Color.RED);\n        lineRenderer.setSeriesStroke(0, new BasicStroke(1.0f));\n        \n        Stroke anotherStroke = new BasicStroke(3.0f);\n        stepAreaRenderer.setSeriesOutlineStroke(1, anotherStroke);\n        \n        Color seriesColor = (Color) lineRenderer.getSeriesPaint(0);\n        System.out.println(\"Series color: \" + seriesColor);\n\n        Stroke readStroke = stepAreaRenderer.getSeriesOutlineStroke(1);\n        System.out.println(\"Another stroke: \" + readStroke);\n\n        Stroke readStrokeOriginal = stepAreaRenderer.getSeriesOutlineStroke(0);\n        /* read */ System.out.println(readStrokeOriginal.equals(stroke));\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.renderer.xy.XYStepAreaRenderer;\nimport java.awt.BasicStroke;\nimport java.awt.Stroke;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYStepAreaRenderer renderer = new XYStepAreaRenderer();\n        Stroke stroke = new BasicStroke(2.0f);\n        \n        /* write */ renderer.setSeriesOutlineStroke(0, stroke);\n        \n        /* read */ Stroke readStroke = renderer.getSeriesOutlineStroke(0);\n        \n        System.out.println(readStroke.equals(stroke));\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "write_method": "setSeriesOutlineStroke",
+        "read_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "read_method": "getSeriesOutlineStroke"
+    }
+}

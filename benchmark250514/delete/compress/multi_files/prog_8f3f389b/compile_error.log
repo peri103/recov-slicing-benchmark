@@ -1,0 +1,41 @@
+generated/compress/multi_files/prog_8f3f389b/ArchiveManager.java:7: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        /* write */ entry.setGroupId(groupId);
+                                     ^
+generated/compress/multi_files/prog_8f3f389b/ArchiveManager.java:17: 错误: 找不到符号
+        entry.setFileSize(fileSize);
+             ^
+  符号:   方法 setFileSize(long)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_8f3f389b/ArchiveManager.java:29: 错误: 找不到符号
+        return entry.getFileSize();
+                    ^
+  符号:   方法 getFileSize()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_8f3f389b/ArchiveSummary.java:4: 错误: 无法将类 DumpArchiveSummary中的构造器 DumpArchiveSummary应用到给定类型;
+    private DumpArchiveSummary summary = new DumpArchiveSummary();
+                                         ^
+  需要: byte[],ZipEncoding
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/compress/multi_files/prog_8f3f389b/ArchiveSummary.java:7: 错误: 找不到符号
+        summary.setTotalSize(totalSize);
+               ^
+  符号:   方法 setTotalSize(long)
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/multi_files/prog_8f3f389b/ArchiveSummary.java:8: 错误: 找不到符号
+        summary.setVolumeId(volumeId);
+               ^
+  符号:   方法 setVolumeId(int)
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/multi_files/prog_8f3f389b/ArchiveSummary.java:12: 错误: 找不到符号
+        return summary.getTotalSize();
+                      ^
+  符号:   方法 getTotalSize()
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/multi_files/prog_8f3f389b/ArchiveSummary.java:16: 错误: 找不到符号
+        return summary.getVolumeId();
+                      ^
+  符号:   方法 getVolumeId()
+  位置: 类型为DumpArchiveSummary的变量 summary
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+8 个错误

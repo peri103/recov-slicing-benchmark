@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArArchiveEntry entry = new ArArchiveEntry(\"example.txt\", 1000);\n        long currentTime = System.currentTimeMillis();\n        \n        /* write */ entry.setLastModified(currentTime);\n        /* read */ long lastModified = entry.getLastModified();\n        \n        System.out.println(\"Last Modified Time: \" + lastModified);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setLastModified",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getLastModified"
+    }
+}

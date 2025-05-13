@@ -1,0 +1,28 @@
+generated/jfree/complex/prog_7101e1d7/Main.java:12: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis rangeAxis = new ValueAxis() {};
+                              ^
+  需要: String,TickUnitSource
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_7101e1d7/Main.java:12: 错误: <匿名Main$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis rangeAxis = new ValueAxis() {};
+                                              ^
+generated/jfree/complex/prog_7101e1d7/Main.java:21: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis anotherRangeAxis = new ValueAxis() {};
+                                     ^
+  需要: String,TickUnitSource
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_7101e1d7/Main.java:21: 错误: <匿名Main$2>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis anotherRangeAxis = new ValueAxis() {};
+                                                     ^
+generated/jfree/complex/prog_7101e1d7/Main.java:39: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        plot.setRangeAxis(0, new ValueAxis() {});
+                             ^
+  需要: String,TickUnitSource
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_7101e1d7/Main.java:39: 错误: <匿名Main$3>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        plot.setRangeAxis(0, new ValueAxis() {});
+                                             ^
+6 个错误

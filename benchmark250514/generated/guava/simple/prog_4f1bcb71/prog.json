@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.EnumMultiset;\nimport java.util.EnumSet;\n\nenum ExampleEnum {\n    ONE, TWO, THREE\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        EnumMultiset<ExampleEnum> multiset = EnumMultiset.create(EnumSet.allOf(ExampleEnum.class));\n        \n        /* write */ multiset.add(ExampleEnum.ONE);\n        \n        /* read */ int count = multiset.count(ExampleEnum.ONE);\n        \n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.EnumMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.EnumMultiset",
+        "read_method": "count"
+    }
+}

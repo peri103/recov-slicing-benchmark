@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_7cd6b006/DataStructures.java:11: 错误: 找不到符号
+        for (int i = 0; i < matrixOps.getMatrix().getRowDimension(); i++) {
+                                     ^
+  符号:   方法 getMatrix()
+  位置: 类型为MatrixOperations的变量 matrixOps
+generated/math/multi_files/prog_7cd6b006/DataStructures.java:12: 错误: 找不到符号
+            for (int j = 0; j < matrixOps.getMatrix().getColumnDimension(); j++) {
+                                         ^
+  符号:   方法 getMatrix()
+  位置: 类型为MatrixOperations的变量 matrixOps
+2 个错误

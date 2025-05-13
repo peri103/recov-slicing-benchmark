@@ -1,0 +1,31 @@
+generated/jfree/complex/prog_99cb55d8/Main.java:15: 错误: 找不到符号
+        /* write */ renderer.setOutlinePaint(Color.RED);
+                            ^
+  符号:   方法 setOutlinePaint(Color)
+  位置: 类型为XYShapeRenderer的变量 renderer
+generated/jfree/complex/prog_99cb55d8/Main.java:18: 错误: 找不到符号
+            anotherRenderer.setOutlinePaint(paint);
+                           ^
+  符号:   方法 setOutlinePaint(Paint)
+  位置: 类型为XYShapeRenderer的变量 anotherRenderer
+generated/jfree/complex/prog_99cb55d8/Main.java:21: 错误: 找不到符号
+        Paint somePaint = anotherRenderer.getOutlinePaint();
+                                         ^
+  符号:   方法 getOutlinePaint()
+  位置: 类型为XYShapeRenderer的变量 anotherRenderer
+generated/jfree/complex/prog_99cb55d8/Main.java:25: 错误: 找不到符号
+        renderer.setOutlinePaint(defaultPaint);
+                ^
+  符号:   方法 setOutlinePaint(Paint)
+  位置: 类型为XYShapeRenderer的变量 renderer
+generated/jfree/complex/prog_99cb55d8/Main.java:27: 错误: 找不到符号
+        Paint finalPaint = anotherRenderer.getOutlinePaint();
+                                          ^
+  符号:   方法 getOutlinePaint()
+  位置: 类型为XYShapeRenderer的变量 anotherRenderer
+generated/jfree/complex/prog_99cb55d8/Main.java:30: 错误: 找不到符号
+        /* read */ Paint outlinePaint = renderer.getOutlinePaint();
+                                                ^
+  符号:   方法 getOutlinePaint()
+  位置: 类型为XYShapeRenderer的变量 renderer
+6 个错误

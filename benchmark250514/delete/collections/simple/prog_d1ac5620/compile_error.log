@@ -1,0 +1,11 @@
+generated/collections/simple/prog_d1ac5620/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractSortedMap;
+                                          ^
+  符号:   类 AbstractSortedMap
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/simple/prog_d1ac5620/Main.java:6: 错误: 找不到符号
+        AbstractSortedMap<String, Integer> map = new TreeMap<>();
+        ^
+  符号:   类 AbstractSortedMap
+  位置: 类 Main
+2 个错误

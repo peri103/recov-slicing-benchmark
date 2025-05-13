@@ -1,0 +1,19 @@
+generated/guava/multi_files/prog_71bf7d4a/Student.java:11: 错误: 无法将类 StudentScores中的方法 addScore应用到给定类型;
+        scores.addScore(score);
+              ^
+  需要: String,Integer
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/guava/multi_files/prog_71bf7d4a/Main.java:9: 错误: 无法将类 Student中的方法 addScore应用到给定类型;
+        student.addScore("Math", 85);
+               ^
+  需要: int
+  找到: String,int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/guava/multi_files/prog_71bf7d4a/Main.java:10: 错误: 无法将类 Student中的方法 addScore应用到给定类型;
+        student.addScore("Science", 90);
+               ^
+  需要: int
+  找到: String,int
+  原因: 实际参数列表和形式参数列表长度不同
+3 个错误

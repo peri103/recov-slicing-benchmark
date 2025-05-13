@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.HashSetValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the HashSetValuedHashMap\n        HashSetValuedHashMap<String, Integer> map = new HashSetValuedHashMap<>();\n        \n        // Use the write method to add a value\n        /* write */ map.put(\"key\", 42);\n        \n        // Use the read method to retrieve the value\n        /* read */ Integer value = map.get(\"key\").iterator().next();\n        \n        // Print the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "read_method": "get"
+    }
+}

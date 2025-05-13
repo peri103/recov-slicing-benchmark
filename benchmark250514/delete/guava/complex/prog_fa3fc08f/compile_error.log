@@ -1,0 +1,6 @@
+generated/guava/complex/prog_fa3fc08f/Main.java:19: 错误: 找不到符号
+        /* write */ DiscreteDomain<Integer> domain = DiscreteDomain.of(integerDomain);
+                                                                   ^
+  符号:   方法 of(DiscreteDomain<Integer>)
+  位置: 类 DiscreteDomain
+1 个错误

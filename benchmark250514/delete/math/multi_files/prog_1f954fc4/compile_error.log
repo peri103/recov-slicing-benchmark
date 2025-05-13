@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_1f954fc4/Main.java:71: 错误: 找不到符号
+            System.out.println(student.getCourses().get(0).getCourseName());
+                                                          ^
+  符号:   方法 getCourseName()
+  位置: 类 Course
+generated/math/multi_files/prog_1f954fc4/Main.java:76: 错误: 找不到符号
+            System.out.println(student.getCourses().get(0).getCourseName());
+                                                          ^
+  符号:   方法 getCourseName()
+  位置: 类 Course
+2 个错误

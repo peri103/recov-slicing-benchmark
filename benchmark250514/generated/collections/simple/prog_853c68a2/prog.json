@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.FixedSizeMap;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> baseMap = new HashMap<>();\n        baseMap.put(\"key\", 0);\n        FixedSizeMap<String, Integer> fixedSizeMap = FixedSizeMap.fixedSizeMap(baseMap);\n        /* write */ fixedSizeMap.put(\"key\", 42);\n        /* read */ int value = fixedSizeMap.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.FixedSizeMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.FixedSizeMap",
+        "read_method": "get"
+    }
+}

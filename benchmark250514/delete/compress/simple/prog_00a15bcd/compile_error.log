@@ -1,0 +1,6 @@
+generated/compress/simple/prog_00a15bcd/Main.java:6: 错误: 找不到符号
+        /* write */ entry.setGroupId(12345);
+                         ^
+  符号:   方法 setGroupId(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+1 个错误

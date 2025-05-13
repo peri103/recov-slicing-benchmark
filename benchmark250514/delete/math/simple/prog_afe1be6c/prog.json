@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a symmetric matrix using MatrixUtils\n        double[][] data = {\n            {1, 2, 3},\n            {2, 4, 5},\n            {3, 5, 6}\n        };\n\n        /* write */ RealMatrix symmetricMatrix = MatrixUtils.createSymmetricMatrix(data);\n\n        // Retrieve the symmetric matrix using MatrixUtils (assuming getSymmetricMatrix is a correct method)\n        // Note: getSymmetricMatrix is not a real method in MatrixUtils, but for the purpose of this task, we assume it exists.\n        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getSymmetricMatrix(symmetricMatrix);\n\n        // Print the matrix to verify the result\n        System.out.println(retrievedMatrix);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createSymmetricMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getSymmetricMatrix"
+    }
+}

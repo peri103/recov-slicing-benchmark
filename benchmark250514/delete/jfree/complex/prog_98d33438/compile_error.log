@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_98d33438/Main.java:20: 错误: 找不到符号
+        renderer.setBaseSeriesVisibleInLegend(true);
+                ^
+  符号:   方法 setBaseSeriesVisibleInLegend(boolean)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+1 个错误

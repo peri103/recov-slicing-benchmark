@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.IntervalMarker;\n\npublic class Main {\n    public static void main(String[] args) {\n        IntervalMarker marker = new IntervalMarker(0.0, 1.0);\n        /* write */ marker.setStartValue(5.0);\n        /* read */ double startValue = marker.getStartValue();\n        System.out.println(startValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.IntervalMarker",
+        "write_method": "setStartValue",
+        "read_class": "org.jfree.chart.plot.IntervalMarker",
+        "read_method": "getStartValue"
+    }
+}

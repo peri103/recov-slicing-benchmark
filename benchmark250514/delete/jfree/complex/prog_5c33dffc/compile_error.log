@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_5c33dffc/Main.java:10: 错误: 不兼容的类型: Dataset无法转换为CategoryDataset
+        MultiplePiePlot plot = new MultiplePiePlot(dataset);
+                                                   ^
+generated/jfree/complex/prog_5c33dffc/Main.java:12: 错误: 不兼容的类型: SortOrder无法转换为TableOrder
+        /* write */ plot.setDataExtractOrder(SortOrder.ASCENDING);
+                                                      ^
+generated/jfree/complex/prog_5c33dffc/Main.java:37: 错误: 不兼容的类型: Object无法转换为Comparable
+        for (Comparable key : pieDataset.getKeys()) {
+                                                ^
+generated/jfree/complex/prog_5c33dffc/Main.java:43: 错误: 不兼容的类型: TableOrder无法转换为SortOrder
+        /* read */ SortOrder order = plot.getDataExtractOrder();
+                                                             ^
+注: generated/jfree/complex/prog_5c33dffc/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+4 个错误

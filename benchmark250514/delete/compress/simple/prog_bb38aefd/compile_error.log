@@ -1,0 +1,11 @@
+generated/compress/simple/prog_bb38aefd/Main.java:6: 错误: 找不到符号
+        /* write */ tarEntry.setFileType(TarArchiveEntry.FILE_TYPE_NORMAL);
+                                                        ^
+  符号:   变量 FILE_TYPE_NORMAL
+  位置: 类 TarArchiveEntry
+generated/compress/simple/prog_bb38aefd/Main.java:7: 错误: 找不到符号
+        /* read */ int fileType = tarEntry.getFileType();
+                                          ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 tarEntry
+2 个错误

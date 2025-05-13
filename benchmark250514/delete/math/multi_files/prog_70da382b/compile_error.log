@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_70da382b/MatrixOperations.java:6: 错误: 找不到符号
+        return MatrixUtils.createArray2DRowRealMatrix(data);
+                          ^
+  符号:   方法 createArray2DRowRealMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

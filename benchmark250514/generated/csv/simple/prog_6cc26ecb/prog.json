@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\n\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.io.StringReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Prepare a StringWriter to capture CSV output\n            StringWriter writer = new StringWriter();\n            \n            // Create a CSVPrinter instance\n            CSVPrinter printer = new CSVPrinter(writer, CSVFormat.DEFAULT);\n            \n            // Write a comment using CSVPrinter\n            /* write */ printer.printComment(\"This is a test comment\");\n            \n            // Flush the printer to ensure all data is written\n            printer.flush();\n            \n            // Read the CSV output using a StringReader\n            StringReader reader = new StringReader(writer.toString());\n            Iterable<CSVRecord> records = CSVFormat.DEFAULT.parse(reader);\n            \n            // Read the comment from the CSVRecord\n            String comment = null;\n            for (CSVRecord record : records) {\n                /* read */ comment = record.getComment();\n                break; // Ensure the read method is executed only once\n            }\n            \n            // Print the comment\n            System.out.println(comment);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVPrinter",
+        "write_method": "printComment",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "getComment"
+    }
+}

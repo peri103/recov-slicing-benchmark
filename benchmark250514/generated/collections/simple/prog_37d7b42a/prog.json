@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.Predicate;\nimport org.apache.commons.collections4.map.PredicatedMap;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Define a predicate that allows all keys and values\n        Predicate<Object> keyPredicate = obj -> true;\n        Predicate<Object> valuePredicate = obj -> true;\n\n        // Create a PredicatedMap with the predicates\n        HashMap<Object, Object> baseMap = new HashMap<>();\n        PredicatedMap<Object, Object> map = PredicatedMap.predicatedMap(baseMap, keyPredicate, valuePredicate);\n\n        // Write a value into the map\n        /* write */ map.put(\"key\", \"value\");\n\n        // Read the value from the map\n        /* read */ Object value = map.get(\"key\");\n\n        // Print the read value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.PredicatedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.PredicatedMap",
+        "read_method": "get"
+    }
+}

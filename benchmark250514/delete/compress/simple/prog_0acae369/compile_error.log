@@ -1,0 +1,6 @@
+generated/compress/simple/prog_0acae369/Main.java:9: 错误: 找不到符号
+        /* write */ archiveEntry.setMode(0755);
+                                ^
+  符号:   方法 setMode(int)
+  位置: 类型为ArArchiveEntry的变量 archiveEntry
+1 个错误

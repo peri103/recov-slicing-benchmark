@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_3bf28941/Main.java:6: 错误: 找不到符号
+        ImmutableMultiset<String> multiset = builder.build();
+        ^
+  符号:   类 ImmutableMultiset
+  位置: 类 Main
+1 个错误

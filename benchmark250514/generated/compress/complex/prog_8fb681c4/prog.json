@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParams = new GzipParameters();\n        /* write */ gzipParams.setComment(\"This is a test comment.\");\n\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n\n        HashMap<String, Integer> map = new HashMap<>();\n        for (int i = 0; i < numbers.size(); i++) {\n            map.put(\"Number_\" + i, numbers.get(i));\n        }\n\n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        /* read */ String comment = gzipParams.getComment();\n        System.out.println(\"Gzip Comment: \" + comment);\n\n        ArrayList<String> commentsList = new ArrayList<>();\n        commentsList.add(comment);\n        commentsList.add(\"Another comment\");\n        commentsList.add(\"Yet another comment\");\n\n        for (String cmt : commentsList) {\n            System.out.println(\"Comment in list: \" + cmt);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParams = new GzipParameters();\n        /* write */ gzipParams.setComment(\"This is a test comment.\");\n        /* read */ String comment = gzipParams.getComment();\n        System.out.println(comment);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setComment",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getComment"
+    }
+}

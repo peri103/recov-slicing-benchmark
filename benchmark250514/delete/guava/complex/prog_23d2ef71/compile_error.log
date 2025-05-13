@@ -1,0 +1,7 @@
+generated/guava/complex/prog_23d2ef71/Main.java:20: 错误: 不兼容的类型: ImmutableCollection<String>无法转换为ImmutableSet<String>
+        ImmutableSet<String> fruits = fruitMultimap.get("fruit");
+                                                       ^
+generated/guava/complex/prog_23d2ef71/Main.java:37: 错误: 不兼容的类型: ImmutableCollection<Integer>无法转换为ImmutableSet<Integer>
+        ImmutableSet<Integer> values = multimap.get("key");
+                                                   ^
+2 个错误

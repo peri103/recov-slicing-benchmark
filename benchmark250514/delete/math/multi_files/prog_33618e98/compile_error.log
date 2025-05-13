@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_33618e98/VectorOperations.java:14: 错误: 找不到符号
+        RealVector vector = MatrixUtils.createRowRealVector(data);
+                                       ^
+  符号:   方法 createRowRealVector(double[])
+  位置: 类 MatrixUtils
+1 个错误

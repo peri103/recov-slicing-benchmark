@@ -1,0 +1,11 @@
+generated/compress/simple/prog_b6f531db/Main.java:7: 错误: 找不到符号
+        /* write */ parameters.setHeaderCRC(true);
+                              ^
+  符号:   方法 setHeaderCRC(boolean)
+  位置: 类型为GzipParameters的变量 parameters
+generated/compress/simple/prog_b6f531db/Main.java:9: 错误: 找不到符号
+        /* read */ boolean headerCRC = parameters.getHeaderCRC();
+                                                 ^
+  符号:   方法 getHeaderCRC()
+  位置: 类型为GzipParameters的变量 parameters
+2 个错误

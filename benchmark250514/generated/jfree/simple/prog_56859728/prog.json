@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYStepRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYStepRenderer renderer = new XYStepRenderer();\n        /* write */ renderer.setStepPoint(0.5);\n        /* read */ double stepPoint = renderer.getStepPoint();\n        System.out.println(stepPoint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYStepRenderer",
+        "write_method": "setStepPoint",
+        "read_class": "org.jfree.chart.renderer.xy.XYStepRenderer",
+        "read_method": "getStepPoint"
+    }
+}

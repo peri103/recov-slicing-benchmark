@@ -1,0 +1,13 @@
+generated/csv/multi_files/prog_c81225e9/CSVReader.java:9: 错误: 不兼容的类型: String无法转换为Reader
+        record = CSVFormat.DEFAULT.parse(csvContent).getRecords().get(0);
+                                         ^
+generated/csv/multi_files/prog_c81225e9/CSVHandler.java:17: 警告: 最后一个参数使用了不准确的变量类型的 varargs 方法的非 varargs 调用; 
+        printer.printRecord(values);
+                            ^
+  对于 varargs 调用, 应使用 Object
+  对于非 varargs 调用, 应使用 Object[], 这样也可以抑制此警告
+注: generated/csv/multi_files/prog_c81225e9/CSVHandler.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误
+1 个警告

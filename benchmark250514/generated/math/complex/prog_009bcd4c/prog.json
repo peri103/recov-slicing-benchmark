@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.ArrayRealVector;\nimport org.apache.commons.math3.linear.RealVector;\nimport org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        RealVector vector = new ArrayRealVector(3);\n        /* write */ vector.setEntry(0, 5.0);\n\n        RealMatrix matrix = MatrixUtils.createRealMatrix(3, 3);\n        for (int i = 0; i < matrix.getRowDimension(); i++) {\n            for (int j = 0; j < matrix.getColumnDimension(); j++) {\n                matrix.setEntry(i, j, i + j);\n            }\n        }\n\n        RealVector anotherVector = new ArrayRealVector(3);\n        anotherVector.setEntry(1, 10.0);\n        anotherVector.setEntry(2, 15.0);\n\n        RealVector resultVector = vector.add(anotherVector);\n        for (int i = 0; i < resultVector.getDimension(); i++) {\n            System.out.println(\"Result Vector Entry \" + i + \": \" + resultVector.getEntry(i));\n        }\n\n        /* read */ double value = vector.getEntry(0);\n        System.out.println(value);\n\n        double matrixValue = matrix.getEntry(2, 2);\n        System.out.println(\"Matrix Entry (2,2): \" + matrixValue);\n\n        RealVector multipliedVector = matrix.operate(vector);\n        for (int i = 0; i < multipliedVector.getDimension(); i++) {\n            System.out.println(\"Multiplied Vector Entry \" + i + \": \" + multipliedVector.getEntry(i));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.math3.linear.ArrayRealVector;\nimport org.apache.commons.math3.linear.RealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        RealVector vector = new ArrayRealVector(1);\n        /* write */ vector.setEntry(0, 5.0);\n        /* read */ double value = vector.getEntry(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.RealVector",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.RealVector",
+        "read_method": "getEntry"
+    }
+}

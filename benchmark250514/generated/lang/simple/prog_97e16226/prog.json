@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        // Round the date to the nearest second\n        /* write */ Date roundedDate = DateUtils.round(date, DateUtils.SEMI_MONTH);\n        \n        // Truncate the date to the nearest second\n        /* read */ Date truncatedDate = DateUtils.truncate(roundedDate, DateUtils.SEMI_MONTH);\n        \n        System.out.println(\"Original Date: \" + date);\n        System.out.println(\"Rounded Date: \" + roundedDate);\n        System.out.println(\"Truncated Date: \" + truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "round",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

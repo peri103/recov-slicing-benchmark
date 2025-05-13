@@ -1,0 +1,18 @@
+generated/guava/complex/prog_6a6e509d/Main.java:42: 错误: 无法将类 Builder<E>中的方法 add应用到给定类型;
+        stringBuilder.add("orange", 3);
+                     ^
+  需要: String[]
+  找到: String,int
+  原因: varargs 不匹配; int无法转换为String
+  其中, E是类型变量:
+    E扩展已在类 Builder中声明的Object
+generated/guava/complex/prog_6a6e509d/Main.java:43: 错误: 无法将类 Builder<E>中的方法 add应用到给定类型;
+        stringBuilder.add("kiwi", 2);
+                     ^
+  需要: String[]
+  找到: String,int
+  原因: varargs 不匹配; int无法转换为String
+  其中, E是类型变量:
+    E扩展已在类 Builder中声明的Object
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

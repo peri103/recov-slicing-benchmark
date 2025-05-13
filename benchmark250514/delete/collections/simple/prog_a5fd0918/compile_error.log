@@ -1,0 +1,7 @@
+generated/collections/simple/prog_a5fd0918/Main.java:8: 错误: <K,V>UnmodifiableMap(Map<? extends K,? extends V>) 在 UnmodifiableMap 中是 private 访问控制
+        UnmodifiableMap<String, Integer> unmodifiableMap = new UnmodifiableMap<>(hashMap);
+                                                           ^
+  其中, K,V是类型变量:
+    K扩展已在类 UnmodifiableMap中声明的Object
+    V扩展已在类 UnmodifiableMap中声明的Object
+1 个错误

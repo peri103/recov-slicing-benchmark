@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.MultiValuedMap;\nimport org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap;\nimport org.apache.commons.collections4.map.MultiValueMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a modifiable MultiValuedMap\n        MultiValuedMap<String, String> modifiableMap = new MultiValueMap<>();\n        \n        // Wrap it in an UnmodifiableMultiValuedMap\n        UnmodifiableMultiValuedMap<String, String> map = new UnmodifiableMultiValuedMap<>(modifiableMap);\n        \n        // Since UnmodifiableMultiValuedMap does not allow direct modification, we use the modifiable map to write\n        /* write */ modifiableMap.put(\"key\", \"value\");\n        \n        // Read from the UnmodifiableMultiValuedMap\n        /* read */ String value = map.get(\"key\").iterator().next();\n        \n        // Print the read value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap",
+        "read_method": "get"
+    }
+}

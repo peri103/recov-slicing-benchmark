@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"\");\n        ArrayList<String> fileList = new ArrayList<>();\n        HashMap<String, String> fileDetails = new HashMap<>();\n\n        // Add some unrelated operations\n        fileList.add(\"file1.txt\");\n        fileList.add(\"file2.txt\");\n        fileList.add(\"example.jar\");\n        \n        fileDetails.put(\"file1.txt\", \"Text File\");\n        fileDetails.put(\"file2.txt\", \"Text File\");\n        \n        // Simulate some operations on fileList\n        for (String file : fileList) {\n            if (file.endsWith(\".jar\")) {\n                /* write */ jarEntry.setName(file);\n            }\n        }\n        \n        // More unrelated operations\n        for (String file : fileList) {\n            if (!fileDetails.containsKey(file)) {\n                fileDetails.put(file, \"Unknown File\");\n            }\n        }\n        \n        // Accessing the name of the jar entry\n        /* read */ String name = jarEntry.getName();\n        System.out.println(\"Jar Entry Name: \" + name);\n\n        // Print details of all files\n        for (String file : fileDetails.keySet()) {\n            System.out.println(\"File: \" + file + \", Type: \" + fileDetails.get(file));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"\");\n        /* write */ jarEntry.setName(\"example.jar\");\n        /* read */ String name = jarEntry.getName();\n        System.out.println(name);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setName",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getName"
+    }
+}

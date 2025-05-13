@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.MutableClassToInstanceMap;\nimport com.google.common.collect.ClassToInstanceMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a MutableClassToInstanceMap\n        ClassToInstanceMap<Object> map = MutableClassToInstanceMap.create();\n        \n        // Create an instance of a class to store\n        String stringInstance = \"Hello, world!\";\n        \n        // Write the instance to the map using putInstance\n        /* write */ map.putInstance(String.class, stringInstance);\n        \n        // Read the instance back from the map using getInstance\n        /* read */ String retrievedInstance = map.getInstance(String.class);\n        \n        // Print the retrieved instance\n        System.out.println(retrievedInstance);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.MutableClassToInstanceMap",
+        "write_method": "putInstance",
+        "read_class": "com.google.common.collect.MutableClassToInstanceMap",
+        "read_method": "getInstance"
+    }
+}

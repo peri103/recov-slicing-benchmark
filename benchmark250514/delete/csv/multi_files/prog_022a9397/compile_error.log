@@ -1,0 +1,13 @@
+generated/csv/multi_files/prog_022a9397/CSVDataProcessor.java:10: 错误: 找不到符号
+    private CSVFormat csvFormat;
+            ^
+  符号:   类 CSVFormat
+  位置: 类 CSVDataProcessor
+generated/csv/multi_files/prog_022a9397/CSVDataProcessor.java:12: 错误: 找不到符号
+    public CSVDataProcessor(String csvData, CSVFormat csvFormat) {
+                                            ^
+  符号:   类 CSVFormat
+  位置: 类 CSVDataProcessor
+注: generated/csv/multi_files/prog_022a9397/CSVConfiguration.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

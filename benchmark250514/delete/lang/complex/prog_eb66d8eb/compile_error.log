@@ -1,0 +1,6 @@
+generated/lang/complex/prog_eb66d8eb/Main.java:28: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.HOUR_OF_DAY);
+                                                                                 ^
+  符号:   变量 HOUR_OF_DAY
+  位置: 类 DateUtils
+1 个错误

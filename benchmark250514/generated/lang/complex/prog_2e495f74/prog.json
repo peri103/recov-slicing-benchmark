@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableLong;\nimport org.apache.commons.lang3.mutable.MutableInt;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableLong mutableLong = new MutableLong();\n        MutableInt mutableInt = new MutableInt();\n        ArrayList<Integer> arrayList = new ArrayList<>();\n\n        // Perform operations with MutableInt\n        mutableInt.setValue(10);\n        int intValue = mutableInt.getValue();\n        arrayList.add(intValue);\n        \n        /* write */ mutableLong.setValue(42L);\n\n        // Perform operations with ArrayList\n        for (int i = 0; i < 5; i++) {\n            arrayList.add(i * 2);\n        }\n        \n        // Process the ArrayList\n        int sum = 0;\n        for (Integer num : arrayList) {\n            sum += num;\n        }\n        System.out.println(\"Sum of elements in arrayList: \" + sum);\n\n        // More operations\n        int maxValue = Integer.MIN_VALUE;\n        for (Integer num : arrayList) {\n            if (num > maxValue) {\n                maxValue = num;\n            }\n        }\n        System.out.println(\"Max value in arrayList: \" + maxValue);\n\n        /* read */ long value = mutableLong.getValue();\n        System.out.println(\"MutableLong value: \" + value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.mutable.MutableLong;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableLong mutableLong = new MutableLong();\n        /* write */ mutableLong.setValue(42L);\n        /* read */ long value = mutableLong.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableLong",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableLong",
+        "read_method": "getValue"
+    }
+}

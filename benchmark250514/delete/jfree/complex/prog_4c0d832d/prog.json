@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.LogarithmicAxis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        LogarithmicAxis axis = new LogarithmicAxis(\"Example Axis\");\n        NumberAxis numberAxis = new NumberAxis(\"Number Axis\");\n        \n        // Set base for LogarithmicAxis\n        /* write */ axis.setBase(10.0);\n        \n        // Some unrelated operations with NumberAxis\n        numberAxis.setRange(1, 100);\n        double lowerBound = numberAxis.getLowerBound();\n        double upperBound = numberAxis.getUpperBound();\n        \n        // Perform some calculations\n        double middleValue = (lowerBound + upperBound) / 2;\n        System.out.println(\"Middle value of NumberAxis range: \" + middleValue);\n        \n        // Use another unrelated method on LogarithmicAxis\n        axis.setLog10TickLabelsFlag(true);\n        \n        // More operations with NumberAxis\n        numberAxis.setTickUnit(new org.jfree.chart.axis.NumberTickUnit(10));\n        System.out.println(\"Tick unit: \" + numberAxis.getTickUnit().getSize());\n        \n        // Retrieve the base value from LogarithmicAxis\n        /* read */ double baseValue = axis.getBase();\n        System.out.println(\"LogarithmicAxis base value: \" + baseValue);\n        \n        // Additional calculations to increase complexity\n        double result = Math.pow(baseValue, middleValue);\n        System.out.println(\"Result of power calculation: \" + result);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.LogarithmicAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        LogarithmicAxis axis = new LogarithmicAxis(\"Example Axis\");\n        /* write */ axis.setBase(10.0);\n        /* read */ double baseValue = axis.getBase();\n        System.out.println(baseValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.LogarithmicAxis",
+        "write_method": "setBase",
+        "read_class": "org.jfree.chart.axis.LogarithmicAxis",
+        "read_method": "getBase"
+    }
+}

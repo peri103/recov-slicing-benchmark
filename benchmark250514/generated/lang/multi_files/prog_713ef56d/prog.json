@@ -1,0 +1,13 @@
+{
+    "files": {
+        "TextManipulator.java": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class TextManipulator {\n    private StrBuilder strBuilder;\n\n    public TextManipulator(String initialText) {\n        this.strBuilder = new StrBuilder(initialText);\n    }\n\n    public void replaceText(int start, int end, String replacement) {\n        /* write */ strBuilder.replace(start, end, replacement);\n    }\n\n    public String getText() {\n        return strBuilder.toString();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "replace",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    },
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello, World!\");\n        /* write */ strBuilder.replace(7, 12, \"Java\");\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize StrBuilder with a sample string\n        StrBuilder strBuilder = new StrBuilder(\"Hello, World!\");\n        \n        // Perform some unrelated operations\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n\n        HashMap<String, Integer> wordCounts = new HashMap<>();\n        wordCounts.put(\"apple\", 3);\n        wordCounts.put(\"banana\", 2);\n        wordCounts.put(\"cherry\", 5);\n\n        for (String word : wordCounts.keySet()) {\n            System.out.println(\"Count of \" + word + \": \" + wordCounts.get(word));\n        }\n\n        // Modify the original StrBuilder\n        /* write */ strBuilder.replace(7, 12, \"Java\");\n\n        // Perform more unrelated operations\n        int sum = 0;\n        for (int number : numbers) {\n            sum += number;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        StringBuilder stringBuilder = new StringBuilder(\"Initial String\");\n        stringBuilder.append(\" with more content\");\n        System.out.println(stringBuilder.toString());\n\n        // Read the modified StrBuilder\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}"
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArArchiveEntry entry = new ArArchiveEntry(\"example.txt\", 100);\n        /* write */ entry.setExternalAttributes(12345);\n        /* read */ int externalAttributes = entry.getExternalAttributes();\n        System.out.println(externalAttributes);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setExternalAttributes",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getExternalAttributes"
+    }
+}

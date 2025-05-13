@@ -1,0 +1,16 @@
+generated/csv/multi_files/prog_2f961993/Course.java:6: 错误: 找不到符号
+    private CSVFormat format;
+            ^
+  符号:   类 CSVFormat
+  位置: 类 Course
+generated/csv/multi_files/prog_2f961993/Course.java:24: 错误: 找不到符号
+    public CSVFormat getFormat() {
+           ^
+  符号:   类 CSVFormat
+  位置: 类 Course
+generated/csv/multi_files/prog_2f961993/Course.java:9: 错误: 找不到符号
+        this.format = CSVFormat.DEFAULT;
+                      ^
+  符号:   变量 CSVFormat
+  位置: 类 Course
+3 个错误

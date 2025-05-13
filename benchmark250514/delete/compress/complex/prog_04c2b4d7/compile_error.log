@@ -1,0 +1,21 @@
+generated/compress/complex/prog_04c2b4d7/Main.java:17: 错误: 找不到符号
+        entry2.setExternalAttributes(54321);
+              ^
+  符号:   方法 setExternalAttributes(int)
+  位置: 类型为ArArchiveEntry的变量 entry2
+generated/compress/complex/prog_04c2b4d7/Main.java:18: 错误: 找不到符号
+        long attr2 = entry2.getExternalAttributes();
+                           ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为ArArchiveEntry的变量 entry2
+generated/compress/complex/prog_04c2b4d7/Main.java:27: 错误: 找不到符号
+        /* write */ entry.setExternalAttributes(12345);
+                         ^
+  符号:   方法 setExternalAttributes(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_04c2b4d7/Main.java:37: 错误: 找不到符号
+        /* read */ long attributes = entry.getExternalAttributes();
+                                          ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为ArArchiveEntry的变量 entry
+4 个错误

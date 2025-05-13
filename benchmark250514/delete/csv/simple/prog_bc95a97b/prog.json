@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of CSVFormat\n        CSVFormat format = CSVFormat.DEFAULT;\n\n        // Use the write method to configure the format\n        /* write */ format = format.withTrim();\n\n        // Simulate the creation of a CSVRecord with the format applied\n        // Note: CSVRecord is typically obtained by parsing a CSV file with CSVParser,\n        // but since we are not doing file operations, we'll simulate it.\n        // Assume we have a CSVRecord instance\n        CSVRecord record = new CSVRecord(null, null, null, format);\n\n        // Use the read method to check if a record is mapped\n        /* read */ boolean isMapped = record.isMapped(\"columnName\");\n\n        System.out.println(\"Is column mapped: \" + isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrim",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

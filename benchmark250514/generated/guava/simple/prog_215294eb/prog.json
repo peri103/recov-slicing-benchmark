@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an ImmutableBiMap using the write method\n        /* write */ ImmutableBiMap<String, Integer> biMap = ImmutableBiMap.of(\"one\", 1, \"two\", 2, \"three\", 3);\n\n        // Read a value from the ImmutableBiMap using the read method\n        /* read */ Integer value = biMap.get(\"two\");\n        \n        // Print the value to verify\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableBiMap",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableBiMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,4 @@
+generated/math/complex/prog_1b362964/Main.java:65: 错误: <匿名Main$3>不是抽象的, 并且未覆盖RealMatrix中的抽象方法walkInOptimizedOrder(RealMatrixPreservingVisitor,int,int,int,int)
+        RealMatrix matrix = new RealMatrix() {
+                                             ^
+1 个错误

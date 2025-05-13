@@ -1,0 +1,17 @@
+generated/jfree/complex/prog_797280e3/Main.java:27: 错误: 找不到符号
+        int totalDaysInMonth = month.getLastDayOfMonth();
+                                    ^
+  符号:   方法 getLastDayOfMonth()
+  位置: 类型为Month的变量 month
+generated/jfree/complex/prog_797280e3/Main.java:28: 错误: 找不到符号
+        int totalDaysInYear = year.getLastDayOfYear();
+                                  ^
+  符号:   方法 getLastDayOfYear()
+  位置: 类型为Year的变量 year
+generated/jfree/complex/prog_797280e3/Main.java:42: 错误: 无法将类 Day中的方法 next应用到给定类型;
+        Day newDay = (Day) firstDay.next(daysToAdd);
+                                   ^
+  需要: 没有参数
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+3 个错误

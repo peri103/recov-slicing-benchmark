@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingMultimap;\nimport com.google.common.collect.Multimap;\nimport com.google.common.collect.ArrayListMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        Multimap<String, Integer> multimap = ArrayListMultimap.create();\n        ForwardingMultimap<String, Integer> forwardingMultimap = new ForwardingMultimap<String, Integer>() {\n            @Override\n            protected Multimap<String, Integer> delegate() {\n                return multimap;\n            }\n        };\n\n        /* write */ forwardingMultimap.put(\"key1\", 42);\n        /* read */ Integer value = forwardingMultimap.get(\"key1\").iterator().next();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ForwardingMultimap",
+        "read_method": "get"
+    }
+}

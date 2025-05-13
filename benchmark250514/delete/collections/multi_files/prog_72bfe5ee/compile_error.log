@@ -1,0 +1,6 @@
+generated/collections/multi_files/prog_72bfe5ee/Main.java:24: 错误: 找不到符号
+        MultiValuedMap<String, Integer> mathCourseScores = mathCourse.getStudentScores();
+        ^
+  符号:   类 MultiValuedMap
+  位置: 类 Main
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.OpenMapRealMatrix;\nimport org.apache.commons.math3.linear.SparseRealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        SparseRealMatrix matrix = new OpenMapRealMatrix(3, 3); // Initialize a 3x3 sparse matrix\n        /* write */ matrix.setEntry(1, 1, 5.5); // Set the value 5.5 at position (1, 1)\n        /* read */ double value = matrix.getEntry(1, 1); // Read the value at position (1, 1)\n        System.out.println(value); // Output the value\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.SparseRealMatrix",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.SparseRealMatrix",
+        "read_method": "getEntry"
+    }
+}

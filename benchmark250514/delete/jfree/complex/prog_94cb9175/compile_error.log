@@ -1,0 +1,26 @@
+generated/jfree/complex/prog_94cb9175/Main.java:5: 错误: 找不到符号
+import org.jfree.chart.util.BooleanTable;
+                           ^
+  符号:   类 BooleanTable
+  位置: 程序包 org.jfree.chart.util
+generated/jfree/complex/prog_94cb9175/Main.java:13: 错误: 找不到符号
+        /* write */ stepRenderer.setSeriesLinesVisible(0, true);
+                                ^
+  符号:   方法 setSeriesLinesVisible(int,boolean)
+  位置: 类型为XYStepAreaRenderer的变量 stepRenderer
+generated/jfree/complex/prog_94cb9175/Main.java:18: 错误: 找不到符号
+        BooleanTable table = new BooleanTable();
+        ^
+  符号:   类 BooleanTable
+  位置: 类 Main
+generated/jfree/complex/prog_94cb9175/Main.java:18: 错误: 找不到符号
+        BooleanTable table = new BooleanTable();
+                                 ^
+  符号:   类 BooleanTable
+  位置: 类 Main
+generated/jfree/complex/prog_94cb9175/Main.java:50: 错误: 找不到符号
+        /* read */ boolean isStepVisible = stepRenderer.getSeriesLinesVisible(0);
+                                                       ^
+  符号:   方法 getSeriesLinesVisible(int)
+  位置: 类型为XYStepAreaRenderer的变量 stepRenderer
+5 个错误

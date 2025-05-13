@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.ToStringBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        ToStringBuilder builder = new ToStringBuilder(new Object());\n        /* write */ builder.append(\"key\", \"value\");\n        /* read */ String result = builder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.ToStringBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.ToStringBuilder",
+        "read_method": "toString"
+    }
+}

@@ -1,0 +1,41 @@
+generated/math/multi_files/prog_a4ad6543/TriangularMatrixHandler.java:8: 错误: 找不到符号
+        /* write */ triangularMatrix = MatrixUtils.createTriangularMatrix(data);
+                                                  ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_a4ad6543/Main.java:19: 错误: 找不到符号
+        RealMatrix matrix = MatrixUtils.createRealMatrix(matrixData);
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_a4ad6543/Main.java:19: 错误: 找不到符号
+        RealMatrix matrix = MatrixUtils.createRealMatrix(matrixData);
+                            ^
+  符号:   变量 MatrixUtils
+  位置: 类 Main
+generated/math/multi_files/prog_a4ad6543/Main.java:20: 错误: 找不到符号
+        RealVector resultVector = matrixOps.operateMatrixVector(matrix, new double[] {1.0, 2.0, 3.0});
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_a4ad6543/Main.java:30: 错误: 找不到符号
+        /* read */ RealMatrix retrievedMatrix = matrixHandler.getTriangularMatrix();
+                   ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_a4ad6543/Main.java:47: 错误: 找不到符号
+        RealMatrix anotherMatrix = MatrixUtils.createRealMatrix(anotherMatrixData);
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_a4ad6543/Main.java:47: 错误: 找不到符号
+        RealMatrix anotherMatrix = MatrixUtils.createRealMatrix(anotherMatrixData);
+                                   ^
+  符号:   变量 MatrixUtils
+  位置: 类 Main
+generated/math/multi_files/prog_a4ad6543/Main.java:48: 错误: 找不到符号
+        RealMatrix multipliedMatrix = matrixOps.multiplyMatrices(matrix, anotherMatrix);
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+8 个错误

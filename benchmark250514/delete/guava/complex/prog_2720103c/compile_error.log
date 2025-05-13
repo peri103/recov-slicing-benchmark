@@ -1,0 +1,6 @@
+generated/guava/complex/prog_2720103c/Main.java:42: 错误: 找不到符号
+        List<String> keys = new ArrayList<>();
+                                ^
+  符号:   类 ArrayList
+  位置: 类 Main
+1 个错误

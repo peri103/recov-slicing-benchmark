@@ -1,0 +1,11 @@
+generated/math/complex/prog_d5af51d5/Main.java:34: 错误: 找不到符号
+        ArrayRealVector anotherVector = MatrixUtils.createArrayRealVector(anotherData);
+                                                   ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_d5af51d5/Main.java:46: 错误: 找不到符号
+        /* write */ ArrayRealVector vector = MatrixUtils.createArrayRealVector(data);
+                                                        ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+2 个错误

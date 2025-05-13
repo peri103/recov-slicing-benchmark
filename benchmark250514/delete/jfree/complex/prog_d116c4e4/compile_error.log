@@ -1,0 +1,4 @@
+generated/jfree/complex/prog_d116c4e4/Main.java:48: 错误: 已在方法 main(String[])中定义了变量 paint
+            Paint paint = piePlot.getSectionOutlinePaint(section);
+                  ^
+1 个错误

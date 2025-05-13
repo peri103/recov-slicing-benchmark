@@ -1,0 +1,20 @@
+generated/collections/multi_files/prog_5c43ee5e/Student.java:10: 错误: 无法将类 StudentScores中的方法 addScore应用到给定类型;
+        scores.addScore(score);
+              ^
+  需要: String,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/collections/multi_files/prog_5c43ee5e/Student.java:14: 错误: 不兼容的类型: int无法转换为String
+        return scores.getScore(index);
+                               ^
+generated/collections/multi_files/prog_5c43ee5e/Main.java:6: 错误: 无法将类 Student中的方法 addScore应用到给定类型;
+        student.addScore("Math", 95);
+               ^
+  需要: int
+  找到: String,int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/collections/multi_files/prog_5c43ee5e/Main.java:14: 错误: 不兼容的类型: String无法转换为int
+                /* read */ int mathScore = s.getScore("Math");
+                                                      ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+4 个错误

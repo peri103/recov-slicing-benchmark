@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"apple,banana,orange\";\n        StrTokenizer tokenizer = new StrTokenizer(input);\n        /* write */ tokenizer.setDelimiterChar(',');\n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setDelimiterChar",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

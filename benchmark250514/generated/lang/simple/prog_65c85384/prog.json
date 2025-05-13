@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableByte;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableByte mutableByte = new MutableByte();\n        /* write */ mutableByte.setValue((byte) 5);\n        /* read */ byte value = mutableByte.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableByte",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableByte",
+        "read_method": "getValue"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.Plot;\nimport org.jfree.data.general.Dataset;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a Plot object\n        Plot plot = new Plot() {\n            @Override\n            public String getPlotType() {\n                return \"Custom Plot\";\n            }\n        };\n\n        // Initialize a Dataset object (using a mock implementation for demonstration)\n        Dataset dataset = new Dataset() {\n            @Override\n            public void addChangeListener(DatasetChangeListener listener) {\n            }\n\n            @Override\n            public void removeChangeListener(DatasetChangeListener listener) {\n            }\n\n            @Override\n            public DatasetGroup getGroup() {\n                return null;\n            }\n\n            @Override\n            public void setGroup(DatasetGroup group) {\n            }\n        };\n\n        /* write */ plot.setDataset(dataset);\n        /* read */ Dataset retrievedDataset = plot.getDataset();\n\n        // Check if the dataset retrieved is the same as the one set\n        System.out.println(retrievedDataset == dataset ? \"Dataset successfully retrieved.\" : \"Dataset retrieval failed.\");\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.Plot",
+        "write_method": "setDataset",
+        "read_class": "org.jfree.chart.plot.Plot",
+        "read_method": "getDataset"
+    }
+}

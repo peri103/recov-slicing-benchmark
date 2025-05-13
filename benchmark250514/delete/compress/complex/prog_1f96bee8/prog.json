@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        ArrayList<Integer> numberList = new ArrayList<>();\n        \n        // Some unrelated operations\n        for (int i = 0; i < 5; i++) {\n            numberList.add(i * 2);\n        }\n\n        // Process the numberList\n        int sum = 0;\n        for (int number : numberList) {\n            sum += number;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        /* write */ gzipParameters.setFlags(1);\n\n        // More unrelated operations\n        StringBuilder sb = new StringBuilder();\n        sb.append(\"Processed numbers: \");\n        for (int number : numberList) {\n            sb.append(number).append(\" \");\n        }\n        System.out.println(sb.toString());\n\n        // Further processing\n        for (int i = 0; i < numberList.size(); i++) {\n            numberList.set(i, numberList.get(i) + 5);\n        }\n\n        // Display updated list\n        System.out.println(\"Updated numbers: \" + numberList);\n\n        /* read */ int flags = gzipParameters.getFlags();\n        System.out.println(\"Gzip Flags: \" + flags);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        \n        /* write */ gzipParameters.setFlags(1);\n        \n        /* read */ int flags = gzipParameters.getFlags();\n        System.out.println(flags);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setFlags",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getFlags"
+    }
+}

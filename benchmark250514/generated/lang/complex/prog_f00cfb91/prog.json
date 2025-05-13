@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        StrBuilder strBuilder2 = new StrBuilder(\"Java Programming\");\n        \n        /* write */ strBuilder.delete(5, 11);\n        \n        // Performing operations on strBuilder2\n        strBuilder2.append(\" is fun!\");\n        strBuilder2.insert(0, \"Learning \");\n        \n        // Manipulating arrays\n        int[] numbers = {5, 10, 15, 20};\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        // More operations on strBuilder2\n        strBuilder2.replace(0, 8, \"Mastering\");\n        System.out.println(strBuilder2.toString());\n        \n        // Using a loop for demonstration\n        for (int i = 0; i < 3; i++) {\n            System.out.println(\"Iteration: \" + i);\n        }\n\n        // Complex string manipulation\n        String[] words = {\"Hello\", \"World\", \"from\", \"Java\"};\n        StrBuilder strBuilder3 = new StrBuilder();\n        for (String word : words) {\n            strBuilder3.append(word).append(\" \");\n        }\n        System.out.println(strBuilder3.toString().trim());\n        \n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        /* write */ strBuilder.delete(5, 11);\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "delete",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

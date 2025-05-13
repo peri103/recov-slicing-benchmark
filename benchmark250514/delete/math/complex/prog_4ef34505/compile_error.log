@@ -1,0 +1,4 @@
+generated/math/complex/prog_4ef34505/Main.java:8: 错误: SparseRealVector是抽象的; 无法实例化
+        SparseRealVector sparseVector = new SparseRealVector();
+                                        ^
+1 个错误

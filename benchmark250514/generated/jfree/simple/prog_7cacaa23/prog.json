@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.ChartPanel;\nimport org.jfree.chart.JFreeChart;\n\npublic class Main {\n    public static void main(String[] args) {\n        JFreeChart chart = new JFreeChart(null); // Placeholder for the chart object\n        ChartPanel panel = new ChartPanel(chart);\n        \n        /* write */ panel.setMouseWheelEnabled(true);\n        /* read */ boolean isMouseWheelEnabled = panel.isMouseWheelEnabled();\n        \n        System.out.println(isMouseWheelEnabled);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.ChartPanel",
+        "write_method": "setMouseWheelEnabled",
+        "read_class": "org.jfree.chart.ChartPanel",
+        "read_method": "isMouseWheelEnabled"
+    }
+}

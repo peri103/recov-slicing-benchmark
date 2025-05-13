@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_a9539145/Main.java:15: 错误: 找不到符号
+            ImmutableList<Integer> scores = student.getScores().buildScores();
+            ^
+  符号:   类 ImmutableList
+  位置: 类 Main
+1 个错误

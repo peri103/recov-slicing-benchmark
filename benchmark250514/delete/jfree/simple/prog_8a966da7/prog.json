@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.Plot;\nimport org.jfree.data.general.Dataset;\nimport org.jfree.data.general.DefaultPieDataset;\n\npublic class Main {\n    public static void main(String[] args) {\n        Plot plot = new Plot() {\n            private Dataset dataset;\n\n            @Override\n            public void setDataset(Dataset dataset) {\n                this.dataset = dataset;\n            }\n\n            @Override\n            public Dataset getDataset() {\n                return this.dataset;\n            }\n        };\n\n        DefaultPieDataset dataset = new DefaultPieDataset();\n        dataset.setValue(\"Category 1\", 43.2);\n        dataset.setValue(\"Category 2\", 27.9);\n        dataset.setValue(\"Category 3\", 79.5);\n\n        /* write */ plot.setDataset(dataset);\n        /* read */ Dataset readDataset = plot.getDataset();\n\n        System.out.println(readDataset);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.Plot",
+        "write_method": "setDataset",
+        "read_class": "org.jfree.chart.plot.Plot",
+        "read_method": "getDataset"
+    }
+}

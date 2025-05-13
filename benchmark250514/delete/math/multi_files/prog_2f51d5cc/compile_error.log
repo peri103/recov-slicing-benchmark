@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_2f51d5cc/TriangularMatrixHandler.java:8: 错误: 找不到符号
+        /* write */ triangularMatrix = MatrixUtils.createTriangularMatrix(data);
+                                                  ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_2f51d5cc/Main.java:27: 错误: 找不到符号
+        RealMatrix otherMatrix = new Array2DRowRealMatrix(otherData);
+                                     ^
+  符号:   类 Array2DRowRealMatrix
+  位置: 类 Main
+2 个错误

@@ -1,0 +1,22 @@
+generated/collections/complex/prog_d7860761/Main.java:18: 错误: <E>PredicatedBag(Bag<E>,Predicate<? super E>) 在 PredicatedBag 中是 protected 访问控制
+        PredicatedBag<Object> predicatedBag = new PredicatedBag<>(hashBag, truePredicate);
+                                              ^
+  其中, E是类型变量:
+    E扩展已在类 PredicatedBag中声明的Object
+generated/collections/complex/prog_d7860761/Main.java:27: 错误: 找不到符号
+        Predicate<Object> stringPredicate = InstanceofPredicate.instanceOf(String.class);
+                                                               ^
+  符号:   方法 instanceOf(Class<String>)
+  位置: 类 InstanceofPredicate
+generated/collections/complex/prog_d7860761/Main.java:28: 错误: <E>PredicatedBag(Bag<E>,Predicate<? super E>) 在 PredicatedBag 中是 protected 访问控制
+        PredicatedBag<Object> filteredBag = new PredicatedBag<>(treeBag, stringPredicate);
+                                            ^
+  其中, E是类型变量:
+    E扩展已在类 PredicatedBag中声明的Object
+generated/collections/complex/prog_d7860761/Main.java:28: 错误: 不兼容的类型: 无法推断PredicatedBag<>的类型参数
+        PredicatedBag<Object> filteredBag = new PredicatedBag<>(treeBag, stringPredicate);
+                                                             ^
+    原因: 推论变量E具有不兼容的等式约束条件Object,String
+  其中, E是类型变量:
+    E扩展已在类 PredicatedBag中声明的Object
+4 个错误

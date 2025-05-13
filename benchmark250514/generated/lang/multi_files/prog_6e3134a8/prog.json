@@ -1,0 +1,13 @@
+{
+    "files": {
+        "HashCodeManager.java": "import org.apache.commons.lang3.builder.HashCodeBuilder;\n\npublic class HashCodeManager {\n    private HashCodeBuilder hashCodeBuilder = new HashCodeBuilder();\n\n    public void addNumber(int number) {\n        /* write */ hashCodeBuilder.append(number);\n    }\n\n    public int generateHashCode() {\n        return hashCodeBuilder.toHashCode();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "read_method": "toHashCode"
+    },
+    "java_code_simple": "import org.apache.commons.lang3.builder.HashCodeBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashCodeBuilder hashCodeBuilder = new HashCodeBuilder();\n        /* write */ hashCodeBuilder.append(12345);\n        /* read */ int hashCode = hashCodeBuilder.toHashCode();\n        System.out.println(hashCode);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.lang3.builder.HashCodeBuilder;\nimport org.apache.commons.lang3.builder.EqualsBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashCodeBuilder hashCodeBuilder = new HashCodeBuilder();\n        EqualsBuilder equalsBuilder = new EqualsBuilder();\n        \n        int number = 12345;\n        String text = \"Hello, World!\";\n        \n        /* write */ hashCodeBuilder.append(number);\n        \n        boolean isEqual = equalsBuilder.append(number, 12345).append(text, \"Hello, World!\").isEquals();\n        System.out.println(\"Equality Check: \" + isEqual);\n        \n        for (int i = 0; i < 5; i++) {\n            hashCodeBuilder.append(i);\n            equalsBuilder.append(i, i);\n        }\n        \n        int additionalHashCode = new HashCodeBuilder().append(text).toHashCode();\n        System.out.println(\"Additional HashCode: \" + additionalHashCode);\n        \n        /* read */ int hashCode = hashCodeBuilder.toHashCode();\n        System.out.println(\"HashCode: \" + hashCode);\n        \n        for (int i = 0; i < 3; i++) {\n            int tempHashCode = new HashCodeBuilder().append(i * 100).toHashCode();\n            System.out.println(\"Temp HashCode: \" + tempHashCode);\n        }\n        \n        boolean finalEquality = new EqualsBuilder().append(text, \"Hello, World!\").isEquals();\n        System.out.println(\"Final Equality Check: \" + finalEquality);\n    }\n}"
+}

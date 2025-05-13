@@ -1,0 +1,16 @@
+generated/jfree/complex/prog_ba7c46a1/Main.java:16: 错误: 找不到符号
+        /* write */ piePlot.setDataset(pieDataset);
+                           ^
+  符号:   方法 setDataset(Dataset)
+  位置: 类型为Plot的变量 piePlot
+generated/jfree/complex/prog_ba7c46a1/Main.java:38: 错误: 找不到符号
+        System.out.println("PiePlot Dataset class: " + piePlot.getDataset().getClass().getName());
+                                                              ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 piePlot
+generated/jfree/complex/prog_ba7c46a1/Main.java:40: 错误: 找不到符号
+        /* read */ Dataset readDataset = piePlot.getDataset();
+                                                ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 piePlot
+3 个错误

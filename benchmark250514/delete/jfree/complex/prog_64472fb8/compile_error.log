@@ -1,0 +1,8 @@
+generated/jfree/complex/prog_64472fb8/Main.java:38: 错误: 找不到符号
+        boolean isZoomable = panel.isMouseZoomable();
+                                  ^
+  符号:   方法 isMouseZoomable()
+  位置: 类型为ChartPanel的变量 panel
+注: generated/jfree/complex/prog_64472fb8/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+1 个错误

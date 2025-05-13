@@ -1,0 +1,16 @@
+import org.jfree.chart.plot.PiePlot;
+import java.awt.BasicStroke;
+import java.awt.Stroke;
+
+public class Main {
+    public static void main(String[] args) {
+        PiePlot plot = new PiePlot();
+        Stroke stroke = new BasicStroke(2.0f);
+        
+        /* write */ plot.setSectionOutlineStroke("Section 1", stroke);
+        
+        /* read */ Stroke readStroke = plot.getSectionOutlineStroke("Section 1");
+        
+        System.out.println(readStroke);
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.Flat3Map;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Flat3Map<String, Integer> map = new Flat3Map<>();\n        HashMap<String, String> hashMap = new HashMap<>();\n        hashMap.put(\"name\", \"Alice\");\n        hashMap.put(\"country\", \"Wonderland\");\n        \n        for (Map.Entry<String, String> entry : hashMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n\n        /* write */ map.put(\"key\", 42);\n        \n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n        \n        Map<String, Double> doubleMap = new HashMap<>();\n        doubleMap.put(\"pi\", 3.14159);\n        doubleMap.put(\"e\", 2.71828);\n        \n        for (String key : doubleMap.keySet()) {\n            System.out.println(key + \": \" + doubleMap.get(key));\n        }\n        \n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Value from Flat3Map: \" + value);\n        \n        int factorial = 1;\n        for (int i = 1; i <= 5; i++) {\n            factorial *= i;\n        }\n        System.out.println(\"Factorial of 5: \" + factorial);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.Flat3Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Flat3Map<String, Integer> map = new Flat3Map<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.Flat3Map",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.Flat3Map",
+        "read_method": "get"
+    }
+}

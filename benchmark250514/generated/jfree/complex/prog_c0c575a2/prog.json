@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYBlockRenderer;\nimport org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYBlockRenderer blockRenderer = new XYBlockRenderer();\n        XYLineAndShapeRenderer lineRenderer = new XYLineAndShapeRenderer();\n        ArrayList<Double> blockWidths = new ArrayList<>();\n\n        /* write */ blockRenderer.setBlockWidth(5.0);\n        blockWidths.add(5.0);\n\n        lineRenderer.setSeriesShapesVisible(0, true);\n        lineRenderer.setSeriesLinesVisible(1, false);\n\n        for (int i = 1; i <= 3; i++) {\n            blockRenderer.setBlockWidth(i * 3.0);\n            blockWidths.add(i * 3.0);\n        }\n\n        /* read */ double blockWidth = blockRenderer.getBlockWidth();\n        System.out.println(\"Current block width: \" + blockWidth);\n\n        for (double width : blockWidths) {\n            System.out.println(\"Stored block width: \" + width);\n        }\n\n        double sumWidths = 0;\n        for (double width : blockWidths) {\n            sumWidths += width;\n        }\n        System.out.println(\"Sum of block widths: \" + sumWidths);\n\n        lineRenderer.setSeriesShapesVisible(2, false);\n        lineRenderer.setSeriesLinesVisible(3, true);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.renderer.xy.XYBlockRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYBlockRenderer renderer = new XYBlockRenderer();\n        /* write */ renderer.setBlockWidth(5.0);\n        /* read */ double blockWidth = renderer.getBlockWidth();\n        System.out.println(blockWidth);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYBlockRenderer",
+        "write_method": "setBlockWidth",
+        "read_class": "org.jfree.chart.renderer.xy.XYBlockRenderer",
+        "read_method": "getBlockWidth"
+    }
+}

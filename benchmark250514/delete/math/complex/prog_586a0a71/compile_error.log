@@ -1,0 +1,16 @@
+generated/math/complex/prog_586a0a71/Main.java:9: 错误: 找不到符号
+        /* write */ RealMatrix sparseMatrix = MatrixUtils.createSparseMatrix(3, 3);
+                                                         ^
+  符号:   方法 createSparseMatrix(int,int)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_586a0a71/Main.java:25: 错误: 找不到符号
+        double determinant = transposedMatrix.getDeterminant();
+                                             ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 transposedMatrix
+generated/math/complex/prog_586a0a71/Main.java:31: 错误: 找不到符号
+        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getSparseMatrix(sparseMatrix);
+                                                           ^
+  符号:   方法 getSparseMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+3 个错误

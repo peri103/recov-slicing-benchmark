@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        /* write */ entry.setUserName(\"exampleUser\");\n        /* read */ String userName = entry.getUserName();\n        System.out.println(userName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setUserName",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getUserName"
+    }
+}

@@ -1,0 +1,4 @@
+generated/guava/simple/prog_eb20f9a9/Main.java:6: 错误: 枚举类型不能为本地类型
+        enum Color {
+        ^
+1 个错误

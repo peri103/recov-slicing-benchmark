@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ContiguousSet;\nimport com.google.common.collect.DiscreteDomain;\nimport com.google.common.collect.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Define a range of integers\n        Range<Integer> range = Range.closed(1, 10);\n        // Create a ContiguousSet from the range\n        /* write */ ContiguousSet<Integer> set = ContiguousSet.create(range, DiscreteDomain.integers());\n        \n        // Check if the set contains a specific value\n        /* read */ boolean containsValue = set.contains(5);\n        \n        // Print the result\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ContiguousSet",
+        "write_method": "create",
+        "read_class": "com.google.common.collect.ContiguousSet",
+        "read_method": "contains"
+    }
+}

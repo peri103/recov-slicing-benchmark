@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.CategoryPlot;\nimport org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a CategoryPlot instance\n        CategoryPlot plot = new CategoryPlot();\n        \n        // Create a ValueAxis instance to be used as the range axis\n        ValueAxis rangeAxis = new NumberAxis(\"Range Axis\");\n        \n        /* write */ plot.setRangeAxis(rangeAxis);\n        \n        /* read */ ValueAxis retrievedAxis = plot.getRangeAxis();\n        \n        // Output the label of the retrieved axis to verify\n        System.out.println(retrievedAxis.getLabel());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.CategoryPlot",
+        "write_method": "setRangeAxis",
+        "read_class": "org.jfree.chart.plot.CategoryPlot",
+        "read_method": "getRangeAxis"
+    }
+}

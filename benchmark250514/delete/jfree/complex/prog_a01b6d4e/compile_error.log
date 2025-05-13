@@ -1,0 +1,30 @@
+generated/jfree/complex/prog_a01b6d4e/Main.java:13: 错误: TickUnit是抽象的; 无法实例化
+        TickUnit tickUnit = new TickUnit(5.0);
+                            ^
+generated/jfree/complex/prog_a01b6d4e/Main.java:24: 错误: 找不到符号
+        /* write */ axis.setTickUnit(tickUnit);
+                        ^
+  符号:   方法 setTickUnit(TickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_a01b6d4e/Main.java:28: 错误: TickUnit是抽象的; 无法实例化
+            TickUnit newTickUnit = new TickUnit(10.0 + i);
+                                   ^
+generated/jfree/complex/prog_a01b6d4e/Main.java:29: 错误: 找不到符号
+            axis.setTickUnit(newTickUnit);
+                ^
+  符号:   方法 setTickUnit(TickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_a01b6d4e/Main.java:34: 错误: 找不到符号
+        /* read */ TickUnit retrievedTickUnit = axis.getTickUnit();
+                                                    ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/complex/prog_a01b6d4e/Main.java:42: 错误: TickUnit是抽象的; 无法实例化
+            TickUnit tempTickUnit = new TickUnit(size);
+                                    ^
+generated/jfree/complex/prog_a01b6d4e/Main.java:43: 错误: 找不到符号
+            axis.setTickUnit(tempTickUnit);
+                ^
+  符号:   方法 setTickUnit(TickUnit)
+  位置: 类型为ValueAxis的变量 axis
+7 个错误

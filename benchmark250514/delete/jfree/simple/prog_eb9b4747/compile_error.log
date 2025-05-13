@@ -1,0 +1,43 @@
+generated/jfree/simple/prog_eb9b4747/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/simple/prog_eb9b4747/Main.java:6: 错误: 找不到符号
+        Renderer renderer = new Renderer() {
+        ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/simple/prog_eb9b4747/Main.java:6: 错误: 找不到符号
+        Renderer renderer = new Renderer() {
+                                ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/simple/prog_eb9b4747/Main.java:7: 错误: 找不到符号
+            private Paint[] seriesPaint = new Paint[1];
+                    ^
+  符号: 类 Paint
+generated/jfree/simple/prog_eb9b4747/Main.java:10: 错误: 找不到符号
+            public Paint getSeriesPaint(int series) {
+                   ^
+  符号: 类 Paint
+generated/jfree/simple/prog_eb9b4747/Main.java:15: 错误: 找不到符号
+            public void setSeriesPaint(int series, Paint paint) {
+                                                   ^
+  符号: 类 Paint
+generated/jfree/simple/prog_eb9b4747/Main.java:7: 错误: 找不到符号
+            private Paint[] seriesPaint = new Paint[1];
+                                              ^
+  符号: 类 Paint
+generated/jfree/simple/prog_eb9b4747/Main.java:9: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_eb9b4747/Main.java:14: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_eb9b4747/Main.java:23: 错误: 找不到符号
+        /* read */ Paint paint = renderer.getSeriesPaint(0);
+                   ^
+  符号:   类 Paint
+  位置: 类 Main
+10 个错误

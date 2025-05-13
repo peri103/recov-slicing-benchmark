@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractReferenceMap;\nimport org.apache.commons.collections4.map.ReferenceMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a ReferenceMap instance\n        AbstractReferenceMap<String, Integer> map = new ReferenceMap<>(AbstractReferenceMap.ReferenceStrength.SOFT, AbstractReferenceMap.ReferenceStrength.SOFT);\n\n        // Write operation: put a key-value pair into the map\n        /* write */ map.put(\"key\", 42);\n\n        // Read operation: get the value associated with the key\n        /* read */ Integer value = map.get(\"key\");\n\n        // Print the value to verify the operation\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractReferenceMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractReferenceMap",
+        "read_method": "get"
+    }
+}

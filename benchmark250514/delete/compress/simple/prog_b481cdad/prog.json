@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        /* write */ entry.setUserName(\"JohnDoe\");\n        /* read */ String userName = entry.getUserName();\n        System.out.println(userName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setUserName",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getUserName"
+    }
+}

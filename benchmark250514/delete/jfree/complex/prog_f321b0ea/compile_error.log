@@ -1,0 +1,13 @@
+generated/jfree/complex/prog_f321b0ea/Main.java:21: 错误: 找不到符号
+        double sectionValue = piePlot.getSectionDepth();
+                                     ^
+  符号:   方法 getSectionDepth()
+  位置: 类型为PiePlot的变量 piePlot
+generated/jfree/complex/prog_f321b0ea/Main.java:25: 错误: 找不到符号
+        /* write */ thermometerPlot.setUnits(ThermometerPlot.UNITS_CELSIUS);
+                                                            ^
+  符号:   变量 UNITS_CELSIUS
+  位置: 类 ThermometerPlot
+注: generated/jfree/complex/prog_f321b0ea/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+2 个错误

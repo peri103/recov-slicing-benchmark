@@ -1,0 +1,15 @@
+generated/collections/complex/prog_c1afa382/Main.java:9: 错误: 不兼容的类型: 无法推断HashMap<>的类型参数
+        AbstractIterableMap<String, Integer> map = new HashMap<>();
+                                                              ^
+    原因: 不存在类型变量K,V的实例, 以使HashMap<K,V>与AbstractIterableMap<String,Integer>一致
+  其中, K,V是类型变量:
+    K扩展已在类 HashMap中声明的Object
+    V扩展已在类 HashMap中声明的Object
+generated/collections/complex/prog_c1afa382/Main.java:12: 错误: 不兼容的类型: 无法推断HashedMap<>的类型参数
+        AbstractIterableMap<String, String> stringMap = new HashedMap<>();
+                                                                     ^
+    原因: 不存在类型变量K,V的实例, 以使HashedMap<K,V>与AbstractIterableMap<String,String>一致
+  其中, K,V是类型变量:
+    K扩展已在类 HashedMap中声明的Object
+    V扩展已在类 HashedMap中声明的Object
+2 个错误

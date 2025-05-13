@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        /* write */ entry.setSize(1024);\n        /* read */ long size = entry.getSize();\n        System.out.println(size);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setSize",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getSize"
+    }
+}

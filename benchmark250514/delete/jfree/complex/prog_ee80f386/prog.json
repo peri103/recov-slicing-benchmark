@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYBubbleRenderer;\nimport org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYBubbleRenderer renderer = new XYBubbleRenderer();\n        XYLineAndShapeRenderer lineRenderer = new XYLineAndShapeRenderer();\n        \n        /* write */ renderer.setScaleType(XYBubbleRenderer.SCALE_ON_BOTH_AXES);\n        \n        // Using another renderer to add complexity\n        lineRenderer.setSeriesLinesVisible(0, true);\n        lineRenderer.setBaseShapesVisible(true);\n        \n        // Some unrelated operations\n        int[] data = {1, 2, 3, 4, 5};\n        int sum = 0;\n        for (int num : data) {\n            sum += num;\n        }\n        System.out.println(\"Sum of data: \" + sum);\n        \n        // More operations using lineRenderer\n        lineRenderer.setSeriesPaint(1, java.awt.Color.BLUE);\n        lineRenderer.setSeriesStroke(1, new java.awt.BasicStroke(2.0f));\n        \n        /* read */ int scaleType = renderer.getScaleType();\n        System.out.println(\"Scale Type: \" + scaleType);\n        \n        // Further operations to increase complexity\n        boolean isVisible = lineRenderer.getSeriesLinesVisible(0);\n        System.out.println(\"Series line visible: \" + isVisible);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.renderer.xy.XYBubbleRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYBubbleRenderer renderer = new XYBubbleRenderer();\n        /* write */ renderer.setScaleType(XYBubbleRenderer.SCALE_ON_BOTH_AXES);\n        /* read */ int scaleType = renderer.getScaleType();\n        System.out.println(scaleType);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYBubbleRenderer",
+        "write_method": "setScaleType",
+        "read_class": "org.jfree.chart.renderer.xy.XYBubbleRenderer",
+        "read_method": "getScaleType"
+    }
+}

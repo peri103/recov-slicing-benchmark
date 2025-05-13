@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_f75fc411/Main.java:9: 错误: 找不到符号
+        /* write */ renderer.setRangePaint(Color.BLUE);
+                            ^
+  符号:   方法 setRangePaint(Color)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+generated/jfree/simple/prog_f75fc411/Main.java:11: 错误: 找不到符号
+        /* read */ Paint rangePaint = renderer.getRangePaint();
+                                              ^
+  符号:   方法 getRangePaint()
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+2 个错误

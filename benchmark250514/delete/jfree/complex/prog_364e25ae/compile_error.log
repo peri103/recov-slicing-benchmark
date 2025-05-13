@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_364e25ae/Main.java:44: 错误: 找不到符号
+        legendItem.setLabel("Updated Legend");
+                  ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+generated/jfree/complex/prog_364e25ae/Main.java:45: 错误: 找不到符号
+        anotherLegendItem.setLabel("Another Updated Legend");
+                         ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 anotherLegendItem
+2 个错误

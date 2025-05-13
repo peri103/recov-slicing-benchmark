@@ -1,0 +1,11 @@
+import org.jfree.chart.renderer.xy.XYBubbleRenderer;
+import org.jfree.chart.renderer.xy.XYBubbleRenderer.ScaleType;
+
+public class Main {
+    public static void main(String[] args) {
+        XYBubbleRenderer renderer = new XYBubbleRenderer();
+        /* write */ renderer.setScaleType(ScaleType.LINEAR);
+        /* read */ ScaleType scaleType = renderer.getScaleType();
+        System.out.println(scaleType);
+    }
+}

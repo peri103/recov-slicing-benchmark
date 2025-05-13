@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_dfff436f/Main.java:36: 错误: 找不到符号
+        legend.setPosition(RectangleEdge.BOTTOM);
+                           ^
+  符号:   变量 RectangleEdge
+  位置: 类 Main
+1 个错误

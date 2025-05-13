@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.buffer.CircularFifoBuffer;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoBuffer<Integer> buffer = new CircularFifoBuffer<>(10);\n        /* write */ buffer.add(42);\n        /* read */ Integer value = buffer.get();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.buffer.CircularFifoBuffer",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.buffer.CircularFifoBuffer",
+        "read_method": "get"
+    }
+}

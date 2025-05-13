@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_f0ae5153/BlockSizeManager.java:12: 错误: 找不到符号
+        /* write */ bzip2Stream.setBlockSize(size);
+                               ^
+  符号:   方法 setBlockSize(int)
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+generated/compress/multi_files/prog_f0ae5153/BlockSizeManager.java:16: 错误: 找不到符号
+        /* read */ return bzip2Stream.getBlockSize();
+                                     ^
+  符号:   方法 getBlockSize()
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+2 个错误

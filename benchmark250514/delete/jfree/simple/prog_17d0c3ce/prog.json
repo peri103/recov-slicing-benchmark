@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.CompassPlot;\nimport org.jfree.chart.plot.CompassPlot.Needle;\n\npublic class Main {\n    public static void main(String[] args) {\n        CompassPlot compassPlot = new CompassPlot();\n        Needle needle = new Needle(); // Assuming Needle is a valid class or enum in the CompassPlot context\n\n        /* write */ compassPlot.setSeriesNeedle(needle);\n\n        /* read */ Needle readNeedle = compassPlot.getSeriesNeedle();\n        System.out.println(readNeedle); // Assuming Needle has a valid toString() method\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.CompassPlot",
+        "write_method": "setSeriesNeedle",
+        "read_class": "org.jfree.chart.plot.CompassPlot",
+        "read_method": "getSeriesNeedle"
+    }
+}

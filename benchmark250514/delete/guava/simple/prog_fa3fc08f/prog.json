@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.DiscreteDomain;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a DiscreteDomain for integers\n        DiscreteDomain<Integer> integerDomain = DiscreteDomain.integers();\n        \n        // Use the 'of' method to get a DiscreteDomain instance\n        /* write */ DiscreteDomain<Integer> domain = DiscreteDomain.of(integerDomain);\n\n        // Use the 'previous' method to get the previous integer of a given value\n        /* read */ int previousValue = domain.previous(5);\n\n        // Print the result\n        System.out.println(previousValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.DiscreteDomain",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.DiscreteDomain",
+        "read_method": "previous"
+    }
+}

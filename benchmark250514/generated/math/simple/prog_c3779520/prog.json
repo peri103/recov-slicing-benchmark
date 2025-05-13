@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.RealMatrix;\nimport org.apache.commons.math3.linear.RealMatrixPreservingVisitor;\nimport org.apache.commons.math3.linear.Array2DRowRealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a matrix with some values\n        double[][] data = {{1.0, 2.0}, {3.0, 4.0}};\n        RealMatrix matrix = new Array2DRowRealMatrix(data);\n\n        // Create a visitor that will sum all elements in the matrix\n        RealMatrixPreservingVisitor visitor = new RealMatrixPreservingVisitor() {\n            private double sum = 0;\n\n            @Override\n            public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {\n                sum = 0;\n            }\n\n            @Override\n            public void visit(int row, int column, double value) {\n                /* write */ sum += value;\n            }\n\n            @Override\n            public double end() {\n                /* read */ return sum;\n            }\n        };\n\n        // Use the visitor on the matrix\n        matrix.walkInOptimizedOrder(visitor);\n\n        // Get the result from the visitor\n        double result = visitor.end();\n        System.out.println(\"Sum of all elements in the matrix: \" + result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+        "write_method": "visit",
+        "read_class": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+        "read_method": "end"
+    }
+}

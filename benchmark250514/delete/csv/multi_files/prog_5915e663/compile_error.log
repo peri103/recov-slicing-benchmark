@@ -1,0 +1,8 @@
+generated/csv/multi_files/prog_5915e663/Main.java:16: 错误: 找不到符号
+            /* read */ String comment = csvOps.getParser().getHeaderComments().get(0);
+                                                          ^
+  符号:   方法 getHeaderComments()
+  位置: 类 CSVParser
+注: generated/csv/multi_files/prog_5915e663/CSVOperations.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

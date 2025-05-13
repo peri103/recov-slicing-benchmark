@@ -1,0 +1,14 @@
+generated/jfree/complex/prog_e4bb1fad/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/complex/prog_e4bb1fad/Main.java:11: 错误: 找不到符号
+        Renderer renderer = new AbstractRenderer();
+        ^
+  符号:   类 Renderer
+  位置: 类 Main
+generated/jfree/complex/prog_e4bb1fad/Main.java:11: 错误: AbstractRenderer是抽象的; 无法实例化
+        Renderer renderer = new AbstractRenderer();
+                            ^
+3 个错误

@@ -1,0 +1,13 @@
+generated/guava/multi_files/prog_91556a72/StudentDetails.java:9: 错误: 找不到符号
+        /* write */ builder.putInstance(Integer.class, age);
+                           ^
+  符号:   方法 putInstance(Class<Integer>,int)
+  位置: 类型为Builder<Object>的变量 builder
+generated/guava/multi_files/prog_91556a72/StudentDetails.java:13: 错误: 找不到符号
+        builder.putInstance(type, instance);
+               ^
+  符号:   方法 putInstance(Class<CAP#1>,Object)
+  位置: 类型为Builder<Object>的变量 builder
+  其中, CAP#1是新类型变量:
+    CAP#1从?的捕获扩展Object
+2 个错误

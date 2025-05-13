@@ -1,0 +1,11 @@
+generated/math/complex/prog_bd5264a2/Main.java:11: 错误: 找不到符号
+        /* write */ identityMatrix = MatrixUtils.createIdentityMatrix(3);
+                                                ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_bd5264a2/Main.java:28: 错误: 找不到符号
+        double determinant = identityMatrix.getDeterminant();
+                                           ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 identityMatrix
+2 个错误

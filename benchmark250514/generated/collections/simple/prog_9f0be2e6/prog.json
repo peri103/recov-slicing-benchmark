@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.Transformer;\nimport org.apache.commons.collections4.map.TransformedMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a base map\n        Map<String, String> baseMap = new HashMap<>();\n\n        // Define transformers for keys and values\n        Transformer<String, String> keyTransformer = input -> input.toUpperCase();\n        Transformer<String, String> valueTransformer = input -> input.toLowerCase();\n\n        // Create a TransformedMap with key and value transformers\n        Map<String, String> transformedMap = TransformedMap.transformedMap(baseMap, keyTransformer, valueTransformer);\n\n        /* write */ transformedMap.put(\"Key\", \"VALUE\");\n\n        /* read */ String value = transformedMap.get(\"KEY\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.TransformedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.TransformedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_be988a3d/Main.java:17: 错误: 找不到符号
+        /* write */ bubbleRenderer.setScaleType(scaleTypes.get(1));
+                                  ^
+  符号:   方法 setScaleType(Integer)
+  位置: 类型为XYBubbleRenderer的变量 bubbleRenderer
+1 个错误

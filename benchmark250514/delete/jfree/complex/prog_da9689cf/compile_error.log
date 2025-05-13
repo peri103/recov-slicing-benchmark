@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_da9689cf/Main.java:18: 错误: 找不到符号
+            legendTitle.addLegendItem(item);
+                       ^
+  符号:   方法 addLegendItem(LegendItem)
+  位置: 类型为LegendTitle的变量 legendTitle
+1 个错误

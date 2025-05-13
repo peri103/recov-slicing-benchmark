@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.Renderer;\nimport java.awt.BasicStroke;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming Renderer is instantiated properly, as it is an interface\n        // For demonstration, we'll use a class that implements Renderer, such as AbstractRenderer\n        Renderer renderer = new org.jfree.chart.renderer.AbstractRenderer();\n        \n        BasicStroke stroke = new BasicStroke(2.0f);\n        \n        /* write */ renderer.setBaseStroke(stroke);\n        /* read */ BasicStroke readStroke = renderer.getBaseStroke();\n        \n        System.out.println(readStroke);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.Renderer",
+        "write_method": "setBaseStroke",
+        "read_class": "org.jfree.chart.renderer.Renderer",
+        "read_method": "getBaseStroke"
+    }
+}

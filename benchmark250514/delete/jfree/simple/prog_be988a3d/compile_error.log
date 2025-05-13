@@ -1,0 +1,6 @@
+generated/jfree/simple/prog_be988a3d/Main.java:6: 错误: 找不到符号
+        /* write */ renderer.setScaleType(XYBubbleRenderer.SCALE_ON_RANGE_AXIS);
+                            ^
+  符号:   方法 setScaleType(int)
+  位置: 类型为XYBubbleRenderer的变量 renderer
+1 个错误

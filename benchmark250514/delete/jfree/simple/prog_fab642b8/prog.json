@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.title.Title;\nimport java.awt.Font;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming we have a concrete implementation of Title, since Title is abstract\n        Title title = new MyTitle(); // Replace MyTitle with actual implementation\n\n        Font font = new Font(\"Arial\", Font.PLAIN, 12);\n        /* write */ title.setFont(font);\n\n        /* read */ Font retrievedFont = title.getFont();\n        System.out.println(\"Font: \" + retrievedFont.getFontName() + \", Size: \" + retrievedFont.getSize());\n    }\n}\n\n// Mock implementation of Title for demonstration purposes\nclass MyTitle extends Title {\n    private Font font;\n\n    @Override\n    public void setFont(Font font) {\n        this.font = font;\n    }\n\n    @Override\n    public Font getFont() {\n        return this.font;\n    }\n\n    // Other methods would be implemented here...\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.Title",
+        "write_method": "setFont",
+        "read_class": "org.jfree.chart.title.Title",
+        "read_method": "getFont"
+    }
+}

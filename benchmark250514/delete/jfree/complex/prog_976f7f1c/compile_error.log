@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_976f7f1c/Main.java:21: 错误: 找不到符号
+        categoryPlot.setLabelGenerator(categoryLabelGenerator);
+                    ^
+  符号:   方法 setLabelGenerator(StandardCategoryItemLabelGenerator)
+  位置: 类型为CategoryPlot的变量 categoryPlot
+generated/jfree/complex/prog_976f7f1c/Main.java:45: 错误: 找不到符号
+        PieSectionLabelGenerator readCategoryLabelGenerator = categoryPlot.getLabelGenerator();
+                                                                          ^
+  符号:   方法 getLabelGenerator()
+  位置: 类型为CategoryPlot的变量 categoryPlot
+2 个错误

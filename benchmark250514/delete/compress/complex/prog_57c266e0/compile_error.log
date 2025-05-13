@@ -1,0 +1,11 @@
+generated/compress/complex/prog_57c266e0/Main.java:27: 错误: 找不到符号
+            /* write */ bzip2Stream.setBlockSize(9);
+                                   ^
+  符号:   方法 setBlockSize(int)
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+generated/compress/complex/prog_57c266e0/Main.java:37: 错误: 找不到符号
+            /* read */ int blockSize = bzip2Stream.getBlockSize();
+                                                  ^
+  符号:   方法 getBlockSize()
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+2 个错误

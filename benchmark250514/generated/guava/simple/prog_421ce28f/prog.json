@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableRangeMap;\nimport com.google.common.collect.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableRangeMap.Builder<Integer, String> builder = ImmutableRangeMap.builder();\n        /* write */ builder.put(Range.closed(1, 10), \"Value1\");\n        ImmutableRangeMap<Integer, String> rangeMap = builder.build();\n        /* read */ String value = rangeMap.get(5);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableRangeMap",
+        "write_method": "builder",
+        "read_class": "com.google.common.collect.ImmutableRangeMap",
+        "read_method": "get"
+    }
+}

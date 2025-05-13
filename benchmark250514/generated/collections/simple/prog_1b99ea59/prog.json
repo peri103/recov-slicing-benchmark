@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.Bag;\nimport org.apache.commons.collections4.bag.HashBag;\nimport org.apache.commons.collections4.bag.PredicatedBag;\nimport org.apache.commons.collections4.Predicate;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Define a predicate for the PredicatedBag\n        Predicate<Object> predicate = obj -> obj instanceof Integer && (Integer) obj > 0;\n\n        // Create a HashBag as the base bag\n        Bag<Integer> baseBag = new HashBag<>();\n\n        // Create a PredicatedBag using the base bag and the predicate\n        PredicatedBag<Integer> predicatedBag = PredicatedBag.predicatedBag(baseBag, predicate);\n\n        /* write */ predicatedBag.add(5);\n\n        /* read */ int count = predicatedBag.getCount(5);\n\n        // Output the count\n        System.out.println(\"Count of 5: \" + count);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.bag.PredicatedBag",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.bag.PredicatedBag",
+        "read_method": "getCount"
+    }
+}

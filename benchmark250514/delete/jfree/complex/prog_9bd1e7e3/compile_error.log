@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_9bd1e7e3/Main.java:22: 错误: 找不到符号
+        plot.setRangeAxisLocation(Plot.DEFAULT_AXIS_LOCATION);
+                                      ^
+  符号:   变量 DEFAULT_AXIS_LOCATION
+  位置: 类 Plot
+generated/jfree/complex/prog_9bd1e7e3/Main.java:36: 错误: 找不到符号
+        valueAxis.setAutoRangeIncludesZero(false);
+                 ^
+  符号:   方法 setAutoRangeIncludesZero(boolean)
+  位置: 类型为ValueAxis的变量 valueAxis
+2 个错误

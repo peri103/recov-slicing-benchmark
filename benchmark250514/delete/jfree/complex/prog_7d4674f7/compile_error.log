@@ -1,0 +1,22 @@
+generated/jfree/complex/prog_7d4674f7/Main.java:22: 错误: 找不到符号
+        xyGenerator.setFormatString("{0}: {1}, {2}");
+                   ^
+  符号:   方法 setFormatString(String)
+  位置: 类型为StandardXYToolTipGenerator的变量 xyGenerator
+generated/jfree/complex/prog_7d4674f7/Main.java:25: 错误: 找不到符号
+        /* write */ categoryGenerator.setCategoryFormat(decimalFormat);
+                                     ^
+  符号:   方法 setCategoryFormat(DecimalFormat)
+  位置: 类型为StandardCategoryToolTipGenerator的变量 categoryGenerator
+generated/jfree/complex/prog_7d4674f7/Main.java:33: 错误: 无法将类 StandardXYToolTipGenerator中的方法 generateToolTip应用到给定类型;
+        String xyToolTip = xyGenerator.generateToolTip(1.234, 5.678);
+                                      ^
+  需要: XYDataset,int,int
+  找到: double,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_7d4674f7/Main.java:37: 错误: 找不到符号
+        /* read */ DecimalFormat retrievedFormat = categoryGenerator.getCategoryFormat();
+                                                                    ^
+  符号:   方法 getCategoryFormat()
+  位置: 类型为StandardCategoryToolTipGenerator的变量 categoryGenerator
+4 个错误

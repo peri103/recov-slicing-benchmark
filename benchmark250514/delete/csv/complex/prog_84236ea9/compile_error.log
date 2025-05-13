@@ -1,0 +1,9 @@
+generated/csv/complex/prog_84236ea9/Main.java:19: 错误: 无法将类 CSVRecord中的构造器 CSVRecord应用到给定类型;
+            CSVRecord record = new CSVRecord(null, recordData.toArray(new String[0]), null, null, null, null);
+                               ^
+  需要: CSVParser,String[],String,long,long
+  找到: <空值>,String[],<空值>,<空值>,<空值>,<空值>
+  原因: 实际参数列表和形式参数列表长度不同
+注: generated/csv/complex/prog_84236ea9/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

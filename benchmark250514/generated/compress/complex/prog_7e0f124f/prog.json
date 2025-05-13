@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"dummy\");\n        /* write */ entry.setGroupId(1001);\n\n        // Additional complex logic\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"key1\", 10);\n        map.put(\"key2\", 20);\n\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n\n        int mapValue = map.get(\"key1\") + map.get(\"key2\");\n\n        // More complex operations\n        ArrayList<String> strings = new ArrayList<>();\n        strings.add(\"Hello\");\n        strings.add(\"World\");\n\n        StringBuilder sb = new StringBuilder();\n        for (String str : strings) {\n            sb.append(str).append(\" \");\n        }\n\n        // Reading the group ID after other operations\n        /* read */ long groupId = entry.getGroupId();\n\n        System.out.println(\"GroupId: \" + groupId);\n        System.out.println(\"Sum of numbers: \" + sum);\n        System.out.println(\"Sum of map values: \" + mapValue);\n        System.out.println(\"Concatenated String: \" + sb.toString().trim());\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"dummy\");\n        /* write */ entry.setGroupId(1001);\n        /* read */ long groupId = entry.getGroupId();\n        System.out.println(groupId);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setGroupId",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getGroupId"
+    }
+}

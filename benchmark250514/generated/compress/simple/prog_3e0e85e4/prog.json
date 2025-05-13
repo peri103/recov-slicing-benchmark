@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the DumpArchiveEntry object\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n\n        // Write operation: Set the mode\n        /* write */ entry.setMode(12345);\n\n        // Read operation: Get the mode\n        /* read */ int mode = entry.getMode();\n\n        // Print the mode to verify the read operation\n        System.out.println(mode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setMode",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getMode"
+    }
+}

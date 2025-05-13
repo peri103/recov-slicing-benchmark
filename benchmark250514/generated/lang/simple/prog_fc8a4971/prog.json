@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.CompareToBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        CompareToBuilder compareToBuilder = new CompareToBuilder();\n        \n        // Setting up some sample data\n        int lhs = 5;\n        int rhs = 10;\n\n        /* write */ compareToBuilder.append(lhs, rhs);\n        \n        /* read */ int comparisonResult = compareToBuilder.toComparison();\n        \n        System.out.println(comparisonResult);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.CompareToBuilder",
+        "read_method": "toComparison"
+    }
+}

@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_ee80f386/Main.java:9: 错误: 找不到符号
+        /* write */ renderer.setScaleType(XYBubbleRenderer.SCALE_ON_BOTH_AXES);
+                            ^
+  符号:   方法 setScaleType(int)
+  位置: 类型为XYBubbleRenderer的变量 renderer
+generated/jfree/complex/prog_ee80f386/Main.java:13: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(true);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+2 个错误

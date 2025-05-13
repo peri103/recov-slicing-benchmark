@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractLinkedMap;\nimport org.apache.commons.collections4.map.LinkedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the map using LinkedMap which is a concrete implementation of AbstractLinkedMap\n        AbstractLinkedMap<String, Integer> map = new LinkedMap<>();\n\n        // Write a value to the map\n        /* write */ map.put(\"key\", 42);\n\n        // Read the value from the map\n        /* read */ Integer value = map.get(\"key\");\n\n        // Print the value to ensure the read operation is successful\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractLinkedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractLinkedMap",
+        "read_method": "get"
+    }
+}

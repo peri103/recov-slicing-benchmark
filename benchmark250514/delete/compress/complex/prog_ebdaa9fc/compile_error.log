@@ -1,0 +1,21 @@
+generated/compress/complex/prog_ebdaa9fc/Main.java:14: 错误: 找不到符号
+        /* write */ entry.setCrc(12345L);
+                         ^
+  符号:   方法 setCrc(long)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_ebdaa9fc/Main.java:19: 错误: 找不到符号
+        anotherEntry.setCrc(67890L);
+                    ^
+  符号:   方法 setCrc(long)
+  位置: 类型为DumpArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_ebdaa9fc/Main.java:24: 错误: 找不到符号
+            crcMap.put("Entry" + entryList.indexOf(e), e.getCrc());
+                                                        ^
+  符号:   方法 getCrc()
+  位置: 类型为DumpArchiveEntry的变量 e
+generated/compress/complex/prog_ebdaa9fc/Main.java:35: 错误: 找不到符号
+        /* read */ long crcValue = entry.getCrc();
+                                        ^
+  符号:   方法 getCrc()
+  位置: 类型为DumpArchiveEntry的变量 entry
+4 个错误

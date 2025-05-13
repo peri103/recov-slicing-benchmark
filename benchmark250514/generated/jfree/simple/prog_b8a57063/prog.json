@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Font;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample\");\n        Font font = new Font(\"Serif\", Font.PLAIN, 12);\n\n        /* write */ legendItem.setLabelFont(font);\n        /* read */ Font readFont = legendItem.getLabelFont();\n\n        System.out.println(\"Font: \" + readFont.getFontName() + \", Size: \" + readFont.getSize());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLabelFont",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLabelFont"
+    }
+}

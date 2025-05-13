@@ -1,0 +1,8 @@
+generated/guava/multi_files/prog_064c1acd/Course.java:5: 错误: 不兼容的类型: 推论变量 E 具有不兼容的上限
+    private ImmutableSortedSet.Builder<Student> studentBuilder = ImmutableSortedSet.naturalOrder();
+                                                                                                ^
+    等式约束条件：Student
+    下限：Comparable<?>
+  其中, E是类型变量:
+    E扩展已在方法 <E>naturalOrder()中声明的Comparable<?>
+1 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.XYPlot;\nimport java.awt.Color;\nimport java.awt.Paint;\nimport org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYPlot plot = new XYPlot();\n\n        // Set up some unrelated configurations\n        ValueAxis xAxis = new NumberAxis(\"X-Axis\");\n        ValueAxis yAxis = new NumberAxis(\"Y-Axis\");\n        plot.setDomainAxis(xAxis);\n        plot.setRangeAxis(yAxis);\n\n        // Another unrelated paint setting\n        plot.setDomainGridlinePaint(Color.BLUE);\n\n        // Add a loop to perform some calculations\n        double[] data = {1.0, 2.0, 3.0, 4.0, 5.0};\n        double sum = 0;\n        for (double d : data) {\n            sum += d;\n        }\n        System.out.println(\"Sum of data: \" + sum);\n\n        // Set the range gridline paint\n        /* write */ plot.setRangeGridlinePaint(Color.RED);\n\n        // Perform some unrelated operations\n        for (int i = 0; i < 10; i++) {\n            System.out.println(\"Iteration: \" + i);\n        }\n\n        // Get and print the range gridline paint\n        /* read */ Paint paint = plot.getRangeGridlinePaint();\n        System.out.println(paint);\n\n        // Perform another unrelated operation\n        double average = sum / data.length;\n        System.out.println(\"Average of data: \" + average);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.XYPlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYPlot plot = new XYPlot();\n        /* write */ plot.setRangeGridlinePaint(Color.RED);\n        /* read */ Paint paint = plot.getRangeGridlinePaint();\n        System.out.println(paint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.XYPlot",
+        "write_method": "setRangeGridlinePaint",
+        "read_class": "org.jfree.chart.plot.XYPlot",
+        "read_method": "getRangeGridlinePaint"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParams = new GzipParameters();\n        /* write */ gzipParams.setOperatingSystem(3);\n        /* read */ int osValue = gzipParams.getOperatingSystem();\n        System.out.println(osValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setOperatingSystem",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getOperatingSystem"
+    }
+}

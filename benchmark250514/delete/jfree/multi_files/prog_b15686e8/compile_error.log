@@ -1,0 +1,4 @@
+generated/jfree/multi_files/prog_b15686e8/Main.java:23: 错误: crosshair 在 CrosshairLabelManager 中是 private 访问控制
+        System.out.println("Generated Label: " + readLabelGenerator.generateLabel(manager.crosshair));
+                                                                                         ^
+1 个错误

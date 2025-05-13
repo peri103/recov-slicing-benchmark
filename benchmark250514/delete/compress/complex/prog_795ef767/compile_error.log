@@ -1,0 +1,6 @@
+generated/compress/complex/prog_795ef767/Main.java:20: 错误: 找不到符号
+        /* write */ entry.setName("exampleName");
+                         ^
+  符号:   方法 setName(String)
+  位置: 类型为ArArchiveEntry的变量 entry
+1 个错误

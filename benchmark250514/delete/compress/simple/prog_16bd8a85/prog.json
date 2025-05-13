@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters parameters = new GzipParameters();\n        Date modificationTime = new Date(); // Initialize with the current date and time\n        \n        /* write */ parameters.setModificationTime(modificationTime);\n        \n        /* read */ Date readModificationTime = parameters.getModificationTime();\n        \n        System.out.println(\"Modification Time: \" + readModificationTime);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setModificationTime",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getModificationTime"
+    }
+}

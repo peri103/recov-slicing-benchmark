@@ -1,0 +1,4 @@
+generated/guava/multi_files/prog_2fe58f3a/Main.java:15: 错误: courseName 在 Course 中是 private 访问控制
+        System.out.println("Enrolled students in " + course.courseName + ":");
+                                                           ^
+1 个错误

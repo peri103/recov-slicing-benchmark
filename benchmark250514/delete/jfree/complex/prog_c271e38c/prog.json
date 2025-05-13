@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.renderer.category.BarRenderer;\nimport org.jfree.chart.renderer.category.LineRenderer3D;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        BarRenderer barRenderer = new BarRenderer();\n        LineRenderer3D lineRenderer = new LineRenderer3D();\n        ArrayList<Double> values = new ArrayList<>();\n\n        // Initialize lineRenderer with some base value\n        lineRenderer.setBase(3.0);\n        values.add(lineRenderer.getBase());\n\n        // Perform some calculations and store results\n        for (int i = 0; i < 5; i++) {\n            double newValue = lineRenderer.getBase() * i;\n            values.add(newValue);\n        }\n\n        // Use the original write method\n        /* write */ barRenderer.setBase(5.0);\n\n        // Further operations using LineRenderer3D\n        for (int i = 0; i < values.size(); i++) {\n            System.out.println(\"Value from LineRenderer3D: \" + values.get(i));\n        }\n\n        // Additional calculations\n        double sum = 0;\n        for (Double val : values) {\n            sum += val;\n        }\n        System.out.println(\"Sum of values: \" + sum);\n\n        // Use the original read method\n        /* read */ double baseValue = barRenderer.getBase();\n        System.out.println(\"Base value from BarRenderer: \" + baseValue);\n\n        // More complex operations\n        double average = sum / values.size();\n        System.out.println(\"Average of values: \" + average);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.renderer.category.BarRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        BarRenderer renderer = new BarRenderer();\n        /* write */ renderer.setBase(5.0);\n        /* read */ double baseValue = renderer.getBase();\n        System.out.println(baseValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.category.BarRenderer",
+        "write_method": "setBase",
+        "read_class": "org.jfree.chart.renderer.category.BarRenderer",
+        "read_method": "getBase"
+    }
+}

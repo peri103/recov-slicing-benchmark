@@ -1,0 +1,5 @@
+generated/jfree/complex/prog_cd242b31/Main.java:12: 错误: 不兼容的类型: NumberAxis无法转换为CategoryAxis
+        categoryPlot.setDomainAxis(numberAxis);
+                                   ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

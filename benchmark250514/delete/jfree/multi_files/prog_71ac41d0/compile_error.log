@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_71ac41d0/ChartManager.java:16: 错误: 找不到符号
+        /* read */ return renderer.getBaseShapesVisible();
+                                  ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYItemRenderer的变量 renderer
+generated/jfree/multi_files/prog_71ac41d0/RendererConfig.java:12: 错误: 找不到符号
+        /* write */ renderer.setBaseShapesVisible(visible);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYItemRenderer的变量 renderer
+2 个错误

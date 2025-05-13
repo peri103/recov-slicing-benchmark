@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYBubbleRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYBubbleRenderer renderer = new XYBubbleRenderer();\n        /* write */ renderer.setScaleType(XYBubbleRenderer.SCALE_ON_BOTH_AXES);\n        /* read */ int scaleType = renderer.getScaleType();\n        System.out.println(scaleType);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYBubbleRenderer",
+        "write_method": "setScaleType",
+        "read_class": "org.jfree.chart.renderer.xy.XYBubbleRenderer",
+        "read_method": "getScaleType"
+    }
+}

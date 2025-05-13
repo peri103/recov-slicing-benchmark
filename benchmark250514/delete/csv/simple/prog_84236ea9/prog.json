@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Use the write method\n        /* write */ format = format.withAllowMissingColumnNames(true);\n\n        // Create a mock CSVRecord for demonstration\n        List<String> recordData = Arrays.asList(\"value1\", \"value2\", \"value3\");\n        CSVRecord record = new CSVRecord(null, recordData.toArray(new String[0]), null, null, null, null);\n\n        // Use the read method\n        /* read */ boolean isConsistent = record.isConsistent();\n        \n        // Print the result\n        System.out.println(\"Is the CSV record consistent? \" + isConsistent);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAllowMissingColumnNames",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

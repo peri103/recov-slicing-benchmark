@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a new LegendItem with default values\n        LegendItem legendItem = new LegendItem(\"Sample Label\", \"Description\", \"Tool Tip\", \"URL\", true, null, true, null, true, null, true, null);\n\n        // Set a label paint using the write method\n        /* write */ legendItem.setLabelPaint(Color.RED);\n\n        // Retrieve the label paint using the read method\n        /* read */ Paint labelPaint = legendItem.getLabelPaint();\n\n        // Print the paint to verify the write and read operation\n        System.out.println(labelPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLabelPaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLabelPaint"
+    }
+}

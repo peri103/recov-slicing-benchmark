@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_f9f41fa5/Main.java:24: 错误: 找不到符号
+        renderer2.setScaleType(XYBubbleRenderer.SCALE_ON_DOMAIN_AXIS);
+                 ^
+  符号:   方法 setScaleType(int)
+  位置: 类型为XYBubbleRenderer的变量 renderer2
+generated/jfree/complex/prog_f9f41fa5/Main.java:28: 错误: 找不到符号
+        /* write */ renderer.setScaleType(XYBubbleRenderer.SCALE_ON_BOTH_AXES);
+                            ^
+  符号:   方法 setScaleType(int)
+  位置: 类型为XYBubbleRenderer的变量 renderer
+2 个错误

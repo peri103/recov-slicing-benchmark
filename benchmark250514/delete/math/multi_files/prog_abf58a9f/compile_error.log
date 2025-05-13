@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_abf58a9f/Course.java:13: 错误: 找不到符号
+    public RealMatrix getTriangularMatrix() {
+           ^
+  符号:   类 RealMatrix
+  位置: 类 Course
+generated/math/multi_files/prog_abf58a9f/MatrixOperations.java:8: 错误: 找不到符号
+        /* write */ matrix = MatrixUtils.createTriangularMatrix(data, true);
+                                        ^
+  符号:   方法 createTriangularMatrix(double[][],boolean)
+  位置: 类 MatrixUtils
+2 个错误

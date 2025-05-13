@@ -1,0 +1,11 @@
+generated/collections/complex/prog_a339038c/Main.java:18: 错误: <E>PredicatedBag(Bag<E>,Predicate<? super E>) 在 PredicatedBag 中是 protected 访问控制
+        PredicatedBag<Object> bag = new PredicatedBag<>(new HashBag<>(), allElementsPredicate);
+                                    ^
+  其中, E是类型变量:
+    E扩展已在类 PredicatedBag中声明的Object
+generated/collections/complex/prog_a339038c/Main.java:36: 错误: <E>PredicatedBag(Bag<E>,Predicate<? super E>) 在 PredicatedBag 中是 protected 访问控制
+        PredicatedBag<Object> anotherBag = new PredicatedBag<>(new HashBag<>(), allElementsPredicate);
+                                           ^
+  其中, E是类型变量:
+    E扩展已在类 PredicatedBag中声明的Object
+2 个错误

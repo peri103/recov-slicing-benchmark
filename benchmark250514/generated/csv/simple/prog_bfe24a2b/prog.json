@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\n\nimport java.io.IOException;\nimport java.io.StringReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        String csvData = \"Name,Age,Location\\nJohn,30,USA\\nDoe,25,UK\";\n        CSVFormat format = CSVFormat.DEFAULT;\n\n        // Initialize CSVParser\n        CSVParser parser = null;\n        try {\n            format = /* write */ format.withFirstRecordAsHeader();\n            parser = new CSVParser(new StringReader(csvData), format);\n\n            // Read the first record to check if a particular column is mapped\n            CSVRecord record = parser.getRecords().get(0);\n            /* read */ boolean isMapped = record.isMapped(\"Name\");\n            System.out.println(\"Is 'Name' column mapped: \" + isMapped);\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        } finally {\n            if (parser != null) {\n                try {\n                    parser.close();\n                } catch (IOException e) {\n                    e.printStackTrace();\n                }\n            }\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withFirstRecordAsHeader",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

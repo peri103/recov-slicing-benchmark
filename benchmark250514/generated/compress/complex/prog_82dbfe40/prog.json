@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.Date;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        Date modTime = new Date();\n        \n        ArrayList<Date> dateList = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            dateList.add(new Date(modTime.getTime() + i * 1000));\n        }\n        \n        /* write */ entry.setModTime(modTime);\n        \n        TarArchiveEntry anotherEntry = new TarArchiveEntry(\"another_example.txt\");\n        anotherEntry.setModTime(dateList.get(2));\n        \n        Date retrievedDate = anotherEntry.getModTime();\n        System.out.println(\"Another Entry Modification Time: \" + retrievedDate);\n\n        for (Date date : dateList) {\n            System.out.println(\"Date in list: \" + date);\n        }\n        \n        /* read */ Date readModTime = entry.getModTime();\n        System.out.println(\"Modification Time: \" + readModTime);\n\n        for (int i = 0; i < dateList.size(); i++) {\n            if (dateList.get(i).equals(readModTime)) {\n                System.out.println(\"Found matching modification time in list at index: \" + i);\n            }\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        Date modTime = new Date();\n\n        /* write */ entry.setModTime(modTime);\n        /* read */ Date readModTime = entry.getModTime();\n\n        System.out.println(\"Modification Time: \" + readModTime);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setModTime",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getModTime"
+    }
+}

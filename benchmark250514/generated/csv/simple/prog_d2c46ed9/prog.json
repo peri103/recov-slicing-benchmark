@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringReader;\nimport java.util.List;\nimport org.apache.commons.csv.CSVParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Prepare CSV data\n            String csvData = \"Name, Age, City\\nAlice, 30, New York\\nBob, 25, Los Angeles\";\n            \n            // Configure CSVFormat with write method\n            CSVFormat format = CSVFormat.DEFAULT.withIgnoreSurroundingSpaces();\n            \n            // Parse the CSV data\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), format);\n            List<CSVRecord> records = parser.getRecords();\n            \n            // Use read method on the first record\n            CSVRecord record = records.get(0);\n            /* read */ boolean isSet = record.isSet(\"Name\");\n            \n            // Output the result\n            System.out.println(\"Is 'Name' set in the first record? \" + isSet);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreSurroundingSpaces",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

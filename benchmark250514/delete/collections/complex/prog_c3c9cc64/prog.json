@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractSortedMapDecorator;\nimport java.util.TreeMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractSortedMapDecorator<String, Integer> map = new AbstractSortedMapDecorator<>(new TreeMap<>());\n        AbstractSortedMapDecorator<String, String> map2 = new AbstractSortedMapDecorator<>(new TreeMap<>());\n        Map<String, Double> map3 = new HashMap<>();\n        \n        map2.put(\"hello\", \"world\");\n        map3.put(\"pi\", 3.14159);\n        \n        /* write */ map.put(\"key\", 42);\n        \n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        \n        double piValue = map3.get(\"pi\");\n        System.out.println(\"Pi: \" + piValue);\n        \n        String greeting = map2.get(\"hello\");\n        System.out.println(\"Greeting: \" + greeting);\n        \n        /* read */ int value = map.get(\"key\");\n        System.out.println(\"Value: \" + value);\n        \n        Map<String, Integer> map4 = new HashMap<>();\n        for (int i = 0; i < 5; i++) {\n            map4.put(\"num\" + i, i * 10);\n        }\n        \n        for (String key : map4.keySet()) {\n            System.out.println(key + \": \" + map4.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.AbstractSortedMapDecorator;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractSortedMapDecorator<String, Integer> map = new AbstractSortedMapDecorator<>(new TreeMap<>());\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractSortedMapDecorator",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractSortedMapDecorator",
+        "read_method": "get"
+    }
+}

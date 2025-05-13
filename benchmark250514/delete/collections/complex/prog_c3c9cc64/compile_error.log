@@ -1,0 +1,7 @@
+generated/collections/complex/prog_c3c9cc64/Main.java:8: 错误: AbstractSortedMapDecorator是抽象的; 无法实例化
+        AbstractSortedMapDecorator<String, Integer> map = new AbstractSortedMapDecorator<>(new TreeMap<>());
+                                                          ^
+generated/collections/complex/prog_c3c9cc64/Main.java:9: 错误: AbstractSortedMapDecorator是抽象的; 无法实例化
+        AbstractSortedMapDecorator<String, String> map2 = new AbstractSortedMapDecorator<>(new TreeMap<>());
+                                                          ^
+2 个错误

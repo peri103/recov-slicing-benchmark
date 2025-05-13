@@ -1,0 +1,16 @@
+generated/compress/complex/prog_501ad39b/Main.java:29: 错误: 找不到符号
+        /* write */ entry.setCompressedSize(1024L);
+                         ^
+  符号:   方法 setCompressedSize(long)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_501ad39b/Main.java:32: 错误: 找不到符号
+        sizeMap.put("compressed", entry.getCompressedSize());
+                                       ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_501ad39b/Main.java:42: 错误: 找不到符号
+        /* read */ long compressedSize = entry.getCompressedSize();
+                                              ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为DumpArchiveEntry的变量 entry
+3 个错误

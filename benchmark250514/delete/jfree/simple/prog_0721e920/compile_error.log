@@ -1,0 +1,21 @@
+generated/jfree/simple/prog_0721e920/Main.java:3: 错误: 找不到符号
+import org.jfree.chart.axis.Range;
+                           ^
+  符号:   类 Range
+  位置: 程序包 org.jfree.chart.axis
+generated/jfree/simple/prog_0721e920/Main.java:8: 错误: 找不到符号
+        Range range = new Range(0.0, 100.0);
+        ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/simple/prog_0721e920/Main.java:8: 错误: 找不到符号
+        Range range = new Range(0.0, 100.0);
+                          ^
+  符号:   类 Range
+  位置: 类 Main
+generated/jfree/simple/prog_0721e920/Main.java:10: 错误: 找不到符号
+        /* read */ Range readRange = axis.getRange();
+                   ^
+  符号:   类 Range
+  位置: 类 Main
+4 个错误

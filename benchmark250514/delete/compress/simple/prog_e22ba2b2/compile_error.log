@@ -1,0 +1,11 @@
+generated/compress/simple/prog_e22ba2b2/Main.java:11: 错误: 找不到符号
+            /* write */ deflateStream.setSyncFlush(true);
+                                     ^
+  符号:   方法 setSyncFlush(boolean)
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+generated/compress/simple/prog_e22ba2b2/Main.java:12: 错误: 找不到符号
+            /* read */ boolean syncFlushValue = deflateStream.getSyncFlush();
+                                                             ^
+  符号:   方法 getSyncFlush()
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+2 个错误

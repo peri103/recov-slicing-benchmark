@@ -1,0 +1,15 @@
+generated/collections/multi_files/prog_04faa38c/Main.java:20: 错误: 不兼容的类型: UnmodifiableMultiValuedMap<String,Integer>无法转换为Map<String,Integer>
+        Map<String, Integer> unmodifiableMap = customMap.getUnmodifiableMap();
+                                                                           ^
+generated/collections/multi_files/prog_04faa38c/Main.java:21: 错误: 找不到符号
+        /* read */ Integer value = unmodifiableMap.get("key").iterator().next();
+                                                             ^
+  符号:   方法 iterator()
+  位置: 类 Integer
+generated/collections/multi_files/prog_04faa38c/CustomMap.java:7: 错误: <K,V>UnmodifiableMultiValuedMap(MultiValuedMap<? extends K,? extends V>) 在 UnmodifiableMultiValuedMap 中是 private 访问控制
+    private UnmodifiableMultiValuedMap<String, Integer> unmodifiableMap = new UnmodifiableMultiValuedMap<>(modifiableMap);
+                                                                          ^
+  其中, K,V是类型变量:
+    K扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+    V扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+3 个错误

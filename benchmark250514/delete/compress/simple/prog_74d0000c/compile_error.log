@@ -1,0 +1,11 @@
+generated/compress/simple/prog_74d0000c/Main.java:8: 错误: 找不到符号
+        /* write */ entry.setFileType(TarArchiveEntry.FILE_TYPE_NORMAL);
+                                                     ^
+  符号:   变量 FILE_TYPE_NORMAL
+  位置: 类 TarArchiveEntry
+generated/compress/simple/prog_74d0000c/Main.java:11: 错误: 找不到符号
+        /* read */ int fileType = entry.getFileType();
+                                       ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 entry
+2 个错误

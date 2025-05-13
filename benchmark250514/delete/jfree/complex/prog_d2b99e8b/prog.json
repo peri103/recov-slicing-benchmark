@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.renderer.category.BarRenderer;\nimport org.jfree.chart.renderer.category.LineRenderer3D;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        BarRenderer renderer = new BarRenderer();\n        LineRenderer3D lineRenderer = new LineRenderer3D();\n        \n        /* write */ renderer.setBase(5.0);\n        \n        ArrayList<Double> values = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            values.add(Math.random() * 100);\n        }\n        \n        double sum = 0;\n        for (double value : values) {\n            sum += value;\n        }\n        \n        double average = sum / values.size();\n        lineRenderer.setWallPaint(new java.awt.Color((int)average % 255, 100, 150));\n        \n        double minValue = values.get(0);\n        for (double value : values) {\n            if (value < minValue) {\n                minValue = value;\n            }\n        }\n        \n        lineRenderer.setBase(minValue);\n        \n        /* read */ double baseValue = renderer.getBase();\n        \n        System.out.println(\"Base value from BarRenderer: \" + baseValue);\n        System.out.println(\"Average value from ArrayList: \" + average);\n        System.out.println(\"Minimum value set in LineRenderer3D: \" + minValue);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.renderer.category.BarRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        BarRenderer renderer = new BarRenderer();\n        \n        /* write */ renderer.setBase(5.0);\n        \n        /* read */ double baseValue = renderer.getBase();\n        \n        System.out.println(baseValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.category.BarRenderer",
+        "write_method": "setBase",
+        "read_class": "org.jfree.chart.renderer.category.BarRenderer",
+        "read_method": "getBase"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYBlockRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYBlockRenderer renderer = new XYBlockRenderer();\n        /* write */ renderer.setBlockWidth(10.0);\n        /* read */ double blockWidth = renderer.getBlockWidth();\n        System.out.println(blockWidth);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYBlockRenderer",
+        "write_method": "setBlockWidth",
+        "read_class": "org.jfree.chart.renderer.xy.XYBlockRenderer",
+        "read_method": "getBlockWidth"
+    }
+}

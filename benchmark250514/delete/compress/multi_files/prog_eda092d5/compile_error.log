@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_eda092d5/ArchiveManager.java:8: 错误: 找不到符号
+        /* write */ entry.setLastModified(System.currentTimeMillis());
+                         ^
+  符号:   方法 setLastModified(long)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/multi_files/prog_eda092d5/Main.java:12: 错误: 找不到符号
+        anotherEntry.setLastModified(System.currentTimeMillis() - 10000);
+                    ^
+  符号:   方法 setLastModified(long)
+  位置: 类型为ArArchiveEntry的变量 anotherEntry
+2 个错误

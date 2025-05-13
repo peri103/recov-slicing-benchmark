@@ -1,0 +1,43 @@
+generated/compress/complex/prog_92feccce/Main.java:9: 错误: 找不到符号
+        /* write */ entry.setFileType(TarArchiveEntry.LF_NORMAL);
+                         ^
+  符号:   方法 setFileType(byte)
+  位置: 类型为TarArchiveEntry的变量 entry
+generated/compress/complex/prog_92feccce/Main.java:13: 错误: 不兼容的类型: byte无法转换为Integer
+        fileTypeDescriptions.put(TarArchiveEntry.LF_NORMAL, "Normal File");
+                                                ^
+generated/compress/complex/prog_92feccce/Main.java:14: 错误: 找不到符号
+        fileTypeDescriptions.put(TarArchiveEntry.LF_DIRECTORY, "Directory");
+                                                ^
+  符号:   变量 LF_DIRECTORY
+  位置: 类 TarArchiveEntry
+generated/compress/complex/prog_92feccce/Main.java:15: 错误: 不兼容的类型: byte无法转换为Integer
+        fileTypeDescriptions.put(TarArchiveEntry.LF_SYMLINK, "Symbolic Link");
+                                                ^
+generated/compress/complex/prog_92feccce/Main.java:21: 错误: 找不到符号
+        entries.get(1).setFileType(TarArchiveEntry.LF_DIRECTORY);
+                                                  ^
+  符号:   变量 LF_DIRECTORY
+  位置: 类 TarArchiveEntry
+generated/compress/complex/prog_92feccce/Main.java:25: 错误: 找不到符号
+            int type = e.getFileType();
+                        ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 e
+generated/compress/complex/prog_92feccce/Main.java:31: 错误: 找不到符号
+        /* read */ int fileType = entry.getFileType();
+                                       ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 entry
+generated/compress/complex/prog_92feccce/Main.java:45: 错误: 找不到符号
+            if (e.getFileType() != TarArchiveEntry.LF_DIRECTORY) {
+                 ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 e
+generated/compress/complex/prog_92feccce/Main.java:45: 错误: 找不到符号
+            if (e.getFileType() != TarArchiveEntry.LF_DIRECTORY) {
+                                                  ^
+  符号:   变量 LF_DIRECTORY
+  位置: 类 TarArchiveEntry
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+9 个错误

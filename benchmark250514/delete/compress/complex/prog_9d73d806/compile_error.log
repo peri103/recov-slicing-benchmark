@@ -1,0 +1,11 @@
+generated/compress/complex/prog_9d73d806/Main.java:11: 错误: 找不到符号
+        /* write */ entry.setUserId(1001);
+                         ^
+  符号:   方法 setUserId(int)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_9d73d806/Main.java:36: 错误: 找不到符号
+        /* read */ long userId = entry.getUserId();
+                                      ^
+  符号:   方法 getUserId()
+  位置: 类型为CpioArchiveEntry的变量 entry
+2 个错误

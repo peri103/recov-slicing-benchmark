@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableList;\nimport com.google.common.collect.ImmutableList.Builder;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer> builder = ImmutableList.builder();\n        Builder<String> stringBuilder = ImmutableList.builder();\n        Map<String, Integer> map = new HashMap<>();\n        \n        /* write */ builder.add(1);\n        stringBuilder.add(\"Hello\");\n        stringBuilder.add(\"World\");\n        map.put(\"key1\", 100);\n        map.put(\"key2\", 200);\n        \n        ImmutableList<Integer> list = builder.build();\n        ImmutableList<String> stringList = stringBuilder.build();\n        \n        int sum = 0;\n        for (String key : map.keySet()) {\n            sum += map.get(key);\n        }\n        \n        for (String str : stringList) {\n            System.out.println(\"String from list: \" + str);\n        }\n        \n        System.out.println(\"Sum of values in map: \" + sum);\n        \n        /* read */ int value = list.get(0);\n        System.out.println(\"Value from ImmutableList: \" + value);\n        \n        for (int i = 0; i < 5; i++) {\n            builder.add(i * 2);\n        }\n        \n        ImmutableList<Integer> newList = builder.build();\n        for (int i = 0; i < newList.size(); i++) {\n            System.out.println(\"Number from newList: \" + newList.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableList;\nimport com.google.common.collect.ImmutableList.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Builder<Integer> builder = ImmutableList.builder();\n        /* write */ builder.add(1);\n        ImmutableList<Integer> list = builder.build();\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableList",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableList",
+        "read_method": "get"
+    }
+}

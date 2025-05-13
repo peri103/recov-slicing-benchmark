@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Shape;\nimport java.awt.geom.Rectangle2D;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a LegendItem with a dummy shape and label\n        Shape shape = new Rectangle2D.Double(0, 0, 10, 10);\n        LegendItem legendItem = new LegendItem(\"Sample Legend\", shape, true, true, shape, null);\n\n        // Use the write method to set shape visibility\n        /* write */ legendItem.setShapeVisible(true);\n\n        // Use the read method to check if the shape is visible\n        /* read */ boolean isVisible = legendItem.isShapeVisible();\n\n        // Print the result to verify the read method got the correct value\n        System.out.println(\"Shape visibility: \" + isVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setShapeVisible",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "isShapeVisible"
+    }
+}

@@ -1,0 +1,19 @@
+generated/jfree/complex/prog_cecb0382/Main.java:7: 错误: Title是抽象的; 无法实例化
+        Title chartTitle = new Title();
+                           ^
+generated/jfree/complex/prog_cecb0382/Main.java:11: 错误: 找不到符号
+        /* write */ chartTitle.setText("Chart Title Example");
+                              ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 chartTitle
+generated/jfree/complex/prog_cecb0382/Main.java:22: 错误: 找不到符号
+        titleList.add(chartTitle.getText());
+                                ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 chartTitle
+generated/jfree/complex/prog_cecb0382/Main.java:32: 错误: 找不到符号
+        /* read */ String titleText = chartTitle.getText();
+                                                ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 chartTitle
+4 个错误

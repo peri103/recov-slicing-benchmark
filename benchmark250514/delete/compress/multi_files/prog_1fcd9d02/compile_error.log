@@ -1,0 +1,6 @@
+generated/compress/multi_files/prog_1fcd9d02/Main.java:24: 错误: 找不到符号
+            System.out.println(student.getName() + "'s Total Score: " + student.getTotalScore());
+                                      ^
+  符号:   方法 getName()
+  位置: 类型为Student的变量 student
+1 个错误

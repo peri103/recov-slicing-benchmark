@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator;\nimport org.apache.commons.collections4.BidiMap;\nimport org.apache.commons.collections4.bidimap.TreeBidiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        BidiMap<String, Integer> bidiMap = new TreeBidiMap<>();\n        AbstractOrderedBidiMapDecorator<String, Integer> mapDecorator = new AbstractOrderedBidiMapDecorator<>(bidiMap);\n        \n        /* write */ mapDecorator.put(\"key\", 42);\n        /* read */ int value = mapDecorator.get(\"key\");\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator",
+        "read_method": "get"
+    }
+}

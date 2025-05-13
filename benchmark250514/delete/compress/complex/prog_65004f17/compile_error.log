@@ -1,0 +1,4 @@
+generated/compress/complex/prog_65004f17/Main.java:47: 错误: 已在方法 main(String[])中定义了变量 name
+        for (String name : namesList) {
+                    ^
+1 个错误

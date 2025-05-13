@@ -1,0 +1,10 @@
+generated/lang/complex/prog_35cb451b/Main.java:48: 错误: 对于truncate(Date,long), 找不到合适的方法
+        Date truncatedDate = DateUtils.truncate(date, DateUtils.MILLIS_PER_DAY);
+                                      ^
+    方法 DateUtils.truncate(Date,int)不适用
+      (参数不匹配; 从long转换到int可能会有损失)
+    方法 DateUtils.truncate(Calendar,int)不适用
+      (参数不匹配; Date无法转换为Calendar)
+    方法 DateUtils.truncate(Object,int)不适用
+      (参数不匹配; 从long转换到int可能会有损失)
+1 个错误

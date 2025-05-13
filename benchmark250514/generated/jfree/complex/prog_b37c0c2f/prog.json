@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.ValueMarker;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueMarker marker = new ValueMarker(0.0);\n        /* write */ marker.setValue(5.0);\n\n        // Create a list of markers\n        ArrayList<ValueMarker> markerList = new ArrayList<>();\n        markerList.add(marker);\n        markerList.add(new ValueMarker(10.0));\n        markerList.add(new ValueMarker(20.0));\n\n        // Perform operations on the list\n        for (ValueMarker m : markerList) {\n            System.out.println(\"Marker value: \" + m.getValue());\n        }\n\n        // Modify the second marker's value\n        ValueMarker secondMarker = markerList.get(1);\n        secondMarker.setValue(15.0);\n\n        // Calculate the sum of all marker values\n        double sum = 0.0;\n        for (ValueMarker m : markerList) {\n            sum += m.getValue();\n        }\n        System.out.println(\"Sum of marker values: \" + sum);\n\n        // Access the original marker value\n        /* read */ double value = marker.getValue();\n        System.out.println(\"Original marker value: \" + value);\n\n        // Additional logic with a new marker\n        ValueMarker newMarker = new ValueMarker(30.0);\n        newMarker.setValue(35.0);\n        System.out.println(\"New marker value: \" + newMarker.getValue());\n\n        // Print all marker values again\n        for (ValueMarker m : markerList) {\n            System.out.println(\"Updated marker value: \" + m.getValue());\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.ValueMarker;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueMarker marker = new ValueMarker(0.0);\n        /* write */ marker.setValue(5.0);\n        /* read */ double value = marker.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ValueMarker",
+        "write_method": "setValue",
+        "read_class": "org.jfree.chart.plot.ValueMarker",
+        "read_method": "getValue"
+    }
+}

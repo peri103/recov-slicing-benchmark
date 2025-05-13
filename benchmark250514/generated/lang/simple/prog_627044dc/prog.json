@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n\n        // Use Calendar to manipulate the date\n        Calendar calendar = Calendar.getInstance();\n        calendar.setTime(date);\n\n        // Set a specific date for demonstration purposes\n        calendar.set(Calendar.YEAR, 2023);\n        calendar.set(Calendar.MONTH, Calendar.OCTOBER);\n        calendar.set(Calendar.DAY_OF_MONTH, 15);\n        calendar.set(Calendar.HOUR_OF_DAY, 10);\n        calendar.set(Calendar.MINUTE, 30);\n        calendar.set(Calendar.SECOND, 45);\n\n        date = calendar.getTime();\n\n        /* write */ Date ceilingDate = DateUtils.ceiling(date, Calendar.HOUR);\n        /* read */ Date truncatedDate = DateUtils.truncate(ceilingDate, Calendar.HOUR);\n\n        System.out.println(\"Original Date: \" + date);\n        System.out.println(\"Ceiling Date: \" + ceilingDate);\n        System.out.println(\"Truncated Date: \" + truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "ceiling",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

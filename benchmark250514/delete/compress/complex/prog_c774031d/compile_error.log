@@ -1,0 +1,31 @@
+generated/compress/complex/prog_c774031d/Main.java:16: 错误: 找不到符号
+            tempEntry.setFileType(TarArchiveEntry.FILE_TYPE_REGULAR);
+                                                 ^
+  符号:   变量 FILE_TYPE_REGULAR
+  位置: 类 TarArchiveEntry
+generated/compress/complex/prog_c774031d/Main.java:21: 错误: 找不到符号
+        /* write */ entry.setFileType(TarArchiveEntry.FILE_TYPE_REGULAR);
+                                                     ^
+  符号:   变量 FILE_TYPE_REGULAR
+  位置: 类 TarArchiveEntry
+generated/compress/complex/prog_c774031d/Main.java:25: 错误: 找不到符号
+            System.out.println("Entry name: " + e.getName() + ", File type: " + e.getFileType());
+                                                                                 ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 e
+generated/compress/complex/prog_c774031d/Main.java:39: 错误: 找不到符号
+        /* read */ int fileType = entry.getFileType();
+                                       ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 entry
+generated/compress/complex/prog_c774031d/Main.java:44: 错误: 找不到符号
+            if (e.getFileType() == TarArchiveEntry.FILE_TYPE_REGULAR) {
+                 ^
+  符号:   方法 getFileType()
+  位置: 类型为TarArchiveEntry的变量 e
+generated/compress/complex/prog_c774031d/Main.java:44: 错误: 找不到符号
+            if (e.getFileType() == TarArchiveEntry.FILE_TYPE_REGULAR) {
+                                                  ^
+  符号:   变量 FILE_TYPE_REGULAR
+  位置: 类 TarArchiveEntry
+6 个错误

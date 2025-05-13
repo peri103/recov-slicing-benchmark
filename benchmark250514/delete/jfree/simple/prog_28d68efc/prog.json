@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.labels.StandardPieSectionLabelGenerator;\nimport java.text.NumberFormat;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the StandardPieSectionLabelGenerator\n        StandardPieSectionLabelGenerator labelGenerator = new StandardPieSectionLabelGenerator();\n        \n        // Create a NumberFormat instance to be used for setting and getting\n        NumberFormat numberFormat = NumberFormat.getInstance();\n        \n        // Use the write method to set the number format\n        /* write */ labelGenerator.setNumberFormat(numberFormat);\n        \n        // Use the read method to get the number format\n        /* read */ NumberFormat retrievedFormat = labelGenerator.getNumberFormat();\n        \n        // Print out the result to verify the operation\n        System.out.println(retrievedFormat.equals(numberFormat)); // Should print true\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.labels.StandardPieSectionLabelGenerator",
+        "write_method": "setNumberFormat",
+        "read_class": "org.jfree.chart.labels.StandardPieSectionLabelGenerator",
+        "read_method": "getNumberFormat"
+    }
+}

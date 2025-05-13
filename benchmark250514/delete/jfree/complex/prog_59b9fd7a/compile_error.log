@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_59b9fd7a/Main.java:26: 错误: 找不到符号
+        DecimalFormat readFormat = (DecimalFormat) plot.getValueFormat();
+                                                       ^
+  符号:   方法 getValueFormat()
+  位置: 类型为ThermometerPlot的变量 plot
+1 个错误

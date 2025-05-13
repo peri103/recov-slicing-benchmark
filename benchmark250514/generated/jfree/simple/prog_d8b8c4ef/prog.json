@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot piePlot = new PiePlot();\n        /* write */ piePlot.setSectionOutlinesVisible(true);\n        /* read */ boolean outlinesVisible = piePlot.getSectionOutlinesVisible();\n        System.out.println(outlinesVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setSectionOutlinesVisible",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getSectionOutlinesVisible"
+    }
+}

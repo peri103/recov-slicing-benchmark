@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date currentDate = new Date();\n        Date modifiedDate;\n        \n        // Set the month of the current date to February (month index 1)\n        /* write */ modifiedDate = DateUtils.setMonths(currentDate, 1);\n        \n        // Truncate the date to remove time components\n        /* read */ Date truncatedDate = DateUtils.truncate(modifiedDate, DateUtils.MILLIS_IN_DAY);\n        \n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "setMonths",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

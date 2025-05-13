@@ -1,0 +1,16 @@
+generated/collections/complex/prog_33798b4e/Main.java:5: 错误: 找不到符号
+import org.apache.commons.collections4.list.ArrayList;
+                                           ^
+  符号:   类 ArrayList
+  位置: 程序包 org.apache.commons.collections4.list
+generated/collections/complex/prog_33798b4e/Main.java:22: 错误: 找不到符号
+        ArrayList<Object> arrayList = new ArrayList<>();
+        ^
+  符号:   类 ArrayList
+  位置: 类 Main
+generated/collections/complex/prog_33798b4e/Main.java:22: 错误: 找不到符号
+        ArrayList<Object> arrayList = new ArrayList<>();
+                                          ^
+  符号:   类 ArrayList
+  位置: 类 Main
+3 个错误

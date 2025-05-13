@@ -1,0 +1,17 @@
+generated/collections/complex/prog_58312f6f/Main.java:21: 错误: 不兼容的类型: MultiKey<? extends String>无法转换为String
+        for (String key1 : map2.keySet()) {
+                                      ^
+generated/collections/complex/prog_58312f6f/Main.java:22: 错误: 找不到符号
+            for (String key2 : map2.get(key1).keySet()) {
+                                             ^
+  符号:   方法 keySet()
+  位置: 类 Integer
+generated/collections/complex/prog_58312f6f/Main.java:38: 错误: 不兼容的类型: MultiKey<? extends String>无法转换为String
+        for (String key1 : map3.keySet()) {
+                                      ^
+generated/collections/complex/prog_58312f6f/Main.java:39: 错误: 找不到符号
+            for (String key2 : map3.get(key1).keySet()) {
+                                             ^
+  符号:   方法 keySet()
+  位置: 类 String
+4 个错误

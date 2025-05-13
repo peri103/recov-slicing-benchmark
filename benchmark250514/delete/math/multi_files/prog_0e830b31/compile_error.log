@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_0e830b31/SparseMatrixHandler.java:8: 错误: 找不到符号
+        /* write */ sparseMatrix = MatrixUtils.createSparseMatrix(data, rows, columns);
+                                              ^
+  符号:   方法 createSparseMatrix(double[][],int,int)
+  位置: 类 MatrixUtils
+1 个错误

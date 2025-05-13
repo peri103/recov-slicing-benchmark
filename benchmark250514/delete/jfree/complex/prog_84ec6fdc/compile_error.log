@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_84ec6fdc/Main.java:31: 错误: 找不到符号
+        plot.setValue(averageTemperature);
+            ^
+  符号:   方法 setValue(double)
+  位置: 类型为ThermometerPlot的变量 plot
+generated/jfree/complex/prog_84ec6fdc/Main.java:34: 错误: 找不到符号
+        /* read */ DecimalFormat retrievedFormat = (DecimalFormat) plot.getValueFormat();
+                                                                       ^
+  符号:   方法 getValueFormat()
+  位置: 类型为ThermometerPlot的变量 plot
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.Crosshair;\nimport org.jfree.chart.labels.CrosshairLabelGenerator;\n\npublic class Main {\n    public static void main(String[] args) {\n        Crosshair crosshair = new Crosshair();\n        CrosshairLabelGenerator labelGenerator = new CrosshairLabelGenerator() {\n            @Override\n            public String generateLabel(Crosshair crosshair) {\n                return \"Crosshair Label\";\n            }\n        };\n        \n        /* write */ crosshair.setLabelGenerator(labelGenerator);\n        /* read */ CrosshairLabelGenerator readLabelGenerator = crosshair.getLabelGenerator();\n        \n        System.out.println(readLabelGenerator.generateLabel(crosshair));\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.Crosshair",
+        "write_method": "setLabelGenerator",
+        "read_class": "org.jfree.chart.plot.Crosshair",
+        "read_method": "getLabelGenerator"
+    }
+}

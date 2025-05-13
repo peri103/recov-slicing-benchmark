@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\nimport org.apache.commons.lang3.StringUtils;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"'Hello World'\";\n        StrTokenizer tokenizer = new StrTokenizer(input);\n        \n        /* write */ tokenizer.setQuoteChar('\\'');\n        \n        // Additional code to make the program more complex\n        ArrayList<String> tokensList = new ArrayList<>();\n        while (tokenizer.hasNext()) {\n            tokensList.add(tokenizer.nextToken());\n        }\n        \n        String concatenatedTokens = StringUtils.join(tokensList, \", \");\n        System.out.println(\"Concatenated Tokens: \" + concatenatedTokens);\n        \n        // More complex operations\n        int sum = 0;\n        for (int i = 0; i < tokensList.size(); i++) {\n            sum += tokensList.get(i).length();\n        }\n        System.out.println(\"Sum of token lengths: \" + sum);\n        \n        // Operations on a different StrTokenizer instance\n        StrTokenizer anotherTokenizer = new StrTokenizer(\"One, Two, Three\");\n        anotherTokenizer.setDelimiterChar(',');\n        while (anotherTokenizer.hasNext()) {\n            String token = anotherTokenizer.nextToken();\n            System.out.println(\"Another Token: \" + token);\n        }\n        \n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(token);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrTokenizer;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"'Hello World'\";\n        StrTokenizer tokenizer = new StrTokenizer(input);\n        \n        /* write */ tokenizer.setQuoteChar('\\'');\n        \n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setQuoteChar",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

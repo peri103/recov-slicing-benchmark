@@ -1,0 +1,16 @@
+generated/math/complex/prog_fc4f06f0/Main.java:11: 错误: 找不到符号
+        /* write */ RealVector sparseVector = MatrixUtils.createSparseRealVector(data);
+                                                         ^
+  符号:   方法 createSparseRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_fc4f06f0/Main.java:41: 错误: 找不到符号
+        double determinant = matrix.getDeterminant();
+                                   ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix
+generated/math/complex/prog_fc4f06f0/Main.java:44: 错误: 找不到符号
+        /* read */ RealVector retrievedVector = MatrixUtils.getSparseRealVector(sparseVector);
+                                                           ^
+  符号:   方法 getSparseRealVector(RealVector)
+  位置: 类 MatrixUtils
+3 个错误

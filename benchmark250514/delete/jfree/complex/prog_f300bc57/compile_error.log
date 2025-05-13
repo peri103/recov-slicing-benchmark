@@ -1,0 +1,31 @@
+generated/jfree/complex/prog_f300bc57/Main.java:12: 错误: 找不到符号
+        /* write */ plot.setPaint(color);
+                        ^
+  符号:   方法 setPaint(Color)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_f300bc57/Main.java:26: 错误: 找不到符号
+        anotherPlot.setPaint(anotherColor);
+                   ^
+  符号:   方法 setPaint(Color)
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+generated/jfree/complex/prog_f300bc57/Main.java:29: 错误: 找不到符号
+        Color retrievedColorFromAnotherPlot = (Color) anotherPlot.getPaint();
+                                                                 ^
+  符号:   方法 getPaint()
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+generated/jfree/complex/prog_f300bc57/Main.java:33: 错误: 找不到符号
+        Color retrievedColor = (Color) plot.getPaint(); /* read */
+                                           ^
+  符号:   方法 getPaint()
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_f300bc57/Main.java:38: 错误: 找不到符号
+            plot.setPaint(new Color(i * 50, i * 50, i * 50));
+                ^
+  符号:   方法 setPaint(Color)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_f300bc57/Main.java:39: 错误: 找不到符号
+            System.out.println("New color set: " + plot.getPaint());
+                                                       ^
+  符号:   方法 getPaint()
+  位置: 类型为WaferMapPlot的变量 plot
+6 个错误

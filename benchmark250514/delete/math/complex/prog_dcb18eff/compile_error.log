@@ -1,0 +1,37 @@
+generated/math/complex/prog_dcb18eff/Main.java:14: 错误: 无法将类 DiagonalMatrix中的方法 setEntry应用到给定类型;
+        matrix2.setEntry(0, 10.0);
+               ^
+  需要: int,int,double
+  找到: int,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_dcb18eff/Main.java:15: 错误: 无法将类 DiagonalMatrix中的方法 setEntry应用到给定类型;
+        matrix2.setEntry(1, 20.0);
+               ^
+  需要: int,int,double
+  找到: int,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_dcb18eff/Main.java:16: 错误: 无法将类 DiagonalMatrix中的方法 setEntry应用到给定类型;
+        matrix2.setEntry(2, 30.0);
+               ^
+  需要: int,int,double
+  找到: int,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_dcb18eff/Main.java:32: 错误: 无法将类 DiagonalMatrix中的方法 setEntry应用到给定类型;
+        /* write */ matrix.setEntry(0, 42.0);
+                          ^
+  需要: int,int,double
+  找到: int,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_dcb18eff/Main.java:42: 错误: 无法将类 DiagonalMatrix中的方法 getEntry应用到给定类型;
+        /* read */ double value = matrix.getEntry(0);
+                                        ^
+  需要: int,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_dcb18eff/Main.java:50: 错误: 无法将类 DiagonalMatrix中的方法 getEntry应用到给定类型;
+            trace += matrix2.getEntry(i);
+                            ^
+  需要: int,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+6 个错误

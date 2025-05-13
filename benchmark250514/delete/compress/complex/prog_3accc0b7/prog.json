@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        Map<String, Integer> sampleMap = new HashMap<>();\n\n        // Adding some values to the map\n        sampleMap.put(\"One\", 1);\n        sampleMap.put(\"Two\", 2);\n        sampleMap.put(\"Three\", 3);\n\n        // Performing some operations on the map\n        int sum = 0;\n        for (Map.Entry<String, Integer> entry : sampleMap.entrySet()) {\n            sum += entry.getValue();\n        }\n        System.out.println(\"Sum of values in sampleMap: \" + sum);\n\n        // Setting the ISize in gzipParameters\n        /* write */ gzipParameters.setISize(12345);\n\n        // More operations\n        if (sampleMap.containsKey(\"Two\")) {\n            sampleMap.put(\"Four\", 4);\n        }\n\n        // Performing a calculation\n        int product = 1;\n        for (int value : sampleMap.values()) {\n            product *= value;\n        }\n        System.out.println(\"Product of values in sampleMap: \" + product);\n\n        // Reading the ISize from gzipParameters\n        /* read */ long iSize = gzipParameters.getISize();\n        System.out.println(\"ISize value: \" + iSize);\n\n        // Final operations\n        sampleMap.put(\"Five\", 5);\n        System.out.println(\"Final map: \" + sampleMap);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        /* write */ gzipParameters.setISize(12345);\n        /* read */ long iSize = gzipParameters.getISize();\n        System.out.println(iSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setISize",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getISize"
+    }
+}

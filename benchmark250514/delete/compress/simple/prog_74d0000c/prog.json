@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        \n        // Set the file type using the write method\n        /* write */ entry.setFileType(TarArchiveEntry.FILE_TYPE_NORMAL);\n        \n        // Read the file type using the read method\n        /* read */ int fileType = entry.getFileType();\n        \n        System.out.println(\"File Type: \" + fileType);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setFileType",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getFileType"
+    }
+}

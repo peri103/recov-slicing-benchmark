@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize variables\n        double[][] data = {\n            {1, 2, 3},\n            {4, 5, 6},\n            {7, 8, 9}\n        };\n\n        // Create a triangular matrix using the write method\n        /* write */ RealMatrix triangularMatrix = MatrixUtils.createTriangularMatrix(data);\n\n        // Read the triangular matrix using the read method\n        /* read */ RealMatrix readMatrix = MatrixUtils.getTriangularMatrix(triangularMatrix);\n\n        // Print the read matrix\n        System.out.println(readMatrix);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createTriangularMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getTriangularMatrix"
+    }
+}

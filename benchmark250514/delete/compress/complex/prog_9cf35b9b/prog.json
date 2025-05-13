@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Original write-read pair\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        /* write */ entry.setGroupName(\"exampleGroup\");\n\n        // Additional operations\n        ArrayList<String> groupNames = new ArrayList<>();\n        groupNames.add(\"group1\");\n        groupNames.add(\"group2\");\n\n        DumpArchiveEntry entry2 = new DumpArchiveEntry();\n        entry2.setGroupName(\"group3\");\n        groupNames.add(entry2.getGroupName());\n\n        // Unrelated complex operations\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n\n        int sum = 0;\n        for (Integer number : numbers) {\n            sum += number;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // More unrelated operations\n        ArrayList<DumpArchiveEntry> entries = new ArrayList<>();\n        entries.add(entry);\n        entries.add(entry2);\n\n        for (DumpArchiveEntry e : entries) {\n            System.out.println(\"Entry group name: \" + e.getGroupName());\n        }\n\n        // Read operation far apart from the write\n        /* read */ String groupName = entry.getGroupName();\n        System.out.println(\"Original entry group name: \" + groupName);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        /* write */ entry.setGroupName(\"exampleGroup\");\n        /* read */ String groupName = entry.getGroupName();\n        System.out.println(groupName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setGroupName",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getGroupName"
+    }
+}

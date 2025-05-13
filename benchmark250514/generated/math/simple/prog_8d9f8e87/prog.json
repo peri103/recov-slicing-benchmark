@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.ArrayRealVector;\nimport org.apache.commons.math3.linear.RealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a RealVector object using ArrayRealVector, a concrete implementation of RealVector\n        RealVector vector = new ArrayRealVector(1); // Create a vector of size 1\n\n        /* write */ \n        vector.setEntry(0, 3.14); // Set the value at index 0 to 3.14\n\n        /* read */ \n        double value = vector.getEntry(0); // Retrieve the value at index 0\n\n        System.out.println(value); // Print the value to verify it's correctly read\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.RealVector",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.RealVector",
+        "read_method": "getEntry"
+    }
+}

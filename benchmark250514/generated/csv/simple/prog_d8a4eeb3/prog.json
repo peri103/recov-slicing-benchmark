@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat with trim option\n            /* write */ CSVFormat format = CSVFormat.DEFAULT.withTrim();\n\n            // Prepare a sample CSV input\n            String csvData = \"Name, Age, Location\\nJohn Doe, 30, New York\";\n            StringReader reader = new StringReader(csvData);\n\n            // Parse the CSV data\n            CSVParser parser = new CSVParser(reader, format);\n            CSVRecord record = parser.getRecords().get(0);\n\n            // Check if a header is mapped\n            /* read */ boolean isMapped = record.isMapped(\"Name\");\n            System.out.println(isMapped);\n\n            parser.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrim",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

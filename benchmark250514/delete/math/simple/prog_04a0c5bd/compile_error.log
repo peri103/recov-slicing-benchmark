@@ -1,0 +1,6 @@
+generated/math/simple/prog_04a0c5bd/Main.java:7: 错误: 找不到符号
+        RealMatrix sparseMatrix = MatrixUtils.createSparseMatrix(3, 3);
+                                             ^
+  符号:   方法 createSparseMatrix(int,int)
+  位置: 类 MatrixUtils
+1 个错误

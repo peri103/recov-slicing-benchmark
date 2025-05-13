@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        \n        /* write */ zipEntry.setMethod(ZipArchiveEntry.DEFLATED);\n        \n        /* read */ int method = zipEntry.getMethod();\n        \n        System.out.println(\"Compression method: \" + method);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setMethod",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getMethod"
+    }
+}

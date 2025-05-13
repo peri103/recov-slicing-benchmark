@@ -1,0 +1,20 @@
+generated/jfree/complex/prog_908fcd1c/Main.java:6: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+        Title title = new Title() {
+                                  ^
+generated/jfree/complex/prog_908fcd1c/Main.java:9: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_908fcd1c/Main.java:14: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_908fcd1c/Main.java:28: 错误: 找不到符号
+        /* write */ title.setText("Chart Title");
+                         ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_908fcd1c/Main.java:45: 错误: 找不到符号
+        /* read */ String value = title.getText();
+                                       ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 title
+5 个错误

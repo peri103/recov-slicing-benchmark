@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSV data as a string\n        String csvData = \"Name, Age, Location\\nJohn Doe, 28, USA\";\n\n        try {\n            // Create a CSVFormat object and configure it to ignore header case\n            CSVFormat format = CSVFormat.DEFAULT.withIgnoreHeaderCase();\n\n            // Parse the CSV data using the format\n            CSVParser parser = new CSVParser(new StringReader(csvData), format);\n\n            // Retrieve the records from the parser\n            List<CSVRecord> records = parser.getRecords();\n\n            // Get the first record (assuming there is at least one record)\n            CSVRecord record = records.get(0);\n\n            // Write operation: configure the format to ignore header case\n            /* write */ format = format.withIgnoreHeaderCase();\n\n            // Read operation: check if the record is mapped\n            /* read */ boolean isMapped = record.isMapped(\"name\");\n\n            // Output the result\n            System.out.println(\"Is 'name' mapped: \" + isMapped);\n\n            // Close the parser\n            parser.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

@@ -1,0 +1,41 @@
+generated/compress/complex/prog_decfd049/Main.java:2: 错误: 找不到符号
+import org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream.FlushMode;
+                                                                                    ^
+  符号:   类 FlushMode
+  位置: 类 DeflateCompressorOutputStream
+generated/compress/complex/prog_decfd049/Main.java:14: 错误: 找不到符号
+        /* write */ deflateStream.setFlushMode(FlushMode.SYNC_FLUSH);
+                                               ^
+  符号:   变量 FlushMode
+  位置: 类 Main
+generated/compress/complex/prog_decfd049/Main.java:17: 错误: 找不到符号
+        anotherStream.setFlushMode(FlushMode.NO_FLUSH);
+                                   ^
+  符号:   变量 FlushMode
+  位置: 类 Main
+generated/compress/complex/prog_decfd049/Main.java:20: 错误: 找不到符号
+        ArrayList<FlushMode> flushModes = new ArrayList<>();
+                  ^
+  符号:   类 FlushMode
+  位置: 类 Main
+generated/compress/complex/prog_decfd049/Main.java:23: 错误: 找不到符号
+        flushModes.add(anotherStream.getFlushMode());
+                                    ^
+  符号:   方法 getFlushMode()
+  位置: 类型为DeflateCompressorOutputStream的变量 anotherStream
+generated/compress/complex/prog_decfd049/Main.java:40: 错误: 找不到符号
+        /* read */ FlushMode flushMode = deflateStream.getFlushMode();
+                   ^
+  符号:   类 FlushMode
+  位置: 类 Main
+generated/compress/complex/prog_decfd049/Main.java:40: 错误: 找不到符号
+        /* read */ FlushMode flushMode = deflateStream.getFlushMode();
+                                                      ^
+  符号:   方法 getFlushMode()
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+generated/compress/complex/prog_decfd049/Main.java:46: 错误: 找不到符号
+        for (FlushMode mode : flushModes) {
+             ^
+  符号:   类 FlushMode
+  位置: 类 Main
+8 个错误

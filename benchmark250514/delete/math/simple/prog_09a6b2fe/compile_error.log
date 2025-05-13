@@ -1,0 +1,6 @@
+generated/math/simple/prog_09a6b2fe/Main.java:12: 错误: 找不到符号
+        /* write */ OpenMapRealMatrix sparseMatrix = (OpenMapRealMatrix) MatrixUtils.createSparseMatrix(rows, columns);
+                                                                                    ^
+  符号:   方法 createSparseMatrix(int,int)
+  位置: 类 MatrixUtils
+1 个错误

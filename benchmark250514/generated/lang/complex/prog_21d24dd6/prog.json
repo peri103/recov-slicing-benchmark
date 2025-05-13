@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        StrBuilder strBuilder2 = new StrBuilder(\"Additional Text\");\n        \n        // Perform some operations on strBuilder2\n        strBuilder2.append(\" with more content\");\n        System.out.println(\"Initial strBuilder2: \" + strBuilder2.toString());\n        \n        // Manipulate strBuilder2\n        strBuilder2.replaceFirst(\"Additional\", \"Extra\");\n        System.out.println(\"Modified strBuilder2: \" + strBuilder2.toString());\n        \n        /* write */ strBuilder.deleteFirst(\"Hello\");\n        \n        // Further operations on strBuilder\n        strBuilder.append(\" Universe\");\n        strBuilder.insert(0, \"Greetings \");\n        \n        // Use strBuilder2 again\n        strBuilder2.deleteCharAt(0);\n        System.out.println(\"Final strBuilder2: \" + strBuilder2.toString());\n        \n        // More unrelated code to increase complexity\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n        \n        // Final read operation\n        /* read */ String result = strBuilder.toString();\n        \n        System.out.println(\"Final strBuilder: \" + result);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        \n        /* write */ strBuilder.deleteFirst(\"Hello\");\n        \n        /* read */ String result = strBuilder.toString();\n        \n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "deleteFirst",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

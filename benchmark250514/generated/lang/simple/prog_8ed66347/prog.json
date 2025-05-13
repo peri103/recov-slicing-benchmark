@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableBoolean;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the MutableBoolean instance\n        MutableBoolean mutableBoolean = new MutableBoolean();\n\n        // Use the write method to set the value\n        /* write */ mutableBoolean.setValue(true);\n\n        // Use the read method to get the value\n        /* read */ boolean value = mutableBoolean.getValue();\n\n        // Print the value to ensure it is read correctly\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableBoolean",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableBoolean",
+        "read_method": "getValue"
+    }
+}

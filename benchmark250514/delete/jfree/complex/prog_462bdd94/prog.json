@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.LogarithmicAxis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        LogarithmicAxis logAxis = new LogarithmicAxis(\"Log Axis\");\n        NumberAxis numberAxis = new NumberAxis(\"Number Axis\");\n        \n        /* write */ logAxis.setBase(10.0);\n        \n        numberAxis.setRange(0.0, 100.0);\n        \n        double rangeStart = numberAxis.getRange().getLowerBound();\n        double rangeEnd = numberAxis.getRange().getUpperBound();\n        \n        for (double i = rangeStart; i <= rangeEnd; i += 10) {\n            System.out.println(\"Range value: \" + i);\n        }\n        \n        double baseValue = logAxis.getBase();\n        System.out.println(\"Base value of LogarithmicAxis: \" + baseValue);\n        \n        numberAxis.setTickUnit(new org.jfree.chart.axis.NumberTickUnit(10.0));\n        System.out.println(\"Tick unit: \" + numberAxis.getTickUnit().getSize());\n        \n        double[] tickPositions = numberAxis.getTickUnit().getTickPositions(rangeStart, rangeEnd);\n        for (double pos : tickPositions) {\n            System.out.println(\"Tick position: \" + pos);\n        }\n        \n        /* read */ double retrievedBaseValue = logAxis.getBase();\n        System.out.println(\"Retrieved base value: \" + retrievedBaseValue);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.LogarithmicAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        LogarithmicAxis logAxis = new LogarithmicAxis(\"Log Axis\");\n        /* write */ logAxis.setBase(10.0);\n        /* read */ double baseValue = logAxis.getBase();\n        System.out.println(baseValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.LogarithmicAxis",
+        "write_method": "setBase",
+        "read_class": "org.jfree.chart.axis.LogarithmicAxis",
+        "read_method": "getBase"
+    }
+}

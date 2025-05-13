@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with a specific configuration\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        /* write */ csvFormat = csvFormat.withIgnoreHeaderCase();\n\n        // Simulate a CSVRecord with some data\n        Map<String, String> data = new HashMap<>();\n        data.put(\"Header\", \"Value\");\n        CSVRecord csvRecord = new CSVRecord(data, null, null, 0, null);\n\n        // Check if a header is mapped, considering the CSVFormat configuration\n        /* read */ boolean isMapped = csvRecord.isMapped(\"header\");\n        System.out.println(isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableMap.Builder<String, Integer> builder = new ImmutableMap.Builder<>();\n        /* write */ builder.put(\"key\", 42);\n        ImmutableMap<String, Integer> map = builder.build();\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableMap",
+        "read_method": "get"
+    }
+}

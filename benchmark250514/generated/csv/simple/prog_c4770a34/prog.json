@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringReader;\nimport java.io.IOException;\nimport org.apache.commons.csv.CSVParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat with the write method\n            /* write */ CSVFormat format = CSVFormat.DEFAULT.withAllowMissingColumnNames();\n            \n            // Sample CSV data\n            String csvData = \"name,age\\nJohn,30\\nDoe,25\";\n            \n            // Parse the CSV data using the format\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), format);\n            \n            // Get the first record\n            CSVRecord record = parser.getRecords().get(0);\n            \n            // Use the read method\n            /* read */ boolean isSet = record.isSet(\"name\");\n            \n            // Output the result\n            System.out.println(\"Is 'name' set in the first record: \" + isSet);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAllowMissingColumnNames",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

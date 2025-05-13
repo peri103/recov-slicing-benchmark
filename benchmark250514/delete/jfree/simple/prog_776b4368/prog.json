@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberTickUnit;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueAxis axis = new ValueAxis() {\n            @Override\n            public double valueToJava2D(double value, java.awt.geom.Rectangle2D area, org.jfree.ui.RectangleEdge edge) {\n                return 0;\n            }\n\n            @Override\n            public double java2DToValue(double value, java.awt.geom.Rectangle2D area, org.jfree.ui.RectangleEdge edge) {\n                return 0;\n            }\n        };\n\n        NumberTickUnit tickUnit = new NumberTickUnit(5.0);\n        /* write */ axis.setTickUnit(tickUnit);\n        /* read */ NumberTickUnit retrievedTickUnit = (NumberTickUnit) axis.getTickUnit();\n        System.out.println(retrievedTickUnit.getSize());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.ValueAxis",
+        "write_method": "setTickUnit",
+        "read_class": "org.jfree.chart.axis.ValueAxis",
+        "read_method": "getTickUnit"
+    }
+}

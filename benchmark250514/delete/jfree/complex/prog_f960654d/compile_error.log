@@ -1,0 +1,29 @@
+generated/jfree/complex/prog_f960654d/Main.java:5: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+        Title title = new Title() {
+                                  ^
+generated/jfree/complex/prog_f960654d/Main.java:8: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_f960654d/Main.java:13: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_f960654d/Main.java:20: 错误: Subtitle不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+        class Subtitle extends Title {
+        ^
+generated/jfree/complex/prog_f960654d/Main.java:23: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_f960654d/Main.java:28: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_f960654d/Main.java:46: 错误: 找不到符号
+        /* write */ title.setText("Hello, World!");
+                         ^
+  符号:   方法 setText(String)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_f960654d/Main.java:56: 错误: 找不到符号
+        /* read */ String value = title.getText();
+                                       ^
+  符号:   方法 getText()
+  位置: 类型为Title的变量 title
+8 个错误

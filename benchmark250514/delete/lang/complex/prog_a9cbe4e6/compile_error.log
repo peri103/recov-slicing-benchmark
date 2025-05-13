@@ -1,0 +1,6 @@
+generated/lang/complex/prog_a9cbe4e6/Main.java:41: 错误: 找不到符号
+        Date truncatedDate = DateUtils.truncate(date, DateUtils.MINUTE);
+                                                               ^
+  符号:   变量 MINUTE
+  位置: 类 DateUtils
+1 个错误

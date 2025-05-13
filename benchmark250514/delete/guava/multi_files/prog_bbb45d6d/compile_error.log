@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_bbb45d6d/Main.java:13: 错误: 找不到符号
+        student.getCourseName().finalizeGrades();
+                               ^
+  符号:   方法 finalizeGrades()
+  位置: 类 String
+1 个错误

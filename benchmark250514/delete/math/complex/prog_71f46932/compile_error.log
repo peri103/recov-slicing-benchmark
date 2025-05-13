@@ -1,0 +1,16 @@
+generated/math/complex/prog_71f46932/Main.java:28: 错误: 找不到符号
+        RealMatrix extendedMatrix = matrix2.appendRow(rowData);
+                                           ^
+  符号:   方法 appendRow(double[])
+  位置: 类型为RealMatrix的变量 matrix2
+generated/math/complex/prog_71f46932/Main.java:43: 错误: 找不到符号
+        double determinant = matrix2.getDeterminant();
+                                    ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix2
+generated/math/complex/prog_71f46932/Main.java:57: 错误: 找不到符号
+        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getRowRealMatrix(matrix, 0);
+                                                           ^
+  符号:   方法 getRowRealMatrix(RealMatrix,int)
+  位置: 类 MatrixUtils
+3 个错误

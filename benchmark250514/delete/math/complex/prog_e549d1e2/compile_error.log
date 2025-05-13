@@ -1,0 +1,11 @@
+generated/math/complex/prog_e549d1e2/Main.java:9: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createDiagonalMatrix(diagonalValues);
+                                                   ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_e549d1e2/Main.java:30: 错误: 找不到符号
+        double determinant = matrix2.getDeterminant();
+                                    ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix2
+2 个错误

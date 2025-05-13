@@ -1,0 +1,21 @@
+generated/math/complex/prog_5274b293/Main.java:19: 错误: 找不到符号
+        BlockRealMatrix matrix1 = MatrixUtils.createBlockRealMatrix(data1);
+                                             ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_5274b293/Main.java:22: 错误: 找不到符号
+        BlockRealMatrix matrix2 = MatrixUtils.createBlockRealMatrix(data2);
+                                             ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_5274b293/Main.java:42: 错误: 找不到符号
+        BlockRealMatrix matrix3 = MatrixUtils.createBlockRealMatrix(data3);
+                                             ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_5274b293/Main.java:54: 错误: 找不到符号
+        BlockRealMatrix readMatrix = MatrixUtils.getBlockRealMatrix(matrix1.getData());
+                                                ^
+  符号:   方法 getBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+4 个错误

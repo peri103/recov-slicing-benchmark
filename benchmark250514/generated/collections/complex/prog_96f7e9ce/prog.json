@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.Flat3Map;\nimport java.util.HashMap;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Flat3Map<String, Integer> map = new Flat3Map<>();\n        HashMap<String, String> hashMap = new HashMap<>();\n        ArrayList<Integer> arrayList = new ArrayList<>();\n        \n        // Use HashMap to store some data\n        hashMap.put(\"name\", \"Alice\");\n        hashMap.put(\"city\", \"Wonderland\");\n        \n        // Use ArrayList to store numbers\n        for (int i = 0; i < 5; i++) {\n            arrayList.add(i * 10);\n        }\n        \n        /* write */ map.put(\"key\", 42);\n        \n        // Process data from HashMap\n        String name = hashMap.get(\"name\");\n        String city = hashMap.get(\"city\");\n        System.out.println(\"Name: \" + name + \", City: \" + city);\n        \n        // Process data from ArrayList\n        int sum = 0;\n        for (Integer num : arrayList) {\n            sum += num;\n        }\n        System.out.println(\"Sum of ArrayList elements: \" + sum);\n        \n        // Retrieve the value from Flat3Map\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(\"Value from Flat3Map: \" + value);\n        \n        // Additional operations with ArrayList\n        arrayList.add(value);\n        for (int i = 0; i < arrayList.size(); i++) {\n            System.out.println(\"ArrayList element at index \" + i + \": \" + arrayList.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.Flat3Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Flat3Map<String, Integer> map = new Flat3Map<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.Flat3Map",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.Flat3Map",
+        "read_method": "get"
+    }
+}

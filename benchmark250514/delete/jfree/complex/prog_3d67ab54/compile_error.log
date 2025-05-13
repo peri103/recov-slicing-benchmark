@@ -1,0 +1,13 @@
+generated/jfree/complex/prog_3d67ab54/Main.java:24: 错误: 找不到符号
+        double pieOutlineVisibility = piePlot.isSectionOutlinesVisible() ? 1.0 : 0.0;
+                                             ^
+  符号:   方法 isSectionOutlinesVisible()
+  位置: 类型为PiePlot的变量 piePlot
+generated/jfree/complex/prog_3d67ab54/Main.java:39: 错误: 找不到符号
+        System.out.println("Updated Pie Plot Outline Visibility: " + piePlot.isSectionOutlinesVisible());
+                                                                            ^
+  符号:   方法 isSectionOutlinesVisible()
+  位置: 类型为PiePlot的变量 piePlot
+注: generated/jfree/complex/prog_3d67ab54/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+2 个错误

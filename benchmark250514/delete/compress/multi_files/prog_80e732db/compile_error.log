@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_80e732db/ArchiveManager.java:9: 错误: 找不到符号
+        /* write */ entry.setUserName(userName);
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/multi_files/prog_80e732db/Main.java:24: 错误: 找不到符号
+        /* read */ String userName = retrievedEntry.getUserName();
+                                                   ^
+  符号:   方法 getUserName()
+  位置: 类型为ArArchiveEntry的变量 retrievedEntry
+2 个错误

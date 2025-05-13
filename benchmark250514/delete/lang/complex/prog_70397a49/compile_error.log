@@ -1,0 +1,6 @@
+generated/lang/complex/prog_70397a49/Main.java:58: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.YEAR);
+                                                                                 ^
+  符号:   变量 YEAR
+  位置: 类 DateUtils
+1 个错误

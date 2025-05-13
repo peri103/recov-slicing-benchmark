@@ -1,0 +1,6 @@
+generated/math/complex/prog_dc89a905/Main.java:34: 错误: 找不到符号
+        double determinant = matrix.getDeterminant();
+                                   ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix
+1 个错误

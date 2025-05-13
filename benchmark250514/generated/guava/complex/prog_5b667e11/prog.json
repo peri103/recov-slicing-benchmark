@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.MinMaxPriorityQueue;\nimport java.util.PriorityQueue;\nimport java.util.Queue;\n\npublic class Main {\n    public static void main(String[] args) {\n        MinMaxPriorityQueue<Integer> queue = MinMaxPriorityQueue.create();\n        PriorityQueue<Integer> anotherQueue = new PriorityQueue<>();\n        Queue<Integer> simpleQueue = new PriorityQueue<>();\n\n        /* write */ queue.offer(10);\n\n        anotherQueue.offer(20);\n        anotherQueue.offer(30);\n        anotherQueue.offer(40);\n\n        System.out.println(\"Iterating over anotherQueue:\");\n        for (Integer num : anotherQueue) {\n            System.out.println(num);\n        }\n\n        simpleQueue.offer(50);\n        simpleQueue.offer(60);\n\n        System.out.println(\"Iterating over simpleQueue:\");\n        while (!simpleQueue.isEmpty()) {\n            System.out.println(simpleQueue.poll());\n        }\n\n        int sum = 0;\n        for (Integer num : anotherQueue) {\n            sum += num;\n        }\n        System.out.println(\"Sum of anotherQueue: \" + sum);\n\n        /* read */ int value = queue.peek();\n        System.out.println(\"Peeked value from queue: \" + value);\n\n        anotherQueue.offer(70);\n        anotherQueue.offer(80);\n\n        System.out.println(\"Iterating over anotherQueue after adding more elements:\");\n        for (Integer num : anotherQueue) {\n            System.out.println(num);\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.MinMaxPriorityQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        MinMaxPriorityQueue<Integer> queue = MinMaxPriorityQueue.create();\n        /* write */ queue.offer(10);\n        /* read */ int value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.MinMaxPriorityQueue",
+        "write_method": "offer",
+        "read_class": "com.google.common.collect.MinMaxPriorityQueue",
+        "read_method": "peek"
+    }
+}

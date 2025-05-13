@@ -1,0 +1,6 @@
+generated/math/complex/prog_35a910d9/Main.java:39: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getRowRealMatrix(matrix.getDataRef(), 0);
+                                                                              ^
+  符号:   方法 getDataRef()
+  位置: 类型为RealMatrix的变量 matrix
+1 个错误

@@ -1,0 +1,6 @@
+generated/guava/complex/prog_d121bc08/Main.java:12: 错误: 找不到符号
+        /* write */ ImmutableClassToInstanceMap<Object> map = builder.putInstance(Integer.class, 42).build();
+                                                                     ^
+  符号:   方法 putInstance(Class<Integer>,int)
+  位置: 类型为Builder<Object>的变量 builder
+1 个错误

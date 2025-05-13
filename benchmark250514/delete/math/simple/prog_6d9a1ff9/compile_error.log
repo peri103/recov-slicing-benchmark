@@ -1,0 +1,11 @@
+generated/math/simple/prog_6d9a1ff9/Main.java:13: 错误: 找不到符号
+        /* write */ RealMatrix symmetricMatrix = MatrixUtils.createSymmetricMatrix(data);
+                                                            ^
+  符号:   方法 createSymmetricMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/simple/prog_6d9a1ff9/Main.java:16: 错误: 找不到符号
+        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getSymmetricMatrix(symmetricMatrix);
+                                                           ^
+  符号:   方法 getSymmetricMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+2 个错误

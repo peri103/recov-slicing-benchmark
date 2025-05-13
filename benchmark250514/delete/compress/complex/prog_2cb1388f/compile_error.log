@@ -1,0 +1,4 @@
+generated/compress/complex/prog_2cb1388f/Main.java:28: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        /* read */ int mode = entry.getMode();
+                                           ^
+1 个错误

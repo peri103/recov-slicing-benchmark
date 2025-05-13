@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_cc077680/Main.java:36: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getRowRealMatrix(matrixOps.getMatrix(), 0);
+                                                      ^
+  符号:   方法 getRowRealMatrix(RealMatrix,int)
+  位置: 类 MatrixUtils
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with default settings\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n        \n        // Modify CSVFormat using the write method\n        /* write */ csvFormat = csvFormat.withAutoFlush(true);\n\n        // Create a dummy CSVRecord for demonstration purposes\n        CSVRecord csvRecord = new CSVRecord(null, null, csvFormat);\n\n        // Read from CSVRecord using the read method\n        /* read */ boolean isConsistent = csvRecord.isConsistent();\n\n        // Output the result\n        System.out.println(\"Is the CSVRecord consistent? \" + isConsistent);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAutoFlush",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

@@ -1,0 +1,6 @@
+generated/guava/complex/prog_3544978e/Main.java:53: 错误: 找不到符号
+            int total = value + value2 + value3;
+                        ^
+  符号:   变量 value
+  位置: 类 Main
+1 个错误

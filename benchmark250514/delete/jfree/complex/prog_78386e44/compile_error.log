@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_78386e44/Main.java:37: 错误: 找不到符号
+            totalDays += period.getEnd().getDayOfMonth() - period.getStart().getDayOfMonth();
+                                        ^
+  符号:   方法 getDayOfMonth()
+  位置: 类 Date
+generated/jfree/complex/prog_78386e44/Main.java:37: 错误: 找不到符号
+            totalDays += period.getEnd().getDayOfMonth() - period.getStart().getDayOfMonth();
+                                                                            ^
+  符号:   方法 getDayOfMonth()
+  位置: 类 Date
+2 个错误

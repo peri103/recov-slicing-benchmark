@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_dc2f4106/Main.java:20: 错误: 找不到符号
+        barRenderer.setBaseItemLabelGenerator(categoryLabelGenerator);
+                   ^
+  符号:   方法 setBaseItemLabelGenerator(StandardCategoryItemLabelGenerator)
+  位置: 类型为BarRenderer的变量 barRenderer
+1 个错误

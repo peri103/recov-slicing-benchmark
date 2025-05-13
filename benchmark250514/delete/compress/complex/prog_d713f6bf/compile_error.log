@@ -1,0 +1,24 @@
+generated/compress/complex/prog_d713f6bf/Main.java:9: 错误: 找不到符号
+        entry2.setUserName("Alice");
+              ^
+  符号:   方法 setUserName(String)
+  位置: 类型为CpioArchiveEntry的变量 entry2
+generated/compress/complex/prog_d713f6bf/Main.java:10: 错误: 找不到符号
+        String userName2 = entry2.getUserName();
+                                 ^
+  符号:   方法 getUserName()
+  位置: 类型为CpioArchiveEntry的变量 entry2
+generated/compress/complex/prog_d713f6bf/Main.java:34: 错误: 找不到符号
+        /* write */ entry.setUserName("JohnDoe");
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_d713f6bf/Main.java:48: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        int size = entry.getSize();
+                                ^
+generated/compress/complex/prog_d713f6bf/Main.java:51: 错误: 找不到符号
+        /* read */ String userName = entry.getUserName();
+                                          ^
+  符号:   方法 getUserName()
+  位置: 类型为CpioArchiveEntry的变量 entry
+5 个错误

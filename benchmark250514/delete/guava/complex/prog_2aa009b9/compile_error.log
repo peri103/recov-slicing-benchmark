@@ -1,0 +1,11 @@
+generated/guava/complex/prog_2aa009b9/Main.java:18: 错误: 找不到符号
+        /* write */ DiscreteDomain<Integer> integerDomain = DiscreteDomain.of(domain);
+                                                                          ^
+  符号:   方法 of(DiscreteDomain<Integer>)
+  位置: 类 DiscreteDomain
+generated/guava/complex/prog_2aa009b9/Main.java:29: 错误: 找不到符号
+        Range<Integer> complementRange = Range.all().difference(range);
+                                                    ^
+  符号:   方法 difference(Range<Integer>)
+  位置: 类 Range<Comparable<?>>
+2 个错误

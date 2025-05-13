@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.HashMultimap;\nimport com.google.common.collect.SetMultimap;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        SetMultimap<String, Integer> multimap = HashMultimap.create();\n        \n        /* write */ multimap.put(\"key1\", 42);\n        \n        /* read */ Set<Integer> values = multimap.get(\"key1\");\n        for (Integer value : values) {\n            System.out.println(value);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.SetMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.SetMultimap",
+        "read_method": "get"
+    }
+}

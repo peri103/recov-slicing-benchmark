@@ -1,0 +1,5 @@
+generated/jfree/complex/prog_0b006827/Main.java:25: 错误: 不兼容的类型: CategoryAxis无法转换为ValueAxis
+        axisList.add(new CategoryAxis("Category Axis"));
+                     ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

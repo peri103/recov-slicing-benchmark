@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.title.Title;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a Title object and set its text\n        Title title = new Title();\n        \n        // Unrelated code to add complexity\n        ArrayList<String> stringList = new ArrayList<>();\n        stringList.add(\"First\");\n        stringList.add(\"Second\");\n        \n        for (String str : stringList) {\n            System.out.println(\"String from list: \" + str);\n        }\n        \n        // Setting text for the Title object\n        /* write */ title.setText(\"Chart Title\");\n        \n        // More unrelated code to add complexity\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        \n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n        \n        // Read the text from the Title object\n        /* read */ String value = title.getText();\n        \n        System.out.println(\"Title text: \" + value);\n        \n        // Additional code to demonstrate usage of another class\n        ArrayList<Integer> numberList = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numberList.add(i * 2);\n        }\n        \n        for (Integer number : numberList) {\n            System.out.println(\"Number from list: \" + number);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.title.Title;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming Title is a class that has setText and getText methods\n        Title title = new Title();\n        \n        /* write */ title.setText(\"Chart Title\");\n        \n        /* read */ String value = title.getText();\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.Title",
+        "write_method": "setText",
+        "read_class": "org.jfree.chart.title.Title",
+        "read_method": "getText"
+    }
+}

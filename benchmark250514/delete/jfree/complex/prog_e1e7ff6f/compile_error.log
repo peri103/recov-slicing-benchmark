@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_e1e7ff6f/Main.java:12: 错误: 找不到符号
+        /* write */ plot.setUnits(ThermometerPlot.UNITS_CELSIUS);
+                                                 ^
+  符号:   变量 UNITS_CELSIUS
+  位置: 类 ThermometerPlot
+generated/jfree/complex/prog_e1e7ff6f/Main.java:20: 错误: 找不到符号
+        JFreeChart chart = ChartFactory.createThermometerChart(
+                                       ^
+  符号:   方法 createThermometerChart(String,DefaultValueDataset,ThermometerPlot)
+  位置: 类 ChartFactory
+2 个错误

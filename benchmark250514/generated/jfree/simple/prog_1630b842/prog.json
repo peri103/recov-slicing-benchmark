@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYAreaRenderer;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYAreaRenderer renderer = new XYAreaRenderer();\n        Paint paint = new Color(255, 0, 0); // Red color\n        /* write */ renderer.setSeriesFillPaint(0, paint);\n        /* read */ Paint readPaint = renderer.getSeriesFillPaint(0);\n        System.out.println(readPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYAreaRenderer",
+        "write_method": "setSeriesFillPaint",
+        "read_class": "org.jfree.chart.renderer.xy.XYAreaRenderer",
+        "read_method": "getSeriesFillPaint"
+    }
+}

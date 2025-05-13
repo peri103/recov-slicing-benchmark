@@ -1,0 +1,19 @@
+generated/guava/multi_files/prog_26b92d63/Main.java:22: 错误: 找不到符号
+        ImmutableClassToInstanceMap<Object> immutableMap = student.getImmutableMap();
+        ^
+  符号:   类 ImmutableClassToInstanceMap
+  位置: 类 Main
+generated/guava/multi_files/prog_26b92d63/Student.java:13: 错误: 无法将类 MutableClassToInstanceMap<B>中的方法 putInstance应用到给定类型;
+        /* write */ mutableMap.putInstance(clazz, instance);
+                              ^
+  需要: Class<T>,T
+  找到: Class<CAP#1>,Object
+  原因: 推论变量 T 具有不兼容的上限
+    等式约束条件：CAP#1
+    下限：Object
+  其中, T,B是类型变量:
+    T扩展已在方法 <T>putInstance(Class<T>,T)中声明的Object
+    B扩展已在类 MutableClassToInstanceMap中声明的Object
+  其中, CAP#1是新类型变量:
+    CAP#1从?的捕获扩展Object
+2 个错误

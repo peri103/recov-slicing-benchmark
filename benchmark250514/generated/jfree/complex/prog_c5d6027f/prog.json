@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\nimport java.awt.Paint;\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot plot = new PiePlot();\n        Paint shadowPaint = Color.GRAY;\n\n        ArrayList<Paint> paintList = new ArrayList<>();\n        paintList.add(Color.RED);\n        paintList.add(Color.BLUE);\n        paintList.add(Color.GREEN);\n\n        Map<String, Paint> paintMap = new HashMap<>();\n        paintMap.put(\"Background\", Color.WHITE);\n        paintMap.put(\"Foreground\", Color.BLACK);\n\n        /* write */ plot.setLabelShadowPaint(shadowPaint);\n\n        for (Paint paint : paintList) {\n            plot.setLabelShadowPaint(paint);\n        }\n\n        Paint readShadowPaint = plot.getLabelShadowPaint();\n        System.out.println(\"Current label shadow paint: \" + readShadowPaint);\n\n        for (Map.Entry<String, Paint> entry : paintMap.entrySet()) {\n            System.out.println(\"Paint for \" + entry.getKey() + \": \" + entry.getValue());\n        }\n\n        Paint newShadowPaint = Color.YELLOW;\n        plot.setLabelShadowPaint(newShadowPaint);\n        Paint updatedShadowPaint = plot.getLabelShadowPaint();\n        System.out.println(\"Updated label shadow paint: \" + updatedShadowPaint);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot plot = new PiePlot();\n        Paint shadowPaint = Color.GRAY;\n        \n        /* write */ plot.setLabelShadowPaint(shadowPaint);\n        /* read */ Paint readShadowPaint = plot.getLabelShadowPaint();\n        \n        System.out.println(readShadowPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setLabelShadowPaint",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getLabelShadowPaint"
+    }
+}

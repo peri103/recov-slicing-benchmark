@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        // Create a Calendar instance to manipulate the date\n        Calendar calendar = Calendar.getInstance();\n        calendar.setTime(date);\n        \n        // Set a specific time for testing\n        calendar.set(Calendar.HOUR_OF_DAY, 14);\n        calendar.set(Calendar.MINUTE, 45);\n        calendar.set(Calendar.SECOND, 30);\n        \n        Date testDate = calendar.getTime();\n        \n        /* write */ Date roundedDate = DateUtils.round(testDate, Calendar.HOUR);\n        /* read */ Date truncatedDate = DateUtils.truncate(roundedDate, Calendar.HOUR);\n        \n        System.out.println(\"Original Date: \" + testDate);\n        System.out.println(\"Rounded Date: \" + roundedDate);\n        System.out.println(\"Truncated Date: \" + truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "round",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

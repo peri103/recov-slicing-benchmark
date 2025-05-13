@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.buffer.CircularFifoBuffer;\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoBuffer<Integer> buffer = new CircularFifoBuffer<>(5);\n        List<String> stringList = new ArrayList<>();\n        Map<String, Integer> stringMap = new HashMap<>();\n\n        /* write */ buffer.add(42);\n\n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n        stringList.add(\"!\");\n\n        stringMap.put(\"A\", 1);\n        stringMap.put(\"B\", 2);\n        stringMap.put(\"C\", 3);\n\n        int sum = 0;\n        for (Integer value : stringMap.values()) {\n            sum += value;\n        }\n\n        for (String str : stringList) {\n            System.out.println(str);\n        }\n\n        /* read */ int value = buffer.get();\n        System.out.println(\"Buffer value: \" + value);\n\n        System.out.println(\"Sum of map values: \" + sum);\n\n        CircularFifoBuffer<String> stringBuffer = new CircularFifoBuffer<>(3);\n        stringBuffer.add(\"Alpha\");\n        stringBuffer.add(\"Beta\");\n        stringBuffer.add(\"Gamma\");\n\n        for (Object obj : stringBuffer) {\n            System.out.println(obj);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.buffer.CircularFifoBuffer;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoBuffer<Integer> buffer = new CircularFifoBuffer<>(5);\n        /* write */ buffer.add(42);\n        /* read */ int value = buffer.get();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.buffer.CircularFifoBuffer",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.buffer.CircularFifoBuffer",
+        "read_method": "get"
+    }
+}

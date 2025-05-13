@@ -1,0 +1,14 @@
+generated/jfree/complex/prog_318714fb/Main.java:16: 错误: 找不到符号
+        boolean shapesVisible = lineRenderer.getBaseShapesVisible();
+                                            ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_318714fb/Main.java:17: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(!shapesVisible);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_318714fb/Main.java:37: 错误: 不兼容的类型: Paint无法转换为Color
+            Color seriesColor = lineRenderer.getSeriesPaint(i);
+                                                           ^
+3 个错误

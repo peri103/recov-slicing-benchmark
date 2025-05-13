@@ -1,0 +1,6 @@
+generated/lang/simple/prog_999ff8b4/Main.java:8: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(date, DateUtils.HOUR_OF_DAY);
+                                                                          ^
+  符号:   变量 HOUR_OF_DAY
+  位置: 类 DateUtils
+1 个错误

@@ -1,0 +1,31 @@
+generated/math/multi_files/prog_8aa84e9b/Main.java:25: 错误: 找不到符号
+    private static void printMatrix(RealMatrix matrix) {
+                                    ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_8aa84e9b/Main.java:34: 错误: 找不到符号
+    private static void printVector(RealVector vector) {
+                                    ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_8aa84e9b/Main.java:7: 错误: 找不到符号
+        RealMatrix resultMatrix = MatrixOperations.createAndMultiplyMatrix();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_8aa84e9b/Main.java:12: 错误: 找不到符号
+        RealVector resultVector = MatrixOperations.createAndMultiplyVector();
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_8aa84e9b/Main.java:18: 错误: 找不到符号
+        RealMatrix readMatrix = sparseMatrixHandler.getSparseMatrix();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_8aa84e9b/SparseMatrixHandler.java:9: 错误: 找不到符号
+        this.sparseMatrix = MatrixUtils.createSparseMatrix(rows, columns);
+                                       ^
+  符号:   方法 createSparseMatrix(int,int)
+  位置: 类 MatrixUtils
+6 个错误

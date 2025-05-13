@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        byte[] extraData = {0x01, 0x02, 0x03};\n\n        /* write */ gzipParameters.setExtra(extraData);\n        /* read */ byte[] readExtraData = gzipParameters.getExtra();\n\n        for (byte b : readExtraData) {\n            System.out.print(b + \" \");\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setExtra",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getExtra"
+    }
+}

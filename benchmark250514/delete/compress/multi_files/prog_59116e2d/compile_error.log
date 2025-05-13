@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_59116e2d/DumpArchiveEntryWrapper.java:11: 错误: 找不到符号
+        /* write */ entry.setCompressedSize(size);
+                         ^
+  符号:   方法 setCompressedSize(long)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/multi_files/prog_59116e2d/DumpArchiveEntryWrapper.java:15: 错误: 找不到符号
+        return entry.getCompressedSize();
+                    ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

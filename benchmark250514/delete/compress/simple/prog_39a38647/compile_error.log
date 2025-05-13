@@ -1,0 +1,11 @@
+generated/compress/simple/prog_39a38647/Main.java:6: 错误: 找不到符号
+        /* write */ gzipParams.setUncompressedSize(12345L);
+                              ^
+  符号:   方法 setUncompressedSize(long)
+  位置: 类型为GzipParameters的变量 gzipParams
+generated/compress/simple/prog_39a38647/Main.java:7: 错误: 找不到符号
+        /* read */ long uncompressedSize = gzipParams.getUncompressedSize();
+                                                     ^
+  符号:   方法 getUncompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParams
+2 个错误

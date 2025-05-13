@@ -1,0 +1,13 @@
+{
+    "files": {
+        "ValueMarkerHandler.java": "import org.jfree.chart.plot.ValueMarker;\n\npublic class ValueMarkerHandler {\n    private ValueMarker marker;\n\n    public ValueMarkerHandler(double initialValue) {\n        this.marker = new ValueMarker(initialValue);\n    }\n\n    public void setMarkerValue(double value) {\n        /* write */ marker.setValue(value);\n    }\n\n    public double getMarkerValue() {\n        return marker.getValue();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ValueMarker",
+        "write_method": "setValue",
+        "read_class": "org.jfree.chart.plot.ValueMarker",
+        "read_method": "getValue"
+    },
+    "java_code_simple": "import org.jfree.chart.plot.ValueMarker;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueMarker marker = new ValueMarker(0.0);\n        /* write */ marker.setValue(5.0);\n        /* read */ double value = marker.getValue();\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import org.jfree.chart.plot.ValueMarker;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueMarker marker = new ValueMarker(0.0);\n        ArrayList<Double> valuesList = new ArrayList<>();\n        HashMap<String, Double> valuesMap = new HashMap<>();\n\n        /* write */ marker.setValue(5.0);\n        \n        // Adding values to the list\n        for (double i = 0.0; i < 5.0; i++) {\n            valuesList.add(i);\n        }\n\n        // Adding values to the map\n        for (int i = 0; i < valuesList.size(); i++) {\n            valuesMap.put(\"Value \" + i, valuesList.get(i));\n        }\n\n        // Perform some operations on the list\n        double sum = 0.0;\n        for (double val : valuesList) {\n            sum += val;\n        }\n        System.out.println(\"Sum of list values: \" + sum);\n\n        // Accessing the value from the ValueMarker\n        /* read */ double value = marker.getValue();\n        System.out.println(\"Value from marker: \" + value);\n\n        // Perform some operations on the map\n        for (String key : valuesMap.keySet()) {\n            System.out.println(key + \": \" + valuesMap.get(key));\n        }\n\n        // Additional operations on the list\n        double average = sum / valuesList.size();\n        System.out.println(\"Average of list values: \" + average);\n    }\n}"
+}

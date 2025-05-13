@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.data.Range;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueAxis axis = new NumberAxis();\n        Range rangeToSet = new Range(0.0, 10.0);\n\n        /* write */ axis.setRange(rangeToSet);\n\n        // Additional unrelated operations\n        ArrayList<Double> values = new ArrayList<>();\n        for (double i = 0.0; i <= 10.0; i += 0.5) {\n            values.add(i);\n        }\n\n        double sum = 0.0;\n        for (Double value : values) {\n            sum += value;\n        }\n        System.out.println(\"Sum of values: \" + sum);\n\n        // Additional operations using similar API pairs\n        ValueAxis axis2 = new NumberAxis();\n        Range rangeToSet2 = new Range(-5.0, 5.0);\n        axis2.setRange(rangeToSet2);\n\n        Range rangeRead2 = axis2.getRange();\n        System.out.println(\"Range of axis2: \" + rangeRead2);\n\n        // Some more complex operations\n        ArrayList<Range> rangeList = new ArrayList<>();\n        rangeList.add(rangeToSet);\n        rangeList.add(rangeToSet2);\n\n        for (Range range : rangeList) {\n            System.out.println(\"Range in list: \" + range);\n        }\n\n        // Read the range set earlier\n        /* read */ Range rangeRead = axis.getRange();\n        System.out.println(\"Range of axis: \" + rangeRead);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.data.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueAxis axis = new NumberAxis();\n        Range rangeToSet = new Range(0.0, 10.0);\n\n        /* write */ axis.setRange(rangeToSet);\n        /* read */ Range rangeRead = axis.getRange();\n\n        System.out.println(\"Range: \" + rangeRead);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.ValueAxis",
+        "write_method": "setRange",
+        "read_class": "org.jfree.chart.axis.ValueAxis",
+        "read_method": "getRange"
+    }
+}

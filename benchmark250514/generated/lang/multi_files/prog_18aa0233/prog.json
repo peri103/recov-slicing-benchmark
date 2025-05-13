@@ -1,0 +1,13 @@
+{
+    "files": {
+        "MutableDoubleWrapper.java": "import org.apache.commons.lang3.mutable.MutableDouble;\n\npublic class MutableDoubleWrapper {\n    private MutableDouble mutableDouble = new MutableDouble();\n\n    public void setValue(double value) {\n        /* write */ mutableDouble.setValue(value);\n    }\n\n    public double getValue() {\n        return mutableDouble.getValue();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableDouble",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableDouble",
+        "read_method": "getValue"
+    },
+    "java_code_simple": "import org.apache.commons.lang3.mutable.MutableDouble;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableDouble mutableDouble = new MutableDouble();\n        /* write */ mutableDouble.setValue(10.5);\n        /* read */ double value = mutableDouble.getValue();\n        System.out.println(value);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.lang3.mutable.MutableDouble;\nimport org.apache.commons.lang3.mutable.MutableInt;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableDouble mutableDouble = new MutableDouble();\n        MutableInt mutableInt = new MutableInt();\n        \n        // Some unrelated operations\n        mutableInt.setValue(5);\n        int intValue = mutableInt.getValue();\n        System.out.println(\"MutableInt value: \" + intValue);\n        \n        // Perform calculations\n        double calculationResult = intValue * 2.5;\n        System.out.println(\"Calculation Result: \" + calculationResult);\n        \n        // Perform operations on MutableDouble\n        /* write */ mutableDouble.setValue(calculationResult);\n        \n        // More unrelated operations\n        MutableDouble anotherDouble = new MutableDouble();\n        anotherDouble.setValue(3.3);\n        double anotherValue = anotherDouble.getValue();\n        System.out.println(\"Another MutableDouble value: \" + anotherValue);\n        \n        // Perform more calculations\n        double combinedResult = mutableDouble.getValue() + anotherValue;\n        System.out.println(\"Combined Result: \" + combinedResult);\n        \n        // Final read operation\n        /* read */ double value = mutableDouble.getValue();\n        System.out.println(\"MutableDouble value: \" + value);\n        \n        // Additional operations\n        double finalResult = value * 2;\n        System.out.println(\"Final Result: \" + finalResult);\n    }\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot3D;\nimport org.jfree.chart.plot.PiePlot;\nimport org.jfree.chart.ChartFactory;\nimport org.jfree.chart.JFreeChart;\nimport org.jfree.data.general.DefaultPieDataset;\nimport org.jfree.data.general.PieDataset;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot3D piePlot = new PiePlot3D();\n        PieDataset dataset = createDataset();\n        JFreeChart chart = ChartFactory.createPieChart3D(\n            \"Sample Chart\",\n            dataset,\n            true,\n            true,\n            false\n        );\n\n        PiePlot plot = (PiePlot) chart.getPlot();\n        plot.setStartAngle(90);\n        \n        /* write */ piePlot.setDepthFactor(0.5);\n\n        double startAngle = plot.getStartAngle();\n        System.out.println(\"Start Angle: \" + startAngle);\n\n        piePlot.setCircular(true);\n        double depthFactor = piePlot.getDepthFactor();\n        \n        for (int i = 0; i < 5; i++) {\n            plot.setSectionOutlinePaint(i, plot.getSectionPaint(i));\n        }\n\n        /* read */ System.out.println(\"Depth Factor: \" + depthFactor);\n    }\n\n    private static PieDataset createDataset() {\n        DefaultPieDataset dataset = new DefaultPieDataset();\n        dataset.setValue(\"Category 1\", 43.2);\n        dataset.setValue(\"Category 2\", 27.9);\n        dataset.setValue(\"Category 3\", 79.5);\n        return dataset;\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.PiePlot3D;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot3D piePlot = new PiePlot3D();\n        /* write */ piePlot.setDepthFactor(0.5);\n        /* read */ double depthFactor = piePlot.getDepthFactor();\n        System.out.println(depthFactor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot3D",
+        "write_method": "setDepthFactor",
+        "read_class": "org.jfree.chart.plot.PiePlot3D",
+        "read_method": "getDepthFactor"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"test\");\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 100);\n        }\n        \n        /* write */ entry.setCompressedSize(1024);\n        \n        int sum = 0;\n        for (Integer number : numbers) {\n            sum += number;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        int average = sum / numbers.size();\n        System.out.println(\"Average of numbers: \" + average);\n        \n        ArrayList<String> strings = new ArrayList<>();\n        strings.add(\"Hello\");\n        strings.add(\"World\");\n        \n        for (String str : strings) {\n            System.out.println(\"String: \" + str);\n        }\n        \n        /* read */ long compressedSize = entry.getCompressedSize();\n        System.out.println(\"Compressed Size: \" + compressedSize);\n        \n        int maxNumber = numbers.stream().max(Integer::compare).orElse(0);\n        System.out.println(\"Max number: \" + maxNumber);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"test\");\n        /* write */ entry.setCompressedSize(1024);\n        /* read */ long compressedSize = entry.getCompressedSize();\n        System.out.println(compressedSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setCompressedSize",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getCompressedSize"
+    }
+}

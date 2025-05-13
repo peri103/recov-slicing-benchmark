@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_708e9377/Main.java:15: 错误: 找不到符号
+        XYPlot plot = axisManager.getPlot();
+        ^
+  符号:   类 XYPlot
+  位置: 类 Main
+1 个错误

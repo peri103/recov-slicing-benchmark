@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.CombinedRangeXYPlot;\nimport org.jfree.chart.axis.ValueAxis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a CombinedRangeXYPlot object\n        CombinedRangeXYPlot plot = new CombinedRangeXYPlot();\n\n        // Create a ValueAxis object to be set in the plot\n        ValueAxis rangeAxis = new NumberAxis(\"Range Axis\");\n\n        /* write */ plot.setRangeAxis(rangeAxis);\n\n        /* read */ ValueAxis retrievedAxis = plot.getRangeAxis();\n\n        // Print out the label of the retrieved axis to verify\n        System.out.println(retrievedAxis.getLabel());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.CombinedRangeXYPlot",
+        "write_method": "setRangeAxis",
+        "read_class": "org.jfree.chart.plot.CombinedRangeXYPlot",
+        "read_method": "getRangeAxis"
+    }
+}

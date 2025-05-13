@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableMultiset;\nimport com.google.common.collect.ImmutableMultiset.Builder;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a builder for ImmutableMultiset\n        Builder<String> builder = ImmutableMultiset.builder();\n        \n        // Use the builder to add elements to the multiset\n        /* write */ builder.add(\"apple\");\n        \n        // Build the ImmutableMultiset\n        ImmutableMultiset<String> multiset = builder.build();\n        \n        // Read the count of the element \"apple\" in the multiset\n        /* read */ int count = multiset.count(\"apple\");\n        \n        // Output the count\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableMultiset",
+        "read_method": "count"
+    }
+}

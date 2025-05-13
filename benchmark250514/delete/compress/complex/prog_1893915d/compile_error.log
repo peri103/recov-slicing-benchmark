@@ -1,0 +1,11 @@
+generated/compress/complex/prog_1893915d/Main.java:8: 错误: 找不到符号
+        /* write */ entry.setUserId(12345);
+                         ^
+  符号:   方法 setUserId(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_1893915d/Main.java:38: 错误: 找不到符号
+        anotherEntry.setUserId(67890);
+                    ^
+  符号:   方法 setUserId(int)
+  位置: 类型为ArArchiveEntry的变量 anotherEntry
+2 个错误

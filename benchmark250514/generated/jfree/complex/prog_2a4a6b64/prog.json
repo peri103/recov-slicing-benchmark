@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.Paint;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n\n        ArrayList<LegendItem> legendList = new ArrayList<>();\n        legendList.add(legendItem);\n\n        LegendItem anotherLegendItem = new LegendItem(\"Another Legend\");\n        anotherLegendItem.setLabelPaint(Color.BLUE);\n        legendList.add(anotherLegendItem);\n\n        for (LegendItem item : legendList) {\n            System.out.println(\"Initial Paint: \" + item.getLabelPaint());\n        }\n\n        /* write */ legendItem.setLabelPaint(Color.RED);\n\n        for (LegendItem item : legendList) {\n            if (item.getLabelPaint().equals(Color.RED)) {\n                System.out.println(\"Found a legend with red paint.\");\n            }\n        }\n\n        /* read */ Paint paint = legendItem.getLabelPaint();\n\n        System.out.println(\"Final Paint: \" + paint);\n\n        for (LegendItem item : legendList) {\n            System.out.println(\"Legend: \" + item.getLabelPaint());\n        }\n\n        LegendItem thirdLegendItem = new LegendItem(\"Third Legend\");\n        thirdLegendItem.setLabelPaint(Color.GREEN);\n        legendList.add(thirdLegendItem);\n\n        for (LegendItem item : legendList) {\n            System.out.println(\"Updated Legend Paints: \" + item.getLabelPaint());\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Legend\");\n\n        /* write */ legendItem.setLabelPaint(Color.RED);\n\n        /* read */ Paint paint = legendItem.getLabelPaint();\n\n        System.out.println(paint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLabelPaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLabelPaint"
+    }
+}

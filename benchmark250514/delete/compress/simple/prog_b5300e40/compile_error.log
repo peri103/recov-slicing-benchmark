@@ -1,0 +1,7 @@
+generated/compress/simple/prog_b5300e40/Main.java:6: 错误: 无法将类 ZipArchiveEntry中的方法 setName应用到给定类型;
+        /* write */ entry.setName("newName");
+                         ^
+  需要: String,byte[]
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\n\nimport java.io.StringWriter;\nimport java.io.IOException;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat with a specific delimiter\n            /* write */ CSVFormat csvFormat = CSVFormat.DEFAULT.withDelimiter(';');\n            \n            // Prepare a StringWriter to hold CSV data\n            StringWriter writer = new StringWriter();\n            \n            // Create a CSVPrinter to write data using the CSVFormat\n            CSVPrinter csvPrinter = new CSVPrinter(writer, csvFormat);\n            \n            // Write a record to the CSVPrinter\n            csvPrinter.printRecord(Arrays.asList(\"Alice\", \"Bob\", \"Charlie\"));\n            \n            // Close the printer to flush data to the writer\n            csvPrinter.close();\n            \n            // Read the CSV data as a string\n            String csvData = writer.toString();\n            \n            // Parse the CSV data to a CSVRecord\n            CSVRecord record = CSVFormat.DEFAULT.parse(new java.io.StringReader(csvData)).getRecords().get(0);\n            \n            // Read the CSVRecord as a string\n            /* read */ String recordString = record.toString();\n            \n            // Print the record string\n            System.out.println(recordString);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withDelimiter",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

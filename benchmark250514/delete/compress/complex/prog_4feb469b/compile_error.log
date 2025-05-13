@@ -1,0 +1,26 @@
+generated/compress/complex/prog_4feb469b/Main.java:11: 错误: 找不到符号
+        /* write */ entry.setGroupId(12345L);
+                         ^
+  符号:   方法 setGroupId(long)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_4feb469b/Main.java:27: 错误: 找不到符号
+        anotherEntry.setGroupId(99999L);
+                    ^
+  符号:   方法 setGroupId(long)
+  位置: 类型为CpioArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_4feb469b/Main.java:28: 错误: 找不到符号
+        System.out.println("Another Entry Group ID: " + anotherEntry.getGroupId());
+                                                                    ^
+  符号:   方法 getGroupId()
+  位置: 类型为CpioArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_4feb469b/Main.java:30: 错误: 找不到符号
+        /* read */ long groupId = entry.getGroupId();
+                                       ^
+  符号:   方法 getGroupId()
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_4feb469b/Main.java:39: 错误: 找不到符号
+            System.out.println("Entry Key: " + entryKey + ", Group ID: " + entryMap.get(entryKey).getGroupId());
+                                                                                                 ^
+  符号:   方法 getGroupId()
+  位置: 类 CpioArchiveEntry
+5 个错误

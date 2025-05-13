@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\nimport java.awt.BasicStroke;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem1 = new LegendItem(\"Sample Item 1\");\n        LegendItem legendItem2 = new LegendItem(\"Sample Item 2\");\n        \n        /* write */ legendItem1.setLinePaint(Color.RED);\n\n        // Additional operations with legendItem2\n        legendItem2.setLinePaint(Color.BLUE);\n        legendItem2.setLineStroke(new BasicStroke(2.0f));\n\n        // Unrelated complex operations\n        ArrayList<LegendItem> legendItems = new ArrayList<>();\n        legendItems.add(legendItem1);\n        legendItems.add(legendItem2);\n\n        for (LegendItem item : legendItems) {\n            System.out.println(\"Item: \" + item.getLabel());\n            System.out.println(\"Line Paint: \" + item.getLinePaint());\n            System.out.println(\"Line Stroke: \" + item.getLineStroke());\n        }\n\n        // Further unrelated operations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n\n        /* read */ Color linePaint = (Color) legendItem1.getLinePaint();\n        System.out.println(\"Line Paint Color for legendItem1: \" + linePaint);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.LegendItem;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        LegendItem legendItem = new LegendItem(\"Sample Item\");\n        \n        /* write */ legendItem.setLinePaint(Color.RED);\n        \n        /* read */ Color linePaint = (Color) legendItem.getLinePaint();\n        \n        System.out.println(\"Line Paint Color: \" + linePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLinePaint",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLinePaint"
+    }
+}

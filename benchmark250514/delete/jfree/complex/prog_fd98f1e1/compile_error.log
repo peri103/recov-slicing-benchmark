@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_fd98f1e1/Main.java:37: 错误: 找不到符号
+        legendItems.get(0).setLabel("Modified Example");
+                          ^
+  符号:   方法 setLabel(String)
+  位置: 类 LegendItem
+1 个错误

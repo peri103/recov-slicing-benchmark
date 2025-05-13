@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.ValueMarker;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of ValueMarker\n        ValueMarker marker = new ValueMarker(0.0); // Initialize with a default value\n        \n        /* write */ marker.setValue(42.0); // Set the value to 42.0\n        \n        /* read */ double value = marker.getValue(); // Get the value\n        \n        // Print the value to verify\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ValueMarker",
+        "write_method": "setValue",
+        "read_class": "org.jfree.chart.plot.ValueMarker",
+        "read_method": "getValue"
+    }
+}

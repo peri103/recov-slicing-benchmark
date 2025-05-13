@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withQuote('\"');\n        \n        // Simulate a CSVRecord to demonstrate the read method\n        String[] data = {\"value1\", \"value2\"};\n        CSVRecord record = CSVFormat.DEFAULT.parse(String.join(\",\", data)).getRecords().get(0);\n\n        /* read */ String recordString = record.toString();\n        System.out.println(recordString);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withQuote",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

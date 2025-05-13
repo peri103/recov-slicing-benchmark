@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_e0134082/Main.java:22: 错误: 找不到符号
+        /* read */ Paint positivePaint = chartRenderer.getPositivePaint();
+                   ^
+  符号:   类 Paint
+  位置: 类 Main
+1 个错误

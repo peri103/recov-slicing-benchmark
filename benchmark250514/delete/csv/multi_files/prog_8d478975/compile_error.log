@@ -1,0 +1,18 @@
+generated/csv/multi_files/prog_8d478975/Main.java:12: 错误: 找不到符号
+        List<CSVRecord> records = csvHandler.getRecords();
+             ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+generated/csv/multi_files/prog_8d478975/Main.java:16: 错误: 找不到符号
+        for (CSVRecord rec : records) {
+             ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+generated/csv/multi_files/prog_8d478975/Main.java:41: 错误: 找不到符号
+        for (CSVRecord rec : records) {
+             ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+注: generated/csv/multi_files/prog_8d478975/CSVHandler.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+3 个错误

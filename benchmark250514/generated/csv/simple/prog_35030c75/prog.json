@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringReader;\nimport java.io.IOException;\nimport org.apache.commons.csv.CSVParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat with trailing delimiter\n            /* write */ CSVFormat format = CSVFormat.DEFAULT.withTrailingDelimiter();\n\n            // Create a sample CSV data\n            String csvData = \"name,age\\nJohn,30\\nDoe,25\\n\";\n\n            // Parse the CSV data using the format\n            CSVParser parser = new CSVParser(new StringReader(csvData), format);\n\n            // Read the first record\n            CSVRecord record = parser.getRecords().get(0);\n\n            // Check if a column is set in the record\n            /* read */ boolean isSet = record.isSet(\"name\");\n\n            // Print the result\n            System.out.println(\"Is 'name' set in the record? \" + isSet);\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrailingDelimiter",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

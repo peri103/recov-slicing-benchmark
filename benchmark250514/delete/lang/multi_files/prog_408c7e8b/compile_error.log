@@ -1,0 +1,8 @@
+generated/lang/multi_files/prog_408c7e8b/Main.java:10: 错误: 找不到符号
+        StrTokenizer tokenizer = handler.getTokenizer();
+        ^
+  符号:   类 StrTokenizer
+  位置: 类 Main
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

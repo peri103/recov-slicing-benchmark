@@ -1,0 +1,11 @@
+generated/compress/complex/prog_d72a4c7d/Main.java:10: 错误: 找不到符号
+        /* write */ entry.setLastModified(lastModifiedTime);
+                         ^
+  符号:   方法 setLastModified(long)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_d72a4c7d/Main.java:40: 错误: 找不到符号
+        entry3.setLastModified(System.currentTimeMillis() + 1000);
+              ^
+  符号:   方法 setLastModified(long)
+  位置: 类型为ArArchiveEntry的变量 entry3
+2 个错误

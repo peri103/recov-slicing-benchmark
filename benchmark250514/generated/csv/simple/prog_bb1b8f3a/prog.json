@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.util.List;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with ignoring empty lines\n        CSVFormat format = CSVFormat.DEFAULT.withIgnoreEmptyLines(true);\n\n        // Sample data to test reading\n        List<String> data = Arrays.asList(\"Name, Age\", \"Alice, 30\", \"\", \"Bob, 25\");\n\n        // Parse the sample data using CSVFormat\n        List<CSVRecord> records = null;\n        try {\n            records = format.parse(new java.io.StringReader(String.join(\"\\n\", data))).getRecords();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n\n        // Ensure that we have records to read\n        if (records != null && !records.isEmpty()) {\n            // Read the first record and check if a field is set\n            CSVRecord record = records.get(0);\n            /* read */ boolean isSet = record.isSet(\"Name\");\n            System.out.println(\"Is 'Name' field set in the first record? \" + isSet);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreEmptyLines",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_65172320/StreamHandler.java:14: 错误: 找不到符号
+        /* write */ bzip2Stream.setStreamSize(size);
+                               ^
+  符号:   方法 setStreamSize(int)
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+generated/compress/multi_files/prog_65172320/StreamHandler.java:18: 错误: 找不到符号
+        /* read */ return bzip2Stream.getStreamSize();
+                                     ^
+  符号:   方法 getStreamSize()
+  位置: 类型为BZip2CompressorInputStream的变量 bzip2Stream
+2 个错误

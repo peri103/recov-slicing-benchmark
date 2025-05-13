@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_291d5375/Main.java:20: 错误: 找不到符号
+        legendItem.setLabel("New Label");
+                  ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem
+1 个错误

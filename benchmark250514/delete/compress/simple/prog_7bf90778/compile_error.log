@@ -1,0 +1,11 @@
+generated/compress/simple/prog_7bf90778/Main.java:6: 错误: 找不到符号
+        /* write */ entry.setLinkName("exampleLink");
+                         ^
+  符号:   方法 setLinkName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/simple/prog_7bf90778/Main.java:7: 错误: 找不到符号
+        /* read */ String linkName = entry.getLinkName();
+                                          ^
+  符号:   方法 getLinkName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

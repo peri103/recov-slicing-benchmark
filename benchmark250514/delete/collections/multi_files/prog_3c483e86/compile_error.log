@@ -1,0 +1,26 @@
+generated/collections/multi_files/prog_3c483e86/Course.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator;
+                                          ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/multi_files/prog_3c483e86/Course.java:2: 错误: 找不到符号
+import org.apache.commons.collections4.map.TreeBidiMap;
+                                          ^
+  符号:   类 TreeBidiMap
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/multi_files/prog_3c483e86/Course.java:6: 错误: 找不到符号
+    private AbstractOrderedBidiMapDecorator<String, Integer> grades;
+            ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Course
+generated/collections/multi_files/prog_3c483e86/Course.java:9: 错误: 找不到符号
+        this.grades = new AbstractOrderedBidiMapDecorator<>(new TreeBidiMap<>());
+                          ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Course
+generated/collections/multi_files/prog_3c483e86/Course.java:9: 错误: 找不到符号
+        this.grades = new AbstractOrderedBidiMapDecorator<>(new TreeBidiMap<>());
+                                                                ^
+  符号:   类 TreeBidiMap
+  位置: 类 Course
+5 个错误

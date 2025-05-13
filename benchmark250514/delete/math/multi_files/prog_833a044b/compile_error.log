@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_833a044b/MatrixOperations.java:8: 错误: 找不到符号
+        /* write */ this.matrix = MatrixUtils.createIdentityMatrix(size);
+                                             ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+1 个错误

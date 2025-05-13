@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractMapDecorator;\nimport org.apache.commons.collections4.map.HashedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a concrete implementation of AbstractMapDecorator\n        AbstractMapDecorator<String, String> map = new HashedMap<>();\n\n        /* write */ map.put(\"key\", \"value\");\n\n        /* read */ String value = map.get(\"key\");\n\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractMapDecorator",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractMapDecorator",
+        "read_method": "get"
+    }
+}

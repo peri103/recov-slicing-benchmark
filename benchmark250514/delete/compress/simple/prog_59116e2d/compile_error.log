@@ -1,0 +1,11 @@
+generated/compress/simple/prog_59116e2d/Main.java:6: 错误: 找不到符号
+        /* write */ entry.setCompressedSize(1024);
+                         ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/simple/prog_59116e2d/Main.java:7: 错误: 找不到符号
+        /* read */ long compressedSize = entry.getCompressedSize();
+                                              ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

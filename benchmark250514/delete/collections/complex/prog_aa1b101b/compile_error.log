@@ -1,0 +1,16 @@
+generated/collections/complex/prog_aa1b101b/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.TreeValuedHashMap;
+                                               ^
+  符号:   类 TreeValuedHashMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/complex/prog_aa1b101b/Main.java:8: 错误: 找不到符号
+        TreeValuedHashMap<String, Integer> map = new TreeValuedHashMap<>();
+        ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 Main
+generated/collections/complex/prog_aa1b101b/Main.java:8: 错误: 找不到符号
+        TreeValuedHashMap<String, Integer> map = new TreeValuedHashMap<>();
+                                                     ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 Main
+3 个错误

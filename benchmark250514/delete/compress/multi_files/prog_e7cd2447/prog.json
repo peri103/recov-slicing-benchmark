@@ -1,0 +1,13 @@
+{
+    "files": {
+        "JarEntryManager.java": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class JarEntryManager {\n    private JarArchiveEntry jarEntry;\n\n    public JarEntryManager(String initialName) {\n        this.jarEntry = new JarArchiveEntry(initialName);\n    }\n\n    public void updateName(String newName) {\n        /* write */ jarEntry.setName(newName);\n    }\n\n    public String getName() {\n        return jarEntry.getName();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setName",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getName"
+    },
+    "java_code_simple": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"initialName\");\n        /* write */ jarEntry.setName(\"newName\");\n        /* read */ String name = jarEntry.getName();\n        System.out.println(name);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"initialName\");\n        Map<String, Integer> map = new HashMap<>();\n        \n        map.put(\"key1\", 100);\n        map.put(\"key2\", 200);\n        \n        /* write */ jarEntry.setName(\"newName\");\n        \n        int sum = 0;\n        for (String key : map.keySet()) {\n            sum += map.get(key);\n        }\n        \n        if (sum > 250) {\n            map.put(\"key3\", 300);\n        } else {\n            map.put(\"key3\", 150);\n        }\n        \n        System.out.println(\"Sum of values: \" + sum);\n        \n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n        \n        /* read */ String name = jarEntry.getName();\n        System.out.println(\"Jar entry name: \" + name);\n        \n        int product = 1;\n        for (int value : map.values()) {\n            product *= value;\n        }\n        \n        System.out.println(\"Product of values: \" + product);\n    }\n}"
+}

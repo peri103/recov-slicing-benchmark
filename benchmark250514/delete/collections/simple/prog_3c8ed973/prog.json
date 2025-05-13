@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractSortedMap;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the TreeMap as AbstractSortedMap is abstract and cannot be instantiated directly\n        AbstractSortedMap<Integer, String> map = new TreeMap<>();\n        \n        /* write */ map.put(1, \"value1\");\n        \n        /* read */ String value = map.get(1);\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractSortedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractSortedMap",
+        "read_method": "get"
+    }
+}

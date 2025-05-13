@@ -1,0 +1,28 @@
+generated/collections/multi_files/prog_7e999d60/Course.java:9: 错误: 不兼容的类型: 无法推断HashedMap<>的类型参数
+        this.grades = new HashedMap<>();
+                                   ^
+    原因: 不存在类型变量K,V的实例, 以使HashedMap<K,V>与AbstractMapDecorator<String,String>一致
+  其中, K,V是类型变量:
+    K扩展已在类 HashedMap中声明的Object
+    V扩展已在类 HashedMap中声明的Object
+generated/collections/multi_files/prog_7e999d60/Main.java:12: 错误: 找不到符号
+        System.out.println(student1.getName() + " enrolled in " + student1.getCourseName());
+                                   ^
+  符号:   方法 getName()
+  位置: 类型为Student的变量 student1
+generated/collections/multi_files/prog_7e999d60/Main.java:13: 错误: 找不到符号
+        System.out.println(student2.getName() + " enrolled in " + student2.getCourseName());
+                                   ^
+  符号:   方法 getName()
+  位置: 类型为Student的变量 student2
+generated/collections/multi_files/prog_7e999d60/Main.java:18: 错误: 找不到符号
+        System.out.println(student1.getName() + " received grade: " + grade1);
+                                   ^
+  符号:   方法 getName()
+  位置: 类型为Student的变量 student1
+generated/collections/multi_files/prog_7e999d60/Main.java:19: 错误: 找不到符号
+        System.out.println(student2.getName() + " received grade: " + grade2);
+                                   ^
+  符号:   方法 getName()
+  位置: 类型为Student的变量 student2
+5 个错误

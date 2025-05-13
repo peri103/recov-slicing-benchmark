@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of ArArchiveEntry\n        ArArchiveEntry entry = new ArArchiveEntry(\"example.txt\", 1000);\n\n        // Write the group ID using setGroupId\n        /* write */ entry.setGroupId(12345);\n\n        // Read the group ID using getGroupId\n        /* read */ long groupId = entry.getGroupId();\n\n        // Print the group ID to verify\n        System.out.println(groupId);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setGroupId",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getGroupId"
+    }
+}

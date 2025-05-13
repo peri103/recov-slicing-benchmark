@@ -1,0 +1,6 @@
+generated/lang/complex/prog_98d1f657/Main.java:32: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(futureDate, DateUtils.SECOND);
+                                                                                ^
+  符号:   变量 SECOND
+  位置: 类 DateUtils
+1 个错误

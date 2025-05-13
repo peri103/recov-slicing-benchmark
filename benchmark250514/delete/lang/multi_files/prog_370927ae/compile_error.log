@@ -1,0 +1,16 @@
+generated/lang/multi_files/prog_370927ae/Student.java:6: 错误: 找不到符号
+    private List<Date> attendanceDates = new ArrayList<>();
+                 ^
+  符号:   类 Date
+  位置: 类 Student
+generated/lang/multi_files/prog_370927ae/Student.java:12: 错误: 找不到符号
+    public void addAttendanceDate(Date date) {
+                                  ^
+  符号:   类 Date
+  位置: 类 Student
+generated/lang/multi_files/prog_370927ae/Student.java:16: 错误: 找不到符号
+    public List<Date> getAttendanceDates() {
+                ^
+  符号:   类 Date
+  位置: 类 Student
+3 个错误

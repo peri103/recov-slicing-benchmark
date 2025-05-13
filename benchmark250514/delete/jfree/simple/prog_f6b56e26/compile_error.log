@@ -1,0 +1,9 @@
+generated/jfree/simple/prog_f6b56e26/Main.java:8: 错误: 对于LegendItem(String,Shape,boolean,<空值>,<空值>,<空值>,<空值>), 找不到合适的构造器
+        LegendItem legendItem = new LegendItem("Sample", shape, true, null, null, null, null);
+                                ^
+    构造器 LegendItem.LegendItem(String,String,String,String,Shape,Stroke,Paint)不适用
+      (参数不匹配; Shape无法转换为String)
+    构造器 LegendItem.LegendItem(AttributedString,String,String,String,Shape,Stroke,Paint)不适用
+      (参数不匹配; String无法转换为AttributedString)
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

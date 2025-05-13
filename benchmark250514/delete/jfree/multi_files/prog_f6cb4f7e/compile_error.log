@@ -1,0 +1,16 @@
+generated/jfree/multi_files/prog_f6cb4f7e/Main.java:23: 错误: 找不到符号
+        /* read */ Stroke readStroke = strokeManager.getOutlineStroke();
+                   ^
+  符号:   类 Stroke
+  位置: 类 Main
+generated/jfree/multi_files/prog_f6cb4f7e/StrokeManager.java:14: 错误: 找不到符号
+        /* write */ stepAreaRenderer.setOutlineStroke(stroke);
+                                    ^
+  符号:   方法 setOutlineStroke(Stroke)
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+generated/jfree/multi_files/prog_f6cb4f7e/StrokeManager.java:18: 错误: 找不到符号
+        return stepAreaRenderer.getOutlineStroke();
+                               ^
+  符号:   方法 getOutlineStroke()
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+3 个错误

@@ -1,0 +1,17 @@
+generated/jfree/complex/prog_1cbef99c/Main.java:10: 错误: MeterNeedle是抽象的; 无法实例化
+        MeterNeedle needle = new MeterNeedle();
+                             ^
+generated/jfree/complex/prog_1cbef99c/Main.java:33: 错误: 不兼容的类型: Object无法转换为Comparable
+        for (Comparable key : dataset.getKeys()) {
+                                             ^
+generated/jfree/complex/prog_1cbef99c/Main.java:41: 错误: 找不到符号
+        /* read */ MeterNeedle retrievedNeedle = plot.getSeriesNeedle(0);
+                                                     ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 plot
+generated/jfree/complex/prog_1cbef99c/Main.java:49: 错误: 不兼容的类型: Object无法转换为Comparable
+        for (Comparable key : dataset.getKeys()) {
+                                             ^
+注: generated/jfree/complex/prog_1cbef99c/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+4 个错误

@@ -1,0 +1,10 @@
+generated/math/simple/prog_8bf0eb5b/Main.java:10: 错误: 不兼容的类型: double[][]无法转换为double[]
+        /* write */ RealMatrix columnMatrix = MatrixUtils.createColumnRealMatrix(columnData);
+                                                                                 ^
+generated/math/simple/prog_8bf0eb5b/Main.java:13: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getColumnRealMatrix(columnMatrix, 0);
+                                                      ^
+  符号:   方法 getColumnRealMatrix(RealMatrix,int)
+  位置: 类 MatrixUtils
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

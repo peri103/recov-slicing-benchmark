@@ -1,0 +1,21 @@
+generated/math/complex/prog_ce62dd56/Main.java:11: 错误: 找不到符号
+        RealMatrix matrix = MatrixUtils.createDiagonalMatrix(diagonalValues);
+                                       ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_ce62dd56/Main.java:15: 错误: 找不到符号
+        RealMatrix anotherMatrix = MatrixUtils.createDiagonalMatrix(anotherDiagonalValues);
+                                              ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_ce62dd56/Main.java:31: 错误: 找不到符号
+        double determinant = matrix.getDeterminant();
+                                   ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix
+generated/math/complex/prog_ce62dd56/Main.java:36: 错误: 找不到符号
+        RealMatrix readMatrix = MatrixUtils.getDiagonalMatrix(matrix);
+                                           ^
+  符号:   方法 getDiagonalMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+4 个错误

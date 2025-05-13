@@ -1,0 +1,13 @@
+{
+    "files": {
+        "TarFileHandler.java": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class TarFileHandler {\n    private TarArchiveEntry entry;\n\n    public TarFileHandler(String fileName) {\n        entry = new TarArchiveEntry(fileName);\n    }\n\n    public void setFileMode(int mode) {\n        /* write */ entry.setMode(mode);\n    }\n\n    public int getFileMode() {\n        return entry.getMode();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setMode",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getMode"
+    },
+    "java_code_simple": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        /* write */ entry.setMode(0644);\n        /* read */ int mode = entry.getMode();\n        System.out.println(mode);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n        /* write */ entry.setMode(0644);\n\n        // Adding some unrelated complex code\n        Map<String, Integer> filePermissions = new HashMap<>();\n        filePermissions.put(\"example.txt\", entry.getMode());\n        filePermissions.put(\"anotherFile.txt\", 0755);\n\n        int sumOfModes = 0;\n        for (Map.Entry<String, Integer> fileEntry : filePermissions.entrySet()) {\n            System.out.println(\"File: \" + fileEntry.getKey() + \", Mode: \" + fileEntry.getValue());\n            sumOfModes += fileEntry.getValue();\n        }\n\n        System.out.println(\"Sum of all modes: \" + sumOfModes);\n\n        // More unrelated complex code\n        int complexCalculationResult = 0;\n        for (int i = 0; i < 10; i++) {\n            complexCalculationResult += i * 2;\n        }\n        System.out.println(\"Result of complex calculation: \" + complexCalculationResult);\n\n        /* read */ int mode = entry.getMode();\n        System.out.println(\"Mode of 'example.txt': \" + mode);\n\n        // Additional unrelated code\n        int[] array = {1, 2, 3, 4, 5};\n        int arraySum = 0;\n        for (int num : array) {\n            arraySum += num;\n        }\n        System.out.println(\"Sum of array elements: \" + arraySum);\n    }\n}"
+}

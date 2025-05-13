@@ -1,0 +1,26 @@
+generated/math/multi_files/prog_56ef46da/MatrixOperations.java:11: 错误: 找不到符号
+        this.denseMatrix = MatrixUtils.createRealMatrix(denseData);
+                           ^
+  符号:   变量 MatrixUtils
+  位置: 类 MatrixOperations
+generated/math/multi_files/prog_56ef46da/SparseMatrixHandler.java:8: 错误: 找不到符号
+        /* write */ sparseMatrix = MatrixUtils.createSparseMatrix(rows, columns, data);
+                                              ^
+  符号:   方法 createSparseMatrix(int,int,double[][])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_56ef46da/Main.java:23: 错误: 找不到符号
+        RealMatrix resultMatrix = matrixOperations.performMatrixAddition();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_56ef46da/Main.java:24: 错误: 找不到符号
+        RealVector resultVector = matrixOperations.performVectorOperation();
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_56ef46da/Main.java:27: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = sparseMatrixHandler.getSparseMatrix();
+                   ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+5 个错误

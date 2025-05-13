@@ -1,0 +1,11 @@
+generated/compress/simple/prog_04f17dae/Main.java:6: 错误: 找不到符号
+        /* write */ gzipParams.setCompressedSize(1024);
+                              ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为GzipParameters的变量 gzipParams
+generated/compress/simple/prog_04f17dae/Main.java:7: 错误: 找不到符号
+        /* read */ long compressedSize = gzipParams.getCompressedSize();
+                                                   ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParams
+2 个错误

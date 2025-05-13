@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an immutable map with a key-value pair\n        /* write */ ImmutableMap<String, Integer> map = ImmutableMap.of(\"key1\", 1);\n\n        // Check if the map contains the key \"key1\"\n        /* read */ boolean containsKey = map.containsKey(\"key1\");\n        \n        System.out.println(containsKey);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableMap",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableMap",
+        "read_method": "containsKey"
+    }
+}

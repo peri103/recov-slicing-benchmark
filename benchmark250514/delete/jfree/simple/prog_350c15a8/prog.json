@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYShapeRenderer;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYShapeRenderer renderer = new XYShapeRenderer();\n        Paint paint = Color.RED;\n        /* write */ renderer.setOutlinePaint(paint);\n        /* read */ Paint outlinePaint = renderer.getOutlinePaint();\n        System.out.println(outlinePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYShapeRenderer",
+        "write_method": "setOutlinePaint",
+        "read_class": "org.jfree.chart.renderer.xy.XYShapeRenderer",
+        "read_method": "getOutlinePaint"
+    }
+}

@@ -1,0 +1,6 @@
+generated/jfree/simple/prog_393f05cf/Main.java:11: 错误: 找不到符号
+        /* read */ DecimalFormat readFormat = (DecimalFormat) thermometerPlot.getValueFormat();
+                                                                             ^
+  符号:   方法 getValueFormat()
+  位置: 类型为ThermometerPlot的变量 thermometerPlot
+1 个错误

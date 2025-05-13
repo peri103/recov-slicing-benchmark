@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.ThermometerPlot;\nimport org.jfree.chart.plot.PlotOrientation;\nimport org.jfree.chart.plot.SpiderWebPlot;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ThermometerPlot plot = new ThermometerPlot();\n        SpiderWebPlot spiderPlot = new SpiderWebPlot();\n        ArrayList<Integer> values = new ArrayList<>();\n        \n        // Set units for the thermometer plot\n        /* write */ plot.setUnits(ThermometerPlot.UNITS_CELSIUS);\n        \n        // Some additional operations\n        spiderPlot.setOrientation(PlotOrientation.HORIZONTAL);\n        values.add(10);\n        values.add(20);\n        values.add(30);\n        \n        int sum = 0;\n        for (int value : values) {\n            sum += value;\n        }\n        \n        System.out.println(\"Sum of values: \" + sum);\n        \n        // Retrieve the units from the thermometer plot\n        /* read */ int units = plot.getUnits();\n        System.out.println(\"Thermometer units: \" + units);\n        \n        // Further operations\n        spiderPlot.setOrientation(PlotOrientation.VERTICAL);\n        values.add(40);\n        \n        int maxValue = Integer.MIN_VALUE;\n        for (int value : values) {\n            if (value > maxValue) {\n                maxValue = value;\n            }\n        }\n        \n        System.out.println(\"Max value: \" + maxValue);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.ThermometerPlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        ThermometerPlot plot = new ThermometerPlot();\n        /* write */ plot.setUnits(ThermometerPlot.UNITS_CELSIUS);\n        /* read */ int units = plot.getUnits();\n        System.out.println(units);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ThermometerPlot",
+        "write_method": "setUnits",
+        "read_class": "org.jfree.chart.plot.ThermometerPlot",
+        "read_method": "getUnits"
+    }
+}

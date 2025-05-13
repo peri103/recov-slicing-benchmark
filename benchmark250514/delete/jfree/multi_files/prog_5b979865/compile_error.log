@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_5b979865/Student.java:9: 错误: 找不到符号
+    public void setStrokeForSeries(int series, Stroke stroke) {
+                                               ^
+  符号:   类 Stroke
+  位置: 类 Student
+generated/jfree/multi_files/prog_5b979865/Student.java:13: 错误: 找不到符号
+    public Stroke getStrokeForSeries(int series) {
+           ^
+  符号:   类 Stroke
+  位置: 类 Student
+2 个错误

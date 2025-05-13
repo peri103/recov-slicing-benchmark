@@ -1,0 +1,11 @@
+generated/compress/complex/prog_bb5d1ba5/Main.java:8: 错误: 找不到符号
+        /* write */ gzipParameters.setUncompressedSize(1024);
+                                  ^
+  符号:   方法 setUncompressedSize(int)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/complex/prog_bb5d1ba5/Main.java:39: 错误: 找不到符号
+        /* read */ long uncompressedSize = gzipParameters.getUncompressedSize();
+                                                         ^
+  符号:   方法 getUncompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

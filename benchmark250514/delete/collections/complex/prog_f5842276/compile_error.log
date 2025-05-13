@@ -1,0 +1,16 @@
+generated/collections/complex/prog_f5842276/Main.java:10: 错误: <K,V>TransformedMultiValuedMap(MultiValuedMap<K,V>,Transformer<? super K,? extends K>,Transformer<? super V,? extends V>) 在 TransformedMultiValuedMap 中是 protected 访问控制
+        TransformedMultiValuedMap<String, Integer> transformedMap = new TransformedMultiValuedMap<>(map, null, null);
+                                                                    ^
+  其中, K,V是类型变量:
+    K扩展已在类 TransformedMultiValuedMap中声明的Object
+    V扩展已在类 TransformedMultiValuedMap中声明的Object
+generated/collections/complex/prog_f5842276/Main.java:48: 错误: 无法将接口 MultiValuedMap<K,V>中的方法 remove应用到给定类型;
+        map.remove("letters", 2);
+           ^
+  需要: Object
+  找到: String,int
+  原因: 实际参数列表和形式参数列表长度不同
+  其中, K,V是类型变量:
+    K扩展已在接口 MultiValuedMap中声明的Object
+    V扩展已在接口 MultiValuedMap中声明的Object
+2 个错误

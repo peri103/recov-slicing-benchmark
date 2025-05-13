@@ -1,0 +1,6 @@
+generated/math/simple/prog_a3f0a8b8/Main.java:15: 错误: 找不到符号
+        /* write */ RealMatrix sparseMatrix = MatrixUtils.createSparseMatrix(data);
+                                                         ^
+  符号:   方法 createSparseMatrix(double[][])
+  位置: 类 MatrixUtils
+1 个错误

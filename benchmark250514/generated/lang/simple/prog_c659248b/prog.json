@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date now = new Date();\n        \n        // Round the current date to the nearest day\n        /* write */ Date roundedDate = DateUtils.round(now, Calendar.DAY_OF_MONTH);\n        \n        // Truncate the rounded date to remove any time components\n        /* read */ Date truncatedDate = DateUtils.truncate(roundedDate, Calendar.DAY_OF_MONTH);\n        \n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "round",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

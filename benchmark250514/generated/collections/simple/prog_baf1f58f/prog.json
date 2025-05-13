@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.set.ListOrderedSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        ListOrderedSet<String> set = ListOrderedSet.listOrderedSet(new java.util.LinkedHashSet<>());\n        /* write */ set.add(\"Hello, World!\");\n        /* read */ String value = set.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.set.ListOrderedSet",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.set.ListOrderedSet",
+        "read_method": "get"
+    }
+}

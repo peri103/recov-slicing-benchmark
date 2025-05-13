@@ -1,0 +1,30 @@
+generated/jfree/complex/prog_990b85d5/Main.java:11: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/complex/prog_990b85d5/Main.java:21: 错误: 找不到符号
+            public void addChangeListener(DatasetChangeListener listener) {
+                                          ^
+  符号: 类 DatasetChangeListener
+generated/jfree/complex/prog_990b85d5/Main.java:25: 错误: 找不到符号
+            public void removeChangeListener(DatasetChangeListener listener) {
+                                             ^
+  符号: 类 DatasetChangeListener
+generated/jfree/complex/prog_990b85d5/Main.java:29: 错误: 找不到符号
+            public DatasetGroup getGroup() {
+                   ^
+  符号: 类 DatasetGroup
+generated/jfree/complex/prog_990b85d5/Main.java:34: 错误: 找不到符号
+            public void setGroup(DatasetGroup group) {
+                                 ^
+  符号: 类 DatasetGroup
+generated/jfree/complex/prog_990b85d5/Main.java:58: 错误: 找不到符号
+        /* write */ plot.setDataset(dataset);
+                        ^
+  符号:   方法 setDataset(Dataset)
+  位置: 类型为Plot的变量 plot
+generated/jfree/complex/prog_990b85d5/Main.java:71: 错误: 找不到符号
+        /* read */ Dataset retrievedDataset = plot.getDataset();
+                                                  ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 plot
+7 个错误

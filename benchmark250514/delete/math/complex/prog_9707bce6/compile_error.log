@@ -1,0 +1,21 @@
+generated/math/complex/prog_9707bce6/Main.java:27: 错误: 找不到符号
+        /* write */ RealMatrix triangularMatrix = MatrixUtils.createTriangularMatrix(matrix);
+                                                             ^
+  符号:   方法 createTriangularMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_9707bce6/Main.java:30: 错误: 找不到符号
+        double determinant = squaredMatrix.getDeterminant();
+                                          ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 squaredMatrix
+generated/math/complex/prog_9707bce6/Main.java:31: 错误: 找不到符号
+        RealMatrix inverseMatrix = squaredMatrix.inverse();
+                                                ^
+  符号:   方法 inverse()
+  位置: 类型为RealMatrix的变量 squaredMatrix
+generated/math/complex/prog_9707bce6/Main.java:44: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getTriangularMatrix(triangularMatrix);
+                                                      ^
+  符号:   方法 getTriangularMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+4 个错误

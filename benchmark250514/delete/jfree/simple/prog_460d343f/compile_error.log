@@ -1,0 +1,6 @@
+generated/jfree/simple/prog_460d343f/Main.java:6: 错误: 找不到符号
+        /* write */ plot.setUnits(ThermometerPlot.UNITS_CELSIUS);
+                                                 ^
+  符号:   变量 UNITS_CELSIUS
+  位置: 类 ThermometerPlot
+1 个错误

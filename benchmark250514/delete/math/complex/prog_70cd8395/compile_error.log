@@ -1,0 +1,11 @@
+generated/math/complex/prog_70cd8395/Main.java:12: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createArray2DRowRealMatrix(data);
+                                                   ^
+  符号:   方法 createArray2DRowRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_70cd8395/Main.java:41: 错误: 找不到符号
+        double determinant = matrix.determinant();
+                                   ^
+  符号:   方法 determinant()
+  位置: 类型为RealMatrix的变量 matrix
+2 个错误

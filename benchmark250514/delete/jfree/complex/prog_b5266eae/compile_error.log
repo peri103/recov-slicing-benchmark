@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_b5266eae/Main.java:21: 错误: 找不到符号
+            categoryAxis.addCategoryLabel(category);
+                        ^
+  符号:   方法 addCategoryLabel(String)
+  位置: 类型为CategoryAxis的变量 categoryAxis
+1 个错误

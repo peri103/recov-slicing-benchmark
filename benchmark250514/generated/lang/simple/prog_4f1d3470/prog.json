@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.EqualsBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Object left = new Object();\n        Object right = new Object();\n        \n        EqualsBuilder equalsBuilder = new EqualsBuilder();\n        /* write */ equalsBuilder.append(left, left); // Using the append method to compare two objects\n        /* read */ boolean isEqual = equalsBuilder.isEquals(); // Checking if the objects are equal\n        \n        System.out.println(isEqual);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.EqualsBuilder",
+        "read_method": "isEquals"
+    }
+}

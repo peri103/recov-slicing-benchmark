@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_28d68efc/CustomLabelGenerator.java:12: 错误: 找不到符号
+        /* write */ labelGenerator.setNumberFormat(format);
+                                  ^
+  符号:   方法 setNumberFormat(NumberFormat)
+  位置: 类型为StandardPieSectionLabelGenerator的变量 labelGenerator
+1 个错误

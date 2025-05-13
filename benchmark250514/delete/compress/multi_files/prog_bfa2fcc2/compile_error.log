@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_bfa2fcc2/CpioEntryHandler.java:11: 错误: 找不到符号
+        /* write */ entry.setUnixMode(mode);
+                         ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/multi_files/prog_bfa2fcc2/CpioEntryHandler.java:15: 错误: 找不到符号
+        return entry.getUnixMode();
+                    ^
+  符号:   方法 getUnixMode()
+  位置: 类型为CpioArchiveEntry的变量 entry
+2 个错误

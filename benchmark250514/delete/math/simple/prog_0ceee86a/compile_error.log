@@ -1,0 +1,11 @@
+generated/math/simple/prog_0ceee86a/Main.java:12: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createBlockRealMatrix(data);
+                                                   ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/simple/prog_0ceee86a/Main.java:14: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getBlockRealMatrix(data, 0, 0, 3, 3);
+                                                      ^
+  符号:   方法 getBlockRealMatrix(double[][],int,int,int,int)
+  位置: 类 MatrixUtils
+2 个错误

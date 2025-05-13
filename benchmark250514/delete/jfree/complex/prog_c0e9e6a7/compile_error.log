@@ -1,0 +1,8 @@
+generated/jfree/complex/prog_c0e9e6a7/Main.java:16: 错误: 不兼容的类型: CategoryAxis无法转换为ValueAxis
+        plot.setDomainAxis(domainAxis);
+                           ^
+generated/jfree/complex/prog_c0e9e6a7/Main.java:22: 错误: 不兼容的类型: LegendItemCollection无法转换为LegendItem
+        legendItems.add(new LegendItemCollection());
+                        ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

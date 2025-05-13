@@ -1,0 +1,41 @@
+generated/jfree/complex/prog_279a6f54/Main.java:11: 错误: 找不到符号
+        /* write */ renderer.setBaseShapesVisible(true);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYStepRenderer的变量 renderer
+generated/jfree/complex/prog_279a6f54/Main.java:15: 错误: 找不到符号
+        visibilityMap.put("stepRenderer", renderer.getBaseShapesVisible());
+                                                  ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYStepRenderer的变量 renderer
+generated/jfree/complex/prog_279a6f54/Main.java:16: 错误: 找不到符号
+        visibilityMap.put("lineRenderer", lineRenderer.getBaseShapesVisible());
+                                                      ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_279a6f54/Main.java:18: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(false);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_279a6f54/Main.java:19: 错误: 找不到符号
+        visibilityMap.put("lineRenderer", lineRenderer.getBaseShapesVisible());
+                                                      ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_279a6f54/Main.java:30: 错误: 找不到符号
+            lineRenderer.setBaseShapesVisible(i % 2 == 0);
+                        ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_279a6f54/Main.java:31: 错误: 找不到符号
+            visibilityMap.put("lineRenderer_" + i, lineRenderer.getBaseShapesVisible());
+                                                               ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_279a6f54/Main.java:34: 错误: 找不到符号
+        /* read */ boolean isVisible = renderer.getBaseShapesVisible();
+                                               ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYStepRenderer的变量 renderer
+8 个错误

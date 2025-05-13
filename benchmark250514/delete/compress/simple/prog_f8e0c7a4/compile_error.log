@@ -1,0 +1,11 @@
+generated/compress/simple/prog_f8e0c7a4/Main.java:6: 错误: 找不到符号
+        /* write */ gzipParams.setCRC32(123456789);
+                              ^
+  符号:   方法 setCRC32(int)
+  位置: 类型为GzipParameters的变量 gzipParams
+generated/compress/simple/prog_f8e0c7a4/Main.java:7: 错误: 找不到符号
+        /* read */ long crcValue = gzipParams.getCRC32();
+                                             ^
+  符号:   方法 getCRC32()
+  位置: 类型为GzipParameters的变量 gzipParams
+2 个错误

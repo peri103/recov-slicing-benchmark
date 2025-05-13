@@ -1,0 +1,11 @@
+generated/compress/complex/prog_23eee7e8/Main.java:7: 错误: 找不到符号
+        CpioArchiveEntry entry = new CpioArchiveEntry(CpioArchiveEntry.CPIO_NEW);
+                                                                      ^
+  符号:   变量 CPIO_NEW
+  位置: 类 CpioArchiveEntry
+generated/compress/complex/prog_23eee7e8/Main.java:17: 错误: 找不到符号
+            CpioArchiveEntry tempEntry = new CpioArchiveEntry(CpioArchiveEntry.CPIO_NEW);
+                                                                              ^
+  符号:   变量 CPIO_NEW
+  位置: 类 CpioArchiveEntry
+2 个错误

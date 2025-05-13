@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_b86fc9c1/Main.java:43: 错误: 找不到符号
+        plot.setDomainGridlinePosition(CategoryPlot.DomainGridlinePosition.MIDDLE);
+                                                   ^
+  符号:   变量 DomainGridlinePosition
+  位置: 类 CategoryPlot
+1 个错误

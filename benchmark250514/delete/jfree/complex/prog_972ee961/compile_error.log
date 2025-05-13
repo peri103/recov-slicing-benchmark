@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_972ee961/Main.java:28: 错误: 找不到符号
+        lineAndShapeRenderer.setBaseShapesVisible(true);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineAndShapeRenderer
+generated/jfree/complex/prog_972ee961/Main.java:41: 错误: 找不到符号
+        boolean baseShapesVisible = lineAndShapeRenderer.getBaseShapesVisible();
+                                                        ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineAndShapeRenderer
+2 个错误

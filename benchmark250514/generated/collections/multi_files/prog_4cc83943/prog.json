@@ -1,0 +1,13 @@
+{
+    "files": {
+        "Course.java": "import org.apache.commons.collections4.bag.TreeBag;\n\npublic class Course {\n    private TreeBag<String> enrolledStudents = new TreeBag<>();\n\n    public void enrollStudent(String studentName) {\n        /* write */ enrolledStudents.add(studentName);\n    }\n\n    public int getEnrollmentCount(String studentName) {\n        return enrolledStudents.getCount(studentName);\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.collections4.bag.TreeBag",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.bag.TreeBag",
+        "read_method": "getCount"
+    },
+    "java_code_simple": "import org.apache.commons.collections4.bag.TreeBag;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeBag<String> bag = new TreeBag<>();\n        /* write */ bag.add(\"example\");\n        /* read */ int count = bag.getCount(\"example\");\n        System.out.println(count);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.collections4.bag.TreeBag;\nimport java.util.HashMap;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeBag<String> bag = new TreeBag<>();\n        HashMap<String, Integer> map = new HashMap<>();\n        ArrayList<String> list = new ArrayList<>();\n\n        // Adding some unrelated operations\n        map.put(\"key1\", 10);\n        map.put(\"key2\", 20);\n        list.add(\"item1\");\n        list.add(\"item2\");\n\n        /* write */ bag.add(\"example\");\n\n        // Perform operations on the map\n        int valueFromMap = map.get(\"key1\");\n        System.out.println(\"Value from map: \" + valueFromMap);\n\n        // Perform operations on the list\n        for (String item : list) {\n            System.out.println(\"List item: \" + item);\n        }\n\n        // Adding more unrelated operations\n        map.put(\"key3\", 30);\n        list.add(\"item3\");\n\n        // Accessing the count from the bag\n        int unrelatedCount = bag.getCount(\"unrelated\");\n        System.out.println(\"Count of unrelated: \" + unrelatedCount);\n\n        /* read */ int count = bag.getCount(\"example\");\n        System.out.println(count);\n\n        // Additional operations after the read\n        map.remove(\"key2\");\n        list.remove(\"item1\");\n\n        for (String key : map.keySet()) {\n            System.out.println(\"Map key: \" + key);\n        }\n\n        for (String item : list) {\n            System.out.println(\"Remaining list item: \" + item);\n        }\n    }\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.chart.axis.CategoryAxis;\nimport org.jfree.chart.axis.ValueAxis;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Axis axis = new NumberAxis();\n        Axis categoryAxis = new CategoryAxis(\"Category\");\n        ValueAxis valueAxis = new NumberAxis(\"Values\");\n        ArrayList<Axis> axisList = new ArrayList<>();\n\n        /* write */ axis.setLabel(\"X-Axis Label\");\n        axisList.add(axis);\n        axisList.add(categoryAxis);\n        axisList.add(valueAxis);\n\n        for (Axis ax : axisList) {\n            System.out.println(\"Axis label: \" + ax.getLabel());\n        }\n\n        String labelToUpdate = \"Updated Value Axis Label\";\n        valueAxis.setLabel(labelToUpdate);\n\n        Axis retrievedAxis = axisList.get(0);\n        String label = retrievedAxis.getLabel();\n\n        int sumOfLengths = 0;\n        for (Axis ax : axisList) {\n            sumOfLengths += ax.getLabel().length();\n        }\n\n        System.out.println(\"Sum of label lengths: \" + sumOfLengths);\n\n        /* read */ String label = axis.getLabel();\n        System.out.println(label);\n\n        for (int i = 0; i < axisList.size(); i++) {\n            Axis currentAxis = axisList.get(i);\n            System.out.println(\"Axis \" + i + \" label: \" + currentAxis.getLabel());\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        Axis axis = new NumberAxis();\n        /* write */ axis.setLabel(\"X-Axis Label\");\n        /* read */ String label = axis.getLabel();\n        System.out.println(label);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.Axis",
+        "write_method": "setLabel",
+        "read_class": "org.jfree.chart.axis.Axis",
+        "read_method": "getLabel"
+    }
+}

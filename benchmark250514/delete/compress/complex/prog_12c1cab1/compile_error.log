@@ -1,0 +1,9 @@
+generated/compress/complex/prog_12c1cab1/Main.java:35: 错误: 不兼容的类型: Date无法转换为long
+        /* read */ long readModTime = entry.getModTime();
+                                                      ^
+generated/compress/complex/prog_12c1cab1/Main.java:43: 错误: 二元运算符 '+' 的操作数类型错误
+            totalModTime += e.getModTime();
+                         ^
+  第一个类型:  long
+  第二个类型: Date
+2 个错误

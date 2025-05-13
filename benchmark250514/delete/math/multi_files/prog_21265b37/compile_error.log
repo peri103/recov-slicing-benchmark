@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_21265b37/Course.java:19: 错误: 找不到符号
+        RealVector rowVector = MatrixUtils.createRowRealVector(newGrades);
+                                          ^
+  符号:   方法 createRowRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_21265b37/Main.java:12: 错误: 找不到符号
+        RealVector grades = course.getGrades(1);
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+2 个错误

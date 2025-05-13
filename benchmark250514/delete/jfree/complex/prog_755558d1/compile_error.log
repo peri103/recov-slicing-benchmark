@@ -1,0 +1,8 @@
+generated/jfree/complex/prog_755558d1/Main.java:18: 错误: 对于setSeriesShapesVisible(boolean), 找不到合适的方法
+            lineRenderer.setSeriesShapesVisible(width % 2 == 0);
+                        ^
+    方法 XYLineAndShapeRenderer.setSeriesShapesVisible(int,boolean)不适用
+      (实际参数列表和形式参数列表长度不同)
+    方法 XYLineAndShapeRenderer.setSeriesShapesVisible(int,Boolean)不适用
+      (实际参数列表和形式参数列表长度不同)
+1 个错误

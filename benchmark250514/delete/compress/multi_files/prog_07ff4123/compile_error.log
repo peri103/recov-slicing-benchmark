@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_07ff4123/ArchiveEntryWrapper.java:11: 错误: 找不到符号
+        /* write */ entry.setUserId(userId);
+                         ^
+  符号:   方法 setUserId(long)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/multi_files/prog_07ff4123/ArchiveEntryManager.java:18: 错误: 找不到符号
+        /* write */ entry.setUserId(userId);
+                         ^
+  符号:   方法 setUserId(long)
+  位置: 类型为ArArchiveEntry的变量 entry
+2 个错误

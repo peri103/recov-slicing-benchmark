@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.Range;\nimport com.google.common.collect.TreeRangeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeRangeMap<Integer, String> rangeMap = TreeRangeMap.create();\n        \n        /* write */ rangeMap.put(Range.closed(1, 10), \"Hello\");\n        \n        /* read */ String value = rangeMap.get(5);\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.TreeRangeMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.TreeRangeMap",
+        "read_method": "get"
+    }
+}

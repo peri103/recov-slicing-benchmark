@@ -1,0 +1,11 @@
+generated/compress/complex/prog_7a91d32c/Main.java:32: 错误: 找不到符号
+        /* write */ entry.setLastModified(lastModifiedDate);
+                         ^
+  符号:   方法 setLastModified(Date)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_7a91d32c/Main.java:54: 错误: 找不到符号
+        /* read */ Date retrievedDate = entry.getLastModified();
+                                             ^
+  符号:   方法 getLastModified()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

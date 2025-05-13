@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_bac30f49/Main.java:13: 错误: 找不到符号
+        /* write */ waferMapPlot.setPaintScale(paintScale);
+                                ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 waferMapPlot
+generated/jfree/simple/prog_bac30f49/Main.java:15: 错误: 找不到符号
+        /* read */ PaintScale retrievedPaintScale = waferMapPlot.getPaintScale();
+                                                                ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 waferMapPlot
+2 个错误

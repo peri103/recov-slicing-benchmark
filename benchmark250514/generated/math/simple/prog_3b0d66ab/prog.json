@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.DefaultRealMatrixChangingVisitor;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the visitor\n        DefaultRealMatrixChangingVisitor visitor = new DefaultRealMatrixChangingVisitor() {\n            private double sum = 0;\n\n            @Override\n            public double visit(int row, int column, double value) {\n                sum += value; // Example operation\n                return value;\n            }\n\n            @Override\n            public double end() {\n                return sum;\n            }\n        };\n\n        // Example matrix values\n        double[][] matrixValues = {\n            {1.0, 2.0, 3.0},\n            {4.0, 5.0, 6.0},\n            {7.0, 8.0, 9.0}\n        };\n\n        // Simulating the visit method\n        for (int i = 0; i < matrixValues.length; i++) {\n            for (int j = 0; j < matrixValues[i].length; j++) {\n                /* write */ visitor.visit(i, j, matrixValues[i][j]);\n            }\n        }\n\n        // Using the end method\n        /* read */ double result = visitor.end();\n\n        // Output the result\n        System.out.println(\"Sum of matrix elements: \" + result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.DefaultRealMatrixChangingVisitor",
+        "write_method": "visit",
+        "read_class": "org.apache.commons.math3.linear.DefaultRealMatrixChangingVisitor",
+        "read_method": "end"
+    }
+}

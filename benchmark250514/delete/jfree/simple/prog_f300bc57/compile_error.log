@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_f300bc57/Main.java:9: 错误: 找不到符号
+        /* write */ plot.setPaint(color);
+                        ^
+  符号:   方法 setPaint(Color)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/simple/prog_f300bc57/Main.java:10: 错误: 找不到符号
+        /* read */ Color retrievedColor = (Color) plot.getPaint();
+                                                      ^
+  符号:   方法 getPaint()
+  位置: 类型为WaferMapPlot的变量 plot
+2 个错误

@@ -1,0 +1,9 @@
+generated/math/multi_files/prog_4fb96add/MatrixOperations.java:20: 错误: 找不到符号
+        return this.matrix.getDeterminant();
+                          ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 matrix
+generated/math/multi_files/prog_4fb96add/Main.java:22: 错误: name 在 Student 中是 private 访问控制
+        System.out.println("Average grade for " + student.name + ": " + averageGrade);
+                                                         ^
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.BiMap;\nimport com.google.common.collect.HashBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        BiMap<String, Integer> biMap = HashBiMap.create();\n        /* write */ biMap.put(\"key\", 42);\n        /* read */ Integer value = biMap.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.BiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.BiMap",
+        "read_method": "get"
+    }
+}

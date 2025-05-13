@@ -1,0 +1,4 @@
+generated/jfree/multi_files/prog_f81b9520/PlotManager.java:9: 错误: <匿名PlotManager$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        plot = new Plot() {
+                          ^
+1 个错误

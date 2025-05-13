@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringWriter;\nimport java.io.IOException;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Create a StringWriter to capture CSV output\n            StringWriter writer = new StringWriter();\n\n            // Initialize CSVFormat with escape character\n            /* write */ CSVFormat format = CSVFormat.DEFAULT.withEscape('\\\\');\n\n            // Use CSVPrinter to write data with the specified format\n            try (CSVPrinter printer = new CSVPrinter(writer, format)) {\n                printer.printRecord(Arrays.asList(\"value1\", \"value2\"));\n            }\n\n            // Convert the written CSV data to CSVRecord for reading\n            String csvData = writer.toString();\n            CSVRecord record = CSVFormat.DEFAULT.parse(new java.io.StringReader(csvData)).getRecords().get(0);\n\n            // Read and print the CSVRecord\n            /* read */ String recordString = record.toString();\n            System.out.println(recordString);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withEscape",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSortedSet;\nimport com.google.common.collect.ImmutableList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableSortedSet.Builder<Integer> builder = ImmutableSortedSet.naturalOrder();\n        /* write */ builder.add(42);\n        \n        ImmutableList.Builder<String> listBuilder = ImmutableList.builder();\n        listBuilder.add(\"Hello\");\n        listBuilder.add(\"World\");\n        ImmutableList<String> stringList = listBuilder.build();\n        \n        HashMap<String, Integer> hashMap = new HashMap<>();\n        hashMap.put(\"Key1\", 100);\n        hashMap.put(\"Key2\", 200);\n        \n        int sum = 0;\n        for (String str : stringList) {\n            sum += str.length();\n        }\n        \n        for (int i = 0; i < 5; i++) {\n            hashMap.put(\"Key\" + (i + 3), i * 10);\n        }\n        \n        ImmutableSortedSet<Integer> sortedSet = builder.build();\n        \n        for (Integer num : sortedSet) {\n            sum += num;\n        }\n        \n        /* read */ boolean containsValue = sortedSet.contains(42);\n        System.out.println(\"Contains 42: \" + containsValue);\n        \n        System.out.println(\"Sum of lengths and numbers: \" + sum);\n        \n        for (String key : hashMap.keySet()) {\n            System.out.println(key + \": \" + hashMap.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.ImmutableSortedSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableSortedSet.Builder<Integer> builder = ImmutableSortedSet.naturalOrder();\n        /* write */ builder.add(42);\n        ImmutableSortedSet<Integer> sortedSet = builder.build();\n        /* read */ boolean containsValue = sortedSet.contains(42);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSortedSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableSortedSet",
+        "read_method": "contains"
+    }
+}

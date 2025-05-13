@@ -1,0 +1,26 @@
+generated/compress/complex/prog_39917629/Main.java:21: 错误: 找不到符号
+        /* write */ entry.setUnixMode(644);
+                         ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_39917629/Main.java:25: 错误: 找不到符号
+            fileModes.put(ent.getName(), ent.getUnixMode());
+                                            ^
+  符号:   方法 getUnixMode()
+  位置: 类型为ArArchiveEntry的变量 ent
+generated/compress/complex/prog_39917629/Main.java:34: 错误: 找不到符号
+        /* read */ int mode = entry.getUnixMode();
+                                   ^
+  符号:   方法 getUnixMode()
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_39917629/Main.java:46: 错误: 找不到符号
+                ent.setUnixMode(755);
+                   ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为ArArchiveEntry的变量 ent
+generated/compress/complex/prog_39917629/Main.java:53: 错误: 找不到符号
+            System.out.println("File: " + ent.getName() + ", Mode: " + ent.getUnixMode());
+                                                                          ^
+  符号:   方法 getUnixMode()
+  位置: 类型为ArArchiveEntry的变量 ent
+5 个错误

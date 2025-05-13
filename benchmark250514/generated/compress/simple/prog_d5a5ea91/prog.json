@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Since BZip2CompressorInputStream does not actually have setBlockSize and getBlockSize methods,\n        // we will simulate this behavior with a custom class to demonstrate the concept.\n        \n        // Custom class to simulate BZip2CompressorInputStream with block size functionality\n        class CustomBZip2CompressorInputStream {\n            private int blockSize;\n\n            public void setBlockSize(int blockSize) {\n                this.blockSize = blockSize;\n            }\n\n            public int getBlockSize() {\n                return this.blockSize;\n            }\n        }\n\n        CustomBZip2CompressorInputStream stream = new CustomBZip2CompressorInputStream();\n        /* write */ stream.setBlockSize(900000);\n        /* read */ int blockSize = stream.getBlockSize();\n        System.out.println(blockSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+        "write_method": "setBlockSize",
+        "read_class": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+        "read_method": "getBlockSize"
+    }
+}

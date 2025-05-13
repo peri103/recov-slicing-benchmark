@@ -1,0 +1,36 @@
+generated/jfree/complex/prog_71ac41d0/Main.java:18: 错误: 找不到符号
+        /* write */ renderer.setBaseShapesVisible(true);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYItemRenderer的变量 renderer
+generated/jfree/complex/prog_71ac41d0/Main.java:21: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(false);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_71ac41d0/Main.java:22: 错误: 找不到符号
+        visibilityList.add(lineRenderer.getBaseShapesVisible());
+                                       ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_71ac41d0/Main.java:27: 错误: 找不到符号
+                lineRenderer.setBaseShapesVisible(true);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_71ac41d0/Main.java:29: 错误: 找不到符号
+                lineRenderer.setBaseShapesVisible(false);
+                            ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_71ac41d0/Main.java:31: 错误: 找不到符号
+            visibilityList.add(lineRenderer.getBaseShapesVisible());
+                                           ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_71ac41d0/Main.java:35: 错误: 找不到符号
+        /* read */ boolean isVisible = renderer.getBaseShapesVisible();
+                                               ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYItemRenderer的变量 renderer
+7 个错误

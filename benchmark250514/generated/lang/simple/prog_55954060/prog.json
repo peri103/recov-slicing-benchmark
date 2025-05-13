@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.text.SimpleDateFormat;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a date object\n        Date date = new Date();\n\n        // Add years to the date\n        /* write */ date = DateUtils.addYears(date, 5);\n\n        // Truncate the date to remove time components\n        /* read */ Date truncatedDate = DateUtils.truncate(date, java.util.Calendar.DAY_OF_MONTH);\n\n        // Format and print the truncated date\n        SimpleDateFormat dateFormat = new SimpleDateFormat(\"yyyy-MM-dd\");\n        System.out.println(dateFormat.format(truncatedDate));\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addYears",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

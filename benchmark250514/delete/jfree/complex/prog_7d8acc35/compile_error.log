@@ -1,0 +1,21 @@
+generated/jfree/complex/prog_7d8acc35/Main.java:17: 错误: 找不到符号
+        valueAxis.setAutoRangeIncludesZero(true);
+                 ^
+  符号:   方法 setAutoRangeIncludesZero(boolean)
+  位置: 类型为ValueAxis的变量 valueAxis
+generated/jfree/complex/prog_7d8acc35/Main.java:29: 错误: 找不到符号
+            System.out.println("Tick label position: " + axis.getTickLabelPosition(i));
+                                                             ^
+  符号:   方法 getTickLabelPosition(int)
+  位置: 类型为CategoryAxis的变量 axis
+generated/jfree/complex/prog_7d8acc35/Main.java:37: 错误: 找不到符号
+        valueAxis.setTickUnit(new org.jfree.chart.axis.NumberTickUnit(10.0));
+                 ^
+  符号:   方法 setTickUnit(NumberTickUnit)
+  位置: 类型为ValueAxis的变量 valueAxis
+generated/jfree/complex/prog_7d8acc35/Main.java:38: 错误: 找不到符号
+        System.out.println("Tick unit: " + valueAxis.getTickUnit().getSize());
+                                                    ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 valueAxis
+4 个错误

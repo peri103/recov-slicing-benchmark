@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSortedMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize builder to construct ImmutableSortedMultiset\n        ImmutableSortedMultiset.Builder<String> builder = ImmutableSortedMultiset.naturalOrder();\n        \n        // Add elements to the builder\n        /* write */ builder.add(\"apple\").add(\"banana\").add(\"apple\");\n        \n        // Build the ImmutableSortedMultiset\n        ImmutableSortedMultiset<String> multiset = builder.build();\n        \n        // Read the count of a specific element\n        /* read */ int appleCount = multiset.count(\"apple\");\n        \n        // Output the count of \"apple\"\n        System.out.println(appleCount);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSortedMultiset",
+        "write_method": "builder",
+        "read_class": "com.google.common.collect.ImmutableSortedMultiset",
+        "read_method": "count"
+    }
+}

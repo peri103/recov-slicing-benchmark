@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a CSVFormat instance\n        CSVFormat format = CSVFormat.DEFAULT;\n\n        // Modify the CSVFormat instance using the write method\n        /* write */ format = format.withAllowMissingColumnNames(true);\n\n        // Simulate reading a CSVRecord (mocking the record for demonstration purposes)\n        CSVRecord record = new CSVRecord(null, null, format);\n\n        // Use the read method to check if a column is set\n        /* read */ boolean isSet = record.isSet(\"exampleColumn\");\n\n        // Print the result of the read operation\n        System.out.println(isSet);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAllowMissingColumnNames",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

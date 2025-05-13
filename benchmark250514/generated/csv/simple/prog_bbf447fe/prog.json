@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\n\nimport java.io.IOException;\nimport java.io.StringReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Step 1: Use CSVFormat to configure the comment marker\n            CSVFormat format = CSVFormat.DEFAULT;\n            /* write */ format = format.withCommentMarker('#');\n\n            // Step 2: Prepare a CSV input string containing a comment\n            String csvData = \"# This is a comment\\nheader1,header2\\nvalue1,value2\";\n\n            // Step 3: Parse the CSV data\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), format);\n\n            // Step 4: Iterate over the records and retrieve the comment\n            for (CSVRecord record : parser) {\n                /* read */ String comment = record.getComment();\n                if (comment != null) {\n                    System.out.println(comment);\n                }\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withCommentMarker",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "getComment"
+    }
+}

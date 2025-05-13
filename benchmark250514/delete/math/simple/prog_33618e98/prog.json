@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\nimport org.apache.commons.math3.linear.RealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a matrix with one row\n        double[][] matrixData = {{0.0, 0.0, 0.0}};\n        RealMatrix matrix = MatrixUtils.createRealMatrix(matrixData);\n\n        // Create a row real vector\n        RealVector vector = MatrixUtils.createRowRealVector(new double[]{1.0, 2.0, 3.0});\n        /* write */ matrix.setRowVector(0, vector);\n\n        // Read the row real vector\n        /* read */ RealVector readVector = matrix.getRowVector(0);\n        System.out.println(readVector);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createRowRealVector",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getRowRealVector"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingList;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        List<Integer> baseList = new ArrayList<>();\n        ForwardingList<Integer> forwardingList = new ForwardingList<Integer>() {\n            @Override\n            protected List<Integer> delegate() {\n                return baseList;\n            }\n        };\n\n        /* write */ forwardingList.add(42);\n        /* read */ int value = forwardingList.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingList",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ForwardingList",
+        "read_method": "get"
+    }
+}

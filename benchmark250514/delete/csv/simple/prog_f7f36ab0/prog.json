@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CSVFormat object\n        CSVFormat format = CSVFormat.DEFAULT;\n\n        // Use the write method to modify the format\n        /* write */ format = format.withIgnoreSurroundingSpaces(true);\n\n        // Simulate a CSV record for demonstration purposes\n        // Since CSVRecord requires actual CSV parsing, we'll mock this part\n        CSVRecord record = new MockCSVRecord(format);\n\n        // Use the read method to check consistency\n        /* read */ boolean isConsistent = record.isConsistent();\n\n        // Output the result\n        System.out.println(\"Is the CSV record consistent? \" + isConsistent);\n    }\n}\n\n// Mock class to simulate CSVRecord behavior for demonstration\nclass MockCSVRecord extends CSVRecord {\n    private final CSVFormat format;\n\n    public MockCSVRecord(CSVFormat format) {\n        super(null, null, null, null, null, null);\n        this.format = format;\n    }\n\n    @Override\n    public boolean isConsistent() {\n        // Simulate consistency check based on format settings\n        // In reality, this would involve actual CSV parsing logic\n        return format.getIgnoreSurroundingSpaces();\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreSurroundingSpaces",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isConsistent"
+    }
+}

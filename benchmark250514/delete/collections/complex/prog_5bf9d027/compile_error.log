@@ -1,0 +1,21 @@
+generated/collections/complex/prog_5bf9d027/Main.java:11: 错误: 类型变量数目错误; 需要2
+        TransformedMap<String, String, String> transformedMap = TransformedMap.transformedMap(originalMap, String::toUpperCase, String::toLowerCase);
+                      ^
+generated/collections/complex/prog_5bf9d027/Main.java:42: 错误: 类型变量数目错误; 需要2
+        TransformedMap<String, Integer, Integer> multiplierMap = TransformedMap.transformedMap(new HashMap<>(), String::length, val -> val * 2);
+                      ^
+generated/collections/complex/prog_5bf9d027/Main.java:42: 错误: 无法将类 TransformedMap<K#2,V#2>中的方法 transformedMap应用到给定类型;
+        TransformedMap<String, Integer, Integer> multiplierMap = TransformedMap.transformedMap(new HashMap<>(), String::length, val -> val * 2);
+                                                                               ^
+  需要: Map<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>
+  找到: HashMap<Object,Object>,String::length,(val)->val * 2
+  原因: 推论变量 K#3 具有不兼容的上限
+    下限：String,Object
+    下限：Integer
+  其中, K#1,V#1,K#2,V#2,K#3是类型变量:
+    K#1扩展已在方法 <K#1,V#1>transformedMap(Map<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>)中声明的Object
+    V#1扩展已在方法 <K#1,V#1>transformedMap(Map<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>)中声明的Object
+    K#2扩展已在类 TransformedMap中声明的Object
+    V#2扩展已在类 TransformedMap中声明的Object
+    K#3扩展已在类 HashMap中声明的Object
+3 个错误

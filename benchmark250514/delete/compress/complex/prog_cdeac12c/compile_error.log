@@ -1,0 +1,21 @@
+generated/compress/complex/prog_cdeac12c/Main.java:19: 错误: 找不到符号
+        /* write */ entry.setGroupName("developers");
+                         ^
+  符号:   方法 setGroupName(String)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_cdeac12c/Main.java:33: 错误: 找不到符号
+        String groupName = entry.getGroupName();
+                                ^
+  符号:   方法 getGroupName()
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_cdeac12c/Main.java:39: 错误: 找不到符号
+            tempEntry.setGroupName("group" + i);
+                     ^
+  符号:   方法 setGroupName(String)
+  位置: 类型为ArArchiveEntry的变量 tempEntry
+generated/compress/complex/prog_cdeac12c/Main.java:40: 错误: 找不到符号
+            System.out.println("Temp Entry Group Name: " + tempEntry.getGroupName());
+                                                                    ^
+  符号:   方法 getGroupName()
+  位置: 类型为ArArchiveEntry的变量 tempEntry
+4 个错误

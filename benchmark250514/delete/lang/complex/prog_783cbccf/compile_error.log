@@ -1,0 +1,8 @@
+generated/lang/complex/prog_783cbccf/Main.java:34: 错误: 找不到符号
+        tokenizer.setTrimmerMatcher(StrTokenizer.DEFAULT_TRIMMER_MATCHER);
+                                                ^
+  符号:   变量 DEFAULT_TRIMMER_MATCHER
+  位置: 类 StrTokenizer
+注: generated/lang/complex/prog_783cbccf/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_48cf3e83/Main.java:25: 错误: 找不到符号
+        NumberTickUnit retrievedAnotherTickUnit = anotherAxisConfig.getAxisTickUnit();
+        ^
+  符号:   类 NumberTickUnit
+  位置: 类 Main
+generated/jfree/multi_files/prog_48cf3e83/Main.java:37: 错误: 找不到符号
+        /* read */ NumberTickUnit retrievedTickUnit = axisConfig.getAxisTickUnit();
+                   ^
+  符号:   类 NumberTickUnit
+  位置: 类 Main
+2 个错误

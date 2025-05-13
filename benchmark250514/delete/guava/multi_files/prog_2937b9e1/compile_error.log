@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_2937b9e1/Main.java:28: 错误: 找不到符号
+        ImmutableSortedSet<Integer> sortedSet = setOperations.buildSet();
+        ^
+  符号:   类 ImmutableSortedSet
+  位置: 类 Main
+1 个错误

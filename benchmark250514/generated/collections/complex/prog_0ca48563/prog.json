@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.bag.TreeBag;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeBag<String> bag = new TreeBag<>();\n        HashMap<String, Integer> fruitCountMap = new HashMap<>();\n\n        // Add multiple fruits to the TreeBag\n        bag.add(\"banana\");\n        bag.add(\"orange\");\n        /* write */ bag.add(\"apple\");\n        bag.add(\"banana\");\n        bag.add(\"apple\");\n        \n        // Populate the HashMap with the count of each fruit\n        fruitCountMap.put(\"banana\", bag.getCount(\"banana\"));\n        fruitCountMap.put(\"orange\", bag.getCount(\"orange\"));\n        \n        // Perform some operations with the HashMap\n        for (String fruit : fruitCountMap.keySet()) {\n            System.out.println(\"Count of '\" + fruit + \"': \" + fruitCountMap.get(fruit));\n        }\n\n        // Perform some unrelated operations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n\n        // Read the count of 'apple' from the TreeBag\n        /* read */ int appleCount = bag.getCount(\"apple\");\n        System.out.println(\"Count of 'apple': \" + appleCount);\n\n        // Additional complex operations\n        int product = 1;\n        for (int i = 1; i <= 5; i++) {\n            product *= i;\n        }\n        System.out.println(\"Product of numbers from 1 to 5: \" + product);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.bag.TreeBag;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeBag<String> bag = new TreeBag<>();\n        /* write */ bag.add(\"apple\");\n        /* read */ int count = bag.getCount(\"apple\");\n        System.out.println(\"Count of 'apple': \" + count);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.bag.TreeBag",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.bag.TreeBag",
+        "read_method": "getCount"
+    }
+}

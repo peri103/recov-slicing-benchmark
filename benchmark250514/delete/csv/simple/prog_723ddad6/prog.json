@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with trimming enabled\n        CSVFormat format = CSVFormat.DEFAULT.withTrim();\n\n        // Create a CSVRecord for demonstration purposes\n        // Normally, CSVRecord is obtained by parsing CSV data\n        // Here we simulate a record with two fields: \" Name \" and \" Age \"\n        String[] recordData = {\" Name \", \" Age \"};\n        CSVRecord record = CSVFormat.DEFAULT.parse(Arrays.asList(recordData)).getRecords().get(0);\n\n        /* write */ format = format.withTrim();\n\n        // Check if a field is mapped\n        /* read */ boolean isMapped = record.isMapped(\"Name\");\n\n        // Output the result\n        System.out.println(\"Is 'Name' mapped: \" + isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withTrim",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

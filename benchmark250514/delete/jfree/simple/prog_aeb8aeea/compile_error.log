@@ -1,0 +1,5 @@
+generated/jfree/simple/prog_aeb8aeea/Main.java:14: 错误: <匿名Main$1>中的draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)无法覆盖Plot中的draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+            protected void draw(java.awt.Graphics2D g2, java.awt.geom.Rectangle2D area, java.awt.geom.Point2D anchor, org.jfree.chart.plot.PlotState parentState, org.jfree.chart.plot.PlotRenderingInfo info) {
+                           ^
+  正在尝试分配更低的访问权限; 以前为public
+1 个错误

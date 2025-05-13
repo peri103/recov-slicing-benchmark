@@ -1,0 +1,6 @@
+generated/compress/simple/prog_23eee7e8/Main.java:6: 错误: 找不到符号
+        CpioArchiveEntry entry = new CpioArchiveEntry(CpioArchiveEntry.CPIO_NEW);
+                                                                      ^
+  符号:   变量 CPIO_NEW
+  位置: 类 CpioArchiveEntry
+1 个错误

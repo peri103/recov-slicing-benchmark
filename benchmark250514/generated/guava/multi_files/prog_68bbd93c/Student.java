@@ -1,0 +1,23 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Student {
+    private String name;
+    private List<Course> courses = new ArrayList<>();
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public void enrollInCourse(Course course) {
+        courses.add(course);
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public String getName() {
+        return name;
+    }
+}

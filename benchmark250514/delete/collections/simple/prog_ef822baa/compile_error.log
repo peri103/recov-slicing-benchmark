@@ -1,0 +1,14 @@
+generated/collections/simple/prog_ef822baa/Main.java:18: 错误: 无法将类 TransformedMultiValuedMap<K#2,V#2>中的方法 transformedMap应用到给定类型;
+        MultiValuedMap<String, Integer> transformedMap = TransformedMultiValuedMap.transformedMap(originalMap, transformer, transformer);
+                                                                                  ^
+  需要: MultiValuedMap<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>
+  找到: MultiValuedMap<String,Integer>,Transformer<Object,Object>,Transformer<Object,Object>
+  原因: 推论变量 K#1 具有不兼容的上限
+    等式约束条件：String
+    下限：Object
+  其中, K#1,V#1,K#2,V#2是类型变量:
+    K#1扩展已在方法 <K#1,V#1>transformedMap(MultiValuedMap<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>)中声明的Object
+    V#1扩展已在方法 <K#1,V#1>transformedMap(MultiValuedMap<K#1,V#1>,Transformer<? super K#1,? extends K#1>,Transformer<? super V#1,? extends V#1>)中声明的Object
+    K#2扩展已在类 TransformedMultiValuedMap中声明的Object
+    V#2扩展已在类 TransformedMultiValuedMap中声明的Object
+1 个错误

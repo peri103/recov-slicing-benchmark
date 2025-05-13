@@ -1,0 +1,26 @@
+generated/math/multi_files/prog_37ae8ccb/Main.java:8: 错误: 找不到符号
+        RealVector vector = vectorOps.getVector();
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_37ae8ccb/Main.java:12: 错误: 找不到符号
+        RealMatrix multipliedMatrix = matrixOps.multiplyMatrix();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_37ae8ccb/Main.java:19: 错误: 找不到符号
+        /* read */ RealVector readVector = vectorOps.getVector();
+                   ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_37ae8ccb/Main.java:27: 错误: 找不到符号
+        RealVector scaledVector = vectorOps.scaleVector(2.0);
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+generated/math/multi_files/prog_37ae8ccb/VectorOperations.java:8: 错误: 找不到符号
+        /* write */ vector = MatrixUtils.createArrayRealVector(data);
+                                        ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+5 个错误

@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_e7e888ad/PaintManager.java:15: 错误: 找不到符号
+        /* write */ axis.setSubCategoryPaint(subCategory, paint);
+                        ^
+  符号:   方法 setSubCategoryPaint(String,Paint)
+  位置: 类型为SubCategoryAxis的变量 axis
+generated/jfree/multi_files/prog_e7e888ad/PaintManager.java:20: 错误: 找不到符号
+        return axis.getSubCategoryPaint(subCategory);
+                   ^
+  符号:   方法 getSubCategoryPaint(String)
+  位置: 类型为SubCategoryAxis的变量 axis
+2 个错误

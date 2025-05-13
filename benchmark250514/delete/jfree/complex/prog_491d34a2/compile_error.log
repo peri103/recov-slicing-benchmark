@@ -1,0 +1,22 @@
+generated/jfree/complex/prog_491d34a2/Main.java:23: 错误: 找不到符号
+        legendTitle.setPosition(RectangleEdge.BOTTOM);
+                                ^
+  符号:   变量 RectangleEdge
+  位置: 类 Main
+generated/jfree/complex/prog_491d34a2/Main.java:24: 错误: 找不到符号
+        legendTitle.setLegendItems(legendItems);
+                   ^
+  符号:   方法 setLegendItems(ArrayList<LegendItem>)
+  位置: 类型为LegendTitle的变量 legendTitle
+generated/jfree/complex/prog_491d34a2/Main.java:27: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/complex/prog_491d34a2/Main.java:33: 错误: 找不到符号
+        plot.setOrientation(PlotOrientation.HORIZONTAL);
+            ^
+  符号:   方法 setOrientation(PlotOrientation)
+  位置: 类型为Plot的变量 plot
+generated/jfree/complex/prog_491d34a2/Main.java:44: 错误: 不兼容的类型: Paint无法转换为Color
+        /* read */ Color linePaint = legendItem.getLinePaint();
+                                                            ^
+5 个错误

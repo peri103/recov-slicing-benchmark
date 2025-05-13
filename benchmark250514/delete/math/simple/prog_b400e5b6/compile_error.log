@@ -1,0 +1,11 @@
+generated/math/simple/prog_b400e5b6/Main.java:8: 错误: 找不到符号
+        /* write */ RealVector vector = MatrixUtils.createArrayRealVector(data);
+                                                   ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/simple/prog_b400e5b6/Main.java:10: 错误: 找不到符号
+        /* read */ RealVector readVector = MatrixUtils.getArrayRealVector(vector.toArray());
+                                                      ^
+  符号:   方法 getArrayRealVector(double[])
+  位置: 类 MatrixUtils
+2 个错误

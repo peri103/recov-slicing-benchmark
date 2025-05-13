@@ -1,0 +1,11 @@
+generated/lang/complex/prog_ff6d509a/Main.java:26: 错误: 找不到符号
+        /* write */ Date updatedDate = DateUtils.setWeeks(date, 10);
+                                                ^
+  符号:   方法 setWeeks(Date,int)
+  位置: 类 DateUtils
+generated/lang/complex/prog_ff6d509a/Main.java:38: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.WEEK_OF_YEAR);
+                                                                                 ^
+  符号:   变量 WEEK_OF_YEAR
+  位置: 类 DateUtils
+2 个错误

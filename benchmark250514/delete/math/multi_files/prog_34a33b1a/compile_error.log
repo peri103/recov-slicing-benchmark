@@ -1,0 +1,26 @@
+generated/math/multi_files/prog_34a33b1a/Student.java:10: 错误: 找不到符号
+    public double calculateDotProduct(RealVector otherVector) {
+                                      ^
+  符号:   类 RealVector
+  位置: 类 Student
+generated/math/multi_files/prog_34a33b1a/Student.java:14: 错误: 找不到符号
+    public RealVector addVectors(RealVector otherVector) {
+                                 ^
+  符号:   类 RealVector
+  位置: 类 Student
+generated/math/multi_files/prog_34a33b1a/Student.java:14: 错误: 找不到符号
+    public RealVector addVectors(RealVector otherVector) {
+           ^
+  符号:   类 RealVector
+  位置: 类 Student
+generated/math/multi_files/prog_34a33b1a/Student.java:18: 错误: 找不到符号
+    public OpenMapRealVector getStudentVector() {
+           ^
+  符号:   类 OpenMapRealVector
+  位置: 类 Student
+generated/math/multi_files/prog_34a33b1a/VectorOperations.java:9: 错误: 找不到符号
+        /* write */ this.vector = MatrixUtils.createOpenMapRealVector(data);
+                                             ^
+  符号:   方法 createOpenMapRealVector(double[])
+  位置: 类 MatrixUtils
+5 个错误

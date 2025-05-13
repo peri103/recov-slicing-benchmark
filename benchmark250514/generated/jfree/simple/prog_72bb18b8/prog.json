@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.StackedXYAreaRenderer;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        StackedXYAreaRenderer renderer = new StackedXYAreaRenderer();\n        \n        // Set a paint (color) for a series\n        int seriesIndex = 0;\n        Paint paint = Color.BLUE;\n        /* write */ renderer.setSeriesPaint(seriesIndex, paint);\n        \n        // Retrieve the paint (color) for the series\n        /* read */ Paint retrievedPaint = renderer.getSeriesPaint(seriesIndex);\n        \n        // Print out the color to verify\n        System.out.println(retrievedPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.StackedXYAreaRenderer",
+        "write_method": "setSeriesPaint",
+        "read_class": "org.jfree.chart.renderer.xy.StackedXYAreaRenderer",
+        "read_method": "getSeriesPaint"
+    }
+}

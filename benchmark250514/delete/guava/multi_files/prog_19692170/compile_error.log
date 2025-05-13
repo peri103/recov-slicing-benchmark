@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_19692170/Student.java:13: 错误: 找不到符号
+    public Collection<String> viewAssignments() {
+           ^
+  符号:   类 Collection
+  位置: 类 Student
+1 个错误

@@ -1,0 +1,6 @@
+generated/math/simple/prog_f3ef1a47/Main.java:8: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createDiagonalMatrix(diagonal);
+                                                   ^
+  符号:   方法 createDiagonalMatrix(double[])
+  位置: 类 MatrixUtils
+1 个错误

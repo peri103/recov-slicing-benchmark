@@ -1,0 +1,16 @@
+generated/csv/complex/prog_7d00c57a/Main.java:13: 错误: 不兼容的类型: CSVFormat无法转换为CSVParser
+        CSVRecord record = new CSVRecord(format, new String[]{"value1", "value2"}, new String[]{"header1", "header2"}, 0, 0);
+                                         ^
+generated/csv/complex/prog_7d00c57a/Main.java:17: 错误: 不兼容的类型: CSVFormat无法转换为CSVParser
+                new CSVRecord(format, new String[]{"value1", "value2"}, new String[]{"header1", "header2"}, 0, 0),
+                              ^
+generated/csv/complex/prog_7d00c57a/Main.java:18: 错误: 不兼容的类型: CSVFormat无法转换为CSVParser
+                new CSVRecord(format, new String[]{"value3", "value4"}, new String[]{"header1", "header2"}, 1, 1),
+                              ^
+generated/csv/complex/prog_7d00c57a/Main.java:19: 错误: 不兼容的类型: CSVFormat无法转换为CSVParser
+                new CSVRecord(format, new String[]{"value5", "value6"}, new String[]{"header1", "header2"}, 2, 2)
+                              ^
+注: generated/csv/complex/prog_7d00c57a/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+4 个错误

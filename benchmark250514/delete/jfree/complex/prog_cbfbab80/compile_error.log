@@ -1,0 +1,4 @@
+generated/jfree/complex/prog_cbfbab80/Main.java:44: 错误: 不兼容的类型: Paint无法转换为Color
+        Color currentColor = legendItem.getFillPaint();
+                                                    ^
+1 个错误

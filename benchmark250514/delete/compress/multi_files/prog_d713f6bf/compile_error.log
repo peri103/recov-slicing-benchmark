@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_d713f6bf/ArchiveEntryHandler.java:11: 错误: 找不到符号
+        /* write */ entry.setUserName(userName);
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/multi_files/prog_d713f6bf/Main.java:22: 错误: 找不到符号
+        String userName = archiveHandler.getEntry().getUserName();
+                                                   ^
+  符号:   方法 getUserName()
+  位置: 类 CpioArchiveEntry
+2 个错误

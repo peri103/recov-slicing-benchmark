@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Initialize CSVFormat with the write method\n            /* write */ CSVFormat format = CSVFormat.DEFAULT.withIgnoreSurroundingSpaces(true);\n\n            // Sample CSV data\n            String csvData = \"Name, Age, Location\\nJohn Doe, 29, New York\";\n\n            // Parse the CSV data\n            CSVParser parser = new CSVParser(new StringReader(csvData), format);\n\n            // Get the records from the parser\n            List<CSVRecord> records = parser.getRecords();\n\n            // Access the first record\n            CSVRecord record = records.get(0);\n\n            // Use the read method to check if a column is set\n            /* read */ boolean isSet = record.isSet(\"Name\");\n\n            // Output the result\n            System.out.println(\"Is 'Name' column set? \" + isSet);\n\n            // Close the parser\n            parser.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreSurroundingSpaces",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

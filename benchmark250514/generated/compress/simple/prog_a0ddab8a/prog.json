@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a TarArchiveEntry object\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.txt\");\n\n        // Set the group ID using the write method\n        /* write */ entry.setGroupId(1001);\n\n        // Read the group ID using the read method\n        /* read */ long groupId = entry.getGroupId();\n\n        // Output the group ID to verify the correctness\n        System.out.println(groupId);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setGroupId",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getGroupId"
+    }
+}

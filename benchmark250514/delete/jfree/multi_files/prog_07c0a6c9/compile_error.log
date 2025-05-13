@@ -1,0 +1,9 @@
+generated/jfree/multi_files/prog_07c0a6c9/Main.java:6: 错误: 找不到符号
+        /* read */ PieSectionLabelGenerator retrievedLabelGenerator = piePlotManager.retrieveLabelGenerator();
+                   ^
+  符号:   类 PieSectionLabelGenerator
+  位置: 类 Main
+generated/jfree/multi_files/prog_07c0a6c9/Main.java:17: 错误: courseName 在 Course 中是 private 访问控制
+        System.out.println("Course: " + course.courseName);
+                                              ^
+2 个错误

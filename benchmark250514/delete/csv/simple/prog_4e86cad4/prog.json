@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withAllowMissingColumnNames(true);\n\n        // Simulating a CSVRecord for demonstration purposes\n        String[] values = {\"value1\", \"value2\"};\n        CSVRecord record = new CSVRecord(null, values, null, 0, 0);\n\n        /* read */ boolean isSet = record.isSet(0);\n        System.out.println(isSet);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAllowMissingColumnNames",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

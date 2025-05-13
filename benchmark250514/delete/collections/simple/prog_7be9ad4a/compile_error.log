@@ -1,0 +1,4 @@
+generated/collections/simple/prog_7be9ad4a/Main.java:6: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<String, Integer> map = new AbstractOrderedMapDecorator<>(new HashMap<>());
+                                                           ^
+1 个错误

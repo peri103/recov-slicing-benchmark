@@ -1,0 +1,13 @@
+generated/lang/complex/prog_86952310/Main.java:15: 错误: 找不到符号
+        /* write */ tokenizer.setTokenMatcher(commaMatcher);
+                             ^
+  符号:   方法 setTokenMatcher(StrMatcher)
+  位置: 类型为StrTokenizer的变量 tokenizer
+generated/lang/complex/prog_86952310/Main.java:25: 错误: 找不到符号
+        anotherTokenizer.setDelimiterMatcher(StrMatcher.semicolonMatcher());
+                                                       ^
+  符号:   方法 semicolonMatcher()
+  位置: 类 StrMatcher
+注: generated/lang/complex/prog_86952310/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

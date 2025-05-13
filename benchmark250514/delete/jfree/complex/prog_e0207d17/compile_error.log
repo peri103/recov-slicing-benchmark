@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_e0207d17/Main.java:22: 错误: 找不到符号
+        anotherLabelGenerator.setNumberFormat(decimalFormat);
+                             ^
+  符号:   方法 setNumberFormat(DecimalFormat)
+  位置: 类型为StandardPieSectionLabelGenerator的变量 anotherLabelGenerator
+generated/jfree/complex/prog_e0207d17/Main.java:28: 错误: 找不到符号
+        /* write */ labelGenerator.setNumberFormat(numberFormat);
+                                  ^
+  符号:   方法 setNumberFormat(NumberFormat)
+  位置: 类型为StandardPieSectionLabelGenerator的变量 labelGenerator
+2 个错误

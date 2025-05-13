@@ -1,0 +1,44 @@
+generated/jfree/complex/prog_86e03184/Main.java:10: 错误: MeterNeedle是抽象的; 无法实例化
+        MeterNeedle needle = new MeterNeedle(); // Assuming MeterNeedle is a valid needle type
+                             ^
+generated/jfree/complex/prog_86e03184/Main.java:15: 错误: 无法将类 ArrowNeedle中的构造器 ArrowNeedle应用到给定类型;
+        ArrowNeedle arrowNeedle = new ArrowNeedle(); // Yet another needle type
+                                  ^
+  需要: boolean
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_86e03184/Main.java:22: 错误: MeterNeedle是抽象的; 无法实例化
+            compassPlot2.setSeriesNeedle(i, new MeterNeedle());
+                                            ^
+generated/jfree/complex/prog_86e03184/Main.java:26: 错误: 找不到符号
+        MeterNeedle testNeedle = compassPlot2.getSeriesNeedle(1);
+                                             ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot2
+generated/jfree/complex/prog_86e03184/Main.java:33: 错误: 无法将类 ArrowNeedle中的构造器 ArrowNeedle应用到给定类型;
+            compassPlot2.setSeriesNeedle(i, new ArrowNeedle());
+                                            ^
+  需要: boolean
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_86e03184/Main.java:36: 错误: 找不到符号
+        MeterNeedle anotherNeedle = compassPlot2.getSeriesNeedle(2);
+                                                ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot2
+generated/jfree/complex/prog_86e03184/Main.java:41: 错误: 找不到符号
+            MeterNeedle tempNeedle = compassPlot2.getSeriesNeedle(i);
+                                                 ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot2
+generated/jfree/complex/prog_86e03184/Main.java:46: 错误: 找不到符号
+        ArrowNeedle tempArrowNeedle = compassPlot2.getSeriesNeedle(3);
+                                                  ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot2
+generated/jfree/complex/prog_86e03184/Main.java:49: 错误: 找不到符号
+        /* read */ MeterNeedle retrievedNeedle = compassPlot.getSeriesNeedle(0); // Get the needle for series 0
+                                                            ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot
+9 个错误

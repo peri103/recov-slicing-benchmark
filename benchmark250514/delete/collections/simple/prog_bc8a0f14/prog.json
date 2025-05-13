@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.Predicate;\nimport org.apache.commons.collections4.multimap.PredicatedMultiValuedMap;\nimport org.apache.commons.collections4.multimap.ArrayListValuedHashMap;\nimport org.apache.commons.collections4.map.PredicatedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Define predicates for the keys and values\n        Predicate<String> keyPredicate = key -> key != null;\n        Predicate<Integer> valuePredicate = value -> value >= 0;\n\n        // Create a PredicatedMultiValuedMap\n        PredicatedMultiValuedMap<String, Integer> map = new PredicatedMultiValuedMap<>(\n                new ArrayListValuedHashMap<>(),\n                keyPredicate,\n                valuePredicate\n        );\n\n        // Write to the map\n        /* write */ map.put(\"key1\", 100);\n\n        // Read from the map\n        /* read */ Integer value = map.get(\"key1\").iterator().next();\n\n        // Output the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.PredicatedMultiValuedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.PredicatedMultiValuedMap",
+        "read_method": "get"
+    }
+}

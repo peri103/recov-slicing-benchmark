@@ -1,0 +1,19 @@
+generated/collections/complex/prog_fe955f02/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.TreeValuedHashMap;
+                                               ^
+  符号:   类 TreeValuedHashMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/complex/prog_fe955f02/Main.java:9: 错误: 找不到符号
+        TreeValuedHashMap<String, String> map = new TreeValuedHashMap<>();
+        ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 Main
+generated/collections/complex/prog_fe955f02/Main.java:9: 错误: 找不到符号
+        TreeValuedHashMap<String, String> map = new TreeValuedHashMap<>();
+                                                    ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 Main
+generated/collections/complex/prog_fe955f02/Main.java:22: 错误: 不兼容的类型: List<String>无法转换为Set<String>
+            Set<String> values = arrayMap.get(i);
+                                             ^
+4 个错误

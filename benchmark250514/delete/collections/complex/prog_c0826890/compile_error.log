@@ -1,0 +1,9 @@
+generated/collections/complex/prog_c0826890/Main.java:12: 错误: <K,V>UnmodifiableMultiValuedMap(MultiValuedMap<? extends K,? extends V>) 在 UnmodifiableMultiValuedMap 中是 private 访问控制
+        UnmodifiableMultiValuedMap<String, Integer> unmodifiableMap = new UnmodifiableMultiValuedMap<>(map);
+                                                                      ^
+  其中, K,V是类型变量:
+    K扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+    V扩展已在类 UnmodifiableMultiValuedMap中声明的Object
+注: generated/collections/complex/prog_c0826890/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

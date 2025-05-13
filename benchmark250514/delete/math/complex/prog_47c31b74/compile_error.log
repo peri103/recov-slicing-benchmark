@@ -1,0 +1,19 @@
+generated/math/complex/prog_47c31b74/Main.java:13: 错误: 找不到符号
+        /* write */ ArrayRealVector vector = MatrixUtils.createArrayRealVector(data);
+                                                        ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_47c31b74/Main.java:16: 错误: 不兼容的类型: RealVector无法转换为ArrayRealVector
+        ArrayRealVector scaledVector = vector.mapMultiply(2.0);
+                                                         ^
+generated/math/complex/prog_47c31b74/Main.java:28: 错误: 找不到符号
+        ArrayRealVector extraVector = MatrixUtils.createArrayRealVector(extraData);
+                                                 ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_47c31b74/Main.java:33: 错误: 找不到符号
+        /* read */ ArrayRealVector retrievedVector = MatrixUtils.getArrayRealVector(vector);
+                                                                ^
+  符号:   方法 getArrayRealVector(ArrayRealVector)
+  位置: 类 MatrixUtils
+4 个错误

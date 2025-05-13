@@ -1,0 +1,9 @@
+generated/jfree/complex/prog_be52f6a3/Main.java:24: 错误: 找不到符号
+        renderer.setStroke(new BasicStroke(2.0f));
+                ^
+  符号:   方法 setStroke(BasicStroke)
+  位置: 类型为XYDifferenceRenderer的变量 renderer
+generated/jfree/complex/prog_be52f6a3/Main.java:39: 错误: 不兼容的类型: Paint无法转换为Color
+        /* read */ Color readNegativePaint = renderer.getNegativePaint();
+                                                                      ^
+2 个错误

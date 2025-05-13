@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry entry = new ZipArchiveEntry(\"testEntry\");\n        byte[] extraData = new byte[]{1, 2, 3, 4, 5};\n        \n        /* write */ entry.setExtra(extraData);\n        /* read */ byte[] readData = entry.getExtra();\n        \n        for (byte b : readData) {\n            System.out.print(b + \" \");\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setExtra",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getExtra"
+    }
+}

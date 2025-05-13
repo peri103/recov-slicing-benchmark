@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_ba7c46a1/Main.java:13: 错误: 找不到符号
+        /* write */ plot.setDataset(dataset);
+                        ^
+  符号:   方法 setDataset(Dataset)
+  位置: 类型为Plot的变量 plot
+generated/jfree/simple/prog_ba7c46a1/Main.java:15: 错误: 找不到符号
+        /* read */ Dataset readDataset = plot.getDataset();
+                                             ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 plot
+2 个错误

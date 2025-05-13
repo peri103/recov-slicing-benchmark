@@ -1,0 +1,25 @@
+generated/jfree/complex/prog_b140233f/Main.java:10: 错误: MeterNeedle是抽象的; 无法实例化
+        MeterNeedle needle = new MeterNeedle();
+                             ^
+generated/jfree/complex/prog_b140233f/Main.java:15: 错误: 无法将类 ArrowNeedle中的构造器 ArrowNeedle应用到给定类型;
+        ArrowNeedle arrowNeedle = new ArrowNeedle();
+                                  ^
+  需要: boolean
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_b140233f/Main.java:20: 错误: 找不到符号
+        MeterNeedle readNeedle2 = compassPlot2.getSeriesNeedle(1);
+                                              ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot2
+generated/jfree/complex/prog_b140233f/Main.java:21: 错误: 找不到符号
+        MeterNeedle readNeedle3 = compassPlot2.getSeriesNeedle(2);
+                                              ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot2
+generated/jfree/complex/prog_b140233f/Main.java:48: 错误: 找不到符号
+        /* read */ MeterNeedle readNeedle = compassPlot.getSeriesNeedle(0);
+                                                       ^
+  符号:   方法 getSeriesNeedle(int)
+  位置: 类型为CompassPlot的变量 compassPlot
+5 个错误

@@ -1,0 +1,8 @@
+generated/jfree/complex/prog_9f1fe82a/Main.java:32: 错误: 找不到符号
+        chart.setPlot(plot);
+             ^
+  符号:   方法 setPlot(PiePlot)
+  位置: 类型为JFreeChart的变量 chart
+注: generated/jfree/complex/prog_9f1fe82a/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.BlockRealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        double[][] data = {\n            {1.0, 2.0},\n            {3.0, 4.0}\n        };\n        \n        /* write */ BlockRealMatrix matrix = MatrixUtils.createBlockRealMatrix(data);\n        \n        /* read */ double[][] retrievedData = matrix.getData();\n        \n        for (int i = 0; i < retrievedData.length; i++) {\n            for (int j = 0; j < retrievedData[i].length; j++) {\n                System.out.print(retrievedData[i][j] + \" \");\n            }\n            System.out.println();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createBlockRealMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getBlockRealMatrix"
+    }
+}

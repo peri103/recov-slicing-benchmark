@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.CategoryPlot;\nimport org.jfree.chart.renderer.category.CategoryItemRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        CategoryPlot plot = new CategoryPlot();\n        CategoryItemRenderer renderer = new CustomRenderer(); // Assume CustomRenderer is a valid implementation of CategoryItemRenderer\n\n        /* write */ plot.setRenderer(renderer);\n        /* read */ CategoryItemRenderer retrievedRenderer = plot.getRenderer();\n        \n        System.out.println(retrievedRenderer);\n    }\n}\n\nclass CustomRenderer implements CategoryItemRenderer {\n    // Implement necessary methods for CategoryItemRenderer interface\n    // This is a placeholder for the actual implementation\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.CategoryPlot",
+        "write_method": "setRenderer",
+        "read_class": "org.jfree.chart.plot.CategoryPlot",
+        "read_method": "getRenderer"
+    }
+}

@@ -1,0 +1,16 @@
+generated/jfree/multi_files/prog_b86fc9c1/CategoryPlotManager.java:30: 错误: 找不到符号
+        CategoryAxis anotherDomainAxis = new CategoryAxis("Another Domain Axis");
+        ^
+  符号:   类 CategoryAxis
+  位置: 类 CategoryPlotManager
+generated/jfree/multi_files/prog_b86fc9c1/CategoryPlotManager.java:30: 错误: 找不到符号
+        CategoryAxis anotherDomainAxis = new CategoryAxis("Another Domain Axis");
+                                             ^
+  符号:   类 CategoryAxis
+  位置: 类 CategoryPlotManager
+generated/jfree/multi_files/prog_b86fc9c1/CategoryPlotManager.java:40: 错误: 找不到符号
+        plot.setDomainGridlinePosition(CategoryPlot.DomainGridlinePosition.MIDDLE);
+                                                   ^
+  符号:   变量 DomainGridlinePosition
+  位置: 类 CategoryPlot
+3 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initializing a dummy InputStream, as BZip2CompressorInputStream requires an InputStream.\n        InputStream dummyInputStream = new InputStream() {\n            @Override\n            public int read() throws IOException {\n                return -1; // Return end of stream indicator\n            }\n        };\n\n        try {\n            BZip2CompressorInputStream bzip2Stream = new BZip2CompressorInputStream(dummyInputStream);\n\n            /* write */ bzip2Stream.setBlockSize(900000); // Set the block size to 900000\n\n            /* read */ int blockSize = bzip2Stream.getBlockSize(); // Get the block size\n\n            System.out.println(blockSize);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+        "write_method": "setBlockSize",
+        "read_class": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+        "read_method": "getBlockSize"
+    }
+}

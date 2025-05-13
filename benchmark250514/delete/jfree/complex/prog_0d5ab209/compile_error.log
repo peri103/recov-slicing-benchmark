@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_0d5ab209/Main.java:3: 错误: 找不到符号
+import org.jfree.chart.axis.CategoryAxis3D;
+                           ^
+  符号:   类 CategoryAxis3D
+  位置: 程序包 org.jfree.chart.axis
+generated/jfree/complex/prog_0d5ab209/Main.java:17: 错误: 找不到符号
+        CategoryAxis axis = new CategoryAxis3D("Sample Axis");
+                                ^
+  符号:   类 CategoryAxis3D
+  位置: 类 Main
+2 个错误

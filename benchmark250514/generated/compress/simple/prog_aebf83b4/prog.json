@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the ZipArchiveEntry object\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.txt\");\n        \n        // Use the write method to set the CRC value\n        /* write */ zipEntry.setCrc(123456789L);\n        \n        // Use the read method to get the CRC value\n        /* read */ long crcValue = zipEntry.getCrc();\n        \n        // Print the CRC value to verify it was set and read correctly\n        System.out.println(crcValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setCrc",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getCrc"
+    }
+}

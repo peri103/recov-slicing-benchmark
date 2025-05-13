@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.BasicStroke;\nimport java.awt.Stroke;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PiePlot object\n        PiePlot plot = new PiePlot();\n\n        // Create a Stroke object to be used for setting section outline stroke\n        Stroke stroke = new BasicStroke(2.0f);\n\n        // Use the write method to set the section outline stroke\n        /* write */ plot.setSectionOutlineStroke(\"Section1\", stroke);\n\n        // Use the read method to retrieve the section outline stroke\n        /* read */ Stroke retrievedStroke = plot.getSectionOutlineStroke(\"Section1\");\n\n        // Print the retrieved stroke to verify it's the same as the one set\n        System.out.println(retrievedStroke.equals(stroke) ? \"Success: Stroke retrieved correctly.\" : \"Error: Stroke retrieval failed.\");\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setSectionOutlineStroke",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getSectionOutlineStroke"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport org.apache.commons.compress.archivers.cpio.CpioConstants;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testfile.txt\");\n        CpioArchiveEntry entry2 = new CpioArchiveEntry(\"anotherfile.txt\");\n        \n        // Set Unix mode for entry2\n        entry2.setUnixMode(0644);\n\n        // Create a variable to hold a mode value\n        int modeValue = CpioConstants.C_ISREG;\n\n        // Perform some unrelated operations\n        int[] numbers = {1, 2, 3, 4, 5};\n        int sum = 0;\n        for (int number : numbers) {\n            sum += number;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // Set Unix mode for entry\n        /* write */ entry.setUnixMode(0755);\n\n        // Perform operations using entry2\n        int mode2 = entry2.getUnixMode();\n        System.out.println(\"Unix Mode of entry2: \" + mode2);\n\n        // Perform more unrelated operations\n        String[] words = {\"apple\", \"banana\", \"cherry\"};\n        for (String word : words) {\n            System.out.println(\"Word: \" + word);\n        }\n\n        // Read Unix mode from entry\n        /* read */ int mode = entry.getUnixMode();\n        System.out.println(\"Unix Mode of entry: \" + mode);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testfile.txt\");\n        /* write */ entry.setUnixMode(0755);\n        /* read */ int mode = entry.getUnixMode();\n        System.out.println(\"Unix Mode: \" + mode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setUnixMode",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getUnixMode"
+    }
+}

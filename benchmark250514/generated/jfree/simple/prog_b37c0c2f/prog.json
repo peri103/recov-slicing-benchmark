@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.ValueMarker;\n\npublic class Main {\n    public static void main(String[] args) {\n        ValueMarker marker = new ValueMarker(0.0);\n        /* write */ marker.setValue(5.0);\n        /* read */ double value = marker.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ValueMarker",
+        "write_method": "setValue",
+        "read_class": "org.jfree.chart.plot.ValueMarker",
+        "read_method": "getValue"
+    }
+}

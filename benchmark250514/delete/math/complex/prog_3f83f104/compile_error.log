@@ -1,0 +1,11 @@
+generated/math/complex/prog_3f83f104/Main.java:13: 错误: 找不到符号
+        RealVector columnVector = MatrixUtils.createColumnRealVector(new double[]{4.0, 5.0, 6.0});
+                                             ^
+  符号:   方法 createColumnRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_3f83f104/Main.java:29: 错误: 找不到符号
+        RealVector sumVector = columnVector.add(MatrixUtils.createColumnRealVector(new double[]{1.0, 1.0, 1.0}));
+                                                           ^
+  符号:   方法 createColumnRealVector(double[])
+  位置: 类 MatrixUtils
+2 个错误

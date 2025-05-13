@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CpioArchiveEntry object\n        CpioArchiveEntry entry = new CpioArchiveEntry();\n\n        // Define the extra data to be set\n        byte[] extraData = new byte[]{1, 2, 3, 4, 5};\n\n        // Write the extra data to the entry\n        /* write */ entry.setExtra(extraData);\n\n        // Read the extra data from the entry\n        /* read */ byte[] readData = entry.getExtra();\n\n        // Print the read data to verify it matches the written data\n        for (byte b : readData) {\n            System.out.print(b + \" \");\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setExtra",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getExtra"
+    }
+}

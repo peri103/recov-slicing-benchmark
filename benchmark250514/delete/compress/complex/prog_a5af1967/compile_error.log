@@ -1,0 +1,36 @@
+generated/compress/complex/prog_a5af1967/Main.java:11: 错误: 找不到符号
+        entry1.setUserId(11111);
+              ^
+  符号:   方法 setUserId(int)
+  位置: 类型为CpioArchiveEntry的变量 entry1
+generated/compress/complex/prog_a5af1967/Main.java:15: 错误: 找不到符号
+        entry2.setUserId(22222);
+              ^
+  符号:   方法 setUserId(int)
+  位置: 类型为CpioArchiveEntry的变量 entry2
+generated/compress/complex/prog_a5af1967/Main.java:19: 错误: 找不到符号
+        /* write */ entry.setUserId(12345);
+                         ^
+  符号:   方法 setUserId(int)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_a5af1967/Main.java:25: 错误: 找不到符号
+            sumUserIds += e.getUserId();
+                           ^
+  符号:   方法 getUserId()
+  位置: 类型为CpioArchiveEntry的变量 e
+generated/compress/complex/prog_a5af1967/Main.java:32: 错误: 找不到符号
+            System.out.println("Entry " + i + ": " + e.getName() + ", User ID: " + e.getUserId());
+                                                                                    ^
+  符号:   方法 getUserId()
+  位置: 类型为CpioArchiveEntry的变量 e
+generated/compress/complex/prog_a5af1967/Main.java:36: 错误: 找不到符号
+        /* read */ long userId = entry.getUserId();
+                                      ^
+  符号:   方法 getUserId()
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/complex/prog_a5af1967/Main.java:42: 错误: 找不到符号
+            if (e.getUserId() > 10000) {
+                 ^
+  符号:   方法 getUserId()
+  位置: 类型为CpioArchiveEntry的变量 e
+7 个错误

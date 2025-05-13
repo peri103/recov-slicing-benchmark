@@ -1,0 +1,36 @@
+generated/jfree/complex/prog_bac30f49/Main.java:14: 错误: 找不到符号
+        /* write */ waferMapPlot.setPaintScale(paintScale);
+                                ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 waferMapPlot
+generated/jfree/complex/prog_bac30f49/Main.java:19: 错误: 找不到符号
+        anotherPlot.setPaintScale(lookupPaintScale);
+                   ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+generated/jfree/complex/prog_bac30f49/Main.java:23: 错误: 找不到符号
+            anotherPlot.setPaintScale(tempScale);
+                       ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+generated/jfree/complex/prog_bac30f49/Main.java:28: 错误: 找不到符号
+        PaintScale currentScale = anotherPlot.getPaintScale();
+                                             ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+generated/jfree/complex/prog_bac30f49/Main.java:31: 错误: 找不到符号
+        /* read */ PaintScale retrievedPaintScale = waferMapPlot.getPaintScale();
+                                                                ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 waferMapPlot
+generated/jfree/complex/prog_bac30f49/Main.java:38: 错误: 找不到符号
+        thirdPlot.setPaintScale(new GrayPaintScale(50.0, 150.0));
+                 ^
+  符号:   方法 setPaintScale(GrayPaintScale)
+  位置: 类型为WaferMapPlot的变量 thirdPlot
+generated/jfree/complex/prog_bac30f49/Main.java:39: 错误: 找不到符号
+        PaintScale thirdScale = thirdPlot.getPaintScale();
+                                         ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 thirdPlot
+7 个错误

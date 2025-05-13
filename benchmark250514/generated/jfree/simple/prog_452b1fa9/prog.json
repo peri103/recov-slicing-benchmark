@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot3D;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PiePlot3D object\n        PiePlot3D piePlot = new PiePlot3D();\n        \n        // Set the depth factor using the write method\n        /* write */ piePlot.setDepthFactor(0.5);\n        \n        // Read the depth factor using the read method\n        /* read */ double depthFactor = piePlot.getDepthFactor();\n        \n        // Output the value to verify the read operation\n        System.out.println(\"Depth Factor: \" + depthFactor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot3D",
+        "write_method": "setDepthFactor",
+        "read_class": "org.jfree.chart.plot.PiePlot3D",
+        "read_method": "getDepthFactor"
+    }
+}

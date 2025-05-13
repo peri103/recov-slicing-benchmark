@@ -1,0 +1,11 @@
+generated/compress/simple/prog_e30f2d92/Main.java:6: 错误: 找不到符号
+        /* write */ gzipParameters.setFlags(4);
+                                  ^
+  符号:   方法 setFlags(int)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/simple/prog_e30f2d92/Main.java:7: 错误: 找不到符号
+        /* read */ int flags = gzipParameters.getFlags();
+                                             ^
+  符号:   方法 getFlags()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

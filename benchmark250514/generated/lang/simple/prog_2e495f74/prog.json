@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableLong;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableLong mutableLong = new MutableLong();\n        /* write */ mutableLong.setValue(42L);\n        /* read */ long value = mutableLong.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableLong",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableLong",
+        "read_method": "getValue"
+    }
+}

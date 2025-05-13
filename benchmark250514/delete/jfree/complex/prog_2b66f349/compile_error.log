@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_2b66f349/Main.java:32: 错误: 找不到符号
+        firstItem.setLabel("Updated Example");
+                 ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 firstItem
+1 个错误

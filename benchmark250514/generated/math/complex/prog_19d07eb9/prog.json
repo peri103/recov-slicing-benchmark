@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.OpenMapRealVector;\nimport org.apache.commons.math3.linear.ArrayRealVector;\nimport java.util.Random;\n\npublic class Main {\n    public static void main(String[] args) {\n        OpenMapRealVector vector = new OpenMapRealVector(10);\n        ArrayRealVector arrayVector = new ArrayRealVector(10);\n\n        Random random = new Random();\n        for (int i = 0; i < 10; i++) {\n            double randomValue = random.nextDouble() * 100;\n            arrayVector.setEntry(i, randomValue);\n            System.out.println(\"ArrayRealVector entry \" + i + \": \" + arrayVector.getEntry(i));\n        }\n        \n        /* write */ vector.setEntry(0, 3.14);\n\n        double sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += arrayVector.getEntry(i);\n        }\n        System.out.println(\"Sum of ArrayRealVector: \" + sum);\n\n        double average = sum / arrayVector.getDimension();\n        System.out.println(\"Average of ArrayRealVector: \" + average);\n\n        /* read */ double value = vector.getEntry(0);\n        System.out.println(\"OpenMapRealVector entry 0: \" + value);\n\n        double maxValue = Double.MIN_VALUE;\n        for (int i = 0; i < 10; i++) {\n            double entryValue = arrayVector.getEntry(i);\n            if (entryValue > maxValue) {\n                maxValue = entryValue;\n            }\n        }\n        System.out.println(\"Max value in ArrayRealVector: \" + maxValue);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.math3.linear.OpenMapRealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        OpenMapRealVector vector = new OpenMapRealVector(10);\n        /* write */ vector.setEntry(0, 3.14);\n        /* read */ double value = vector.getEntry(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.OpenMapRealVector",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.OpenMapRealVector",
+        "read_method": "getEntry"
+    }
+}

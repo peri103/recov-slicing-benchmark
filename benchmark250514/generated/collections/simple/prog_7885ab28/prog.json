@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.MultiValueMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        MultiValueMap<String, String> multiValueMap = new MultiValueMap<>();\n        \n        /* write */ multiValueMap.put(\"key\", \"value\");\n        \n        /* read */ Object value = multiValueMap.get(\"key\");\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.MultiValueMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.MultiValueMap",
+        "read_method": "get"
+    }
+}

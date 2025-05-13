@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.HashSetValuedHashMap;\nimport java.util.HashMap;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSetValuedHashMap<String, Integer> map = new HashSetValuedHashMap<>();\n        \n        // Additional unrelated code for complexity\n        HashMap<String, Integer> simpleMap = new HashMap<>();\n        simpleMap.put(\"keyA\", 100);\n        simpleMap.put(\"keyB\", 200);\n        \n        for (String key : simpleMap.keySet()) {\n            map.put(key, simpleMap.get(key) + 50);\n        }\n        \n        /* write */ map.put(\"key1\", 42);\n        \n        Set<Integer> values = map.get(\"keyA\");\n        for (Integer val : values) {\n            System.out.println(\"Value from map: \" + val);\n        }\n        \n        // More operations to increase complexity\n        map.put(\"key2\", 55);\n        map.put(\"key2\", 75);\n        \n        Set<Integer> key2Values = map.get(\"key2\");\n        for (Integer val : key2Values) {\n            System.out.println(\"Value for key2: \" + val);\n        }\n        \n        /* read */ Integer value = map.get(\"key1\").iterator().next();\n        \n        System.out.println(value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.multimap.HashSetValuedHashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashSetValuedHashMap<String, Integer> map = new HashSetValuedHashMap<>();\n        \n        /* write */ map.put(\"key1\", 42);\n        \n        /* read */ Integer value = map.get(\"key1\").iterator().next();\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.HashSetValuedHashMap",
+        "read_method": "get"
+    }
+}

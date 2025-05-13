@@ -1,0 +1,4 @@
+generated/guava/simple/prog_b9420024/Main.java:6: 错误: 枚举类型不能为本地类型
+        enum SampleEnum { ONE, TWO, THREE }
+        ^
+1 个错误

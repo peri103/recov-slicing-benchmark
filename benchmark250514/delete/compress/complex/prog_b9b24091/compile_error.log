@@ -1,0 +1,21 @@
+generated/compress/complex/prog_b9b24091/Main.java:16: 错误: 找不到符号
+        /* write */ entry.setFileType(ArArchiveEntry.FILE_TYPE_REGULAR);
+                                                    ^
+  符号:   变量 FILE_TYPE_REGULAR
+  位置: 类 ArArchiveEntry
+generated/compress/complex/prog_b9b24091/Main.java:26: 错误: 找不到符号
+        anotherEntry.setFileType(ArArchiveEntry.FILE_TYPE_SYMBOLIC_LINK);
+                                               ^
+  符号:   变量 FILE_TYPE_SYMBOLIC_LINK
+  位置: 类 ArArchiveEntry
+generated/compress/complex/prog_b9b24091/Main.java:27: 错误: 找不到符号
+        int anotherFileType = anotherEntry.getFileType();
+                                          ^
+  符号:   方法 getFileType()
+  位置: 类型为ArArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_b9b24091/Main.java:39: 错误: 找不到符号
+        /* read */ int fileType = entry.getFileType();
+                                       ^
+  符号:   方法 getFileType()
+  位置: 类型为ArArchiveEntry的变量 entry
+4 个错误

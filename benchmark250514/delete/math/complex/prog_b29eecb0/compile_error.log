@@ -1,0 +1,11 @@
+generated/math/complex/prog_b29eecb0/Main.java:14: 错误: 找不到符号
+        /* write */ BlockRealMatrix matrix = MatrixUtils.createBlockRealMatrix(data);
+                                                        ^
+  符号:   方法 createBlockRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_b29eecb0/Main.java:34: 错误: 找不到符号
+        double determinant = subMatrix.getDeterminant();
+                                      ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 subMatrix
+2 个错误

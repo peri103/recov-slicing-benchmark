@@ -1,0 +1,8 @@
+generated/csv/simple/prog_cc2a413a/Main.java:12: 错误: 找不到符号
+        CSVRecord record = CSVRecord.parse(data, format);
+                                    ^
+  符号:   方法 parse(String[],CSVFormat)
+  位置: 类 CSVRecord
+注: generated/csv/simple/prog_cc2a413a/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

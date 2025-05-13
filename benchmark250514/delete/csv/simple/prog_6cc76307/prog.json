@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\n\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        StringWriter writer = new StringWriter();\n        CSVFormat csvFormat = CSVFormat.DEFAULT;\n\n        // Write operation\n        /* write */ csvFormat = csvFormat.withDelimiter(';');\n\n        List<String> data = Arrays.asList(\"Alice\", \"Bob\", \"Charlie\");\n        try {\n            CSVPrinter csvPrinter = new CSVPrinter(writer, csvFormat);\n            csvPrinter.printRecord(data);\n            csvPrinter.flush();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        // Read operation\n        String csvData = writer.toString();\n        String[] csvLines = csvData.split(\"\\n\");\n        CSVRecord record = new CSVRecord(null, csvLines[0], null, csvFormat, 0, 0);\n\n        /* read */ String value = record.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withDelimiter",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "toString"
+    }
+}

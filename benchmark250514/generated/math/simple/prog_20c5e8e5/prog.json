@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.RealMatrixPreservingVisitor;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Custom implementation of RealMatrixPreservingVisitor\n        class CustomVisitor implements RealMatrixPreservingVisitor {\n            private double sum = 0;\n\n            @Override\n            public void start(int rows, int columns, int startRow, int endRow, int startColumn, int endColumn) {\n                // Initialization if needed\n            }\n\n            @Override\n            public void visit(int row, int column, double value) {\n                /* write */\n                sum += value; // Example operation: summing up the values\n            }\n\n            @Override\n            public double end() {\n                /* read */\n                return sum; // Returning the sum of visited values\n            }\n        }\n\n        // Create an instance of CustomVisitor\n        CustomVisitor visitor = new CustomVisitor();\n        \n        // Simulate visiting matrix values\n        visitor.visit(0, 0, 1.0);\n        visitor.visit(0, 1, 2.0);\n        visitor.visit(1, 0, 3.0);\n        visitor.visit(1, 1, 4.0);\n\n        // Retrieve the result using the end method\n        double result = visitor.end();\n        System.out.println(\"Sum of matrix values: \" + result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+        "write_method": "visit",
+        "read_class": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+        "read_method": "end"
+    }
+}

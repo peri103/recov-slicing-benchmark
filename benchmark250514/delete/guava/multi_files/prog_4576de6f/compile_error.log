@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_4576de6f/Main.java:35: 错误: 找不到符号
+        Set<Double> grades = new HashSet<>();
+                                 ^
+  符号:   类 HashSet
+  位置: 类 Main
+1 个错误

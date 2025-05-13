@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.MultiplePiePlot;\nimport org.jfree.data.general.Dataset;\nimport org.jfree.data.general.DefaultPieDataset;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of MultiplePiePlot\n        MultiplePiePlot plot = new MultiplePiePlot();\n\n        // Create a dataset\n        DefaultPieDataset dataset = new DefaultPieDataset();\n        dataset.setValue(\"Category 1\", 10);\n        dataset.setValue(\"Category 2\", 20);\n\n        // Set the dataset to the plot\n        /* write */ plot.setDataset(dataset);\n\n        // Retrieve the dataset from the plot\n        /* read */ Dataset retrievedDataset = plot.getDataset();\n\n        // Print the retrieved dataset to verify\n        System.out.println(retrievedDataset);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.MultiplePiePlot",
+        "write_method": "setDataset",
+        "read_class": "org.jfree.chart.plot.MultiplePiePlot",
+        "read_method": "getDataset"
+    }
+}

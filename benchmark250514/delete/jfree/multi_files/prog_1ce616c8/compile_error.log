@@ -1,0 +1,24 @@
+generated/jfree/multi_files/prog_1ce616c8/Main.java:8: 错误: 对于LegendItem(String,<空值>,<空值>,<空值>,Shape,boolean,<空值>,boolean,<空值>,boolean,<空值>,boolean,<空值>,boolean), 找不到合适的构造器
+        LegendItem legendItem1 = new LegendItem("Sample Item 1", null, null, null, shape1, true, null, false, null, false, null, false, null, false);
+                                 ^
+    构造器 LegendItem.LegendItem(String)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(String,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(String,String,String,String,Shape,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(String,String,String,String,Shape,Paint,Stroke,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(String,String,String,String,Shape,Stroke,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(String,String,String,String,boolean,Shape,boolean,Paint,boolean,Paint,Stroke,boolean,Shape,Stroke,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(AttributedString,String,String,String,Shape,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(AttributedString,String,String,String,Shape,Paint,Stroke,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(AttributedString,String,String,String,Shape,Stroke,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+    构造器 LegendItem.LegendItem(AttributedString,String,String,String,boolean,Shape,boolean,Paint,boolean,Paint,Stroke,boolean,Shape,Stroke,Paint)不适用
+      (实际参数列表和形式参数列表长度不同)
+1 个错误

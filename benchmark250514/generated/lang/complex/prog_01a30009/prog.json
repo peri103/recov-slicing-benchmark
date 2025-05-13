@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello, World!\");\n\n        // Create and manipulate a list\n        List<String> list = new ArrayList<>();\n        list.add(\"Item 1\");\n        list.add(\"Item 2\");\n        list.add(\"Item 3\");\n        System.out.println(\"List before modification: \" + list);\n\n        // Perform some operations on the list\n        list.remove(1);\n        list.add(\"New Item\");\n        System.out.println(\"List after modification: \" + list);\n\n        /* write */ strBuilder.clear();\n\n        // Use StringBuilder for additional operations\n        StringBuilder extraBuilder = new StringBuilder();\n        extraBuilder.append(\"Extra content\");\n        extraBuilder.append(\" appended.\");\n        System.out.println(extraBuilder.toString());\n\n        // Conditional logic\n        int number = 5;\n        if (number > 3) {\n            System.out.println(\"Number is greater than 3\");\n        } else {\n            System.out.println(\"Number is not greater than 3\");\n        }\n\n        /* read */ String value = strBuilder.toString();\n        System.out.println(\"StrBuilder content after clear: \" + value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        strBuilder.append(\"Hello, World!\");\n        \n        /* write */ strBuilder.clear();\n        \n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "clear",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

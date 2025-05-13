@@ -1,0 +1,6 @@
+generated/math/simple/prog_b32b9b1f/Main.java:8: 错误: 找不到符号
+        /* write */ RealVector vector = MatrixUtils.createSparseRealVector(data);
+                                                   ^
+  符号:   方法 createSparseRealVector(double[])
+  位置: 类 MatrixUtils
+1 个错误

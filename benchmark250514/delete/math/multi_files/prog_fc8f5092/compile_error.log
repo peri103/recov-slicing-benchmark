@@ -1,0 +1,6 @@
+generated/math/multi_files/prog_fc8f5092/Main.java:17: 错误: 找不到符号
+        RealMatrix transposedMatrix = complexOps.transposeMatrix();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+1 个错误

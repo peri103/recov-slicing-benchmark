@@ -1,0 +1,9 @@
+generated/guava/multi_files/prog_96a6e8eb/Main.java:24: 错误: 找不到符号
+        Table<String, String, Integer> allScores = student.getAllCourseScores();
+        ^
+  符号:   类 Table
+  位置: 类 Main
+generated/guava/multi_files/prog_96a6e8eb/Main.java:25: 错误: 程序包Table不存在
+        for (Table.Cell<String, String, Integer> cell : allScores.cellSet()) {
+                  ^
+2 个错误

@@ -1,0 +1,36 @@
+generated/collections/complex/prog_55b0b4f6/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractDualBidiMap;
+                                          ^
+  符号:   类 AbstractDualBidiMap
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/complex/prog_55b0b4f6/Main.java:2: 错误: 找不到符号
+import org.apache.commons.collections4.map.DualHashBidiMap;
+                                          ^
+  符号:   类 DualHashBidiMap
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/complex/prog_55b0b4f6/Main.java:3: 错误: 找不到符号
+import org.apache.commons.collections4.map.DualLinkedHashBidiMap;
+                                          ^
+  符号:   类 DualLinkedHashBidiMap
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/complex/prog_55b0b4f6/Main.java:9: 错误: 找不到符号
+        AbstractDualBidiMap<String, Integer> map = new DualHashBidiMap<>();
+        ^
+  符号:   类 AbstractDualBidiMap
+  位置: 类 Main
+generated/collections/complex/prog_55b0b4f6/Main.java:9: 错误: 找不到符号
+        AbstractDualBidiMap<String, Integer> map = new DualHashBidiMap<>();
+                                                       ^
+  符号:   类 DualHashBidiMap
+  位置: 类 Main
+generated/collections/complex/prog_55b0b4f6/Main.java:10: 错误: 找不到符号
+        AbstractDualBidiMap<String, Integer> anotherMap = new DualLinkedHashBidiMap<>();
+        ^
+  符号:   类 AbstractDualBidiMap
+  位置: 类 Main
+generated/collections/complex/prog_55b0b4f6/Main.java:10: 错误: 找不到符号
+        AbstractDualBidiMap<String, Integer> anotherMap = new DualLinkedHashBidiMap<>();
+                                                              ^
+  符号:   类 DualLinkedHashBidiMap
+  位置: 类 Main
+7 个错误

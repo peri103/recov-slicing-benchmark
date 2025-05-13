@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.ReferenceMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a ReferenceMap with default reference types (hard keys, hard values)\n        ReferenceMap<String, String> map = new ReferenceMap<>();\n\n        // Use the put method to write a key-value pair to the map\n        /* write */ map.put(\"key1\", \"value1\");\n\n        // Use the get method to read the value associated with the key\n        /* read */ String value = map.get(\"key1\");\n\n        // Print the value to verify the operations\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.ReferenceMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.ReferenceMap",
+        "read_method": "get"
+    }
+}

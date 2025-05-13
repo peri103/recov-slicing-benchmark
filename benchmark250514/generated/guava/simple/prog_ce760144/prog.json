@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableRangeSet;\nimport com.google.common.collect.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an ImmutableRangeSet containing a range from 1 to 10\n        ImmutableRangeSet<Integer> rangeSet = /* write */ ImmutableRangeSet.of(Range.closed(1, 10));\n        \n        // Check if the range set contains the number 5\n        boolean containsValue = /* read */ rangeSet.contains(5);\n        \n        // Print the result\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableRangeSet",
+        "write_method": "of",
+        "read_class": "com.google.common.collect.ImmutableRangeSet",
+        "read_method": "contains"
+    }
+}

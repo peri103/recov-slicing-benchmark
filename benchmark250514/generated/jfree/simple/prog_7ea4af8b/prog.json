@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYItemRenderer;\nimport java.awt.Color;\nimport org.jfree.chart.renderer.xy.StandardXYItemRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the renderer object\n        XYItemRenderer renderer = new StandardXYItemRenderer();\n        \n        // Define the series index and the paint color\n        int seriesIndex = 0;\n        Color paintColor = Color.RED;\n        \n        /* write */ renderer.setSeriesPaint(seriesIndex, paintColor);\n        \n        /* read */ Color retrievedColor = (Color) renderer.getSeriesPaint(seriesIndex);\n        \n        // Print the color to verify the read operation\n        System.out.println(retrievedColor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYItemRenderer",
+        "write_method": "setSeriesPaint",
+        "read_class": "org.jfree.chart.renderer.xy.XYItemRenderer",
+        "read_method": "getSeriesPaint"
+    }
+}

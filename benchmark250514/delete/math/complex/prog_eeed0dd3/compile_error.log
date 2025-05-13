@@ -1,0 +1,6 @@
+generated/math/complex/prog_eeed0dd3/Main.java:17: 错误: 找不到符号
+        double determinant = matrix2.getDeterminant();
+                                    ^
+  符号:   方法 getDeterminant()
+  位置: 类型为Array2DRowRealMatrix的变量 matrix2
+1 个错误

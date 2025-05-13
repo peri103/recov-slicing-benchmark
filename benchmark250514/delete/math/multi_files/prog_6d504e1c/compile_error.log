@@ -1,0 +1,16 @@
+generated/math/multi_files/prog_6d504e1c/Main.java:10: 错误: 找不到符号
+        RealMatrix sumMatrix = matrixOps.addMatrices(advMatrixOps.getOtherMatrix());
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_6d504e1c/Main.java:11: 错误: 找不到符号
+        RealMatrix productMatrix = matrixOps.multiplyMatrices(advMatrixOps.getOtherMatrix());
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_6d504e1c/Main.java:28: 错误: 找不到符号
+        RealMatrix transposeMatrix = matrixOps.getTranspose();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+3 个错误

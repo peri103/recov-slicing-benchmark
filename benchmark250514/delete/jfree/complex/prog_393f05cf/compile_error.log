@@ -1,0 +1,26 @@
+generated/jfree/complex/prog_393f05cf/Main.java:28: 错误: 找不到符号
+        thermometerPlot.setValue(temperature);
+                       ^
+  符号:   方法 setValue(double)
+  位置: 类型为ThermometerPlot的变量 thermometerPlot
+generated/jfree/complex/prog_393f05cf/Main.java:35: 错误: 找不到符号
+        /* read */ DecimalFormat readFormat = (DecimalFormat) thermometerPlot.getValueFormat();
+                                                                             ^
+  符号:   方法 getValueFormat()
+  位置: 类型为ThermometerPlot的变量 thermometerPlot
+generated/jfree/complex/prog_393f05cf/Main.java:41: 错误: 不兼容的类型: Paint无法转换为Color
+        Color sectionColor = piePlot.getSectionPaint("Section1");
+                                                    ^
+generated/jfree/complex/prog_393f05cf/Main.java:45: 错误: 找不到符号
+        thermometerPlot.setUnits(thermometerPlot.UNITS_CELSIUS);
+                                                ^
+  符号:   变量 UNITS_CELSIUS
+  位置: 类型为ThermometerPlot的变量 thermometerPlot
+generated/jfree/complex/prog_393f05cf/Main.java:46: 错误: 找不到符号
+        System.out.println("Current Temperature: " + thermometerPlot.getValue());
+                                                                    ^
+  符号:   方法 getValue()
+  位置: 类型为ThermometerPlot的变量 thermometerPlot
+注: generated/jfree/complex/prog_393f05cf/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+5 个错误

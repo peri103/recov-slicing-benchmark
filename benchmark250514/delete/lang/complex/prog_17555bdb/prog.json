@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableFloat;\nimport org.apache.commons.lang3.mutable.MutableInt;\nimport org.apache.commons.lang3.mutable.MutableBoolean;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableFloat mutableFloat = new MutableFloat();\n        MutableInt mutableInt = new MutableInt();\n        MutableBoolean mutableBoolean = new MutableBoolean();\n        \n        // Setting initial values\n        mutableInt.setValue(42);\n        mutableBoolean.setValue(true);\n        \n        // Performing some operations\n        mutableInt.add(8);\n        mutableBoolean.setValue(!mutableBoolean.booleanValue());\n        \n        // Writing to mutableFloat\n        /* write */ mutableFloat.setValue(3.14f);\n        \n        // More operations\n        System.out.println(\"MutableInt: \" + mutableInt.getValue());\n        System.out.println(\"MutableBoolean: \" + mutableBoolean.getValue());\n        \n        // Conditional logic\n        if (mutableBoolean.booleanValue()) {\n            mutableInt.add(10);\n        } else {\n            mutableInt.subtract(5);\n        }\n        \n        // Reading from mutableFloat\n        /* read */ float value = mutableFloat.getValue();\n        System.out.println(\"MutableFloat: \" + value);\n        \n        // Final operations\n        mutableInt.multiply(2);\n        System.out.println(\"Final MutableInt: \" + mutableInt.getValue());\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.mutable.MutableFloat;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableFloat mutableFloat = new MutableFloat();\n        /* write */ mutableFloat.setValue(3.14f);\n        /* read */ float value = mutableFloat.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableFloat",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableFloat",
+        "read_method": "getValue"
+    }
+}

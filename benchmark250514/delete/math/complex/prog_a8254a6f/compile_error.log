@@ -1,0 +1,11 @@
+generated/math/complex/prog_a8254a6f/Main.java:12: 错误: 找不到符号
+        /* write */ RealMatrix matrix = MatrixUtils.createArray2DRowRealMatrix(data);
+                                                   ^
+  符号:   方法 createArray2DRowRealMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_a8254a6f/Main.java:21: 错误: 找不到符号
+        RealMatrix matrix2 = MatrixUtils.createArray2DRowRealMatrix(data2);
+                                        ^
+  符号:   方法 createArray2DRowRealMatrix(double[][])
+  位置: 类 MatrixUtils
+2 个错误

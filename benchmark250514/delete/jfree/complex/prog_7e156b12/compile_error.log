@@ -1,0 +1,26 @@
+generated/jfree/complex/prog_7e156b12/Main.java:17: 错误: 找不到符号
+        /* write */ stepRenderer.setBaseShapesVisible(true);
+                                ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYStepRenderer的变量 stepRenderer
+generated/jfree/complex/prog_7e156b12/Main.java:20: 错误: 找不到符号
+        lineRenderer.setBaseShapesVisible(false);
+                    ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_7e156b12/Main.java:23: 错误: 找不到符号
+        rendererSettings.put("StepRendererShapesVisible", stepRenderer.getBaseShapesVisible());
+                                                                      ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYStepRenderer的变量 stepRenderer
+generated/jfree/complex/prog_7e156b12/Main.java:24: 错误: 找不到符号
+        rendererSettings.put("LineRendererShapesVisible", lineRenderer.getBaseShapesVisible());
+                                                                      ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+generated/jfree/complex/prog_7e156b12/Main.java:36: 错误: 找不到符号
+        /* read */ boolean isStepRendererVisible = stepRenderer.getBaseShapesVisible();
+                                                               ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYStepRenderer的变量 stepRenderer
+5 个错误

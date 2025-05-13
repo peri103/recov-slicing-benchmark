@@ -1,0 +1,29 @@
+generated/jfree/multi_files/prog_e4bb1fad/CustomRenderer.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/multi_files/prog_e4bb1fad/CustomRenderer.java:5: 错误: CustomRenderer不是抽象的, 并且未覆盖AbstractRenderer中的抽象方法getDrawingSupplier()
+public class CustomRenderer extends AbstractRenderer {
+       ^
+generated/jfree/multi_files/prog_e4bb1fad/CustomRenderer.java:7: 错误: 找不到符号
+        /* write */ setBaseStroke(stroke);
+                    ^
+  符号:   方法 setBaseStroke(BasicStroke)
+  位置: 类 CustomRenderer
+generated/jfree/multi_files/prog_e4bb1fad/CustomRenderer.java:11: 错误: 找不到符号
+        return getBaseStroke();
+               ^
+  符号:   方法 getBaseStroke()
+  位置: 类 CustomRenderer
+generated/jfree/multi_files/prog_e4bb1fad/Main.java:32: 错误: 找不到符号
+        renderer.setBasePaint(Color.BLUE);
+                ^
+  符号:   方法 setBasePaint(Color)
+  位置: 类型为CustomRenderer的变量 renderer
+generated/jfree/multi_files/prog_e4bb1fad/Main.java:33: 错误: 找不到符号
+        Color readColor = (Color) renderer.getBasePaint();
+                                          ^
+  符号:   方法 getBasePaint()
+  位置: 类型为CustomRenderer的变量 renderer
+6 个错误

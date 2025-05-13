@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.OpenMapRealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        OpenMapRealVector vector = new OpenMapRealVector(10);\n        /* write */ vector.setEntry(0, 3.14);\n        /* read */ double value = vector.getEntry(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.OpenMapRealVector",
+        "write_method": "setEntry",
+        "read_class": "org.apache.commons.math3.linear.OpenMapRealVector",
+        "read_method": "getEntry"
+    }
+}

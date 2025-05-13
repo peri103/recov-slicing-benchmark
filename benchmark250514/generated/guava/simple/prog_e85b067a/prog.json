@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.EnumHashBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an EnumHashBiMap instance\n        EnumHashBiMap<MyEnum, Integer> map = EnumHashBiMap.create(MyEnum.class);\n\n        // Write a value to the map using the put method\n        /* write */ map.put(MyEnum.VALUE_ONE, 100);\n\n        // Read the value from the map using the get method\n        /* read */ Integer value = map.get(MyEnum.VALUE_ONE);\n        \n        // Print the value\n        System.out.println(value);\n    }\n\n    // Define an enum type to be used with EnumHashBiMap\n    private enum MyEnum {\n        VALUE_ONE,\n        VALUE_TWO\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.EnumHashBiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.EnumHashBiMap",
+        "read_method": "get"
+    }
+}

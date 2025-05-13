@@ -1,0 +1,6 @@
+generated/math/simple/prog_6af671a7/Main.java:8: 错误: 找不到符号
+        /* write */ ArrayRealVector vector = MatrixUtils.createArrayRealVector(data);
+                                                        ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+1 个错误

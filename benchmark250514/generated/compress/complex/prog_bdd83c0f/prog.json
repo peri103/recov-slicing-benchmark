@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.HashMap;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.zip\");\n        /* write */ zipEntry.setCompressedSize(1024);\n\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"data\", 42);\n        map.put(\"value\", 100);\n\n        ArrayList<Integer> list = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            list.add(i * 10);\n        }\n\n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        System.out.println(\"Sum of list elements: \" + sum);\n\n        int mapValue = map.get(\"value\");\n        System.out.println(\"Map value: \" + mapValue);\n\n        /* read */ long compressedSize = zipEntry.getCompressedSize();\n        System.out.println(compressedSize);\n\n        int product = 1;\n        for (int num : list) {\n            product *= num + 1;\n        }\n        System.out.println(\"Product of list elements plus one: \" + product);\n\n        map.put(\"result\", sum + product);\n        System.out.println(\"Result stored in map: \" + map.get(\"result\"));\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"example.zip\");\n        /* write */ zipEntry.setCompressedSize(1024);\n        /* read */ long compressedSize = zipEntry.getCompressedSize();\n        System.out.println(compressedSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setCompressedSize",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getCompressedSize"
+    }
+}

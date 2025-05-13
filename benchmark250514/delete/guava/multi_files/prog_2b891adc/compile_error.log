@@ -1,0 +1,11 @@
+generated/guava/multi_files/prog_2b891adc/Student.java:3: 错误: 找不到符号
+    private Multiset<String> courses;
+            ^
+  符号:   类 Multiset
+  位置: 类 Student
+generated/guava/multi_files/prog_2b891adc/Student.java:7: 错误: 找不到符号
+        this.courses = LinkedHashMultiset.create();
+                       ^
+  符号:   变量 LinkedHashMultiset
+  位置: 类 Student
+2 个错误

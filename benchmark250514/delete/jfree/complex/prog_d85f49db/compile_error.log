@@ -1,0 +1,19 @@
+generated/jfree/complex/prog_d85f49db/Main.java:21: 错误: 无法将类 Plot中的方法 setOutlinePaint应用到给定类型;
+        categoryPlot.setOutlinePaint(0, Color.BLUE);
+                    ^
+  需要: Paint
+  找到: int,Color
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_d85f49db/Main.java:28: 错误: 无法将类 Plot中的方法 setOutlinePaint应用到给定类型;
+            categoryPlot.setOutlinePaint(categories.indexOf(category), Color.GREEN);
+                        ^
+  需要: Paint
+  找到: int,Color
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_d85f49db/Main.java:33: 错误: 无法将类 Plot中的方法 getOutlinePaint应用到给定类型;
+            paints.add(categoryPlot.getOutlinePaint(i));
+                                   ^
+  需要: 没有参数
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+3 个错误

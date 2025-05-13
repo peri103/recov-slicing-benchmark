@@ -1,0 +1,50 @@
+generated/compress/complex/prog_8f3f389b/Main.java:7: 错误: 无法将类 DumpArchiveSummary中的构造器 DumpArchiveSummary应用到给定类型;
+        DumpArchiveSummary summary = new DumpArchiveSummary();
+                                     ^
+  需要: byte[],ZipEncoding
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+generated/compress/complex/prog_8f3f389b/Main.java:10: 错误: 找不到符号
+        summary.setTotalSize(5000);
+               ^
+  符号:   方法 setTotalSize(int)
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/complex/prog_8f3f389b/Main.java:11: 错误: 找不到符号
+        summary.setVolumeId(3);
+               ^
+  符号:   方法 setVolumeId(int)
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/complex/prog_8f3f389b/Main.java:13: 错误: 找不到符号
+        long totalSize = summary.getTotalSize();
+                                ^
+  符号:   方法 getTotalSize()
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/complex/prog_8f3f389b/Main.java:14: 错误: 找不到符号
+        int volumeId = summary.getVolumeId();
+                              ^
+  符号:   方法 getVolumeId()
+  位置: 类型为DumpArchiveSummary的变量 summary
+generated/compress/complex/prog_8f3f389b/Main.java:21: 错误: 找不到符号
+        entry.setType(DumpArchiveEntry.TYPE_DIRECTORY);
+                                      ^
+  符号:   变量 TYPE_DIRECTORY
+  位置: 类 DumpArchiveEntry
+generated/compress/complex/prog_8f3f389b/Main.java:22: 错误: 找不到符号
+        entry.setFileSize(1024);
+             ^
+  符号:   方法 setFileSize(int)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_8f3f389b/Main.java:24: 错误: 找不到符号
+        long fileSize = entry.getFileSize();
+                             ^
+  符号:   方法 getFileSize()
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_8f3f389b/Main.java:51: 错误: 找不到符号
+        entry.setPermissions(755);
+             ^
+  符号:   方法 setPermissions(int)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_8f3f389b/Main.java:52: 错误: 不兼容的类型: Set<PERMISSION>无法转换为int
+        int permissions = entry.getPermissions();
+                                              ^
+10 个错误

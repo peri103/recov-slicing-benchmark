@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PiePlot object\n        PiePlot piePlot = new PiePlot();\n\n        // Create a Color object to use for the outline paint\n        Color outlineColor = Color.RED;\n\n        // Use the write method to set the outline paint\n        /* write */ piePlot.setOutlinePaint(outlineColor);\n\n        // Use the read method to get the outline paint\n        /* read */ Color readColor = (Color) piePlot.getOutlinePaint();\n\n        // Print the color to verify the value\n        System.out.println(readColor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setOutlinePaint",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getOutlinePaint"
+    }
+}

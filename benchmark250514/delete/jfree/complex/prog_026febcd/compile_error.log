@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_026febcd/Main.java:14: 错误: 找不到符号
+        /* write */ shapeRenderer.setOutlinePaint(Color.RED);
+                                 ^
+  符号:   方法 setOutlinePaint(Color)
+  位置: 类型为XYShapeRenderer的变量 shapeRenderer
+generated/jfree/complex/prog_026febcd/Main.java:34: 错误: 找不到符号
+        /* read */ Paint outlinePaint = shapeRenderer.getOutlinePaint();
+                                                     ^
+  符号:   方法 getOutlinePaint()
+  位置: 类型为XYShapeRenderer的变量 shapeRenderer
+2 个错误

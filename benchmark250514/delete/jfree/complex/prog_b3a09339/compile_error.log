@@ -1,0 +1,42 @@
+generated/jfree/complex/prog_b3a09339/Main.java:4: 错误: 找不到符号
+import org.jfree.data.general.DefaultCategoryDataset;
+                             ^
+  符号:   类 DefaultCategoryDataset
+  位置: 程序包 org.jfree.data.general
+generated/jfree/complex/prog_b3a09339/Main.java:8: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/complex/prog_b3a09339/Main.java:16: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_b3a09339/Main.java:21: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_b3a09339/Main.java:32: 错误: 找不到符号
+        DefaultCategoryDataset categoryDataset = new DefaultCategoryDataset();
+        ^
+  符号:   类 DefaultCategoryDataset
+  位置: 类 Main
+generated/jfree/complex/prog_b3a09339/Main.java:32: 错误: 找不到符号
+        DefaultCategoryDataset categoryDataset = new DefaultCategoryDataset();
+                                                     ^
+  符号:   类 DefaultCategoryDataset
+  位置: 类 Main
+generated/jfree/complex/prog_b3a09339/Main.java:37: 错误: 找不到符号
+        /* write */ plot.setDataset(pieDataset);
+                        ^
+  符号:   方法 setDataset(DefaultPieDataset)
+  位置: 类型为Plot的变量 plot
+generated/jfree/complex/prog_b3a09339/Main.java:48: 错误: 找不到符号
+        Dataset anotherRetrievedDataset = plot.getDataset();
+                                              ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 plot
+generated/jfree/complex/prog_b3a09339/Main.java:58: 错误: 找不到符号
+        /* read */ Dataset retrievedDataset = plot.getDataset();
+                                                  ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 plot
+注: generated/jfree/complex/prog_b3a09339/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+9 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.queue.CircularFifoQueue;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoQueue<Integer> queue = new CircularFifoQueue<>(5);\n        ArrayList<Integer> list = new ArrayList<>();\n        \n        // Adding elements to the list\n        for (int i = 0; i < 10; i++) {\n            list.add(i * 10);\n        }\n        \n        // Process elements in the list\n        int sum = 0;\n        for (int num : list) {\n            sum += num;\n        }\n        \n        System.out.println(\"Sum of list elements: \" + sum);\n        \n        // Add element to queue\n        /* write */ queue.add(42);\n        \n        // Perform operations on the list\n        list.removeIf(n -> n % 20 == 0);\n        System.out.println(\"Filtered list: \" + list);\n        \n        // Peek element from queue\n        /* read */ int value = queue.peek();\n        System.out.println(\"Peeked value from queue: \" + value);\n        \n        // Further operations on the list\n        list.add(value);\n        list.sort(null);\n        System.out.println(\"Sorted list after adding peeked value: \" + list);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.queue.CircularFifoQueue;\n\npublic class Main {\n    public static void main(String[] args) {\n        CircularFifoQueue<Integer> queue = new CircularFifoQueue<>(5);\n        /* write */ queue.add(42);\n        /* read */ int value = queue.peek();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.queue.CircularFifoQueue",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.queue.CircularFifoQueue",
+        "read_method": "peek"
+    }
+}

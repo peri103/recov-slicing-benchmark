@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // ImmutableMultimap does not have a direct put method since it's immutable.\n        // We need to use the builder to add entries and then build the multimap.\n        ImmutableMultimap.Builder<String, Integer> builder = ImmutableMultimap.builder();\n        \n        /* write */ builder.put(\"key\", 42);\n        \n        ImmutableMultimap<String, Integer> multimap = builder.build();\n        \n        /* read */ int value = multimap.get(\"key\").iterator().next();\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ImmutableMultimap",
+        "read_method": "get"
+    }
+}

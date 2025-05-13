@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of AbstractOrderedBidiMapDecorator using a HashMap\n        AbstractOrderedBidiMapDecorator<String, Integer> map = new AbstractOrderedBidiMapDecorator<>(new HashMap<>());\n\n        // Use the write method to put a key-value pair into the map\n        /* write */ map.put(\"key\", 42);\n\n        // Use the read method to get the value associated with the key\n        /* read */ Integer value = map.get(\"key\");\n\n        // Print the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator",
+        "read_method": "get"
+    }
+}

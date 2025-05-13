@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_f368e365/Main.java:31: 错误: 找不到符号
+        int seriesCount = lineRenderer.getSeriesCount();
+                                      ^
+  符号:   方法 getSeriesCount()
+  位置: 类型为XYLineAndShapeRenderer的变量 lineRenderer
+1 个错误

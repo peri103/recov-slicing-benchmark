@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_0155066e/Main.java:14: 错误: 找不到符号
+        /* read */ Stroke readStepStroke = strokeManager.getRendererStroke();
+                   ^
+  符号:   类 Stroke
+  位置: 类 Main
+generated/jfree/multi_files/prog_0155066e/Main.java:18: 错误: 找不到符号
+        Color readColor = colorManager.getSeriesPaint(0);
+        ^
+  符号:   类 Color
+  位置: 类 Main
+2 个错误

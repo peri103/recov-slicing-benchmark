@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_16ea63ce/Main.java:29: 错误: 找不到符号
+                                 XYItemRendererState xyItemRendererState, 
+                                 ^
+  符号: 类 XYItemRendererState
+generated/jfree/complex/prog_16ea63ce/Main.java:26: 错误: <匿名Main$1>不是抽象的, 并且未覆盖XYItemRenderer中的抽象方法drawRangeMarker(Graphics2D,XYPlot,ValueAxis,Marker,Rectangle2D)
+        XYItemRenderer renderer = new XYItemRenderer() {
+                                                       ^
+generated/jfree/complex/prog_16ea63ce/Main.java:27: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+3 个错误

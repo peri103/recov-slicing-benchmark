@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Cache<String, Integer> cache = CacheBuilder.newBuilder().build();\n        Map<String, Integer> map = new HashMap<>();\n        \n        map.put(\"anotherKey\", 100);\n        map.put(\"yetAnotherKey\", 200);\n\n        /* write */ cache.put(\"key\", 42);\n        \n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            cache.put(entry.getKey(), entry.getValue());\n        }\n        \n        Integer anotherValue = cache.getIfPresent(\"anotherKey\");\n        if (anotherValue != null) {\n            System.out.println(\"Value from map: \" + anotherValue);\n        }\n\n        Integer yetAnotherValue = cache.getIfPresent(\"yetAnotherKey\");\n        if (yetAnotherValue != null) {\n            System.out.println(\"Value from map: \" + yetAnotherValue);\n        }\n\n        for (String key : map.keySet()) {\n            System.out.println(\"Map contains: \" + key + \" -> \" + map.get(key));\n        }\n        \n        /* read */ Integer value = cache.get(\"key\", () -> null);\n        \n        System.out.println(\"Value from cache: \" + value);\n    }\n}",
+    "java_code_simple": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Cache<String, Integer> cache = CacheBuilder.newBuilder().build();\n        \n        /* write */ cache.put(\"key\", 42);\n        \n        /* read */ Integer value = cache.get(\"key\", () -> null);\n        \n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.cache.Cache",
+        "write_method": "put",
+        "read_class": "com.google.common.cache.Cache",
+        "read_method": "get"
+    }
+}

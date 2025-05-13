@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_04c2b4d7/ArchiveEntryManager.java:11: 错误: 找不到符号
+        /* write */ entry.setExternalAttributes(attributes);
+                         ^
+  符号:   方法 setExternalAttributes(long)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/multi_files/prog_04c2b4d7/ArchiveEntryViewer.java:11: 错误: 找不到符号
+        /* read */ return entry.getExternalAttributes();
+                               ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为ArArchiveEntry的变量 entry
+2 个错误

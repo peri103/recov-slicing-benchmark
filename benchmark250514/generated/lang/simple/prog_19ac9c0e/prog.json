@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a Date object\n        Calendar calendar = Calendar.getInstance();\n        calendar.set(2023, Calendar.OCTOBER, 5, 10, 30, 45); // Example date: October 5, 2023, 10:30:45\n        Date date = calendar.getTime();\n\n        // Use DateUtils to round the date to the nearest hour\n        /* write */ Date roundedDate = DateUtils.round(date, Calendar.HOUR);\n\n        // Use DateUtils to truncate the rounded date to the start of the hour\n        /* read */ Date truncatedDate = DateUtils.truncate(roundedDate, Calendar.HOUR);\n\n        // Print the truncated date\n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "round",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

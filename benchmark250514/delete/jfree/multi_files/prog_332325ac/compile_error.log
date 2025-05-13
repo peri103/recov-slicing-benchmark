@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_332325ac/Main.java:17: 错误: 找不到符号
+        /* read */ ValueAxis retrievedAxis = plotter.getPlot().getRangeAxis();
+                   ^
+  符号:   类 ValueAxis
+  位置: 类 Main
+generated/jfree/multi_files/prog_332325ac/ChartDisplay.java:24: 错误: 找不到符号
+        this.chart.setCategoryPlot(plotter.getPlot());
+                  ^
+  符号:   方法 setCategoryPlot(CategoryPlot)
+  位置: 类型为JFreeChart的变量 chart
+2 个错误

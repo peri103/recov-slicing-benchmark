@@ -1,0 +1,11 @@
+generated/lang/complex/prog_cab8e1de/Main.java:26: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(updatedDate, DateUtils.HOUR_OF_DAY);
+                                                                                 ^
+  符号:   变量 HOUR_OF_DAY
+  位置: 类 DateUtils
+generated/lang/complex/prog_cab8e1de/Main.java:36: 错误: 找不到符号
+        Date monthTruncatedDate = DateUtils.truncate(twoYearsLater, DateUtils.MONTH);
+                                                                             ^
+  符号:   变量 MONTH
+  位置: 类 DateUtils
+2 个错误

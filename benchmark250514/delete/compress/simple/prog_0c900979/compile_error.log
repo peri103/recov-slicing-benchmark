@@ -1,0 +1,11 @@
+generated/compress/simple/prog_0c900979/Main.java:8: 错误: 找不到符号
+        /* write */ gzipParams.setExtra(extraData);
+                              ^
+  符号:   方法 setExtra(byte[])
+  位置: 类型为GzipParameters的变量 gzipParams
+generated/compress/simple/prog_0c900979/Main.java:9: 错误: 找不到符号
+        /* read */ byte[] readExtraData = gzipParams.getExtra();
+                                                    ^
+  符号:   方法 getExtra()
+  位置: 类型为GzipParameters的变量 gzipParams
+2 个错误

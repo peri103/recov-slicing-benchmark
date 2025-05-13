@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a calendar to a specific date\n        Calendar calendar = Calendar.getInstance();\n        calendar.set(2023, Calendar.JANUARY, 15); // Setting date to January 15, 2023\n        Date date = calendar.getTime();\n        \n        // Use the setMonths method to change the month\n        /* write */ date = DateUtils.setMonths(date, Calendar.MARCH); // Change month to March\n        \n        // Use the truncate method to truncate the date to the start of the month\n        /* read */ Date truncatedDate = DateUtils.truncate(date, Calendar.MONTH);\n        \n        // Print the truncated date\n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "setMonths",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

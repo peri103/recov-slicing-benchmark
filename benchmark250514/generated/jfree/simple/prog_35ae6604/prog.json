@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\nimport java.awt.Shape;\nimport java.awt.geom.Ellipse2D;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a LegendItem object\n        LegendItem legendItem = new LegendItem(\"Example\");\n\n        // Create a shape to be set\n        Shape circle = new Ellipse2D.Double(0, 0, 10, 10);\n\n        /* write */ legendItem.setShape(circle);\n\n        /* read */ Shape retrievedShape = legendItem.getShape();\n\n        // Output the class of the shape to verify it was set and retrieved correctly\n        System.out.println(retrievedShape.getClass().getName());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setShape",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getShape"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.ThermometerPlot;\nimport java.text.DecimalFormat;\n\npublic class Main {\n    public static void main(String[] args) {\n        ThermometerPlot thermometerPlot = new ThermometerPlot();\n\n        // Initialize the DecimalFormat object to be used\n        DecimalFormat decimalFormat = new DecimalFormat(\"#.##\");\n\n        /* write */ thermometerPlot.setValueFormat(decimalFormat);\n\n        /* read */ DecimalFormat readFormat = (DecimalFormat) thermometerPlot.getValueFormat();\n\n        // Output the result to verify\n        System.out.println(readFormat.toPattern());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.ThermometerPlot",
+        "write_method": "setValueFormat",
+        "read_class": "org.jfree.chart.plot.ThermometerPlot",
+        "read_method": "getValueFormat"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the LegendItem object\n        LegendItem legendItem = new LegendItem(\"Example\");\n\n        // Set the series key using the write method\n        /* write */ legendItem.setSeriesKey(\"SeriesKey\");\n\n        // Read the series key using the read method\n        /* read */ Object seriesKey = legendItem.getSeriesKey();\n\n        // Print the series key to verify the operation\n        System.out.println(seriesKey);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setSeriesKey",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getSeriesKey"
+    }
+}

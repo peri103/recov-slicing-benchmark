@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\nimport org.apache.commons.lang3.text.StrMatcher;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize StrTokenizer and set quote matcher\n        StrTokenizer tokenizer = new StrTokenizer(\"Hello 'World'! How 'are' you?\");\n        /* write */ tokenizer.setQuoteMatcher(StrMatcher.quoteMatcher());\n\n        // Additional code using ArrayList\n        ArrayList<String> words = new ArrayList<>();\n        words.add(\"Java\");\n        words.add(\"Python\");\n        words.add(\"C++\");\n\n        // Using HashMap to store word frequencies\n        HashMap<String, Integer> wordCount = new HashMap<>();\n        for (String word : words) {\n            wordCount.put(word, word.length());\n        }\n\n        // Processing StrTokenizer tokens\n        while (tokenizer.hasNext()) {\n            String currentToken = tokenizer.nextToken();\n            System.out.println(\"Processing token: \" + currentToken);\n        }\n\n        // Output word frequencies\n        for (String word : wordCount.keySet()) {\n            System.out.println(\"Word: \" + word + \", Length: \" + wordCount.get(word));\n        }\n\n        // Final token output\n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(\"Next token: \" + token);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrTokenizer;\nimport org.apache.commons.lang3.text.StrMatcher;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrTokenizer tokenizer = new StrTokenizer(\"Hello 'World'!\");\n        /* write */ tokenizer.setQuoteMatcher(StrMatcher.quoteMatcher());\n        /* read */ String token = tokenizer.nextToken();\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setQuoteMatcher",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

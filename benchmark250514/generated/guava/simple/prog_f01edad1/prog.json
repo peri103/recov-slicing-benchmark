@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.SortedMultiset;\nimport com.google.common.collect.TreeMultiset;\n\npublic class Main {\n    public static void main(String[] args) {\n        SortedMultiset<String> multiset = TreeMultiset.create();\n        /* write */ multiset.add(\"apple\");\n        /* read */ int count = multiset.count(\"apple\");\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.SortedMultiset",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.SortedMultiset",
+        "read_method": "count"
+    }
+}

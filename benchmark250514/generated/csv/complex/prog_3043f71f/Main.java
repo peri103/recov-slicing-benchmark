@@ -1,0 +1,55 @@
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
+import org.apache.commons.csv.CSVRecord;
+import org.apache.commons.csv.CSVParser;
+import java.io.StringWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Prepare to write to CSV
+            StringWriter writer = new StringWriter();
+            CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
+
+            // Write a value using CSVPrinter
+            /* write */ csvPrinter.print("Hello, World!");
+            csvPrinter.flush();
+
+            // Prepare to read from CSV
+            String csvData = writer.toString();
+            CSVParser parser = CSVParser.parse(csvData, CSVFormat.DEFAULT);
+            CSVRecord record = parser.getRecords().get(0);
+
+            // Additional unrelated code to increase complexity
+            List<Integer> numbers = new ArrayList<>();
+            for (int i = 0; i < 10; i++) {
+                numbers.add(i);
+            }
+
+            int sum = 0;
+            for (int number : numbers) {
+                sum += number;
+            }
+            System.out.println("Sum of numbers: " + sum);
+
+            List<String> strings = new ArrayList<>();
+            strings.add("First");
+            strings.add("Second");
+            strings.add("Third");
+
+            for (String str : strings) {
+                System.out.println("String: " + str);
+            }
+
+            // Read the value using CSVRecord
+            /* read */ String value = record.get(0);
+            System.out.println(value);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

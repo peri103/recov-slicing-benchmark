@@ -1,0 +1,6 @@
+generated/math/complex/prog_f570329c/Main.java:46: 错误: 找不到符号
+        double determinant = anotherMatrix.getDeterminant();
+                                          ^
+  符号:   方法 getDeterminant()
+  位置: 类型为Array2DRowRealMatrix的变量 anotherMatrix
+1 个错误

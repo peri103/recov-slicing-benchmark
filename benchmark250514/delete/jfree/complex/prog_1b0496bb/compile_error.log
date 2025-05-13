@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_1b0496bb/Main.java:25: 错误: 找不到符号
+        barRenderer.setBaseOutlineStroke(new java.awt.BasicStroke(1.5f));
+                   ^
+  符号:   方法 setBaseOutlineStroke(BasicStroke)
+  位置: 类型为BarRenderer的变量 barRenderer
+1 个错误

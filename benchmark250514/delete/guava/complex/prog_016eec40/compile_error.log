@@ -1,0 +1,6 @@
+generated/guava/complex/prog_016eec40/Main.java:24: 错误: 找不到符号
+        /* write */ Integer value = domain.of(5);
+                                          ^
+  符号:   方法 of(int)
+  位置: 类型为DiscreteDomain<Integer>的变量 domain
+1 个错误

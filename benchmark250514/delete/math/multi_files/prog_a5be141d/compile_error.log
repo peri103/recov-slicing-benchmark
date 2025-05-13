@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_a5be141d/MatrixOperations.java:10: 错误: 找不到符号
+        /* write */ identityMatrix = MatrixUtils.createIdentityMatrix(size);
+                                                ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_a5be141d/Main.java:12: 错误: 找不到符号
+        RealVector resultVector = matrixOps.multiplyWithVector(new double[] {1.0, 2.0, 3.0});
+        ^
+  符号:   类 RealVector
+  位置: 类 Main
+2 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.HashMap;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        /* write */ gzipParameters.setISize(12345);\n\n        // Unrelated code to make the program more complex\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"one\", 1);\n        map.put(\"two\", 2);\n        map.put(\"three\", 3);\n\n        ArrayList<String> keys = new ArrayList<>(map.keySet());\n        for (String key : keys) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n\n        int sum = 0;\n        for (Integer value : map.values()) {\n            sum += value;\n        }\n        System.out.println(\"Sum of values: \" + sum);\n\n        // More complex operations\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 10);\n        }\n\n        int product = 1;\n        for (int number : numbers) {\n            product *= number;\n        }\n        System.out.println(\"Product of numbers: \" + product);\n\n        // Accessing the original write-read pair\n        /* read */ int iSize = gzipParameters.getISize();\n        System.out.println(\"ISize: \" + iSize);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParameters = new GzipParameters();\n        /* write */ gzipParameters.setISize(12345);\n        /* read */ int iSize = gzipParameters.getISize();\n        System.out.println(iSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setISize",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getISize"
+    }
+}

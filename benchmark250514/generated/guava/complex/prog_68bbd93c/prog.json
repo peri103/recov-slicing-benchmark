@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.HashBiMap;\nimport com.google.common.collect.BiMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashBiMap<String, Integer> map = HashBiMap.create();\n        Map<String, String> stringMap = new HashMap<>();\n        BiMap<Integer, String> reverseMap = HashBiMap.create();\n\n        stringMap.put(\"A\", \"Apple\");\n        stringMap.put(\"B\", \"Banana\");\n\n        reverseMap.put(1, \"One\");\n        reverseMap.put(2, \"Two\");\n\n        /* write */ map.put(\"key1\", 100);\n        reverseMap.put(3, \"Three\");\n\n        for (Map.Entry<String, String> entry : stringMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n\n        Integer valueFromReverseMap = reverseMap.inverse().get(\"Two\");\n        System.out.println(\"Value from reverse map: \" + valueFromReverseMap);\n\n        /* read */ Integer value = map.get(\"key1\");\n        System.out.println(value);\n\n        reverseMap.put(4, \"Four\");\n        for (Map.Entry<Integer, String> entry : reverseMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n\n        stringMap.put(\"C\", \"Cherry\");\n        for (Map.Entry<String, String> entry : stringMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.HashBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashBiMap<String, Integer> map = HashBiMap.create();\n        /* write */ map.put(\"key1\", 100);\n        /* read */ Integer value = map.get(\"key1\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.HashBiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.HashBiMap",
+        "read_method": "get"
+    }
+}

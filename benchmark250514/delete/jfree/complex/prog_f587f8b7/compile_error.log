@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_f587f8b7/Main.java:43: 错误: 找不到符号
+            categoryPlot.setDomainGridlinePosition(CategoryPlot.DEFAULT_DOMAIN_GRIDLINE_POSITION);
+                                                               ^
+  符号:   变量 DEFAULT_DOMAIN_GRIDLINE_POSITION
+  位置: 类 CategoryPlot
+1 个错误

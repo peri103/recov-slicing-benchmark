@@ -1,0 +1,14 @@
+generated/collections/simple/prog_02d68162/Main.java:1: 错误: 程序包org.apache.commons.collections4.buffer不存在
+import org.apache.commons.collections4.buffer.CircularFifoBuffer;
+                                             ^
+generated/collections/simple/prog_02d68162/Main.java:5: 错误: 找不到符号
+        CircularFifoBuffer<Integer> buffer = new CircularFifoBuffer<>(10);
+        ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+generated/collections/simple/prog_02d68162/Main.java:5: 错误: 找不到符号
+        CircularFifoBuffer<Integer> buffer = new CircularFifoBuffer<>(10);
+                                                 ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+3 个错误

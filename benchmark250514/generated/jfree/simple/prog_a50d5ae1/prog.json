@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.CategoryPlot;\nimport org.jfree.chart.axis.CategoryAxis;\nimport org.jfree.chart.axis.Axis;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the CategoryPlot object\n        CategoryPlot plot = new CategoryPlot();\n\n        // Create a CategoryAxis object to be set in the plot\n        CategoryAxis domainAxis = new CategoryAxis(\"Domain Axis\");\n\n        // Write operation: set the domain axis of the plot\n        /* write */ plot.setDomainAxis(domainAxis);\n\n        // Read operation: retrieve the domain axis of the plot\n        /* read */ Axis retrievedAxis = plot.getDomainAxis();\n\n        // Print the retrieved axis to verify it matches what was set\n        System.out.println(retrievedAxis.getLabel());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.CategoryPlot",
+        "write_method": "setDomainAxis",
+        "read_class": "org.jfree.chart.plot.CategoryPlot",
+        "read_method": "getDomainAxis"
+    }
+}

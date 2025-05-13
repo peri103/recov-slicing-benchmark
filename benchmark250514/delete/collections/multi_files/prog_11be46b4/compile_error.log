@@ -1,0 +1,16 @@
+generated/collections/multi_files/prog_11be46b4/StudentScores.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.multimap.TreeValuedHashMap;
+                                               ^
+  符号:   类 TreeValuedHashMap
+  位置: 程序包 org.apache.commons.collections4.multimap
+generated/collections/multi_files/prog_11be46b4/StudentScores.java:5: 错误: 找不到符号
+    private TreeValuedHashMap<String, Integer> scores = new TreeValuedHashMap<>();
+            ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 StudentScores
+generated/collections/multi_files/prog_11be46b4/StudentScores.java:5: 错误: 找不到符号
+    private TreeValuedHashMap<String, Integer> scores = new TreeValuedHashMap<>();
+                                                            ^
+  符号:   类 TreeValuedHashMap
+  位置: 类 StudentScores
+3 个错误

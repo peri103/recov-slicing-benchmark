@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_bfefda0c/Main.java:40: 错误: 找不到符号
+        plot.setDomainPannable(true);
+            ^
+  符号:   方法 setDomainPannable(boolean)
+  位置: 类型为CategoryPlot的变量 plot
+1 个错误

@@ -1,0 +1,15 @@
+generated/csv/complex/prog_531e270e/Main.java:14: 错误: 无法将类 CSVRecord中的构造器 CSVRecord应用到给定类型;
+        CSVRecord record = new CSVRecord(values, null, 0, format);
+                           ^
+  需要: CSVParser,String[],String,long,long
+  找到: String[],<空值>,int,CSVFormat
+  原因: 实际参数列表和形式参数列表长度不同
+generated/csv/complex/prog_531e270e/Main.java:29: 错误: 无法将类 CSVRecord中的构造器 CSVRecord应用到给定类型;
+        CSVRecord anotherRecord = new CSVRecord(anotherValues, null, 1, anotherFormat);
+                                  ^
+  需要: CSVParser,String[],String,long,long
+  找到: String[],<空值>,int,CSVFormat
+  原因: 实际参数列表和形式参数列表长度不同
+注: generated/csv/complex/prog_531e270e/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

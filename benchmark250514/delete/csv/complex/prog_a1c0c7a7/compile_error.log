@@ -1,0 +1,10 @@
+generated/csv/complex/prog_a1c0c7a7/Main.java:22: 错误: 不兼容的类型: List<String>无法转换为CSVParser
+        CSVRecord record1 = new CSVRecord(data1, null, format, 0, 0);
+                                          ^
+generated/csv/complex/prog_a1c0c7a7/Main.java:23: 错误: 不兼容的类型: List<String>无法转换为CSVParser
+        CSVRecord record2 = new CSVRecord(data2, null, format, 0, 1);
+                                          ^
+注: generated/csv/complex/prog_a1c0c7a7/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

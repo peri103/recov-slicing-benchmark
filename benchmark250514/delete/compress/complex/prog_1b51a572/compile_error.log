@@ -1,0 +1,11 @@
+generated/compress/complex/prog_1b51a572/Main.java:8: 错误: 对于CpioArchiveEntry(short,int), 找不到合适的构造器
+        CpioArchiveEntry entry = new CpioArchiveEntry(CpioArchiveEntry.FORMAT_NEW, 0);
+                                 ^
+    构造器 CpioArchiveEntry.CpioArchiveEntry(short,String)不适用
+      (参数不匹配; int无法转换为String)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(String,long)不适用
+      (参数不匹配; short无法转换为String)
+    构造器 CpioArchiveEntry.CpioArchiveEntry(File,String)不适用
+      (参数不匹配; short无法转换为File)
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

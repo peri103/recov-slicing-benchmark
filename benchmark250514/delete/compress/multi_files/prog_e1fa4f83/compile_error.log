@@ -1,0 +1,6 @@
+generated/compress/multi_files/prog_e1fa4f83/Main.java:28: 错误: 找不到符号
+        CpioArchiveEntry entry = archiveHandler.getEntry();
+        ^
+  符号:   类 CpioArchiveEntry
+  位置: 类 Main
+1 个错误

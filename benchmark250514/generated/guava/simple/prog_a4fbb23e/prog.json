@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ListMultimap;\nimport com.google.common.collect.ArrayListMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the ListMultimap\n        ListMultimap<String, Integer> multimap = ArrayListMultimap.create();\n\n        // Write a value into the multimap\n        /* write */ multimap.put(\"key\", 42);\n\n        // Read the value from the multimap\n        /* read */ Integer value = multimap.get(\"key\").get(0);\n\n        // Print the value to verify\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ListMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ListMultimap",
+        "read_method": "get"
+    }
+}

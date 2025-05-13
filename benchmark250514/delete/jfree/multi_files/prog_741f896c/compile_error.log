@@ -1,0 +1,19 @@
+generated/jfree/multi_files/prog_741f896c/AxisManager.java:14: 错误: 找不到符号
+        ValueAxis axis = new NumberAxis();
+        ^
+  符号:   类 ValueAxis
+  位置: 类 AxisManager
+generated/jfree/multi_files/prog_741f896c/AxisManager.java:15: 错误: TickUnit是抽象的; 无法实例化
+        TickUnit tickUnit = new TickUnit(tickSize);
+                            ^
+generated/jfree/multi_files/prog_741f896c/AxisConfiguration.java:12: 错误: 找不到符号
+        /* write */ axis.setTickUnit(tickUnit);
+                        ^
+  符号:   方法 setTickUnit(TickUnit)
+  位置: 类型为ValueAxis的变量 axis
+generated/jfree/multi_files/prog_741f896c/AxisConfiguration.java:16: 错误: 找不到符号
+        return axis.getTickUnit();
+                   ^
+  符号:   方法 getTickUnit()
+  位置: 类型为ValueAxis的变量 axis
+4 个错误

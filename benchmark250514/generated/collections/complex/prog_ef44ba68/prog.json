@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.LRUMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        LRUMap<String, Integer> lruMap = new LRUMap<>();\n        HashMap<String, String> hashMap = new HashMap<>();\n        \n        // Add some values to the hashMap\n        hashMap.put(\"name\", \"Alice\");\n        hashMap.put(\"country\", \"Wonderland\");\n\n        /* write */ lruMap.put(\"key\", 42);\n\n        // Perform some operations on the hashMap\n        if (hashMap.containsKey(\"name\")) {\n            System.out.println(\"Name: \" + hashMap.get(\"name\"));\n        }\n\n        // Iterate over the hashMap and print values\n        for (Map.Entry<String, String> entry : hashMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n\n        // Perform some calculations\n        int sum = 0;\n        for (int i = 1; i <= 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n\n        /* read */ Integer value = lruMap.get(\"key\");\n        System.out.println(value);\n\n        // Add more entries to the lruMap and print them\n        lruMap.put(\"anotherKey\", 84);\n        lruMap.put(\"yetAnotherKey\", 126);\n        \n        for (Map.Entry<String, Integer> entry : lruMap.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.LRUMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LRUMap<String, Integer> lruMap = new LRUMap<>();\n        /* write */ lruMap.put(\"key\", 42);\n        /* read */ Integer value = lruMap.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.LRUMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.LRUMap",
+        "read_method": "get"
+    }
+}

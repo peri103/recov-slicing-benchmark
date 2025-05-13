@@ -1,0 +1,13 @@
+generated/lang/complex/prog_caae98f1/Main.java:14: 错误: 找不到符号
+        /* write */ tokenizer.setTokenChar('H');
+                             ^
+  符号:   方法 setTokenChar(char)
+  位置: 类型为StrTokenizer的变量 tokenizer
+generated/lang/complex/prog_caae98f1/Main.java:17: 错误: 找不到符号
+        tokenizer2.setTokenChar('J');
+                  ^
+  符号:   方法 setTokenChar(char)
+  位置: 类型为StrTokenizer的变量 tokenizer2
+注: generated/lang/complex/prog_caae98f1/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

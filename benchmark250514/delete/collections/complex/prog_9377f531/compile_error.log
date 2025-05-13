@@ -1,0 +1,19 @@
+generated/collections/complex/prog_9377f531/Main.java:10: 错误: 不兼容的类型: 不存在类型变量K,V的实例, 以使Map<K,V>与UnmodifiableMap<String,Integer>一致
+        UnmodifiableMap<String, Integer> map = UnmodifiableMap.unmodifiableMap(originalMap);
+                                                                              ^
+  其中, K,V是类型变量:
+    K扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+    V扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+generated/collections/complex/prog_9377f531/Main.java:30: 错误: 不兼容的类型: 不存在类型变量K,V的实例, 以使Map<K,V>与UnmodifiableMap<String,String>一致
+        UnmodifiableMap<String, String> unmodifiableAnotherMap = UnmodifiableMap.unmodifiableMap(anotherMap);
+                                                                                                ^
+  其中, K,V是类型变量:
+    K扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+    V扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+generated/collections/complex/prog_9377f531/Main.java:52: 错误: 不兼容的类型: 不存在类型变量K,V的实例, 以使Map<K,V>与UnmodifiableMap<Integer,String>一致
+        UnmodifiableMap<Integer, String> unmodifiableNumberMap = UnmodifiableMap.unmodifiableMap(numberMap);
+                                                                                                ^
+  其中, K,V是类型变量:
+    K扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+    V扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+3 个错误

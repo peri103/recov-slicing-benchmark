@@ -1,0 +1,23 @@
+generated/collections/complex/prog_fc4003ab/Main.java:10: 错误: 不兼容的类型: 不存在类型变量K,V的实例, 以使Map<K,V>与UnmodifiableMap<String,String>一致
+        UnmodifiableMap<String, String> map = UnmodifiableMap.unmodifiableMap(modifiableMap);
+                                                                             ^
+  其中, K,V是类型变量:
+    K扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+    V扩展已在方法 <K,V>unmodifiableMap(Map<? extends K,? extends V>)中声明的Object
+generated/collections/complex/prog_fc4003ab/Main.java:13: 错误: 对于lazyMap(HashMap<Object,Object>,<匿名Function<String,Integer>>), 找不到合适的方法
+        Map<String, Integer> lazyMap = LazyMap.lazyMap(new HashMap<>(), new Function<String, Integer>() {
+                                              ^
+    方法 LazyMap.<K#1,V#1>lazyMap(Map<K#1,V#1>,Factory<? extends V#1>)不适用
+      (无法推断类型变量 K#1,V#1,K#2,V#2
+        (参数不匹配; <匿名Function<String,Integer>>无法转换为Factory<? extends V#1>))
+    方法 LazyMap.<V#3,K#3>lazyMap(Map<K#3,V#3>,Transformer<? super K#3,? extends V#3>)不适用
+      (无法推断类型变量 V#3,K#3,K#2,V#2
+        (参数不匹配; <匿名Function<String,Integer>>无法转换为Transformer<? super K#3,? extends V#3>))
+  其中, K#1,V#1,K#2,V#2,V#3,K#3是类型变量:
+    K#1扩展已在方法 <K#1,V#1>lazyMap(Map<K#1,V#1>,Factory<? extends V#1>)中声明的Object
+    V#1扩展已在方法 <K#1,V#1>lazyMap(Map<K#1,V#1>,Factory<? extends V#1>)中声明的Object
+    K#2扩展已在类 HashMap中声明的Object
+    V#2扩展已在类 HashMap中声明的Object
+    V#3扩展已在方法 <V#3,K#3>lazyMap(Map<K#3,V#3>,Transformer<? super K#3,? extends V#3>)中声明的Object
+    K#3扩展已在方法 <V#3,K#3>lazyMap(Map<K#3,V#3>,Transformer<? super K#3,? extends V#3>)中声明的Object
+2 个错误

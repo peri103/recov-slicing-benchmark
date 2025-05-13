@@ -1,0 +1,10 @@
+generated/collections/complex/prog_7be9ad4a/Main.java:8: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<String, Integer> map = new AbstractOrderedMapDecorator<>(new HashMap<>());
+                                                           ^
+generated/collections/complex/prog_7be9ad4a/Main.java:11: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<String, String> stringMap = new AbstractOrderedMapDecorator<>(new HashMap<>());
+                                                                ^
+generated/collections/complex/prog_7be9ad4a/Main.java:16: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<Integer, String> numberMap = new AbstractOrderedMapDecorator<>(new HashMap<>());
+                                                                 ^
+3 个错误

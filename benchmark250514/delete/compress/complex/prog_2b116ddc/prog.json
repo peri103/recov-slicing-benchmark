@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\nimport org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"initial\");\n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"initial.zip\");\n        Map<String, Integer> fileSizes = new HashMap<>();\n\n        fileSizes.put(\"initial\", 1024);\n        fileSizes.put(\"initial.zip\", 2048);\n\n        /* write */ jarEntry.setName(\"example.jar\");\n\n        fileSizes.put(\"example.jar\", 4096);\n        zipEntry.setName(\"example2.zip\");\n        fileSizes.put(\"example2.zip\", 8192);\n\n        for (Map.Entry<String, Integer> entry : fileSizes.entrySet()) {\n            System.out.println(\"File: \" + entry.getKey() + \", Size: \" + entry.getValue());\n        }\n\n        /* read */ String name = jarEntry.getName();\n        System.out.println(\"Jar Entry Name: \" + name);\n\n        int totalSize = 0;\n        for (int size : fileSizes.values()) {\n            totalSize += size;\n        }\n        System.out.println(\"Total Size: \" + totalSize);\n\n        String zipName = zipEntry.getName();\n        System.out.println(\"Zip Entry Name: \" + zipName);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"initial\");\n        /* write */ jarEntry.setName(\"example.jar\");\n        /* read */ String name = jarEntry.getName();\n        System.out.println(name);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setName",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getName"
+    }
+}

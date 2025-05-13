@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.labels.StandardCategoryToolTipGenerator;\nimport java.text.NumberFormat;\n\npublic class Main {\n    public static void main(String[] args) {\n        NumberFormat format = NumberFormat.getInstance();\n        StandardCategoryToolTipGenerator generator = new StandardCategoryToolTipGenerator();\n        \n        /* write */ generator.setCategoryFormat(format);\n        \n        /* read */ NumberFormat readFormat = generator.getCategoryFormat();\n        \n        System.out.println(readFormat.equals(format)); // This should print true\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.labels.StandardCategoryToolTipGenerator",
+        "write_method": "setCategoryFormat",
+        "read_class": "org.jfree.chart.labels.StandardCategoryToolTipGenerator",
+        "read_method": "getCategoryFormat"
+    }
+}

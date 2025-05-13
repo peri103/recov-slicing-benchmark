@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.PeriodAxis;\nimport org.jfree.data.time.Day;\nimport org.jfree.data.time.RegularTimePeriod;\n\npublic class Main {\n    public static void main(String[] args) {\n        PeriodAxis periodAxis = new PeriodAxis(\"Example Axis\");\n        \n        // Create a RegularTimePeriod instance to use with the setLast method\n        RegularTimePeriod lastPeriod = new Day(1, 1, 2023);\n        \n        /* write */ periodAxis.setLast(lastPeriod);\n        \n        /* read */ RegularTimePeriod retrievedLast = periodAxis.getLast();\n        \n        System.out.println(\"Last period set: \" + retrievedLast);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.PeriodAxis",
+        "write_method": "setLast",
+        "read_class": "org.jfree.chart.axis.PeriodAxis",
+        "read_method": "getLast"
+    }
+}

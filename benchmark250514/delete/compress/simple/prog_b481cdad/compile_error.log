@@ -1,0 +1,11 @@
+generated/compress/simple/prog_b481cdad/Main.java:6: 错误: 找不到符号
+        /* write */ entry.setUserName("JohnDoe");
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/simple/prog_b481cdad/Main.java:7: 错误: 找不到符号
+        /* read */ String userName = entry.getUserName();
+                                          ^
+  符号:   方法 getUserName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+2 个错误

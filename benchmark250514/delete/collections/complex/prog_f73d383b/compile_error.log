@@ -1,0 +1,7 @@
+generated/collections/complex/prog_f73d383b/Main.java:9: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<String, Integer> map = new AbstractOrderedMapDecorator<>(new HashMap<String, Integer>());
+                                                           ^
+generated/collections/complex/prog_f73d383b/Main.java:20: 错误: AbstractOrderedMapDecorator是抽象的; 无法实例化
+        AbstractOrderedMapDecorator<String, String> map2 = new AbstractOrderedMapDecorator<>(new HashMap<String, String>());
+                                                           ^
+2 个错误

@@ -1,0 +1,8 @@
+generated/csv/multi_files/prog_b66e262c/Main.java:15: 错误: 找不到符号
+        CSVRecord record = csvHandler.getFirstRecord();
+        ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+注: generated/csv/multi_files/prog_b66e262c/CSVHandler.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+1 个错误

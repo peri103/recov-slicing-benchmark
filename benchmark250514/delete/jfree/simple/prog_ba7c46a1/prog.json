@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.data.general.Dataset;\nimport org.jfree.data.general.DefaultPieDataset;\nimport org.jfree.chart.plot.Plot;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a dataset\n        Dataset dataset = new DefaultPieDataset();\n        \n        // Create a Plot instance (Note: Plot is abstract, typically use a subclass like PiePlot)\n        Plot plot = new org.jfree.chart.plot.PiePlot(); // Using PiePlot as a concrete subclass\n        \n        /* write */ plot.setDataset(dataset);\n        \n        /* read */ Dataset readDataset = plot.getDataset();\n        \n        // Verify that the dataset read is the same as the one written\n        System.out.println(readDataset == dataset ? \"Success\" : \"Failure\");\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.Plot",
+        "write_method": "setDataset",
+        "read_class": "org.jfree.chart.plot.Plot",
+        "read_method": "getDataset"
+    }
+}

@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_f986c333/Main.java:24: 错误: 找不到符号
+        barRenderer.setBaseOutlinePaint(Color.BLUE);
+                   ^
+  符号:   方法 setBaseOutlinePaint(Color)
+  位置: 类型为BarRenderer的变量 barRenderer
+1 个错误

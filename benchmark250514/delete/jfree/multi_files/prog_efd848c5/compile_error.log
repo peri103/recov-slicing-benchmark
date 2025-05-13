@@ -1,0 +1,12 @@
+generated/jfree/multi_files/prog_efd848c5/CalendarUtils.java:13: 错误: 找不到符号
+        if (currentYear.isLeapYear()) {
+                       ^
+  符号:   方法 isLeapYear()
+  位置: 类型为Year的变量 currentYear
+generated/jfree/multi_files/prog_efd848c5/CalendarUtils.java:21: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        return end.getSerialIndex() - start.getSerialIndex();
+                                    ^
+generated/jfree/multi_files/prog_efd848c5/TimePeriodManager.java:16: 错误: 不兼容的类型: RegularTimePeriod无法转换为Day
+        return axis.getLast();
+                           ^
+3 个错误

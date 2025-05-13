@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\n\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        StringWriter writer = new StringWriter();\n        CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);\n\n        /* write */ csvPrinter.printComment(\"This is a comment\");\n\n        csvPrinter.flush();\n        String csvData = writer.toString();\n        List<CSVRecord> records = CSVFormat.DEFAULT.parse(new java.io.StringReader(csvData)).getRecords();\n\n        /* read */ String comment = records.get(0).getComment();\n        System.out.println(comment);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVPrinter",
+        "write_method": "printComment",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "getComment"
+    }
+}

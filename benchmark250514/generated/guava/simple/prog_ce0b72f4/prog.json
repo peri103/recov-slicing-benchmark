@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableSortedSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a builder for ImmutableSortedSet\n        ImmutableSortedSet.Builder<Integer> builder = ImmutableSortedSet.naturalOrder();\n        \n        // Add elements to the builder\n        /* write */ builder.add(1);\n        \n        // Build the ImmutableSortedSet\n        ImmutableSortedSet<Integer> sortedSet = builder.build();\n        \n        // Check if the set contains the element 1\n        /* read */ boolean containsValue = sortedSet.contains(1);\n        \n        // Print the result\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableSortedSet",
+        "write_method": "builder",
+        "read_class": "com.google.common.collect.ImmutableSortedSet",
+        "read_method": "contains"
+    }
+}

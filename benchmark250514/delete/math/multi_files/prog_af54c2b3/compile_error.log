@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_af54c2b3/Main.java:12: 错误: 找不到符号
+        RealMatrix transposedMatrix = matrixOps.transposeMatrix();
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+generated/math/multi_files/prog_af54c2b3/Main.java:20: 错误: 找不到符号
+        RealMatrix scaledMatrix = matrixOps.scaleMatrix(2.0);
+        ^
+  符号:   类 RealMatrix
+  位置: 类 Main
+2 个错误

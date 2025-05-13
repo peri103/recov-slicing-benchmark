@@ -1,0 +1,19 @@
+generated/jfree/complex/prog_c5a30389/Main.java:14: 错误: 无法将类 ValueAxis中的构造器 ValueAxis应用到给定类型;
+        ValueAxis rangeAxis = new ValueAxis("Value") {
+                              ^
+  需要: String,TickUnitSource
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+generated/jfree/complex/prog_c5a30389/Main.java:14: 错误: <匿名Main$1>不是抽象的, 并且未覆盖ValueAxis中的抽象方法autoAdjustRange()
+        ValueAxis rangeAxis = new ValueAxis("Value") {
+                                                     ^
+generated/jfree/complex/prog_c5a30389/Main.java:15: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_c5a30389/Main.java:20: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_c5a30389/Main.java:52: 错误: CustomRenderer不是抽象的, 并且未覆盖CategoryItemRenderer中的抽象方法getItemMiddle(Comparable,Comparable,CategoryDataset,CategoryAxis,Rectangle2D,RectangleEdge)
+class CustomRenderer implements CategoryItemRenderer {
+^
+5 个错误

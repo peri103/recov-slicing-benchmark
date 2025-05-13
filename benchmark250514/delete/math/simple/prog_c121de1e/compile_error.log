@@ -1,0 +1,16 @@
+generated/math/simple/prog_c121de1e/Main.java:1: 错误: 找不到符号
+import org.apache.commons.math3.linear.TriangularMatrix;
+                                      ^
+  符号:   类 TriangularMatrix
+  位置: 程序包 org.apache.commons.math3.linear
+generated/math/simple/prog_c121de1e/Main.java:8: 错误: 找不到符号
+        TriangularMatrix matrix = new TriangularMatrix(3); // Assuming a 3x3 matrix
+        ^
+  符号:   类 TriangularMatrix
+  位置: 类 Main
+generated/math/simple/prog_c121de1e/Main.java:8: 错误: 找不到符号
+        TriangularMatrix matrix = new TriangularMatrix(3); // Assuming a 3x3 matrix
+                                      ^
+  符号:   类 TriangularMatrix
+  位置: 类 Main
+3 个错误

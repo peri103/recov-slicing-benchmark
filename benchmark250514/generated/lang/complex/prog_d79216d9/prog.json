@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableLong;\nimport org.apache.commons.lang3.mutable.MutableInt;\nimport org.apache.commons.lang3.mutable.MutableBoolean;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableLong mutableLong = new MutableLong();\n        MutableInt mutableInt = new MutableInt(10);\n        MutableBoolean mutableBoolean = new MutableBoolean(true);\n        \n        // Complex logic involving mutableInt\n        int sum = 0;\n        for (int i = 0; i < mutableInt.getValue(); i++) {\n            sum += i;\n        }\n        mutableInt.setValue(sum);\n\n        // Conditional logic using mutableBoolean\n        if (mutableBoolean.isTrue()) {\n            System.out.println(\"The boolean is true, proceeding with operations.\");\n        }\n\n        /* write */ \n        mutableLong.setValue(12345L);  // Original write operation\n        \n        // More operations\n        mutableInt.increment();\n        mutableBoolean.setFalse();\n\n        // Some complex arithmetic\n        int result = mutableInt.getValue() * 2;\n        System.out.println(\"Result of complex arithmetic: \" + result);\n\n        // Final read operation\n        /* read */ \n        long value = mutableLong.getValue();  // Original read operation\n        System.out.println(value);\n\n        // Additional logic to make the program more complex\n        if (mutableBoolean.isFalse()) {\n            System.out.println(\"The boolean is now false.\");\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.mutable.MutableLong;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableLong mutableLong = new MutableLong();\n        /* write */ mutableLong.setValue(12345L);\n        /* read */ long value = mutableLong.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableLong",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableLong",
+        "read_method": "getValue"
+    }
+}

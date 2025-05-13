@@ -1,0 +1,11 @@
+generated/lang/multi_files/prog_ef852a31/Student.java:5: 错误: 找不到符号
+    public Student(String name, Date enrollmentDate) {
+                                ^
+  符号:   类 Date
+  位置: 类 Student
+generated/lang/multi_files/prog_ef852a31/Student.java:14: 错误: 找不到符号
+    public Date getEnrollmentDate() {
+           ^
+  符号:   类 Date
+  位置: 类 Student
+2 个错误

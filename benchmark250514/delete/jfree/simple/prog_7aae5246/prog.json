@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.XYPlot;\nimport org.jfree.chart.renderer.xy.XYItemRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYPlot plot = new XYPlot();\n        XYItemRenderer renderer = new XYItemRenderer() {\n            // Implement necessary methods for the interface (if any)\n        };\n        /* write */ plot.setRenderer(renderer);\n        /* read */ XYItemRenderer retrievedRenderer = plot.getRenderer();\n        System.out.println(retrievedRenderer != null ? \"Renderer set successfully\" : \"Renderer not set\");\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.XYPlot",
+        "write_method": "setRenderer",
+        "read_class": "org.jfree.chart.plot.XYPlot",
+        "read_method": "getRenderer"
+    }
+}

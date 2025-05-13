@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.builder.HashCodeBuilder;\nimport org.apache.commons.lang3.builder.EqualsBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashCodeBuilder builder = new HashCodeBuilder();\n        EqualsBuilder equalsBuilder = new EqualsBuilder();\n\n        ArrayList<Integer> list = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            list.add(i);\n        }\n\n        /* write */ builder.append(123);\n        equalsBuilder.append(123, 123);\n\n        for (Integer num : list) {\n            int squared = num * num;\n            builder.append(squared);\n            equalsBuilder.append(squared, squared);\n        }\n\n        ArrayList<String> stringList = new ArrayList<>();\n        stringList.add(\"Hello\");\n        stringList.add(\"World\");\n        stringList.add(\"Java\");\n\n        for (String str : stringList) {\n            builder.append(str.hashCode());\n            equalsBuilder.append(str.hashCode(), str.hashCode());\n        }\n\n        boolean areEqual = equalsBuilder.isEquals();\n        System.out.println(\"Are all comparisons equal? \" + areEqual);\n\n        /* read */ int hashCode = builder.toHashCode();\n        System.out.println(\"Final hash code: \" + hashCode);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.builder.HashCodeBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashCodeBuilder builder = new HashCodeBuilder();\n        /* write */ builder.append(123);\n        /* read */ int hashCode = builder.toHashCode();\n        System.out.println(hashCode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "write_method": "append",
+        "read_class": "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "read_method": "toHashCode"
+    }
+}

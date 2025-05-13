@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a TarArchiveEntry object\n        TarArchiveEntry entry = new TarArchiveEntry(\"dummy\");\n\n        // Use the write method to set the size\n        /* write */ entry.setSize(1024);\n\n        // Use the read method to get the size\n        /* read */ long size = entry.getSize();\n\n        // Print the size to verify that the read value is the same as the written value\n        System.out.println(size);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setSize",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getSize"
+    }
+}

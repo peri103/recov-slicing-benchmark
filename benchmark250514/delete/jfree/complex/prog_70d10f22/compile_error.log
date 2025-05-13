@@ -1,0 +1,13 @@
+generated/jfree/complex/prog_70d10f22/Main.java:11: 错误: 不兼容的类型: Shape无法转换为Paint
+        LegendItem legendItem = new LegendItem("Example", shape);
+                                                          ^
+generated/jfree/complex/prog_70d10f22/Main.java:14: 错误: 不兼容的类型: Shape无法转换为Paint
+        LegendItem legendItem2 = new LegendItem("Additional", shape);
+                                                              ^
+generated/jfree/complex/prog_70d10f22/Main.java:18: 错误: 找不到符号
+        legendItem2.setLabel("Updated Label");
+                   ^
+  符号:   方法 setLabel(String)
+  位置: 类型为LegendItem的变量 legendItem2
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+3 个错误

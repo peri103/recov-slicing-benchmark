@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize StrBuilder and ArrayList\n        StrBuilder strBuilder = new StrBuilder(\"Initial String\");\n        ArrayList<Integer> numbers = new ArrayList<>();\n\n        // Add elements to the ArrayList\n        for (int i = 1; i <= 5; i++) {\n            numbers.add(i * 10);\n        }\n\n        // Perform operations on ArrayList\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        System.out.println(\"Sum of numbers: \" + sum);\n\n        // Clear the StrBuilder\n        /* write */ strBuilder.clear();\n\n        // Perform operations on ArrayList\n        int max = numbers.get(0);\n        for (int num : numbers) {\n            if (num > max) {\n                max = num;\n            }\n        }\n        System.out.println(\"Max number: \" + max);\n\n        // Convert StrBuilder to String\n        /* read */ String result = strBuilder.toString();\n        System.out.println(\"Result after clear: '\" + result + \"'\");\n\n        // Additional operations using StrBuilder\n        strBuilder.append(\"New Content\");\n        strBuilder.append(\", and more.\");\n        System.out.println(\"Updated StrBuilder: \" + strBuilder.toString());\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Initial String\");\n        /* write */ strBuilder.clear();\n        /* read */ String result = strBuilder.toString();\n        System.out.println(\"Result after clear: '\" + result + \"'\");\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "clear",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

@@ -1,0 +1,9 @@
+generated/collections/complex/prog_bf49cc1b/Main.java:16: 错误: 无法推断TransformedMultiValuedMap<>的类型参数
+        TransformedMultiValuedMap<String, String> transformedMap = new TransformedMultiValuedMap<>(underlyingMap, keyTransformer, valueTransformer);
+                                                                   ^
+  原因: 无法推断类型变量 K,V
+    (参数不匹配; Function<String,String>无法转换为Transformer<? super K,? extends K>)
+  其中, K,V是类型变量:
+    K扩展已在类 TransformedMultiValuedMap中声明的Object
+    V扩展已在类 TransformedMultiValuedMap中声明的Object
+1 个错误

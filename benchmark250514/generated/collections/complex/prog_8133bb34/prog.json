@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.LazyMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Original LazyMap instance\n        Map<String, String> map = LazyMap.lazyMap(new HashMap<>(), () -> \"default\");\n        \n        // Additional LazyMap instance\n        Map<Integer, Integer> intMap = LazyMap.lazyMap(new HashMap<>(), () -> 0);\n        \n        // Unrelated computations\n        int sum = 0;\n        for (int i = 1; i <= 5; i++) {\n            sum += i;\n            intMap.put(i, i * i); // Store squares\n        }\n        \n        /* write */ map.put(\"key\", \"value\");\n        \n        // Process the unrelated map\n        int totalSquareSum = 0;\n        for (int i = 1; i <= 5; i++) {\n            totalSquareSum += intMap.get(i); // Retrieve squares\n        }\n        \n        // Unrelated logic\n        StringBuilder builder = new StringBuilder();\n        builder.append(\"Sum: \").append(sum).append(\", Square Sum: \").append(totalSquareSum);\n        \n        // Original read operation\n        /* read */ String value = map.get(\"key\");\n        \n        // Print results\n        System.out.println(value);\n        System.out.println(builder.toString());\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.LazyMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Map<String, String> map = LazyMap.lazyMap(new HashMap<>(), () -> \"default\");\n        /* write */ map.put(\"key\", \"value\");\n        /* read */ String value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.LazyMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.LazyMap",
+        "read_method": "get"
+    }
+}

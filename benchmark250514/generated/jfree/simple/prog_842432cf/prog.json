@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYStepAreaRenderer;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYStepAreaRenderer renderer = new XYStepAreaRenderer();\n        \n        // Initialize the paint object\n        Color paint = Color.BLUE;\n        \n        // Write operation: set the paint for a series\n        /* write */ renderer.setSeriesPaint(0, paint);\n        \n        // Read operation: get the paint for the series\n        /* read */ Color retrievedPaint = (Color) renderer.getSeriesPaint(0);\n        \n        // Output the result to verify the operations\n        System.out.println(retrievedPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "write_method": "setSeriesPaint",
+        "read_class": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+        "read_method": "getSeriesPaint"
+    }
+}

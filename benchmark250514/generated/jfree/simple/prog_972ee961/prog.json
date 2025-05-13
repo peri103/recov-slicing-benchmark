@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYShapeRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYShapeRenderer renderer = new XYShapeRenderer();\n        /* write */ renderer.setDrawOutlines(true);\n        /* read */ boolean drawOutlines = renderer.getDrawOutlines();\n        System.out.println(drawOutlines);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYShapeRenderer",
+        "write_method": "setDrawOutlines",
+        "read_class": "org.jfree.chart.renderer.xy.XYShapeRenderer",
+        "read_method": "getDrawOutlines"
+    }
+}

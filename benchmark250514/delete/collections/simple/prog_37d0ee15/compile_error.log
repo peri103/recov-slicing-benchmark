@@ -1,0 +1,11 @@
+generated/collections/simple/prog_37d0ee15/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractDualBidiMap;
+                                          ^
+  符号:   类 AbstractDualBidiMap
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/simple/prog_37d0ee15/Main.java:6: 错误: 找不到符号
+        AbstractDualBidiMap<String, Integer> map = new DualHashBidiMap<>();
+        ^
+  符号:   类 AbstractDualBidiMap
+  位置: 类 Main
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringWriter;\nimport java.io.IOException;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Prepare a StringWriter to capture the CSV output\n            StringWriter writer = new StringWriter();\n            \n            // Initialize CSVFormat with header comments\n            CSVFormat format = CSVFormat.DEFAULT\n                /* write */ .withHeaderComments(\"This is a header comment\");\n\n            // Create a CSVPrinter to write the CSV data\n            CSVPrinter printer = new CSVPrinter(writer, format);\n\n            // Write some sample data\n            printer.printRecord(\"Name\", \"Age\", \"Country\");\n            printer.printRecord(\"Alice\", \"30\", \"USA\");\n            printer.printRecord(\"Bob\", \"25\", \"UK\");\n            \n            // Flush and close the printer\n            printer.flush();\n            printer.close();\n\n            // Parse the written CSV data\n            List<CSVRecord> records = CSVFormat.DEFAULT.parse(new java.io.StringReader(writer.toString())).getRecords();\n\n            // Assume the comment is associated with the first record\n            CSVRecord firstRecord = records.get(0);\n            \n            /* read */ String comment = firstRecord.getComment();\n            System.out.println(comment);\n            \n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withHeaderComments",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "getComment"
+    }
+}

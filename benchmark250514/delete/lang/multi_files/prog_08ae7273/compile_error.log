@@ -1,0 +1,6 @@
+generated/lang/multi_files/prog_08ae7273/DateTruncator.java:6: 错误: 找不到符号
+        /* read */ return DateUtils.truncate(date, DateUtils.SECOND);
+                                                            ^
+  符号:   变量 SECOND
+  位置: 类 DateUtils
+1 个错误

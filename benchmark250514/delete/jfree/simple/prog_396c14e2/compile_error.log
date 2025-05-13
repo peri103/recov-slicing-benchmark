@@ -1,0 +1,17 @@
+generated/jfree/simple/prog_396c14e2/Main.java:6: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/simple/prog_396c14e2/Main.java:13: 错误: <匿名Main$2>不是抽象的, 并且未覆盖Dataset中的抽象方法setGroup(DatasetGroup)
+        Dataset dataset = new Dataset() {
+                                        ^
+generated/jfree/simple/prog_396c14e2/Main.java:17: 错误: 找不到符号
+        /* write */ plot.setDataset(dataset);
+                        ^
+  符号:   方法 setDataset(Dataset)
+  位置: 类型为Plot的变量 plot
+generated/jfree/simple/prog_396c14e2/Main.java:18: 错误: 找不到符号
+        /* read */ Dataset retrievedDataset = plot.getDataset();
+                                                  ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 plot
+4 个错误

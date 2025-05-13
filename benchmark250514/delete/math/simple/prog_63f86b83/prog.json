@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealVector;\nimport org.apache.commons.math3.linear.SparseRealVector;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a sparse real vector using the write method\n        SparseRealVector vector = (SparseRealVector) /* write */ MatrixUtils.createSparseRealVector(new double[]{1.0, 2.0, 3.0});\n\n        // Read the sparse real vector using the read method\n        RealVector readVector = /* read */ MatrixUtils.getSparseRealVector(vector);\n\n        // Print the vector to ensure the read method retrieves the written data\n        System.out.println(readVector);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createSparseRealVector",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getSparseRealVector"
+    }
+}

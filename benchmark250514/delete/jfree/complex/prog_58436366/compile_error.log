@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_58436366/Main.java:26: 错误: 找不到符号
+        marker.setToolTipText(toolTipGenerator.generateToolTip(null, 0, 0));
+              ^
+  符号:   方法 setToolTipText(String)
+  位置: 类型为ValueMarker的变量 marker
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();\n        /* write */ renderer.setShapesVisible(true);\n        /* read */ Boolean isShapesVisible = renderer.getShapesVisible();\n        System.out.println(isShapesVisible);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYLineAndShapeRenderer",
+        "write_method": "setShapesVisible",
+        "read_class": "org.jfree.chart.renderer.xy.XYLineAndShapeRenderer",
+        "read_method": "getShapesVisible"
+    }
+}

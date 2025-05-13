@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        Cache<String, Integer> cache = CacheBuilder.newBuilder().build();\n        HashMap<String, String> map = new HashMap<>();\n\n        // Adding some entries to the HashMap\n        map.put(\"A\", \"Apple\");\n        map.put(\"B\", \"Banana\");\n        map.put(\"C\", \"Cherry\");\n\n        // Perform some operations on the map\n        if (map.containsKey(\"A\")) {\n            System.out.println(\"Map contains key 'A' with value: \" + map.get(\"A\"));\n        }\n        \n        // Write to the cache\n        /* write */ cache.put(\"key\", 42);\n\n        // More operations on the map\n        map.put(\"D\", \"Date\");\n        System.out.println(\"Map size: \" + map.size());\n\n        // Complex logic using the map\n        for (String key : map.keySet()) {\n            System.out.println(\"Key: \" + key + \", Value: \" + map.get(key));\n        }\n\n        // Read from the cache\n        /* read */ Integer value = cache.getIfPresent(\"key\");\n        System.out.println(\"Value from cache: \" + value);\n\n        // Additional logic to make the program more complex\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 numbers: \" + sum);\n    }\n}",
+    "java_code_simple": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Cache<String, Integer> cache = CacheBuilder.newBuilder().build();\n        /* write */ cache.put(\"key\", 42);\n        /* read */ Integer value = cache.getIfPresent(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.cache.Cache",
+        "write_method": "put",
+        "read_class": "com.google.common.cache.Cache",
+        "read_method": "get"
+    }
+}

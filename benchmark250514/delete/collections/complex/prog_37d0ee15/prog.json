@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractDualBidiMap;\nimport org.apache.commons.collections4.bidimap.DualHashBidiMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractDualBidiMap<String, Integer> map = new DualHashBidiMap<>();\n        Map<String, String> simpleMap = new HashMap<>();\n        \n        simpleMap.put(\"A\", \"Apple\");\n        simpleMap.put(\"B\", \"Banana\");\n        \n        for (Map.Entry<String, String> entry : simpleMap.entrySet()) {\n            System.out.println(entry.getKey() + \" -> \" + entry.getValue());\n        }\n        \n        /* write */ map.put(\"key\", 42);\n        \n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        \n        System.out.println(\"Sum of numbers from 0 to 9 is: \" + sum);\n        \n        Map<Integer, String> reverseMap = map.inverseBidiMap();\n        reverseMap.put(100, \"one hundred\");\n        \n        Integer value = map.get(\"key\");\n        /* read */ System.out.println(value);\n        \n        for (Map.Entry<Integer, String> entry : reverseMap.entrySet()) {\n            System.out.println(entry.getKey() + \" -> \" + entry.getValue());\n        }\n\n        map.put(\"newKey\", 99);\n        String strValue = reverseMap.get(99);\n        System.out.println(\"Retrieved from reverse map: \" + strValue);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.AbstractDualBidiMap;\nimport org.apache.commons.collections4.bidimap.DualHashBidiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractDualBidiMap<String, Integer> map = new DualHashBidiMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractDualBidiMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractDualBidiMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry entry = new ZipArchiveEntry(\"example.txt\");\n        ArrayList<Integer> attributeHistory = new ArrayList<>();\n\n        /* write */ entry.setExternalAttributes(0x20);\n\n        // Complex operations using ArrayList\n        for (int i = 0; i < 5; i++) {\n            attributeHistory.add(i * 10);\n        }\n\n        int sumOfAttributes = 0;\n        for (int attr : attributeHistory) {\n            sumOfAttributes += attr;\n        }\n\n        System.out.println(\"Sum of attributes: \" + sumOfAttributes);\n\n        // Additional operations on ZipArchiveEntry\n        ZipArchiveEntry anotherEntry = new ZipArchiveEntry(\"another_example.txt\");\n        anotherEntry.setExternalAttributes(0x40);\n        long anotherAttributes = anotherEntry.getExternalAttributes();\n        System.out.println(\"Another entry attributes: \" + anotherAttributes);\n\n        /* read */ long attributes = entry.getExternalAttributes();\n\n        System.out.println(\"Original entry attributes: \" + attributes);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry entry = new ZipArchiveEntry(\"example.txt\");\n        \n        /* write */ entry.setExternalAttributes(0x20);\n        \n        /* read */ long attributes = entry.getExternalAttributes();\n        \n        System.out.println(attributes);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setExternalAttributes",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getExternalAttributes"
+    }
+}

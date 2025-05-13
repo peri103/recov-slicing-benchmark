@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\nimport java.awt.BasicStroke;\nimport java.awt.Stroke;\nimport org.jfree.chart.plot.CategoryPlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot piePlot = new PiePlot();\n        CategoryPlot categoryPlot = new CategoryPlot();\n\n        // Set outline paint for the PiePlot\n        /* write */ piePlot.setOutlinePaint(Color.RED);\n\n        // Additional operations on CategoryPlot\n        Stroke stroke = new BasicStroke(2.0f);\n        categoryPlot.setOutlineStroke(stroke);\n\n        // Manipulate some other properties of PiePlot\n        piePlot.setBackgroundPaint(Color.BLUE);\n        piePlot.setShadowPaint(Color.GRAY);\n\n        // Perform operations unrelated to the original write-read pair\n        Color bgColor = (Color) piePlot.getBackgroundPaint();\n        System.out.println(\"Background color of PiePlot: \" + bgColor);\n\n        Stroke outlineStroke = categoryPlot.getOutlineStroke();\n        System.out.println(\"Outline stroke of CategoryPlot: \" + outlineStroke);\n\n        // More unrelated operations\n        Color shadowColor = (Color) piePlot.getShadowPaint();\n        System.out.println(\"Shadow color of PiePlot: \" + shadowColor);\n\n        // Read the outline paint set earlier\n        /* read */ Color outlinePaint = (Color) piePlot.getOutlinePaint();\n        System.out.println(\"Outline color of PiePlot: \" + outlinePaint);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot plot = new PiePlot();\n        /* write */ plot.setOutlinePaint(Color.RED);\n        /* read */ Color outlinePaint = (Color) plot.getOutlinePaint();\n        System.out.println(outlinePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setOutlinePaint",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getOutlinePaint"
+    }
+}

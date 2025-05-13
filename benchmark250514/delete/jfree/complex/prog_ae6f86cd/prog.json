@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.title.Title;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Title title = new Title();\n        ArrayList<String> stringList = new ArrayList<>();\n        ArrayList<Integer> intList = new ArrayList<>();\n        \n        /* write */ title.setText(\"Hello, World!\");\n        \n        for (int i = 0; i < 5; i++) {\n            stringList.add(\"String \" + i);\n            intList.add(i * 10);\n        }\n        \n        for (String str : stringList) {\n            System.out.println(str);\n        }\n        \n        int sum = 0;\n        for (Integer num : intList) {\n            sum += num;\n        }\n        System.out.println(\"Sum of integers: \" + sum);\n        \n        /* read */ String text = title.getText();\n        System.out.println(text);\n        \n        for (int i = 0; i < intList.size(); i++) {\n            intList.set(i, intList.get(i) + 5);\n        }\n        \n        for (Integer num : intList) {\n            System.out.println(num);\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.title.Title;\n\npublic class Main {\n    public static void main(String[] args) {\n        Title title = new Title();\n        /* write */ title.setText(\"Hello, World!\");\n        /* read */ String text = title.getText();\n        System.out.println(text);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.Title",
+        "write_method": "setText",
+        "read_class": "org.jfree.chart.title.Title",
+        "read_method": "getText"
+    }
+}

@@ -1,0 +1,6 @@
+generated/math/simple/prog_a660f3e6/Main.java:13: 错误: 找不到符号
+        /* read */ RealMatrix columnMatrix = MatrixUtils.getColumnRealMatrix(data, 0);
+                                                        ^
+  符号:   方法 getColumnRealMatrix(double[][],int)
+  位置: 类 MatrixUtils
+1 个错误

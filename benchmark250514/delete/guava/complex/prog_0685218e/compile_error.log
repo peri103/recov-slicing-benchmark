@@ -1,0 +1,10 @@
+generated/guava/complex/prog_0685218e/Main.java:40: 错误: 无法将接口 Cache<K,V>中的方法 get应用到给定类型;
+                Integer value = integerCache.get(key);
+                                            ^
+  需要: String,Callable<? extends Integer>
+  找到: String
+  原因: 实际参数列表和形式参数列表长度不同
+  其中, K,V是类型变量:
+    K扩展已在接口 Cache中声明的Object
+    V扩展已在接口 Cache中声明的Object
+1 个错误

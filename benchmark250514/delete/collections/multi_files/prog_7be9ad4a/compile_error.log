@@ -1,0 +1,11 @@
+generated/collections/multi_files/prog_7be9ad4a/CustomMap.java:6: 错误: 不兼容的类型: 无法推断HashMap<>的类型参数
+        super(new HashMap<>());
+                         ^
+    原因: 不存在类型变量K#1,V#1的实例, 以使HashMap<K#1,V#1>与OrderedMap<K#2,V#2>一致
+  其中, K#1,V#1,K#2,V#2是类型变量:
+    K#1扩展已在类 HashMap中声明的Object
+    V#1扩展已在类 HashMap中声明的Object
+    K#2扩展已在类 CustomMap中声明的Object
+    V#2扩展已在类 CustomMap中声明的Object
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.LRUMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LRUMap<String, Integer> lruMap = new LRUMap<>();\n\n        /* write */ lruMap.put(\"key\", 100);\n\n        /* read */ Integer value = lruMap.get(\"key\");\n\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.LRUMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.LRUMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,47 @@
+generated/jfree/complex/prog_3993b1bb/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.plot.ContourPlot;
+                           ^
+  符号:   类 ContourPlot
+  位置: 程序包 org.jfree.chart.plot
+generated/jfree/complex/prog_3993b1bb/Main.java:2: 错误: 程序包org.jfree.data.contour不存在
+import org.jfree.data.contour.ContourDataset;
+                             ^
+generated/jfree/complex/prog_3993b1bb/Main.java:3: 错误: 程序包org.jfree.data.contour不存在
+import org.jfree.data.contour.DefaultContourDataset;
+                             ^
+generated/jfree/complex/prog_3993b1bb/Main.java:8: 错误: 找不到符号
+        ContourPlot plot = new ContourPlot();
+        ^
+  符号:   类 ContourPlot
+  位置: 类 Main
+generated/jfree/complex/prog_3993b1bb/Main.java:8: 错误: 找不到符号
+        ContourPlot plot = new ContourPlot();
+                               ^
+  符号:   类 ContourPlot
+  位置: 类 Main
+generated/jfree/complex/prog_3993b1bb/Main.java:9: 错误: 找不到符号
+        ContourDataset dataset = new DefaultContourDataset("Sample Dataset", new double[][]{{1, 2, 3}, {4, 5, 6}});
+        ^
+  符号:   类 ContourDataset
+  位置: 类 Main
+generated/jfree/complex/prog_3993b1bb/Main.java:9: 错误: 找不到符号
+        ContourDataset dataset = new DefaultContourDataset("Sample Dataset", new double[][]{{1, 2, 3}, {4, 5, 6}});
+                                     ^
+  符号:   类 DefaultContourDataset
+  位置: 类 Main
+generated/jfree/complex/prog_3993b1bb/Main.java:25: 错误: 找不到符号
+        ContourDataset anotherDataset = new DefaultContourDataset("Another Dataset", new double[][]{{7, 8, 9}, {10, 11, 12}});
+        ^
+  符号:   类 ContourDataset
+  位置: 类 Main
+generated/jfree/complex/prog_3993b1bb/Main.java:25: 错误: 找不到符号
+        ContourDataset anotherDataset = new DefaultContourDataset("Another Dataset", new double[][]{{7, 8, 9}, {10, 11, 12}});
+                                            ^
+  符号:   类 DefaultContourDataset
+  位置: 类 Main
+generated/jfree/complex/prog_3993b1bb/Main.java:37: 错误: 找不到符号
+        /* read */ ContourDataset readDataset = plot.getDataset();
+                   ^
+  符号:   类 ContourDataset
+  位置: 类 Main
+10 个错误

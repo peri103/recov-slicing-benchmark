@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PolarPlot;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        PolarPlot plot = new PolarPlot();\n        /* write */ plot.setAngleGridlinePaint(Color.RED);\n        /* read */ Color angleGridlinePaint = (Color) plot.getAngleGridlinePaint();\n        System.out.println(angleGridlinePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PolarPlot",
+        "write_method": "setAngleGridlinePaint",
+        "read_class": "org.jfree.chart.plot.PolarPlot",
+        "read_method": "getAngleGridlinePaint"
+    }
+}

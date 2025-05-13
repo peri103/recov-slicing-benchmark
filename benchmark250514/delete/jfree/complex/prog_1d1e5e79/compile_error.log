@@ -1,0 +1,21 @@
+generated/jfree/complex/prog_1d1e5e79/Main.java:23: 错误: 找不到符号
+        /* write */ stepAreaRenderer.setSeriesShapesVisible(seriesIndexStepArea, isVisibleStepArea);
+                                    ^
+  符号:   方法 setSeriesShapesVisible(int,boolean)
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+generated/jfree/complex/prog_1d1e5e79/Main.java:31: 错误: 找不到符号
+        barRenderer.setSeriesBarWidth(seriesIndexBar, 0.5);
+                   ^
+  符号:   方法 setSeriesBarWidth(int,double)
+  位置: 类型为XYBarRenderer的变量 barRenderer
+generated/jfree/complex/prog_1d1e5e79/Main.java:32: 错误: 找不到符号
+        double barWidth = barRenderer.getSeriesBarWidth(seriesIndexBar);
+                                     ^
+  符号:   方法 getSeriesBarWidth(int)
+  位置: 类型为XYBarRenderer的变量 barRenderer
+generated/jfree/complex/prog_1d1e5e79/Main.java:46: 错误: 找不到符号
+        /* read */ Boolean visibilityStepArea = stepAreaRenderer.getSeriesShapesVisible(seriesIndexStepArea);
+                                                                ^
+  符号:   方法 getSeriesShapesVisible(int)
+  位置: 类型为XYStepAreaRenderer的变量 stepAreaRenderer
+4 个错误

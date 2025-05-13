@@ -1,0 +1,25 @@
+generated/math/complex/prog_9e1ce9b7/Main.java:11: 错误: 无法将类 DiagonalMatrix中的方法 setEntry应用到给定类型;
+        /* write */ matrix.setEntry(0, 5.0);
+                          ^
+  需要: int,int,double
+  找到: int,double
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_9e1ce9b7/Main.java:20: 错误: 无法将类 DiagonalMatrix中的方法 getEntry应用到给定类型;
+        RealMatrix result = matrix2.multiply(MatrixUtils.createRealDiagonalMatrix(new double[] {matrix.getEntry(0)}));
+                                                                                                      ^
+  需要: int,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_9e1ce9b7/Main.java:33: 错误: 无法将类 DiagonalMatrix中的方法 getEntry应用到给定类型;
+            sum += matrix.getEntry(i);
+                         ^
+  需要: int,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+generated/math/complex/prog_9e1ce9b7/Main.java:40: 错误: 无法将类 DiagonalMatrix中的方法 getEntry应用到给定类型;
+        /* read */ double value = matrix.getEntry(0);
+                                        ^
+  需要: int,int
+  找到: int
+  原因: 实际参数列表和形式参数列表长度不同
+4 个错误

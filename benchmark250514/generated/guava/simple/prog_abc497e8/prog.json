@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.HashBasedTable;\nimport com.google.common.collect.RowSortedTable;\nimport com.google.common.collect.TreeBasedTable;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a RowSortedTable\n        RowSortedTable<Integer, String, String> table = TreeBasedTable.create();\n\n        // Write a value using the put method\n        /* write */ table.put(1, \"key\", \"value\");\n\n        // Read the value using the get method\n        /* read */ String value = table.get(1, \"key\");\n\n        // Print the read value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.RowSortedTable",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.RowSortedTable",
+        "read_method": "get"
+    }
+}

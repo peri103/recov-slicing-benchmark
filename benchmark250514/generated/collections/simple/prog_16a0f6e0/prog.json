@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.Flat3Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Flat3Map<String, Integer> map = new Flat3Map<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.Flat3Map",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.Flat3Map",
+        "read_method": "get"
+    }
+}

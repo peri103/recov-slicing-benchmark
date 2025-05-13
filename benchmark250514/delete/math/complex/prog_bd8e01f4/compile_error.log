@@ -1,0 +1,6 @@
+generated/math/complex/prog_bd8e01f4/Main.java:11: 错误: 找不到符号
+        /* write */ SparseRealVector sparseVector = (SparseRealVector) MatrixUtils.createSparseRealVector(new double[]{1.0, 2.0, 3.0});
+                                                                                  ^
+  符号:   方法 createSparseRealVector(double[])
+  位置: 类 MatrixUtils
+1 个错误

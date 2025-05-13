@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_a119e26a/MatrixOperations.java:8: 错误: 找不到符号
+        /* write */ this.identityMatrix = MatrixUtils.createIdentityMatrix(size);
+                                                     ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_a119e26a/MatrixOperations.java:14: 错误: 找不到符号
+        return MatrixUtils.getIdentityMatrix(identityMatrix);
+                          ^
+  符号:   方法 getIdentityMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+2 个错误

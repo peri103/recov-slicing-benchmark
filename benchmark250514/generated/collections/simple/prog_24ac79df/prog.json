@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractHashedMap;\nimport org.apache.commons.collections4.map.HashedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashedMap<String, Integer> map = new HashedMap<>();\n        /* write */ map.put(\"key\", 42);\n        /* read */ Integer value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractHashedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractHashedMap",
+        "read_method": "get"
+    }
+}

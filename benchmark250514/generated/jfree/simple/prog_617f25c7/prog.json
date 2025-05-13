@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.title.TextTitle;\n\npublic class Main {\n    public static void main(String[] args) {\n        TextTitle textTitle = new TextTitle();\n        /* write */ textTitle.setText(\"Hello, World!\");\n        /* read */ String text = textTitle.getText();\n        System.out.println(text);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.TextTitle",
+        "write_method": "setText",
+        "read_class": "org.jfree.chart.title.TextTitle",
+        "read_method": "getText"
+    }
+}

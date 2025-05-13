@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParams = new GzipParameters();\n        ArrayList<Integer> numbers = new ArrayList<>();\n        HashMap<String, Integer> map = new HashMap<>();\n        \n        /* write */ gzipParams.setISize(12345);\n        \n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 10);\n        }\n        \n        map.put(\"first\", numbers.get(0));\n        map.put(\"last\", numbers.get(numbers.size() - 1));\n        \n        int sum = 0;\n        for (int number : numbers) {\n            sum += number;\n        }\n        \n        int firstValue = map.get(\"first\");\n        int lastValue = map.get(\"last\");\n        \n        System.out.println(\"Sum: \" + sum);\n        System.out.println(\"First value: \" + firstValue);\n        System.out.println(\"Last value: \" + lastValue);\n        \n        // Perform some unrelated calculations\n        int product = 1;\n        for (int i = 1; i <= 5; i++) {\n            product *= i;\n        }\n        \n        System.out.println(\"Product of first 5 numbers: \" + product);\n        \n        /* read */ int iSize = gzipParams.getISize();\n        System.out.println(\"Gzip ISize: \" + iSize);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.compressors.gzip.GzipParameters;\n\npublic class Main {\n    public static void main(String[] args) {\n        GzipParameters gzipParams = new GzipParameters();\n        /* write */ gzipParams.setISize(12345);\n        /* read */ int iSize = gzipParams.getISize();\n        System.out.println(iSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "write_method": "setISize",
+        "read_class": "org.apache.commons.compress.compressors.gzip.GzipParameters",
+        "read_method": "getISize"
+    }
+}

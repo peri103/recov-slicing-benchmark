@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYDifferenceRenderer;\nimport java.awt.Color;\nimport java.awt.Paint;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYDifferenceRenderer renderer = new XYDifferenceRenderer();\n        \n        // Initialize a list of colors for demonstration purposes\n        ArrayList<Color> colorList = new ArrayList<>();\n        colorList.add(Color.BLUE);\n        colorList.add(Color.GREEN);\n        colorList.add(Color.YELLOW);\n        \n        // Set positive paint to Color.RED\n        /* write */ renderer.setPositivePaint(Color.RED);\n        \n        // Set negative paint using a color from the list\n        renderer.setNegativePaint(colorList.get(1));\n        \n        // Perform some operations with the color list\n        for (Color color : colorList) {\n            System.out.println(\"Color in list: \" + color);\n        }\n        \n        // Retrieve positive paint and print it\n        /* read */ Paint positivePaint = renderer.getPositivePaint();\n        \n        System.out.println(\"Positive Paint: \" + positivePaint);\n        \n        // Demonstrate the use of another color from the list\n        Paint negativePaint = renderer.getNegativePaint();\n        System.out.println(\"Negative Paint: \" + negativePaint);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.renderer.xy.XYDifferenceRenderer;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYDifferenceRenderer renderer = new XYDifferenceRenderer();\n        \n        /* write */ renderer.setPositivePaint(Color.RED);\n        \n        /* read */ Color positivePaint = (Color) renderer.getPositivePaint();\n        \n        System.out.println(positivePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYDifferenceRenderer",
+        "write_method": "setPositivePaint",
+        "read_class": "org.jfree.chart.renderer.xy.XYDifferenceRenderer",
+        "read_method": "getPositivePaint"
+    }
+}

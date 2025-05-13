@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.StringWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            StringWriter writer = new StringWriter();\n            CSVFormat format = CSVFormat.DEFAULT;\n            /* write */ format = format.withAutoFlush(true);\n            \n            // Simulate writing and reading CSV data\n            writer.append(\"header1,header2\\nvalue1,value2\\n\");\n            writer.flush();\n            \n            // Parse the written data into CSVRecord\n            Iterable<CSVRecord> records = format.parse(new java.io.StringReader(writer.toString()));\n            CSVRecord record = records.iterator().next(); // Get the first record\n            \n            /* read */ boolean isMapped = record.isMapped(\"header1\");\n            System.out.println(isMapped);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withAutoFlush",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

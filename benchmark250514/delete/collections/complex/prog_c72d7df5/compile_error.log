@@ -1,0 +1,7 @@
+generated/collections/complex/prog_c72d7df5/Main.java:12: 错误: <K,V>UnmodifiableMap(Map<? extends K,? extends V>) 在 UnmodifiableMap 中是 private 访问控制
+        UnmodifiableMap<String, Integer> map = new UnmodifiableMap<>(modifiableMap);
+                                               ^
+  其中, K,V是类型变量:
+    K扩展已在类 UnmodifiableMap中声明的Object
+    V扩展已在类 UnmodifiableMap中声明的Object
+1 个错误

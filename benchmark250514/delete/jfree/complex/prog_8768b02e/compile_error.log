@@ -1,0 +1,5 @@
+generated/jfree/complex/prog_8768b02e/Main.java:22: 错误: 不兼容的类型: AxisLocation无法转换为AxisLabelLocation
+        numberAxis.setLabelLocation(AxisLocation.TOP_OR_LEFT);
+                                                ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

@@ -1,0 +1,13 @@
+generated/jfree/complex/prog_bd609d7c/Main.java:28: 错误: 不兼容的类型: Paint无法转换为Color
+        Color domainGridlinePaint = categoryPlot.getDomainGridlinePaint();
+                                                                       ^
+generated/jfree/complex/prog_bd609d7c/Main.java:29: 错误: 不兼容的类型: Paint无法转换为Color
+        Color rangeGridlinePaint = categoryPlot.getRangeGridlinePaint();
+                                                                     ^
+generated/jfree/complex/prog_bd609d7c/Main.java:33: 错误: 不兼容的类型: Paint无法转换为Color
+        Color domainCrosshairPaint = xyPlot.getDomainCrosshairPaint();
+                                                                   ^
+generated/jfree/complex/prog_bd609d7c/Main.java:34: 错误: 不兼容的类型: Paint无法转换为Color
+        Color rangeCrosshairPaint = xyPlot.getRangeCrosshairPaint();
+                                                                 ^
+4 个错误

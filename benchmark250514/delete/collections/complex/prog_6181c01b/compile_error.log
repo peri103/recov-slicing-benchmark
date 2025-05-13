@@ -1,0 +1,21 @@
+generated/collections/complex/prog_6181c01b/Main.java:1: 错误: 程序包org.apache.commons.collections4.buffer不存在
+import org.apache.commons.collections4.buffer.CircularFifoBuffer;
+                                             ^
+generated/collections/complex/prog_6181c01b/Main.java:7: 错误: 找不到符号
+        CircularFifoBuffer buffer = new CircularFifoBuffer(10); // Initialize buffer with a capacity of 10
+        ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+generated/collections/complex/prog_6181c01b/Main.java:7: 错误: 找不到符号
+        CircularFifoBuffer buffer = new CircularFifoBuffer(10); // Initialize buffer with a capacity of 10
+                                        ^
+  符号:   类 CircularFifoBuffer
+  位置: 类 Main
+generated/collections/complex/prog_6181c01b/Main.java:32: 错误: 二元运算符 '+' 的操作数类型错误
+            queue.add(queue.remove() + 20);
+                                     ^
+  第一个类型:  Object
+  第二个类型: int
+注: generated/collections/complex/prog_6181c01b/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+4 个错误

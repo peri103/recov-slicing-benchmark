@@ -1,0 +1,21 @@
+generated/math/complex/prog_c19d551f/Main.java:12: 错误: 找不到符号
+        /* write */ RealVector vector = MatrixUtils.createArrayRealVector(data);
+                                                   ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_c19d551f/Main.java:22: 错误: 找不到符号
+        RealVector constants = MatrixUtils.createArrayRealVector(new double[]{5.0, 6.0});
+                                          ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_c19d551f/Main.java:34: 错误: 找不到符号
+        RealVector additionalVector = MatrixUtils.createArrayRealVector(additionalData);
+                                                 ^
+  符号:   方法 createArrayRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/complex/prog_c19d551f/Main.java:39: 错误: 找不到符号
+        /* read */ RealVector readVector = MatrixUtils.getArrayRealVector(vector.toArray());
+                                                      ^
+  符号:   方法 getArrayRealVector(double[])
+  位置: 类 MatrixUtils
+4 个错误

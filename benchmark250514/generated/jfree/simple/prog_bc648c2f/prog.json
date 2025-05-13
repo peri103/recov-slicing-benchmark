@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYDotRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYDotRenderer renderer = new XYDotRenderer();\n        /* write */ renderer.setDotWidth(5);\n        /* read */ int dotWidth = renderer.getDotWidth();\n        System.out.println(dotWidth);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYDotRenderer",
+        "write_method": "setDotWidth",
+        "read_class": "org.jfree.chart.renderer.xy.XYDotRenderer",
+        "read_method": "getDotWidth"
+    }
+}

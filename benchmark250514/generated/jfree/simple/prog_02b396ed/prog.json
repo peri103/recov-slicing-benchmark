@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.FastScatterPlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        FastScatterPlot plot = new FastScatterPlot();\n\n        /* write */ plot.setDomainGridlinePaint(Color.RED);\n        /* read */ Paint paint = plot.getDomainGridlinePaint();\n\n        System.out.println(paint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.FastScatterPlot",
+        "write_method": "setDomainGridlinePaint",
+        "read_class": "org.jfree.chart.plot.FastScatterPlot",
+        "read_method": "getDomainGridlinePaint"
+    }
+}

@@ -1,0 +1,11 @@
+generated/jfree/multi_files/prog_7e156b12/RendererSettings.java:7: 错误: 找不到符号
+        /* write */ stepRenderer.setBaseShapesVisible(visible);
+                                ^
+  符号:   方法 setBaseShapesVisible(boolean)
+  位置: 类型为XYStepRenderer的变量 stepRenderer
+generated/jfree/multi_files/prog_7e156b12/RendererSettings.java:11: 错误: 找不到符号
+        return stepRenderer.getBaseShapesVisible();
+                           ^
+  符号:   方法 getBaseShapesVisible()
+  位置: 类型为XYStepRenderer的变量 stepRenderer
+2 个错误

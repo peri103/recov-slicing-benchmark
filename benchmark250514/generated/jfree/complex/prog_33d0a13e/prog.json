@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot3D;\nimport org.jfree.chart.plot.PiePlot;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot3D piePlot3D = new PiePlot3D();\n        PiePlot piePlot = new PiePlot();\n        \n        // Some unrelated code to make the program more complex\n        ArrayList<Double> depthFactors = new ArrayList<>();\n        for (int i = 1; i <= 5; i++) {\n            depthFactors.add(i * 0.1);\n        }\n        \n        for (Double factor : depthFactors) {\n            piePlot.setShadowPaint(null); // Using a method from PiePlot to add complexity\n        }\n        \n        /* write */ piePlot3D.setDepthFactor(0.3);\n        \n        double totalDepth = 0;\n        for (Double factor : depthFactors) {\n            totalDepth += factor;\n        }\n        \n        // Another unrelated code block\n        double averageDepth = totalDepth / depthFactors.size();\n        System.out.println(\"Average Depth Factor: \" + averageDepth);\n        \n        /* read */ double depthFactor = piePlot3D.getDepthFactor();\n        System.out.println(\"Depth Factor from PiePlot3D: \" + depthFactor);\n        \n        // Additional code using similar API pairs\n        PiePlot3D anotherPiePlot3D = new PiePlot3D();\n        anotherPiePlot3D.setDepthFactor(0.5);\n        double anotherDepthFactor = anotherPiePlot3D.getDepthFactor();\n        System.out.println(\"Another Depth Factor: \" + anotherDepthFactor);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.PiePlot3D;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot3D piePlot3D = new PiePlot3D();\n        /* write */ piePlot3D.setDepthFactor(0.3);\n        /* read */ double depthFactor = piePlot3D.getDepthFactor();\n        System.out.println(depthFactor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot3D",
+        "write_method": "setDepthFactor",
+        "read_class": "org.jfree.chart.plot.PiePlot3D",
+        "read_method": "getDepthFactor"
+    }
+}

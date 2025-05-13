@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date date = new Date();\n        \n        // Add 5 years to the current date\n        /* write */ Date newDate = DateUtils.addYears(date, 5);\n        \n        // Truncate the date to remove time components\n        /* read */ Date truncatedDate = DateUtils.truncate(newDate, java.util.Calendar.DAY_OF_MONTH);\n        \n        System.out.println(\"Original Date: \" + date);\n        System.out.println(\"Date after adding 5 years: \" + newDate);\n        System.out.println(\"Truncated Date: \" + truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addYears",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

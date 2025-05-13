@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_1f96bee8/GzipConfig.java:7: 错误: 找不到符号
+        /* write */ gzipParameters.setFlags(flags);
+                                  ^
+  符号:   方法 setFlags(int)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/multi_files/prog_1f96bee8/GzipConfig.java:11: 错误: 找不到符号
+        return gzipParameters.getFlags();
+                             ^
+  符号:   方法 getFlags()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date now = new Date();\n        /* write */ Date newTime = DateUtils.addMinutes(now, 10);\n        /* read */ Date truncatedTime = DateUtils.truncate(newTime, java.util.Calendar.MINUTE);\n        System.out.println(truncatedTime);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "addMinutes",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

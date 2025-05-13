@@ -1,0 +1,4 @@
+generated/guava/complex/prog_71da3b73/Main.java:45: 错误: 不兼容的类型: ImmutableBiMap<Integer,String>无法转换为ImmutableBiMap<String,Integer>
+        ImmutableBiMap<String, Integer> invertedBiMap = biMap.inverse();
+                                                                     ^
+1 个错误

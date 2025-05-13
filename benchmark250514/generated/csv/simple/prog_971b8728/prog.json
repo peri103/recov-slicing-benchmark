@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVParser;\nimport org.apache.commons.csv.CSVRecord;\n\nimport java.io.IOException;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with a null string\n        CSVFormat format = CSVFormat.DEFAULT;\n        /* write */ format = format.withNullString(\"NULL\");\n\n        // Sample CSV data\n        String csvData = \"name,age,city\\nJohn,NULL,New York\\nJane,30,NULL\";\n\n        try {\n            // Parse the CSV data\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), format);\n\n            // Get the records\n            List<CSVRecord> records = parser.getRecords();\n\n            // Access a specific record and check if a column is set\n            CSVRecord record = records.get(0); // First record\n            /* read */ boolean isSet = record.isSet(\"age\");\n\n            System.out.println(\"Is 'age' set in the first record? \" + isSet);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withNullString",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isSet"
+    }
+}

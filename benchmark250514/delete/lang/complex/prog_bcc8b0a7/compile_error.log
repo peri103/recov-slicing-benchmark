@@ -1,0 +1,6 @@
+generated/lang/complex/prog_bcc8b0a7/Main.java:15: 错误: 找不到符号
+        /* write */ date = DateUtils.setWeeks(date, 5);
+                                    ^
+  符号:   方法 setWeeks(Date,int)
+  位置: 类 DateUtils
+1 个错误

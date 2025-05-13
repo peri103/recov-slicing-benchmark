@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrTokenizer;\nimport org.apache.commons.lang3.text.StrMatcher;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a StrTokenizer instance\n        StrTokenizer tokenizer = new StrTokenizer(\"apple,banana,orange\", ',');\n\n        // Create a custom StrMatcher to match tokens\n        StrMatcher matcher = StrMatcher.charSetMatcher(\"aeiou\");\n\n        // Set the custom token matcher to the tokenizer\n        /* write */ tokenizer.setTokenMatcher(matcher);\n\n        // Read the next token using the tokenizer\n        /* read */ String token = tokenizer.nextToken();\n\n        // Print the token\n        System.out.println(token);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "write_method": "setTokenMatcher",
+        "read_class": "org.apache.commons.lang3.text.StrTokenizer",
+        "read_method": "nextToken"
+    }
+}

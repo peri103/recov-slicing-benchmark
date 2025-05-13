@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_9b98330d/Main.java:1: 错误: 找不到符号
+import org.jfree.chart.renderer.Renderer;
+                               ^
+  符号:   类 Renderer
+  位置: 程序包 org.jfree.chart.renderer
+generated/jfree/complex/prog_9b98330d/Main.java:10: 错误: 找不到符号
+        Renderer renderer = new XYLineAndShapeRenderer();
+        ^
+  符号:   类 Renderer
+  位置: 类 Main
+2 个错误

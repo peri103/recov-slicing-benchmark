@@ -1,0 +1,11 @@
+generated/guava/multi_files/prog_2aa009b9/DomainOperations.java:27: 错误: 找不到符号
+        Range<Integer> complementRange = Range.all().difference(range);
+                                                    ^
+  符号:   方法 difference(Range<Integer>)
+  位置: 类 Range<Comparable<?>>
+generated/guava/multi_files/prog_2aa009b9/DomainManager.java:7: 错误: 找不到符号
+        /* write */ integerDomain = DiscreteDomain.of(operations.getDomain());
+                                                  ^
+  符号:   方法 of(DiscreteDomain<Integer>)
+  位置: 类 DiscreteDomain
+2 个错误

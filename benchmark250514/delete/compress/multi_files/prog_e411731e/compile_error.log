@@ -1,0 +1,6 @@
+generated/compress/multi_files/prog_e411731e/Main.java:22: 错误: 找不到符号
+        TarArchiveEntry entry = manager.getEntry();
+        ^
+  符号:   类 TarArchiveEntry
+  位置: 类 Main
+1 个错误

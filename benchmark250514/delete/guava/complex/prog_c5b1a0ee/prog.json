@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.LinkedHashBiMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashBiMap<String, Integer> map = LinkedHashBiMap.create();\n        Map<String, String> additionalMap = new HashMap<>();\n        \n        additionalMap.put(\"a\", \"apple\");\n        additionalMap.put(\"b\", \"banana\");\n        \n        /* write */ map.put(\"key1\", 42);\n        map.put(\"key2\", 100);\n        \n        int sum = 0;\n        for (Map.Entry<String, Integer> entry : map.entrySet()) {\n            sum += entry.getValue();\n        }\n        \n        // More operations on additionalMap\n        for (String key : additionalMap.keySet()) {\n            System.out.println(\"Fruit: \" + additionalMap.get(key));\n        }\n        \n        // Some arithmetic operations\n        int result = (sum * 2) - 50;\n        System.out.println(\"Result of arithmetic operations: \" + result);\n        \n        /* read */ int value = map.get(\"key1\");\n        System.out.println(\"Retrieved value: \" + value);\n        \n        // Further operations using map\n        map.put(\"key3\", 300);\n        int total = 0;\n        for (Integer val : map.values()) {\n            total += val;\n        }\n        System.out.println(\"Total sum of values in map: \" + total);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.LinkedHashBiMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedHashBiMap<String, Integer> map = LinkedHashBiMap.create();\n        /* write */ map.put(\"key1\", 42);\n        /* read */ int value = map.get(\"key1\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedHashBiMap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.LinkedHashBiMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,7 @@
+generated/csv/simple/prog_08ad10bf/Main.java:16: 错误: 不兼容的类型: List<String>无法转换为String[]
+        CSVRecord record = new CSVRecord(null, recordData, null, 0, 0);
+                                               ^
+注: generated/csv/simple/prog_08ad10bf/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

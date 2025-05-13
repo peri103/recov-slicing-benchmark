@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.NumberAxis;\nimport org.jfree.chart.plot.XYPlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of XYPlot\n        XYPlot plot = new XYPlot();\n\n        // Create an instance of NumberAxis to be used as the range axis\n        NumberAxis rangeAxis = new NumberAxis(\"Range Axis\");\n\n        // Write operation: set the range axis of the plot\n        /* write */ plot.setRangeAxis(rangeAxis);\n\n        // Read operation: get the range axis from the plot\n        /* read */ NumberAxis retrievedAxis = (NumberAxis) plot.getRangeAxis();\n\n        // Output the label of the retrieved range axis to verify the operation\n        System.out.println(retrievedAxis.getLabel());\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.XYPlot",
+        "write_method": "setRangeAxis",
+        "read_class": "org.jfree.chart.plot.XYPlot",
+        "read_method": "getRangeAxis"
+    }
+}

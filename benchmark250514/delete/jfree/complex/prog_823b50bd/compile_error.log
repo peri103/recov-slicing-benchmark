@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_823b50bd/Main.java:33: 错误: 找不到符号
+        renderer.setBaseSeriesVisible(true);
+                ^
+  符号:   方法 setBaseSeriesVisible(boolean)
+  位置: 类型为CategoryItemRenderer的变量 renderer
+generated/jfree/complex/prog_823b50bd/Main.java:34: 错误: 找不到符号
+        System.out.println("Renderer Base Series Visible: " + renderer.getBaseSeriesVisible());
+                                                                      ^
+  符号:   方法 getBaseSeriesVisible()
+  位置: 类型为CategoryItemRenderer的变量 renderer
+2 个错误

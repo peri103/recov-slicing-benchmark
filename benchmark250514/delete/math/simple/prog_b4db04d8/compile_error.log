@@ -1,0 +1,4 @@
+generated/math/simple/prog_b4db04d8/Main.java:6: 错误: <匿名Main$1>不是抽象的, 并且未覆盖RealMatrixPreservingVisitor中的抽象方法start(int,int,int,int,int,int)
+        RealMatrixPreservingVisitor visitor = new RealMatrixPreservingVisitor() {
+                                                                                ^
+1 个错误

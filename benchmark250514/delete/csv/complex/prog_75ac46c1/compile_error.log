@@ -1,0 +1,12 @@
+generated/csv/complex/prog_75ac46c1/Main.java:19: 错误: CSVRecord(CSVParser,String[],String,long,long)在CSVRecord中不是公共的; 无法从外部程序包中对其进行访问
+        CSVRecord record1 = new CSVRecord(null, values1, null, 0, 0);
+                            ^
+generated/csv/complex/prog_75ac46c1/Main.java:24: 错误: CSVRecord(CSVParser,String[],String,long,long)在CSVRecord中不是公共的; 无法从外部程序包中对其进行访问
+        CSVRecord record2 = new CSVRecord(null, values2, null, 0, 0);
+                            ^
+generated/csv/complex/prog_75ac46c1/Main.java:52: 错误: CSVRecord(CSVParser,String[],String,long,long)在CSVRecord中不是公共的; 无法从外部程序包中对其进行访问
+        CSVRecord record3 = new CSVRecord(null, values3, null, 0, 0);
+                            ^
+注: generated/csv/complex/prog_75ac46c1/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+3 个错误

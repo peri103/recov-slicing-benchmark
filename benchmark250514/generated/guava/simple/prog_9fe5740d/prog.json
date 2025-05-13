@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // ImmutableList does not support add operation directly as it is immutable,\n        // hence we need to use a builder to add elements.\n        ImmutableList.Builder<Integer> builder = ImmutableList.builder();\n        /* write */ builder.add(1);\n        \n        // Build the immutable list\n        ImmutableList<Integer> list = builder.build();\n        \n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableList",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableList",
+        "read_method": "get"
+    }
+}

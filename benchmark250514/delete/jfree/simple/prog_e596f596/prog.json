@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.WaferMapPlot;\nimport org.jfree.chart.renderer.PaintScale;\nimport org.jfree.chart.renderer.GrayPaintScale;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a WaferMapPlot instance\n        WaferMapPlot waferMapPlot = new WaferMapPlot();\n\n        // Create a PaintScale instance\n        PaintScale paintScale = new GrayPaintScale();\n\n        // Use the write method\n        /* write */ waferMapPlot.setPaintScale(paintScale);\n\n        // Use the read method\n        /* read */ PaintScale retrievedPaintScale = waferMapPlot.getPaintScale();\n\n        // Verify that the read method retrieves the value set by the write method\n        System.out.println(retrievedPaintScale == paintScale); // should print true\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.WaferMapPlot",
+        "write_method": "setPaintScale",
+        "read_class": "org.jfree.chart.plot.WaferMapPlot",
+        "read_method": "getPaintScale"
+    }
+}

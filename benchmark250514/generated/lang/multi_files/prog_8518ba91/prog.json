@@ -1,0 +1,13 @@
+{
+    "files": {
+        "StrManipulator.java": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class StrManipulator {\n    private StrBuilder strBuilder;\n\n    public StrManipulator(String initialString) {\n        this.strBuilder = new StrBuilder(initialString);\n    }\n\n    public void replaceFirstOccurrence(String searchStr, String replaceStr) {\n        /* write */ strBuilder.replaceFirst(searchStr, replaceStr);\n    }\n\n    public String getResult() {\n        return strBuilder.toString();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "replaceFirst",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    },
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        /* write */ strBuilder.replaceFirst(\"World\", \"Java\");\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World\");\n        ArrayList<String> stringList = new ArrayList<>();\n        \n        // Manipulate the string with StrBuilder\n        stringList.add(strBuilder.toString());\n        strBuilder.append(\" from Apache Commons\");\n        strBuilder.insert(0, \"Greeting: \");\n        stringList.add(strBuilder.toString());\n        \n        // Perform replace operation\n        /* write */ strBuilder.replaceFirst(\"World\", \"Java\");\n        \n        // More string manipulations\n        strBuilder.append(\" Library\");\n        strBuilder.deleteFirst(\"Hello\");\n        strBuilder.insert(0, \"Welcome to \");\n        stringList.add(strBuilder.toString());\n        \n        // Process the list of strings\n        for (String s : stringList) {\n            System.out.println(\"List Element: \" + s);\n        }\n        \n        // Read the final string after all manipulations\n        /* read */ String result = strBuilder.toString();\n        System.out.println(\"Final Result: \" + result);\n        \n        // Additional operations\n        ArrayList<Integer> numberList = new ArrayList<>();\n        for (int i = 0; i < 5; i++) {\n            numberList.add(i * 10);\n        }\n        for (int num : numberList) {\n            System.out.println(\"Number: \" + num);\n        }\n    }\n}"
+}

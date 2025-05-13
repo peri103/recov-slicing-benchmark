@@ -1,0 +1,11 @@
+generated/math/complex/prog_762744df/Main.java:30: 错误: 找不到符号
+        double determinant = combinedMatrix.getDeterminant();
+                                           ^
+  符号:   方法 getDeterminant()
+  位置: 类型为RealMatrix的变量 combinedMatrix
+generated/math/complex/prog_762744df/Main.java:34: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getRowRealMatrix(matrix, 0);
+                                                      ^
+  符号:   方法 getRowRealMatrix(RealMatrix,int)
+  位置: 类 MatrixUtils
+2 个错误

@@ -1,0 +1,6 @@
+generated/collections/multi_files/prog_49a71672/PredicatedBagWrapper.java:13: 错误: <E>PredicatedBag(Bag<E>,Predicate<? super E>) 在 PredicatedBag 中是 protected 访问控制
+        this.predicatedBag = new PredicatedBag<>(baseBag, truePredicate);
+                             ^
+  其中, E是类型变量:
+    E扩展已在类 PredicatedBag中声明的Object
+1 个错误

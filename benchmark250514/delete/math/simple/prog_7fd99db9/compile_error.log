@@ -1,0 +1,11 @@
+generated/math/simple/prog_7fd99db9/Main.java:18: 错误: 找不到符号
+        RealMatrix triangularMatrix = MatrixUtils.createTriangularMatrix(data);
+                                                 ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/simple/prog_7fd99db9/Main.java:22: 错误: 找不到符号
+        RealMatrix readMatrix = MatrixUtils.getTriangularMatrix(triangularMatrix);
+                                           ^
+  符号:   方法 getTriangularMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+2 个错误

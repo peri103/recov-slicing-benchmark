@@ -1,0 +1,8 @@
+generated/compress/complex/prog_9aa7cf30/Main.java:11: 错误: 不兼容的类型: Date无法转换为long
+        /* write */ gzipParameters.setModificationTime(currentDate);
+                                                       ^
+generated/compress/complex/prog_9aa7cf30/Main.java:36: 错误: 不兼容的类型: long无法转换为Date
+        /* read */ Date modificationTime = gzipParameters.getModificationTime();
+                                                                             ^
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+2 个错误

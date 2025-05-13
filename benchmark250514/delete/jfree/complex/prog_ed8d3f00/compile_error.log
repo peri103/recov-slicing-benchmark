@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_ed8d3f00/Main.java:22: 错误: 找不到符号
+        /* write */ renderer.setDomainPaint(Color.BLUE);
+                            ^
+  符号:   方法 setDomainPaint(Color)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+generated/jfree/complex/prog_ed8d3f00/Main.java:43: 错误: 找不到符号
+        /* read */ Paint domainPaint = renderer.getDomainPaint();
+                                               ^
+  符号:   方法 getDomainPaint()
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+2 个错误

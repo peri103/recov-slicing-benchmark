@@ -1,0 +1,18 @@
+generated/csv/multi_files/prog_f67801b5/DataProcessor.java:7: 错误: 找不到符号
+    public void processRecord(CSVRecord record) {
+                              ^
+  符号:   类 CSVRecord
+  位置: 类 DataProcessor
+generated/csv/multi_files/prog_f67801b5/DataProcessor.java:17: 错误: 找不到符号
+    public boolean isNameMapped(CSVRecord record) {
+                                ^
+  符号:   类 CSVRecord
+  位置: 类 DataProcessor
+generated/csv/multi_files/prog_f67801b5/Main.java:8: 错误: 找不到符号
+        CSVRecord record = csvHandler.getRecord(0);
+        ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+注: generated/csv/multi_files/prog_f67801b5/CSVHandler.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+3 个错误

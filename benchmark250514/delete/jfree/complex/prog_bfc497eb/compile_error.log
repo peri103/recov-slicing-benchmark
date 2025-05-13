@@ -1,0 +1,49 @@
+generated/jfree/complex/prog_bfc497eb/Main.java:8: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+        Title title = new Title() {
+                                  ^
+generated/jfree/complex/prog_bfc497eb/Main.java:12: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_bfc497eb/Main.java:17: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_bfc497eb/Main.java:32: 错误: 找不到符号
+        /* write */ title.setFont(font);
+                         ^
+  符号:   方法 setFont(Font)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_bfc497eb/Main.java:41: 错误: 找不到符号
+        title.setColor(colors.get(0));
+             ^
+  符号:   方法 setColor(Color)
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_bfc497eb/Main.java:42: 错误: 找不到符号
+        Color titleColor = title.getColor();
+                                ^
+  符号:   方法 getColor()
+  位置: 类型为Title的变量 title
+generated/jfree/complex/prog_bfc497eb/Main.java:51: 错误: <匿名Main$2>不是抽象的, 并且未覆盖Title中的抽象方法draw(Graphics2D,Rectangle2D)
+        Title anotherTitle = new Title() {
+                                         ^
+generated/jfree/complex/prog_bfc497eb/Main.java:54: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_bfc497eb/Main.java:59: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/complex/prog_bfc497eb/Main.java:66: 错误: 找不到符号
+        anotherTitle.setFont(anotherFont);
+                    ^
+  符号:   方法 setFont(Font)
+  位置: 类型为Title的变量 anotherTitle
+generated/jfree/complex/prog_bfc497eb/Main.java:67: 错误: 找不到符号
+        Font anotherReadFont = anotherTitle.getFont();
+                                           ^
+  符号:   方法 getFont()
+  位置: 类型为Title的变量 anotherTitle
+generated/jfree/complex/prog_bfc497eb/Main.java:77: 错误: 找不到符号
+        /* read */ Font readFont = title.getFont();
+                                        ^
+  符号:   方法 getFont()
+  位置: 类型为Title的变量 title
+12 个错误

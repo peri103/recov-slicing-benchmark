@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.time.DateUtils;\nimport java.util.Date;\nimport java.util.Calendar;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date currentDate = new Date();\n        Calendar calendar = Calendar.getInstance();\n        calendar.setTime(currentDate);\n\n        // Use the ceiling method to round up the date to the next hour\n        /* write */ Date roundedUpDate = DateUtils.ceiling(calendar, Calendar.HOUR).getTime();\n\n        // Use the truncate method to round down the date to the start of the hour\n        /* read */ Date truncatedDate = DateUtils.truncate(roundedUpDate, Calendar.HOUR);\n\n        // Print the truncated date\n        System.out.println(truncatedDate);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.time.DateUtils",
+        "write_method": "ceiling",
+        "read_class": "org.apache.commons.lang3.time.DateUtils",
+        "read_method": "truncate"
+    }
+}

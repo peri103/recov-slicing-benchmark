@@ -1,0 +1,6 @@
+generated/jfree/multi_files/prog_b2d1f9c7/Main.java:24: 错误: 找不到符号
+        /* read */ CategoryAxis retrievedAxis = components.getPlot().getDomainAxis();
+                   ^
+  符号:   类 CategoryAxis
+  位置: 类 Main
+1 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry entry = new JarArchiveEntry(\"example.jar\");\n        /* write */ entry.setCompressedSize(1024L);\n        /* read */ long compressedSize = entry.getCompressedSize();\n        System.out.println(compressedSize);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setCompressedSize",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getCompressedSize"
+    }
+}

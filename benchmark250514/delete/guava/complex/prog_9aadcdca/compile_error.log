@@ -1,0 +1,21 @@
+generated/guava/complex/prog_9aadcdca/Main.java:35: 错误: 无法将类 MutableClassToInstanceMap<B>中的方法 getInstance应用到给定类型;
+        String greeting = anotherMap.getInstance(stringTypeToken);
+                                    ^
+  需要: Class<T>
+  找到: TypeToken<String>
+  原因: 无法推断类型变量 T
+    (参数不匹配; TypeToken<String>无法转换为Class<T>)
+  其中, T,B是类型变量:
+    T扩展已在方法 <T>getInstance(Class<T>)中声明的Object
+    B扩展已在类 MutableClassToInstanceMap中声明的Object
+generated/guava/complex/prog_9aadcdca/Main.java:45: 错误: 无法将类 MutableClassToInstanceMap<B>中的方法 getInstance应用到给定类型;
+        /* read */ Integer value = map.getInstance(integerTypeToken);
+                                      ^
+  需要: Class<T>
+  找到: TypeToken<Integer>
+  原因: 无法推断类型变量 T
+    (参数不匹配; TypeToken<Integer>无法转换为Class<T>)
+  其中, T,B是类型变量:
+    T扩展已在方法 <T>getInstance(Class<T>)中声明的Object
+    B扩展已在类 MutableClassToInstanceMap中声明的Object
+2 个错误

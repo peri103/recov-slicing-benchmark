@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.ChartPanel;\nimport javax.swing.JPopupMenu;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a ChartPanel object\n        ChartPanel chartPanel = new ChartPanel(null);\n\n        // Create a JPopupMenu object\n        JPopupMenu popupMenu = new JPopupMenu();\n        popupMenu.add(\"Option 1\");\n        popupMenu.add(\"Option 2\");\n\n        // Use the write method to set the popup menu\n        /* write */ chartPanel.setPopupMenu(popupMenu);\n\n        // Use the read method to get the popup menu\n        /* read */ JPopupMenu retrievedPopupMenu = chartPanel.getPopupMenu();\n\n        // Print out the items in the retrieved popup menu to verify\n        for (int i = 0; i < retrievedPopupMenu.getComponentCount(); i++) {\n            System.out.println(retrievedPopupMenu.getComponent(i));\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.ChartPanel",
+        "write_method": "setPopupMenu",
+        "read_class": "org.jfree.chart.ChartPanel",
+        "read_method": "getPopupMenu"
+    }
+}

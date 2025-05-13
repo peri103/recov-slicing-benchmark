@@ -1,0 +1,22 @@
+generated/jfree/complex/prog_1dab54d9/Main.java:13: 错误: 找不到符号
+        /* write */ plot.setPaintScale(paintScale);
+                        ^
+  符号:   方法 setPaintScale(PaintScale)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_1dab54d9/Main.java:27: 错误: 找不到符号
+        anotherPlot.setPaintScale(lookupPaintScale);
+                   ^
+  符号:   方法 setPaintScale(LookupPaintScale)
+  位置: 类型为WaferMapPlot的变量 anotherPlot
+generated/jfree/complex/prog_1dab54d9/Main.java:35: 错误: 不兼容的类型: Paint无法转换为Color
+        Color color = lookupPaintScale.getPaint(value);
+                                               ^
+generated/jfree/complex/prog_1dab54d9/Main.java:38: 错误: 找不到符号
+        /* read */ PaintScale retrievedPaintScale = plot.getPaintScale();
+                                                        ^
+  符号:   方法 getPaintScale()
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_1dab54d9/Main.java:43: 错误: 不兼容的类型: Paint无法转换为Color
+            Color lookupColor = lookupPaintScale.getPaint(i);
+                                                         ^
+5 个错误

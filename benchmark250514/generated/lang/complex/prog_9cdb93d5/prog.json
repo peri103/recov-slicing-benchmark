@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        ArrayList<Integer> numbers = new ArrayList<>();\n        \n        // Adding elements to the ArrayList\n        for (int i = 0; i < 5; i++) {\n            numbers.add(i);\n        }\n        \n        // Perform operations on ArrayList\n        for (int i = 0; i < numbers.size(); i++) {\n            int num = numbers.get(i);\n            if (num % 2 == 0) {\n                strBuilder.append(num);  // Append even numbers to StrBuilder\n            } else {\n                strBuilder.appendSeparator(\"-\");  // Append separator for odd numbers\n            }\n        }\n        \n        /* write */ strBuilder.appendSeparator(\",\");\n        \n        // Perform some calculations\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        \n        // Output the sum\n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        // Perform some manipulations on StrBuilder\n        strBuilder.append(\"End\");\n        \n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n        \n        // Further operations with ArrayList\n        numbers.add(10);\n        numbers.remove(0);\n        \n        // Output the final state of ArrayList\n        System.out.println(\"Final numbers list: \" + numbers);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.appendSeparator(\",\");\n        /* read */ String value = strBuilder.toString();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "appendSeparator",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

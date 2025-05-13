@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.collect.LinkedListMultimap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedListMultimap<String, Integer> multimap = LinkedListMultimap.create();\n        Map<String, Integer> hashmap = new HashMap<>();\n        \n        /* write */ multimap.put(\"key1\", 42);\n        \n        hashmap.put(\"key2\", 100);\n        hashmap.put(\"key3\", 200);\n        \n        int sum = 0;\n        for (String key : hashmap.keySet()) {\n            sum += hashmap.get(key);\n        }\n        \n        System.out.println(\"Sum of hashmap values: \" + sum);\n        \n        hashmap.put(\"key4\", 300);\n        \n        if (hashmap.containsKey(\"key4\")) {\n            System.out.println(\"Key4 exists with value: \" + hashmap.get(\"key4\"));\n        }\n        \n        /* read */ Integer value = multimap.get(\"key1\").get(0);\n        System.out.println(\"Value from multimap: \" + value);\n        \n        hashmap.put(\"key5\", 500);\n        \n        for (Map.Entry<String, Integer> entry : hashmap.entrySet()) {\n            System.out.println(\"Key: \" + entry.getKey() + \", Value: \" + entry.getValue());\n        }\n        \n        int total = 0;\n        for (String key : hashmap.keySet()) {\n            total += hashmap.get(key);\n        }\n        \n        System.out.println(\"Total of hashmap values: \" + total);\n    }\n}",
+    "java_code_simple": "import com.google.common.collect.LinkedListMultimap;\n\npublic class Main {\n    public static void main(String[] args) {\n        LinkedListMultimap<String, Integer> multimap = LinkedListMultimap.create();\n        /* write */ multimap.put(\"key1\", 42);\n        /* read */ Integer value = multimap.get(\"key1\").get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.LinkedListMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.LinkedListMultimap",
+        "read_method": "get"
+    }
+}

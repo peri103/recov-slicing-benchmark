@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of JarArchiveEntry\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"example\");\n\n        // Create a byte array to set as extra data\n        byte[] extraData = new byte[]{1, 2, 3, 4, 5};\n\n        // Use the write method to set the extra data\n        /* write */ jarEntry.setExtra(extraData);\n\n        // Use the read method to retrieve the extra data\n        /* read */ byte[] retrievedData = jarEntry.getExtra();\n\n        // Print the retrieved data to verify it matches the written data\n        for (byte b : retrievedData) {\n            System.out.print(b + \" \");\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setExtra",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getExtra"
+    }
+}

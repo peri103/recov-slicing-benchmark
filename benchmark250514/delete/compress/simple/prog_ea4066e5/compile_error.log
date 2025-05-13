@@ -1,0 +1,11 @@
+generated/compress/simple/prog_ea4066e5/Main.java:6: 错误: 找不到符号
+        /* write */ entry.setCrc(12345L);
+                         ^
+  符号:   方法 setCrc(long)
+  位置: 类型为CpioArchiveEntry的变量 entry
+generated/compress/simple/prog_ea4066e5/Main.java:7: 错误: 找不到符号
+        /* read */ long crcValue = entry.getCrc();
+                                        ^
+  符号:   方法 getCrc()
+  位置: 类型为CpioArchiveEntry的变量 entry
+2 个错误

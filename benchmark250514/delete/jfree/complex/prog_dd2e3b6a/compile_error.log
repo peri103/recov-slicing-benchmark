@@ -1,0 +1,21 @@
+generated/jfree/complex/prog_dd2e3b6a/Main.java:15: 错误: 找不到符号
+        /* write */ generator.setCategoryFormat(format);
+                             ^
+  符号:   方法 setCategoryFormat(NumberFormat)
+  位置: 类型为StandardCategoryToolTipGenerator的变量 generator
+generated/jfree/complex/prog_dd2e3b6a/Main.java:36: 错误: 找不到符号
+        anotherGenerator.setCategoryFormat(NumberFormat.getCurrencyInstance());
+                        ^
+  符号:   方法 setCategoryFormat(NumberFormat)
+  位置: 类型为StandardCategoryToolTipGenerator的变量 anotherGenerator
+generated/jfree/complex/prog_dd2e3b6a/Main.java:37: 错误: 找不到符号
+        NumberFormat anotherReadFormat = anotherGenerator.getCategoryFormat();
+                                                         ^
+  符号:   方法 getCategoryFormat()
+  位置: 类型为StandardCategoryToolTipGenerator的变量 anotherGenerator
+generated/jfree/complex/prog_dd2e3b6a/Main.java:48: 错误: 找不到符号
+        /* read */ NumberFormat readFormat = generator.getCategoryFormat();
+                                                      ^
+  符号:   方法 getCategoryFormat()
+  位置: 类型为StandardCategoryToolTipGenerator的变量 generator
+4 个错误

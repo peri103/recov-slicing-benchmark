@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.LegendItem;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a LegendItem object\n        LegendItem legendItem = new LegendItem(\"Initial Label\");\n\n        // Set the label using the write method\n        /* write */ legendItem.setLabel(\"New Label\");\n\n        // Read the label using the read method\n        /* read */ String label = legendItem.getLabel();\n\n        // Print the label to ensure the read method retrieves the correct value\n        System.out.println(label);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.LegendItem",
+        "write_method": "setLabel",
+        "read_class": "org.jfree.chart.LegendItem",
+        "read_method": "getLabel"
+    }
+}

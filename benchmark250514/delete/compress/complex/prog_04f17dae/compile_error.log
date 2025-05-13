@@ -1,0 +1,16 @@
+generated/compress/complex/prog_04f17dae/Main.java:14: 错误: 找不到符号
+            /* write */ gzipParams.setCompressedSize(1024);
+                                  ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为GzipParameters的变量 gzipParams
+generated/compress/complex/prog_04f17dae/Main.java:30: 错误: 找不到符号
+            gzipParamsForDecompression.setCompressedSize(compressedData.length);
+                                      ^
+  符号:   方法 setCompressedSize(int)
+  位置: 类型为GzipParameters的变量 gzipParamsForDecompression
+generated/compress/complex/prog_04f17dae/Main.java:42: 错误: 找不到符号
+            /* read */ long compressedSize = gzipParams.getCompressedSize();
+                                                       ^
+  符号:   方法 getCompressedSize()
+  位置: 类型为GzipParameters的变量 gzipParams
+3 个错误

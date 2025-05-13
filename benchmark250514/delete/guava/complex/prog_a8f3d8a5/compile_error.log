@@ -1,0 +1,6 @@
+generated/guava/complex/prog_a8f3d8a5/Main.java:27: 错误: 找不到符号
+        List<String> keys = multimap.keys().asList();
+                                           ^
+  符号:   方法 asList()
+  位置: 接口 Multiset<String>
+1 个错误

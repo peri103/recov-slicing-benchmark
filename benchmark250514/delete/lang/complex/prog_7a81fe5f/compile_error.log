@@ -1,0 +1,6 @@
+generated/lang/complex/prog_7a81fe5f/Main.java:31: 错误: 找不到符号
+        mutableDouble.multiply(2);
+                     ^
+  符号:   方法 multiply(int)
+  位置: 类型为MutableDouble的变量 mutableDouble
+1 个错误

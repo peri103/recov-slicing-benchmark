@@ -1,0 +1,25 @@
+generated/jfree/complex/prog_ab4db134/Main.java:11: 错误: 不兼容的类型: double无法转换为NumberTickUnit
+        numberAxis.setTickUnit(10.0);
+                               ^
+generated/jfree/complex/prog_ab4db134/Main.java:19: 错误: 找不到符号
+        /* write */ logAxis.setBase(10.0);
+                           ^
+  符号:   方法 setBase(double)
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_ab4db134/Main.java:32: 错误: 找不到符号
+            double logValue = Math.pow(logAxis.getBase(), i);
+                                              ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_ab4db134/Main.java:33: 错误: 找不到符号
+            System.out.println("Log value for base " + logAxis.getBase() + " and exponent " + i + ": " + logValue);
+                                                              ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 logAxis
+generated/jfree/complex/prog_ab4db134/Main.java:37: 错误: 找不到符号
+        /* read */ double base = logAxis.getBase();
+                                        ^
+  符号:   方法 getBase()
+  位置: 类型为LogarithmicAxis的变量 logAxis
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+5 个错误

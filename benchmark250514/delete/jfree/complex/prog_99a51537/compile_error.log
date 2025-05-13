@@ -1,0 +1,6 @@
+generated/jfree/complex/prog_99a51537/Main.java:21: 错误: 找不到符号
+        legendTitle.setPosition(LegendTitle.BOTTOM);
+                                           ^
+  符号:   变量 BOTTOM
+  位置: 类 LegendTitle
+1 个错误

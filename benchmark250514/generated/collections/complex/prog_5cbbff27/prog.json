@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.AbstractHashedMap;\nimport org.apache.commons.collections4.map.HashedMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractHashedMap<String, Integer> map = new AbstractHashedMap<String, Integer>() {};\n        /* write */ map.put(\"key\", 42);\n\n        // Additional code to make the program more complex\n        HashedMap<String, String> stringMap = new HashedMap<>();\n        stringMap.put(\"hello\", \"world\");\n        stringMap.put(\"foo\", \"bar\");\n        \n        Map<Integer, String> intToStringMap = new HashMap<>();\n        for (int i = 0; i < 5; i++) {\n            intToStringMap.put(i, \"Value\" + i);\n        }\n\n        // Further operations on stringMap\n        String greeting = stringMap.get(\"hello\");\n        System.out.println(\"Greeting: \" + greeting);\n\n        // Iterating over intToStringMap\n        for (Map.Entry<Integer, String> entry : intToStringMap.entrySet()) {\n            System.out.println(\"Key: \" + entry.getKey() + \", Value: \" + entry.getValue());\n        }\n\n        // Perform some calculations\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of first 10 integers: \" + sum);\n\n        // Final read operation from the original map\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.collections4.map.AbstractHashedMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        AbstractHashedMap<String, Integer> map = new AbstractHashedMap<String, Integer>() {};\n        /* write */ map.put(\"key\", 42);\n        /* read */ int value = map.get(\"key\");\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.AbstractHashedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.AbstractHashedMap",
+        "read_method": "get"
+    }
+}

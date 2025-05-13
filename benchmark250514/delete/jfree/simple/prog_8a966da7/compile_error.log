@@ -1,0 +1,22 @@
+generated/jfree/simple/prog_8a966da7/Main.java:7: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/simple/prog_8a966da7/Main.java:10: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_8a966da7/Main.java:15: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_8a966da7/Main.java:26: 错误: 找不到符号
+        /* write */ plot.setDataset(dataset);
+                        ^
+  符号:   方法 setDataset(DefaultPieDataset)
+  位置: 类型为Plot的变量 plot
+generated/jfree/simple/prog_8a966da7/Main.java:27: 错误: 找不到符号
+        /* read */ Dataset readDataset = plot.getDataset();
+                                             ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 plot
+注: generated/jfree/simple/prog_8a966da7/Main.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+5 个错误

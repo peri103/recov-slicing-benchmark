@@ -1,0 +1,14 @@
+generated/csv/complex/prog_3e9b1c50/Main.java:26: 错误: 找不到符号
+        CSVRecord record = CSVRecord.EMPTY;
+                                    ^
+  符号:   变量 EMPTY
+  位置: 类 CSVRecord
+generated/csv/complex/prog_3e9b1c50/Main.java:42: 错误: 无法将类 CSVRecord中的方法 isMapped应用到给定类型;
+        /* read */ boolean mappedStatus = record.isMapped();
+                                                ^
+  需要: String
+  找到: 没有参数
+  原因: 实际参数列表和形式参数列表长度不同
+注: generated/csv/complex/prog_3e9b1c50/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

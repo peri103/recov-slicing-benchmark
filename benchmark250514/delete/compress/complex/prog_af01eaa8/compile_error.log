@@ -1,0 +1,16 @@
+generated/compress/complex/prog_af01eaa8/Main.java:17: 错误: 找不到符号
+        /* write */ entry.setUserName("testUser");
+                         ^
+  符号:   方法 setUserName(String)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_af01eaa8/Main.java:28: 错误: 找不到符号
+            tempEntry.setUserName("user" + i);
+                     ^
+  符号:   方法 setUserName(String)
+  位置: 类型为ArArchiveEntry的变量 tempEntry
+generated/compress/complex/prog_af01eaa8/Main.java:37: 错误: 找不到符号
+        /* read */ String userName = retrievedEntry.getUserName();
+                                                   ^
+  符号:   方法 getUserName()
+  位置: 类型为ArArchiveEntry的变量 retrievedEntry
+3 个错误

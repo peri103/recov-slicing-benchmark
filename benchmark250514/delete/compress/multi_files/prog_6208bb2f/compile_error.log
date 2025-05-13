@@ -1,0 +1,11 @@
+generated/compress/multi_files/prog_6208bb2f/GzipParametersWrapper.java:7: 错误: 找不到符号
+        /* write */ gzipParameters.setCRC32(crc);
+                                  ^
+  符号:   方法 setCRC32(long)
+  位置: 类型为GzipParameters的变量 gzipParameters
+generated/compress/multi_files/prog_6208bb2f/GzipParametersWrapper.java:11: 错误: 找不到符号
+        return gzipParameters.getCRC32();
+                             ^
+  符号:   方法 getCRC32()
+  位置: 类型为GzipParameters的变量 gzipParameters
+2 个错误

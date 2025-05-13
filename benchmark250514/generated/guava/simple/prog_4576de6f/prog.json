@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingSet;\nimport java.util.HashSet;\nimport java.util.Set;\n\npublic class Main {\n    public static void main(String[] args) {\n        Set<Integer> backingSet = new HashSet<>();\n        ForwardingSet<Integer> set = new ForwardingSet<Integer>() {\n            @Override\n            protected Set<Integer> delegate() {\n                return backingSet;\n            }\n        };\n        \n        /* write */ set.add(42);\n        /* read */ boolean contains = set.contains(42);\n        System.out.println(contains);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ForwardingSet",
+        "read_method": "contains"
+    }
+}

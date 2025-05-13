@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.title.Title;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming Title is a class that has setText and getText methods\n        Title title = new Title();\n        ArrayList<String> textHistory = new ArrayList<>();\n        \n        /* write */ title.setText(\"Hello, World!\");\n        \n        // Unrelated complex logic\n        for (int i = 0; i < 5; i++) {\n            title.setText(\"Iteration \" + i);\n            textHistory.add(title.getText());\n        }\n        \n        // More complex logic with another class\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * i);\n        }\n\n        int sum = 0;\n        for (Integer number : numbers) {\n            sum += number;\n        }\n        \n        System.out.println(\"Sum of squares: \" + sum);\n        \n        // Unrelated complex logic\n        StringBuilder builder = new StringBuilder();\n        for (String text : textHistory) {\n            builder.append(text).append(\", \");\n        }\n        \n        System.out.println(\"Text history: \" + builder.toString());\n\n        /* read */ String text = title.getText();\n        \n        System.out.println(\"Final title text: \" + text);\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.title.Title;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming Title is a class that has a setText and getText method\n        Title title = new Title();\n        /* write */ title.setText(\"Hello, World!\");\n        /* read */ String text = title.getText();\n        System.out.println(text);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.title.Title",
+        "write_method": "setText",
+        "read_class": "org.jfree.chart.title.Title",
+        "read_method": "getText"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.math3.linear.MatrixUtils;\nimport org.apache.commons.math3.linear.RealMatrix;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the diagonal values\n        double[] diagonalValues = {1.0, 2.0, 3.0};\n\n        // Create a diagonal matrix using MatrixUtils\n        /* write */ RealMatrix matrix = MatrixUtils.createDiagonalMatrix(diagonalValues);\n\n        // Read the diagonal matrix using MatrixUtils (assuming getDiagonalMatrix is a hypothetical method)\n        /* read */ double[] readValues = matrix.getColumn(0); // Using getColumn(0) to simulate reading diagonal values\n\n        // Print the read diagonal values\n        for (double value : readValues) {\n            System.out.println(value);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "write_method": "createDiagonalMatrix",
+        "read_class": "org.apache.commons.math3.linear.MatrixUtils",
+        "read_method": "getDiagonalMatrix"
+    }
+}

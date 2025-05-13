@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.list.NodeCachingLinkedList;\n\npublic class Main {\n    public static void main(String[] args) {\n        NodeCachingLinkedList<Integer> list = new NodeCachingLinkedList<>();\n        /* write */ list.add(42);\n        /* read */ int value = list.get(0);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.list.NodeCachingLinkedList",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.list.NodeCachingLinkedList",
+        "read_method": "get"
+    }
+}

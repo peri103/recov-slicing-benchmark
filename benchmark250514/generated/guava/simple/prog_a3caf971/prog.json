@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingList;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of a concrete subclass of ForwardingList\n        MyForwardingList<Integer> list = new MyForwardingList<>(new ArrayList<>());\n\n        /* write */ list.add(42);\n        /* read */ int value = list.get(0);\n\n        System.out.println(value);\n    }\n}\n\n// Concrete subclass of ForwardingList\nclass MyForwardingList<E> extends ForwardingList<E> {\n    private final List<E> delegate;\n\n    public MyForwardingList(List<E> delegate) {\n        this.delegate = delegate;\n    }\n\n    @Override\n    protected List<E> delegate() {\n        return delegate;\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingList",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ForwardingList",
+        "read_method": "get"
+    }
+}

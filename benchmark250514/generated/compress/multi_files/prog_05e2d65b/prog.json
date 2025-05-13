@@ -1,0 +1,13 @@
+{
+    "files": {
+        "TarHandler.java": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class TarHandler {\n    private TarArchiveEntry tarEntry;\n\n    public TarHandler(String fileName) {\n        this.tarEntry = new TarArchiveEntry(fileName);\n    }\n\n    public void setEntrySize(long size) {\n        /* write */ tarEntry.setSize(size);\n    }\n\n    public long getEntrySize() {\n        return tarEntry.getSize();\n    }\n}"
+    },
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setSize",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getSize"
+    },
+    "java_code_simple": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry tarEntry = new TarArchiveEntry(\"example.txt\");\n        /* write */ tarEntry.setSize(1024);\n        /* read */ long size = tarEntry.getSize();\n        System.out.println(\"Size: \" + size);\n    }\n}",
+    "java_code_complex": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a TarArchiveEntry with a given name\n        TarArchiveEntry tarEntry = new TarArchiveEntry(\"example.txt\");\n\n        // Create a map to store file names and their sizes\n        Map<String, Long> fileSizeMap = new HashMap<>();\n        fileSizeMap.put(\"example.txt\", 512L);\n        fileSizeMap.put(\"sample.txt\", 2048L);\n\n        // Simulate some operations on the map\n        if (fileSizeMap.containsKey(\"example.txt\")) {\n            System.out.println(\"example.txt size before setting: \" + fileSizeMap.get(\"example.txt\"));\n        }\n\n        // Set the size of the TarArchiveEntry\n        /* write */ tarEntry.setSize(1024);\n\n        // Perform additional operations\n        fileSizeMap.put(\"example.txt\", tarEntry.getSize());\n\n        // Simulate some calculations\n        long totalSize = 0;\n        for (Long size : fileSizeMap.values()) {\n            totalSize += size;\n        }\n        System.out.println(\"Total size of files: \" + totalSize);\n\n        // Retrieve the size of the TarArchiveEntry\n        /* read */ long size = tarEntry.getSize();\n\n        // Print the size of the TarArchiveEntry\n        System.out.println(\"Size of example.txt after setting: \" + size);\n    }\n}"
+}

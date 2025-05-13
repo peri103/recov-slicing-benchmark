@@ -1,0 +1,13 @@
+generated/lang/multi_files/prog_a50f1f1a/TokenProcessor.java:12: 错误: 找不到符号
+        /* write */ tokenizer.setTokenMatcher(StrMatcher.commaMatcher());
+                             ^
+  符号:   方法 setTokenMatcher(StrMatcher)
+  位置: 类型为StrTokenizer的变量 tokenizer
+generated/lang/multi_files/prog_a50f1f1a/Main.java:21: 错误: 找不到符号
+        StrTokenizer tokenizer = tokenProcessor.getTokenizer();
+        ^
+  符号:   类 StrTokenizer
+  位置: 类 Main
+注: generated/lang/multi_files/prog_a50f1f1a/TokenProcessor.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

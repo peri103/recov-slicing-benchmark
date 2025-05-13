@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.Bag;\nimport org.apache.commons.collections4.bag.HashBag;\nimport org.apache.commons.collections4.bag.PredicatedBag;\nimport org.apache.commons.collections4.Predicate;\nimport org.apache.commons.collections4.functors.TruePredicate;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a HashBag as the base bag\n        Bag<String> baseBag = new HashBag<>();\n\n        // Use a TruePredicate to allow all elements\n        Predicate<String> predicate = TruePredicate.truePredicate();\n\n        // Create a PredicatedBag with the base bag and the predicate\n        PredicatedBag<String> predicatedBag = new PredicatedBag<>(baseBag, predicate);\n\n        // Add an element to the PredicatedBag\n        /* write */ predicatedBag.add(\"example\");\n\n        // Read the count of the element added\n        /* read */ int count = predicatedBag.getCount(\"example\");\n\n        // Print the count\n        System.out.println(count);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.bag.PredicatedBag",
+        "write_method": "add",
+        "read_class": "org.apache.commons.collections4.bag.PredicatedBag",
+        "read_method": "getCount"
+    }
+}

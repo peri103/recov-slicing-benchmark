@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport org.jfree.chart.plot.CategoryPlot;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.chart.axis.CategoryAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot piePlot = new PiePlot();\n        CategoryPlot categoryPlot = new CategoryPlot();\n        NumberAxis numberAxis = new NumberAxis();\n        CategoryAxis categoryAxis = new CategoryAxis();\n\n        /* write */ piePlot.setMaximumLabelWidth(0.25);\n\n        numberAxis.setRange(0.0, 100.0);\n        categoryAxis.setCategoryMargin(0.10);\n        categoryPlot.setDomainAxis(categoryAxis);\n        categoryPlot.setRangeAxis(numberAxis);\n\n        double totalValue = 0.0;\n        for (int i = 0; i < 10; i++) {\n            double value = Math.random() * 10;\n            totalValue += value;\n            categoryPlot.setDataset(i, null); // Placeholder for dataset assignment\n        }\n\n        double averageValue = totalValue / 10;\n        System.out.println(\"Average value: \" + averageValue);\n\n        /* read */ double maxLabelWidth = piePlot.getMaximumLabelWidth();\n        System.out.println(\"Maximum label width: \" + maxLabelWidth);\n\n        for (int i = 0; i < 5; i++) {\n            double scaleFactor = 0.1 * i;\n            piePlot.setMaximumLabelWidth(scaleFactor);\n            System.out.println(\"Adjusted label width: \" + piePlot.getMaximumLabelWidth());\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.PiePlot;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot plot = new PiePlot();\n        /* write */ plot.setMaximumLabelWidth(0.25);\n        /* read */ double maxLabelWidth = plot.getMaximumLabelWidth();\n        System.out.println(maxLabelWidth);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setMaximumLabelWidth",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getMaximumLabelWidth"
+    }
+}

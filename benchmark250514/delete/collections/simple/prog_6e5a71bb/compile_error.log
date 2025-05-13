@@ -1,0 +1,16 @@
+generated/collections/simple/prog_6e5a71bb/Main.java:1: 错误: 找不到符号
+import org.apache.commons.collections4.map.AbstractOrderedBidiMapDecorator;
+                                          ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 程序包 org.apache.commons.collections4.map
+generated/collections/simple/prog_6e5a71bb/Main.java:7: 错误: 找不到符号
+        AbstractOrderedBidiMapDecorator<String, String> map = new AbstractOrderedBidiMapDecorator<>(new TreeBidiMap<>());
+        ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Main
+generated/collections/simple/prog_6e5a71bb/Main.java:7: 错误: 找不到符号
+        AbstractOrderedBidiMapDecorator<String, String> map = new AbstractOrderedBidiMapDecorator<>(new TreeBidiMap<>());
+                                                                  ^
+  符号:   类 AbstractOrderedBidiMapDecorator
+  位置: 类 Main
+3 个错误

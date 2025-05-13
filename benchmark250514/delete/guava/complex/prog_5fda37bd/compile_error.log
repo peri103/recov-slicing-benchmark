@@ -1,0 +1,4 @@
+generated/guava/complex/prog_5fda37bd/Main.java:9: 错误: 枚举类型不能为本地类型
+        enum Color { RED, GREEN, BLUE }
+        ^
+1 个错误

@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        ArrayList<Integer> numbers = new ArrayList<>();\n        \n        // Adding numbers to the list\n        for (int i = 1; i <= 5; i++) {\n            numbers.add(i * 10);\n        }\n        \n        // Manipulating the StrBuilder\n        strBuilder.append(\"Hello, World!\");\n        \n        /* write */ strBuilder.setLength(10);\n        \n        // Performing some operations on the list\n        int sum = 0;\n        for (int num : numbers) {\n            sum += num;\n        }\n        \n        // Print the sum of numbers\n        System.out.println(\"Sum of numbers: \" + sum);\n        \n        // Further manipulation of StrBuilder\n        strBuilder.append(\" - Extended\");\n        \n        // Print the content of StrBuilder\n        System.out.println(\"StrBuilder content: \" + strBuilder);\n        \n        /* read */ String result = strBuilder.toString();\n        \n        // Print the final result\n        System.out.println(\"Final StrBuilder content: \" + result);\n        \n        // Additional operations with numbers\n        for (int i = 0; i < numbers.size(); i++) {\n            numbers.set(i, numbers.get(i) + 5);\n        }\n        \n        // Print the modified numbers\n        System.out.println(\"Modified numbers: \" + numbers);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder();\n        /* write */ strBuilder.setLength(10);\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "setLength",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

@@ -1,0 +1,11 @@
+generated/compress/complex/prog_0acae369/Main.java:19: 错误: 找不到符号
+            entry.setMode(0644);
+                 ^
+  符号:   方法 setMode(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_0acae369/Main.java:23: 错误: 找不到符号
+        /* write */ archiveEntry.setMode(0755);
+                                ^
+  符号:   方法 setMode(int)
+  位置: 类型为ArArchiveEntry的变量 archiveEntry
+2 个错误

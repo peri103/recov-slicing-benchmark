@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Original StrBuilder operations\n        StrBuilder strBuilder = new StrBuilder(\"Hello World!\");\n        /* write */ strBuilder.deleteCharAt(5);\n\n        // Additional complex code using ArrayList\n        ArrayList<Integer> numbers = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numbers.add(i * 2);\n        }\n\n        // Manipulating the ArrayList\n        for (int i = 0; i < numbers.size(); i++) {\n            numbers.set(i, numbers.get(i) + 1);\n        }\n\n        // Using HashMap for additional complexity\n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"One\", 1);\n        map.put(\"Two\", 2);\n        map.put(\"Three\", 3);\n\n        // Iterating and printing HashMap values\n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n\n        // Further operations on StrBuilder\n        strBuilder.append(\" How are you?\");\n        strBuilder.insert(0, \"Greeting: \");\n\n        // Final read operation on StrBuilder\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n\n        // Printing modified ArrayList\n        for (Integer number : numbers) {\n            System.out.println(\"Number: \" + number);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder strBuilder = new StrBuilder(\"Hello World!\");\n        /* write */ strBuilder.deleteCharAt(5);\n        /* read */ String result = strBuilder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "deleteCharAt",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

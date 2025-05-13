@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVPrinter;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.io.StringReader;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        StringWriter writer = new StringWriter();\n        CSVPrinter csvPrinter = null;\n        CSVRecord csvRecord = null;\n        \n        try {\n            // Initialize CSVPrinter\n            csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT.withCommentMarker('#'));\n            \n            // Write a comment\n            /* write */ csvPrinter.printComment(\"This is a comment\");\n            csvPrinter.flush();\n            \n            // Read the comment\n            String csvData = writer.toString();\n            StringReader reader = new StringReader(csvData);\n            List<CSVRecord> records = CSVFormat.DEFAULT.withCommentMarker('#').parse(reader).getRecords();\n            \n            // Assuming the comment is associated with the first record\n            csvRecord = records.get(0);\n            /* read */ String comment = csvRecord.getComment();\n            System.out.println(comment);\n            \n        } catch (IOException e) {\n            e.printStackTrace();\n        } finally {\n            try {\n                if (csvPrinter != null) {\n                    csvPrinter.close();\n                }\n                writer.close();\n            } catch (IOException e) {\n                e.printStackTrace();\n            }\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVPrinter",
+        "write_method": "printComment",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "getComment"
+    }
+}

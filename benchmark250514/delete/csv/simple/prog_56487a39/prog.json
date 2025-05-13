@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with default settings\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Use the write method to modify the CSVFormat\n        /* write */ format = format.withIgnoreHeaderCase(true);\n        \n        // Create a CSVRecord to read from\n        // Since CSVRecord is an interface, we'll create a mock implementation for demonstration\n        CSVRecord record = new MockCSVRecord(format);\n        \n        // Use the read method to check if a header is mapped\n        /* read */ boolean isMapped = record.isMapped(\"header\");\n        \n        // Print the result\n        System.out.println(isMapped);\n    }\n}\n\n// Mock implementation of CSVRecord for demonstration purposes\nclass MockCSVRecord implements CSVRecord {\n    private CSVFormat format;\n\n    public MockCSVRecord(CSVFormat format) {\n        this.format = format;\n    }\n\n    @Override\n    public boolean isMapped(String name) {\n        // Simulate checking if a header is mapped, taking into account the format settings\n        if (format.getIgnoreHeaderCase()) {\n            // Simulate case-insensitive header mapping\n            return true; // Assume headers are mapped for demonstration\n        }\n        return false;\n    }\n\n    // Other methods from CSVRecord are omitted for brevity\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

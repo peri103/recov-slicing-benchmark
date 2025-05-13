@@ -1,0 +1,21 @@
+generated/compress/complex/prog_2d89954c/Main.java:15: 错误: 找不到符号
+        /* write */ entry.setUnixMode(755);
+                         ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_2d89954c/Main.java:20: 错误: 找不到符号
+            tempEntry.setUnixMode(644);
+                     ^
+  符号:   方法 setUnixMode(int)
+  位置: 类型为ArArchiveEntry的变量 tempEntry
+generated/compress/complex/prog_2d89954c/Main.java:21: 错误: 找不到符号
+            System.out.println("Processed: " + fileName + " with mode: " + tempEntry.getUnixMode());
+                                                                                    ^
+  符号:   方法 getUnixMode()
+  位置: 类型为ArArchiveEntry的变量 tempEntry
+generated/compress/complex/prog_2d89954c/Main.java:37: 错误: 找不到符号
+        /* read */ int mode = entry.getUnixMode();
+                                   ^
+  符号:   方法 getUnixMode()
+  位置: 类型为ArArchiveEntry的变量 entry
+4 个错误

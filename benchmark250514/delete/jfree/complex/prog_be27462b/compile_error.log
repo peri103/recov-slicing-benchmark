@@ -1,0 +1,7 @@
+generated/jfree/complex/prog_be27462b/Main.java:21: 错误: 不兼容的类型: Paint无法转换为Color
+        Color gridlineColor = categoryPlot.getRangeGridlinePaint();
+                                                                ^
+generated/jfree/complex/prog_be27462b/Main.java:36: 错误: 不兼容的类型: Paint无法转换为Color
+        Color seriesPaint = renderer.getSeriesPaint(1);
+                                                   ^
+2 个错误

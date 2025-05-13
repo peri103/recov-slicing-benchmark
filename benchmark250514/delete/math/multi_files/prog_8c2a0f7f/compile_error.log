@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_8c2a0f7f/MatrixOperations.java:8: 错误: 找不到符号
+        /* write */ triangularMatrix = MatrixUtils.createTriangularMatrix(data);
+                                                  ^
+  符号:   方法 createTriangularMatrix(double[][])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_8c2a0f7f/Main.java:23: 错误: 找不到符号
+        System.out.println("Enrolled students in " + course.getCourseName() + ":");
+                                                           ^
+  符号:   方法 getCourseName()
+  位置: 类型为Course的变量 course
+2 个错误

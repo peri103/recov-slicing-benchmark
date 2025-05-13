@@ -1,0 +1,9 @@
+generated/csv/complex/prog_9d5f3bea/Main.java:53: 错误: 未报告的异常错误IOException; 必须对其进行捕获或声明以便抛出
+        CSVRecord record = CSVFormat.DEFAULT.parse(new java.io.StringReader(csvOutput)).getRecords().get(0);
+                                                  ^
+generated/csv/complex/prog_9d5f3bea/Main.java:53: 错误: 未报告的异常错误IOException; 必须对其进行捕获或声明以便抛出
+        CSVRecord record = CSVFormat.DEFAULT.parse(new java.io.StringReader(csvOutput)).getRecords().get(0);
+                                                                                                  ^
+注: generated/csv/complex/prog_9d5f3bea/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

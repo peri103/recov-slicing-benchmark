@@ -1,0 +1,16 @@
+generated/compress/simple/prog_1e0d4d21/Main.java:14: 错误: 找不到符号
+            int flushMode = DeflateCompressorOutputStream.NO_FLUSH;
+                                                         ^
+  符号:   变量 NO_FLUSH
+  位置: 类 DeflateCompressorOutputStream
+generated/compress/simple/prog_1e0d4d21/Main.java:15: 错误: 找不到符号
+            /* write */ deflateStream.setFlushMode(flushMode);
+                                     ^
+  符号:   方法 setFlushMode(int)
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+generated/compress/simple/prog_1e0d4d21/Main.java:18: 错误: 找不到符号
+            /* read */ int readFlushMode = deflateStream.getFlushMode();
+                                                        ^
+  符号:   方法 getFlushMode()
+  位置: 类型为DeflateCompressorOutputStream的变量 deflateStream
+3 个错误

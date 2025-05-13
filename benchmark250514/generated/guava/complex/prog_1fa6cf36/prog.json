@@ -1,0 +1,10 @@
+{
+    "java_code": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the cache\n        Cache<Integer, String> cache = CacheBuilder.newBuilder().build();\n\n        // Initialize a HashMap for additional complexity\n        Map<Integer, String> map = new HashMap<>();\n        map.put(2, \"Goodbye, World!\");\n        \n        // Perform additional operations on the map\n        for (int i = 3; i <= 5; i++) {\n            map.put(i, \"Value \" + i);\n        }\n\n        // Write to the cache\n        /* write */ cache.put(1, \"Hello, World!\");\n\n        // Perform operations on the map\n        for (Map.Entry<Integer, String> entry : map.entrySet()) {\n            System.out.println(\"Map Key: \" + entry.getKey() + \", Value: \" + entry.getValue());\n        }\n\n        // Read from the cache\n        /* read */ String value = cache.getIfPresent(1);\n        System.out.println(value);\n\n        // More operations on the map\n        map.put(6, \"Another Value\");\n        for (int i = 2; i <= 6; i++) {\n            System.out.println(\"Updated Map Key: \" + i + \", Value: \" + map.get(i));\n        }\n\n        // Final operations\n        System.out.println(\"Cache contains key 1: \" + (cache.getIfPresent(1) != null));\n        System.out.println(\"Map size: \" + map.size());\n    }\n}",
+    "java_code_simple": "import com.google.common.cache.Cache;\nimport com.google.common.cache.CacheBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        Cache<Integer, String> cache = CacheBuilder.newBuilder().build();\n        /* write */ cache.put(1, \"Hello, World!\");\n        /* read */ String value = cache.getIfPresent(1);\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.cache.Cache",
+        "write_method": "put",
+        "read_class": "com.google.common.cache.Cache",
+        "read_method": "get"
+    }
+}

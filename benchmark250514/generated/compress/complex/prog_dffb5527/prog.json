@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"example.jar\");\n        /* write */ jarEntry.setCrc(123456789L);\n\n        // Additional code to make the program more complex\n        Map<String, Integer> map = new HashMap<>();\n        map.put(\"One\", 1);\n        map.put(\"Two\", 2);\n        map.put(\"Three\", 3);\n\n        int sum = 0;\n        for (String key : map.keySet()) {\n            sum += map.get(key);\n        }\n\n        System.out.println(\"Sum of map values: \" + sum);\n\n        // More operations\n        int[] numbers = {5, 10, 15, 20};\n        int total = 0;\n        for (int num : numbers) {\n            total += num;\n        }\n\n        System.out.println(\"Total of array values: \" + total);\n\n        // Perform some string manipulation\n        String text = \"Complex Program\";\n        StringBuilder reversedText = new StringBuilder();\n        for (int i = text.length() - 1; i >= 0; i--) {\n            reversedText.append(text.charAt(i));\n        }\n\n        System.out.println(\"Reversed text: \" + reversedText.toString());\n\n        // Read the CRC value set earlier\n        /* read */ long crcValue = jarEntry.getCrc();\n        System.out.println(\"CRC Value: \" + crcValue);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.jar.JarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        JarArchiveEntry jarEntry = new JarArchiveEntry(\"example.jar\");\n        /* write */ jarEntry.setCrc(123456789L);\n        /* read */ long crcValue = jarEntry.getCrc();\n        System.out.println(crcValue);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "write_method": "setCrc",
+        "read_class": "org.apache.commons.compress.archivers.jar.JarArchiveEntry",
+        "read_method": "getCrc"
+    }
+}

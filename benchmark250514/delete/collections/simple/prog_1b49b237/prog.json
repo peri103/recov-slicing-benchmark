@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.multimap.PredicatedMultiValuedMap;\nimport org.apache.commons.collections4.MultiValuedMap;\nimport org.apache.commons.collections4.map.MultiValueMap;\nimport org.apache.commons.collections4.Predicate;\nimport org.apache.commons.collections4.functors.TruePredicate;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the map with TruePredicate for both keys and values\n        MultiValuedMap<String, String> baseMap = new MultiValueMap<>();\n        Predicate<String> keyPredicate = TruePredicate.truePredicate();\n        Predicate<String> valuePredicate = TruePredicate.truePredicate();\n        \n        // Create a PredicatedMultiValuedMap\n        PredicatedMultiValuedMap<String, String> map = new PredicatedMultiValuedMap<>(baseMap, keyPredicate, valuePredicate);\n        \n        // Use the write method\n        /* write */ map.put(\"key\", \"value\");\n        \n        // Use the read method\n        /* read */ Object value = map.get(\"key\");\n        \n        // Print the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.multimap.PredicatedMultiValuedMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.multimap.PredicatedMultiValuedMap",
+        "read_method": "get"
+    }
+}

@@ -1,0 +1,7 @@
+generated/jfree/simple/prog_ac63eee4/Main.java:6: 错误: 无法将类 RegularTimePeriod中的方法 createInstance应用到给定类型;
+        RegularTimePeriod period = RegularTimePeriod.createInstance(java.util.Date.class, new java.util.Date(), java.util.TimeZone.getDefault());
+                                                    ^
+  需要: Class,Date,TimeZone,Locale
+  找到: Class<Date>,Date,TimeZone
+  原因: 实际参数列表和形式参数列表长度不同
+1 个错误

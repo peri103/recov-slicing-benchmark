@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a builder for ImmutableList\n        ImmutableList.Builder<Integer> builder = ImmutableList.builder();\n        \n        // Write a value to the builder\n        /* write */ builder.add(42);\n        \n        // Build the ImmutableList\n        ImmutableList<Integer> immutableList = builder.build();\n        \n        // Read the value from the ImmutableList\n        /* read */ int value = immutableList.get(0);\n        \n        // Output the read value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableList",
+        "write_method": "builder",
+        "read_class": "com.google.common.collect.ImmutableList",
+        "read_method": "get"
+    }
+}

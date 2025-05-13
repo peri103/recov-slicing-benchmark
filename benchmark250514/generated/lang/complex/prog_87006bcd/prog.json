@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.lang3.text.StrBuilder;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder builder = new StrBuilder();\n        List<String> stringList = new ArrayList<>();\n        \n        builder.append(\"Hello\");\n        builder.append(\" World\");\n        stringList.add(builder.toString());\n\n        builder.appendSeparator(\",\");\n        builder.append(\" Apache\");\n        \n        StrBuilder anotherBuilder = new StrBuilder();\n        anotherBuilder.append(\"Commons\");\n        anotherBuilder.append(\" Lang\");\n\n        stringList.add(anotherBuilder.toString());\n\n        for (String str : stringList) {\n            System.out.println(str);\n        }\n\n        /* write */ builder.appendSeparator(\",\");\n        builder.append(\" Text\");\n        builder.append(\" Utilities\");\n\n        int length = builder.length();\n        System.out.println(\"Length of builder: \" + length);\n\n        anotherBuilder.append(\" Library\");\n\n        /* read */ String result = builder.toString();\n        System.out.println(result);\n\n        int anotherLength = anotherBuilder.length();\n        System.out.println(\"Length of anotherBuilder: \" + anotherLength);\n\n        for (int i = 0; i < stringList.size(); i++) {\n            System.out.println(\"String at index \" + i + \": \" + stringList.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.lang3.text.StrBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        StrBuilder builder = new StrBuilder();\n        /* write */ builder.appendSeparator(\",\");\n        /* read */ String result = builder.toString();\n        System.out.println(result);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.text.StrBuilder",
+        "write_method": "appendSeparator",
+        "read_class": "org.apache.commons.lang3.text.StrBuilder",
+        "read_method": "toString"
+    }
+}

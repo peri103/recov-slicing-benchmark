@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.PeriodAxis;\nimport org.jfree.data.time.Day;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PeriodAxis object\n        PeriodAxis periodAxis = new PeriodAxis(\"Test Axis\");\n\n        // Create a Day object to set as the first period\n        Day firstDay = new Day(1, 1, 2023);\n\n        /* write */ periodAxis.setFirst(firstDay);\n\n        /* read */ Day retrievedFirstDay = (Day) periodAxis.getFirst();\n\n        // Print the retrieved first day\n        System.out.println(\"First period: \" + retrievedFirstDay);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.PeriodAxis",
+        "write_method": "setFirst",
+        "read_class": "org.jfree.chart.axis.PeriodAxis",
+        "read_method": "getFirst"
+    }
+}

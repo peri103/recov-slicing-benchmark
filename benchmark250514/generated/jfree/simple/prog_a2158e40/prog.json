@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize the PiePlot object\n        PiePlot plot = new PiePlot();\n\n        // Define the section key and color\n        Comparable sectionKey = \"Section1\";\n        Color color = Color.RED;\n\n        // Write operation: Set the section paint\n        /* write */ plot.setSectionPaint(sectionKey, color);\n\n        // Read operation: Get the section paint\n        /* read */ Color retrievedColor = (Color) plot.getSectionPaint(sectionKey);\n\n        // Print the retrieved color to verify\n        System.out.println(retrievedColor);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setSectionPaint",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getSectionPaint"
+    }
+}

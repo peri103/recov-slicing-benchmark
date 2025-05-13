@@ -1,0 +1,21 @@
+generated/math/complex/prog_e8622e11/Main.java:17: 错误: 找不到符号
+        /* write */ RealMatrix sparseMatrix = MatrixUtils.createSparseMatrix(data, rows, columns);
+                                                         ^
+  符号:   方法 createSparseMatrix(double[][],int,int)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_e8622e11/Main.java:34: 错误: 对于walkInOptimizedOrder((row,colum[...]+ 1.0), 找不到合适的方法
+        denseMatrix.walkInOptimizedOrder((row, column, value) -> value + 1.0);
+                   ^
+    方法 RealMatrix.walkInOptimizedOrder(RealMatrixChangingVisitor)不适用
+      (参数不匹配; RealMatrixChangingVisitor 不是函数接口
+          在 接口 RealMatrixChangingVisitor 中找到多个非覆盖抽象方法)
+    方法 RealMatrix.walkInOptimizedOrder(RealMatrixPreservingVisitor)不适用
+      (参数不匹配; RealMatrixPreservingVisitor 不是函数接口
+          在 接口 RealMatrixPreservingVisitor 中找到多个非覆盖抽象方法)
+generated/math/complex/prog_e8622e11/Main.java:45: 错误: 找不到符号
+        /* read */ RealMatrix retrievedMatrix = MatrixUtils.getSparseMatrix(sparseMatrix);
+                                                           ^
+  符号:   方法 getSparseMatrix(RealMatrix)
+  位置: 类 MatrixUtils
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+3 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.renderer.xy.XYSplineRenderer;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYSplineRenderer renderer = new XYSplineRenderer();\n        /* write */ renderer.setPrecision(5);\n        /* read */ int precision = renderer.getPrecision();\n        System.out.println(\"Precision: \" + precision);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.renderer.xy.XYSplineRenderer",
+        "write_method": "setPrecision",
+        "read_class": "org.jfree.chart.renderer.xy.XYSplineRenderer",
+        "read_method": "getPrecision"
+    }
+}

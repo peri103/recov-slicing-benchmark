@@ -1,0 +1,11 @@
+generated/math/complex/prog_2fe4978a/Main.java:9: 错误: 找不到符号
+        /* write */ RealMatrix identityMatrix = MatrixUtils.createIdentityMatrix(3);
+                                                           ^
+  符号:   方法 createIdentityMatrix(int)
+  位置: 类 MatrixUtils
+generated/math/complex/prog_2fe4978a/Main.java:36: 错误: 找不到符号
+        /* read */ RealMatrix readMatrix = MatrixUtils.getIdentityMatrix(3);
+                                                      ^
+  符号:   方法 getIdentityMatrix(int)
+  位置: 类 MatrixUtils
+2 个错误

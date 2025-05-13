@@ -1,0 +1,21 @@
+generated/compress/complex/prog_993e5179/Main.java:19: 错误: 找不到符号
+        /* write */ entry.setExternalAttributes(12345);
+                         ^
+  符号:   方法 setExternalAttributes(int)
+  位置: 类型为ArArchiveEntry的变量 entry
+generated/compress/complex/prog_993e5179/Main.java:30: 错误: 找不到符号
+        anotherEntry.setExternalAttributes(67890);
+                    ^
+  符号:   方法 setExternalAttributes(int)
+  位置: 类型为ArArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_993e5179/Main.java:31: 错误: 找不到符号
+        System.out.println("Another entry attributes: " + anotherEntry.getExternalAttributes());
+                                                                      ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为ArArchiveEntry的变量 anotherEntry
+generated/compress/complex/prog_993e5179/Main.java:33: 错误: 找不到符号
+        /* read */ int attributes = entry.getExternalAttributes();
+                                         ^
+  符号:   方法 getExternalAttributes()
+  位置: 类型为ArArchiveEntry的变量 entry
+4 个错误

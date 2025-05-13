@@ -1,0 +1,4 @@
+generated/compress/simple/prog_8f6346bf/Main.java:9: 错误: 不兼容的类型: 从long转换到int可能会有损失
+        /* read */ int externalAttributes = zipEntry.getExternalAttributes();
+                                                                          ^
+1 个错误

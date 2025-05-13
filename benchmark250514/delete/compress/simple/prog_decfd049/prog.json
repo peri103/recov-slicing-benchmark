@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream;\nimport org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream.FlushMode;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize DeflateCompressorOutputStream\n        DeflateCompressorOutputStream deflateStream = new DeflateCompressorOutputStream(System.out);\n\n        // Set flush mode to SYNC_FLUSH\n        /* write */ deflateStream.setFlushMode(FlushMode.SYNC_FLUSH);\n\n        // Read the flush mode\n        /* read */ FlushMode flushMode = deflateStream.getFlushMode();\n\n        // Print the flush mode\n        System.out.println(flushMode);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream",
+        "write_method": "setFlushMode",
+        "read_class": "org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream",
+        "read_method": "getFlushMode"
+    }
+}

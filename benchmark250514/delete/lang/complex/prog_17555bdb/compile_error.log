@@ -1,0 +1,6 @@
+generated/lang/complex/prog_17555bdb/Main.java:38: 错误: 找不到符号
+        mutableInt.multiply(2);
+                  ^
+  符号:   方法 multiply(int)
+  位置: 类型为MutableInt的变量 mutableInt
+1 个错误

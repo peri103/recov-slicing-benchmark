@@ -1,0 +1,26 @@
+generated/compress/complex/prog_9cf35b9b/Main.java:8: 错误: 找不到符号
+        /* write */ entry.setGroupName("exampleGroup");
+                         ^
+  符号:   方法 setGroupName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry
+generated/compress/complex/prog_9cf35b9b/Main.java:16: 错误: 找不到符号
+        entry2.setGroupName("group3");
+              ^
+  符号:   方法 setGroupName(String)
+  位置: 类型为DumpArchiveEntry的变量 entry2
+generated/compress/complex/prog_9cf35b9b/Main.java:17: 错误: 找不到符号
+        groupNames.add(entry2.getGroupName());
+                             ^
+  符号:   方法 getGroupName()
+  位置: 类型为DumpArchiveEntry的变量 entry2
+generated/compress/complex/prog_9cf35b9b/Main.java:37: 错误: 找不到符号
+            System.out.println("Entry group name: " + e.getGroupName());
+                                                       ^
+  符号:   方法 getGroupName()
+  位置: 类型为DumpArchiveEntry的变量 e
+generated/compress/complex/prog_9cf35b9b/Main.java:41: 错误: 找不到符号
+        /* read */ String groupName = entry.getGroupName();
+                                           ^
+  符号:   方法 getGroupName()
+  位置: 类型为DumpArchiveEntry的变量 entry
+5 个错误

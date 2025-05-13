@@ -1,0 +1,6 @@
+generated/guava/complex/prog_ba70bb3a/Main.java:29: 错误: 找不到符号
+        Set<Integer> doubledSet = new HashSet<>();
+                                      ^
+  符号:   类 HashSet
+  位置: 类 Main
+1 个错误

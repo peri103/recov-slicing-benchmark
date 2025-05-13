@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.XYPlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        XYPlot plot = new XYPlot();\n        \n        /* write */ plot.setRangeGridlinePaint(Color.RED);\n        \n        /* read */ Paint gridlinePaint = plot.getRangeGridlinePaint();\n        \n        System.out.println(gridlinePaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.XYPlot",
+        "write_method": "setRangeGridlinePaint",
+        "read_class": "org.jfree.chart.plot.XYPlot",
+        "read_method": "getRangeGridlinePaint"
+    }
+}

@@ -1,0 +1,11 @@
+generated/math/multi_files/prog_523d2348/MatrixOperations.java:13: 错误: 找不到符号
+        /* write */ RealVector rowVector = MatrixUtils.createRowRealVector(data);
+                                                      ^
+  符号:   方法 createRowRealVector(double[])
+  位置: 类 MatrixUtils
+generated/math/multi_files/prog_523d2348/Main.java:11: 错误: 找不到符号
+        /* read */ RealVector scores = mathCourse.getScores(0);
+                   ^
+  符号:   类 RealVector
+  位置: 类 Main
+2 个错误

@@ -1,0 +1,31 @@
+generated/jfree/complex/prog_e975216c/Main.java:13: 错误: 找不到符号
+        /* write */ plot.setPaint(initialPaint);
+                        ^
+  符号:   方法 setPaint(Paint)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_e975216c/Main.java:21: 错误: 找不到符号
+        plot.setPaint(paintMap.get("Section1"));
+            ^
+  符号:   方法 setPaint(Paint)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_e975216c/Main.java:22: 错误: 找不到符号
+        plot.setPaint(paintMap.get("Section2"));
+            ^
+  符号:   方法 setPaint(Paint)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_e975216c/Main.java:32: 错误: 找不到符号
+        /* read */ Paint retrievedPaint = plot.getPaint();
+                                              ^
+  符号:   方法 getPaint()
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_e975216c/Main.java:37: 错误: 找不到符号
+        plot.setPaint(alternativePaint);
+            ^
+  符号:   方法 setPaint(Paint)
+  位置: 类型为WaferMapPlot的变量 plot
+generated/jfree/complex/prog_e975216c/Main.java:38: 错误: 找不到符号
+        Paint currentPaint = plot.getPaint();
+                                 ^
+  符号:   方法 getPaint()
+  位置: 类型为WaferMapPlot的变量 plot
+6 个错误

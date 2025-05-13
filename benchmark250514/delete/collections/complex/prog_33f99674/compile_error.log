@@ -1,0 +1,4 @@
+generated/collections/complex/prog_33f99674/Main.java:46: 错误: 已在方法 main(String[])中定义了变量 value
+        for (Integer value : hashMap.values()) {
+                     ^
+1 个错误

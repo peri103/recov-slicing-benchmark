@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\nimport java.io.IOException;\nimport java.io.StringReader;\nimport org.apache.commons.csv.CSVParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat with the method to ignore header case\n        CSVFormat csvFormat = CSVFormat.DEFAULT.withIgnoreHeaderCase();\n\n        // Sample CSV data\n        String csvData = \"Name,Age\\nJohn,30\\nJane,25\";\n\n        try {\n            // Parse the CSV data using the CSVFormat\n            CSVParser parser = CSVParser.parse(new StringReader(csvData), csvFormat);\n\n            // Assume we are interested in the first record\n            CSVRecord record = parser.getRecords().get(0);\n\n            // Check if the record is mapped (i.e., has a mapping for the headers)\n            /* read */ boolean isMapped = record.isMapped(\"name\");\n\n            // Print the result\n            System.out.println(\"Is 'name' mapped in the record? \" + isMapped);\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

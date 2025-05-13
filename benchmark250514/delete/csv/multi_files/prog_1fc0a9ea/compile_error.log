@@ -1,0 +1,13 @@
+generated/csv/multi_files/prog_1fc0a9ea/Main.java:13: 错误: 找不到符号
+            Iterable<CSVRecord> records = csvHandler.parseCSV(csvData);
+                     ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+generated/csv/multi_files/prog_1fc0a9ea/Main.java:19: 错误: 找不到符号
+            for (CSVRecord record : records) {
+                 ^
+  符号:   类 CSVRecord
+  位置: 类 Main
+注: generated/csv/multi_files/prog_1fc0a9ea/CSVHandler.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个错误

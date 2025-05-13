@@ -1,0 +1,4 @@
+generated/jfree/complex/prog_9aeb1c1c/Main.java:36: 错误: 已在方法 main(String[])中定义了变量 label
+        /* read */ String label = axis.getLabel();
+                          ^
+1 个错误

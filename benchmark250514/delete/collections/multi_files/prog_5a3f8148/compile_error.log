@@ -1,0 +1,11 @@
+generated/collections/multi_files/prog_5a3f8148/Course.java:3: 错误: 找不到符号
+    private ReferenceMap<String, Integer> studentScores = new ReferenceMap<>();
+            ^
+  符号:   类 ReferenceMap
+  位置: 类 Course
+generated/collections/multi_files/prog_5a3f8148/Course.java:3: 错误: 找不到符号
+    private ReferenceMap<String, Integer> studentScores = new ReferenceMap<>();
+                                                              ^
+  符号:   类 ReferenceMap
+  位置: 类 Course
+2 个错误

@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableRangeSet;\nimport com.google.common.collect.Range;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableRangeSet.Builder<Integer> builder = ImmutableRangeSet.builder();\n        /* write */ builder.add(Range.closed(1, 10));\n        ImmutableRangeSet<Integer> rangeSet = builder.build();\n        /* read */ boolean containsValue = rangeSet.contains(5);\n        System.out.println(containsValue);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableRangeSet",
+        "write_method": "add",
+        "read_class": "com.google.common.collect.ImmutableRangeSet",
+        "read_method": "contains"
+    }
+}

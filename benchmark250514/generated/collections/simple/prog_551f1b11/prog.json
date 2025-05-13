@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.collections4.map.UnmodifiableMap;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a mutable map to use with UnmodifiableMap\n        Map<String, String> mutableMap = new HashMap<>();\n        \n        // Wrap the mutable map with UnmodifiableMap\n        Map<String, String> unmodifiableMap = UnmodifiableMap.unmodifiableMap(mutableMap);\n        \n        // Perform write operation\n        /* write */ mutableMap.put(\"key\", \"value\");\n        \n        // Perform read operation\n        /* read */ String value = unmodifiableMap.get(\"key\");\n        \n        // Output the value\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.collections4.map.UnmodifiableMap",
+        "write_method": "put",
+        "read_class": "org.apache.commons.collections4.map.UnmodifiableMap",
+        "read_method": "get"
+    }
+}

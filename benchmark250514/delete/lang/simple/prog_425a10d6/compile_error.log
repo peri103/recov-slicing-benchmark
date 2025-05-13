@@ -1,0 +1,6 @@
+generated/lang/simple/prog_425a10d6/Main.java:12: 错误: 找不到符号
+        /* read */ Date truncatedDate = DateUtils.truncate(date, DateUtils.MONDAY);
+                                                                          ^
+  符号:   变量 MONDAY
+  位置: 类 DateUtils
+1 个错误

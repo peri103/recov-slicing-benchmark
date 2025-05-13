@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.lang3.mutable.MutableShort;\n\npublic class Main {\n    public static void main(String[] args) {\n        MutableShort mutableShort = new MutableShort();\n        /* write */ mutableShort.setValue((short) 10);\n        /* read */ short value = mutableShort.getValue();\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.lang3.mutable.MutableShort",
+        "write_method": "setValue",
+        "read_class": "org.apache.commons.lang3.mutable.MutableShort",
+        "read_method": "getValue"
+    }
+}

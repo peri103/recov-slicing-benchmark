@@ -1,0 +1,24 @@
+generated/jfree/simple/prog_cc330552/Main.java:6: 错误: <匿名Main$1>不是抽象的, 并且未覆盖Plot中的抽象方法draw(Graphics2D,Rectangle2D,Point2D,PlotState,PlotRenderingInfo)
+        Plot plot = new Plot() {
+                               ^
+generated/jfree/simple/prog_cc330552/Main.java:12: 错误: 方法不会覆盖或实现超类型的方法
+            @Override
+            ^
+generated/jfree/simple/prog_cc330552/Main.java:14: 错误: 找不到符号
+                return dataset;
+                       ^
+  符号: 变量 dataset
+generated/jfree/simple/prog_cc330552/Main.java:18: 错误: <匿名Main$2>不是抽象的, 并且未覆盖Dataset中的抽象方法setGroup(DatasetGroup)
+        Dataset dataset = new Dataset() {
+                                        ^
+generated/jfree/simple/prog_cc330552/Main.java:22: 错误: 找不到符号
+        /* write */ plot.setDataset(dataset);
+                        ^
+  符号:   方法 setDataset(Dataset)
+  位置: 类型为Plot的变量 plot
+generated/jfree/simple/prog_cc330552/Main.java:23: 错误: 找不到符号
+        /* read */ Dataset readDataset = plot.getDataset();
+                                             ^
+  符号:   方法 getDataset()
+  位置: 类型为Plot的变量 plot
+6 个错误

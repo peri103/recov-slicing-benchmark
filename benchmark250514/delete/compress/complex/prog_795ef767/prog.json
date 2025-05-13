@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArArchiveEntry entry = new ArArchiveEntry(\"\", 0);\n        ArrayList<ArArchiveEntry> archiveList = new ArrayList<>();\n        \n        // Create multiple entries and add to the list\n        ArArchiveEntry entry1 = new ArArchiveEntry(\"entry1\", 100);\n        ArArchiveEntry entry2 = new ArArchiveEntry(\"entry2\", 200);\n        archiveList.add(entry1);\n        archiveList.add(entry2);\n\n        // Perform operations on the list\n        for (ArArchiveEntry arEntry : archiveList) {\n            System.out.println(\"Archive Entry Name: \" + arEntry.getName());\n        }\n\n        /* write */ entry.setName(\"exampleName\");\n        \n        // More operations with the list\n        archiveList.add(entry);\n        for (ArArchiveEntry arEntry : archiveList) {\n            System.out.println(\"Archive Entry Size: \" + arEntry.getLength());\n        }\n        \n        /* read */ String name = entry.getName();\n        System.out.println(\"Final Entry Name: \" + name);\n\n        // Additional operations\n        int totalSize = 0;\n        for (ArArchiveEntry arEntry : archiveList) {\n            totalSize += arEntry.getLength();\n        }\n        System.out.println(\"Total Archive Size: \" + totalSize);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.ar.ArArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ArArchiveEntry entry = new ArArchiveEntry(\"\", 0);\n        /* write */ entry.setName(\"exampleName\");\n        /* read */ String name = entry.getName();\n        System.out.println(name);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "write_method": "setName",
+        "read_class": "org.apache.commons.compress.archivers.ar.ArArchiveEntry",
+        "read_method": "getName"
+    }
+}

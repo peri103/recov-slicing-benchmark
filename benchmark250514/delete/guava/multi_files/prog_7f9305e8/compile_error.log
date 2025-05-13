@@ -1,0 +1,6 @@
+generated/guava/multi_files/prog_7f9305e8/Main.java:13: 错误: 找不到符号
+            LinkedListMultimap<String, Integer> scoresMap = s.getScores().getScoresMap();
+            ^
+  符号:   类 LinkedListMultimap
+  位置: 类 Main
+1 个错误

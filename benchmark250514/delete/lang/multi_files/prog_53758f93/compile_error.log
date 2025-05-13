@@ -1,0 +1,9 @@
+generated/lang/multi_files/prog_53758f93/Main.java:20: 错误: title 在 Course 中是 private 访问控制
+            System.out.println("Student is enrolled in: " + course.title);
+                                                                  ^
+generated/lang/multi_files/prog_53758f93/DateTruncator.java:8: 错误: 找不到符号
+        return DateUtils.truncate(date, DateUtils.MILLIS_IN_MINUTE);
+                                                 ^
+  符号:   变量 MILLIS_IN_MINUTE
+  位置: 类 DateUtils
+2 个错误

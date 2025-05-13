@@ -1,0 +1,7 @@
+generated/csv/multi_files/prog_52af7120/Main.java:15: 错误: 不兼容的类型: <空值>无法转换为long
+        CSVRecord sampleRecord = new CSVRecord(null, new String[]{"John Doe", "30", "New York"}, null, 0, null);
+                                                                                                          ^
+注: generated/csv/multi_files/prog_52af7120/CSVProcessor.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

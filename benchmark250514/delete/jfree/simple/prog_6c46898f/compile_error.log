@@ -1,0 +1,11 @@
+generated/jfree/simple/prog_6c46898f/Main.java:6: 错误: 找不到符号
+        /* write */ renderer.setShapesVisible(true);
+                            ^
+  符号:   方法 setShapesVisible(boolean)
+  位置: 类型为XYLineAndShapeRenderer的变量 renderer
+generated/jfree/simple/prog_6c46898f/Main.java:7: 错误: 找不到符号
+        /* read */ Boolean isVisible = renderer.getShapesVisible();
+                                               ^
+  符号:   方法 getShapesVisible()
+  位置: 类型为XYLineAndShapeRenderer的变量 renderer
+2 个错误

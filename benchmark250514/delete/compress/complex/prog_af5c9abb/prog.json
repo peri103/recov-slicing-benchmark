@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testfile\");\n        /* write */ entry.setGroupId(1001);\n        \n        // Additional code to make the program more complex\n        Map<String, Integer> userPermissions = new HashMap<>();\n        userPermissions.put(\"admin\", 777);\n        userPermissions.put(\"guest\", 644);\n\n        int adminPermissions = userPermissions.get(\"admin\");\n        System.out.println(\"Admin permissions: \" + adminPermissions);\n\n        for (Map.Entry<String, Integer> permission : userPermissions.entrySet()) {\n            System.out.println(permission.getKey() + \" has permissions: \" + permission.getValue());\n        }\n\n        // Additional unrelated operations\n        int sum = 0;\n        for (int i = 1; i <= 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 1 to 10 is: \" + sum);\n\n        // More complex logic\n        int[] numbers = {1, 2, 3, 4, 5};\n        int product = 1;\n        for (int number : numbers) {\n            product *= number;\n        }\n        System.out.println(\"Product of array elements: \" + product);\n\n        /* read */ long groupId = entry.getGroupId();\n        System.out.println(\"Group ID: \" + groupId);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"testfile\");\n        /* write */ entry.setGroupId(1001);\n        /* read */ long groupId = entry.getGroupId();\n        System.out.println(groupId);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setGroupId",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getGroupId"
+    }
+}

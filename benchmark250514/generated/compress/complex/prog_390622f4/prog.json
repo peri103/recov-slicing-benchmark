@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.tar\");\n        /* write */ entry.setGroupName(\"developers\");\n\n        // Additional code to make the program more complex\n        Map<String, String> userMap = new HashMap<>();\n        userMap.put(\"user1\", \"admin\");\n        userMap.put(\"user2\", \"guest\");\n\n        for (Map.Entry<String, String> userEntry : userMap.entrySet()) {\n            System.out.println(\"Username: \" + userEntry.getKey() + \", Role: \" + userEntry.getValue());\n        }\n\n        int sum = 0;\n        for (int i = 0; i < 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum of numbers from 0 to 9: \" + sum);\n\n        // More unrelated code\n        String[] colors = {\"Red\", \"Green\", \"Blue\"};\n        for (String color : colors) {\n            System.out.println(\"Color: \" + color);\n        }\n\n        // Read the group name from the TarArchiveEntry\n        /* read */ String groupName = entry.getGroupName();\n        System.out.println(groupName);\n\n        // Further unrelated code\n        int[] numbers = {1, 2, 3, 4, 5};\n        for (int number : numbers) {\n            System.out.println(\"Number: \" + number);\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.tar.TarArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        TarArchiveEntry entry = new TarArchiveEntry(\"example.tar\");\n        /* write */ entry.setGroupName(\"developers\");\n        /* read */ String groupName = entry.getGroupName();\n        System.out.println(groupName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "write_method": "setGroupName",
+        "read_class": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+        "read_method": "getGroupName"
+    }
+}

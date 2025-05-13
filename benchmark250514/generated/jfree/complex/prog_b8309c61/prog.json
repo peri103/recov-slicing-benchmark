@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\nimport java.awt.Paint;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize PiePlot and Color\n        PiePlot plot = new PiePlot();\n        Paint shadowPaint = new Color(100, 100, 100); // Example color for shadow paint\n\n        // Initialize an ArrayList\n        ArrayList<String> colorsList = new ArrayList<>();\n        colorsList.add(\"Red\");\n        colorsList.add(\"Green\");\n        colorsList.add(\"Blue\");\n\n        // Perform some operations with the list\n        for (String color : colorsList) {\n            System.out.println(\"Color: \" + color);\n        }\n\n        // Set label shadow paint\n        /* write */ plot.setLabelShadowPaint(shadowPaint);\n\n        // Perform some unrelated operations\n        int sum = 0;\n        for (int i = 0; i < 5; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum: \" + sum);\n\n        // Retrieve label shadow paint\n        /* read */ Paint retrievedPaint = plot.getLabelShadowPaint();\n\n        // Print retrieved paint\n        System.out.println(\"Retrieved Paint: \" + retrievedPaint);\n\n        // More unrelated operations\n        for (int i = 0; i < colorsList.size(); i++) {\n            System.out.println(\"Index \" + i + \": \" + colorsList.get(i));\n        }\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.plot.PiePlot;\nimport java.awt.Color;\nimport java.awt.Paint;\n\npublic class Main {\n    public static void main(String[] args) {\n        PiePlot plot = new PiePlot();\n        Paint shadowPaint = new Color(100, 100, 100); // Example color for shadow paint\n\n        /* write */ plot.setLabelShadowPaint(shadowPaint);\n        /* read */ Paint retrievedPaint = plot.getLabelShadowPaint();\n\n        System.out.println(retrievedPaint);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.PiePlot",
+        "write_method": "setLabelShadowPaint",
+        "read_class": "org.jfree.chart.plot.PiePlot",
+        "read_method": "getLabelShadowPaint"
+    }
+}

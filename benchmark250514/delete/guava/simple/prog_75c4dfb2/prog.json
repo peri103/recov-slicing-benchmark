@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ImmutableClassToInstanceMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        ImmutableClassToInstanceMap.Builder<Object> builder = ImmutableClassToInstanceMap.builder();\n        \n        // Create an instance of the map\n        ImmutableClassToInstanceMap<Object> map = builder.build();\n        \n        // Since ImmutableClassToInstanceMap is immutable, we need to use the builder to modify it\n        builder.putInstance(String.class, \"Hello, World!\");\n        \n        // Rebuild the map with the new entry\n        map = builder.build();\n        \n        /* write */ map = builder.build(); // Ensure the write operation is executed once\n        \n        /* read */ String value = map.getInstance(String.class); // Ensure the read operation is executed once\n        System.out.println(value);\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ImmutableClassToInstanceMap",
+        "write_method": "putInstance",
+        "read_class": "com.google.common.collect.ImmutableClassToInstanceMap",
+        "read_method": "getInstance"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        ZipArchiveEntry entry = new ZipArchiveEntry(\"example.txt\");\n        /* write */ entry.setExternalAttributes(12345);\n        /* read */ long attributes = entry.getExternalAttributes();\n        System.out.println(attributes);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "write_method": "setExternalAttributes",
+        "read_class": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "read_method": "getExternalAttributes"
+    }
+}

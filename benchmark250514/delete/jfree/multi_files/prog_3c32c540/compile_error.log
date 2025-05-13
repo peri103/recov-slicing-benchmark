@@ -1,0 +1,4 @@
+generated/jfree/multi_files/prog_3c32c540/RendererManager.java:8: 错误: AbstractRenderer是抽象的; 无法实例化
+        this.renderer = new AbstractRenderer();
+                        ^
+1 个错误

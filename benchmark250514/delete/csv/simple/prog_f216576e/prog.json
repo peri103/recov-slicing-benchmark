@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.apache.commons.csv.CSVFormat;\nimport org.apache.commons.csv.CSVRecord;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize CSVFormat object\n        CSVFormat format = CSVFormat.DEFAULT;\n        \n        // Apply write method\n        /* write */ format = format.withIgnoreHeaderCase(true);\n\n        // Create a sample CSVRecord object for demonstration\n        String[] header = {\"Name\", \"Age\", \"Location\"};\n        String[] values = {\"Alice\", \"30\", \"Wonderland\"};\n        CSVRecord record = CSVRecord.parse(values, format, header);\n\n        // Apply read method\n        /* read */ boolean isMapped = record.isMapped(\"name\");\n\n        // Print the result\n        System.out.println(\"Is 'name' mapped? \" + isMapped);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.csv.CSVFormat",
+        "write_method": "withIgnoreHeaderCase",
+        "read_class": "org.apache.commons.csv.CSVRecord",
+        "read_method": "isMapped"
+    }
+}

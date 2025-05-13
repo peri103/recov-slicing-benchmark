@@ -1,0 +1,6 @@
+generated/math/simple/prog_46f0610a/Main.java:18: 错误: 找不到符号
+        /* write */ RealVector vector = MatrixUtils.createRowRealVector(rowData);
+                                                   ^
+  符号:   方法 createRowRealVector(double[])
+  位置: 类 MatrixUtils
+1 个错误

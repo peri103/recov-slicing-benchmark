@@ -1,0 +1,11 @@
+generated/jfree/complex/prog_080acd53/Main.java:20: 错误: 找不到符号
+        /* write */ renderer.setDomainPaint(paint);
+                            ^
+  符号:   方法 setDomainPaint(Paint)
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+generated/jfree/complex/prog_080acd53/Main.java:45: 错误: 找不到符号
+        /* read */ Paint retrievedPaint = renderer.getDomainPaint();
+                                                  ^
+  符号:   方法 getDomainPaint()
+  位置: 类型为XYStepAreaRenderer的变量 renderer
+2 个错误

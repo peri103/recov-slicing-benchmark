@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\nimport org.jfree.chart.axis.CategoryAxis;\nimport java.util.ArrayList;\n\npublic class Main {\n    public static void main(String[] args) {\n        Axis axis = new NumberAxis();\n        CategoryAxis categoryAxis = new CategoryAxis();\n        ArrayList<String> labels = new ArrayList<>();\n        \n        labels.add(\"Category 1\");\n        labels.add(\"Category 2\");\n        labels.add(\"Category 3\");\n        \n        for (String label : labels) {\n            categoryAxis.setLabel(label);\n        }\n        \n        /* write */ axis.setLabel(\"Axis Label\");\n\n        int labelIndex = 0;\n        for (String label : labels) {\n            categoryAxis.setLabel(label);\n            System.out.println(\"Category Axis Label: \" + categoryAxis.getLabel());\n            labelIndex++;\n        }\n\n        ArrayList<Axis> axes = new ArrayList<>();\n        axes.add(axis);\n        axes.add(categoryAxis);\n        \n        for (Axis ax : axes) {\n            System.out.println(\"Axis: \" + ax.getLabel());\n        }\n        \n        /* read */ String label = axis.getLabel();\n        System.out.println(\"Final Axis Label: \" + label);\n\n        NumberAxis anotherAxis = new NumberAxis();\n        anotherAxis.setLabel(\"Another Axis\");\n        System.out.println(\"Another Axis Label: \" + anotherAxis.getLabel());\n    }\n}",
+    "java_code_simple": "import org.jfree.chart.axis.Axis;\nimport org.jfree.chart.axis.NumberAxis;\n\npublic class Main {\n    public static void main(String[] args) {\n        Axis axis = new NumberAxis();\n        /* write */ axis.setLabel(\"Axis Label\");\n        /* read */ String label = axis.getLabel();\n        System.out.println(label);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.Axis",
+        "write_method": "setLabel",
+        "read_class": "org.jfree.chart.axis.Axis",
+        "read_method": "getLabel"
+    }
+}

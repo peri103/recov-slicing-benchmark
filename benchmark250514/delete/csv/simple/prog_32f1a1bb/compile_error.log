@@ -1,0 +1,9 @@
+generated/csv/simple/prog_32f1a1bb/Main.java:12: 错误: 不兼容的类型: 不存在类型变量T的实例, 以使List<T>与Reader一致
+        CSVRecord record = CSVFormat.DEFAULT.parse(Arrays.asList(data)).iterator().next();
+                                            ^
+  其中, T是类型变量:
+    T扩展已在方法 <T>asList(T...)中声明的Object
+注: generated/csv/simple/prog_32f1a1bb/Main.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+1 个错误

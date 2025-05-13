@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.plot.MultiplePiePlot;\nimport org.jfree.data.general.DatasetUtilities;\nimport org.jfree.data.general.PieDataset;\nimport org.jfree.chart.util.TableOrder;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a sample dataset\n        PieDataset dataset = DatasetUtilities.createPieDatasetForRow(new String[] {\"Category 1\", \"Category 2\"}, new double[] {1.0, 2.0}, 0);\n\n        // Initialize MultiplePiePlot with the dataset\n        MultiplePiePlot plot = new MultiplePiePlot(dataset);\n\n        // Set the data extract order using the write method\n        /* write */ plot.setDataExtractOrder(TableOrder.BY_ROW);\n\n        // Read the data extract order using the read method\n        /* read */ TableOrder order = plot.getDataExtractOrder();\n\n        // Print the result to verify the read value\n        System.out.println(order);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.plot.MultiplePiePlot",
+        "write_method": "setDataExtractOrder",
+        "read_class": "org.jfree.chart.plot.MultiplePiePlot",
+        "read_method": "getDataExtractOrder"
+    }
+}

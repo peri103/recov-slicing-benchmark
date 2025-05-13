@@ -1,0 +1,9 @@
+{
+    "java_code": "import org.jfree.chart.axis.CategoryAxis;\nimport org.jfree.chart.axis.CategoryLabelPositions;\n\npublic class Main {\n    public static void main(String[] args) {\n        CategoryAxis categoryAxis = new CategoryAxis();\n        CategoryLabelPositions positions = CategoryLabelPositions.STANDARD;\n        \n        /* write */ categoryAxis.setCategoryLabelPositions(positions);\n        /* read */ CategoryLabelPositions readPositions = categoryAxis.getCategoryLabelPositions();\n        \n        System.out.println(readPositions);\n    }\n}",
+    "pair": {
+        "write_class": "org.jfree.chart.axis.CategoryAxis",
+        "write_method": "setCategoryLabelPositions",
+        "read_class": "org.jfree.chart.axis.CategoryAxis",
+        "read_method": "getCategoryLabelPositions"
+    }
+}

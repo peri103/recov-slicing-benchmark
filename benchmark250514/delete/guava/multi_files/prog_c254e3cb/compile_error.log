@@ -1,0 +1,20 @@
+generated/guava/multi_files/prog_c254e3cb/CourseScores.java:7: 错误: 无法将类 MutableClassToInstanceMap<B>中的方法 putInstance应用到给定类型;
+        /* write */ courseScoresMap.putInstance(course.getClass(), score);
+                                   ^
+  需要: Class<T>,T
+  找到: Class<CAP#1>,int
+  原因: 推论变量 T 具有不兼容的上限
+    等式约束条件：CAP#2
+    下限：Integer
+  其中, T,B是类型变量:
+    T扩展已在方法 <T>putInstance(Class<T>,T)中声明的Object
+    B扩展已在类 MutableClassToInstanceMap中声明的Object
+  其中, CAP#1,CAP#2是新类型变量:
+    CAP#1从? extends String的捕获扩展String
+    CAP#2从? extends String的捕获扩展String
+generated/guava/multi_files/prog_c254e3cb/CourseScores.java:11: 错误: 不兼容的类型: CAP#1无法转换为Integer
+        /* read */ return (Integer) courseScoresMap.getInstance(course.getClass());
+                                                               ^
+  其中, CAP#1是新类型变量:
+    CAP#1从? extends String的捕获扩展String
+2 个错误

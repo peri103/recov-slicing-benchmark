@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\nimport org.apache.commons.compress.archivers.zip.ZipArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"initial\");\n        /* write */ entry.setName(\"newName\");\n        \n        ZipArchiveEntry zipEntry = new ZipArchiveEntry(\"zipEntry\");\n        zipEntry.setComment(\"This is a zip entry.\");\n        \n        ArrayList<String> list = new ArrayList<>();\n        list.add(\"Hello\");\n        list.add(\"World\");\n        \n        HashMap<String, Integer> map = new HashMap<>();\n        map.put(\"One\", 1);\n        map.put(\"Two\", 2);\n        \n        for (String str : list) {\n            System.out.println(str);\n        }\n        \n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n        \n        String comment = zipEntry.getComment();\n        System.out.println(\"Zip Entry Comment: \" + comment);\n        \n        /* read */ String name = entry.getName();\n        System.out.println(name);\n        \n        list.add(\"New Element\");\n        map.put(\"Three\", 3);\n        \n        for (String str : list) {\n            System.out.println(str);\n        }\n        \n        for (String key : map.keySet()) {\n            System.out.println(key + \": \" + map.get(key));\n        }\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.cpio.CpioArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        CpioArchiveEntry entry = new CpioArchiveEntry(\"initial\");\n        /* write */ entry.setName(\"newName\");\n        /* read */ String name = entry.getName();\n        System.out.println(name);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "write_method": "setName",
+        "read_class": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry",
+        "read_method": "getName"
+    }
+}

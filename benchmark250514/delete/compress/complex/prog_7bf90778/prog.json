@@ -1,0 +1,10 @@
+{
+    "java_code": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\nimport java.util.ArrayList;\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        /* write */ entry.setLinkName(\"exampleLink\");\n\n        // Unrelated operations to increase complexity\n        ArrayList<Integer> numberList = new ArrayList<>();\n        for (int i = 0; i < 10; i++) {\n            numberList.add(i * 2);\n        }\n\n        HashMap<String, Integer> map = new HashMap<>();\n        for (Integer number : numberList) {\n            map.put(\"Key\" + number, number);\n        }\n\n        int sum = 0;\n        for (String key : map.keySet()) {\n            sum += map.get(key);\n        }\n\n        System.out.println(\"Sum of numbers in map: \" + sum);\n\n        // Another unrelated operation\n        int[] array = new int[5];\n        for (int i = 0; i < array.length; i++) {\n            array[i] = i + 1;\n        }\n\n        int product = 1;\n        for (int num : array) {\n            product *= num;\n        }\n\n        System.out.println(\"Product of array elements: \" + product);\n\n        // Read operation\n        /* read */ String linkName = entry.getLinkName();\n        System.out.println(\"Link Name: \" + linkName);\n    }\n}",
+    "java_code_simple": "import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;\n\npublic class Main {\n    public static void main(String[] args) {\n        DumpArchiveEntry entry = new DumpArchiveEntry();\n        /* write */ entry.setLinkName(\"exampleLink\");\n        /* read */ String linkName = entry.getLinkName();\n        System.out.println(linkName);\n    }\n}",
+    "pair": {
+        "write_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "write_method": "setLinkName",
+        "read_class": "org.apache.commons.compress.archivers.dump.DumpArchiveEntry",
+        "read_method": "getLinkName"
+    }
+}

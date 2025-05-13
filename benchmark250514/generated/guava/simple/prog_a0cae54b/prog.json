@@ -1,0 +1,9 @@
+{
+    "java_code": "import com.google.common.collect.ForwardingMultimap;\nimport com.google.common.collect.HashMultimap;\nimport java.util.Collection;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize a HashMultimap instance as a concrete implementation of ForwardingMultimap\n        ForwardingMultimap<String, Integer> multimap = new ForwardingMultimap<String, Integer>() {\n            private final HashMultimap<String, Integer> delegate = HashMultimap.create();\n\n            @Override\n            protected HashMultimap<String, Integer> delegate() {\n                return delegate;\n            }\n        };\n\n        // Write operation: put a value into the ForwardingMultimap\n        /* write */ multimap.put(\"key1\", 100);\n\n        // Read operation: get the value from the ForwardingMultimap\n        /* read */ Collection<Integer> values = multimap.get(\"key1\");\n\n        // Print the values retrieved\n        for (Integer value : values) {\n            System.out.println(value);\n        }\n    }\n}",
+    "pair": {
+        "write_class": "com.google.common.collect.ForwardingMultimap",
+        "write_method": "put",
+        "read_class": "com.google.common.collect.ForwardingMultimap",
+        "read_method": "get"
+    }
+}
